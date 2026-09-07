@@ -978,3 +978,22 @@ Traiter tout format `prenom.nom@`/`p.nom@`/`initiale+nom@` comme banni quel que 
 corporate compris. (3) Une attribution nominative non confirmée par une source indépendante pour
 l'ANNÉE EN COURS de l'événement est un risque du même ordre qu'une coordonnée inventée — à retirer
 au profit du contact générique tant que le mandat n'est pas vérifiable.
+
+## 07/09/2026 — un lien mort n'est pas toujours une preuve d'absence : penser « migration de site »
+Le test hebdomadaire du lundi (265 URL à venir retestées, au-delà des 120 imminentes du plancher
+quotidien) a trouvé 1 vrai 404 : `norton.org/get-involved/Galas` (« Norton Museum of Art — Gala
+annuel 2027 »), confirmé par le CORPS de la page (« Page not found »), pas seulement le code retour
+(réflexe de la leçon du 18/08). Avant de retirer l'événement ou de le laisser cassé, une recherche
+dédiée a trouvé que le musée avait simplement REORGANISÉ sa navigation : la page existe toujours,
+sous `norton.org/private-events/galas`, contenu identique confirmé en 200. URL corrigée en 5 minutes
+sans toucher au reste de la fiche.
+RÈGLE : un 404 sur un lien autrefois valide (pas un lien jamais vérifié) mérite une recherche ciblée
+« nom du lieu + nom de la page » avant conclusion — beaucoup de refontes de site déplacent une page
+sans la supprimer. Un retrait n'est justifié que si la recherche ne retrouve RIEN d'équivalent.
+Complément utile trouvé en chemin : le champ `dt` de cette même fiche qualifiait déjà honnêtement sa
+date (« 2027-02-06 » présentée comme projection spéculative non confirmée, `cf: "à vérifier"`) — ce
+n'est PAS une fabrication au sens du garde-fou (qui interdit d'inventer SANS le dire), tant que
+l'incertitude est déclarée en clair dans le texte visiteur et que la fiche reste hors fenêtre live
+tant qu'elle n'est pas confirmée. Distinction à garder : « date devinée et présentée comme sûre » est
+interdit ; « date estimée et présentée comme telle, hors fenêtre live » est une pratique acceptée
+existante sur le site, à ne pas confondre l'une avec l'autre lors d'un audit.

@@ -1,38 +1,29 @@
-# Compte rendu — passe du 06/09/2026
-
-## Priorité du moment : condensation des voies d'invitation — chantier vérifié quasi soldé
-
-Contrôle exhaustif fait ce jour : seules **10 fiches** dépassent encore le seuil WARN de
-1200 caractères sur `iv.o`/`iv.g`/`iv.w` (1 champ `iv.g` + 10 champs `iv.w`, avec
-recoupement). J'ai **relu intégralement le texte des 10** (POINT D'ENTRÉE ventes aux
-enchères, Formula 1 Abu Dhabi GP, Yves Saint Laurent and Photography/ICP, Gstaad New
-Year Music Festival, Grand Hôtel de Cala Rossa, Villa Carmignac, Biennale Arte 2026,
-Saint-Barth Cata Cup, Dubai Racing Carnival, Scene yacht Ibiza-Formentera) pour trancher
-dérive réelle vs contenu légitimement dense (méthode des leçons du 20-21/08).
-
-**Verdict : aucune dérive « journal d'enquête ».** Les dix textes s'adressent au
-visiteur, sans tournure d'enquêteur, sans titre de section numéroté, sans commentaire de
-méthode, sans redite entre `o`/`g`/`w`. Ils restent au-dessus de 1200 caractères parce
-qu'ils portent légitimement de nombreux faits distincts et vérifiés (jusqu'à une dizaine
-de contacts, tarifs ou horaires par fiche — ex. la grille tarifaire complète de l'ICP
-avec 8 paliers d'adhésion, ou les 13 ventes du calendrier Christie's Paris). J'ai aussi
-recherché systématiquement les marqueurs de dérive doctrinaux (« OUI, une voie existe,
-mais… », « CE QUE LA MAISON MET RÉELLEMENT… », titres numérotés, jargon de vérification)
-sur l'ensemble des 392 fiches : aucune occurrence restante. **Le défaut signalé le
-12-19/08 (255 fiches touchées) est donc traité à zéro dérive résiduelle** — ce que
-confirme la trajectoire des passes précédentes (255 → 121/137 → ... → 11 → 10
-aujourd'hui, chaque lot condensé restant légitimement dense ensuite).
-Aucune fiche condensée aujourd'hui : il n'y avait rien à condenser sans perdre un fait,
-ce qui serait contraire à la règle « on ne supprime aucun fait ».
+# Compte rendu — passe du 07/09/2026
 
 ## Plancher du jour (purge, liens, date)
 
-`passe_automatique.py --apply` : purge de **3 zombies** (d2=06/08/2026, franchi le seuil
-des 30 jours aujourd'hui même — Gilles Peterson/Impressions, Concerts au Palais
-Princier/Kazuki Yamada, Sublime Summer Party), **119 liens testés** sur les plus
-imminents (0 mort), eyebrow mis à jour au 6 septembre 2026. Publié en premier via
-`publier.sh` (0 blocker), avant tout le reste — c'est le socle qui débloquait `validate.py`
-(3 zombies bloquaient la publication en tout début de passe).
+`precheck.sh` a trouvé 4 blocages au démarrage : 4 zombies non purgés
+(d2=2026-08-07, seuil des 30 jours franchi aujourd'hui même — même mécanique
+que la leçon du 31/08). `passe_automatique.py --apply` : purge des 4 zombies
+(Festival de Musique de Menton 77e édition, Copenhagen Fashion Week SS27,
+Guild Hall Summer Gala 2026, Cowes Week 2026 Bicentenaire), **119 liens
+testés** sur les plus imminents (0 mort), eyebrow mis à jour au 7 septembre
+2026. Publié en premier (0 blocker), avant tout le reste.
+
+## Priorité du moment : condensation des voies d'invitation — chantier confirmé soldé
+
+Recontrôle exhaustif mécanique (recherche des marqueurs de dérive doctrinaux
+« OUI, une voie existe, mais… », « CE QUE LA MAISON MET RÉELLEMENT… », etc.)
+sur les 388 fiches : **0 occurrence**. Seules 11 fiches dépassent encore le
+seuil WARN de 1200 caractères sur `iv.o`/`iv.g`/`iv.w` (1 + 10, avec
+recoupement) — exactement le même lot que la passe d'hier (06/09), qui les
+avait lues intégralement une par une et conclu à un contenu légitimement
+dense (jusqu'à une dizaine de contacts/tarifs/horaires distincts par fiche),
+sans dérive résiduelle. **Aucune fiche condensée aujourd'hui** : il n'y avait
+rien à condenser sans perdre un fait, ce qui violerait la règle « on ne
+supprime aucun fait ». Le défaut du 12-19/08 (255 fiches touchées à
+l'origine) reste donc à zéro dérive résiduelle, reconfirmé pour la seconde
+journée consécutive.
 
 ## LOI DU SITE — recomptée sur la fenêtre live (aujourd'hui → +90j)
 
@@ -42,59 +33,76 @@ imminents (0 mort), eyebrow mis à jour au 6 septembre 2026. Publié en premier 
 | Séjours manquants | **0** |
 | Invitations manquantes | **0** |
 
-100 % honoré sur ce qui est réellement montré aux visiteurs (392 fiches au total, dont
-97 dans la fenêtre live ; les 19 séjours et 4 invitations manquants au global sont tous
-hors fenêtre — événements déjà passés conservés 30 jours, ou au-delà de +90 jours).
-Joaillerie : **15 fiches en fenêtre live** (seuil de vigilance de la doctrine : 10) — le
-trou signalé le 20/08 reste comblé.
+100 % honoré sur ce qui est réellement montré aux visiteurs (388 fiches au
+total, dont 95 dans la fenêtre live). Les 17 séjours et 4 invitations
+manquants au global sont tous hors fenêtre (événements passés conservés 30
+jours, ou au-delà de +90 jours) — vérifié par script (croisement `d2` /
+aujourd'hui, méthode de la leçon du 19/08).
 
-## Recherche de nouveauté : Bal de la Rose de Monte-Carlo — non publiable, honnêtement
+## Contrôle hebdomadaire du LUNDI : tous les liens à venir retestés
 
-Recherche complète (organisateur, contact de réservation, tarif indicatif, séjour
-palace/table/expérience, code vestimentaire) sur le Bal de la Rose du Sporting
-Monte-Carlo, absent du site et identifié dans `CHANTIERS.md` comme cible d'élargissement
-printemps 2027. **Aucune date 2027 n'est encore annoncée** (vérifié directement sur
-montecarlosbm.com : la 70e édition, seule confirmée, s'est tenue le 21/03/2026).
-Conformément au garde-fou anti-fabrication, je n'ai pas deviné de date ni créé de fiche.
-Tous les autres faits (organisateur SBM/Fondation Princesse Grace, contact réservation,
-tarif indicatif ~1800 €/pers. — presse, non officiel —, séjour Hôtel de
-Paris/Hermitage/Monte-Carlo Bay + Louis XV/Blue Bay + Casino/Thermes Marins, tenue black
-tie) sont consignés dans `.radar/CHANTIERS.md` (chantier 08) pour une naissance complète
-dès l'annonce officielle de la date, probablement en fin d'année 2026.
+265 URL uniques d'événements à venir testées (au-delà des 120 les plus
+imminents du plancher quotidien). **1 lien réellement mort trouvé** :
+« Norton Museum of Art — Gala annuel 2027 » pointait vers
+`norton.org/get-involved/Galas`, qui renvoie un vrai 404 (page « Page not
+found », vérifié en corps de page, pas seulement au code retour — réflexe
+de la leçon du 18/08). Recherche faite : le musée a migré sa navigation ;
+la page existe toujours sous `norton.org/private-events/galas` (200,
+contenu réel confirmé). URL corrigée et publiée. Au passage, la recherche a
+confirmé que la date « 06/02/2027 » de cette fiche est une PROJECTION
+DÉCLARÉE (le champ `dt` le dit explicitement, `cf: "à vérifier"`) : la seule
+édition confirmée par le musée est celle du 07/02/2026 (déjà passée), 2027
+n'est pas encore annoncée. La fiche est hors fenêtre live (février 2027,
+au-delà de +90j) donc aucun visiteur n'y est actuellement exposé ; laissée
+en l'état (date honnêtement qualifiée d'estimation dans le texte visiteur),
+à reconfirmer quand le musée publiera l'édition 2027.
 
-## Autres vérifications faites ce jour
+## Recherche de nouveauté
 
-- **Grand Prix de Monaco 2027** : statut « sous réserve d'approbation FIA » reconfirmé
-  par recherche web (annonce du calendrier 2027 attendue à l'automne 2026) — aucun
-  changement à la fiche.
-- **JustMe Porto Cervo** (doute ouvert le 20/08, d2=07/09 demain, nom inquiétant « Mamacita
-  Closing Party ») : tentative de revérification via WebFetch — page rendue côté client,
-  aucune date d'événement lisible par cette méthode. Doute non tranché, laissé ouvert
-  dans `a-reverifier.md` ; sans conséquence pratique immédiate (la fiche sort de la
-  fenêtre live dès demain de toute façon).
-- `.radar/a-reverifier.md` (20 doutes ouverts, dont plusieurs avec des `d2` déjà dépassés
-  ou très proches) : pas repris intégralement aujourd'hui, faute de temps — signalé pour
-  une prochaine passe, le fichier commence à redevenir volumineux (428 lignes).
+**Bal de la Rose de Monte-Carlo (Sporting Monte-Carlo)** : revérifié
+directement sur montecarlosbm.com/en/agenda/bal-de-la-rose (chargement
+réel, 437 Ko). Toujours affiché « Concluded — Saturday, 21 March 2026 »,
+aucune date 2027 annoncée. Conforme au garde-fou anti-fabrication : fiche
+toujours non créée, comme signalé dans `CHANTIERS.md` (chantier 08).
+
+**JustMe Porto Cervo** (doute ouvert le 20/08, `d2`=07/09 = aujourd'hui) :
+revérifié sur xceed.me — seule date trouvée dans la page : 2026-09-07,
+aucune trace d'événement au-delà. La date actuelle de la fiche est donc
+cohérente avec ce qui est publié ; elle sortira naturellement de l'écran
+demain par le voile d'affichage (comportement correct, pas une perte de
+donnée : conservée 30 jours dans les données).
+
+Aucun nouvel événement composé aujourd'hui : l'effort de la passe a porté
+sur le plancher, la vérification hebdomadaire des liens et le contrôle de
+la condensation — pas de piste nouvelle assez solide identifiée dans le
+temps disponible pour naître complète (invitation + séjour + 13 langues)
+sans rien inventer.
 
 ## Mémoire et visites
 
 - `memoire.py changements` : 0 changement de date consigné sur 7 jours.
-- Visites : **2529** aujourd'hui contre 2519 hier (+0,4 %), progression continue et
-  régulière depuis 8 jours (2388 → 2529, soit +5,9 %). Pas de rupture ni de pic. Pas de
-  recoupement pays/source fait aujourd'hui (aucun outil de répartition public disponible
-  au-delà du compteur total GoatCounter).
+- Visites : **2552** aujourd'hui contre 2529 hier (+0,9 %), progression
+  continue depuis plus d'une semaine (2388 → 2552, soit +6,9 %). Pas de
+  rupture ni de pic. Pas de recoupement pays/source disponible (aucun outil
+  de répartition public au-delà du compteur total GoatCounter).
 
 ## Ce qui n'a pas pu être vérifié / reste en suspens
 
-- Le rafraîchissement de saison « Été » → « Automne » reste en attente depuis fin août :
+- Le rafraîchissement de saison « Été » → « Automne » reste en attente :
   décision qui appartient à Constance (branding jamais touché seul).
-- `a-reverifier.md` : reprise complète différée, fichier à re-consolider bientôt (lesson
-  du 20/08 : un registre qui s'allonge sans dédoublonnage devient illisible).
-- Bal de la Rose 2027 : à reprendre dès l'annonce officielle de la date (voir ci-dessus).
+  `validate.py` continue de le rappeler en WARN, sans bloquer.
+- `.radar/a-reverifier.md` (20 doutes ouverts) : pas repris intégralement
+  aujourd'hui, faute de temps — plusieurs concernent des lieux dont la
+  saison estivale touche à sa fin ; à reprendre à une prochaine passe. Le
+  fichier reste volumineux, sa reconsolidation (méthode de la leçon du
+  20/08 : dédoublonnage par clé) n'a pas été refaite ce jour.
+- Bal de la Rose 2027 : à reprendre dès l'annonce officielle de la date
+  (voir ci-dessus).
 
 ## Contrôles finaux
 
-`validate.py` : 0 blocage, 3 avertissements (les 10 fiches `iv` légitimement denses +
-1 rappel de saison). `healthcheck.sh` : OK (http=200, compte live=392=attendu, date
-fraîche). Publication faite en 2 commits sur `main` (plancher, relevé de visites), aucun
-repli de branche nécessaire aujourd'hui.
+`validate.py` : 0 blocage, 3 avertissements (les 11 fiches `iv` légitimement
+denses + 1 rappel de saison). `healthcheck.sh` : OK (http=200, compte
+live=388=attendu, date fraîche). Publication faite en 2 commits sur `main`
+(plancher + correctif du lien Norton), aucun repli de branche nécessaire
+aujourd'hui — le push direct sur `main` a été accepté dans les deux cas.
