@@ -997,3 +997,18 @@ l'incertitude est déclarée en clair dans le texte visiteur et que la fiche res
 tant qu'elle n'est pas confirmée. Distinction à garder : « date devinée et présentée comme sûre » est
 interdit ; « date estimée et présentée comme telle, hors fenêtre live » est une pratique acceptée
 existante sur le site, à ne pas confondre l'une avec l'autre lors d'un audit.
+
+## 08/09/2026 — un grep "not found" peut se faire piéger par le bundle JS d'une page qui existe bien
+Test des liens à 7 jours : `sailgp.com/` (page d'accueil, événement Rockwool France Sail Grand Prix,
+Saint-Tropez 12-13/09) a déclenché un signal "suspect404" — le corps de 4,9 Mo contenait bien la
+chaîne "This page could not be found." Vérification manuelle : cette chaîne appartient au composant
+générique `notFound` du bundle Next.js (le gabarit de secours embarqué dans TOUTE page du site, utilisé
+si jamais une route échoue), pas au contenu réellement affiché. La page réelle contient par ailleurs,
+en clair, "September 12-13 - ROCKWOOL France Sail Grand Prix | Saint-Tropez" : l'événement est confirmé,
+aucun 404 déguisé ici (contrairement au cas du 18/08 sur une AUTRE page du même site).
+RÈGLE : sur un site rendu côté client (bundle JS lourd, plusieurs Mo), la présence de la chaîne
+"page not found"/"404" ne prouve PAS un 404 si elle n'apparaît qu'une fois isolée dans un bloc
+manifestement technique (JSON/JS minifié) — chercher en plus une confirmation POSITIVE du sujet
+(nom de l'événement, ville, dates) dans le même corps avant de conclure. La règle du 18/08 reste
+vraie dans l'autre sens : l'absence de la chaîne recherchée ne suffit pas non plus à conclure —
+c'est la présence CROISÉE (positif du sujet + absence de négation claire en contexte) qui tranche.
