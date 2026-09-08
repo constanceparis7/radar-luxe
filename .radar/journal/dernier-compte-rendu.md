@@ -1,108 +1,95 @@
-# Compte rendu — passe du 07/09/2026
+# Compte rendu — passe du 8 septembre 2026
 
-## Plancher du jour (purge, liens, date)
+## Plancher / purge
+5 fiches zombies purgées (d2=08/08/2026, seuil des 30 jours franchi ce jour même) :
+22e Authors Night East Hampton Library, Jingu Gaien Fireworks Festival, Copa del Rey
+MAPFRE, Summer Hamptons Evening Northwell Health, Ravello Festival Serate Jazz.
+388 → 383 événements après purge, 384 après la naissance du jour (voir plus bas).
 
-`precheck.sh` a trouvé 4 blocages au démarrage : 4 zombies non purgés
-(d2=2026-08-07, seuil des 30 jours franchi aujourd'hui même — même mécanique
-que la leçon du 31/08). `passe_automatique.py --apply` : purge des 4 zombies
-(Festival de Musique de Menton 77e édition, Copenhagen Fashion Week SS27,
-Guild Hall Summer Gala 2026, Cowes Week 2026 Bicentenaire), **119 liens
-testés** sur les plus imminents (0 mort), eyebrow mis à jour au 7 septembre
-2026. Publié en premier (0 blocker), avant tout le reste.
+## Condensation `iv` (priorité du moment)
+10 fiches condensées ce jour (sélection au seuil WARN de `validate.py`, ≥ 1200
+caractères sur `iv.o`/`iv.g`/`iv.w`) : Villa Carmignac, Biennale Arte 2026, Yves
+Saint Laurent and Photography (ICP), POINT D'ENTRÉE Ventes aux enchères, Grand Hôtel
+de Cala Rossa, Yacht & superyachts Ibiza-Formentera, Dubai Racing Carnival, Saint-Barth
+Cata Cup, Formula 1 Abu Dhabi Grand Prix, Gstaad New Year Music Festival.
 
-## Priorité du moment : condensation des voies d'invitation — chantier confirmé soldé
+Contrôle mécanique `verif_faits.py` : **TOUT OK, aucune perte de fait** sur les 10
+fiches. Constat important remonté par plusieurs agents condensateurs : la dérive
+« journal d'enquête » décrite dans la doctrine n'était en réalité PLUS présente sur
+la plupart de ces fiches (elles avaient déjà été nettoyées à une passe antérieure) —
+le travail du jour a surtout consisté à resserrer la prose et à vérifier l'absence de
+coordonnée personnelle interdite (aucune trouvée). Résultat : 3 fiches sont repassées
+sous le seuil WARN (Ibiza yacht, Dubai Racing Carnival, Saint-Barth Cata Cup) ; les 7
+autres restent légitimement au-dessus (Villa Carmignac, Biennale, YSL/ICP, POINT
+D'ENTRÉE, Cala Rossa, Abu Dhabi GP, Gstaad) car elles portent une forte densité de
+faits réels (grilles tarifaires multiples, plusieurs contacts nominatifs) qu'il est
+interdit de couper pour respecter la cible de 400 caractères — conforme à la règle
+« on garde le fait, jamais l'inverse ». **Reste à traiter aux prochaines passes** :
+ces 8 fiches restent au-dessus du seuil WARN (1 sur `iv.g`, 7 sur `iv.w`), toutes
+déjà examinées et jugées légitimement denses ce jour — à réexaminer périodiquement
+pour confirmer que rien n'a dérivé à nouveau vers le journal d'enquête.
 
-Recontrôle exhaustif mécanique (recherche des marqueurs de dérive doctrinaux
-« OUI, une voie existe, mais… », « CE QUE LA MAISON MET RÉELLEMENT… », etc.)
-sur les 388 fiches : **0 occurrence**. Seules 11 fiches dépassent encore le
-seuil WARN de 1200 caractères sur `iv.o`/`iv.g`/`iv.w` (1 + 10, avec
-recoupement) — exactement le même lot que la passe d'hier (06/09), qui les
-avait lues intégralement une par une et conclu à un contenu légitimement
-dense (jusqu'à une dizaine de contacts/tarifs/horaires distincts par fiche),
-sans dérive résiduelle. **Aucune fiche condensée aujourd'hui** : il n'y avait
-rien à condenser sans perdre un fait, ce qui violerait la règle « on ne
-supprime aucun fait ». Le défaut du 12-19/08 (255 fiches touchées à
-l'origine) reste donc à zéro dérive résiduelle, reconfirmé pour la seconde
-journée consécutive.
+## Vérification des 7 prochains jours + liens
+26 fiches imminentes (aujourd'hui → +7 jours) recensées. 22 liens testés :
+- 15 confirmés 200 avec contenu positif du sujet (dont sailgp.com/ pour le Rockwool
+  France Sail Grand Prix Saint-Tropez, confirmé malgré un faux signal « not found »
+  provenant du bundle JS générique du site — voir leçon ajoutée à lessons.md) ;
+- roccofortehotels.com (Sir Rocco Forte Captain's Trophy) : 403 en curl nu, 200 avec
+  un user-agent de navigateur — confirmé, pas un problème du site ;
+- 3 liens non vérifiables ce jour malgré plusieurs tentatives (curl + user-agent) :
+  usopen.org (403 persistant), twigafortedeimarmi.com et lacapanninadifranceschi.com
+  (échecs de connexion côté passerelle réseau, `ws_closed_mid_exchange`) ; espacelouisvuittontokyo.com et peninsula.com également bloqués (403, sites connus
+  pour leur protection anti-robot). Aucune de ces 5 fiches n'a été modifiée ou
+  retirée — un 403/timeout n'est pas une preuve d'absence (doctrine) ; à retester à
+  une prochaine passe, éventuellement au navigateur si l'outil est disponible.
 
-## LOI DU SITE — recomptée sur la fenêtre live (aujourd'hui → +90j)
+## Naissance complète : RHS Chelsea Flower Show 2027
+Nouvelle fiche née COMPLÈTE (invitation + séjour + 12 langues), comblant un trou de
+calendrier identifié dans `CHANTIERS.md` (« ENSUITE ÉLARGIR ») : dates 18-22 mai 2027
+vérifiées sur rhs.org.uk (journées adhérents 18-19, journées publiques 20-22, soirée
+« Chelsea Late » le 21), lieu Royal Hospital Chelsea. Voie d'invitation : adhésion RHS
+individuelle (journées adhérents) + accréditation presse gratuite via la RHS Press
+Team (pressoffice@rhs.org.uk, standard institutionnel +44 20 7821 3080 — AUCUNE
+coordonnée personnelle utilisée, alors que la page source en publie plusieurs :
+signalé explicitement par le contrôleur adverse et écarté). Séjour : The Cadogan
+(A Belmond Hotel, Chelsea), Restaurant Gordon Ramsay (3 étoiles Michelin, même rue
+que le salon), soirée Chelsea Late en expérience. Vérifié adversairialement (verdict
+FIABLE=true, 8 points de contrôle, 0 correction nécessaire) avant publication.
+Tarifs 2027 non publiés à ce jour (« Tickets on sale soon ») : dit franchement,
+aucun prix inventé. Traduit en 12 langues (agent dédié, contrôle de forme OK).
 
-| | fenêtre live |
-|---|---|
-| Traductions manquantes (13 langues) | 0 |
-| Séjours manquants | **0** |
-| Invitations manquantes | **0** |
+## LOI DU SITE — 3 compteurs
+- Traductions 13 langues : 384/384 (100%)
+- Séjours clé en main : 370/384 manquent 14 (tous hors fenêtre live, déjà passés)
+- Voies d'invitation : 381/384 manquent 3 (idem, hors fenêtre live)
+- **Sur la fenêtre live (aujourd'hui → +90j, 278 fiches) : 100% — 0 séjour manquant,
+  0 invitation manquante.**
 
-100 % honoré sur ce qui est réellement montré aux visiteurs (388 fiches au
-total, dont 95 dans la fenêtre live). Les 17 séjours et 4 invitations
-manquants au global sont tous hors fenêtre (événements passés conservés 30
-jours, ou au-delà de +90 jours) — vérifié par script (croisement `d2` /
-aujourd'hui, méthode de la leçon du 19/08).
+## Autres
+- Eyebrow mis à jour : « données collectées et vérifiées le 8 septembre 2026 ».
+- Doute a-reverifier.md tranché : « Soirées d'été des Hôtels Barrière Deauville »
+  conservée telle quelle — son propre texte reconnaît déjà honnêtement l'absence de
+  programme public nommé, ce n'est pas une porte fantôme.
+- Branding saisonnier : WARN inchangé (« Été » encore affiché) — proposition de
+  bascule « Automne » à Gérald toujours en attente de son accord explicite, non
+  renommé d'office (règle absolue de la doctrine).
+- KPI accès mondain (iv) : 258/259 (99%), stable.
+- Visites (GoatCounter, compteur cumulé) : 2 573 pages vues cumulées, +21 depuis
+  hier (2 552 → 2 573). Détail pays/sources non accessible ce jour depuis cette
+  session (page du tableau de bord GoatCounter non exploitable en script) — dit
+  franchement plutôt qu'inventé, à reprendre à une prochaine passe.
+- `validate.py` : 0 blocker, 3 warnings (2 iv denses légitimes + branding saison).
+- `healthcheck.sh` : OK à chaque publication (200, date fraîche, compte conforme).
+- 3 commits publiés sur `main` directement (pas de repli de branche nécessaire
+  aujourd'hui) : purge, condensation, naissance Chelsea Flower Show + journal.
 
-## Contrôle hebdomadaire du LUNDI : tous les liens à venir retestés
-
-265 URL uniques d'événements à venir testées (au-delà des 120 les plus
-imminents du plancher quotidien). **1 lien réellement mort trouvé** :
-« Norton Museum of Art — Gala annuel 2027 » pointait vers
-`norton.org/get-involved/Galas`, qui renvoie un vrai 404 (page « Page not
-found », vérifié en corps de page, pas seulement au code retour — réflexe
-de la leçon du 18/08). Recherche faite : le musée a migré sa navigation ;
-la page existe toujours sous `norton.org/private-events/galas` (200,
-contenu réel confirmé). URL corrigée et publiée. Au passage, la recherche a
-confirmé que la date « 06/02/2027 » de cette fiche est une PROJECTION
-DÉCLARÉE (le champ `dt` le dit explicitement, `cf: "à vérifier"`) : la seule
-édition confirmée par le musée est celle du 07/02/2026 (déjà passée), 2027
-n'est pas encore annoncée. La fiche est hors fenêtre live (février 2027,
-au-delà de +90j) donc aucun visiteur n'y est actuellement exposé ; laissée
-en l'état (date honnêtement qualifiée d'estimation dans le texte visiteur),
-à reconfirmer quand le musée publiera l'édition 2027.
-
-## Recherche de nouveauté
-
-**Bal de la Rose de Monte-Carlo (Sporting Monte-Carlo)** : revérifié
-directement sur montecarlosbm.com/en/agenda/bal-de-la-rose (chargement
-réel, 437 Ko). Toujours affiché « Concluded — Saturday, 21 March 2026 »,
-aucune date 2027 annoncée. Conforme au garde-fou anti-fabrication : fiche
-toujours non créée, comme signalé dans `CHANTIERS.md` (chantier 08).
-
-**JustMe Porto Cervo** (doute ouvert le 20/08, `d2`=07/09 = aujourd'hui) :
-revérifié sur xceed.me — seule date trouvée dans la page : 2026-09-07,
-aucune trace d'événement au-delà. La date actuelle de la fiche est donc
-cohérente avec ce qui est publié ; elle sortira naturellement de l'écran
-demain par le voile d'affichage (comportement correct, pas une perte de
-donnée : conservée 30 jours dans les données).
-
-Aucun nouvel événement composé aujourd'hui : l'effort de la passe a porté
-sur le plancher, la vérification hebdomadaire des liens et le contrôle de
-la condensation — pas de piste nouvelle assez solide identifiée dans le
-temps disponible pour naître complète (invitation + séjour + 13 langues)
-sans rien inventer.
-
-## Mémoire et visites
-
-- `memoire.py changements` : 0 changement de date consigné sur 7 jours.
-- Visites : **2552** aujourd'hui contre 2529 hier (+0,9 %), progression
-  continue depuis plus d'une semaine (2388 → 2552, soit +6,9 %). Pas de
-  rupture ni de pic. Pas de recoupement pays/source disponible (aucun outil
-  de répartition public au-delà du compteur total GoatCounter).
-
-## Ce qui n'a pas pu être vérifié / reste en suspens
-
-- Le rafraîchissement de saison « Été » → « Automne » reste en attente :
-  décision qui appartient à Constance (branding jamais touché seul).
-  `validate.py` continue de le rappeler en WARN, sans bloquer.
-- `.radar/a-reverifier.md` (20 doutes ouverts) : pas repris intégralement
-  aujourd'hui, faute de temps — plusieurs concernent des lieux dont la
-  saison estivale touche à sa fin ; à reprendre à une prochaine passe. Le
-  fichier reste volumineux, sa reconsolidation (méthode de la leçon du
-  20/08 : dédoublonnage par clé) n'a pas été refaite ce jour.
-- Bal de la Rose 2027 : à reprendre dès l'annonce officielle de la date
-  (voir ci-dessus).
-
-## Contrôles finaux
-
-`validate.py` : 0 blocage, 3 avertissements (les 11 fiches `iv` légitimement
-denses + 1 rappel de saison). `healthcheck.sh` : OK (http=200, compte
-live=388=attendu, date fraîche). Publication faite en 2 commits sur `main`
-(plancher + correctif du lien Norton), aucun repli de branche nécessaire
-aujourd'hui — le push direct sur `main` a été accepté dans les deux cas.
+## Non vérifié / reporté
+- Les 5 liens listés plus haut (usopen.org, twiga, capannina, espacelouisvuittontokyo,
+  peninsula.com) restent à retester.
+- Les ~18 doutes restants de `a-reverifier.md` (Dolce & Gabbana Casa Amor, Principote,
+  Dioriviera Cannes, La Co(o)rniche, Bagni Fiore, Terrasses des palaces parisiens,
+  etc.) n'ont pas été repris ce jour faute de nouvelle source (déjà recherchés à
+  plusieurs reprises fin août sans succès) — inchangés, pas de régression.
+- 7 fiches restent au-dessus du seuil WARN de condensation (voir plus haut) : jugées
+  légitimement denses ce jour, à réexaminer périodiquement plutôt qu'à re-condenser
+  mécaniquement (leçon du 20-21/08 : le seuil de sélection n'est pas le seuil cible).
