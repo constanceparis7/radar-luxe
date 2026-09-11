@@ -701,7 +701,8 @@ def main():
                 + f"<a href=\"{prefix(lang)}/protocole.html\">{esc(X(lang,'pr_h1'))}</a>"
                 + f"<a href=\"{prefix(lang)}/methode.html\">{esc(X(lang,'m_h1'))}</a>"
                 + f"<a href=\"/changements.html\">{esc(X(lang,'mem_h1'))}</a>"
-                + f"<a href=\"/note.html\">{esc(UI['note'][lang])}</a></div>")
+                + f"<a href=\"/note.html\">{esc(UI['note'][lang])}</a>"
+                + f"<a href=\"/entrer.html\">{esc(UI['access'][lang])}</a></div>")
         htitle = f"{UI['hub_h1'][lang]} | ConstanceParis7"
         write(u_hub(lang), page(lang, htitle, UI["hub_intro"][lang], u_hub(lang), "".join(hub), hreflang_for(None, None)))
         sitemap_urls.append(f"{BASE}{u_hub(lang)}")
@@ -1273,6 +1274,75 @@ L'éditrice n'exerce aucun contrôle sur ces sites et décline toute responsabil
               "/note.html", "".join(corps),
               '<link rel="alternate" hreflang="fr" href="%s/note.html">' % BASE))
         sitemap_urls.append(f"{BASE}/note.html")
+
+    # --- le Moteur de réponse (institution du 11/09/2026) : « Où voulez-vous
+    # entrer ? ». Personne au monde ne répond à cette question ; le radar la
+    # met au centre. Index compact généré depuis les fiches, recherche côté
+    # client (site statique), réponse = la porte, pas la fiche.
+    idx = []
+    for e in pages:
+        nr = note_radar(e)
+        idx.append({
+            "n": e.get("n", ""),
+            "u": u_event(e, "fr"),
+            "v": (e.get("v") or e.get("_pk") or "").strip(),
+            "c": cat_label(e.get("c", "autre"), "fr"),
+            "a": e.get("a") or "",
+            "d": T(e, "fr", "dt") or "",
+            "p": (T(e, "fr", "p") or "")[:220],
+            "dc": (e.get("dc") or "").strip(),
+            "no": nr if nr is not None else 0,
+        })
+    with open(f"{REPO}/acces-index.json", "w", encoding="utf-8") as _f:
+        json.dump(idx, _f, ensure_ascii=False, separators=(",", ":"))
+
+    ACCES_FR = {"public": "Ouvert au public", "inscription": "Sur réservation",
+                "invitation": "Sur invitation", "vip": "Liste et cartes officielles",
+                "mixte": "Accès mixte : une partie ouverte, une partie sur invitation"}
+    corps = ["<div class=\"bc\"><a href=\"/\">Radar</a> · Entrer</div>",
+             "<h1>Où voulez-vous entrer ?</h1>",
+             "<p class=\"meta\">Tapez un événement, une ville, un univers : la réponse est la porte. Type d'accès, prix publié, dress code, note. Le reste du monde liste ; ici, on répond.</p>",
+             "<div class=\"box\"><input id=\"q\" type=\"search\" autocomplete=\"off\" "
+             "placeholder=\"Fashion Week, Monaco, opéra, joaillerie...\" "
+             "style=\"width:100%;padding:14px 16px;font-size:1.05rem;border:1px solid #26313A;"
+             "border-radius:6px;background:transparent;color:inherit\"></div>",
+             "<div id=\"res\"></div>",
+             "<p class=\"meta\" id=\"vide\">Exemples : <a href=\"#\" class=\"ex\">Fashion Week</a> · "
+             "<a href=\"#\" class=\"ex\">Monaco</a> · <a href=\"#\" class=\"ex\">joaillerie</a> · "
+             "<a href=\"#\" class=\"ex\">bal</a> · <a href=\"#\" class=\"ex\">Venise</a></p>",
+             "<div class=\"chips\"><a href=\"/\">← Retour au radar</a><a href=\"/protocole.html\">Le Protocole</a><a href=\"/vestiaire.html\">Le Vestiaire</a></div>",
+             """<script>
+(function(){
+var IDX=null,q=document.getElementById('q'),res=document.getElementById('res'),vide=document.getElementById('vide');
+var ACC=%s;
+function norm(s){return (s||'').toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g,'');}
+function esc(s){var d=document.createElement('span');d.textContent=s||'';return d.innerHTML;}
+function charge(cb){if(IDX){cb();return;}fetch('/acces-index.json').then(function(r){return r.json()}).then(function(j){IDX=j;cb();});}
+function cherche(){var t=norm(q.value.trim());if(t.length<2){res.innerHTML='';vide.style.display='';return;}
+ charge(function(){var hits=[];for(var i=0;i<IDX.length;i++){var e=IDX[i];
+  var h=norm(e.n)+' '+norm(e.v)+' '+norm(e.c);
+  if(h.indexOf(t)>-1)hits.push(e);}
+ hits.sort(function(a,b){return b.no-a.no});hits=hits.slice(0,10);
+ vide.style.display=hits.length?'none':'';
+ res.innerHTML=hits.map(function(e){var acc=ACC[e.a]||e.a;
+  var note=e.no?('<span style="color:#E9C46A">'+ '\\u2726'.repeat(e.no>=88?5:e.no>=76?4:e.no>=62?3:e.no>=48?2:1)+' '+e.no+'/100</span>'):'';
+  return '<div class="box" style="margin-top:12px"><div class="d" style="letter-spacing:.08em;text-transform:uppercase;font-size:.78rem;color:#9FB0BD">'+esc(e.v)+(e.v&&e.c?' \\u00b7 ':'')+esc(e.c)+(note?' \\u00b7 ':'')+note+'</div>'+
+  '<h2 style="margin:.35em 0"><a href="'+e.u+'">'+esc(e.n)+'</a></h2>'+
+  (e.d?'<div style="color:#9FB0BD">'+esc(e.d)+'</div>':'')+
+  '<p style="margin:.5em 0"><b>La porte :</b> '+esc(acc)+'</p>'+
+  (e.p?'<p style="margin:.3em 0">'+esc(e.p)+'\\u2026</p>':'')+
+  (e.dc?'<p style="margin:.3em 0"><b>Dress code :</b> '+esc(e.dc)+'</p>':'')+
+  '<p style="margin:.5em 0 0"><a href="'+e.u+'">La voie d\\u2019entr\\u00e9e d\\u00e9taill\\u00e9e \\u2192</a></p></div>';}).join('');});}
+q.addEventListener('input',cherche);
+document.querySelectorAll('.ex').forEach(function(a){a.addEventListener('click',function(ev){ev.preventDefault();q.value=a.textContent;cherche();q.focus();});});
+})();
+</script>""" % json.dumps(ACCES_FR, ensure_ascii=False)]
+    write("/entrer.html", page("fr",
+          "Comment entrer : l'accès aux événements du luxe · ConstanceParis7",
+          "Où voulez-vous entrer ? Tapez un événement ou une ville : le type d'accès, le prix publié, le dress code et la note, vérifiés à la source.",
+          "/entrer.html", "".join(corps),
+          '<link rel="alternate" hreflang="fr" href="%s/entrer.html">' % BASE))
+    sitemap_urls.append(f"{BASE}/entrer.html")
 
     # --- sitemap ---
     sm = ['<?xml version="1.0" encoding="UTF-8"?>',
