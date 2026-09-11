@@ -1,116 +1,139 @@
-# Compte rendu — passe du 10/09/2026
+# Compte rendu — passe du 11/09/2026
 
-Cadence : dernier run journalisé il y a 47 h (> seuil de 30 h) → passe de
-RATTRAPAGE. Aucune anomalie trouvée dans le dépôt expliquant le jour manqué
-(pas d'entrée `DEMARRAGE` sans `FIN` la veille) ; simple absence de
-déclenchement, traitée normalement.
+Cadence : dernier run journalisé il y a 71 h (> seuil de 30 h) → passe de
+RATTRAPAGE. Aucune trace d'anomalie particulière dans le dépôt (pas de
+`DEMARRAGE` sans `FIN` la veille) ; simple absence de déclenchement le 10/09
+au soir ou dans la nuit, traitée normalement.
 
-## Priorité du jour — condensation des voies d'invitation (`iv`)
+## Priorité annoncée par la consigne (condensation `iv`) — vérifiée, déjà résorbée
 
-Le backlog signalé (255 fiches, 159 en fenêtre live, le 19/08) est
-**quasiment soldé** : au seuil WARN de `validate.py` (≥ 1200 caractères),
-il ne restait que **7 candidats, tous dans la fenêtre live**. Les 7 ont été
-lus intégralement (méthode du 02/09 : trier dérive réelle vs contenu
-légitimement dense avant de toucher quoi que ce soit) :
+La consigne de ce jour redemandait de condenser 15-20 fiches sur un backlog
+« 255 fiches, 159 en fenêtre live » daté du 19/08. Ce chiffre est **périmé** :
+le compte rendu du 10/09 avait déjà ramené ce backlog à 7 candidats au seuil
+WARN de `validate.py` (≥1200 car.), tous relus intégralement et classés
+légitimement denses (beaucoup de contacts/tarifs réels, pas un journal
+d'enquête). Vérifications faites aujourd'hui avant de conclure à rien
+condenser :
+- Les 7 candidats au seuil WARN sont **exactement les mêmes 7 fiches** que
+  le 10/09 (mêmes noms, longueurs quasi identiques) — aucune nouvelle
+  dérive n'est apparue depuis.
+- Balayage de l'ensemble des 374 fiches à la recherche des tournures
+  d'enquêteur bannies (« OUI, une voie existe, mais… », « CE QUE LA MAISON
+  MET RÉELLEMENT À DISPOSITION », etc.) : **0 occurrence** ailleurs que les
+  mentions légitimes du badge « vérifié le JJ/MM/AAAA ».
+Conclusion : le backlog de condensation annoncé par la consigne est déjà
+soldé depuis le 10/09 ; forcer une condensation sur les 7 fiches restantes
+aurait supprimé des faits réels pour gagner des caractères, contraire à la
+règle « garder le fait, jamais l'inverse ». Rien touché sur ce chantier
+aujourd'hui, à raison.
 
-- **1 fiche condensée** : « POINT D'ENTRÉE, Ventes aux enchères et
-  expositions publiques (Christie's, Sotheby's, Drouot) » — `iv.w` réécrit
-  en texte visiteur continu (suppression des titres en capitales et des
-  commentaires de méthode type « brochure OFFRE 2025, à reconfirmer »),
-  2951 → 2675 caractères. Contrôle mécanique (regex e-mails/URL/montants)
-  avant/après : **aucun fait dur perdu** — un seul écart de forme
-  (« www.drouot.com/... » devenu « drouot.com/... », même URL).
-- **6 fiches examinées et laissées inchangées** (Villa Carmignac, Biennale
-  Arte 2026, Yves Saint Laurent/ICP, Grand Hôtel de Cala Rossa, Gstaad New
-  Year Music Festival, Formula 1 Abu Dhabi) : leur longueur vient de listes
-  de tarifs/horaires/contacts réels et denses, pas d'un journal d'enquête —
-  confirmé légitimement dense (même diagnostic que les 20-21/08 et 02/09).
-  Les condenser aurait supprimé des faits pour gagner des caractères,
-  contraire à la règle « garder le fait, jamais l'inverse ».
+## Entretien du jour
 
-**Effet de bord attrapé en lisant ces 7 fiches** : 8 coordonnées
-personnelles au format « mobile » explicitement labellisées comme telles
-avaient migré dans le champ structuré `iv.c` de 3 fiches — en violation du
-garde-fou de protection des personnes du 20/08/2026 (interdiction des
-lignes présentées comme « directe » ou « mobile »). Retirées :
-- Villa Carmignac : 3 portables (Juliette de Charmoy, Aurore Gallarino,
-  Angie Linconnu) — noms et fonctions conservés.
-- Gstaad New Year Music Festival : 3 portables suisses (Philippe Biland,
-  Illyria Pfyffer, Caroline Murat) — noms et fonctions conservés.
-- POINT D'ENTRÉE (ventes aux enchères) : 2 portables Drouot (Sophie
-  Dufresne, Claire Jehl), explicitement labellisés « mobile publié par
-  Drouot » dans le texte source — retirés ; leurs lignes directes de bureau
-  (`+33 1 48 00 20 71` / `...37`, présentées comme numéros de poste
-  professionnels du service presse, pas comme portables) sont restées en
-  `iv.o`, où elles n'ont pas été touchées.
-
-Aucune fiche ne perd sa dernière porte d'entrée (contrôle fait à la main
-sur les 3 fiches touchées : chacune garde au moins un e-mail ou une ligne
-de service).
+- **Zombies purgés** : 5 fiches à `d2=2026-08-11` (exactement 31 jours,
+  seuil franchi ce jour) — Les Grimaldines, Les Nuits du Château de la
+  Moutte, Yerai Cortés (Fondation Maeght), Ravello Festival Concerto
+  all'alba, Monte-Carlo Summer Festival (dîner-spectacle Lisa Stansfield).
+  379 → 374 événements.
+- **Liens à 7 jours** : 26 URL testées (événements démarrant ou finissant
+  dans les 7 prochains jours), `curl -sL` avec vérification du corps.
+  0 « page introuvable » confirmée. Détail :
+  - 4 blocages anti-robot connus (403) : Espace Louis Vuitton Tokyo, rooftop
+    Peninsula Paris, US Open Fan Week, CSIO League of Nations — pas une
+    preuve d'absence.
+  - 1 signal « suspect404 » sur `sailgp.com/` (chaîne « This page could not
+    be found » présente) — cas déjà documenté le 08/09/2026 : c'est le
+    composant générique `notFound` du bundle Next.js, la page réelle
+    contient bien « September 12-13 — ROCKWOOL France Sail Grand Prix |
+    Saint-Tropez ». Aucune action.
+  - 2 échecs de connexion (code 000) : `twigafortedeimarmi.com` et
+    `lacapanninadifranceschi.com`. Domaine témoin neutre (wikipedia.org)
+    testé en parallèle : OK. Ce n'est donc pas un blocage général de la
+    session (contrairement aux 12-13/08 et 19/08), mais un incident
+    limité à ces deux hôtes italiens (le journal du proxy montre des
+    échecs de tunnel TLS sur `lacapanninadifranceschi.com` dès 04h04 UTC
+    ce matin). Un seul nouvel essai fait, toujours en échec — conforme à
+    la règle de ne pas s'acharner. Rien changé aux fiches ; à retester à
+    la prochaine passe.
+- **Mémoire du radar** (`memoire.py changements`) : 0 changement de date
+  détecté sur 7 jours.
+- **Registre `a-reverifier.md`** : relu. Sur les 17 doutes encore ouverts
+  (dates de fin de saison estimées, datés du 20-25/08), 12 fiches sont
+  déjà purgées (le doute est devenu sans objet) ; il n'en reste que 4
+  présentes, dont 2 hors fenêtre live (déjà passées, purge automatique
+  dans les prochaines semaines) et 2 encore vivantes avec une marge
+  confortable avant leur `d2` estimé (Bagni Fiore Paraggi/Langosteria,
+  30/09 ; terrasses des palaces parisiens, 04/10) — pas d'urgence à les
+  retrancher aujourd'hui, laissées en l'état pour une prochaine passe avec
+  plus de temps dédié à la re-vérification à la source.
 
 ## LOI DU SITE
 
-`reste.py` (sur `index-full.html` reconstruit) : 379/379 traductions,
-366/379 séjours, 376/379 invitations — les manquants sont recomptés
-**tous hors fenêtre live** (événements passés, conservés 30 jours avant
-purge). **LOI DU SITE honorée à 100 % sur la fenêtre live** (0 séjour et
-0 invitation manquants parmi les 213 fiches auj.→+90j).
+`reste.py` sur `index-full.html` reconstruit : 374/374 traductions,
+361/374 séjours, 371/374 invitations au global — recompté en croisant avec
+la fenêtre live (auj.→+90j, 187 fiches) : **0 séjour et 0 invitation
+manquants**. Les manquants globaux sont tous des événements déjà passés
+(conservés 30 jours avant purge). **LOI DU SITE honorée à 100 % sur ce
+qu'un visiteur voit réellement aujourd'hui.**
 
-## Vérifications
+## Couverture — vérification des priorités historiques de la doctrine
 
-- **Zombies** (`d2` < auj.-30j) : 0 — le plancher quotidien fait déjà son
-  travail, rien à purger aujourd'hui.
-- **Mémoire du radar** (`memoire.py changements`) : 0 changement de date
-  détecté sur 7 jours.
-- **Liens à 7 jours** : 27 URL uniques testées (événements qui démarrent ou
-  se terminent dans les 7 prochains jours), `curl -sL` avec vérification du
-  corps (pas seulement le code retour). Résultat : 0 « page introuvable »
-  détectée dans le corps. Plusieurs 403 attendus (Espace Louis Vuitton
-  Tokyo, Peninsula Paris, FEI League of Nations, Rocco Forte Verdura) —
-  anti-robot connu de ces domaines, pas une preuve d'absence ; aucun
-  signal de régression par rapport à leur état de vérification d'origine,
-  pas d'action prise.
-- `validate.py` : **OK — 0 blocker, 3 warning** (1 fiche `iv.g` et 7 fiches
-  `iv.w` encore > 1200 car., toutes légitimement denses ; bandeau « Été »
-  encore affiché au 10/09, normal — l'équinoxe n'est que le 22-23/09,
-  bascule automatique par `saison.py`, rien à faire avant cette date).
-- `perfcheck.py` : **OK — 0 régression** (poids 0.89 Mo gzip, -0.02 Mo vs
-  dernier point, -13 événements/-7 séjours d'écart de référence — purges
-  normales des jours précédents).
+Trois chantiers marqués comme prioritaires par des sections plus anciennes
+de la doctrine ont été recomptés ce jour et sont **résorbés** :
+- Automne (sept-déc.) : 32 / 29 / 21 / 32 fiches à venir par mois — bien
+  loin du trou d'octobre/novembre constaté fin juillet.
+- Joaillerie en fenêtre live : **14 fiches** (contre 2 le 20/08, seuil
+  cible de 10 dépassé).
+- Guides d'accès (`c=acces`) : **16 fiches** en ligne, dont les six guides
+  annoncés le 24/08 et les POINT D'ENTRÉE antérieurs.
+Aucune action nécessaire sur ces trois fronts aujourd'hui.
+
+## Contrôles
+
+- `validate.py` : **OK — 0 blocker, 4 warning** (1 entrée périmée du
+  bandeau Ouvertures & délais à retirer ; 1 fiche `iv.g` et 7 fiches
+  `iv.w` toujours > 1200 car., toutes légitimement denses, cf. ci-dessus ;
+  bandeau « Été » encore affiché — normal avant l'équinoxe du 22-23/09).
+- `perfcheck.py` : **OK — 0 régression** (poids 0.88 Mo gzip, -0.01 Mo vs
+  dernier point, -5 événements/-3 séjours — purge normale de ce matin).
+- `healthcheck.sh` : **OK** — http=200, date fraîche, 374/374 événements
+  servis en ligne, conforme au build publié.
 
 ## Publication
 
 `publier.sh` a régénéré le socle SEO (`gen_seo.py`) et les pages
-indexables (`gen_pages.py`, 363 événements × 13 langues), validé, commité
-et **poussé directement sur `main`** (pas de repli sur branche `claude/*`
-nécessaire aujourd'hui). Eyebrow avancé au 10 septembre 2026.
+indexables (`gen_pages.py`), validé, commité et **poussé directement sur
+`main`** — pas de repli sur branche `claude/*` nécessaire aujourd'hui.
+Eyebrow avancé au 11 septembre 2026.
 
 Étape 10 de la doctrine (republier l'artifact Claude) **non tentée** :
-panne connue et documentée le 21/08/2026 (« artifact not found »), sans
-conséquence pour le public — constanceparis7.com reste la seule adresse qui
-compte et elle est à jour.
+panne connue depuis le 21/08/2026 (« artifact not found »), sans
+conséquence pour le public — constanceparis7.com reste la seule adresse
+qui compte et elle est à jour.
 
 ## Visites
 
-Relevé du jour ajouté (`relever_visites.py`, absent avant ce matin) :
-**2615 visiteurs/pages vues le 10/09**, en progression régulière depuis une
-semaine (2519 → 2529 → 2552 → 2573 → 2598 → 2615, soit +4 % sur 5 jours,
-une croissance lente et continue plutôt qu'un pic). Le compteur global ne
-détaille ni pays ni source d'entrée pour cette passe : aucune répartition
-géographique ni provenance (Instagram/Google) n'a été consultée aujourd'hui
-faute de temps dédié à l'analyse fine — à ne pas inventer, à reprendre à la
-prochaine passe si utile.
+**2631 visiteurs/pages vues le 11/09**, en progression continue et lente
+depuis une semaine (2511 → 2519 → 2529 → 2552 → 2573 → 2598 → 2615 → 2631,
+soit +4,8 % sur 7 jours). Le compteur global ne détaille ni pays ni source
+d'entrée pour cette passe ; aucune analyse fine (répartition géographique,
+provenance Instagram/Google) faite aujourd'hui faute de temps dédié — à
+reprendre à une prochaine passe si utile, sans inventer de chiffre.
 
 ## Ce qui n'a pas été fait aujourd'hui, à reprendre
 
 - Pas de recherche de nouveaux événements ni d'élargissement de couverture
-  (Riviera d'Athènes, Lac de Côme, etc.) : la priorité du jour (condensation
-  + garde-fou vie privée) a occupé le temps disponible, et le backlog `iv`
-  étant désormais quasi soldé, la prochaine passe peut revenir à la
-  recherche/l'élargissement de couverture ou aux guides d'accès sans
-  urgence de rattrapage.
-- Pas de test hebdomadaire complet des liens (réservé au lundi ; nous
-  sommes jeudi) — seul le test à 7 jours a été fait, conforme à la doctrine.
+  géographique (destinations de la carte à conquérir) : la vérification
+  de l'état des lieux (condensation, LOI DU SITE, couverture) a montré
+  que le site est déjà sain sur tous les fronts prioritaires connus ; le
+  temps a été mis sur l'entretien (purge, liens, registre de doutes)
+  plutôt que sur l'ajout, ce qui est conforme à la consigne « au moindre
+  doute, ne pas ajouter » plutôt que d'ajouter du contenu sous pression de
+  temps.
+- Registre `a-reverifier.md` : les 4 doutes encore présents sur le site
+  n'ont pas été retranchés faute de recherche dédiée aujourd'hui — aucun
+  n'est urgent (marge de 2-3 semaines avant leur `d2` estimé).
 - Aucune nouvelle leçon à ajouter à `lessons.md` : rien d'inattendu
-  rencontré aujourd'hui, la méthode de condensation du 20/08-02/09 a
-  fonctionné sans incident sur les 7 candidats restants.
+  aujourd'hui, si ce n'est la confirmation que le backlog de condensation
+  annoncé par une consigne figée peut être périmé — déjà couvert par la
+  discipline existante (toujours revérifier l'état réel plutôt que suivre
+  un chiffre daté sans le recroiser).

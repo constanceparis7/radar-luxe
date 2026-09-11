@@ -74,3 +74,4 @@
 {"ts":"2026-09-08T04:05:25Z","url":"https://constanceparis7.com/","http":"200","date_present":"yes","live_count":"383","expected_count":"383","expected_date":"8 septembre 2026 (ou 7 septembre 2026)","ok":"yes"}
 {"ts":"2026-09-08T04:11:48Z","url":"https://constanceparis7.com/","http":"200","date_present":"yes","live_count":"383","expected_count":"383","expected_date":"8 septembre 2026 (ou 7 septembre 2026)","ok":"yes"}
 {"ts":"2026-09-08T04:27:03Z","url":"https://constanceparis7.com/","http":"200","date_present":"yes","live_count":"384","expected_count":"384","expected_date":"8 septembre 2026 (ou 7 septembre 2026)","ok":"yes"}
+{"ts":"2026-09-11T04:09:08Z","url":"https://constanceparis7.com/","http":"200","date_present":"yes","live_count":"374","expected_count":"374","expected_date":"11 septembre 2026 (ou 10 septembre 2026)","ok":"yes"}
