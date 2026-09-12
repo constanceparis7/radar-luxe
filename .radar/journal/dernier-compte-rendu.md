@@ -57,22 +57,34 @@ faits réels pour gagner des caractères.
   à la consigne « au moindre doute, ne pas ajouter » : rien ajouté plutôt
   qu'une fiche fragile.
 
-## Chantier engagé : traduction de `/note.html` (12 langues)
+## Chantier soldé : traduction de `/note.html` (12 langues)
 
 Chantier identifié dans `CHANTIERS.md` comme reste ouvert depuis le 27/08
 (« /note.html : reste à traduire »). Constat : la page n'existait qu'en
 français, `gen_pages.py` ne la générait jamais pour les 12 autres langues.
-Corrigé :
+Traité de bout en bout aujourd'hui :
 - 22 clés de texte ajoutées au dictionnaire éditorial (`PFR` dans
-  `gen_pages.py`) et à `pages-i18n.json` ;
+  `gen_pages.py`) et traduites dans les 12 langues via un agent dédié ;
+- traductions injectées programmatiquement dans `pages-i18n.json` (jamais
+  retapées à la main, conformément à la leçon du 04/09 sur la corruption des
+  scripts non latins) ; contrôle mécanique après injection : jetons
+  `{{MEM}}`/`{{METHOD}}` bien substitués par les liens localisés, balises
+  `<b>` bien réintégrées (l'agent les avait rendues échappées en
+  `&lt;b&gt;`, corrigé par script avant écriture) ;
 - `gen_pages.py` génère désormais `/<lang>/note.html` pour les 13 langues,
-  vitrine des 3 meilleures notes du moment localisée (nom d'événement et lien
-  dans la langue de la page) ;
-- traductions en cours via agent dédié au moment de la publication de ce
-  compte rendu — si non arrivées à temps, les 12 pages existent déjà et
-  s'affichent correctement en français par repli (comportement normal du
-  site en cas de traduction manquante), sans régression ; à compléter dans
-  la même journée ou la suivante dès réception.
+  vitrine des 3 meilleures notes du moment localisée (nom d'événement et
+  lien dans la langue de la page) ;
+- vérifié en direct sur le HTML publié (GitHub, contenu brut) : anglais,
+  arabe (RTL), chinois et hindi s'affichent chacun dans leur langue, aucun
+  jeton résiduel. Le domaine public a mis quelques minutes à rafraîchir son
+  cache CDN (normal, sans action requise).
+- `validate.py` : toujours 0 blocker après le chantier.
+
+Ce chantier était la dernière ligne visible du plan du 29/07 encore ouverte
+(traductions, automne, guides, séjours/invitations) : les quatre volets sont
+désormais couverts. Prochaine chose à surveiller : dérive dans les 12
+traductions ; aucun humain ne les a encore relues (chantier 09 de
+`CHANTIERS.md`).
 
 ## LOI DU SITE
 
@@ -117,8 +129,6 @@ utile, juste avant l'événement.
 
 ## Ce qui n'a pas été fait aujourd'hui, à reprendre
 
-- Traductions `/note.html` : à vérifier/compléter si l'agent de traduction
-  n'a pas rendu à temps pour cette publication (voir section dédiée).
 - Registre `a-reverifier.md` : les 2 doutes encore vivants (Bagni Fiore/
   Langosteria Paraggi, d2 estimé 30/09 ; terrasses des palaces parisiens,
   d2 estimé 04/10) n'ont pas été retranchés — marge de 2-3 semaines, pas

@@ -1012,3 +1012,18 @@ manifestement technique (JSON/JS minifié) — chercher en plus une confirmation
 (nom de l'événement, ville, dates) dans le même corps avant de conclure. La règle du 18/08 reste
 vraie dans l'autre sens : l'absence de la chaîne recherchée ne suffit pas non plus à conclure —
 c'est la présence CROISÉE (positif du sujet + absence de négation claire en contexte) qui tranche.
+
+## 12/09/2026 — un agent de traduction rend des balises HTML échappées
+En traduisant les 22 clés de `/note.html` (dont 4 contiennent des balises `<b>...</b>` à
+préserver littéralement), l'agent a rendu dans son JSON `&lt;b&gt;`/`&lt;/b&gt;` au lieu de
+`<b>`/`</b>` — probablement un réflexe de sécurité du modèle de traduction face à du HTML brut
+dans une consigne. Si injecté tel quel dans `pages-i18n.json`, ces clés s'affichent SANS
+esc() dans `gen_pages.py` (comme le français, qui contient du HTML brut) : le résultat aurait
+montré littéralement « &lt;b&gt; » à l'écran au lieu de mettre le texte en gras, dans les
+12 langues.
+Détecté avant publication par un contrôle mécanique (assert sur la présence de `<b>`/`</b>`
+et l'absence de `&lt;`/`&gt;` après une passe `.replace()` de correction), pas par relecture.
+RÈGLE : quand un agent de traduction doit préserver des balises HTML littérales dans son
+rendu JSON, toujours vérifier après coup qu'elles n'ont pas été échappées — et écrire le
+contrôle mécanique (regex/assert) avant l'injection plutôt que de faire confiance au rendu
+brut de l'agent, même quand la consigne demandait explicitement de les garder intactes.
