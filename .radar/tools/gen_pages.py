@@ -377,6 +377,28 @@ def main():
      "mo_vienne-la-saison-des-bals_h1": "Vienne, la saison des bals",
      "mo_vienne-la-saison-des-bals_desc": "Du Concert du Nouvel An au Bal de l'Opéra : l'hiver viennois, ses tirages au sort et ses valses.",
      "mo_vienne-la-saison-des-bals_intro": "Nulle part l'hiver n'est aussi cérémonieux qu'à Vienne : le Concert du Nouvel An ouvre l'année, le Bal des Philharmoniker la poursuit, le Bal de l'Opéra la couronne. Les places s'y gagnent plus qu'elles ne s'achètent : tirages au sort, fenêtres d'inscription, quotas. Le guide des ballots explique la mécanique ; voici les dates.",
+     "bc_note": "La Note",
+     "note_h1": "La Note du radar",
+     "note_desc": "Le barème public de la Note du radar : quatre critères documentés, l'accès, les personnalités, le lieu, la date. On note la porte, pas la fête.",
+     "note_meta": "Chaque événement du radar porte une note sur 100. Voici le barème, publié en entier : ce que la note mesure, et ce qu'elle ne prétend pas mesurer.",
+     "note_p1": "Un restaurant a ses étoiles, un palace a son classement. Les événements n'avaient rien : la Note du radar comble ce vide. Elle mesure l'engouement autour d'un événement : la difficulté d'y entrer, qui s'y montre, où il se tient, et à quel point c'est maintenant.",
+     "note_sub1": "On note la porte, pas la fête",
+     "note_p2": "La Note ne juge pas si une soirée fut réussie : personne ne peut le savoir sans y avoir été, et le radar ne prétend jamais savoir ce qu'il n'a pas vérifié. Elle mesure ce qui se documente : ce qu'un événement exige, publie et promet. C'est le principe des agences de notation : lire les faits. Le ressenti, lui, n'entre pas dans la formule.",
+     "note_sub2": "Quatre critères, des poids assumés",
+     "note_c1": "<b>L'exclusivité de l'accès (poids 4).</b> Billetterie ouverte à tous, invitation seule, liste tenue par la maison : la sélection à l'entrée, les prix publiés, la jauge.",
+     "note_c2": "<b>Les personnalités attendues (poids 3).</b> Qui vient, qui organise, qui parraine, d'après les éditions précédentes documentées.",
+     "note_c3": "<b>Le lieu (poids 2).</b> Un palace centenaire, un hôtel particulier fermé au public, une plage privatisée : le standing d'un lieu est un fait.",
+     "note_c4": "<b>La proximité de la date (poids 1).</b> Un événement en cours vaut le maximum ; un événement lointain attend son heure. Ce critère est recalculé à chaque mise à jour du site : la Note respire avec le calendrier.",
+     "note_p3": "La somme pondérée fait la Note, sur 100. Le Classement Prestige de l'accueil ordonne tous les événements selon cette même note : une seule formule, du haut en bas du site.",
+     "note_sub3": "Les diamants",
+     "note_p4": "La note se lit aussi en diamants : ✦✦✦✦✦ à partir de 88, ✦✦✦✦ à partir de 76, ✦✦✦ à partir de 62, ✦✦ à partir de 48, ✦ en dessous.",
+     "note_sub4": "Aujourd'hui sur le radar",
+     "note_count_suffix": " événements notés. Les plus hautes notes du moment :",
+     "note_sub5": "Ce que la Note apprendra encore",
+     "note_p6": "{{MEM}} consigne les fenêtres de réservation et les épuisements constatés. « Complet en deux heures » est une mesure d'engouement qu'aucune formule ne remplace : d'année en année, ces relevés viendront affiner le critère d'accès. Et lorsque la rédaction franchit elle-même les portes, la fiche portera la mention « vécu et vérifié sur place ».",
+     "note_mem_link": "La Mémoire du radar",
+     "note_p7": "La façon dont chaque information est vérifiée est publiée : c'est la {{METHOD}}.",
+     "note_method_link": "méthode",
      "ville_paris": "Paris", "ville_londres": "Londres", "ville_monaco": "Monaco",
      "ville_sttropez": "Saint-Tropez & Pampelonne", "ville_riviera": "Riviera italienne & Sardaigne",
      "ville_ibiza": "Ibiza & Baléares", "ville_mykonos": "Mykonos", "ville_miami": "Miami",
@@ -1242,38 +1264,42 @@ L'éditrice n'exerce aucun contrôle sur ces sites et décline toute responsabil
         return d2 >= date.fromisoformat(TODAY) and (d2 - d1).days <= 90
     vitrine = [(nr, e) for nr, e in notes if _evenement_date(e)][:3]
     if notes:
-        corps = ["<div class=\"bc\"><a href=\"/\">Radar</a> · La Note</div>",
-                 "<h1>La Note du radar</h1>",
-                 "<p class=\"meta\">Chaque événement du radar porte une note sur 100. Voici le barème, publié en entier : ce que la note mesure, et ce qu'elle ne prétend pas mesurer.</p>",
-                 "<p>Un restaurant a ses étoiles, un palace a son classement. Les événements n'avaient rien : la Note du radar comble ce vide. Elle mesure l'engouement autour d'un événement : la difficulté d'y entrer, qui s'y montre, où il se tient, et à quel point c'est maintenant.</p>",
-                 "<h2 class=\"sub\">On note la porte, pas la fête</h2>",
-                 "<p>La Note ne juge pas si une soirée fut réussie : personne ne peut le savoir sans y avoir été, et le radar ne prétend jamais savoir ce qu'il n'a pas vérifié. Elle mesure ce qui se documente : ce qu'un événement exige, publie et promet. C'est le principe des agences de notation : lire les faits. Le ressenti, lui, n'entre pas dans la formule.</p>",
-                 "<h2 class=\"sub\">Quatre critères, des poids assumés</h2>",
-                 "<ul>",
-                 "<li><b>L'exclusivité de l'accès (poids 4).</b> Billetterie ouverte à tous, invitation seule, liste tenue par la maison : la sélection à l'entrée, les prix publiés, la jauge.</li>",
-                 "<li><b>Les personnalités attendues (poids 3).</b> Qui vient, qui organise, qui parraine, d'après les éditions précédentes documentées.</li>",
-                 "<li><b>Le lieu (poids 2).</b> Un palace centenaire, un hôtel particulier fermé au public, une plage privatisée : le standing d'un lieu est un fait.</li>",
-                 "<li><b>La proximité de la date (poids 1).</b> Un événement en cours vaut le maximum ; un événement lointain attend son heure. Ce critère est recalculé à chaque mise à jour du site : la Note respire avec le calendrier.</li>",
-                 "</ul>",
-                 "<p>La somme pondérée fait la Note, sur 100. Le Classement Prestige de l'accueil ordonne tous les événements selon cette même note : une seule formule, du haut en bas du site.</p>",
-                 "<h2 class=\"sub\">Les diamants</h2>",
-                 "<p>La note se lit aussi en diamants : ✦✦✦✦✦ à partir de 88, ✦✦✦✦ à partir de 76, ✦✦✦ à partir de 62, ✦✦ à partir de 48, ✦ en dessous.</p>",
-                 f"<h2 class=\"sub\">Aujourd'hui sur le radar</h2>",
-                 f"<p>{len(notes)} événements notés. Les plus hautes notes du moment :</p>",
-                 "<ul class=\"cards\">"]
-        for nr, e in vitrine:
-            corps.append(f"<li><div class=\"d\">{diamants(nr)} {nr}/100</div>"
-                         f"<a class=\"t\" href=\"{u_event(e,'fr')}\">{esc(e.get('n',''))}</a></li>")
-        corps.append("</ul>")
-        corps.append("<h2 class=\"sub\">Ce que la Note apprendra encore</h2>")
-        corps.append("<p>La <a href=\"/changements.html\">Mémoire du radar</a> consigne les fenêtres de réservation et les épuisements constatés. « Complet en deux heures » est une mesure d'engouement qu'aucune formule ne remplace : d'année en année, ces relevés viendront affiner le critère d'accès. Et lorsque la rédaction franchit elle-même les portes, la fiche portera la mention « vécu et vérifié sur place ».</p>")
-        corps.append("<p class=\"meta\">La façon dont chaque information est vérifiée est publiée : c'est la <a href=\"/methode.html\">méthode</a>.</p>")
-        corps.append("<div class=\"chips\"><a href=\"/\">← Retour au radar</a><a href=\"/methode.html\">La méthode</a><a href=\"/changements.html\">La mémoire</a></div>")
-        write("/note.html", page("fr", titre_seo("/note.html", "fr", "La Note du radar · ConstanceParis7"),
-              "Le barème public de la Note du radar : quatre critères documentés, l'accès, les personnalités, le lieu, la date. On note la porte, pas la fête.",
-              "/note.html", "".join(corps),
-              '<link rel="alternate" hreflang="fr" href="%s/note.html">' % BASE))
-        sitemap_urls.append(f"{BASE}/note.html")
+        for lang in LANGS:
+            corps = [f"<div class=\"bc\"><a href=\"{prefix(lang)}/\">{esc(UI['radar'][lang])}</a> · {esc(X(lang,'bc_note'))}</div>",
+                     f"<h1>{esc(X(lang,'note_h1'))}</h1>",
+                     f"<p class=\"meta\">{esc(X(lang,'note_meta'))}</p>",
+                     f"<p>{esc(X(lang,'note_p1'))}</p>",
+                     f"<h2 class=\"sub\">{esc(X(lang,'note_sub1'))}</h2>",
+                     f"<p>{esc(X(lang,'note_p2'))}</p>",
+                     f"<h2 class=\"sub\">{esc(X(lang,'note_sub2'))}</h2>",
+                     "<ul>",
+                     f"<li>{X(lang,'note_c1')}</li>",
+                     f"<li>{X(lang,'note_c2')}</li>",
+                     f"<li>{X(lang,'note_c3')}</li>",
+                     f"<li>{X(lang,'note_c4')}</li>",
+                     "</ul>",
+                     f"<p>{esc(X(lang,'note_p3'))}</p>",
+                     f"<h2 class=\"sub\">{esc(X(lang,'note_sub3'))}</h2>",
+                     f"<p>{esc(X(lang,'note_p4'))}</p>",
+                     f"<h2 class=\"sub\">{esc(X(lang,'note_sub4'))}</h2>",
+                     f"<p>{len(notes)}{esc(X(lang,'note_count_suffix'))}</p>",
+                     "<ul class=\"cards\">"]
+            for nr, e in vitrine:
+                corps.append(f"<li><div class=\"d\">{diamants(nr)} {nr}/100</div>"
+                             f"<a class=\"t\" href=\"{u_event(e,lang)}\">{esc(T(e,lang,'n'))}</a></li>")
+            corps.append("</ul>")
+            corps.append(f"<h2 class=\"sub\">{esc(X(lang,'note_sub5'))}</h2>")
+            mem_link = f"<a href=\"{prefix(lang)}/changements.html\">{esc(X(lang,'note_mem_link'))}</a>"
+            corps.append(f"<p>{esc(X(lang,'note_p6')).replace('{{MEM}}', mem_link)}</p>")
+            meth_link = f"<a href=\"{prefix(lang)}/methode.html\">{esc(X(lang,'note_method_link'))}</a>"
+            corps.append(f"<p class=\"meta\">{esc(X(lang,'note_p7')).replace('{{METHOD}}', meth_link)}</p>")
+            corps.append(f"<div class=\"chips\"><a href=\"{prefix(lang)}/\">← {esc(X(lang,'retour'))}</a>"
+                         f"<a href=\"{prefix(lang)}/methode.html\">{esc(X(lang,'m_h1'))}</a>"
+                         f"<a href=\"{prefix(lang)}/changements.html\">{esc(X(lang,'bc_memoire'))}</a></div>")
+            chemin = "/note.html"
+            write(prefix(lang) + chemin, page(lang, titre_seo(chemin, lang, f"{X(lang,'note_h1')} · ConstanceParis7"), X(lang, "note_desc"),
+                  prefix(lang) + chemin, "".join(corps), hl_page(chemin)))
+            sitemap_urls.append(f"{BASE}{prefix(lang)}{chemin}")
 
     # --- le Moteur de réponse (institution du 11/09/2026) : « Où voulez-vous
     # entrer ? ». Personne au monde ne répond à cette question ; le radar la
