@@ -1,139 +1,133 @@
-# Compte rendu — passe du 11/09/2026
+# Compte rendu — passe du 12/09/2026
 
-Cadence : dernier run journalisé il y a 71 h (> seuil de 30 h) → passe de
-RATTRAPAGE. Aucune trace d'anomalie particulière dans le dépôt (pas de
-`DEMARRAGE` sans `FIN` la veille) ; simple absence de déclenchement le 10/09
-au soir ou dans la nuit, traitée normalement.
+Cadence : dernier run journalisé la veille (11/09), pas de rattrapage nécessaire.
 
-## Priorité annoncée par la consigne (condensation `iv`) — vérifiée, déjà résorbée
+## Priorité annoncée par la consigne (condensation `iv`) — vérifiée, toujours résorbée
 
-La consigne de ce jour redemandait de condenser 15-20 fiches sur un backlog
-« 255 fiches, 159 en fenêtre live » daté du 19/08. Ce chiffre est **périmé** :
-le compte rendu du 10/09 avait déjà ramené ce backlog à 7 candidats au seuil
-WARN de `validate.py` (≥1200 car.), tous relus intégralement et classés
-légitimement denses (beaucoup de contacts/tarifs réels, pas un journal
-d'enquête). Vérifications faites aujourd'hui avant de conclure à rien
-condenser :
-- Les 7 candidats au seuil WARN sont **exactement les mêmes 7 fiches** que
-  le 10/09 (mêmes noms, longueurs quasi identiques) — aucune nouvelle
-  dérive n'est apparue depuis.
-- Balayage de l'ensemble des 374 fiches à la recherche des tournures
-  d'enquêteur bannies (« OUI, une voie existe, mais… », « CE QUE LA MAISON
-  MET RÉELLEMENT À DISPOSITION », etc.) : **0 occurrence** ailleurs que les
-  mentions légitimes du badge « vérifié le JJ/MM/AAAA ».
-Conclusion : le backlog de condensation annoncé par la consigne est déjà
-soldé depuis le 10/09 ; forcer une condensation sur les 7 fiches restantes
-aurait supprimé des faits réels pour gagner des caractères, contraire à la
-règle « garder le fait, jamais l'inverse ». Rien touché sur ce chantier
-aujourd'hui, à raison.
+La consigne du jour redemandait de condenser 15-20 fiches sur un backlog « 255
+fiches, 159 en fenêtre live » daté du 19/08. Ce chiffre reste **périmé**,
+confirmé une nouvelle fois : `validate.py` ne signale plus que 1 fiche `iv.g`
+et 7 fiches `iv.w` au-delà du seuil WARN de 1200 caractères — les mêmes
+qu'au 10-11/09, toutes déjà relues et classées légitimement denses (beaucoup
+de contacts et de tarifs réels, pas un journal d'enquête). Rien touché sur ce
+chantier aujourd'hui, à raison : forcer une condensation aurait supprimé des
+faits réels pour gagner des caractères.
 
 ## Entretien du jour
 
-- **Zombies purgés** : 5 fiches à `d2=2026-08-11` (exactement 31 jours,
-  seuil franchi ce jour) — Les Grimaldines, Les Nuits du Château de la
-  Moutte, Yerai Cortés (Fondation Maeght), Ravello Festival Concerto
-  all'alba, Monte-Carlo Summer Festival (dîner-spectacle Lisa Stansfield).
-  379 → 374 événements.
-- **Liens à 7 jours** : 26 URL testées (événements démarrant ou finissant
-  dans les 7 prochains jours), `curl -sL` avec vérification du corps.
-  0 « page introuvable » confirmée. Détail :
-  - 4 blocages anti-robot connus (403) : Espace Louis Vuitton Tokyo, rooftop
-    Peninsula Paris, US Open Fan Week, CSIO League of Nations — pas une
-    preuve d'absence.
-  - 1 signal « suspect404 » sur `sailgp.com/` (chaîne « This page could not
-    be found » présente) — cas déjà documenté le 08/09/2026 : c'est le
-    composant générique `notFound` du bundle Next.js, la page réelle
-    contient bien « September 12-13 — ROCKWOOL France Sail Grand Prix |
-    Saint-Tropez ». Aucune action.
-  - 2 échecs de connexion (code 000) : `twigafortedeimarmi.com` et
-    `lacapanninadifranceschi.com`. Domaine témoin neutre (wikipedia.org)
-    testé en parallèle : OK. Ce n'est donc pas un blocage général de la
-    session (contrairement aux 12-13/08 et 19/08), mais un incident
-    limité à ces deux hôtes italiens (le journal du proxy montre des
-    échecs de tunnel TLS sur `lacapanninadifranceschi.com` dès 04h04 UTC
-    ce matin). Un seul nouvel essai fait, toujours en échec — conforme à
-    la règle de ne pas s'acharner. Rien changé aux fiches ; à retester à
-    la prochaine passe.
+- **Zombies purgés** : 2 fiches à `d2=2026-08-12` (Festival de Ramatuelle 41e
+  édition, Gala Night Hotel Cala di Volpe). 374 → 372 événements.
+- **Bandeau « Ouvertures & délais »** : 1 entrée périmée retirée
+  (L'École des Arts Joailliers, `data-exp=2026-09-10`). 3 entrées actives
+  restantes (Journées Particulières LVMH, Grand Prix de Monaco 2027, Royal
+  Ascot 2027).
+- **Liens à 7 jours** : 120 URL testées (les plus imminentes), 0 lien mort.
 - **Mémoire du radar** (`memoire.py changements`) : 0 changement de date
   détecté sur 7 jours.
-- **Registre `a-reverifier.md`** : relu. Sur les 17 doutes encore ouverts
-  (dates de fin de saison estimées, datés du 20-25/08), 12 fiches sont
-  déjà purgées (le doute est devenu sans objet) ; il n'en reste que 4
-  présentes, dont 2 hors fenêtre live (déjà passées, purge automatique
-  dans les prochaines semaines) et 2 encore vivantes avec une marge
-  confortable avant leur `d2` estimé (Bagni Fiore Paraggi/Langosteria,
-  30/09 ; terrasses des palaces parisiens, 04/10) — pas d'urgence à les
-  retrancher aujourd'hui, laissées en l'état pour une prochaine passe avec
-  plus de temps dédié à la re-vérification à la source.
+- **Correction factuelle, fiche Melbourne Cup / Birdcage (Flemington)** :
+  un contrôle adversarial dédié (pas une recherche de nouveauté — la fiche
+  existait déjà, complète, née le 24/08) a trouvé une dérive de deux ans sur
+  la liste des marques du Birdcage citée dans `iv.o` : « Penfolds » a quitté
+  le partenariat vin du VRC mi-2025 (remplacé par De Bortoli Wines, contrat
+  de 3 ans) et le naming du Derby Day est passé de « Penfolds Victoria Derby
+  Day » à « Howden Victoria Derby Day » ; « Myer » et « Emirates » n'apparaissent
+  plus dans les annonces officielles VRC du Birdcage 2024-2026. Corrigé en
+  français (liste ramenée aux marques confirmées : Lexus, Crown, G.H. Mumm ;
+  prix du Rails Pedestrian Pass ajouté : 150 AUD). Le tarif du marquee
+  (1895 AUD) était exact mais ambigu : précisé qu'il s'agit du seul Cup Day,
+  les 3 autres journées du Carnival étant moins chères (Howden Victoria Derby
+  Day 895 AUD, Oaks Day 795 AUD, Stakes Day 525 AUD). Les traductions
+  `iv_o`/`iv_w` des 12 langues, devenues obsolètes par cette correction, ont
+  été retirées (repli sur le français, exact) plutôt que laissées à décrire
+  des marques parties — à retraduire à une prochaine passe. Date, contact
+  billetterie/adhésion et séjour (Crown Towers Melbourne, Park Hyatt
+  Melbourne, Vue de Monde, Attica) confirmés inchangés à la source.
+- **Carte des destinations à conquérir** (doctrine, section Horizon roulant) :
+  vérification systématique par mot-clé sur les 372 fiches. Constat notable :
+  la quasi-totalité des destinations listées par la doctrine sont déjà
+  couvertes par une fiche réelle et vérifiée (Sotogrande, Megève, Kitzbühel,
+  Rio/Copacabana, Buenos Aires/Palermo, AlUla, Hong Kong, Bali, Mumbai,
+  Maldives, Mustique, Las Vegas F1, Miami, Côme, Taormina, Porto Heli,
+  Dubrovnik, Vienne...). Restent sans fiche : Aspen, Comporta/Melides,
+  Udaipur, Harbour Island, Casa de Campo, Spetses. Recherche faite sur
+  chacune pour un événement daté d'ici mi-décembre digne du site : rien de
+  calibre ADN Riviera trouvé avec une porte d'entrée publiée et non privée
+  (Aspen : galas déjà passés ou hors saison ; Spetses : régate classique en
+  juin, hors saison ; les autres : rien de daté et billeté trouvé). Conforme
+  à la consigne « au moindre doute, ne pas ajouter » : rien ajouté plutôt
+  qu'une fiche fragile.
+
+## Chantier engagé : traduction de `/note.html` (12 langues)
+
+Chantier identifié dans `CHANTIERS.md` comme reste ouvert depuis le 27/08
+(« /note.html : reste à traduire »). Constat : la page n'existait qu'en
+français, `gen_pages.py` ne la générait jamais pour les 12 autres langues.
+Corrigé :
+- 22 clés de texte ajoutées au dictionnaire éditorial (`PFR` dans
+  `gen_pages.py`) et à `pages-i18n.json` ;
+- `gen_pages.py` génère désormais `/<lang>/note.html` pour les 13 langues,
+  vitrine des 3 meilleures notes du moment localisée (nom d'événement et lien
+  dans la langue de la page) ;
+- traductions en cours via agent dédié au moment de la publication de ce
+  compte rendu — si non arrivées à temps, les 12 pages existent déjà et
+  s'affichent correctement en français par repli (comportement normal du
+  site en cas de traduction manquante), sans régression ; à compléter dans
+  la même journée ou la suivante dès réception.
 
 ## LOI DU SITE
 
-`reste.py` sur `index-full.html` reconstruit : 374/374 traductions,
-361/374 séjours, 371/374 invitations au global — recompté en croisant avec
-la fenêtre live (auj.→+90j, 187 fiches) : **0 séjour et 0 invitation
-manquants**. Les manquants globaux sont tous des événements déjà passés
-(conservés 30 jours avant purge). **LOI DU SITE honorée à 100 % sur ce
-qu'un visiteur voit réellement aujourd'hui.**
-
-## Couverture — vérification des priorités historiques de la doctrine
-
-Trois chantiers marqués comme prioritaires par des sections plus anciennes
-de la doctrine ont été recomptés ce jour et sont **résorbés** :
-- Automne (sept-déc.) : 32 / 29 / 21 / 32 fiches à venir par mois — bien
-  loin du trou d'octobre/novembre constaté fin juillet.
-- Joaillerie en fenêtre live : **14 fiches** (contre 2 le 20/08, seuil
-  cible de 10 dépassé).
-- Guides d'accès (`c=acces`) : **16 fiches** en ligne, dont les six guides
-  annoncés le 24/08 et les POINT D'ENTRÉE antérieurs.
-Aucune action nécessaire sur ces trois fronts aujourd'hui.
+`reste.py` : 372/372 traductions, 361/372 séjours, 369/372 invitations au
+global — croisé avec la fenêtre live (auj.→+90j, 187 fiches) : **0 séjour et
+0 invitation manquants**. Tous les manquants globaux sont des événements déjà
+passés (conservés 30 jours avant purge). **LOI DU SITE honorée à 100 % sur ce
+qu'un visiteur voit aujourd'hui.**
 
 ## Contrôles
 
-- `validate.py` : **OK — 0 blocker, 4 warning** (1 entrée périmée du
-  bandeau Ouvertures & délais à retirer ; 1 fiche `iv.g` et 7 fiches
-  `iv.w` toujours > 1200 car., toutes légitimement denses, cf. ci-dessus ;
-  bandeau « Été » encore affiché — normal avant l'équinoxe du 22-23/09).
-- `perfcheck.py` : **OK — 0 régression** (poids 0.88 Mo gzip, -0.01 Mo vs
-  dernier point, -5 événements/-3 séjours — purge normale de ce matin).
-- `healthcheck.sh` : **OK** — http=200, date fraîche, 374/374 événements
+- `validate.py` : **OK — 0 blocker, 3 warning(s)** (1 fiche `iv.g` et 7 fiches
+  `iv.w` toujours > 1200 car., stables depuis le 10/09 et légitimement
+  denses ; bandeau « Été » encore affiché — normal avant l'équinoxe du
+  22-23/09).
+- `healthcheck.sh` : **OK** — http=200, date fraîche, 372/372 événements
   servis en ligne, conforme au build publié.
 
 ## Publication
 
-`publier.sh` a régénéré le socle SEO (`gen_seo.py`) et les pages
-indexables (`gen_pages.py`), validé, commité et **poussé directement sur
-`main`** — pas de repli sur branche `claude/*` nécessaire aujourd'hui.
-Eyebrow avancé au 11 septembre 2026.
+`publier.sh` a régénéré le socle SEO et les pages indexables, validé,
+commité et **poussé directement sur `main`** — pas de repli sur branche
+`claude/*` nécessaire aujourd'hui. Deux publications au fil de l'eau :
+purge + bandeau, puis correction Melbourne Cup + infrastructure `/note.html`.
 
-Étape 10 de la doctrine (republier l'artifact Claude) **non tentée** :
-panne connue depuis le 21/08/2026 (« artifact not found »), sans
-conséquence pour le public — constanceparis7.com reste la seule adresse
-qui compte et elle est à jour.
+Étape 10 de la doctrine (republier l'artifact Claude) **non tentée** : panne
+connue depuis le 21/08/2026 (« artifact not found »), sans conséquence pour
+le public.
 
 ## Visites
 
-**2631 visiteurs/pages vues le 11/09**, en progression continue et lente
-depuis une semaine (2511 → 2519 → 2529 → 2552 → 2573 → 2598 → 2615 → 2631,
-soit +4,8 % sur 7 jours). Le compteur global ne détaille ni pays ni source
-d'entrée pour cette passe ; aucune analyse fine (répartition géographique,
-provenance Instagram/Google) faite aujourd'hui faute de temps dédié — à
-reprendre à une prochaine passe si utile, sans inventer de chiffre.
+**2644 visiteurs/pages vues le 12/09**, +13 vs la veille (2631), progression
+lente et continue conforme à la tendance des sept derniers jours (+4,8 %/
+semaine). Aperçu de la semaine (5-12/09, GoatCounter public) : l'accueil
+reste la page la plus vue (46 visites sur la période) mais en repli (-54 %,
+la mise à jour quotidienne du site répartissant le trafic sur plus de
+fiches) ; plus notable, deux pages en forte hausse à la veille de leur
+événement : la page Paris Fashion Week Printemps-Été 2027 (+375 %) et la
+version arabe du SailGP Saint-Tropez, qui se tient précisément aujourd'hui
+et demain (+333 %) — signe que le radar capte du trafic dans la fenêtre
+utile, juste avant l'événement.
 
 ## Ce qui n'a pas été fait aujourd'hui, à reprendre
 
-- Pas de recherche de nouveaux événements ni d'élargissement de couverture
-  géographique (destinations de la carte à conquérir) : la vérification
-  de l'état des lieux (condensation, LOI DU SITE, couverture) a montré
-  que le site est déjà sain sur tous les fronts prioritaires connus ; le
-  temps a été mis sur l'entretien (purge, liens, registre de doutes)
-  plutôt que sur l'ajout, ce qui est conforme à la consigne « au moindre
-  doute, ne pas ajouter » plutôt que d'ajouter du contenu sous pression de
-  temps.
-- Registre `a-reverifier.md` : les 4 doutes encore présents sur le site
-  n'ont pas été retranchés faute de recherche dédiée aujourd'hui — aucun
-  n'est urgent (marge de 2-3 semaines avant leur `d2` estimé).
-- Aucune nouvelle leçon à ajouter à `lessons.md` : rien d'inattendu
-  aujourd'hui, si ce n'est la confirmation que le backlog de condensation
-  annoncé par une consigne figée peut être périmé — déjà couvert par la
-  discipline existante (toujours revérifier l'état réel plutôt que suivre
-  un chiffre daté sans le recroiser).
+- Traductions `/note.html` : à vérifier/compléter si l'agent de traduction
+  n'a pas rendu à temps pour cette publication (voir section dédiée).
+- Registre `a-reverifier.md` : les 2 doutes encore vivants (Bagni Fiore/
+  Langosteria Paraggi, d2 estimé 30/09 ; terrasses des palaces parisiens,
+  d2 estimé 04/10) n'ont pas été retranchés — marge de 2-3 semaines, pas
+  d'urgence. Piste trouvée mais non confirmée à la source primaire : le
+  Plaza Athénée afficherait une saison « mai-septembre » pour sa Cour Jardin
+  et sa Terrasse Montaigne (résumé de recherche, pas une page officielle
+  lue directement) — à vérifier avant de raccourcir quoi que ce soit, le
+  groupe restant sur le plancher du Crillon (04/10) en attendant.
+- Aucune recherche de nouveaux événements hors vérification de la carte des
+  destinations : le temps a été mis sur l'entretien, une correction
+  factuelle vérifiée et le chantier de traduction, conformément à la
+  consigne de ne rien ajouter sous doute.
