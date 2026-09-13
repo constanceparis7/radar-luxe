@@ -403,6 +403,35 @@ CE QUE ÇA PRODUIT :
 - traduction de /note.html à la prochaine vague de pages éditoriales ;
 - « les Sceaux de l'année » en décembre (palmarès annuel des notes).
 
+## LA VAGUE DES IMMINENTS (routine instaurée le 13/09/2026)
+
+Idée de Constance : « faire la même démarche avant chaque gros événement
+mondial ». Surfer la vague de recherche qui précède un grand rendez-vous.
+
+TROIS ÉTAGES, les deux premiers entièrement automatiques :
+1. SITEMAP : tout événement à moins de 21 jours passe en priorité 0.9 et
+   changefreq daily (gen_pages, jeu `imminents`). Aucune action requise.
+2. PAGES DE DESTINATION : pilotées par `.radar/pages-imminentes.json`.
+   Une entrée = une page requête générée par gen_pages (compte à rebours
+   J-x recalculé à chaque passe, Note, accès repris de la fiche ou des
+   Questions liées, schema Event). La page sort du sitemap d'elle-même
+   quand d2 est passée. Champs : page, evenement (nom EXACT de fiche),
+   h1, titre (forme requête : « X 2026 : dates, accès »), desc,
+   questions (slugs), fiches_liees, moment(+_titre), autres(+_titre),
+   organisateur, ajoutee_le.
+3. ROUTINE HEBDOMADAIRE (tâche planifiée vague-des-imminents, lundi
+   7h30) : détecter les candidats et remplir le registre + le bandeau.
+
+CRITÈRES D'UN « GROS ÉVÉNEMENT MONDIAL » : Note du radar >= 85, durée
+<= 30 jours, d1 entre J+7 et J+28, notoriété du nom (test du nom qui
+claque). En cas de doute, s'abstenir : pertinent ou rien.
+
+RÈGLES DE LA PAGE : contenus repris UNIQUEMENT des fiches et Questions
+vérifiées, jamais de fait nouveau sans vérification à la source ; titre
+en forme de requête ; zéro tiret long. Entrée du bandeau Ouvertures avec
+data-exp = d2 (auto-expirante). Après ajout : pipeline complet, validate
+(FAIL = ne pas pousser), push, contrôle live.
+
 ## LE PROTOCOLE (institution du 27/08/2026)
 
 Le troisième pilier, validé par Constance (« tu peux faire le protocole ») :

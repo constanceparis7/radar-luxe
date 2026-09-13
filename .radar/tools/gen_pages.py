@@ -1444,62 +1444,81 @@ document.querySelectorAll('.ex').forEach(function(a){a.addEventListener('click',
         sitemap_urls.append(f"{BASE}/questions.html")
 
     # --- pages de destination des événements imminents (13/09/2026) : surfer
-    # la vague de recherche qui précède un rendez-vous mondial. Première :
-    # la Paris Fashion Week. Composée de contenus déjà vérifiés (fiches,
-    # questions, protocole), compte à rebours recalculé à chaque passe.
-    pfw = par_nom.get("Paris Fashion Week, Prêt-à-porter Printemps-Été 2027")
-    pfw_inv = next((e for e in pages if e.get("n", "").startswith("Fashion Week Paris, invitations")), None)
+    # la vague de recherche qui précède un grand rendez-vous. Pilotées par le
+    # registre .radar/pages-imminentes.json (routine hebdomadaire) : une
+    # entrée = une page requête, composée UNIQUEMENT de contenus déjà
+    # vérifiés (fiche, Questions), compte à rebours recalculé à chaque passe.
+    try:
+        with open(os.path.join(_RAD, "pages-imminentes.json"), encoding="utf-8") as _f:
+            IMM = json.load(_f)
+    except Exception:
+        IMM = []
     q_par_slug = {q["slug"]: q for q in QST}
-    if pfw:
-        _j = (date.fromisoformat(str(pfw.get("d1"))) - date.fromisoformat(TODAY)).days
-        compte = f"J-{_j}" if _j > 0 else ("En ce moment" if str(pfw.get("d2","")) >= TODAY else "Édition passée")
-        nr = note_radar(pfw)
-        corps = ["<div class=\"bc\"><a href=\"/\">Radar</a> · Paris Fashion Week</div>",
-                 "<h1>Paris Fashion Week</h1>",
-                 f"<div class=\"meta\"><b>{esc(pfw.get('dt') or '')}</b></div>"]
-        if _j > 0:
-            corps.append(f"<div class=\"bc\">{esc(compte)}</div>")
+    for im in IMM:
+        e = par_nom.get(im.get("evenement", ""))
+        if not e:
+            print(f"gen_pages: AVERTISSEMENT page imminente sans fiche : {im.get('evenement')}")
+            continue
+        try:
+            _j = (date.fromisoformat(str(e.get("d1"))) - date.fromisoformat(TODAY)).days
+        except (TypeError, ValueError):
+            continue
+        if str(e.get("d2", "")) < TODAY:
+            continue  # édition passée : la page sort du sitemap d'elle-même
+        compte = f"J-{_j}" if _j > 0 else "En ce moment"
+        nr = note_radar(e)
+        h1 = im.get("h1") or e.get("n", "")
+        corps = [f"<div class=\"bc\"><a href=\"/\">Radar</a> · {esc(h1)}</div>",
+                 f"<h1>{esc(h1)}</h1>",
+                 f"<div class=\"meta\"><b>{esc(e.get('dt') or '')}</b></div>",
+                 f"<div class=\"bc\">{esc(compte)}</div>"]
         if nr is not None:
             corps.append(f"<div class=\"bc\"><a href=\"/note.html\">{diamants(nr)} Note du radar : {nr}/100</a></div>")
-        qa = q_par_slug.get("comment-assister-a-la-fashion-week-de-paris")
-        qi = q_par_slug.get("comment-obtenir-une-invitation-a-un-defile")
-        if qa:
+        qs = [q_par_slug[s] for s in im.get("questions", []) if s in q_par_slug]
+        if qs:
+            qa = qs[0]
             corps.append(f"<div class=\"box\"><h2>Comment y assister</h2><p><b>{esc(qa['reponse_courte'])}</b></p>"
                          + "".join(f"<p>{esc(par)}</p>" for par in qa["details"].split("\n") if par.strip())
                          + f"<p><a href=\"/q/{qa['slug']}.html\">La réponse complète →</a></p></div>")
-        if qi:
-            corps.append(f"<h2 class=\"sub\">Obtenir une invitation</h2><p>{esc(qi['reponse_courte'])} "
-                         f"<a href=\"/q/{qi['slug']}.html\">Le détail des deux voies →</a></p>")
-        corps.append("<h2 class=\"sub\">Se préparer</h2><div class=\"chips\">"
-                     "<a href=\"/protocole.html\">Le Protocole</a>"
-                     "<a href=\"/vestiaire.html\">Le Vestiaire</a>"
-                     "<a href=\"/moments/octobre-a-paris.html\">Octobre à Paris</a></div>")
-        autres = [x for x in ("Milano Fashion Week, Printemps-Été 2027",
-                              "London Fashion Week, Printemps-Été 2027",
-                              "New York Fashion Week, Printemps-Été 2027") if par_nom.get(x)]
+            for qi in qs[1:2]:
+                corps.append(f"<h2 class=\"sub\">{esc(qi['question'])}</h2><p>{esc(qi['reponse_courte'])} "
+                             f"<a href=\"/q/{qi['slug']}.html\">Le détail →</a></p>")
+        else:
+            ivo, ivw = T(e, "fr", "iv_o"), T(e, "fr", "iv_w")
+            acc = ivo or T(e, "fr", "p") or ""
+            if acc:
+                corps.append(f"<div class=\"box\"><h2>Comment y assister</h2><p>{esc(acc[:600])}</p>"
+                             + (f"<p>{esc(ivw[:400])}</p>" if ivw else "")
+                             + f"<p><a href=\"{u_event(e,'fr')}\">La voie d'entrée détaillée →</a></p></div>")
+        prep = ["<a href=\"/protocole.html\">Le Protocole</a>", "<a href=\"/vestiaire.html\">Le Vestiaire</a>"]
+        if im.get("moment"):
+            prep.append(f"<a href=\"{im['moment']}\">{esc(im.get('moment_titre') or 'Le moment de la saison')}</a>")
+        corps.append("<h2 class=\"sub\">Se préparer</h2><div class=\"chips\">" + "".join(prep) + "</div>")
+        autres = [x for x in im.get("autres", []) if par_nom.get(x)]
         if autres:
-            corps.append("<h2 class=\"sub\">Les autres semaines</h2><div class=\"chips\">"
+            corps.append(f"<h2 class=\"sub\">{esc(im.get('autres_titre') or 'À voir aussi')}</h2><div class=\"chips\">"
                          + "".join(f"<a href=\"{u_event(par_nom[x],'fr')}\">{esc(x.split(',')[0])}</a>" for x in autres)
                          + "</div>")
-        corps.append("<h2 class=\"sub\">Sur le radar</h2><div class=\"chips\">"
-                     + f"<a href=\"{u_event(pfw,'fr')}\">La fiche complète de l'édition</a>"
-                     + (f"<a href=\"{u_event(pfw_inv,'fr')}\">Invitations des maisons : le circuit</a>" if pfw_inv else "")
-                     + "</div>")
+        radar = [f"<a href=\"{u_event(e,'fr')}\">La fiche complète de l'édition</a>"]
+        for nom in im.get("fiches_liees", []):
+            f2 = par_nom.get(nom)
+            if f2:
+                radar.append(f"<a href=\"{u_event(f2,'fr')}\">{esc(nom[:64])}</a>")
+        corps.append("<h2 class=\"sub\">Sur le radar</h2><div class=\"chips\">" + "".join(radar) + "</div>")
         corps.append("<div class=\"chips\"><a href=\"/\">← Retour au radar</a><a href=\"/entrer.html\">Où voulez-vous entrer ?</a></div>")
-        ld = {"@context": "https://schema.org", "@type": "Event",
-              "name": "Paris Fashion Week, prêt-à-porter Printemps-Été 2027",
-              "startDate": str(pfw.get("d1")), "endDate": str(pfw.get("d2")),
-              "location": {"@type": "Place", "name": "Paris",
-                           "address": {"@type": "PostalAddress", "addressLocality": "Paris", "addressCountry": "FR"}},
-              "eventStatus": "https://schema.org/EventScheduled",
-              "organizer": {"@type": "Organization", "name": "Fédération de la Haute Couture et de la Mode"}}
-        write("/paris-fashion-week.html", page("fr",
-              "Paris Fashion Week 2026 : dates, accès, invitations · ConstanceParis7",
-              "Du 28 septembre au 6 octobre 2026. Comment assister aux défilés, obtenir une invitation, ce qu'il faut savoir : les réponses vérifiées à la source.",
-              "/paris-fashion-week.html", "".join(corps),
-              '<link rel="alternate" hreflang="fr" href="%s/paris-fashion-week.html">' % BASE, ld=ld))
-        sitemap_urls.append(f"{BASE}/paris-fashion-week.html")
-        imminents.add(f"{BASE}/paris-fashion-week.html")
+        ld = {"@context": "https://schema.org", "@type": "Event", "name": e.get("n", ""),
+              "startDate": str(e.get("d1")), "endDate": str(e.get("d2")),
+              "location": {"@type": "Place", "name": (e.get("v") or "").strip() or h1,
+                           "address": {"@type": "PostalAddress", "addressLocality": (e.get("v") or "").strip()}},
+              "eventStatus": "https://schema.org/EventScheduled"}
+        if im.get("organisateur"):
+            ld["organizer"] = {"@type": "Organization", "name": im["organisateur"]}
+        chemin = im["page"]
+        write(chemin, page("fr", f"{im.get('titre') or h1} · ConstanceParis7",
+              im.get("desc") or (e.get("dt") or ""), chemin, "".join(corps),
+              '<link rel="alternate" hreflang="fr" href="%s%s">' % (BASE, chemin), ld=ld))
+        sitemap_urls.append(f"{BASE}{chemin}")
+        imminents.add(f"{BASE}{chemin}")
 
     # --- sitemap ---
     sm = ['<?xml version="1.0" encoding="UTF-8"?>',

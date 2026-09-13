@@ -1,0 +1,26 @@
+[
+ {
+  "page": "/paris-fashion-week.html",
+  "evenement": "Paris Fashion Week, Prêt-à-porter Printemps-Été 2027",
+  "h1": "Paris Fashion Week",
+  "titre": "Paris Fashion Week 2026 : dates, accès, invitations",
+  "desc": "Du 28 septembre au 6 octobre 2026. Comment assister aux défilés, obtenir une invitation, ce qu'il faut savoir : les réponses vérifiées à la source.",
+  "questions": [
+   "comment-assister-a-la-fashion-week-de-paris",
+   "comment-obtenir-une-invitation-a-un-defile"
+  ],
+  "fiches_liees": [
+   "Fashion Week Paris, invitations des maisons : bureaux de presse & VIC"
+  ],
+  "moment": "/moments/octobre-a-paris.html",
+  "moment_titre": "Octobre à Paris",
+  "autres": [
+   "Milano Fashion Week, Printemps-Été 2027",
+   "London Fashion Week, Printemps-Été 2027",
+   "New York Fashion Week, Printemps-Été 2027"
+  ],
+  "autres_titre": "Les autres semaines",
+  "organisateur": "Fédération de la Haute Couture et de la Mode",
+  "ajoutee_le": "2026-09-13"
+ }
+]
