@@ -424,6 +424,18 @@ def main():
         for _i, _r in enumerate(_t.get("regles") or []):
             PFR[f"pr_{_t['slug']}_r{_i+1}"] = _r["regle"]
 
+    # --- les Questions (institution du 13/09/2026) : répondre à toutes les
+    # questions que les gens posent vraiment, une page par question, la
+    # réponse d'abord. Registre .radar/questions.json (réponses rédigées
+    # depuis les fiches puis contre-vérifiées). FR d'abord, langues ensuite.
+    try:
+        with open(os.path.join(_RAD, "questions.json"), encoding="utf-8") as _f:
+            QST = json.load(_f)
+    except Exception:
+        QST = []
+    THEMES_Q = {"acces": "L'accès", "dress-codes": "Les dress codes",
+                "prix": "Les prix", "fenetres": "Les réservations"}
+
     # --- SEO : titres-requêtes (décision de Constance du 01/09/2026).
     # Les gens ne tapent pas « Le Protocole » dans Google : ils tapent
     # « dress code Royal Ascot » ou « comment enchérir ». Le <title>
@@ -1336,7 +1348,7 @@ L'éditrice n'exerce aucun contrôle sur ces sites et décline toute responsabil
              "<p class=\"meta\" id=\"vide\">Exemples : <a href=\"#\" class=\"ex\">Fashion Week</a> · "
              "<a href=\"#\" class=\"ex\">Monaco</a> · <a href=\"#\" class=\"ex\">joaillerie</a> · "
              "<a href=\"#\" class=\"ex\">bal</a> · <a href=\"#\" class=\"ex\">Venise</a></p>",
-             "<div class=\"chips\"><a href=\"/\">← Retour au radar</a><a href=\"/protocole.html\">Le Protocole</a><a href=\"/vestiaire.html\">Le Vestiaire</a></div>",
+             "<div class=\"chips\"><a href=\"/\">← Retour au radar</a><a href=\"/questions.html\">Les questions</a><a href=\"/protocole.html\">Le Protocole</a><a href=\"/vestiaire.html\">Le Vestiaire</a></div>",
              """<script>
 (function(){
 var IDX=null,q=document.getElementById('q'),res=document.getElementById('res'),vide=document.getElementById('vide');
@@ -1369,6 +1381,60 @@ document.querySelectorAll('.ex').forEach(function(a){a.addEventListener('click',
           "/entrer.html", "".join(corps),
           '<link rel="alternate" hreflang="fr" href="%s/entrer.html">' % BASE))
     sitemap_urls.append(f"{BASE}/entrer.html")
+
+    # --- pages Questions : une question, une réponse, la réponse d'abord ---
+    if QST:
+        par_theme = {}
+        for q in QST:
+            par_theme.setdefault(q.get("theme", "acces"), []).append(q)
+        for q in QST:
+            s = q["slug"]
+            corps = ["<div class=\"bc\"><a href=\"/\">Radar</a> · <a href=\"/questions.html\">Questions</a></div>",
+                     f"<h1>{esc(q['question'])}</h1>",
+                     f"<p class=\"meta\"><b>{esc(q['reponse_courte'])}</b></p>"]
+            for par in [p.strip() for p in q["details"].split("\n") if p.strip()]:
+                corps.append(f"<p>{esc(par)}</p>")
+            puces = []
+            for nom in q.get("fiches", []):
+                e = par_nom.get(nom)
+                if e:
+                    puces.append(f"<a href=\"{u_event(e, 'fr')}\">{esc(nom[:64])}</a>")
+            if puces:
+                corps.append("<h2 class=\"sub\">Sur le radar</h2><div class=\"chips\">" + "".join(puces) + "</div>")
+            freres = [x for x in par_theme.get(q.get("theme"), []) if x["slug"] != s][:4]
+            if freres:
+                corps.append("<h2 class=\"sub\">Questions voisines</h2><div class=\"chips\">"
+                             + "".join(f"<a href=\"/q/{x['slug']}.html\">{esc(x['question'])}</a>" for x in freres)
+                             + "</div>")
+            corps.append("<div class=\"chips\"><a href=\"/questions.html\">← Toutes les questions</a>"
+                         "<a href=\"/entrer.html\">Où voulez-vous entrer ?</a></div>")
+            ld = {"@context": "https://schema.org", "@type": "FAQPage",
+                  "mainEntity": [{"@type": "Question", "name": q["question"],
+                                  "acceptedAnswer": {"@type": "Answer", "text": q["reponse_courte"]}}]}
+            chemin = f"/q/{s}.html"
+            write(chemin, page("fr", f"{q['question']} · ConstanceParis7",
+                  q["reponse_courte"][:155], chemin, "".join(corps),
+                  '<link rel="alternate" hreflang="fr" href="%s%s">' % (BASE, chemin), ld=ld))
+            sitemap_urls.append(f"{BASE}{chemin}")
+
+        corps = ["<div class=\"bc\"><a href=\"/\">Radar</a> · Questions</div>",
+                 "<h1>Les Questions</h1>",
+                 "<p class=\"meta\">Toutes les questions qu'on se pose avant une porte, et leurs réponses, vérifiées à la source. La liste s'allonge chaque semaine.</p>"]
+        for th, titre_th in THEMES_Q.items():
+            qs = par_theme.get(th, [])
+            if not qs:
+                continue
+            corps.append(f"<h2 class=\"sub\">{esc(titre_th)}</h2><ul class=\"cards\">")
+            for x in qs:
+                corps.append(f"<li><a class=\"t\" href=\"/q/{x['slug']}.html\">{esc(x['question'])}</a>"
+                             f"<div>{esc(x['reponse_courte'][:120])}</div></li>")
+            corps.append("</ul>")
+        corps.append("<div class=\"chips\"><a href=\"/\">← Retour au radar</a><a href=\"/entrer.html\">Où voulez-vous entrer ?</a><a href=\"/methode.html\">La méthode</a></div>")
+        write("/questions.html", page("fr", "Les questions de l'accès au luxe · ConstanceParis7",
+              "Comment entrer, comment s'habiller, combien ça coûte, quand réserver : toutes les réponses, vérifiées à la source.",
+              "/questions.html", "".join(corps),
+              '<link rel="alternate" hreflang="fr" href="%s/questions.html">' % BASE))
+        sitemap_urls.append(f"{BASE}/questions.html")
 
     # --- sitemap ---
     sm = ['<?xml version="1.0" encoding="UTF-8"?>',
