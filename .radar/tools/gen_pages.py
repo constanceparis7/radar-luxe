@@ -434,7 +434,46 @@ def main():
     except Exception:
         QST = []
     THEMES_Q = {"acces": "L'accès", "dress-codes": "Les dress codes",
-                "prix": "Les prix", "fenetres": "Les réservations"}
+                "prix": "Les prix", "fenetres": "Les réservations",
+                "glossaire": "Le vocabulaire"}
+    q_par_slug = {q["slug"]: q for q in QST}
+
+    def questions_liees(e):
+        """Maillage interne (14/09/2026) : chaque fiche pointe vers les
+        Questions qui la concernent. Les pages qui se citent se renforcent."""
+        n = e.get("n") or ""
+        s = []
+        if "Fashion Week" in n or e.get("c") == "mode":
+            s += ["comment-assister-a-la-fashion-week-de-paris", "comment-obtenir-une-invitation-a-un-defile"]
+        if "Monaco Yacht Show" in n or "MY Yacht" in n:
+            s += ["combien-coute-le-monaco-yacht-show", "comment-monter-a-bord-dun-yacht-a-monaco"]
+        if "Journées Particulières" in n:
+            s += ["quest-ce-que-les-journees-particulieres-lvmh", "quand-reserver-les-journees-particulieres-lvmh"]
+        if "Opernball" in n:
+            s += ["comment-obtenir-des-places-pour-le-bal-de-lopera-de-vienne", "comment-shabiller-pour-un-bal-a-vienne"]
+        if "Philharmoniker" in n and "Ball" in n:
+            s += ["comment-obtenir-une-loge-au-bal-des-philharmoniker", "comment-shabiller-pour-un-bal-a-vienne"]
+        if "Royal Ascot" in n:
+            s += ["comment-shabiller-pour-royal-ascot"]
+        if "Arc de Triomphe" in n and "Prix" in n:
+            s += ["combien-coute-le-prix-de-larc-de-triomphe", "comment-shabiller-pour-le-prix-de-larc-de-triomphe"]
+        if "Mostra" in n:
+            s += ["comment-assister-a-la-mostra-de-venise"]
+        if "Art Basel Paris" in n or "orbite Art Basel" in n:
+            s += ["comment-assister-a-art-basel-paris", "combien-coute-art-basel-paris"]
+        if "Réveillon" in n or "Nouvel An" in n:
+            s += ["quand-reserver-son-reveillon-de-palace", "combien-coute-un-reveillon-dans-un-palace"]
+        if "joyaux" in n.lower() or "Jewels" in n or "Jewelry" in n:
+            s += ["la-semaine-des-joyaux-de-geneve-est-elle-gratuite"]
+        if "Opéra" in n or "Opera" in n or "Scala" in n:
+            s += ["comment-shabiller-pour-lopera"]
+        if (e.get("dc") or "").startswith("Black tie"):
+            s += ["quest-ce-que-le-dress-code-black-tie"]
+        vus = []
+        for x in s:
+            if x not in vus and x in q_par_slug:
+                vus.append(x)
+        return vus[:3]
 
     # --- SEO : titres-requêtes (décision de Constance du 01/09/2026).
     # Les gens ne tapent pas « Le Protocole » dans Google : ils tapent
@@ -618,6 +657,12 @@ def main():
             dv = date_verif(e)
             if dv:
                 body.append(f"<div class=\"bc\"><a href=\"/methode.html\">✓ {esc(UI['verified'][lang])} {dv}</a></div>")
+            if lang == "fr" and QST:
+                lies = questions_liees(e)
+                if lies:
+                    body.append("<div class=\"box\"><h2>La maison répond</h2><div class=\"chips\">"
+                                + "".join(f"<a href=\"/q/{s}.html\">{esc(q_par_slug[s]['question'])}</a>" for s in lies)
+                                + "</div></div>")
             if T(e, lang, "ds"):
                 body.append(f"<p>{esc(T(e,lang,'ds'))}</p>")
             if T(e, lang, "pe"):
@@ -699,8 +744,11 @@ def main():
         # --- pages lieu & catégorie ---
         def list_page(label, path, events, obj, path_fn):
             events = sorted(events, key=sort_key, reverse=True)
-            title = f"{label} — {UI['luxury_events'][lang]} | ConstanceParis7"
-            desc = f"{len(events)} {UI['events'][lang]} — {label}. {UI['tagline'][lang]}"
+            if lang == "fr":
+                title = f"{label} : agenda des événements de luxe et accès · ConstanceParis7"
+            else:
+                title = f"{label} · {UI['luxury_events'][lang]} | ConstanceParis7"
+            desc = f"{len(events)} {UI['events'][lang]} : {label}. {UI['tagline'][lang]}"
             body = [f"<div class=\"bc\"><a href=\"{prefix(lang)}/\">{esc(UI['radar'][lang])}</a> › "
                     f"<a href=\"{u_hub(lang)}\">{esc(UI['all'][lang])}</a></div>",
                     f"<h1>{esc(label)}</h1>",
