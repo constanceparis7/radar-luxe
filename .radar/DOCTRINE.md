@@ -403,6 +403,29 @@ CE QUE ÇA PRODUIT :
 - traduction de /note.html à la prochaine vague de pages éditoriales ;
 - « les Sceaux de l'année » en décembre (palmarès annuel des notes).
 
+## LES QUESTIONS (institution du 13/09/2026, doctrine du 14/09)
+
+Répondre à toutes les questions que les gens posent vraiment. Registre
+`.radar/questions.json` (+ miroir `.radar/questions-en.json`), pages
+/q/<slug>.html et /en/q/, hubs /questions.html et /en/questions.html,
+thèmes : acces, dress-codes, prix, fenetres, glossaire.
+
+LA CHAÎNE, sans raccourci possible :
+1. SOURCE DE DEMANDE : l'autocomplétion Google (suggestqueries, graines
+   « comment entrer », « dress code », noms d'événements...) et, dès
+   qu'elle est accessible, la Search Console. On répond aux formulations
+   RÉELLES, jamais à des questions devinées.
+2. RÉDACTION : agents enfermés dans une matière extraite des fiches +
+   registre protocole (aucun fait externe), réponse directe d'abord.
+3. CONTRE-VÉRIFICATION sceptique contre la même matière ; rejet permis.
+4. GARDE-FOUS à la fusion : zéro tiret long, montants/années préservés
+   (attention aux 3,000 anglais), slugs uniques, repli = non-publication.
+5. MAILLAGE : questions_liees() dans gen_pages relie fiches -> questions
+   (« La maison répond ») ; entretenir les règles quand une vague sort.
+
+À L'ENTRETENIR : re-vérifier les réponses datées après chaque édition
+(comme le Protocole) ; toute nouvelle vague traduit aussi son anglais.
+
 ## LA VAGUE DES IMMINENTS (routine instaurée le 13/09/2026)
 
 Idée de Constance : « faire la même démarche avant chaque gros événement
