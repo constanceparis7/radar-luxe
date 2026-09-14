@@ -1027,3 +1027,38 @@ RÈGLE : quand un agent de traduction doit préserver des balises HTML littéral
 rendu JSON, toujours vérifier après coup qu'elles n'ont pas été échappées — et écrire le
 contrôle mécanique (regex/assert) avant l'injection plutôt que de faire confiance au rendu
 brut de l'agent, même quand la consigne demandait explicitement de les garder intactes.
+
+## 14/09/2026 — un 500 répété et propre à UNE page n'est pas une panne réseau, mais ce n'est pas non plus une preuve d'absence
+Contrôle hebdomadaire du lundi (251 liens à venir testés, pas seulement les 120 imminents
+du plancher). Un seul lien a rendu un code franchement anormal : `petitpalais.paris.fr/en/
+we-are-still-here` → 500 confirmé trois fois de suite, alors que la page d'accueil du même
+site répond 200 sans problème (donc pas une panne de site, une panne de CETTE page précise).
+Avant de conclure à un événement disparu : l'exposition « WE ARE [still] HERE » est bien
+réelle et en cours (confirmé par recherche indépendante, paris.fr et pariszigzag.fr) — la
+fiche elle-même portait déjà, dans son tableau de contacts `iv.c`, deux URL alternatives non
+utilisées comme lien principal : `.../expositions/we-are-still-here` (FR, testée 200 avec le
+bon contenu) et sa variante `/en/` (testée 404). Corrigé : `u` et `so` basculés sur l'URL FR
+vivante, doublon retiré de `iv.c`.
+RÈGLE : un 5xx répété et isolé à une seule page (site par ailleurs vivant) mérite le même
+traitement qu'un 404 — chercher une URL de remplacement, y compris DANS les URL déjà
+recensées par la fiche elle-même (`iv.c` porte souvent des variantes FR/EN qui n'ont jamais
+été testées individuellement) — avant de songer à retirer l'événement.
+
+## 14/09/2026 — le ld+json des « 60 meilleurs » événements n'a AUCUN mécanisme de régénération automatique
+En voulant exécuter l'étape hebdomadaire du lundi (« régénérer le ld+json des 60 meilleurs
+événements à venir »), constat : aucun outil de `.radar/tools/` ne reconstruit la LISTE des
+événements du bloc `<script type="application/ld+json">` de la page d'accueil — `gen_seo.py`
+ne fait qu'ENRICHIR additivement les entrées déjà présentes (eventStatus, organizer, offers),
+jamais n'en change la sélection. Résultat trouvé ce jour : le graphe contenait encore des
+événements passés depuis plus d'un mois (ex. un gala du 12/08 alors qu'on est le 14/09) — la
+liste n'avait manifestement pas été retouchée depuis longtemps.
+Reconstruite à la main ce jour : mêmes 4 critères que la Note du radar (`note_radar`, portée
+depuis `gen_pages.py`), tri décroissant sur les événements à venir avec URL et lieu, 60
+meilleurs retenus, champs de base seulement (name/dates/lieu/image/description/url) — puis
+`gen_seo.py` complète organizer/offers/eventStatus comme d'habitude.
+RÈGLE / À FAIRE : soit écrire un vrai script `.radar/tools/gen_ldjson.py` qui fait ce calcul
+automatiquement à chaque passe (le plus sûr : il ne pourrait plus jamais périmer en silence),
+soit documenter explicitement dans la doctrine que cette étape reste manuelle et doit être
+refaite par la session elle-même chaque lundi. Ne pas laisser une étape de la doctrine sans
+outil ET sans rappel clair : c'est exactement le schéma qui a produit un mois de péremption
+silencieuse ici.

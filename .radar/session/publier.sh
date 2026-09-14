@@ -32,6 +32,12 @@ MSG="$1"
 # ~/.radar-session/. Il récolte les ateliers d'agents : s'il n'y en a aucun sur
 # cette machine, il n'a rien à faire et ne doit pas bloquer la publication.
 python3 .radar/session/inject.py || echo "· inject : rien à récolter, on continue"
+# gen_ldjson.py — leçon du 14/09/2026 : le ld+json des « 60 meilleurs » événements
+# n'avait aucun mécanisme de régénération et s'est figé un mois sans que rien ne
+# le signale. Recalculé à CHAQUE publication (idempotent, pur) plutôt que
+# seulement le lundi : il ne peut plus périmer en silence. Doit tourner avant
+# split_i18n (qui recopie le head, ld+json compris, tel quel dans index.html).
+python3 .radar/tools/gen_ldjson.py --apply >/dev/null
 python3 .radar/tools/split_i18n.py --apply >/dev/null
 # gen_seo.py — étape 7bis de la doctrine, absente du publieur depuis toujours :
 # elle ne tournait que dans la passe du matin. Depuis l'arrêt de cette passe
