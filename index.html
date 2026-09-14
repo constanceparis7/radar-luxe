@@ -393,54 +393,64 @@
     .wc-city{font-size:8.5px;letter-spacing:.08em}
   }
   /* 4CLOCKS-END */
+
 </style>
 
 <style id="hm-css">
-#hero-maison{position:relative;min-height:100svh;min-height:100vh;background:#0E1317 url(/fond-accueil.jpg) center 24%/cover no-repeat}
-#hero-maison .hm-voile{position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,14,19,.74) 0%,rgba(10,14,19,.26) 32%,rgba(10,14,19,.10) 55%,rgba(14,19,23,.93) 88%,#0E1317 100%)}
-#hero-maison .hm-c{position:relative;min-height:100svh;min-height:100vh;display:flex;flex-direction:column;justify-content:space-between;max-width:760px;margin:0 auto;padding:30px 18px 26px;box-sizing:border-box}
-.hm-haut{text-align:center}
-.hm-marque{font-family:Georgia,'Times New Roman',serif;font-weight:400;font-size:clamp(22px,6vw,30px);letter-spacing:.16em;color:#fff;margin:0;text-transform:uppercase}
-.hm-marque span{color:#d3b06a}
-.hm-brand{font-size:10px;letter-spacing:.32em;color:#e6e1d5;text-transform:uppercase;margin-top:6px}
-.hm-devise{font-style:italic;font-family:Georgia,serif;font-size:14px;color:#d3b06a;margin-top:7px;text-shadow:0 1px 8px rgba(0,0,0,.6)}
-.hm-q{font-family:Georgia,serif;font-size:clamp(24px,6.6vw,32px);color:#fff;text-align:center;margin:0 0 13px;text-shadow:0 1px 10px rgba(0,0,0,.7)}
-.hm-barre{display:flex;align-items:center;gap:9px;border:1px solid #d3b06a;border-radius:11px;padding:13px 15px;background:rgba(14,19,23,.55);backdrop-filter:blur(3px)}
-.hm-barre input{flex:1;background:transparent;border:0;outline:0;color:#f2efe7;font-size:16px}
-.hm-barre input::placeholder{color:#a9b4bd}
-.hm-loupe{color:#d3b06a}
-#hm-res{background:#131b22;border:1px solid #2a3540;border-radius:11px;margin-top:8px;overflow:hidden}
-#hm-res a{display:block;padding:11px 14px;border-bottom:1px solid #1c2630;color:#e9e6df;text-decoration:none;font-size:14px}
-#hm-res a b{display:block;font-weight:500;color:#fff}
-#hm-res a span{color:#9fb0bd;font-size:12px}
-#hm-res .hm-plus{color:#d3b06a;text-align:center;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase}
+#hero-maison{background:var(--bg)}
+#hero-maison .hm-c{display:flex;flex-direction:column;max-width:820px;margin:0 auto;padding:26px 0 18px;box-sizing:border-box}
+.hm-haut{text-align:center;padding:0 18px 20px}
+.hm-marque{font-family:var(--serif);font-weight:400;font-size:clamp(24px,6.4vw,34px);letter-spacing:.16em;color:var(--ink);margin:0;text-transform:uppercase}
+.hm-marque span{color:var(--or)}
+.hm-brand{font-family:var(--sans);font-size:10px;letter-spacing:.32em;color:var(--ink2);text-transform:uppercase;margin-top:6px}
+.hm-devise{font-style:italic;font-family:var(--serif);font-size:15px;color:var(--or);margin-top:7px}
+.hm-cadre{position:relative}
+.hm-photo{display:block;width:100%;height:auto}
+.hm-cadre:after{content:"";position:absolute;left:0;right:0;bottom:0;height:90px;background:linear-gradient(180deg,transparent,var(--bg))}
+.hm-bas{padding:6px 18px 8px;margin-top:-40px;position:relative}
+.hm-q{font-family:var(--serif);font-size:clamp(24px,6.6vw,34px);color:var(--ink);text-align:center;margin:0 0 13px}
+.hm-barre{display:flex;align-items:center;gap:9px;border:1px solid var(--or-line);border-radius:12px;padding:13px 15px;background:var(--bg2);box-shadow:var(--shadow)}
+.hm-barre input{flex:1;background:transparent;border:0;outline:0;color:var(--ink);font-size:16px;font-family:var(--sans)}
+.hm-barre input::placeholder{color:var(--ink2)}
+.hm-loupe{color:var(--or)}
+#hm-res{background:var(--bg2);border:1px solid var(--line);border-radius:12px;margin-top:8px;overflow:hidden;box-shadow:var(--shadow)}
+#hm-res a{display:block;padding:11px 14px;border-bottom:1px solid var(--line);color:var(--ink);text-decoration:none;font-size:14px;font-family:var(--sans)}
+#hm-res a b{display:block;font-weight:600;color:var(--ink)}
+#hm-res a span{color:var(--ink2);font-size:12px}
+#hm-res .hm-plus{color:var(--or);text-align:center;font-size:13px}
 .hm-fam{display:flex;flex-wrap:wrap;gap:7px;justify-content:center;margin-top:11px}
-.hm-fam a{border:1px solid rgba(211,176,106,.55);border-radius:99px;padding:5px 12px;color:#f0ede5;font-size:12.5px;text-decoration:none;background:rgba(14,19,23,.45)}
-#moment-sec .wrap{padding-top:14px}
-.hm-moment{background:#131b22;border:1px solid rgba(211,176,106,.5);border-radius:12px;padding:15px 16px}
-.hm-mt{color:#d3b06a;font-size:10px;letter-spacing:.28em;text-transform:uppercase}
-.hm-mn{font-family:Georgia,serif;font-size:21px;color:#fff;margin:5px 0 3px}
-.hm-mp{font-size:13px;color:#9fb0bd}
-.hm-ma{display:inline-block;margin-top:9px;color:#d3b06a;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;text-decoration:none}
-#maison-sec .wrap{padding-top:8px;padding-bottom:6px}
+.hm-fam a{border:1px solid var(--or-line);border-radius:99px;padding:5px 12px;color:var(--ink);font-size:12.5px;text-decoration:none;background:var(--bg2);font-family:var(--sans)}
+#moment-sec .wrap{padding-top:16px}
+.hm-moment{background:var(--bg2);border:1px solid var(--or-line);border-radius:12px;padding:15px 16px;box-shadow:var(--shadow)}
+.hm-mt{color:var(--or);font-size:10px;letter-spacing:.28em;text-transform:uppercase;font-family:var(--sans)}
+.hm-mn{font-family:var(--serif);font-size:22px;color:var(--ink);margin:5px 0 3px}
+.hm-mp{font-size:13px;color:var(--ink2);font-family:var(--sans)}
+.hm-ma{display:inline-block;margin-top:9px;color:var(--or);font-size:14px;text-decoration:none}
+#maison-sec .wrap{padding-top:10px;padding-bottom:8px}
 .hm-tuiles{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:10px}
-.hm-tuile{background:#131b22;border:1px solid #2a3540;border-radius:11px;padding:12px;text-decoration:none;display:block}
-.hm-tuile b{display:block;font-family:Georgia,serif;font-weight:400;font-size:15px;color:#fff;margin-bottom:3px}
-.hm-tuile span{font-size:11.5px;color:#9fb0bd;line-height:1.4;display:block}
-.hm-voir{display:block;text-align:center;color:#d3b06a;font-size:12px;letter-spacing:.14em;text-transform:uppercase;margin:12px 0 4px;text-decoration:none}
+.hm-tuile{background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:12px;text-decoration:none;display:block;box-shadow:var(--shadow)}
+.hm-tuile b{display:block;font-family:var(--serif);font-weight:400;font-size:16px;color:var(--ink);margin-bottom:3px}
+.hm-tuile span{font-size:11.5px;color:var(--ink2);line-height:1.4;display:block;font-family:var(--sans)}
+.hm-voir{display:block;text-align:center;color:var(--or);font-size:12px;letter-spacing:.14em;text-transform:uppercase;margin:12px 0 4px;text-decoration:none;font-family:var(--sans)}
 #explorer-haut{display:none}
-@media(min-width:900px){#hero-maison{background-position:center 32%}.hm-tuiles{grid-template-columns:1fr 1fr 1fr}}
+.portes .pe, .portes .pe span{color:var(--ink2)!important}
+.portes .pe a, .portes .pe b{color:var(--ink)!important}
+header.mast{display:none}
+#hm-outils{background:var(--bg)}
+#hm-outils .hm-outils-c{max-width:820px;margin:0 auto;padding:6px 18px;display:flex;justify-content:flex-end}
+#hm-outils .clock-sub{display:flex;align-items:center;gap:10px}
+@media(min-width:900px){.hm-tuiles{grid-template-columns:1fr 1fr 1fr}.hm-cadre{max-width:680px;margin:0 auto;width:100%}}
 </style>
 </head>
 <body>
 <section id="hero-maison">
- <div class="hm-voile"></div>
  <div class="hm-c">
   <div class="hm-haut">
    <h1 class="hm-marque">ConstanceParis<span>7</span></h1>
    <div class="hm-brand"><span data-i18n="brandline_main">International Luxury Events</span><span class="fil"> · </span><span data-i18n="brandline_season">Autumn 2026</span></div>
    <div class="hm-devise">L'élégance du choix réfléchi.</div>
   </div>
+  <div class="hm-cadre"><img class="hm-photo" src="/fond-accueil.jpg" alt="Paris, place de la Concorde, vue du balcon"></div>
   <div class="hm-bas">
    <div class="hm-q" data-i18n="hero_q">Où voulez-vous entrer&nbsp;?</div>
    <div class="hm-barre"><span class="hm-loupe">🔍</span><input id="hm-in" type="search" autocomplete="off" placeholder="Fashion Week, Monaco, gala, joaillerie..."></div>
@@ -456,6 +466,11 @@
   </div>
  </div>
 </section>
+<div id="hm-outils"><div class="hm-outils-c"><div class="clock-sub"><span class="livedot"></span><span id="clockdate">Paris</span>
+          <select class="lang-sel" id="langSel" aria-label="Language"></select>
+          <button class="theme-btn" id="themeBtn" type="button" aria-label="thème">◐ <span data-i18n="theme">thème</span></button>
+        </div></div></div>
+
 
 
 <header class="mast">
@@ -474,10 +489,7 @@
           <div class="wc"><div class="wc-city" data-i18n="dubai_at">Dubaï</div><div class="wc-time" id="clockDubai">--:--<small>:--</small></div></div>
           <div class="wc"><div class="wc-city" data-i18n="tokyo_at">Tokyo</div><div class="wc-time" id="clockTokyo">--:--<small>:--</small></div></div>
         </div>
-        <div class="clock-sub"><span class="livedot"></span><span id="clockdate">Paris</span>
-          <select class="lang-sel" id="langSel" aria-label="Language"></select>
-          <button class="theme-btn" id="themeBtn" type="button" aria-label="thème">◐ <span data-i18n="theme">thème</span></button>
-        </div>
+        
       </div>
     </div>
     <div class="stats" id="stats"></div>
