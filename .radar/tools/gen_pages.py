@@ -437,6 +437,11 @@ def main():
                 "prix": "Les prix", "fenetres": "Les réservations",
                 "glossaire": "Le vocabulaire"}
     q_par_slug = {q["slug"]: q for q in QST}
+    try:
+        with open(os.path.join(_RAD, "questions-en.json"), encoding="utf-8") as _f:
+            QEN = {x["slug"]: x for x in json.load(_f)}
+    except Exception:
+        QEN = {}
 
     def questions_liees(e):
         """Maillage interne (14/09/2026) : chaque fiche pointe vers les
@@ -1467,10 +1472,40 @@ document.querySelectorAll('.ex').forEach(function(a){a.addEventListener('click',
                   "mainEntity": [{"@type": "Question", "name": q["question"],
                                   "acceptedAnswer": {"@type": "Answer", "text": q["reponse_courte"]}}]}
             chemin = f"/q/{s}.html"
+            hlq = '<link rel="alternate" hreflang="fr" href="%s%s">' % (BASE, chemin)
+            if s in QEN:
+                hlq += '<link rel="alternate" hreflang="en" href="%s/en%s">' % (BASE, chemin)
             write(chemin, page("fr", f"{q['question']} · ConstanceParis7",
-                  q["reponse_courte"][:155], chemin, "".join(corps),
-                  '<link rel="alternate" hreflang="fr" href="%s%s">' % (BASE, chemin), ld=ld))
+                  q["reponse_courte"][:155], chemin, "".join(corps), hlq, ld=ld))
             sitemap_urls.append(f"{BASE}{chemin}")
+            if s in QEN:
+                qe = QEN[s]
+                corps_en = ["<div class=\"bc\"><a href=\"/en/\">Radar</a> · <a href=\"/en/questions.html\">Questions</a></div>",
+                            f"<h1>{esc(qe['question'])}</h1>",
+                            f"<p class=\"meta\"><b>{esc(qe['reponse_courte'])}</b></p>"]
+                for par in [x.strip() for x in qe["details"].split("\n") if x.strip()]:
+                    corps_en.append(f"<p>{esc(par)}</p>")
+                puces_en = []
+                for nom in q.get("fiches", []):
+                    e2 = par_nom.get(nom)
+                    if e2:
+                        puces_en.append(f"<a href=\"{u_event(e2, 'en')}\">{esc((T(e2, 'en', 'n') or nom)[:64])}</a>")
+                if puces_en:
+                    corps_en.append("<h2 class=\"sub\">On the radar</h2><div class=\"chips\">" + "".join(puces_en) + "</div>")
+                freres_en = [x for x in par_theme.get(q.get("theme"), []) if x["slug"] != s and x["slug"] in QEN][:4]
+                if freres_en:
+                    corps_en.append("<h2 class=\"sub\">Related questions</h2><div class=\"chips\">"
+                                    + "".join(f"<a href=\"/en/q/{x['slug']}.html\">{esc(QEN[x['slug']]['question'])}</a>" for x in freres_en)
+                                    + "</div>")
+                corps_en.append("<div class=\"chips\"><a href=\"/en/questions.html\">← All questions</a>"
+                                "<a href=\"/en/evenements.html\">All events</a></div>")
+                ld_en = {"@context": "https://schema.org", "@type": "FAQPage",
+                         "mainEntity": [{"@type": "Question", "name": qe["question"],
+                                         "acceptedAnswer": {"@type": "Answer", "text": qe["reponse_courte"]}}]}
+                chemin_en = f"/en/q/{s}.html"
+                write(chemin_en, page("en", f"{qe['question']} · ConstanceParis7",
+                      qe["reponse_courte"][:155], chemin_en, "".join(corps_en), hlq, ld=ld_en))
+                sitemap_urls.append(f"{BASE}{chemin_en}")
 
         corps = ["<div class=\"bc\"><a href=\"/\">Radar</a> · Questions</div>",
                  "<h1>Les Questions</h1>",
@@ -1485,11 +1520,34 @@ document.querySelectorAll('.ex').forEach(function(a){a.addEventListener('click',
                              f"<div>{esc(x['reponse_courte'][:120])}</div></li>")
             corps.append("</ul>")
         corps.append("<div class=\"chips\"><a href=\"/\">← Retour au radar</a><a href=\"/entrer.html\">Où voulez-vous entrer ?</a><a href=\"/methode.html\">La méthode</a></div>")
+        hlh = '<link rel="alternate" hreflang="fr" href="%s/questions.html">' % BASE
+        if QEN:
+            hlh += '<link rel="alternate" hreflang="en" href="%s/en/questions.html">' % BASE
         write("/questions.html", page("fr", "Les questions de l'accès au luxe · ConstanceParis7",
               "Comment entrer, comment s'habiller, combien ça coûte, quand réserver : toutes les réponses, vérifiées à la source.",
-              "/questions.html", "".join(corps),
-              '<link rel="alternate" hreflang="fr" href="%s/questions.html">' % BASE))
+              "/questions.html", "".join(corps), hlh))
         sitemap_urls.append(f"{BASE}/questions.html")
+        if QEN:
+            THEMES_EN = {"acces": "Access", "dress-codes": "Dress codes", "prix": "Prices",
+                         "fenetres": "Bookings", "glossaire": "Vocabulary"}
+            corps = ["<div class=\"bc\"><a href=\"/en/\">Radar</a> · Questions</div>",
+                     "<h1>Your questions, answered</h1>",
+                     "<p class=\"meta\">Everything one wonders before a door opens: how to get in, what to wear, what it costs, when to book. Verified at the source.</p>"]
+            for th, titre_th in THEMES_EN.items():
+                qs = [x for x in par_theme.get(th, []) if x["slug"] in QEN]
+                if not qs:
+                    continue
+                corps.append(f"<h2 class=\"sub\">{esc(titre_th)}</h2><ul class=\"cards\">")
+                for x in qs:
+                    qe = QEN[x["slug"]]
+                    corps.append(f"<li><a class=\"t\" href=\"/en/q/{x['slug']}.html\">{esc(qe['question'])}</a>"
+                                 f"<div>{esc(qe['reponse_courte'][:120])}</div></li>")
+                corps.append("</ul>")
+            corps.append("<div class=\"chips\"><a href=\"/en/\">← Back to the radar</a><a href=\"/en/evenements.html\">All events</a></div>")
+            write("/en/questions.html", page("en", "Luxury events: your questions answered · ConstanceParis7",
+                  "How to get in, what to wear, what it costs, when to book: verified answers about the world's luxury events.",
+                  "/en/questions.html", "".join(corps), hlh))
+            sitemap_urls.append(f"{BASE}/en/questions.html")
 
     # --- pages de destination des événements imminents (13/09/2026) : surfer
     # la vague de recherche qui précède un grand rendez-vous. Pilotées par le
