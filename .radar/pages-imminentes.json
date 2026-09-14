@@ -22,5 +22,42 @@
   "autres_titre": "Les autres semaines",
   "organisateur": "Fédération de la Haute Couture et de la Mode",
   "ajoutee_le": "2026-09-13"
+ },
+ {
+  "page": "/monaco-yacht-show.html",
+  "evenement": "Monaco Yacht Show 2026",
+  "h1": "Monaco Yacht Show",
+  "titre": "Monaco Yacht Show 2026 : dates, billets, prix",
+  "desc": "Du 23 au 26 septembre 2026 à Port Hercule. Combien coûte l'entrée, comment monter à bord, la soirée privée : les réponses vérifiées à la source.",
+  "questions": [
+   "combien-coute-le-monaco-yacht-show",
+   "comment-monter-a-bord-dun-yacht-a-monaco"
+  ],
+  "fiches_liees": [
+   "MY Yacht Monaco, soirée privée à bord pendant le Monaco Yacht Show"
+  ],
+  "moment": "/moments/septembre-a-monaco.html",
+  "moment_titre": "Septembre à Monaco",
+  "autres": [
+   "Les Voiles de Saint-Tropez 2026",
+   "Monte-Carlo Gala for Planetary Health, dîner de gala de la Fondation Prince Albert II"
+  ],
+  "autres_titre": "La même semaine sur la Riviera",
+  "organisateur": "Informa Markets",
+  "ajoutee_le": "2026-09-14"
+ },
+ {
+  "page": "/vogue-world-milano.html",
+  "evenement": "Vogue World : Milano 2026",
+  "h1": "Vogue World Milano",
+  "titre": "Vogue World Milano 2026 : date, billets, accès",
+  "desc": "Mardi 22 septembre 2026, Galleria Vittorio Emanuele II, Milan. Billets et invitations Vogue : ce que l'on sait, vérifié à la source.",
+  "questions": [],
+  "fiches_liees": [],
+  "autres": [
+   "Milano Fashion Week, Printemps-Été 2027"
+  ],
+  "autres_titre": "Pendant la Fashion Week de Milan",
+  "ajoutee_le": "2026-09-14"
  }
 ]
