@@ -449,6 +449,14 @@ CRITÈRES D'UN « GROS ÉVÉNEMENT MONDIAL » : Note du radar >= 85, durée
 <= 30 jours, d1 entre J+7 et J+28, notoriété du nom (test du nom qui
 claque). En cas de doute, s'abstenir : pertinent ou rien.
 
+RÈGLE DU BANDEAU (précisée le 15/09/2026, retour de Constance) : le
+bandeau Ouvertures & délais ne porte QUE des fenêtres d'inscription et
+des délais datés (« réservations courant sept. », « billetterie
+imminente », « Royal Enclosure dès janvier »). JAMAIS de simples dates
+d'événements : l'événement imminent vedette vit dans la carte
+« L'événement du moment » (moment.json, choisi chaque jour par
+gen_pages), et une info ne se répète pas d'un bloc à l'autre.
+
 RÈGLES DE LA PAGE : contenus repris UNIQUEMENT des fiches et Questions
 vérifiées, jamais de fait nouveau sans vérification à la source ; titre
 en forme de requête ; zéro tiret long. Entrée du bandeau Ouvertures avec

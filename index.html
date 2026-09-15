@@ -436,9 +436,8 @@
 .portes .pe a, .portes .pe b{color:var(--ink)!important}
 header.mast{display:none}
 #hm-outils{background:var(--bg)}
-#hm-outils .hm-outils-c{max-width:820px;margin:0 auto;padding:8px 18px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px}
-#hm-outils .worldclock{display:flex;gap:16px}
-.ig-credit{position:static!important;display:table;margin:2px auto 0}
+#hm-outils .hm-outils-c{max-width:820px;margin:0 auto;padding:10px 18px;display:flex;justify-content:center}
+.ig-credit{position:static!important;display:inline-flex;margin:0 auto}
 #hm-outils .clock-sub{display:flex;align-items:center;gap:10px}
 @media(min-width:900px){.hm-tuiles{grid-template-columns:1fr 1fr 1fr}.hm-cadre{max-width:680px;margin:0 auto;width:100%}}
 </style>
@@ -467,11 +466,11 @@ header.mast{display:none}
   </div>
  </div>
 </section>
-<div id="hm-outils"><div class="hm-outils-c"><div class="worldclock">
-          <div class="wc"><div class="wc-city" data-i18n="ny_at">New York</div><div class="wc-time" id="clockNY">--:--<small>:--</small></div></div><div class="clock-sub"><span class="livedot"></span><span id="clockdate">Paris</span>
+<div id="hm-outils"><div class="hm-outils-c"><div class="clockcard"><div class="worldclock">
+          <div class="wc"><div class="wc-city" data-i18n="paris_at">Paris</div><div class="wc-time" id="clock">--:--<small>:--</small></div></div><div class="clock-sub"><span class="livedot"></span><span id="clockdate">Paris</span>
           <select class="lang-sel" id="langSel" aria-label="Language"></select>
           <button class="theme-btn" id="themeBtn" type="button" aria-label="thème">◐ <span data-i18n="theme">thème</span></button>
-        </div></div></div>
+        </div></div></div></div>
 
 
 
@@ -486,7 +485,7 @@ header.mast{display:none}
       </div>
       <div class="clockcard">
         
-          <div class="wc"><div class="wc-city" data-i18n="paris_at">Paris</div><div class="wc-time" id="clock">--:--<small>:--</small></div></div>
+          <div class="wc"><div class="wc-city" data-i18n="ny_at">New York</div><div class="wc-time" id="clockNY">--:--<small>:--</small></div></div>
           <div class="wc"><div class="wc-city" data-i18n="dubai_at">Dubaï</div><div class="wc-time" id="clockDubai">--:--<small>:--</small></div></div>
           <div class="wc"><div class="wc-city" data-i18n="tokyo_at">Tokyo</div><div class="wc-time" id="clockTokyo">--:--<small>:--</small></div></div>
         </div>
@@ -495,8 +494,8 @@ header.mast{display:none}
     </div>
     <div class="stats" id="stats"></div>
   </div>
-  <a class="ig-credit" href="https://www.instagram.com/constanceparis7/" target="_blank" rel="noopener noreferrer" aria-label="Instagram @constanceparis7"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153.509.5.902 1.105 1.153 1.772.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772c-.5.508-1.105.902-1.772 1.153-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6.5-.25a1.25 1.25 0 1 0-2.5 0 1.25 1.25 0 0 0 2.5 0zM12 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"/></svg><span>@constanceparis7</span></a>
-</header><section class="portes" id="portes"><div class="wrap"><span class="pt">🔑 <span data-i18n="portes_t">Ouvertures &amp; délais</span></span><span class="pe" data-exp="2026-09-22"><a href="/vogue-world-milano.html">Vogue World Milano · le 22 septembre</a></span><span class="pe" data-exp="2026-09-26"><a href="/monaco-yacht-show.html">Monaco Yacht Show · du 23 au 26 septembre</a></span><span class="pe" data-exp="2026-10-06"><a href="/paris-fashion-week.html">Paris Fashion Week · du 28 septembre au 6 octobre</a></span><span class="pe" data-exp="2026-09-30"><a href="/e/les-journees-particulieres-lvmh-2026-69-lieux-ouverts-dans-12-pa.html">Journées Particulières LVMH</a> : réservations <b>courant sept.</b></span><span class="pe" data-exp="2026-10-15"><a href="/e/grand-prix-de-monaco-2027-formule-1-monaco.html">Grand Prix de Monaco 2027</a> : billetterie <b>imminente</b></span><span class="pe" data-exp="2027-01-31"><a href="/e/royal-ascot-2027-ascot-berkshire.html">Royal Ascot 2027</a> : Royal Enclosure <b>dès janvier</b></span></div></section>
+  
+</header><section class="portes" id="portes"><div class="wrap"><span class="pt">🔑 <span data-i18n="portes_t">Ouvertures &amp; délais</span></span><span class="pe" data-exp="2026-09-30"><a href="/e/les-journees-particulieres-lvmh-2026-69-lieux-ouverts-dans-12-pa.html">Journées Particulières LVMH</a> : réservations <b>courant sept.</b></span><span class="pe" data-exp="2026-10-15"><a href="/e/grand-prix-de-monaco-2027-formule-1-monaco.html">Grand Prix de Monaco 2027</a> : billetterie <b>imminente</b></span><span class="pe" data-exp="2027-01-31"><a href="/e/royal-ascot-2027-ascot-berkshire.html">Royal Ascot 2027</a> : Royal Enclosure <b>dès janvier</b></span></div></section>
 <section id="moment-sec"><div class="wrap">
  <div class="hm-moment" id="hm-moment" hidden>
   <div class="hm-mt"><span data-i18n="moment_t">L'événement du moment</span> · <span class="hm-mj"></span></div>
@@ -693,6 +692,7 @@ header.mast{display:none}
 
 <footer>
   <div class="wrap">
+<p style="text-align:center"><a class="ig-credit" href="https://www.instagram.com/constanceparis7/" target="_blank" rel="noopener noreferrer" aria-label="Instagram @constanceparis7"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153.509.5.902 1.105 1.153 1.772.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772c-.5.508-1.105.902-1.772 1.153-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6.5-.25a1.25 1.25 0 1 0-2.5 0 1.25 1.25 0 0 0 2.5 0zM12 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"/></svg><span>@constanceparis7</span></a></p>
     <p><b data-i18n="foot_method_t">Méthodologie.</b> <span data-i18n="foot_method"></span></p>
     <p><b data-i18n="foot_reliab_t">Fiabilité.</b> <span data-i18n="foot_reliab"></span></p>
     <p><b data-i18n="foot_live_t">Limite.</b> <span data-i18n="foot_live"></span></p>
@@ -1444,25 +1444,15 @@ header.mast{display:none}
   else{fetch('/acces-index.json').then(function(r){return r.json()}).then(function(j){IDX=j;run();}).catch(function(){});}}
  if(inp){inp.addEventListener('input',go);}
  try{
-  var pes=document.querySelectorAll('#portes .pe'),today=new Date().toISOString().slice(0,10),p=null,i;
-  for(i=0;i<pes.length;i++){var x=pes[i].getAttribute('data-exp');if(x&&x>=today){p=pes[i];break;}}
   var card=document.getElementById('hm-moment');
-  if(p&&card){var a=p.querySelector('a');var txt=a.textContent;var nom=txt.split('\u00b7')[0].trim();
-   var d=JSON.parse(document.getElementById('data').textContent),ev=null;
-   var cle=function(s){return norm(s).replace(/[^a-z0-9]/g,'');};
-   var knom=cle(nom);
-   for(i=0;i<d.length;i++){if(d[i].n&&cle(d[i].n).indexOf(knom)===0){ev=d[i];break;}}
-   var j='',note='';
-   if(ev&&ev.d1){var diff=Math.round((new Date(ev.d1+'T12:00:00')-new Date(today+'T12:00:00'))/864e5);
-    if(diff>0){j='J-'+diff;}else if(ev.d2>=today){j='';}
-    if(ev.sv!=null){var st=(ev.d1<=today&&today<=ev.d2)?100:(ev.d1>today?Math.max(15,Math.round(100-2.2*diff)):0);
-     note='\u2726 '+Math.round(0.4*ev.sv+0.3*ev.sp+0.2*ev.sl+0.1*st)+'/100';}}
-   card.querySelector('.hm-mj').textContent=j;
-   card.querySelector('.hm-mn').textContent=nom;
-   card.querySelector('.hm-mp').textContent=txt.split('\u00b7').slice(1).join('\u00b7').trim()+(note?'  '+note:'');
-   var lien=card.querySelector('.hm-ma');lien.setAttribute('href',a.getAttribute('href'));
+  if(card){fetch('/moment.json').then(function(r){return r.json()}).then(function(mo){
+   if(!mo||!mo.nom)return;
+   card.querySelector('.hm-mj').textContent=mo.j||'';
+   card.querySelector('.hm-mn').textContent=mo.nom;
+   card.querySelector('.hm-mp').textContent=(mo.texte||'')+(mo.note?'  \u2726 '+mo.note+'/100':'');
+   var lien=card.querySelector('.hm-ma');lien.setAttribute('href',mo.href||'/evenements.html');
    lien.removeAttribute('data-i18n');lien.textContent='\u2192';
-   card.hidden=false;}
+   card.hidden=false;}).catch(function(){});}
  }catch(e){}
 })();
 </script>

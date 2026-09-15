@@ -1626,6 +1626,37 @@ document.querySelectorAll('.ex').forEach(function(a){a.addEventListener('click',
         sitemap_urls.append(f"{BASE}{chemin}")
         imminents.add(f"{BASE}{chemin}")
 
+    # --- moment.json : l'événement du moment pour la carte de l'accueil.
+    # Choisi chaque jour à la génération : le mieux noté des 21 prochains
+    # jours (vrai événement daté). Lien vers sa page de destination si le
+    # registre des imminents en a une, sinon vers sa fiche.
+    meilleur = None
+    for e in pages:
+        try:
+            _j = (date.fromisoformat(str(e.get("d1"))) - date.fromisoformat(TODAY)).days
+            duree = (date.fromisoformat(str(e.get("d2"))) - date.fromisoformat(str(e.get("d1")))).days
+        except (TypeError, ValueError):
+            continue
+        if not (0 <= _j <= 21 and duree <= 30 and str(e.get("d2", "")) >= TODAY):
+            continue
+        nr = note_radar(e)
+        if nr is None:
+            continue
+        if meilleur is None or nr > meilleur[0]:
+            meilleur = (nr, _j, e)
+    if meilleur:
+        nr, _j, e = meilleur
+        href = u_event(e, "fr")
+        for im in IMM:
+            if im.get("evenement") == e.get("n"):
+                href = im["page"]
+                break
+        nom_court = (e.get("n") or "").split(",")[0].strip()
+        with open(f"{REPO}/moment.json", "w", encoding="utf-8") as _f:
+            json.dump({"j": (f"J-{_j}" if _j > 0 else ""), "nom": nom_court,
+                       "texte": (e.get("dt") or "").split("·")[0].strip(),
+                       "note": nr, "href": href}, _f, ensure_ascii=False)
+
     # --- sitemap ---
     sm = ['<?xml version="1.0" encoding="UTF-8"?>',
           '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
