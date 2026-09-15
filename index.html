@@ -432,6 +432,11 @@
 .hm-tuile span{font-size:11.5px;color:var(--ink2);line-height:1.4;display:block;font-family:var(--sans)}
 .hm-voir{display:block;text-align:center;color:var(--or);font-size:12px;letter-spacing:.14em;text-transform:uppercase;margin:12px 0 4px;text-decoration:none;font-family:var(--sans)}
 #explorer-haut{display:none}
+.sec-collapse>.wrap>h2{cursor:pointer;position:relative;padding-right:36px;-webkit-tap-highlight-color:transparent}
+.sec-collapse>.wrap>h2::after{content:"\2212";position:absolute;right:2px;top:2px;color:var(--or);font-weight:400;font-size:26px;line-height:1}
+.sec-collapse.collapsed>.wrap>h2::after{content:"+"}
+.sec-collapse.collapsed>.wrap>h2~*{display:none!important}
+.sec-collapse.collapsed>.wrap>h2{margin-bottom:2px}
 .portes .pe, .portes .pe span{color:var(--ink2)!important}
 .portes .pe a, .portes .pe b{color:var(--ink)!important}
 header.mast{display:none}
@@ -466,8 +471,11 @@ header.mast{display:none}
   </div>
  </div>
 </section>
-<div id="hm-outils"><div class="hm-outils-c"><div class="clockcard"><div class="worldclock">
-          <div class="wc"><div class="wc-city" data-i18n="paris_at">Paris</div><div class="wc-time" id="clock">--:--<small>:--</small></div></div><div class="clock-sub"><span class="livedot"></span><span id="clockdate">Paris</span>
+<div id="hm-outils"><div class="hm-outils-c"><div class="clockcard"><div class="worldclock">          <div class="wc"><div class="wc-city" data-i18n="paris_at">Paris</div><div class="wc-time" id="clock">--:--<small>:--</small></div></div>
+<div class="wc"><div class="wc-city" data-i18n="ny_at">New York</div><div class="wc-time" id="clockNY">--:--<small>:--</small></div></div>
+<div class="wc"><div class="wc-city" data-i18n="dubai_at">Dubaï</div><div class="wc-time" id="clockDubai">--:--<small>:--</small></div></div>
+<div class="wc"><div class="wc-city" data-i18n="tokyo_at">Tokyo</div><div class="wc-time" id="clockTokyo">--:--<small>:--</small></div></div>
+</div><div class="clock-sub"><span class="livedot"></span><span id="clockdate">Paris</span>
           <select class="lang-sel" id="langSel" aria-label="Language"></select>
           <button class="theme-btn" id="themeBtn" type="button" aria-label="thème">◐ <span data-i18n="theme">thème</span></button>
         </div></div></div></div>
@@ -483,14 +491,7 @@ header.mast{display:none}
         <div class="brandline"><span data-i18n="brandline_main">International Luxury Events</span><span class="fil"> · </span><span data-i18n="brandline_season">Automne 2026</span></div>
         <p class="mast-sub" data-i18n="brandsub"></p>
       </div>
-      <div class="clockcard">
-        
-          <div class="wc"><div class="wc-city" data-i18n="ny_at">New York</div><div class="wc-time" id="clockNY">--:--<small>:--</small></div></div>
-          <div class="wc"><div class="wc-city" data-i18n="dubai_at">Dubaï</div><div class="wc-time" id="clockDubai">--:--<small>:--</small></div></div>
-          <div class="wc"><div class="wc-city" data-i18n="tokyo_at">Tokyo</div><div class="wc-time" id="clockTokyo">--:--<small>:--</small></div></div>
-        </div>
-        
-      </div>
+      <div class="clockcard"></div>
     </div>
     <div class="stats" id="stats"></div>
   </div>
