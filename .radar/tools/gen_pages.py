@@ -647,7 +647,21 @@ def main():
             if lieu:
                 bc += f" › <a href=\"{u_place(lieu, lang)}\">{esc(pk)}</a>"
             bc += "</div>"
-            body = [bc, f"<h1>{esc(n)}</h1>"]
+            body = [bc, f"<h1>{esc(n)} <button class=\"fav-btn\" data-slug=\"{e['_slug']}\" "
+                        f"title=\"Favoris\" aria-label=\"Favoris\">\u2661</button></h1>",
+                    """<style>.fav-btn{background:none;border:none;cursor:pointer;font-size:.62em;
+                    color:#d3b06a;vertical-align:middle;padding:0 4px}.fav-btn.on{color:#c94f4f}</style>
+                    <script>(function(){var CLE='cp7favs';
+                    function lire(){try{return JSON.parse(localStorage.getItem(CLE))||[]}catch(e){return[]}}
+                    document.addEventListener('click',function(ev){var b=ev.target.closest('.fav-btn');if(!b)return;
+                     var s=b.getAttribute('data-slug');var f=lire();var i=f.indexOf(s);
+                     if(i>-1){f.splice(i,1);b.textContent='\u2661';b.classList.remove('on');}
+                     else{f.push(s);b.textContent='\u2665';b.classList.add('on');}
+                     try{localStorage.setItem(CLE,JSON.stringify(f))}catch(e){}});
+                    window.addEventListener('DOMContentLoaded',function(){var f=lire();
+                     document.querySelectorAll('.fav-btn').forEach(function(b){
+                      if(f.indexOf(b.getAttribute('data-slug'))>-1){b.textContent='\u2665';b.classList.add('on');}});});
+                    })();</script>"""]
             meta = []
             if T(e, lang, "dt"):
                 meta.append(f"<b>{esc(T(e,lang,'dt'))}</b>")
@@ -1441,6 +1455,39 @@ document.querySelectorAll('.ex').forEach(function(a){a.addEventListener('click',
           "/entrer.html", "".join(corps),
           '<link rel="alternate" hreflang="fr" href="%s/entrer.html">' % BASE))
     sitemap_urls.append(f"{BASE}/entrer.html")
+
+    # --- /favoris.html : les événements que le lecteur a marqués d'un cœur.
+    # Tout vit dans SON navigateur (localStorage) : aucun compte, aucune
+    # donnée collectée, cohérent avec la promesse zéro cookie du site.
+    corps = ["<div class=\"bc\"><a href=\"/\">Radar</a> · Favoris</div>",
+             "<h1>Mes favoris</h1>",
+             "<p class=\"meta\">Les événements que vous avez marqués d'un cœur. Ils ne quittent jamais votre appareil : aucun compte, aucune donnée transmise.</p>",
+             "<div id=\"fav-liste\"></div>",
+             "<p class=\"meta\" id=\"fav-vide\" hidden>Aucun favori pour l'instant. Sur chaque fiche d'événement, touchez le cœur à côté du titre.</p>",
+             "<div class=\"chips\"><a href=\"/\">← Retour au radar</a><a href=\"/entrer.html\">Où voulez-vous entrer ?</a></div>",
+             """<script>(function(){var CLE='cp7favs';var favs=[];
+             try{favs=JSON.parse(localStorage.getItem(CLE))||[]}catch(e){}
+             var liste=document.getElementById('fav-liste'),vide=document.getElementById('fav-vide');
+             function esc(s){var d=document.createElement('i');d.textContent=s||'';return d.innerHTML;}
+             if(!favs.length){vide.hidden=false;return;}
+             fetch('/acces-index.json').then(function(r){return r.json()}).then(function(idx){
+              var par={};idx.forEach(function(e){par[e.u.replace('/e/','').replace('.html','')]=e;});
+              var html='';var restants=[];
+              favs.forEach(function(s){var e=par[s];if(!e)return;restants.push(s);
+               html+='<div class=\"box\" style=\"margin-top:12px\"><div class=\"d\" style=\"font-size:.78rem;color:#9FB0BD\">'+esc(e.v||'')+(e.no?' \u00b7 \u2726 '+e.no+'/100':'')+'</div>'
+                +'<h2 style=\"margin:.3em 0\"><a href=\"'+e.u+'\">'+esc(e.n)+'</a></h2>'
+                +(e.d?'<div style=\"color:#9FB0BD\">'+esc(e.d)+'</div>':'')
+                +'<p style=\"margin:.4em 0 0\"><button class=\"fav-retirer\" data-slug=\"'+s+'\" style=\"background:none;border:1px solid #26313A;border-radius:99px;color:#9FB0BD;cursor:pointer;padding:3px 10px;font-size:.8rem\">Retirer</button></p></div>';});
+              liste.innerHTML=html||'';vide.hidden=!!html;
+              liste.addEventListener('click',function(ev){var b=ev.target.closest('.fav-retirer');if(!b)return;
+               var s=b.getAttribute('data-slug');favs=favs.filter(function(x){return x!==s});
+               try{localStorage.setItem(CLE,JSON.stringify(favs))}catch(e){}
+               b.closest('.box').remove();if(!favs.length)vide.hidden=false;});
+             });})();</script>"""]
+    write("/favoris.html", page("fr", "Mes favoris · ConstanceParis7",
+          "Vos événements marqués d'un cœur, gardés sur votre appareil.",
+          "/favoris.html", "".join(corps),
+          '<link rel="alternate" hreflang="fr" href="%s/favoris.html">' % BASE))
 
     # --- pages Questions : une question, une réponse, la réponse d'abord ---
     if QST:

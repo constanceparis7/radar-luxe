@@ -426,6 +426,27 @@ LA CHAÎNE, sans raccourci possible :
 À L'ENTRETENIR : re-vérifier les réponses datées après chaque édition
 (comme le Protocole) ; toute nouvelle vague traduit aussi son anglais.
 
+## LA RÉSORPTION DES DOUTES (routine instaurée le 15/09/2026)
+
+Demande de Constance : « pourquoi les à vérifier ne se vérifient pas
+automatiquement ? ». Réponse : maintenant, ils se vérifient.
+
+LA CHAÎNE : extraction des fiches dont un champ visible porte un doute
+écrit (« à vérifier », « à confirmer », « à paraître »...), en
+priorisant d2 >= aujourd'hui et d1 le plus proche ; enquête par agents
+(WebSearch + WebFetch de la SOURCE OFFICIELLE, une info ne compte que
+chargée) ; trois issues : résolu (texte réécrit avec le fait daté
+« vérifié le JJ/MM/AAAA »), doute maintenu avec preuve de recherche
+(résultat valable : jamais d'invention pour effacer un doute), rejeté ;
+contre-vérification sceptique (re-chargement de l'URL) ; application au
+champ ; RETRADUCTION obligatoire des champs traduits modifiés (dt, ds,
+p, n, ci) dans les 12 langues, garde-fous chiffres/tirets ; pipeline,
+validate (la cohérence FR/traductions est bloquante), push.
+
+Vague 1 du 15/09/2026 : 24 fiches, 15 champs résolus, 9 doutes
+maintenus avec preuve, 0 invention. Routine hebdomadaire
+« resorption-des-doutes » (mercredi 7h30, max 8 doutes par passage).
+
 ## LA VAGUE DES IMMINENTS (routine instaurée le 13/09/2026)
 
 Idée de Constance : « faire la même démarche avant chaque gros événement

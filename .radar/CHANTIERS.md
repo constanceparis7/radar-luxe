@@ -272,3 +272,5 @@ La Gritta). Cap-Ferrat a perdu la sienne : elle était nominative.
 - 27/08 : LA NOTE DU RADAR lancée (validée par Constance). Sceau sur 420 fiches x13 langues, /note.html (bareme public), lien accueil sous Classement Prestige. /note.html traduit dans les 12 langues le 12/09. Reste : mention « vécu et vérifié sur place » (des le 19/09), Sceaux de l'année (decembre).
 
 - 27/08 : LE PROTOCOLE lancé (validé par Constance, « je te laisse faire »). 7 pages x 13 langues (hub + 6 types), 36 règles d'institutions chargées à la source puis contre-vérifiées (13 corrigées par le passage sceptique), registre .radar/protocole.json, 852 chaînes traduites posées. Entretien : re-vérification aux équinoxes, règles datées (Frieze 14/10/2026) à rafraîchir après l'édition.
+
+- 15/09 : FAVORIS lancés (coeur sur chaque fiche, page /favoris.html, localStorage, zéro donnée collectée). RÉSORPTION DES DOUTES vague 1 : 15 champs résolus à la source, 9 doutes maintenus avec preuve, retraduction x12 des champs modifiés ; routine hebdomadaire installée (mercredi 7h30). Reste ~38 fiches à doute visible + les passées.
