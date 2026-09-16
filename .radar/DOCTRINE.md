@@ -444,8 +444,18 @@ p, n, ci) dans les 12 langues, garde-fous chiffres/tirets ; pipeline,
 validate (la cohérence FR/traductions est bloquante), push.
 
 Vague 1 du 15/09/2026 : 24 fiches, 15 champs résolus, 9 doutes
-maintenus avec preuve, 0 invention. Routine hebdomadaire
-« resorption-des-doutes » (mercredi 7h30, max 8 doutes par passage).
+maintenus avec preuve, 0 invention.
+
+EXTENSION DU 16/09/2026, à la demande de Constance (« rendre
+l'automatisation faisable pour toutes les fiches ») : la routine couvre
+désormais TOUT le stock à chaque passage, par lots de 8, plafond de
+sécurité 24 champs par passage (le surplus est annoncé dans le compte
+rendu). Les fiches d'événements terminés ne s'enquêtent pas : la purge
+des zombies les évacue d'elle-même sous 30 jours. Vague intégrale du
+16/09/2026 exécutée en workflow (un enquêteur par fiche, un
+contre-vérificateur sceptique par champ résolu) : bilan chiffré dans le
+commit du jour. Routine hebdomadaire « resorption-des-doutes »
+(mercredi 7h34).
 
 ## LA VAGUE DES IMMINENTS (routine instaurée le 13/09/2026)
 
