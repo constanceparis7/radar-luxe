@@ -232,6 +232,10 @@ def main():
             slug = f"{base}-{i}"; i += 1
         seen.add(slug); e["_slug"] = slug
 
+    with open(f"{REPO}/slugs.json", "w", encoding="utf-8") as _f:
+        json.dump({f"{e.get('n','')}|{e.get('d1') or ''}": e["_slug"] for e in pages},
+                  _f, ensure_ascii=False, separators=(",", ":"))
+
     places, pseen = {}, set()
     for e in pages:
         k = (e.get("g") or e.get("v") or "").strip()
@@ -600,6 +604,14 @@ def main():
             # Même mesure d'audience que la page d'accueil : sans elle, les
             # arrivées Google directes sur une fiche étaient invisibles.
             "<script data-goatcounter=\"https://constanceparis7.goatcounter.com/count\" async src=\"//gc.zgo.at/count.js\"></script>"
+            "<style>.fav-mini{background:none;border:none;cursor:pointer;color:#d3b06a;font-size:15px;padding:0 3px;vertical-align:baseline;line-height:1}.fav-mini.on{color:#b48a3c}</style>"
+            "<script>(function(){var C='cp7favs';function L(){try{return JSON.parse(localStorage.getItem(C))||[]}catch(e){return[]}}"
+            "function S(){var f=L();document.querySelectorAll('.fav-mini[data-slug]').forEach(function(b){var on=f.indexOf(b.getAttribute('data-slug'))>-1;"
+            "b.textContent=on?'\\u2665':'\\u2661';b.classList.toggle('on',on);});}"
+            "document.addEventListener('click',function(ev){var b=ev.target.closest('.fav-mini[data-slug]');if(!b)return;ev.preventDefault();"
+            "var s=b.getAttribute('data-slug'),f=L(),i=f.indexOf(s);if(i>-1)f.splice(i,1);else f.push(s);"
+            "try{localStorage.setItem(C,JSON.stringify(f))}catch(e){}S();});"
+            "window.addEventListener('DOMContentLoaded',S);})();</script>"
             "</head><body><div class=\"wrap\">"
             f"<header class=\"site\"><a href=\"{prefix(lang)}/\" class=\"brand\">ConstanceParis<span class=\"s\">7</span></a>"
             "<div class=\"edition\">International Luxury Events</div></header>"
@@ -782,7 +794,7 @@ def main():
                     "<ul class=\"cards\">"]
             for e in events:
                 body.append(f"<li><div class=\"d\">{esc(T(e,lang,'dt') or e.get('d1',''))}</div>"
-                            f"<a class=\"t\" href=\"{u_event(e, lang)}\">{esc(T(e,lang,'n'))}</a>"
+                            f"<a class=\"t\" href=\"{u_event(e, lang)}\">{esc(T(e,lang,'n'))}</a> "+f"<button class=\"fav-mini\" data-slug=\"{e['_slug']}\" aria-label=\"{esc(UI['fav_add'][lang])}\">\u2661</button>"
                             + (f"<div>{esc((T(e,lang,'sw') or '')[:120])}</div>" if T(e, lang, "sw") else "") + "</li>")
             body.append(f"</ul><div class=\"chips\"><a href=\"{u_hub(lang)}\">{esc(UI['places_cats'][lang])}</a>"
                         f"<a href=\"{prefix(lang)}/\">← {esc(UI['back'][lang])}</a></div>")
@@ -855,7 +867,7 @@ def main():
                 home.append(f"<h2 class=\"sub\">{esc(UI['affiche'][lang])}</h2><ul class=\"cards\">")
                 for e in aff:
                     home.append(f"<li><div class=\"d\">{esc(e.get('d1',''))} · {esc(place_label((e.get('v') or '').strip(), lang))}</div>"
-                                f"<div class=\"t\"><a href=\"{u_event(e, lang)}\">{esc(T(e, lang, 'n'))}</a></div></li>")
+                                f"<div class=\"t\"><a href=\"{u_event(e, lang)}\">{esc(T(e, lang, 'n'))}</a> "+f"<button class=\"fav-mini\" data-slug=\"{e['_slug']}\" aria-label=\"{esc(UI['fav_add'][lang])}\">\u2661</button>"+"</div></li>")
                 home.append("</ul>")
 
             home.append(f"<h2 class=\"sub\">{esc(UI['by_cat'][lang])}</h2><div class=\"chips\">")
@@ -1148,7 +1160,7 @@ L'éditrice n'exerce aucun contrôle sur ces sites et décline toute responsabil
                     absents_pages.add(nom); continue
                 sw = T(e, lang, "sw") or ""
                 corps.append(f"<li><div class=\"d\">{esc(T(e,lang,'dt') or e.get('d1',''))}</div>"
-                             f"<a class=\"t\" href=\"{u_event(e,lang)}\">{esc(T(e,lang,'n'))}</a>"
+                             f"<a class=\"t\" href=\"{u_event(e,lang)}\">{esc(T(e,lang,'n'))}</a> "+f"<button class=\"fav-mini\" data-slug=\"{e['_slug']}\" aria-label=\"{esc(UI['fav_add'][lang])}\">\u2661</button>"
                              + (f"<div>{esc(sw[:140])}</div>" if sw else "") + "</li>")
             corps.append("</ul>")
             if s == "vienne-la-saison-des-bals" and lang == "fr":
@@ -1172,7 +1184,7 @@ L'éditrice n'exerce aucun contrôle sur ces sites et décline toute responsabil
                 if not e:
                     absents_pages.add(nom); continue
                 sw = T(e, lang, "sw") or ""
-                corps.append(f"<li><a class=\"t\" href=\"{u_event(e,lang)}\">{esc(T(e,lang,'n'))}</a>"
+                corps.append(f"<li><a class=\"t\" href=\"{u_event(e,lang)}\">{esc(T(e,lang,'n'))}</a> "+f"<button class=\"fav-mini\" data-slug=\"{e['_slug']}\" aria-label=\"{esc(UI['fav_add'][lang])}\">\u2661</button>"
                              + (f"<div>{esc(sw[:130])}</div>" if sw else "") + "</li>")
             corps.append("</ul>")
         corps.append(f"<div class=\"chips\"><a href=\"{prefix(lang)}/\">← {esc(X(lang,'retour'))}</a>"
@@ -1192,7 +1204,7 @@ L'éditrice n'exerce aucun contrôle sur ces sites et décline toute responsabil
             corps.append(f"<h2 class=\"sub\">{esc(Xdc(lang, dcfr))}</h2><ul class=\"cards\">")
             for e in evs:
                 corps.append(f"<li><div class=\"d\">{esc(e.get('d1',''))} · {esc(place_label((e.get('v') or '').strip(), lang))}</div>"
-                             f"<a class=\"t\" href=\"{u_event(e,lang)}\">{esc(T(e,lang,'n'))}</a></li>")
+                             f"<a class=\"t\" href=\"{u_event(e,lang)}\">{esc(T(e,lang,'n'))}</a> "+f"<button class=\"fav-mini\" data-slug=\"{e['_slug']}\" aria-label=\"{esc(UI['fav_add'][lang])}\">\u2661</button>"+"</li>")
             corps.append("</ul>")
         if ascot:
             corps.append(f"<div class=\"box\"><h2>{esc(X(lang,'v_ascot_t'))}</h2>"
@@ -1379,7 +1391,7 @@ L'éditrice n'exerce aucun contrôle sur ces sites et décline toute responsabil
                      "<ul class=\"cards\">"]
             for nr, e in vitrine:
                 corps.append(f"<li><div class=\"d\">{diamants(nr)} {nr}/100</div>"
-                             f"<a class=\"t\" href=\"{u_event(e,lang)}\">{esc(T(e,lang,'n'))}</a></li>")
+                             f"<a class=\"t\" href=\"{u_event(e,lang)}\">{esc(T(e,lang,'n'))}</a> "+f"<button class=\"fav-mini\" data-slug=\"{e['_slug']}\" aria-label=\"{esc(UI['fav_add'][lang])}\">\u2661</button>"+"</li>")
             corps.append("</ul>")
             corps.append(f"<h2 class=\"sub\">{esc(X(lang,'note_sub5'))}</h2>")
             mem_link = f"<a href=\"{prefix(lang)}/changements.html\">{esc(X(lang,'note_mem_link'))}</a>"
