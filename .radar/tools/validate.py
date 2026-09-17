@@ -476,6 +476,8 @@ def main():
     for b in blockers:
         print("BLOCK ", b)
 
+    if not blockers and _verrou():
+        blockers.append("LE VERROU a refusé le build (voir les lignes BLOQUEUR ci-dessus)")
     if not blockers:
         try:
             open(STATE_FILE, "w").write(str(cnt))
@@ -490,6 +492,14 @@ def main():
     print(f"\n{'FAIL' if blockers else 'OK'} — {len(blockers)} blocker(s), {len(warns)} warning(s)")
     sys.exit(1 if blockers else 0)
 
+
+
+def _verrou():
+    """LE VERROU (17/09/2026) : contrôle bloquant des fichiers générés, 13 langues.
+    Un échec du verrou est un échec de validation : on ne publie pas."""
+    import subprocess, sys as _s, os as _o
+    r = subprocess.run([_s.executable, _o.path.join(_o.path.dirname(_o.path.abspath(__file__)), "verrou.py")])
+    return r.returncode
 
 if __name__ == "__main__":
     main()

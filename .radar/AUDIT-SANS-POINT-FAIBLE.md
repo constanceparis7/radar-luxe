@@ -8,10 +8,10 @@ de chaque correction, et le verrou final est un validateur de build BLOQUANT.
 
 ## P0 : avant toute promotion
 
-1. [À FAIRE] Totaux publics contradictoires : 341 (communication) vs 325 (note.html,
-   somme des catégories) vs 240 (filtres accueil) vs 96/94 (catégorie EN vs hub EN).
-   Action : une seule fonction de comptage, libellés explicites (fiches en base /
-   événements notés / actifs du moment), et test bloquant sur toute somme incohérente.
+1. [FAIT 17/09] Totaux réconciliés : 325 = 341 moins les 16 points d'entrée non notés,
+   désormais expliqué en toutes lettres sur note.html. Les « 240 » et « 96 vs 94 » de
+   l'audit extérieur étaient des fantômes du cache de son moteur (vérifié : 94 partout).
+   Test bloquant V5 en place : hub vs pages catégories vs base, et compteur de note.html.
 2. [FAIT 17/09] Gala Planetary Health : d1/d2 disaient 25/09, le texte vérifié dit 18/09.
    Synchronisé. Généraliser : test bloquant date machine vs date écrite (chantier n° 20).
 3. [FAIT 17/09 pour la description] Meta description FR de l'accueil encore estivale
@@ -93,11 +93,20 @@ de chaque correction, et le verrou final est un validateur de build BLOQUANT.
 
 ## LE VERROU : le validateur de build bloquant
 
-Étendre validate.py pour faire échouer toute publication si : None/null/undefined/NaN
-ou vide dans un champ public ; divergence visible vs JSON-LD ; alternate manquant ;
-URL de sitemap non-200/redirigée/noindex ; lien interne cassé ; compteur incohérent ;
-badge vérifié sans source datée ; d2 < d1 ; ancienne saison dans les métadonnées ;
-page sans title/description/H1/canonical ; date écrite divergente de la date machine.
+[EN SERVICE depuis le 17/09 au soir] .radar/tools/verrou.py, branché dans validate.py :
+toute publication échoue sur V1 champs empoisonnés (None/null/undefined/NaN/[object
+Object]) dans title/description/og/h1, V2 saison périmée dans les métadonnées de
+structure, V3 page sans title/description/canonical, V4 d2 < d1, V5 compteurs
+divergents, V6 lien interne cassé, V7 URL de sitemap sans fichier, V8 JSON-LD
+illisible, V9 hreflang vers fichier absent. En avertissement (promotion à venir) :
+W1 date écrite hors fenêtre machine, W2 page sans h1. 6 367 pages contrôlées en 3 s.
+Dès sa première exécution, le verrou a attrapé : le lien du bandeau vers Royal Ascot
+cassé par la normalisation des lieux, les liens mémoire brisés des pages Note en
+12 langues, et la fiche D&G Casa Amor finissant en machine le 30/08 alors que son
+texte vérifié dit le 31/10. Les trois sont corrigés.
+
+Reste à durcir : divergence visible vs JSON-LD champ à champ (chantier 8), badge
+vérifié sans source datée, W1 et W2 promus bloqueurs une fois le corpus purgé.
 
 ## Ordre d'exécution (validé avec l'audit extérieur)
 

@@ -404,7 +404,7 @@ def main():
      "note_sub3": "Les diamants",
      "note_p4": "La note se lit aussi en diamants : ✦✦✦✦✦ à partir de 88, ✦✦✦✦ à partir de 76, ✦✦✦ à partir de 62, ✦✦ à partir de 48, ✦ en dessous.",
      "note_sub4": "Aujourd'hui sur le radar",
-     "note_count_suffix": " événements notés. Les plus hautes notes du moment :",
+     "note_count_suffix": " événements notés, sur l'ensemble des fiches du radar : les points d'entrée permanents (clubs privés, ventes presse, conciergeries) décrivent un accès, pas un rendez-vous daté, et ne reçoivent donc pas de note. Les plus hautes notes du moment :",
      "note_sub5": "Ce que la Note apprendra encore",
      "note_p6": "{{MEM}} consigne les fenêtres de réservation et les épuisements constatés. « Complet en deux heures » est une mesure d'engouement qu'aucune formule ne remplace : d'année en année, ces relevés viendront affiner le critère d'accès. Et lorsque la rédaction franchit elle-même les portes, la fiche portera la mention « vécu et vérifié sur place ».",
      "note_mem_link": "La Mémoire du radar",
@@ -1484,13 +1484,13 @@ L'éditrice n'exerce aucun contrôle sur ces sites et décline toute responsabil
                              f"<a class=\"t\" href=\"{u_event(e,lang)}\">{esc(T(e,lang,'n'))}</a> "+f"<button class=\"fav-mini\" data-slug=\"{e['_slug']}\" aria-label=\"{esc(UI['fav_add'][lang])}\">\u2661</button>"+"</li>")
             corps.append("</ul>")
             corps.append(f"<h2 class=\"sub\">{esc(X(lang,'note_sub5'))}</h2>")
-            mem_link = f"<a href=\"{prefix(lang)}/changements.html\">{esc(X(lang,'note_mem_link'))}</a>"
+            mem_link = f"<a href=\"/changements.html\">{esc(X(lang,'note_mem_link'))}</a>"
             corps.append(f"<p>{esc(X(lang,'note_p6')).replace('{{MEM}}', mem_link)}</p>")
             meth_link = f"<a href=\"{prefix(lang)}/methode.html\">{esc(X(lang,'note_method_link'))}</a>"
             corps.append(f"<p class=\"meta\">{esc(X(lang,'note_p7')).replace('{{METHOD}}', meth_link)}</p>")
             corps.append(f"<div class=\"chips\"><a href=\"{prefix(lang)}/\">← {esc(X(lang,'retour'))}</a>"
                          f"<a href=\"{prefix(lang)}/methode.html\">{esc(X(lang,'m_h1'))}</a>"
-                         f"<a href=\"{prefix(lang)}/changements.html\">{esc(X(lang,'bc_memoire'))}</a></div>")
+                         f"<a href=\"/changements.html\">{esc(X(lang,'bc_memoire'))}</a></div>")
             chemin = "/note.html"
             write(prefix(lang) + chemin, page(lang, titre_seo(chemin, lang, f"{X(lang,'note_h1')} · ConstanceParis7"), X(lang, "note_desc"),
                   prefix(lang) + chemin, "".join(corps), hl_page(chemin)))
