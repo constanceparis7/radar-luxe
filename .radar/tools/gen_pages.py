@@ -135,6 +135,8 @@ CAT_I18N = {"art": "c_art", "mode": "c_mode", "artdevivre": "c_art2",
 # Micro-libellés d'interface (à relire par le workflow multilingue).
 UI = {
  "verified":{"fr":"Vérifié à la source le","en":"Verified at the source on","es":"Verificado en la fuente el","it":"Verificato alla fonte il","pt":"Verificado na fonte a","de":"An der Quelle geprüft am","ru":"Проверено по источнику:","ar":"تم التحقق من المصدر بتاريخ","zh":"已于源头核实：","ja":"公式情報で確認：","ko":"공식 출처 확인:","hi":"स्रोत से सत्यापित:","tr":"Kaynağından doğrulandı:"},
+ "fav_add": {"fr":"Ajouter aux favoris","en":"Add to favorites","es":"Añadir a favoritos","it":"Aggiungi ai preferiti","pt":"Adicionar aos favoritos","de":"Zu Favoriten hinzufügen","ru":"Добавить в избранное","ar":"أضف إلى المفضلة","zh":"加入收藏","ja":"お気に入りに追加","ko":"즐겨찾기에 추가","hi":"पसंदीदा में जोड़ें","tr":"Favorilere ekle"},
+ "fav_on":  {"fr":"Dans mes favoris","en":"In my favorites","es":"En mis favoritos","it":"Nei miei preferiti","pt":"Nos meus favoritos","de":"In meinen Favoriten","ru":"В моём избранном","ar":"في المفضلة","zh":"已收藏","ja":"お気に入り済み","ko":"즐겨찾기에 저장됨","hi":"पसंदीदा में शामिल","tr":"Favorilerimde"},
  "radar":   {"fr":"Radar","en":"Radar","es":"Radar","it":"Radar","pt":"Radar","de":"Radar","ru":"Радар","ar":"الرادار","zh":"雷达","ja":"レーダー","ko":"레이더","hi":"रडार","tr":"Radar"},
  "note":    {"fr":"Note du radar","en":"Radar score","es":"Nota del radar","it":"Voto del radar","pt":"Nota do radar","de":"Radar-Note","ru":"Оценка радара","ar":"تقييم الرادار","zh":"雷达评分","ja":"レーダースコア","ko":"레이더 점수","hi":"रडार स्कोर","tr":"Radar notu"},
  "all":     {"fr":"Tout","en":"All","es":"Todo","it":"Tutto","pt":"Tudo","de":"Alle","ru":"Все","ar":"الكل","zh":"全部","ja":"すべて","ko":"전체","hi":"सभी","tr":"Tümü"},
@@ -647,20 +649,25 @@ def main():
             if lieu:
                 bc += f" › <a href=\"{u_place(lieu, lang)}\">{esc(pk)}</a>"
             bc += "</div>"
-            body = [bc, f"<h1>{esc(n)} <button class=\"fav-btn\" data-slug=\"{e['_slug']}\" "
-                        f"title=\"Favoris\" aria-label=\"Favoris\">\u2661</button></h1>",
-                    """<style>.fav-btn{background:none;border:none;cursor:pointer;font-size:.62em;
-                    color:#d3b06a;vertical-align:middle;padding:0 4px}.fav-btn.on{color:#c94f4f}</style>
+            body = [bc, f"<h1>{esc(n)}</h1>",
+                    f"<button class=\"fav-btn\" data-slug=\"{e['_slug']}\" "
+                    f"data-add=\"\u2661 {esc(UI['fav_add'][lang])}\" data-on=\"\u2665 {esc(UI['fav_on'][lang])}\" "
+                    f"aria-label=\"{esc(UI['fav_add'][lang])}\">\u2661 {esc(UI['fav_add'][lang])}</button>",
+                    """<style>.fav-btn{display:inline-flex;align-items:center;gap:7px;background:none;cursor:pointer;
+                    font-size:13px;letter-spacing:.04em;color:#d3b06a;border:1px solid rgba(211,176,106,.5);
+                    border-radius:999px;padding:8px 18px;margin:10px 0 4px;font-family:inherit}
+                    .fav-btn:hover{background:rgba(211,176,106,.12)}
+                    .fav-btn.on{color:#b48a3c;border-color:#d3b06a;background:rgba(211,176,106,.16)}</style>
                     <script>(function(){var CLE='cp7favs';
                     function lire(){try{return JSON.parse(localStorage.getItem(CLE))||[]}catch(e){return[]}}
                     document.addEventListener('click',function(ev){var b=ev.target.closest('.fav-btn');if(!b)return;
                      var s=b.getAttribute('data-slug');var f=lire();var i=f.indexOf(s);
-                     if(i>-1){f.splice(i,1);b.textContent='\u2661';b.classList.remove('on');}
-                     else{f.push(s);b.textContent='\u2665';b.classList.add('on');}
+                     if(i>-1){f.splice(i,1);b.textContent=b.getAttribute('data-add');b.classList.remove('on');}
+                     else{f.push(s);b.textContent=b.getAttribute('data-on');b.classList.add('on');}
                      try{localStorage.setItem(CLE,JSON.stringify(f))}catch(e){}});
                     window.addEventListener('DOMContentLoaded',function(){var f=lire();
                      document.querySelectorAll('.fav-btn').forEach(function(b){
-                      if(f.indexOf(b.getAttribute('data-slug'))>-1){b.textContent='\u2665';b.classList.add('on');}});});
+                      if(f.indexOf(b.getAttribute('data-slug'))>-1){b.textContent=b.getAttribute('data-on');b.classList.add('on');}});});
                     })();</script>"""]
             meta = []
             if T(e, lang, "dt"):
