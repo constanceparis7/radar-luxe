@@ -16,12 +16,15 @@ saison (décision expresse de Gérald du 14/07/2026). Migration cloud le 21/07/2
 
 ## Environnement cloud (différences avec l'ancienne exécution locale)
 
-- Cloner les DEUX dépôts en début de passe :
-  - PUBLIC  : `H2SL-bot/luxe-ete-2026`   → le site (ne toucher qu'`index.html`
-    + les pages générées par `tools/gen_pages.py`). `export RADAR_REPO=<chemin du clone>`.
-  - PRIVÉ   : `H2SL-bot/luxe-radar-filet` → CE dépôt : le filet (`tools/`),
-    la doctrine (`PASSE.md`), le journal d'apprentissage (`tools/lessons.md`),
-    les journaux (`tools/run-log.ndjson`, `tools/perf-log.ndjson`, `tools/.last-count`).
+- **DÉPÔT UNIQUE depuis la consolidation (constatée le 17/09/2026) :**
+  `constanceparis7/radar-luxe` contient à la fois le site généré (index.html,
+  i18n-data/, pages e/*.html…) ET l'outillage privé (`.radar/tools/`,
+  `.radar/session/`, doctrine, journaux). L'accès GitHub de la session est
+  scopé à ce seul dépôt. `export RADAR_REPO=<racine du clone>`.
+  *(Historique : ce dépôt remplace l'ancienne architecture à deux dépôts
+  `H2SL-bot/luxe-ete-2026` [public] + `H2SL-bot/luxe-radar-filet` [privé] —
+  si un prompt de routine mentionne encore ces deux dépôts, suivre le prompt
+  de tâche du scheduler, qui documente l'architecture réelle en vigueur.)*
 - IL N'Y A PLUS de localhost:8026. Les DEUX adresses vivantes : 
   1) https://constanceparis7.com ; 2) l'artifact
   https://claude.ai/code/artifact/89b85688-ff57-481d-82d7-f7792051b066.

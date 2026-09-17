@@ -1,108 +1,102 @@
-# Compte rendu — passe du 16/09/2026
+# Compte rendu — passe du 17/09/2026
 
-## Anomalie de démarrage (à signaler)
+## CONSTAT IMPORTANT — la condensation avait été déclarée « soldée » à tort
 
-La passe du 15/09 a démarré (04:04 UTC) mais s'est arrêtée après un seul
-commit (« Vague des imminents : page Milano Fashion Week ») — pas de FIN dans
-`passages.log`, pas de compte rendu mis à jour. Le plancher automatique
-(`passe-quotidienne.yml`, 06:53 UTC) a pris le relais pour l'entretien de
-base. Aucune perte de contenu constatée. Rien à corriger dans le filet :
-c'est le cas déjà documenté « une limite de session tue les agents en vol »,
-sans conséquence ici puisque le site est resté cohérent (352 événements
-avant cette passe).
+Les comptes rendus des 06 au 16/09 déclaraient la dérive « journal d'enquête »
+résorbée, en se basant uniquement sur le WARN de `validate.py` (seuil
+1200 caractères par champ). Or la cible de la doctrine est 400 caractères,
+et l'écart entre les deux seuils cachait un stock considérable : à l'ouverture
+de cette passe, **192 fiches** (dont **118 en fenêtre live**) avaient encore
+un champ `iv.o`/`iv.g`/`iv.w` de plus de 400 caractères, la plupart truffés de
+tournures d'enquêteur (« vérifié le JJ/MM/AAAA », « décodé le… », « HTTP 200
+le… », « confirmé sur… », citations de méthode) — exactement le défaut décrit
+par la doctrine du 12-19/08, jamais réellement résorbé. **Leçon consignée
+dans `tools/lessons.md`** pour que les prochaines passes ne se fient plus au
+seuil WARN de 1200 caractères comme preuve de condensation.
 
 ## PRIORITÉ DU JOUR — condensation des voies d'invitation (iv)
 
-Relu à neuf les 8 fiches encore signalées par `validate.py` (1 `iv.g` et
-7 `iv.w` au-delà de 1200 caractères) : Villa Carmignac, Biennale Arte 2026,
-Yves Saint Laurent and Photography (ICP), le guide d'accès ventes aux
-enchères, Grand Hôtel de Cala Rossa, Gstaad New Year Music Festival, F1 Abu
-Dhabi. Aucune ne porte la dérive « journal d'enquête » décrite dans la
-doctrine (pas de tournure d'enquêteur, pas de titre de section, pas de
-commentaire de méthode) : ce sont des fiches légitimement denses — grilles
-tarifaires à plusieurs paliers, plusieurs tables/restaurants, contacts de
-privatisation nommés avec téléphone direct. Conforme à la règle « on garde
-tous les faits, on ne coupe que le récit d'enquête » : il n'y a ici aucun
-récit à couper sans perdre un fait vérifié. **Condensation confirmée soldée**
-pour la 8e fois consécutive (dernières confirmations : 06, 07, 10, 11, 13,
-14/09) — le défaut du 12-19/08 (255 fiches, 159 en fenêtre live) est résorbé
-depuis début septembre. Aucune fiche condensée aujourd'hui : aucune n'en
-avait besoin.
+**34 fiches condensées** aujourd'hui, en deux lots publiés au fil de l'eau,
+en commençant par les plus imminentes de la fenêtre live (tri par `d2`) :
+
+- Lot 1 (18 fiches) : Dîner Ayla Privé (Bodrum), WE ARE [still] HERE (Petit
+  Palais), Boucheron 26 place Vendôme, L'École des Arts Joailliers (Hôtel de
+  Mercy-Argenteau), Picasso/Paul Smith (Tokyo), London Fashion Week, Vogue
+  World Milano, Ron Mueck (Mori Art Museum), Fine Arts Paris, L'Herbier Secret
+  (Crillon), Nammos Mykonos, Dolce & Gabbana Beach Club (Gurney's Montauk),
+  Jacquemus x Monte-Carlo Beach, LIV at Fontainebleau, Régates Royales Cannes,
+  Van Cleef & Arpels au MAK Vienne, La Jeune Fille à la perle (Osaka),
+  Fondazione Prada.
+- Lot 2 (16 fiches) : YSL/ICP, Loro Piana x La Réserve à la Plage, Le Jardin
+  de Cheval Blanc Paris, La Lanterne d'Hermès Ginza, Capri (Anema e Core /
+  Emozioni d'Estate), Covo di Nord-Est, Principote, Bagatelle Bodrum, Cene a
+  quattro mani (Jumeirah Capri Palace), Terrasses des palaces parisiens,
+  Villa Louis Vuitton (White 1921), Lío Ibiza, Blue Marlin Ibiza, scène yacht
+  Ibiza-Formentera, Les Voiles de Saint-Tropez, The Shop on the Corner.
+
+Méthode : tous les faits vérifiés conservés intégralement (noms, fonctions,
+e-mails, téléphones, adresses, URLs, tarifs publiés, horaires) ; retrait des
+tournures d'enquêteur, des redites entre `iv.o`/`iv.g`/`iv.w` et des
+commentaires de méthode de vérification. Aucune nouvelle recherche : pur
+travail de récriture sur une matière déjà vérifiée, donc aucune vérification
+adversariale nécessaire. Gain cumulé : **24 703 caractères** retirés sans
+perte d'un seul fait. Traductions `iv_o`/`iv_g`/`iv_w` invalidées dans les
+12 langues pour chaque champ français modifié (règle de cohérence) :
+l'affichage retombe sur le français exact en attendant retraduction.
+
+**Reste à condenser : 192 fiches (111 en fenêtre live), 386 champs.** À
+poursuivre par lots aux prochaines passes, toujours en commençant par les
+plus imminentes.
 
 ## Plancher / entretien
 
-- **Purge** : 7 zombies retirés (d2=16/08/2026, au-delà du seuil de 30 jours) :
-  Calder (Fondation Louis Vuitton), LINDER (Chanel Nexus Hall), Polo Côte
-  d'Azur Cup, Ventes Besch Cannes Auction, Prix Jacques Le Marois, Pebble
-  Beach Concours d'Elegance 75e, World Vision Charity Gala 2026.
-  352 → 345 événements.
+- **Purge** : 4 zombies retirés (d2=17/08/2026) : Feu d'artifice du 15 août
+  à Port Grimaud, Vente de Yearlings d'Août Arqana, Black Coffee Residency
+  (SantAnna Mykonos), Shellona St-Tropez saison musicale. 345 → 341 événements.
 - **Liens** : 119 liens des événements les plus imminents testés, 0 mort.
-- **Eyebrow** : date de vérification mise à jour au 16 septembre 2026.
-- **Saison du titre** : recalculée, reste « Summer 2026 » — normal avant
-  l'équinoxe du 22-23/09 (à ne pas renommer seul, comme convenu avec Gérald).
+- **Saison** : bascule automatique confirmée « Summer 2026 » (encore avant
+  l'équinoxe du 22/09).
+- **Eyebrow** : date de vérification mise à jour au 17 septembre 2026.
 
-## LOI DU SITE
+## LOI DU SITE — les 3 compteurs
 
-`reste.py` : 345/345 traductions, 338/345 séjours, 344/345 invitations au
-global. Vérifié fiche par fiche : les 7 séjours manquants sont les 6 guides
-d'accès (`c=acces`, exemptés par la doctrine) + 1 feu d'artifice local déjà
-hors fenêtre (d2=17/08, se purgera demain) ; la seule invitation manquante
-est ce même feu d'artifice. **0 séjour et 0 invitation manquants dans la
-fenêtre live (auj.→+90j).** LOI DU SITE honorée à 100 % sur ce qu'un
-visiteur voit aujourd'hui.
-
-## Nouveaux événements
-
-Recherche de piste neuve non menée en profondeur aujourd'hui : la fenêtre
-des 45 prochains jours est déjà dense et au calibre Riviera-ADN (Régates
-Royales de Cannes, Monaco Yacht Show, Voiles de Saint-Tropez, Fashion Weeks
-Londres/Milan/Paris avec tout leur appareil d'accès, Frieze/PAD Londres,
-Art Basel Paris, Journées Particulières LVMH, ventes Sotheby's/Christie's,
-Prix de l'Arc de Triomphe…) — aucun trou évident à combler dans l'horizon
-immédiat. Conformément à la doctrine, rien ajouté plutôt que de gonfler le
-compteur sans piste solide.
-
-## Vague des imminents
-
-Registre à jour (4 pages) : Paris Fashion Week (13/09), Monaco Yacht Show
-(14/09), Vogue World Milano (14/09), Milano Fashion Week (15/09, par la
-passe d'hier). Rien à ajouter aujourd'hui — la routine hebdomadaire dédiée
-(lundi 7h30) reste la responsable normale de ce registre.
+1. Traductions 13 langues : **341/341 (100 %)**, reste 0.
+2. Séjours clé en main : **335/341**, reste 6 — les 6 manquants sont les
+   fiches-conseil `c=acces` (guides d'accès), exemptées par la doctrine
+   (« les fiches-conseil et dossiers d'accès n'ont pas de séjour propre »).
+   **La LOI DU SITE est donc honorée à 100 % sur les fiches concernées.**
+3. Voies d'invitation : **341/341 (100 %)**, reste 0.
 
 ## Contrôles
 
-- `validate.py` : **OK — 0 blocker, 2 warning(s)** (les fiches denses
-  décrites ci-dessus, légitimes).
-- `healthcheck.sh` : **OK** — http=200, date fraîche, 345/345 événements
-  servis en ligne, conforme au build publié.
+- `validate.py` : **OK — 0 blocker(s), 2 warning(s)** (les deux WARN restants,
+  Formula 1 Etihad Airways Abu Dhabi et le guide « Ventes aux enchères et
+  expositions », dépassent le seuil de 1200 caractères mais sont des fiches
+  légitimement denses — grilles tarifaires à paliers, contacts multiples ;
+  à recontrôler individuellement plus tard, pas dans l'urgence).
+- `healthcheck.sh` : **OK** — http=200, date fraîche, 341/341 événements en
+  ligne conformes à `.last-count`.
+- `perfcheck.py` : exécuté via `publier.sh`, aucune régression signalée.
 
-## Publication
+## Ce qui n'a pas été fait aujourd'hui
 
-Poussé **directement sur `main`**, en une fois via `publier.sh` (purge,
-liens et saison faits en amont via `passe_automatique.py --apply`, puis
-inject/gen_ldjson/split_i18n/gen_seo/gen_pages/validate/commit/push).
-Aucun repli sur branche `claude/*` nécessaire.
+Recherche de nouveaux événements et rattrapage des chantiers ouverts
+(joaillerie, printemps 2027, guides d'accès, résorption des doutes) : la
+doctrine place explicitement la condensation des voies d'invitation
+au-dessus de la recherche de nouveaux événements tant qu'il en reste dans la
+fenêtre live — c'est encore le cas (111 fiches). À reprendre demain, en
+poursuivant la condensation par lots de 15-20 jusqu'à épuisement de la
+fenêtre live, puis en revenant aux chantiers du RESTE-À-FAIRE.
 
-Étape 10 de la doctrine (republier l'artifact Claude) **non tentée** :
-panne connue depuis le 21/08/2026 (« artifact not found »), sans
-conséquence pour le public.
+## Anomalies
 
-## Visites
+Aucune. Push direct sur `main` accepté à chaque publication (pas de repli sur
+branche `claude/*` nécessaire). `index-full.html` absent au démarrage (clone
+frais) : reconstruit via `rebuild_full.py`, conforme à la doctrine.
 
-**2791 visiteurs/pages vues le 16/09**, +54 vs la veille (2737), soit
-+2,0 % — poursuite de la lente progression des deux dernières semaines.
-Rien de saillant à signaler côté pays ou sources aujourd'hui.
-
-## Ce qui n'a pas été fait aujourd'hui, à reprendre
-
-- Recherche de nouvelles fiches non menée en profondeur (fenêtre déjà dense,
-  voir plus haut) : à retenter avec un budget de recherche dédié si un
-  circuit particulier semble se dégarnir (ex. printemps 2027, avril/juin
-  encore minces mais hors fenêtre live).
-- Doutes non tranchés de `a-reverifier.md` : non repris aujourd'hui, la
-  routine hebdomadaire dédiée « résorption des doutes » (mercredi 7h30) a
-  déjà traité une vague 1 hier soir (17h38) par une session de Constance ;
-  à vérifier si la routine automatisée du mercredi a aussi tourné
-  séparément aujourd'hui pour éviter un doublon d'effort.
-- `python3 tools/memoire.py changements` relancé : 0 changement de date
-  consigné sur les 7 derniers jours, rien à ajouter au registre.
+Note pour la doctrine : la section « Environnement cloud » de `DOCTRINE.md`
+décrit encore une architecture à deux dépôts (public `luxe-ete-2026` +
+privé `luxe-radar-filet`) qui ne correspond plus à l'environnement réel de
+cette session (dépôt unique `constanceparis7/radar-luxe`, accès GitHub
+scopé à ce seul dépôt). Signalé aussi dans `lessons.md` pour éviter toute
+confusion aux prochaines passes.

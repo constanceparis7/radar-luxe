@@ -1062,3 +1062,38 @@ soit documenter explicitement dans la doctrine que cette étape reste manuelle e
 refaite par la session elle-même chaque lundi. Ne pas laisser une étape de la doctrine sans
 outil ET sans rappel clair : c'est exactement le schéma qui a produit un mois de péremption
 silencieuse ici.
+
+## 17/09/2026 — la condensation avait été déclarée « soldée » à tort pendant 8 passes (06 au 16/09)
+Le compte rendu du 16/09 (et les sept précédents) déclarait la dérive « journal d'enquête »
+sur `iv.o`/`iv.g`/`iv.w` résorbée, en ne relisant QUE les fiches signalées par le WARN de
+`validate.py` — seuil 1200 caractères par champ. Or la cible fixée par la doctrine de
+condensation est 400 caractères. Entre les deux seuils vivait un stock jamais mesuré : à
+l'ouverture de cette passe, 192 fiches (dont 118 en fenêtre live) avaient un champ `iv.*` de
+plus de 400 caractères, la plupart pleins de tournures d'enquêteur (« vérifié le JJ/MM/AAAA »,
+« décodé le… », « HTTP 200 le… », « confirmé sur… », citations de méthode de vérification) —
+exactement le défaut du 12-19/08, jamais réellement traité, seulement masqué par un mauvais
+proxy de mesure.
+RÈGLE PERMANENTE : ne jamais utiliser un seuil WARN de `validate.py` (posé pour ne pas
+bloquer la publication) comme preuve qu'un chantier de condensation est terminé. La mesure de
+progrès d'un chantier de condensation doit toujours utiliser LE SEUIL CIBLE DE LA CONSIGNE
+(ici 400 car.), jamais un seuil de tolérance technique voisin mais différent — les deux
+répondent à des questions différentes (« est-ce assez grave pour bloquer la publication ? »
+contre « le travail de fond est-il fait ? »). 34 fiches condensées ce jour avec cette mesure
+corrigée ; 192 restent (111 en fenêtre live) — à poursuivre par lots aux prochaines passes.
+
+## 17/09/2026 — la doctrine « deux dépôts » de DOCTRINE.md est stale pour cette session
+La section « Environnement cloud » de `.radar/DOCTRINE.md` (et le prompt de routine du
+21/07-22/07/2026 qu'elle documente) décrit une architecture à deux dépôts GitHub distincts :
+public `H2SL-bot/luxe-ete-2026` (le site) et privé `H2SL-bot/luxe-radar-filet` (le filet,
+`tools/`, doctrine, journaux). Cette session s'exécute en réalité sur un dépôt UNIQUE,
+`constanceparis7/radar-luxe`, qui contient à la fois le site généré (index.html, i18n-data/,
+pages e/*.html) ET l'outillage privé (.radar/tools/, .radar/session/, journaux) — l'accès
+GitHub de cette session est d'ailleurs scopé à ce seul dépôt, une session ne pourrait pas
+cloner un second dépôt même en suivant la doctrine à la lettre.
+RÈGLE : suivre le prompt de tâche fourni par le scheduler (qui documente correctement le
+dépôt unique) plutôt que la section « Environnement cloud » de DOCTRINE.md quand les deux se
+contredisent sur l'architecture des dépôts — le reste de DOCTRINE.md (mission, garde-fous,
+procédure de la passe, seuils) reste, lui, pleinement valable et a été suivi sans réserve.
+À CORRIGER : la section « Environnement cloud » de DOCTRINE.md devrait être mise à jour pour
+refléter le dépôt unique, afin qu'une future passe ne perde pas de temps à chercher un second
+dépôt qui n'existe pas dans ce contexte.
