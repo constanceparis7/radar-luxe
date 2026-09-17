@@ -135,6 +135,7 @@ CAT_I18N = {"art": "c_art", "mode": "c_mode", "artdevivre": "c_art2",
 # Micro-libellés d'interface (à relire par le workflow multilingue).
 UI = {
  "verified":{"fr":"Vérifié à la source le","en":"Verified at the source on","es":"Verificado en la fuente el","it":"Verificato alla fonte il","pt":"Verificado na fonte a","de":"An der Quelle geprüft am","ru":"Проверено по источнику:","ar":"تم التحقق من المصدر بتاريخ","zh":"已于源头核实：","ja":"公式情報で確認：","ko":"공식 출처 확인:","hi":"स्रोत से सत्यापित:","tr":"Kaynağından doğrulandı:"},
+ "method":  {"fr":"La méthode","en":"Our method","es":"El método","it":"Il metodo","pt":"O método","de":"Die Methode","ru":"Метод","ar":"المنهجية","zh":"方法","ja":"メソッド","ko":"방법론","hi":"पद्धति","tr":"Yöntem"},
  "favs":    {"fr":"Favoris","en":"Favorites","es":"Favoritos","it":"Preferiti","pt":"Favoritos","de":"Favoriten","ru":"Избранное","ar":"المفضلة","zh":"收藏","ja":"お気に入り","ko":"즐겨찾기","hi":"पसंदीदा","tr":"Favoriler"},
  "fav_add": {"fr":"Ajouter aux favoris","en":"Add to favorites","es":"Añadir a favoritos","it":"Aggiungi ai preferiti","pt":"Adicionar aos favoritos","de":"Zu Favoriten hinzufügen","ru":"Добавить в избранное","ar":"أضف إلى المفضلة","zh":"加入收藏","ja":"お気に入りに追加","ko":"즐겨찾기에 추가","hi":"पसंदीदा में जोड़ें","tr":"Favorilere ekle"},
  "fav_on":  {"fr":"Dans mes favoris","en":"In my favorites","es":"En mis favoritos","it":"Nei miei preferiti","pt":"Nos meus favoritos","de":"In meinen Favoriten","ru":"В моём избранном","ar":"في المفضلة","zh":"已收藏","ja":"お気に入り済み","ko":"즐겨찾기에 저장됨","hi":"पसंदीदा में शामिल","tr":"Favorilerimde"},
@@ -605,7 +606,7 @@ def main():
             # Même mesure d'audience que la page d'accueil : sans elle, les
             # arrivées Google directes sur une fiche étaient invisibles.
             "<script data-goatcounter=\"https://constanceparis7.goatcounter.com/count\" async src=\"//gc.zgo.at/count.js\"></script>"
-            "<style>.fav-mini{background:none;border:none;cursor:pointer;color:#d3b06a;font-size:15px;padding:0 3px;vertical-align:baseline;line-height:1}.fav-mini.on{color:#b48a3c}</style>"
+            "<style>.trust{display:flex;flex-wrap:wrap;align-items:center;gap:10px;border:1px solid rgba(211,176,106,.4);border-left:3px solid #d3b06a;border-radius:6px;padding:9px 14px;margin:12px 0;font-size:13px}.trust b{color:#d3b06a;font-weight:600}.trust a{color:#d3b06a;text-decoration:none}.trust a:hover{text-decoration:underline}.trust .tm{margin-left:auto;font-size:12px;opacity:.85}.fav-mini{background:none;border:none;cursor:pointer;color:#d3b06a;font-size:15px;padding:0 3px;vertical-align:baseline;line-height:1}.fav-mini.on{color:#b48a3c}</style>"
             "<script>(function(){var C='cp7favs';function L(){try{return JSON.parse(localStorage.getItem(C))||[]}catch(e){return[]}}"
             "function S(){var f=L();document.querySelectorAll('.fav-nb').forEach(function(n){n.textContent=f.length?' · '+f.length:'';});document.querySelectorAll('.fav-mini[data-slug]').forEach(function(b){var on=f.indexOf(b.getAttribute('data-slug'))>-1;"
             "b.textContent=on?'\\u2665':'\\u2661';b.classList.toggle('on',on);});}"
@@ -773,7 +774,13 @@ def main():
                 body.append(f"<div class=\"bc\"><a href=\"/note.html\">{diamants(nr)} {esc(UI['note'][lang])} : {nr}/100</a></div>")
             dv = date_verif(e)
             if dv:
-                body.append(f"<div class=\"bc\"><a href=\"/methode.html\">✓ {esc(UI['verified'][lang])} {dv}</a></div>")
+                _u = (e.get("u") or "").strip()
+                _dom = ""
+                if _u.startswith("http"):
+                    _h = _u.split("/")[2].removeprefix("www.")
+                    _dom = f" · <a href=\"{esc(_u)}\" target=\"_blank\" rel=\"noopener\">{esc(_h)} ↗</a>"
+                body.append(f"<div class=\"trust\"><span>✓ <b>{esc(UI['verified'][lang])} {dv}</b></span>{_dom}"
+                            f"<a class=\"tm\" href=\"/methode.html\">{esc(UI['method'][lang])}</a></div>")
             if lang == "fr" and QST:
                 lies = questions_liees(e)
                 if lies:
