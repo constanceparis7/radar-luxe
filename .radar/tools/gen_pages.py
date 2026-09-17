@@ -642,6 +642,83 @@ def main():
         open(fp, "w", encoding="utf-8").write(content)
 
     sitemap_urls = [f"{BASE}/"]
+    # Normalisation des lieux du 17/09/2026 : les anciens libellés fusionnés
+    # gardent une page de renvoi vers la destination canonique (jamais dans le
+    # sitemap, noindex). Écrites AVANT les vraies pages : une vraie page au
+    # même chemin l'emporte toujours.
+    LIEU_REDIRECTS = {
+     "apremont-chantilly": "apremont",
+     "ascot-berkshire": "londres-saison-anglaise",
+     "baja-sardinia-arzachena": "sardaigne-costa-smeralda",
+     "blenheim-palace-angleterre": "londres-saison-anglaise",
+     "blenheim-palace-woodstock": "londres-saison-anglaise",
+     "cabo-san-lucas-los-cabos": "mexique-tulum-careyes",
+     "calvia-mallorca": "ibiza-baleares",
+     "cap-d-antibes": "antibes",
+     "cap-d-antibes-antibes": "antibes",
+     "chantilly-oise": "apremont",
+     "deauville-calvados": "deauville",
+     "english-harbour-antigua-et-barbuda": "mustique-caraibes",
+     "forte-dei-marmi-versilia": "etapes-du-circuit-dete",
+     "gassin-golfe-de-saint-tropez": "gassin",
+     "golfe-de-saint-tropez-var": "ramatuelle",
+     "gstaad-alpes-suisses": "courchevel-st-moritz-gstaad",
+     "gstaad-rougemont-saanen-lauenen-chateau-d-x": "courchevel-st-moritz-gstaad",
+     "gstaad-saanen-rougemont": "courchevel-st-moritz-gstaad",
+     "gustavia-saint-barthelemy": "saint-barth",
+     "hurlingham-gran-buenos-aires": "buenos-aires-polo-argentin",
+     "ibiza-cala-jondal": "ibiza-baleares",
+     "ibiza-marina-botafoch": "ibiza-baleares",
+     "ibiza-playa-d-en-bossa": "ibiza-baleares",
+     "ibiza-santa-eulalia-cote-est": "ibiza-baleares",
+     "ile-de-cavallo-commune-de-bonifacio": "ile-de-cavallo",
+     "kranidi-porto-heli-argolide": "mykonos-grece",
+     "lavrio-attique": "mykonos-grece",
+     "lecci-golfe-de-porto-vecchio": "lecci",
+     "londres-chelsea": "londres",
+     "londres-mayfair": "londres-saison-anglaise",
+     "marina-di-pietrasanta-a-cote-de-forte-dei-marmi": "etapes-du-circuit-dete",
+     "monaco-larvotto": "monaco",
+     "monaco-monte-carlo": "monaco",
+     "monaco-roquebrune-cap-martin": "roquebrune-cap-martin",
+     "montauk-hamptons-ny": "new-york-hamptons",
+     "mustique-saint-vincent-et-les-grenadines": "mustique-caraibes",
+     "new-york-manhattan": "new-york",
+     "new-york-queens-flushing-meadows": "new-york",
+     "paraggi-baie-entre-portofino-et-santa-margherita-ligure": "milan-come-portofino",
+     "paris-7e": "paris",
+     "paris-8e": "paris",
+     "paris-av-montaigne-rue-saint-honore-et-boutiques-riviera": "paris",
+     "paris-fashion-week-ss27": "paris",
+     "porquerolles-hyeres": "porquerolles",
+     "porto-cervo-arzachena": "porto-cervo",
+     "porto-cervo-costa-smeralda": "porto-cervo",
+     "porto-cervo-sardaigne": "porto-cervo",
+     "positano-cote-amalfitaine": "cote-amalfitaine-capri",
+     "pyla-sur-mer-la-teste-de-buch": "pyla-sur-mer",
+     "ramatuelle-plage-de-pampelonne": "ramatuelle",
+     "ramatuelle-saint-tropez": "ramatuelle",
+     "saint-tropez-var": "saint-tropez",
+     "santa-margherita-ligure-route-de-portofino": "milan-come-portofino",
+     "seven-mile-beach-grand-cayman-iles-caimans": "mustique-caraibes",
+     "sotogrande-san-roque-cadix": "etapes-du-circuit-dete",
+     "st-moritz": "courchevel-st-moritz-gstaad",
+     "st-moritz-engadine": "courchevel-st-moritz-gstaad",
+     "tortuguitas-gran-buenos-aires": "buenos-aires-polo-argentin",
+     "uluwatu-bali": "bali",
+     "venise-bassin-de-saint-marc": "venise-la-mostra",
+     "vienne": "vienne-saison-des-bals"
+    }
+    for _old, _new in LIEU_REDIRECTS.items():
+        for _lg in LANGS:
+            _cible = f"{prefix(_lg)}/lieu/{_new}.html"
+            write(f"{prefix(_lg)}/lieu/{_old}.html",
+                  f"<!doctype html><html lang=\"{_lg}\"><head><meta charset=\"utf-8\">"
+                  f"<meta name=\"robots\" content=\"noindex\"><link rel=\"canonical\" href=\"{BASE}{_cible}\">"
+                  f"<meta http-equiv=\"refresh\" content=\"0; url={_cible}\">"
+                  f"<title>ConstanceParis7</title></head><body>"
+                  f"<p><a href=\"{_cible}\">ConstanceParis7</a></p></body></html>")
+
 
     imminents = set()  # URLs à <=21 jours : priorité haute, fraîcheur quotidienne
     for lang in LANGS:
