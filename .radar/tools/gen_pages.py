@@ -293,6 +293,7 @@ def main():
         """libellé d'un lieu dans la langue demandée ; repli : la clé française."""
         if lang == "fr" or not k:
             return k
+        return k
 
     # --- Pages éditoriales MULTILINGUES (Méthode, Moments, Adresses, Vestiaire).
     # 26/08/2026 : nées en français ; 13 langues le même soir, à la demande de
@@ -871,7 +872,7 @@ def main():
             if lang == "fr":
                 title = f"{label} : agenda des événements de luxe et accès · ConstanceParis7"
             else:
-                title = f"{label} · {UI['luxury_events'][lang]} | ConstanceParis7"
+                title = f"{label} : {UI['luxury_events'][lang]} {TODAY[:4]}, {UI['access'][lang].lower()} | ConstanceParis7"
             desc = f"{len(events)} {UI['events'][lang]} : {label}. {UI['tagline'][lang]}"
             body = [f"<div class=\"bc\"><a href=\"{prefix(lang)}/\">{esc(UI['radar'][lang])}</a> › "
                     f"<a href=\"{u_hub(lang)}\">{esc(UI['all'][lang])}</a></div>",
