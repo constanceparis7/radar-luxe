@@ -476,7 +476,7 @@ header.mast{display:none}
 <div class="wc"><div class="wc-city" data-i18n="ny_at">New York</div><div class="wc-time" id="clockNY">--:--<small>:--</small></div></div>
 <div class="wc"><div class="wc-city" data-i18n="dubai_at">Dubaï</div><div class="wc-time" id="clockDubai">--:--<small>:--</small></div></div>
 <div class="wc"><div class="wc-city" data-i18n="tokyo_at">Tokyo</div><div class="wc-time" id="clockTokyo">--:--<small>:--</small></div></div>
-</div><div class="clock-sub"><span class="livedot"></span><span id="clockdate">Paris</span><a href="/favoris.html" class="fav-lien">♥ <span data-i18n="t_fav">Favoris</span></a>
+</div><div class="clock-sub"><span class="livedot"></span><span id="clockdate">Paris</span><a href="/favoris.html" class="fav-lien">♥ <span data-i18n="t_fav">Favoris</span><span class="fav-nb"></span></a>
           <select class="lang-sel" id="langSel" aria-label="Language"></select>
           <button class="theme-btn" id="themeBtn" type="button" aria-label="thème">◐ <span data-i18n="theme">thème</span></button>
         </div></div></div></div>
@@ -1461,7 +1461,7 @@ header.mast{display:none}
 <script>(function(){var C='cp7favs',SL=null;
 function L(){try{return JSON.parse(localStorage.getItem(C))||[]}catch(e){return[]}}
 function charge(cb){if(SL){cb();return;}fetch('/slugs.json').then(function(r){return r.json()}).then(function(j){SL=j;cb();}).catch(function(){});}
-function sync(){if(!SL)return;var f=L();document.querySelectorAll('.fav-mini[data-k]').forEach(function(b){var s=SL[decodeURIComponent(b.getAttribute('data-k'))];var on=!!(s&&f.indexOf(s)>-1);var v=on?'\u2665':'\u2661';if(b.textContent!==v)b.textContent=v;b.classList.toggle('on',on);});}
+function sync(){var f=L();document.querySelectorAll('.fav-nb').forEach(function(n){n.textContent=f.length?' · '+f.length:'';});if(!SL)return;document.querySelectorAll('.fav-mini[data-k]').forEach(function(b){var s=SL[decodeURIComponent(b.getAttribute('data-k'))];var on=!!(s&&f.indexOf(s)>-1);var v=on?'\u2665':'\u2661';if(b.textContent!==v)b.textContent=v;b.classList.toggle('on',on);});}
 document.addEventListener('click',function(ev){var b=ev.target.closest('.fav-mini[data-k]');if(!b)return;ev.preventDefault();ev.stopPropagation();charge(function(){var s=SL[decodeURIComponent(b.getAttribute('data-k'))];if(!s)return;var f=L(),i=f.indexOf(s);if(i>-1)f.splice(i,1);else f.push(s);try{localStorage.setItem(C,JSON.stringify(f))}catch(e){}sync();});});
 window.addEventListener('DOMContentLoaded',function(){charge(function(){sync();var t=null;new MutationObserver(function(){clearTimeout(t);t=setTimeout(sync,150);}).observe(document.body,{childList:true,subtree:true});});});
 })();</script>

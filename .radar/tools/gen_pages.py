@@ -135,6 +135,7 @@ CAT_I18N = {"art": "c_art", "mode": "c_mode", "artdevivre": "c_art2",
 # Micro-libellés d'interface (à relire par le workflow multilingue).
 UI = {
  "verified":{"fr":"Vérifié à la source le","en":"Verified at the source on","es":"Verificado en la fuente el","it":"Verificato alla fonte il","pt":"Verificado na fonte a","de":"An der Quelle geprüft am","ru":"Проверено по источнику:","ar":"تم التحقق من المصدر بتاريخ","zh":"已于源头核实：","ja":"公式情報で確認：","ko":"공식 출처 확인:","hi":"स्रोत से सत्यापित:","tr":"Kaynağından doğrulandı:"},
+ "favs":    {"fr":"Favoris","en":"Favorites","es":"Favoritos","it":"Preferiti","pt":"Favoritos","de":"Favoriten","ru":"Избранное","ar":"المفضلة","zh":"收藏","ja":"お気に入り","ko":"즐겨찾기","hi":"पसंदीदा","tr":"Favoriler"},
  "fav_add": {"fr":"Ajouter aux favoris","en":"Add to favorites","es":"Añadir a favoritos","it":"Aggiungi ai preferiti","pt":"Adicionar aos favoritos","de":"Zu Favoriten hinzufügen","ru":"Добавить в избранное","ar":"أضف إلى المفضلة","zh":"加入收藏","ja":"お気に入りに追加","ko":"즐겨찾기에 추가","hi":"पसंदीदा में जोड़ें","tr":"Favorilere ekle"},
  "fav_on":  {"fr":"Dans mes favoris","en":"In my favorites","es":"En mis favoritos","it":"Nei miei preferiti","pt":"Nos meus favoritos","de":"In meinen Favoriten","ru":"В моём избранном","ar":"في المفضلة","zh":"已收藏","ja":"お気に入り済み","ko":"즐겨찾기에 저장됨","hi":"पसंदीदा में शामिल","tr":"Favorilerimde"},
  "radar":   {"fr":"Radar","en":"Radar","es":"Radar","it":"Radar","pt":"Radar","de":"Radar","ru":"Радар","ar":"الرادار","zh":"雷达","ja":"レーダー","ko":"레이더","hi":"रडार","tr":"Radar"},
@@ -606,7 +607,7 @@ def main():
             "<script data-goatcounter=\"https://constanceparis7.goatcounter.com/count\" async src=\"//gc.zgo.at/count.js\"></script>"
             "<style>.fav-mini{background:none;border:none;cursor:pointer;color:#d3b06a;font-size:15px;padding:0 3px;vertical-align:baseline;line-height:1}.fav-mini.on{color:#b48a3c}</style>"
             "<script>(function(){var C='cp7favs';function L(){try{return JSON.parse(localStorage.getItem(C))||[]}catch(e){return[]}}"
-            "function S(){var f=L();document.querySelectorAll('.fav-mini[data-slug]').forEach(function(b){var on=f.indexOf(b.getAttribute('data-slug'))>-1;"
+            "function S(){var f=L();document.querySelectorAll('.fav-nb').forEach(function(n){n.textContent=f.length?' · '+f.length:'';});document.querySelectorAll('.fav-mini[data-slug]').forEach(function(b){var on=f.indexOf(b.getAttribute('data-slug'))>-1;"
             "b.textContent=on?'\\u2665':'\\u2661';b.classList.toggle('on',on);});}"
             "document.addEventListener('click',function(ev){var b=ev.target.closest('.fav-mini[data-slug]');if(!b)return;ev.preventDefault();"
             "var s=b.getAttribute('data-slug'),f=L(),i=f.indexOf(s);if(i>-1)f.splice(i,1);else f.push(s);"
@@ -614,6 +615,7 @@ def main():
             "window.addEventListener('DOMContentLoaded',S);})();</script>"
             "</head><body><div class=\"wrap\">"
             f"<header class=\"site\"><a href=\"{prefix(lang)}/\" class=\"brand\">ConstanceParis<span class=\"s\">7</span></a>"
+            f"<a class=\"fav-head\" href=\"/favoris.html\">\u2665 {esc(UI['favs'][lang])}<span class=\"fav-nb\"></span></a>"
             "<div class=\"edition\">International Luxury Events</div></header>"
             f"{body}"
             f"<footer class=\"site\">{esc(UI['footer'][lang])} "
@@ -1757,7 +1759,7 @@ CSS = (
     "background:#0e1317;color:#e9e6df;line-height:1.6;-webkit-text-size-adjust:100%}"
     "a{color:#e9c46a;text-decoration:none}a:hover{text-decoration:underline}"
     ".wrap{max-width:780px;margin:0 auto;padding:22px 18px 60px}"
-    "header.site{border-bottom:1px solid #26313a;padding:14px 0;margin-bottom:8px}"
+    "header.site{border-bottom:1px solid #26313a;padding:14px 0;margin-bottom:8px;display:flex;align-items:center;justify-content:space-between;gap:10px}.fav-head{color:#d3b06a;text-decoration:none;font-size:12px;letter-spacing:.04em;border:1px solid rgba(211,176,106,.45);border-radius:999px;padding:5px 12px;white-space:nowrap}.fav-head:hover{background:rgba(211,176,106,.12)}"
     ".brand{font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:15px;color:#fff}"
     ".brand .s{color:#e9c46a}"
     ".edition{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#9fb0bd}"
