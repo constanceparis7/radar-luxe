@@ -291,11 +291,28 @@ def main():
         except Exception:
             pass  # un dictionnaire illisible ne doit jamais casser la génération
 
+    try:
+        with open(os.path.join(_RAD, "lieux-i18n.json"), encoding="utf-8") as _f:
+            LIEUX_I18N = json.load(_f)
+    except Exception:
+        LIEUX_I18N = {}
+
     def place_label(k, lang):
-        """libellé d'un lieu dans la langue demandée ; repli : la clé française."""
+        """libellé d'un lieu ou d'un groupe dans la langue demandée (registre
+        .radar/lieux-i18n.json, vague du 18/09/2026) ; repli : la clé française."""
         if lang == "fr" or not k:
             return k
-        return k
+        return LIEUX_I18N.get(lang, {}).get(k, k)
+
+    def lieu_affiche(e, lang):
+        """champ lieu précis d'une fiche : le préfixe générique « Divers lieux » se
+        traduit, le reste (adresses, noms propres) reste tel quel."""
+        l = e.get("l") or ""
+        if not l:
+            return place_label(e.get("v") or "", lang)
+        if lang != "fr" and l.startswith("Divers lieux"):
+            return LIEUX_I18N.get(lang, {}).get("Divers lieux", "Divers lieux") + l[len("Divers lieux"):]
+        return l
 
     # --- Pages éditoriales MULTILINGUES (Méthode, Moments, Adresses, Vestiaire).
     # 26/08/2026 : nées en français ; 13 langues le même soir, à la demande de
@@ -629,8 +646,8 @@ def main():
             # Obligation légale (LCEN art. 6) : la page doit être atteignable
             # depuis n'importe quelle page du site. Libellé bilingue : la page
             # elle-même est en français, c'est un texte de droit français.
-            " · <a href=\"/a-propos.html\">À propos · Contact</a>"
-            " · <a href=\"/mentions-legales.html\">Mentions légales</a>"
+            f" · <a href=\"/a-propos.html\">{esc(LIEUX_I18N.get(lang, {}).get('À propos', 'À propos'))} · {esc(LIEUX_I18N.get(lang, {}).get('Contact', 'Contact'))}</a>"
+            f" · <a href=\"/mentions-legales.html\">{esc(LIEUX_I18N.get(lang, {}).get('Mentions légales', 'Mentions légales'))}</a>"
             "</footer></div></body></html>"
         )
 
@@ -715,6 +732,137 @@ def main():
      "venise-bassin-de-saint-marc": "venise-la-mostra",
      "vienne": "vienne-saison-des-bals"
     }
+    # Anciennes adresses de FICHES (la ville entre dans le slug) rendues 404 par la
+    # normalisation des lieux du 17/09/2026 : 114 URL en 404 vues dans Search Console.
+    FICHE_REDIRECTS = {
+     "120e-white-turf-st-moritz-courses-sur-le-lac-gele-st-moritz": "120e-white-turf-st-moritz-courses-sur-le-lac-gele-saint-moritz",
+     "133-abierto-del-hurlingham-club-hurlingham-gran-buenos-aires": "133-abierto-del-hurlingham-club-hurlingham",
+     "42e-snow-polo-world-cup-st-moritz-st-moritz": "42e-snow-polo-world-cup-st-moritz-saint-moritz",
+     "47e-festival-la-versiliana-2026-marina-di-pietrasanta-a-cote-de": "47e-festival-la-versiliana-2026-marina-di-pietrasanta",
+     "86-abierto-del-tortugas-country-club-tortuguitas-gran-buenos-air": "86-abierto-del-tortugas-country-club-tortuguitas",
+     "amfar-gala-cannes-2027-saison-roulante-cap-d-antibes": "amfar-gala-cannes-2027-saison-roulante-antibes",
+     "amfar-gala-cannes-2027-saison-roulante-cap-d-antibes-antibes": "amfar-gala-cannes-2027-saison-roulante-antibes",
+     "amiri-boutique-saisonniere-avenue-marechal-foch-saint-tropez-var": "amiri-boutique-saisonniere-avenue-marechal-foch-saint-tropez",
+     "antigua-charter-yacht-show-2026-english-harbour-antigua-et-barbu": "antigua-charter-yacht-show-2026-english-harbour",
+     "bagni-fiore-paraggi-langosteria-paraggi-terrasse-dior-paraggi-ba": "bagni-fiore-paraggi-langosteria-paraggi-terrasse-dior-paraggi",
+     "bisbee-s-black-blue-cabo-san-lucas-los-cabos": "bisbee-s-black-blue-cabo-san-lucas",
+     "blue-marlin-ibiza-beach-club-vip-cala-jondal-ibiza-cala-jondal": "blue-marlin-ibiza-beach-club-vip-cala-jondal-ibiza",
+     "blue-marlin-ibiza-beach-club-vip-cala-jondal-ibiza-marina-botafo": "blue-marlin-ibiza-beach-club-vip-cala-jondal-ibiza",
+     "blue-marlin-ibiza-beach-club-vip-cala-jondal-ibiza-playa-d-en-bo": "blue-marlin-ibiza-beach-club-vip-cala-jondal-ibiza",
+     "blue-marlin-ibiza-beach-club-vip-cala-jondal-ibiza-santa-eulalia": "blue-marlin-ibiza-beach-club-vip-cala-jondal-ibiza",
+     "calvin-harris-ushuaia-ibiza-ibiza-cala-jondal": "calvin-harris-ushuaia-ibiza-ibiza",
+     "calvin-harris-ushuaia-ibiza-ibiza-marina-botafoch": "calvin-harris-ushuaia-ibiza-ibiza",
+     "calvin-harris-ushuaia-ibiza-ibiza-playa-d-en-bossa": "calvin-harris-ushuaia-ibiza-ibiza",
+     "calvin-harris-ushuaia-ibiza-ibiza-santa-eulalia-cote-est": "calvin-harris-ushuaia-ibiza-ibiza",
+     "cayman-cookout-2027-seven-mile-beach-grand-cayman-iles-caimans": "cayman-cookout-2027-grand-cayman",
+     "chanel-boutique-estivale-a-la-villa-la-mistralee-saint-tropez-va": "chanel-boutique-estivale-a-la-villa-la-mistralee-saint-tropez",
+     "closing-party-nikki-beach-saint-tropez-ramatuelle-plage-de-pampe": "closing-party-nikki-beach-saint-tropez-ramatuelle",
+     "closing-party-nikki-beach-saint-tropez-ramatuelle-saint-tropez": "closing-party-nikki-beach-saint-tropez-ramatuelle",
+     "damian-lazarus-savaya-bali-uluwatu-bali": "damian-lazarus-savaya-bali-uluwatu",
+     "david-guetta-f-me-i-m-famous-ushuaia-ibiza-ibiza-cala-jondal": "david-guetta-f-me-i-m-famous-ushuaia-ibiza-ibiza",
+     "david-guetta-f-me-i-m-famous-ushuaia-ibiza-ibiza-marina-botafoch": "david-guetta-f-me-i-m-famous-ushuaia-ibiza-ibiza",
+     "david-guetta-f-me-i-m-famous-ushuaia-ibiza-ibiza-playa-d-en-boss": "david-guetta-f-me-i-m-famous-ushuaia-ibiza-ibiza",
+     "david-guetta-f-me-i-m-famous-ushuaia-ibiza-ibiza-santa-eulalia-c": "david-guetta-f-me-i-m-famous-ushuaia-ibiza-ibiza",
+     "dg-resort-2026-a-saint-tropez-casa-amor-pampelonne-ramatuelle-pl": "dg-resort-2026-a-saint-tropez-casa-amor-pampelonne-ramatuelle",
+     "dg-resort-2026-a-saint-tropez-casa-amor-pampelonne-ramatuelle-sa": "dg-resort-2026-a-saint-tropez-casa-amor-pampelonne-ramatuelle",
+     "dolce-gabbana-beach-club-a-gurney-s-montauk-montauk-hamptons-ny": "dolce-gabbana-beach-club-a-gurney-s-montauk-montauk",
+     "frieze-london-frieze-masters-2026-londres-chelsea": "frieze-london-frieze-masters-2026-londres",
+     "frieze-london-frieze-masters-2026-londres-mayfair": "frieze-london-frieze-masters-2026-londres",
+     "gaio-saint-tropez-diner-cabaret-club-2026-saint-tropez-var": "gaio-saint-tropez-diner-cabaret-club-2026-saint-tropez",
+     "gala-du-nouvel-an-du-badrutt-s-palace-st-moritz": "gala-du-nouvel-an-du-badrutt-s-palace-saint-moritz",
+     "givenchy-pop-up-estival-rue-gambetta-saint-tropez-var": "givenchy-pop-up-estival-rue-gambetta-saint-tropez",
+     "grand-prix-de-monaco-2027-formule-1-monaco-larvotto": "grand-prix-de-monaco-2027-formule-1-monaco",
+     "grand-prix-de-monaco-2027-formule-1-monaco-monte-carlo": "grand-prix-de-monaco-2027-formule-1-monaco",
+     "grand-prix-de-monaco-2027-formule-1-monaco-roquebrune-cap-martin": "grand-prix-de-monaco-2027-formule-1-monaco",
+     "gstaad-new-year-music-festival-gstaad-rougemont-saanen-lauenen-c": "gstaad-new-year-music-festival-gstaad",
+     "gstaad-new-year-music-festival-gstaad-saanen-rougemont": "gstaad-new-year-music-festival-gstaad",
+     "gucci-flora-x-la-rose-des-vents-beach-club-takeover-monaco-larvo": "gucci-flora-x-la-rose-des-vents-beach-club-takeover-monaco",
+     "gucci-flora-x-la-rose-des-vents-beach-club-takeover-monaco-monte": "gucci-flora-x-la-rose-des-vents-beach-club-takeover-monaco",
+     "gucci-flora-x-la-rose-des-vents-beach-club-takeover-monaco-roque": "gucci-flora-x-la-rose-des-vents-beach-club-takeover-monaco",
+     "health-happiness-week-2027-mustique-mustique-saint-vincent-et-le": "health-happiness-week-2027-mustique-mustique",
+     "hublot-polo-gold-cup-gstaad-44e-edition-gstaad-rougemont-saanen": "hublot-polo-gold-cup-gstaad-44e-edition-gstaad",
+     "hublot-polo-gold-cup-gstaad-44e-edition-gstaad-saanen-rougemont": "hublot-polo-gold-cup-gstaad-44e-edition-gstaad",
+     "jacquemus-x-monte-carlo-beach-takeover-ete-2026-2e-annee-monaco": "jacquemus-x-monte-carlo-beach-takeover-ete-2026-2e-annee-roquebr",
+     "jimmy-z-monte-carlo-saison-2026-monaco-larvotto": "jimmy-z-monte-carlo-saison-2026-monaco",
+     "jimmy-z-monte-carlo-saison-2026-monaco-monte-carlo": "jimmy-z-monte-carlo-saison-2026-monaco",
+     "jimmy-z-monte-carlo-saison-2026-monaco-roquebrune-cap-martin": "jimmy-z-monte-carlo-saison-2026-monaco",
+     "justme-porto-cervo-opening-saison-2026-porto-cervo-arzachena": "justme-porto-cervo-opening-saison-2026-porto-cervo",
+     "justme-porto-cervo-opening-saison-2026-porto-cervo-costa-smerald": "justme-porto-cervo-opening-saison-2026-porto-cervo",
+     "justme-porto-cervo-opening-saison-2026-porto-cervo-sardaigne": "justme-porto-cervo-opening-saison-2026-porto-cervo",
+     "kering-foundation-diner-caring-for-women-5e-edition-new-york-man": "kering-foundation-diner-caring-for-women-5e-edition-new-york",
+     "kering-foundation-diner-caring-for-women-5e-edition-new-york-que": "kering-foundation-diner-caring-for-women-5e-edition-new-york",
+     "la-capannina-di-franceschi-serate-con-ospiti-forte-dei-marmi-ver": "la-capannina-di-franceschi-serate-con-ospiti-forte-dei-marmi",
+     "les-caves-du-roy-nuits-de-juillet-hotel-byblos-saint-tropez-var": "les-caves-du-roy-nuits-de-juillet-hotel-byblos-saint-tropez",
+     "les-voiles-de-saint-tropez-2026-saint-tropez-var": "les-voiles-de-saint-tropez-2026-saint-tropez",
+     "life-cycles-an-amanzoe-exhibition-kranidi-porto-heli-argolide": "life-cycles-an-amanzoe-exhibition-porto-heli",
+     "lio-ibiza-cabaret-dinner-show-halftime-show-club-ibiza-cala-jond": "lio-ibiza-cabaret-dinner-show-halftime-show-club-ibiza",
+     "lio-ibiza-cabaret-dinner-show-halftime-show-club-ibiza-marina-bo": "lio-ibiza-cabaret-dinner-show-halftime-show-club-ibiza",
+     "lio-ibiza-cabaret-dinner-show-halftime-show-club-ibiza-playa-d-e": "lio-ibiza-cabaret-dinner-show-halftime-show-club-ibiza",
+     "lio-ibiza-cabaret-dinner-show-halftime-show-club-ibiza-santa-eul": "lio-ibiza-cabaret-dinner-show-halftime-show-club-ibiza",
+     "loewe-pop-ups-paula-s-ibiza-2026-a-saint-tropez-saint-tropez-var": "loewe-pop-ups-paula-s-ibiza-2026-a-saint-tropez-saint-tropez",
+     "london-fashion-week-printemps-ete-2027-londres-chelsea": "london-fashion-week-printemps-ete-2027-londres",
+     "london-fashion-week-printemps-ete-2027-londres-mayfair": "london-fashion-week-printemps-ete-2027-londres",
+     "maxi-yacht-rolex-cup-2026-porto-cervo-arzachena": "maxi-yacht-rolex-cup-2026-porto-cervo",
+     "maxi-yacht-rolex-cup-2026-porto-cervo-costa-smeralda": "maxi-yacht-rolex-cup-2026-porto-cervo",
+     "maxi-yacht-rolex-cup-2026-porto-cervo-sardaigne": "maxi-yacht-rolex-cup-2026-porto-cervo",
+     "monaco-yacht-show-2026-monaco-larvotto": "monaco-yacht-show-2026-monaco",
+     "monaco-yacht-show-2026-monaco-monte-carlo": "monaco-yacht-show-2026-monaco",
+     "monaco-yacht-show-2026-monaco-roquebrune-cap-martin": "monaco-yacht-show-2026-monaco",
+     "music-on-the-rocks-nights-saison-2026-positano-cote-amalfitaine": "music-on-the-rocks-nights-saison-2026-positano",
+     "new-year-s-eve-regatta-course-autour-de-l-ile-gustavia-saint-bar": "new-year-s-eve-regatta-course-autour-de-l-ile-gustavia",
+     "new-york-city-ballet-fall-fashion-gala-2026-new-york-manhattan": "new-york-city-ballet-fall-fashion-gala-2026-new-york",
+     "new-york-city-ballet-fall-fashion-gala-2026-new-york-queens-flus": "new-york-city-ballet-fall-fashion-gala-2026-new-york",
+     "new-york-fashion-week-printemps-ete-2027-new-york-manhattan": "new-york-fashion-week-printemps-ete-2027-new-york",
+     "new-york-fashion-week-printemps-ete-2027-new-york-queens-flushin": "new-york-fashion-week-printemps-ete-2027-new-york",
+     "nikki-beach-ibiza-beach-club-santa-eulalia-ibiza-cala-jondal": "nikki-beach-ibiza-beach-club-santa-eulalia-ibiza",
+     "nikki-beach-ibiza-beach-club-santa-eulalia-ibiza-marina-botafoch": "nikki-beach-ibiza-beach-club-santa-eulalia-ibiza",
+     "nikki-beach-ibiza-beach-club-santa-eulalia-ibiza-playa-d-en-boss": "nikki-beach-ibiza-beach-club-santa-eulalia-ibiza",
+     "nikki-beach-ibiza-beach-club-santa-eulalia-ibiza-santa-eulalia-c": "nikki-beach-ibiza-beach-club-santa-eulalia-ibiza",
+     "nikki-beach-mallorca-beach-club-calvia-calvia-mallorca": "nikki-beach-mallorca-beach-club-calvia-calvia",
+     "olympic-yacht-show-2026-lavrio-attique": "olympic-yacht-show-2026-lavrio",
+     "pad-london-2026-collectors-preview-londres-chelsea": "pad-london-2026-collectors-preview-londres",
+     "pad-london-2026-collectors-preview-londres-mayfair": "pad-london-2026-collectors-preview-londres",
+     "passione-engadina-2026-the-italian-job-15e-edition-st-moritz": "passione-engadina-2026-the-italian-job-15e-edition-saint-moritz",
+     "reouverture-d-hiver-de-the-alpina-gstaad-gstaad-rougemont-saanen": "reouverture-d-hiver-de-the-alpina-gstaad-gstaad",
+     "reouverture-d-hiver-de-the-alpina-gstaad-gstaad-saanen-rougemont": "reouverture-d-hiver-de-the-alpina-gstaad-gstaad",
+     "reouverture-d-hiver-du-badrutt-s-palace-st-moritz": "reouverture-d-hiver-du-badrutt-s-palace-saint-moritz",
+     "reouverture-d-hiver-du-kulm-hotel-st-moritz-st-moritz": "reouverture-d-hiver-du-kulm-hotel-st-moritz-saint-moritz",
+     "rhs-chelsea-flower-show-2027-londres-chelsea": "rhs-chelsea-flower-show-2027-londres",
+     "rhs-chelsea-flower-show-2027-londres-mayfair": "rhs-chelsea-flower-show-2027-londres",
+     "ritual-club-baja-sardinia-saison-2026-baja-sardinia-arzachena": "ritual-club-baja-sardinia-saison-2026-baja-sardinia",
+     "rolex-swan-cup-2026-60-ans-de-nautor-swan-porto-cervo-arzachena": "rolex-swan-cup-2026-60-ans-de-nautor-swan-porto-cervo",
+     "rolex-swan-cup-2026-60-ans-de-nautor-swan-porto-cervo-costa-smer": "rolex-swan-cup-2026-60-ans-de-nautor-swan-porto-cervo",
+     "rolex-swan-cup-2026-60-ans-de-nautor-swan-porto-cervo-sardaigne": "rolex-swan-cup-2026-60-ans-de-nautor-swan-porto-cervo",
+     "royal-ascot-2027-ascot-berkshire": "royal-ascot-2027-ascot",
+     "saison-d-ete-a-l-hotel-du-cap-eden-roc-oetker-collection-cap-d-a": "saison-d-ete-a-l-hotel-du-cap-eden-roc-oetker-collection-antibes",
+     "salon-prive-blenheim-palace-2026-concours-boodles-ladies-day-ble": "salon-prive-blenheim-palace-2026-concours-boodles-ladies-day-woo",
+     "sanctum-saint-tropez-saison-club-2026-ramatuelle-plage-de-pampel": "sanctum-saint-tropez-saison-club-2026-ramatuelle",
+     "sanctum-saint-tropez-saison-club-2026-ramatuelle-saint-tropez": "sanctum-saint-tropez-saison-club-2026-ramatuelle",
+     "sommets-musicaux-de-gstaad-2027-gstaad-rougemont-saanen-lauenen": "sommets-musicaux-de-gstaad-2027-gstaad",
+     "sommets-musicaux-de-gstaad-2027-gstaad-saanen-rougemont": "sommets-musicaux-de-gstaad-2027-gstaad",
+     "sottovento-club-porto-cervo-saison-2026-porto-cervo-arzachena": "sottovento-club-porto-cervo-saison-2026-porto-cervo",
+     "sottovento-club-porto-cervo-saison-2026-porto-cervo-costa-smeral": "sottovento-club-porto-cervo-saison-2026-porto-cervo",
+     "sottovento-club-porto-cervo-saison-2026-porto-cervo-sardaigne": "sottovento-club-porto-cervo-saison-2026-porto-cervo",
+     "st-barth-music-festival-43e-edition-gustavia-saint-barthelemy": "st-barth-music-festival-43e-edition-gustavia",
+     "st-barths-bucket-regatta-2027-gustavia-saint-barthelemy": "st-barths-bucket-regatta-2027-gustavia",
+     "surf-lodge-summer-series-2026-concerts-d-aout-montauk-montauk-ha": "surf-lodge-summer-series-2026-concerts-d-aout-montauk-montauk",
+     "the-i-c-e-international-concours-of-elegance-st-moritz-st-moritz": "the-i-c-e-international-concours-of-elegance-st-moritz-saint-mor",
+     "us-open-2026-fan-week-et-premiers-jours-du-tournoi-new-york-manh": "us-open-2026-fan-week-et-premiers-jours-du-tournoi-new-york",
+     "us-open-2026-fan-week-et-premiers-jours-du-tournoi-new-york-quee": "us-open-2026-fan-week-et-premiers-jours-du-tournoi-new-york",
+     "verde-beach-saint-tropez-nuits-dj-d-exception-2026-ramatuelle-pl": "verde-beach-saint-tropez-nuits-dj-d-exception-2026-ramatuelle",
+     "verde-beach-saint-tropez-nuits-dj-d-exception-2026-ramatuelle-sa": "verde-beach-saint-tropez-nuits-dj-d-exception-2026-ramatuelle",
+     "zamna-bali-uluwatu-bali": "zamna-bali-uluwatu"
+    }
+    for _old, _new in FICHE_REDIRECTS.items():
+        for _lg in ["fr"] + LANGS:
+            _pf = "" if _lg == "fr" else f"/{_lg}"
+            _cible = f"{_pf}/e/{_new}.html"
+            write(f"{_pf}/e/{_old}.html",
+                  f"<!doctype html><html lang=\"{_lg}\"><head><meta charset=\"utf-8\">"
+                  f"<meta name=\"robots\" content=\"noindex\"><link rel=\"canonical\" href=\"{BASE}{_cible}\">"
+                  f"<meta http-equiv=\"refresh\" content=\"0; url={_cible}\">"
+                  f"<title>ConstanceParis7</title></head><body>"
+                  f"<p><a href=\"{_cible}\">ConstanceParis7</a></p></body></html>")
     for _old, _new in LIEU_REDIRECTS.items():
         for _lg in LANGS:
             _cible = f"{prefix(_lg)}/lieu/{_new}.html"
@@ -775,7 +923,7 @@ def main():
             if T(e, lang, "dt"):
                 meta.append(f"<b>{esc(T(e,lang,'dt'))}</b>")
             if e.get("l") or e.get("v"):
-                meta.append(esc(e.get("l") or e.get("v")))
+                meta.append(esc(lieu_affiche(e, lang)))
             if cat:
                 meta.append(f"<a href=\"{u_cat(cat, lang)}\">{esc(cat_label(e.get('c','autre'), lang))}</a>")
             body.append("<div class=\"meta\">" + " · ".join(meta) + "</div>")
@@ -1826,7 +1974,7 @@ document.querySelectorAll('.ex').forEach(function(a){a.addEventListener('click',
 
     # --- sitemap ---
     sm = ['<?xml version="1.0" encoding="UTF-8"?>',
-          '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+          '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">']
     for u in sitemap_urls:
         # Seules la racine et les portes d'entrée de langue se terminent par
         # « / » ; tout le reste est un .html. Une porte d'entrée de langue pèse
@@ -1847,7 +1995,23 @@ document.querySelectorAll('.ex').forEach(function(a){a.addEventListener('click',
         # réellement chaque jour (accueils, imminents avec compte à rebours) sont
         # datées du jour ; pour les autres, pas de lastmod plutôt qu'un mensonge.
         lm = f"<lastmod>{TODAY}</lastmod>" if (u == f"{BASE}/" or accueil_langue or u in imminents) else ""
-        sm.append(f"  <url><loc>{u}</loc>{lm}<changefreq>{cf}</changefreq><priority>{pr}</priority></url>")
+        # hreflang dans le sitemap (18/09/2026, audit croisé) : Google découvre
+        # d'un coup les 13 versions d'une page et sert la bonne langue plus vite.
+        # Émis seulement pour les grappes complètes existantes sur disque.
+        _alts = ""
+        _chemin = u[len(BASE):]
+        _base = _chemin
+        for _lg in LANGS:
+            if _chemin.startswith(f"/{_lg}/"):
+                _base = _chemin[len(_lg) + 1:]
+                break
+        if _base and _base != "/" and not _base.startswith("/lieu/") or _base.startswith("/lieu/"):
+            _versions = [("fr", _base)] + [(_lg, f"/{_lg}{_base}") for _lg in LANGS]
+            _existants = [(l, c) for l, c in _versions if os.path.exists(REPO + c)]
+            if len(_existants) == 13:
+                _alts = "".join(f'<xhtml:link rel="alternate" hreflang="{l}" href="{BASE}{c}"/>' for l, c in _existants)
+                _alts += f'<xhtml:link rel="alternate" hreflang="x-default" href="{BASE}{_base}"/>'
+        sm.append(f"  <url><loc>{u}</loc>{lm}<changefreq>{cf}</changefreq><priority>{pr}</priority>{_alts}</url>")
     sm.append("</urlset>")
     open(f"{REPO}/sitemap.xml", "w", encoding="utf-8").write("\n".join(sm) + "\n")
     # --- 404 de la maison (18/09/2026) : GitHub Pages sert /404.html avec le vrai
