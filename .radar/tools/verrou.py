@@ -193,6 +193,46 @@ def controle_donnees():
             bloq.append(f"V5 note.html annonce {m.group(1)} événements notés, la base en compte {notes}")
     return len(evts)
 
+def controle_hreflang_et_orphelines():
+    """V10 : réciprocité des grappes hreflang des fiches. W3 : pages sans lien entrant."""
+    import collections
+    grappes = {}          # slug -> {langue: ensemble des alternates}
+    entrants = collections.Counter()
+    tous = set()
+    for p in tous_les_html():
+        rel = os.path.relpath(p, REPO).replace(os.sep, "/")
+        if os.path.basename(rel).startswith("google"):
+            continue
+        h = open(p, encoding="utf-8", errors="replace").read()
+        url = "/" + rel
+        tous.add(url)
+        for u in set(RX_HREF.findall(h)):
+            u = u.split("#")[0].split("?")[0]
+            if u and u != url:
+                entrants[u] += 1
+                if u.endswith("/"):
+                    entrants[u + "index.html"] += 1
+        if est_fiche(rel):
+            alts = frozenset(RX_ALT.findall(h))
+            slug = rel.split("/e/")[-1]
+            grappes.setdefault(slug, {})[rel] = alts
+    for slug, versions in grappes.items():
+        jeux = set(versions.values())
+        if len(jeux) > 1:
+            bloq.append(f"V10 fiche {slug} : grappes hreflang divergentes entre langues "
+                        f"({len(jeux)} jeux différents)")
+        else:
+            alts = next(iter(jeux))
+            if alts and len(alts) < 13:
+                bloq.append(f"V10 fiche {slug} : {len(alts)} alternates au lieu de 13")
+    for u in sorted(tous):
+        if u == "/index-full.html":
+            continue  # source locale non versionnée (gitignore), jamais servie
+        tete = open(os.path.join(REPO, u.lstrip("/")), encoding="utf-8", errors="replace").read()[:800]
+        if entrants[u] == 0 and "/e/" not in u and not u.endswith("404.html") \
+           and "http-equiv" not in tete and "noindex" not in tete:
+            warn.append(f"W3 page sans aucun lien entrant : {u}")
+
 def controle_sitemap():
     sm = os.path.join(REPO, "sitemap.xml")
     if not os.path.exists(sm):
@@ -209,6 +249,7 @@ def main():
     npages = controle_pages()
     nevts = controle_donnees()
     nurls = controle_sitemap()
+    controle_hreflang_et_orphelines()
     for b in bloq[:60]:
         print("BLOQUEUR ", b)
     if len(bloq) > 60:

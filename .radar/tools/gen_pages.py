@@ -726,6 +726,11 @@ def main():
                   f"<p><a href=\"{_cible}\">ConstanceParis7</a></p></body></html>")
 
 
+    try:
+        with open(os.path.join(_RAD, "pages-imminentes.json"), encoding="utf-8") as _f:
+            IMM_FICHE = {im.get("evenement", ""): im for im in json.load(_f)}
+    except Exception:
+        IMM_FICHE = {}
     imminents = set()  # URLs à <=21 jours : priorité haute, fraîcheur quotidienne
     for lang in LANGS:
         # --- pages événement ---
@@ -776,7 +781,7 @@ def main():
             body.append("<div class=\"meta\">" + " · ".join(meta) + "</div>")
             nr = note_radar(e)
             if nr is not None:
-                body.append(f"<div class=\"bc\"><a href=\"/note.html\">{diamants(nr)} {esc(UI['note'][lang])} : {nr}/100</a></div>")
+                body.append(f"<div class=\"bc\"><a href=\"{prefix(lang)}/note.html\">{diamants(nr)} {esc(UI['note'][lang])} : {nr}/100</a></div>")
             dv = date_verif(e)
             if dv:
                 _u = (e.get("u") or "").strip()
@@ -786,6 +791,9 @@ def main():
                     _dom = f" · <a href=\"{esc(_u)}\" target=\"_blank\" rel=\"noopener\">{esc(_h)} ↗</a>"
                 body.append(f"<div class=\"trust\"><span>✓ <b>{esc(UI['verified'][lang])} {dv}</b></span>{_dom}"
                             f"<a class=\"tm\" href=\"/methode.html\">{esc(UI['method'][lang])}</a></div>")
+            if lang == "fr" and e.get("n") in IMM_FICHE:
+                _im = IMM_FICHE[e["n"]]
+                body.append(f"<div class=\"bc\"><a href=\"{_im['page']}\">→ {esc(_im.get('h1') or 'La page dédiée')} : la page complète</a></div>")
             if lang == "fr" and QST:
                 lies = questions_liees(e)
                 if lies:
@@ -920,7 +928,7 @@ def main():
                 + f"<a href=\"{prefix(lang)}/protocole.html\">{esc(X(lang,'pr_h1'))}</a>"
                 + f"<a href=\"{prefix(lang)}/methode.html\">{esc(X(lang,'m_h1'))}</a>"
                 + f"<a href=\"/changements.html\">{esc(X(lang,'mem_h1'))}</a>"
-                + f"<a href=\"/note.html\">{esc(UI['note'][lang])}</a>"
+                + f"<a href=\"{prefix(lang)}/note.html\">{esc(UI['note'][lang])}</a>"
                 + f"<a href=\"/entrer.html\">{esc(UI['access'][lang])}</a></div>")
         htitle = f"{UI['hub_h1'][lang]} | ConstanceParis7"
         write(u_hub(lang), page(lang, htitle, UI["hub_intro"][lang], u_hub(lang), "".join(hub), hreflang_for(None, None)))
@@ -1835,9 +1843,27 @@ document.querySelectorAll('.ex').forEach(function(a){a.addEventListener('click',
         else:
             pr = "0.6"
         cf = "daily" if (u == f"{BASE}/" or accueil_langue or u in imminents) else "weekly"
-        sm.append(f"  <url><loc>{u}</loc><lastmod>{TODAY}</lastmod><changefreq>{cf}</changefreq><priority>{pr}</priority></url>")
+        # lastmod honnête (18/09/2026) : seules les pages dont le contenu change
+        # réellement chaque jour (accueils, imminents avec compte à rebours) sont
+        # datées du jour ; pour les autres, pas de lastmod plutôt qu'un mensonge.
+        lm = f"<lastmod>{TODAY}</lastmod>" if (u == f"{BASE}/" or accueil_langue or u in imminents) else ""
+        sm.append(f"  <url><loc>{u}</loc>{lm}<changefreq>{cf}</changefreq><priority>{pr}</priority></url>")
     sm.append("</urlset>")
     open(f"{REPO}/sitemap.xml", "w", encoding="utf-8").write("\n".join(sm) + "\n")
+    # --- 404 de la maison (18/09/2026) : GitHub Pages sert /404.html avec le vrai
+    # statut 404 ; sans lui, le lecteur tombait sur la page grise de l'hébergeur.
+    corps_404 = ("<h1>Cette page n'existe pas, ou a changé d'adresse</h1>"
+                 "<p class=\"meta\">This page does not exist or has moved.</p>"
+                 "<p>Le radar évolue chaque jour : certaines adresses changent, "
+                 "les événements terminés s'archivent. Tout se retrouve ici :</p>"
+                 "<div class=\"chips\"><a href=\"/\">← Le radar</a>"
+                 "<a href=\"/evenements.html\">Tous les événements</a>"
+                 "<a href=\"/entrer.html\">Comment entrer</a>"
+                 "<a href=\"/favoris.html\">♥ Favoris</a></div>")
+    write("/404.html", page("fr", "Page introuvable · ConstanceParis7",
+          "Cette page n'existe pas ou a changé d'adresse. Le radar des événements du luxe vous attend à l'accueil.",
+          "/404.html", corps_404, ""))
+
 
     print(f"gen_pages: {len(pages)} événements × {len(LANGS)} langues + lieux/catégories/hub")
     print(f"gen_pages: sitemap.xml = {len(sitemap_urls)} URLs")

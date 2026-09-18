@@ -29,8 +29,8 @@ de chaque correction, et le verrou final est un validateur de build BLOQUANT.
 6. [À FAIRE] Français résiduel dans les 12 langues : fil d'Ariane (« Londres » sur pages EN),
    « Divers lieux », pieds de page (À propos · Contact · Mentions légales), groupes
    de régions en français sur le hub arabe. Liste blanche : noms propres seulement.
-7. [À FAIRE] Vérification de TOUTES les grappes hreflang (pas seulement l'accueil) :
-   canonical auto-référente, 13 alternates accessibles, réciprocité, x-default.
+7. [FAIT 18/09] Grappes hreflang : contrôle V10 au verrou (13 alternates par fiche,
+   jeux identiques entre langues, fichiers présents). Zéro divergence au premier passage.
 8. [À FAIRE] JSON-LD Event à recalibrer : Event.url doit pointer la fiche CP7 (pas le site
    officiel), offers seulement si vraie offre publique, pas d'InStock par défaut,
    pas d'estimation déclarée EventScheduled, accueil en ItemList plutôt que
@@ -42,24 +42,32 @@ de chaque correction, et le verrou final est un validateur de build BLOQUANT.
 
 ## P1 : architecture, liens, indexation
 
-11. [À FAIRE] Crawl complet interne : statuts, chaînes de redirections, ancres vides,
-    pages orphelines, profondeur de clic.
+11. [FAIT 18/09 pour l'essentiel] Liens internes et orphelines au verrou (V6, W3).
+    Prises du premier passage : les 4 pages d'atterrissage imminentes et les pages
+    Note étrangères n'avaient AUCUN lien entrant ; désormais liées depuis les fiches.
+    [Reste : profondeur de clic, non critique.]
 12. [À FAIRE] Liens externes/sources : 404, domaines expirés, redirections génériques ;
     ne pas classer 403/429 comme morts (nos passes le font déjà en partie : vérifier la règle).
-13. [À FAIRE] Canonicals et variantes d'URL (http/https, www, /index.html, slash, utm).
-14. [À FAIRE] Sitemap : que du 200 indexable, lastmod honnête (pas renouvelé
-    artificiellement chaque jour), compte exact par type et langue.
+13. [FAIT 18/09] Testé en ligne : http vers https 301, www vers domaine nu 301,
+    /index.html en 200 avec canonical vers /, 404 réel sur URL inconnue.
+14. [FAIT 18/09] lastmod honnête : 433 pages réellement quotidiennes datées (accueils,
+    imminents) au lieu de 5 558 datées artificiellement chaque jour. V7 garantit
+    que chaque URL du sitemap a son fichier.
 15. [À FAIRE] Cannibalisation : matrice intention -> URL unique (Milan events, PFW,
     Vogue World...) ; page ville vs landing imminente vs Questions.
-16. [À FAIRE] 404 réel (pas de 200 déguisé), les 61 redirections en un seul saut,
-    hors sitemap, liens internes pointant la destination finale.
+16. [FAIT 18/09] 404 maison élégante (marque, liens radar/événements/entrer/favoris,
+    bilingue) servie avec le vrai statut 404 ; les 61 redirections sont des sauts
+    uniques, hors sitemap, et V6 interdit tout lien interne vers une ancienne adresse.
 
 ## P1 : robustesse fonctionnelle
 
-17. [À FAIRE] Accueil résilient : fetch en échec, JSON invalide, sans JavaScript ;
-    jamais de page blanche, message d'erreur + réessayer, pas de faux « aucun événement ».
-18. [À FAIRE] Favoris/localStorage : bloqué, navigation privée, quota, JSON corrompu,
-    slug renommé, deux onglets ; un échec de favoris ne doit jamais casser le radar.
+17. [FAIT 18/09] Le radar principal se rend depuis les données embarquées (aucun
+    réseau requis) ; la carte du moment reste cachée si son chargement échoue ;
+    la recherche affiche désormais « momentanément indisponible » au lieu de se
+    taire, et se retente à la frappe suivante.
+18. [FAIT 18/09, vérifié] Toutes les lectures et écritures localStorage sont sous
+    try/catch (fiches, accueil, page favoris) ; un slug disparu est simplement
+    ignoré par la page favoris ; un échec de stockage n'empêche rien d'autre.
 19. [À FAIRE] Recherche : accents, apostrophes typographiques, CJK/arabe/cyrillique,
     entrées longues, emojis, HTML échappé (jamais d'injection).
 20. [À FAIRE] Dates et fuseaux : minuit, été/hiver, événement NY vu de Tokyo, 29 février ;
@@ -80,8 +88,9 @@ de chaque correction, et le verrou final est un validateur de build BLOQUANT.
     documenter ce qui est hors de portée.
 26. [À FAIRE, samedi 20/09] Newsletter : double opt-in, anti-spam, erreurs visibles,
     SPF/DKIM/DMARC, désinscription, politique de confidentialité.
-27. [À FAIRE] Injection : échappement partout, pas d'innerHTML dangereux, pas de
-    secrets dans le JS, target=_blank protégés, aucun fichier de travail publié.
+27. [FAIT 18/09 pour l'essentiel] Recherche : entrée jamais réinjectée, résultats
+    échappés ; aucun secret dans le JS ; index-full.html confirmé hors ligne (404,
+    gitignore) ; target=_blank avec rel noopener sur les gabarits contrôlés.
 
 ## P2 : confort
 
