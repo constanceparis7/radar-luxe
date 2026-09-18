@@ -316,6 +316,8 @@ def main():
      "m_r4": "<b>Rien ne s'efface en silence.</b> Un lieu fermé, un événement annulé : archivé avec sa preuve. Les archives restent consultables.",
      "m_r5": "<b>Une place ne s'achète pas.</b> Aucun événement ne figure ici contre paiement. Les partenariats, s'ils existent, sont signalés sur la page concernée.",
      "m_r6": "<b>Une erreur signalée est corrigée sous 48 heures</b>, et la correction est mentionnée.",
+     "m_fuseau_t": "L'heure du radar",
+     "m_fuseau_p": "Le radar vit à l'heure de Paris : « aujourd'hui », « en cours » et les comptes à rebours se calculent sur le fuseau de Paris, quel que soit l'endroit d'où vous consultez le site. Les horaires locaux des événements restent bien sûr ceux de leur ville.",
      "m_signaler": "Signaler une erreur",
      "m_badge_t": "Le badge « Vérifié à la source »",
      "m_badge_p": "Sur les pages d'événement, la mention <b>« ✓ Vérifié à la source le… »</b> indique la date à laquelle l'information a été confrontée pour la dernière fois à sa source officielle. Elle ne s'affiche que lorsque cette vérification est consignée : pas de preuve, pas de badge.",
@@ -1230,6 +1232,7 @@ L'éditrice n'exerce aucun contrôle sur ces sites et décline toute responsabil
         corps.append(f"<li>{X(lang,'m_r6')} <a href=\"mailto:constanceparis75007@gmail.com\">{esc(X(lang,'m_signaler'))}</a>.</li></ul></div>")
         corps.append(f"<h2 class=\"sub\">{esc(X(lang,'m_badge_t'))}</h2><p>{X(lang,'m_badge_p')}</p>")
         corps.append(f"<h2 class=\"sub\">{esc(X(lang,'m_langs_t'))}</h2><p>{esc(X(lang,'m_langs_p'))}</p>")
+        corps.append(f"<h2 class=\"sub\">{esc(X(lang,'m_fuseau_t'))}</h2><p>{esc(X(lang,'m_fuseau_p'))}</p>")
         corps.append(f"<div class=\"chips\"><a href=\"{prefix(lang)}/\">← {esc(X(lang,'retour'))}</a><a href=\"{prefix(lang)}/a-propos.html\">À propos</a></div>"
                      if lang == "fr" else
                      f"<div class=\"chips\"><a href=\"{prefix(lang)}/\">← {esc(X(lang,'retour'))}</a></div>")

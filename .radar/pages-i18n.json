@@ -160,7 +160,9 @@
   "note_p6": "تُدوِّن {{MEM}} فترات الحجز وحالات النفاد التي تم رصدها. عبارة «نفدت التذاكر خلال ساعتين» مقياس للإقبال لا تعوّضه أي معادلة: عامًا بعد عام، ستُسهم هذه الرصودات في صقل معيار الدخول. وحين تعبر هيئة التحرير نفسها أبواب الحدث، تحمل البطاقة عبارة «مُعاش ومُتحقَّق منه ميدانيًا».",
   "note_mem_link": "ذاكرة الرادار",
   "note_p7": "الطريقة التي يُتحقَّق بها من كل معلومة منشورة بالكامل: وهي {{METHOD}}.",
-  "note_method_link": "المنهجية"
+  "note_method_link": "المنهجية",
+  "m_fuseau_t": "توقيت الرادار",
+  "m_fuseau_p": "يعيش الرادار على توقيت باريس: 'اليوم' و'جارٍ الآن' والعدادات التنازلية تُحسب وفق المنطقة الزمنية لباريس، أيًا كان مكان تصفحكم للموقع. وتبقى المواعيد المحلية للفعاليات بطبيعة الحال مواعيد مدنها."
  },
  "de": {
   "bc_moments": "Momente",
@@ -323,7 +325,9 @@
   "note_p6": "{{MEM}} hält Buchungsfenster und beobachtete Ausverkäufe fest. „Ausverkauft in zwei Stunden“ ist ein Maß für den Sog, das keine Formel ersetzen kann: Jahr für Jahr werden diese Aufzeichnungen das Zugangskriterium weiter verfeinern. Und wenn die Redaktion selbst die Türen durchschreitet, trägt der Eintrag den Vermerk „vor Ort erlebt und geprüft“.",
   "note_mem_link": "Das Gedächtnis des Radars",
   "note_p7": "Wie jede Information überprüft wird, ist vollständig veröffentlicht: das ist die {{METHOD}}.",
-  "note_method_link": "Methodik"
+  "note_method_link": "Methodik",
+  "m_fuseau_t": "Die Uhrzeit des Radars",
+  "m_fuseau_p": "Das Radar lebt nach Pariser Zeit: 'heute', 'laufend' und die Countdowns werden in der Pariser Zeitzone berechnet, egal von wo Sie die Seite aufrufen. Die lokalen Uhrzeiten der Veranstaltungen bleiben selbstverständlich die ihrer Stadt."
  },
  "en": {
   "bc_moments": "Moments",
@@ -486,7 +490,9 @@
   "note_p6": "{{MEM}} records booking windows and observed sell-outs. \"Sold out in two hours\" is a measure of buzz that no formula can replace: year after year, these readings will refine the access criterion. And when the editors themselves walk through the doors, the listing will carry the note \"experienced and verified on site.\"",
   "note_mem_link": "The Radar Memory",
   "note_p7": "How each piece of information is verified is published in full: that is the {{METHOD}}.",
-  "note_method_link": "methodology"
+  "note_method_link": "methodology",
+  "m_fuseau_t": "Radar time",
+  "m_fuseau_p": "The radar runs on Paris time: 'today', 'ongoing' and the countdowns are calculated on the Paris time zone, wherever you are browsing from. Local event times remain, of course, those of their city."
  },
  "es": {
   "bc_moments": "Momentos",
@@ -649,7 +655,9 @@
   "note_p6": "{{MEM}} registra las ventanas de reserva y los agotamientos constatados. «Agotado en dos horas» es una medida de interés que ninguna fórmula puede sustituir: año tras año, estos registros irán afinando el criterio de acceso. Y cuando la redacción cruza ella misma las puertas, la ficha llevará la mención «vivido y verificado in situ».",
   "note_mem_link": "La Memoria del radar",
   "note_p7": "La forma en que se verifica cada información está publicada: es la {{METHOD}}.",
-  "note_method_link": "metodología"
+  "note_method_link": "metodología",
+  "m_fuseau_t": "La hora del radar",
+  "m_fuseau_p": "El radar vive en hora de París: 'hoy', 'en curso' y las cuentas atrás se calculan según el huso horario de París, desde donde sea que consulte el sitio. Los horarios locales de los eventos siguen siendo, por supuesto, los de su ciudad."
  },
  "hi": {
   "bc_moments": "क्षण",
@@ -812,7 +820,9 @@
   "note_p6": "{{MEM}} आरक्षण की समय-सीमाओं और देखे गए बिक चुके होने के उदाहरणों को दर्ज करती है। 'दो घंटे में पूरी तरह बिक गया'—यह आकर्षण का ऐसा मापदंड है जिसकी जगह कोई सूत्र नहीं ले सकता। वर्ष-दर-वर्ष ये अभिलेख प्रवेश की कसौटी को और परिष्कृत करते जाएँगे। और जब संपादकीय दल स्वयं उन द्वारों से होकर गुज़रता है, तब उस विवरण पर 'स्वयं अनुभव किया गया और स्थल पर सत्यापित' अंकित होगा।",
   "note_mem_link": "रडार की स्मृति",
   "note_p7": "प्रत्येक जानकारी की सत्यापन-प्रक्रिया सार्वजनिक रूप से प्रकाशित है—यही है {{METHOD}}।",
-  "note_method_link": "कार्यप्रणाली"
+  "note_method_link": "कार्यप्रणाली",
+  "m_fuseau_t": "रडार का समय",
+  "m_fuseau_p": "रडार पेरिस के समय पर चलता है: 'आज', 'चल रहा है' और उलटी गिनती पेरिस समय क्षेत्र के अनुसार गणना की जाती है, चाहे आप कहीं से भी साइट देखें। आयोजनों का स्थानीय समय निश्चित रूप से उनके शहर का ही रहता है।"
  },
  "it": {
   "bc_moments": "Momenti",
@@ -975,7 +985,9 @@
   "note_p6": "{{MEM}} registra le finestre di prenotazione e gli esauriti riscontrati. «Esaurito in due ore» è una misura di entusiasmo che nessuna formula può sostituire: anno dopo anno, queste rilevazioni affineranno il criterio di accesso. E quando la redazione stessa varca le porte, la scheda porterà la dicitura «vissuto e verificato sul posto».",
   "note_mem_link": "La Memoria del radar",
   "note_p7": "Il modo in cui ogni informazione viene verificata è pubblicato: è la {{METHOD}}.",
-  "note_method_link": "metodologia"
+  "note_method_link": "metodologia",
+  "m_fuseau_t": "L'ora del radar",
+  "m_fuseau_p": "Il radar vive con l'ora di Parigi: 'oggi', 'in corso' e i conti alla rovescia si calcolano sul fuso orario di Parigi, ovunque vi troviate. Gli orari locali degli eventi restano naturalmente quelli della loro città."
  },
  "ja": {
   "bc_moments": "モーメント",
@@ -1138,7 +1150,9 @@
   "note_p6": "{{MEM}}には、予約可能な期間や、確認された完売の記録が蓄積されていきます。『2時間で完売』——これはどんな計算式にも置き換えられない、熱狂そのものを示す指標です。こうした記録は年を追うごとに蓄積され、入場基準そのものをより精緻なものへと磨き上げていきます。そして編集部自らがその扉をくぐったときには、そのページに『現地で体験し、確認済み』という一文が添えられます。",
   "note_mem_link": "レーダーの記憶",
   "note_p7": "それぞれの情報がどのように検証されているかは、すべて公開されています。それが{{METHOD}}です。",
-  "note_method_link": "検証方法"
+  "note_method_link": "検証方法",
+  "m_fuseau_t": "レーダーの時刻",
+  "m_fuseau_p": "レーダーはパリ時間で動いています。「本日」「開催中」やカウントダウンは、どこから閲覧してもパリのタイムゾーンで計算されます。もちろん、各イベントの現地時刻はその都市の時刻のままです。"
  },
  "ko": {
   "bc_moments": "모먼츠",
@@ -1301,7 +1315,9 @@
   "note_p6": "{{MEM}}은 예약 가능 기간과 실제로 확인된 매진 사례를 기록합니다. '두 시간 만에 매진'이라는 사실은 그 어떤 공식으로도 대체할 수 없는 열기의 척도입니다. 해가 거듭될수록 이러한 기록은 입장 기준을 더욱 정교하게 다듬어갈 것입니다. 그리고 편집부가 직접 그 문을 통과했을 때는, 해당 항목에 '현장에서 직접 체험하고 확인함'이라는 문구가 표기됩니다.",
   "note_mem_link": "레이더의 기억",
   "note_p7": "각 정보가 어떻게 검증되는지는 모두 공개되어 있습니다. 그것이 바로 {{METHOD}}입니다.",
-  "note_method_link": "검증 방법론"
+  "note_method_link": "검증 방법론",
+  "m_fuseau_t": "레이더의 시간",
+  "m_fuseau_p": "레이더는 파리 시간으로 움직입니다. '오늘', '진행 중', 카운트다운은 어디에서 접속하든 파리 시간대를 기준으로 계산됩니다. 물론 각 행사의 현지 시간은 해당 도시의 시간입니다."
  },
  "pt": {
   "bc_moments": "Momentos",
@@ -1464,7 +1480,9 @@
   "note_p6": "{{MEM}} regista as janelas de reserva e os esgotamentos constatados. «Esgotado em duas horas» é uma medida de entusiasmo que nenhuma fórmula substitui: ano após ano, estes registos virão afinar o critério de acesso. E quando a redação atravessa ela própria as portas, a ficha trará a menção «vivido e verificado no local».",
   "note_mem_link": "A Memória do radar",
   "note_p7": "A forma como cada informação é verificada está publicada: é a {{METHOD}}.",
-  "note_method_link": "metodologia"
+  "note_method_link": "metodologia",
+  "m_fuseau_t": "A hora do radar",
+  "m_fuseau_p": "O radar vive na hora de Paris: 'hoje', 'em curso' e as contagens decrescentes são calculadas no fuso horário de Paris, onde quer que esteja a consultar o site. Os horários locais dos eventos continuam, claro, a ser os da sua cidade."
  },
  "ru": {
   "bc_moments": "Моменты",
@@ -1627,7 +1645,9 @@
   "note_p6": "{{MEM}} фиксирует окна бронирования и зафиксированные распродажи билетов. Формулировка «раскуплено за два часа» — это мера ажиотажа, которую не заменит никакая формула: год за годом эти данные будут уточнять критерий доступа. А когда редакция сама переступает порог события, в карточке появится пометка «пережито и проверено на месте».",
   "note_mem_link": "Память радара",
   "note_p7": "То, как проверяется каждая информация, опубликовано полностью: это {{METHOD}}.",
-  "note_method_link": "методология"
+  "note_method_link": "методология",
+  "m_fuseau_t": "Время радара",
+  "m_fuseau_p": "Радар живёт по парижскому времени: 'сегодня', 'идёт сейчас' и обратные отсчёты рассчитываются по часовому поясу Парижа, откуда бы вы ни заходили на сайт. Местное время событий, разумеется, остаётся временем их города."
  },
  "tr": {
   "bc_moments": "Anlar",
@@ -1790,7 +1810,9 @@
   "note_p6": "{{MEM}}, rezervasyon aralıklarını ve gözlemlenen tükenme durumlarını kaydeder. 'İki saatte tükendi' ifadesi, hiçbir formülün yerini tutamayacağı bir ilgi ölçüsüdür: yıldan yıla, bu kayıtlar erişim kriterini daha da inceltecektir. Ve editör ekibi bizzat o kapılardan geçtiğinde, ilgili sayfada 'yerinde deneyimlendi ve doğrulandı' ibaresi yer alacaktır.",
   "note_mem_link": "Radarın Hafızası",
   "note_p7": "Her bilginin nasıl doğrulandığı eksiksiz biçimde yayımlanmıştır: işte {{METHOD}}.",
-  "note_method_link": "yöntem"
+  "note_method_link": "yöntem",
+  "m_fuseau_t": "Radarın saati",
+  "m_fuseau_p": "Radar Paris saatiyle yaşar: 'bugün', 'devam ediyor' ve geri sayımlar, siteye nereden bakarsanız bakın Paris saat dilimine göre hesaplanır. Etkinliklerin yerel saatleri elbette kendi şehirlerinin saatleri olarak kalır."
  },
  "zh": {
   "bc_moments": "时刻",
@@ -1953,6 +1975,8 @@
   "note_p6": "{{MEM}}记录预订窗口期与实际观察到的售罄情况。「两小时售罄」正是任何公式都无法替代的热度指标：年复一年，这些记录将不断细化入场标准这一维度。而当编辑团队亲身踏入现场时，该条目将标注「亲历现场，实地核实」。",
   "note_mem_link": "雷达记忆库",
   "note_p7": "每条信息的核实方式均已完整公开，即为{{METHOD}}。",
-  "note_method_link": "核实方法"
+  "note_method_link": "核实方法",
+  "m_fuseau_t": "雷达的时间",
+  "m_fuseau_p": "雷达以巴黎时间运行：「今天」、「进行中」和倒计时均按巴黎时区计算，无论您身在何处浏览本站。当然，各项活动的当地时间仍以其所在城市为准。"
  }
 }
