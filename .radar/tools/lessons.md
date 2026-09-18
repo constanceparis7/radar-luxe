@@ -1097,3 +1097,39 @@ procédure de la passe, seuils) reste, lui, pleinement valable et a été suivi 
 À CORRIGER : la section « Environnement cloud » de DOCTRINE.md devrait être mise à jour pour
 refléter le dépôt unique, afin qu'une future passe ne perde pas de temps à chercher un second
 dépôt qui n'existe pas dans ce contexte.
+
+## 18/09/2026 — `verrou.py` (posé la veille) ignorait `RADAR_REPO` et faisait échouer validate.py à chaque passe cloud
+Le nouveau contrôle bloquant `verrou.py` (ajouté le 17/09/2026, appelé en subprocess par
+`validate.py`) codait en dur `REPO = os.path.expanduser("~/radar-luxe")` au lieu de suivre la
+convention déjà en place dans TOUS les autres outils (`rebuild_full.py`, `split_i18n.py`,
+`gen_pages.py`, `precheck.sh`, `reste.py`, `passe_automatique.py` : `RADAR_REPO` en priorité,
+sinon déduit de l'emplacement du script). Dans cette session cloud, le dépôt vit à
+`/home/user/radar-luxe`, pas à `~/radar-luxe` (`$HOME` est `/root`) : `verrou.py` plantait donc
+avec `FileNotFoundError` dès son premier `os.chdir(REPO)`, et faisait échouer validate.py (donc
+toute publication) en bloc — un contrôle censé PROTÉGER la publication l'aurait interdite à
+100 % des passes cloud si le bug n'avait pas été vu dès le premier lancement du jour.
+CORRIGÉ : `REPO = os.environ.get("RADAR_REPO") or os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))`,
+identique au reste du filet.
+RÈGLE GÉNÉRALE (déjà connue depuis le 22/07, reperdue ici) : tout nouvel outil ajouté au filet
+doit reprendre la convention `RADAR_REPO` existante dès sa première écriture — un chemin en dur
+propre à une machine (`~/...`, `/Users/...`) est invisible en test local (où `~` peut coïncider
+avec le dépôt) et casse uniquement en session cloud, exactement le schéma qui a produit
+plusieurs incidents entre le 17/07 et le 22/07/2026. Avant de committer un nouvel outil,
+vérifier qu'il ne contient AUCUN chemin absolu qui ne passe pas par `RADAR_REPO`.
+
+## 18/09/2026 — mettre à jour l'eyebrow par regex a empoisonné la clé i18n qui partage le même préfixe
+En réécrivant la date de l'eyebrow (« données collectées et vérifiées le JJ mois AAAA »),
+un remplacement par expression régulière ciblant tout `"données collectées et vérifiées le" +
+(jusqu'à 40 caractères)` a touché DEUX occurrences : le texte visible de l'eyebrow (à corriger,
+légitime) ET une clé du dictionnaire i18n qui porte le MÊME préfixe sans date à la suite
+(`"...vérifiées le","theme":"thème"...`) — cette clé sert de gabarit que l'interface complète
+elle-même, elle ne doit jamais recevoir de date écrite en dur. Le remplacement aveugle a donc
+collé « 18 septembre 2026 » directement dans le JSON, à l'intérieur de la valeur de la clé,
+juste avant le guillemet fermant — une corruption silencieuse (JSON toujours valide, juste une
+valeur de dictionnaire faussée) qui serait passée inaperçue de `validate.py`/`verrou.py` (aucun
+des deux ne connaît le contenu attendu de cette clé précise) si elle n'avait pas été repérée par
+relecture immédiate du `grep` juste après l'opération.
+RÈGLE : avant tout remplacement par regex sur un texte qui doit exister UNE SEULE fois dans le
+HTML/JSON, vérifier d'abord le nombre d'occurrences (`html.count(...)` ou `grep -c`) et inspecter
+CHAQUE contexte trouvé — un préfixe de phrase commun peut très bien être réutilisé ailleurs comme
+clé de gabarit i18n, invisible tant qu'on ne relit pas le contexte complet de chaque correspondance.
