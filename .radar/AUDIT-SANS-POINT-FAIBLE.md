@@ -8,6 +8,12 @@ de chaque correction, et le verrou final est un validateur de build BLOQUANT.
 
 ## P0 : avant toute promotion
 
+0. [FAIT 18/09, dégât auto-infligé réparé] La normalisation des villes du 17/09 avait
+   changé l'adresse de 63 fiches (la ville entre dans le slug) sans redirection :
+   114 URL en 404 dans Search Console. 117 redirections permanentes de fiches
+   générées par gen_pages, 13 langues. Leçon gravée : tout renommage de champ qui
+   entre dans une adresse exige ses redirections dans le même commit.
+
 1. [FAIT 17/09] Totaux réconciliés : 325 = 341 moins les 16 points d'entrée non notés,
    désormais expliqué en toutes lettres sur note.html. Les « 240 » et « 96 vs 94 » de
    l'audit extérieur étaient des fantômes du cache de son moteur (vérifié : 94 partout).
@@ -18,17 +24,20 @@ de chaque correction, et le verrou final est un validateur de build BLOQUANT.
    (avec un tiret long). Réécrite automne, 13 langues servies par la même page.
    [À FAIRE] Scan global de tous les fichiers générés : "été 2026", "summer 2026",
    "cet été", "None", "null", "undefined", "NaN", "[object Object]", clés i18n nues.
-4. [EN COURS] Titres "None" corrigés en ligne le 17/09 ; l'index Google se resorbe.
-   [À FAIRE] Garde bloquante : aucun title avec None/null/undefined/séparateur vide ;
-   comparaison title servi vs title attendu pour chaque URL du sitemap.
+4. [FAIT 17-18/09] Titres « None » corrigés ; garde bloquante V1 au verrou (title,
+   description, og, h1). Search Console du 18/09 : les pages catégories étrangères
+   avaient des centaines d'affichages et zéro clic, preuve de l'impact ; recrawl
+   en cours, à mesurer au 2/10. [Reste : comparaison title servi vs attendu.]
 5. [À FAIRE] Signal 502 vu par le navigateur d'audit (peut venir de son infra).
    Sonde de disponibilité sur 24 h : /, /en/, /ar/, fiches, sitemap ; taux de 5xx.
 
 ## P1 : SEO et crédibilité
 
-6. [À FAIRE] Français résiduel dans les 12 langues : fil d'Ariane (« Londres » sur pages EN),
-   « Divers lieux », pieds de page (À propos · Contact · Mentions légales), groupes
-   de régions en français sur le hub arabe. Liste blanche : noms propres seulement.
+6. [FAIT 18/09] Registre .radar/lieux-i18n.json (112 villes, 40 groupes, 4 libellés
+   d'interface, 12 langues, vague de traduction vérifiée) branché dans les pages
+   générées (fil d'Ariane, lieu, pied de page, hubs) et fusionné dans les tables de
+   l'accueil (villes 127 vers 140, groupes 55 vers 61). Londres devient London,
+   Лондон, 伦敦 selon la langue ; « Divers lieux » et « Mentions légales » traduits.
 7. [FAIT 18/09] Grappes hreflang : contrôle V10 au verrou (13 alternates par fiche,
    jeux identiques entre langues, fichiers présents). Zéro divergence au premier passage.
 8. [À FAIRE] JSON-LD Event à recalibrer : Event.url doit pointer la fiche CP7 (pas le site
@@ -53,8 +62,11 @@ de chaque correction, et le verrou final est un validateur de build BLOQUANT.
 14. [FAIT 18/09] lastmod honnête : 433 pages réellement quotidiennes datées (accueils,
     imminents) au lieu de 5 558 datées artificiellement chaque jour. V7 garantit
     que chaque URL du sitemap a son fichier.
-15. [À FAIRE] Cannibalisation : matrice intention -> URL unique (Milan events, PFW,
-    Vogue World...) ; page ville vs landing imminente vs Questions.
+15. [EN COURS 18/09] Diagnostic Search Console : 162 pages « en double, Google a choisi
+    une autre canonique » = Google sert parfois une autre langue (la fiche arabe de
+    Vogue World en tête des clics). Grappes hreflang vérifiées correctes ; remède
+    posé : alternates hreflang émis dans le sitemap (5 447 URL). À mesurer au bilan
+    du 2/10. [Reste : matrice intention vers URL unique pour Milan/PFW/Vogue World.]
 16. [FAIT 18/09] 404 maison élégante (marque, liens radar/événements/entrer/favoris,
     bilingue) servie avec le vrai statut 404 ; les 61 redirections sont des sauts
     uniques, hors sitemap, et V6 interdit tout lien interne vers une ancienne adresse.
