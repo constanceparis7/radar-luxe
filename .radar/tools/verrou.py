@@ -233,6 +233,23 @@ def controle_hreflang_et_orphelines():
            and "http-equiv" not in tete and "noindex" not in tete:
             warn.append(f"W3 page sans aucun lien entrant : {u}")
 
+def controle_budget():
+    """V11 : budget de poids (feuille de route O3). L'accueil ne doit plus regrossir :
+    868 Ko bruts le 18/09/2026 après la sortie des journaux d'enquête et des séjours
+    (2 547 Ko avant). Plafond : 1 000 Ko bruts. Une fiche : 60 Ko."""
+    acc = os.path.getsize(os.path.join(REPO, "index.html")) // 1024
+    if acc > 1000:
+        bloq.append(f"V11 accueil trop lourd : {acc} Ko bruts (plafond 1000 Ko)")
+    lourdes = []
+    for f in os.listdir(os.path.join(REPO, "e")):
+        if f.endswith(".html"):
+            k = os.path.getsize(os.path.join(REPO, "e", f)) // 1024
+            if k > 60:
+                lourdes.append((f, k))
+    for f, k in lourdes[:5]:
+        bloq.append(f"V11 fiche trop lourde : e/{f} = {k} Ko (plafond 60 Ko)")
+    return acc
+
 def controle_sitemap():
     sm = os.path.join(REPO, "sitemap.xml")
     if not os.path.exists(sm):
@@ -250,6 +267,7 @@ def main():
     nevts = controle_donnees()
     nurls = controle_sitemap()
     controle_hreflang_et_orphelines()
+    acc = controle_budget()
     for b in bloq[:60]:
         print("BLOQUEUR ", b)
     if len(bloq) > 60:
@@ -258,7 +276,7 @@ def main():
         print("AVERT    ", w)
     if len(warn) > 25:
         print(f"... et {len(warn)-25} autres avertissements")
-    print(f"VERROU — {npages} pages, {nevts} fiches, {nurls} URLs de sitemap : "
+    print(f"VERROU — {npages} pages, {nevts} fiches, {nurls} URLs de sitemap, accueil {acc} Ko : "
           f"{len(bloq)} bloqueur(s), {len(warn)} avertissement(s)")
     sys.exit(1 if bloq else 0)
 

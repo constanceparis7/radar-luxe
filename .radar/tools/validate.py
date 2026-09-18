@@ -116,6 +116,17 @@ def main():
         except Exception as e:
             blk(f"bloc JSON '{name}' ne reparse pas: {e}")
     data = parsed.get("data", []) or []
+    # iv et sej vivent hors de l'index léger depuis le 18/09/2026 (vitesse mobile)
+    _dpath = os.path.join(os.path.dirname(os.path.abspath(path)), ".radar", "details-data.json")
+    if isinstance(data, list) and os.path.exists(_dpath):
+        _det = json.load(open(_dpath, encoding="utf-8"))
+        _idx = {f"{_e.get('d1','')}|{_e.get('n','')}": _e for _e in data if isinstance(_e, dict)}
+        for _k, _d in _det.items():
+            _e = _idx.get(_k)
+            if _e is not None:
+                for _c in ("iv", "sej"):
+                    if _d.get(_c) and not _e.get(_c):
+                        _e[_c] = _d[_c]
 
     # --- 1bis. Traductions différées (chantier perf) ---------------------
     # Si le dossier i18n-data/ existe à côté de la page, les traductions ne

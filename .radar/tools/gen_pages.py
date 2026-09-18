@@ -204,6 +204,19 @@ def main():
     verifie_depot()
     src = open(IDX, encoding="utf-8").read()
     data = json.loads(re.search(r'<script type="application/json" id="data">(.*?)</script>', src, re.S).group(1).replace("<\\/", "</"))
+    # iv et sej vivent hors de l'index léger depuis le 18/09/2026 (vitesse mobile)
+    _dpath = os.path.join(REPO, ".radar", "details-data.json")
+    if os.path.exists(_dpath):
+        _det = json.load(open(_dpath, encoding="utf-8"))
+        _idx = {f"{e.get('d1','')}|{e.get('n','')}": e for e in data}
+        for _k, _d in _det.items():
+            _e = _idx.get(_k)
+            if _e is not None:
+                for _c in ("iv", "sej"):
+                    if _d.get(_c) and not _e.get(_c):
+                        _e[_c] = _d[_c]
+    for _e in data:
+        _e.pop("hi", None); _e.pop("hs", None)
     i18n = json.loads(re.search(r'<script type="application/json" id="i18n">(.*?)</script>', src, re.S).group(1))
 
     # Traductions différées (chantier perf) : quand elles ne sont plus dans le
@@ -665,6 +678,14 @@ def main():
         open(fp, "w", encoding="utf-8").write(content)
 
     sitemap_urls = [f"{BASE}/"]
+
+    # /details/<slug>.json : journal d'enquête et séjour de chaque fiche, chargés
+    # par l'accueil au premier dépliage (vitesse mobile, 18/09/2026).
+    for e in pages:
+        if e.get("iv") or e.get("sej"):
+            write(f"/details/{e['_slug']}.json",
+                  json.dumps({k: e[k] for k in ("iv", "sej") if e.get(k)},
+                             ensure_ascii=False, separators=(",", ":")))
     # Normalisation des lieux du 17/09/2026 : les anciens libellés fusionnés
     # gardent une page de renvoi vers la destination canonique (jamais dans le
     # sitemap, noindex). Écrites AVANT les vraies pages : une vraie page au

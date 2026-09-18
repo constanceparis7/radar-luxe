@@ -104,7 +104,26 @@ def build(out_dir, src=SRC):
             json.dump(m2, f, ensure_ascii=False, separators=(",", ":"))
 
     # 2) index.html allégé
-    light = [{k: v for k, v in e.items() if k != "tr"} for e in data]
+    # 2bis) VITESSE MOBILE (18/09/2026, feuille de route O3) : les journaux
+    #       d'enquête (iv) et les séjours (sej) pesaient 1,7 Mo dans l'accueil
+    #       sans servir au premier affichage. Ils vivent dans
+    #       .radar/details-data.json (outils) et /details/<slug>.json (navigateur,
+    #       écrits par gen_pages), chargés au premier dépliage. L'index léger ne
+    #       garde que deux drapeaux hi/hs pour dessiner les sections.
+    details = {}
+    light = []
+    for e in data:
+        d = {k: v for k, v in e.items() if k not in ("tr", "iv", "sej", "hi", "hs")}
+        if e.get("iv"):
+            d["hi"] = 1
+        if e.get("sej"):
+            d["hs"] = 1
+        if e.get("iv") or e.get("sej"):
+            details[key_of(e)] = {k: e[k] for k in ("iv", "sej") if e.get(k)}
+        light.append(d)
+    os.makedirs(os.path.join(out_dir, ".radar"), exist_ok=True)
+    with open(os.path.join(out_dir, ".radar", "details-data.json"), "w", encoding="utf-8") as f:
+        json.dump(details, f, ensure_ascii=False, separators=(",", ":"))
     new_html = html[:m.start(2)] + dump_data(light) + html[m.end(2):]
     anchor = "const DATA = JSON.parse(document.getElementById('data').textContent);"
     if anchor not in new_html:

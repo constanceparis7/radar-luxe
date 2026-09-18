@@ -92,7 +92,7 @@ moyenne de ses micro-objectifs.
 - [0]   Empreintes de version sur les ressources (photo, JSON) pour un cache long côté navigateur
 - [hors périmètre] Cloudflare devant, en-têtes HTTP, vrais 301, HTTP/3, Cloudflare Pages, R2, Workers, D1
 
-### O3 · Vitesse mobile, Android et iOS (PRIORITÉ ABSOLUE) · 15 %
+### O3 · Vitesse mobile, Android et iOS (PRIORITÉ ABSOLUE) · 45 %
 Mesure de référence du 18/09/2026 : un téléphone reçoit 820 Ko pour l'accueil
 (2 547 Ko bruts), plus 294 Ko de photo et 43 Ko d'index de recherche, soit environ
 1,15 Mo. Le poids vient de deux champs embarqués inutiles au premier affichage :
@@ -101,11 +101,12 @@ les textes de séjour (1 088 Ko) et les journaux d'enquête (619 Ko). Une fiche
 - [100] Polices système (Didot, Avenir), aucune police téléchargée
 - [100] Mesure de référence établie (poids par bloc, transfert réel)
 - [50]  Photo d'accueil optimisée (294 Ko) ; WebP/AVIF et variantes par écran à faire
-- [0]   Séjours et journaux d'enquête sortis de l'accueil, chargés à la demande
-        (cible : accueil sous 250 Ko transférés, soit trois fois moins)
+- [100] Séjours et journaux d'enquête sortis de l'accueil, chargés à la demande
+        (18/09 : accueil de 2 547 Ko à 868 Ko bruts, de 820 Ko à 264 Ko transférés,
+        trois fois plus léger ; sections conservées, contenu chargé au dépliage)
 - [0]   JSON-LD de l'accueil en liste plutôt qu'en 340 objets
-- [0]   Budget de poids par page inscrit au verrou (refus si l'accueil regrossit)
-- [0]   LCP < 2,5 s, INP < 200 ms, CLS < 0,1 mesurés (PageSpeed mobile, chaque semaine)
+- [100] Budget de poids au verrou (V11 : accueil sous 1 000 Ko bruts, fiche sous 60 Ko)
+- [10]  LCP < 2,5 s, INP < 200 ms, CLS < 0,1 mesurés (PageSpeed mobile, chaque semaine ; première mesure bloquée par le quota de l'API, à refaire)
 - [0]   Rendu progressif des cartes (les 340 cartes ne se construisent pas d'un coup)
 - [0]   Écrans de 320, 360 et 390 px, paysage, zoom 200 %, clavier ouvert
 - [0]   Sitemap scindé par langue avec index (11 Mo aujourd'hui en un fichier)

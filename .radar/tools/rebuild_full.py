@@ -63,6 +63,20 @@ def main():
             e.setdefault("tr", {})[lang] = t
             injectes += 1
 
+    # iv et sej (sortis de l'index léger le 18/09/2026 pour la vitesse mobile)
+    dpath = os.path.join(REPO, ".radar", "details-data.json")
+    if os.path.exists(dpath):
+        det = json.load(open(dpath, encoding="utf-8"))
+        for k, d in det.items():
+            e = index.get(k)
+            if e is None:
+                continue
+            for champ in ("iv", "sej"):
+                if d.get(champ) and not e.get(champ):
+                    e[champ] = d[champ]
+    for e in data:
+        e.pop("hi", None); e.pop("hs", None)
+
     neuf = json.dumps(data, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
     full = html[:m.start(2)] + neuf + html[m.end(2):]
 

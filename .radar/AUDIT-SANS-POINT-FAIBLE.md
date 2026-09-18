@@ -87,8 +87,9 @@ de chaque correction, et le verrou final est un validateur de build BLOQUANT.
 
 ## P1 : mobile, performance, accessibilité, sécurité
 
-21. [À FAIRE] Core Web Vitals sur téléphone moyen et réseau lent : LCP<2,5s, INP<200ms,
-    CLS<0,1 ; poids du HTML de l'accueil (gros JSON-LD) à surveiller.
+21. [EN COURS 18/09] Poids de l'accueil divisé par trois (820 à 264 Ko transférés) :
+    journaux d'enquête et séjours chargés au dépliage ; budget V11 au verrou.
+    [Reste : mesure LCP/INP/CLS hebdomadaire, JSON-LD en liste, photo WebP.]
 22. [À FAIRE] Petits écrans : 320/360/390 px, paysage, zoom 200 %, clavier ouvert,
     cibles 44 px, pas de défilement horizontal.
 23. [À FAIRE] Accessibilité : H1 unique, landmarks, clavier, focus visible, labels,
