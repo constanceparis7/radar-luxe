@@ -25,7 +25,7 @@ Avertissements (candidats à promotion une fois le corpus propre) :
 import json, os, re, sys, unicodedata
 from datetime import date, timedelta
 
-REPO = os.path.expanduser("~/radar-luxe")
+REPO = os.environ.get("RADAR_REPO") or os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 LANGS = ["en","es","it","pt","de","ru","ar","zh","ja","ko","hi","tr"]
 bloq, warn = [], []
 
