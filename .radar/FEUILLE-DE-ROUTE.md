@@ -15,7 +15,15 @@ ce sont la marque, la presse, les partenaires et les assistants d'intelligence
 artificielle qui portent, leviers mis en pause à ta demande jusqu'à ce que le site
 soit sans point faible. Aujourd'hui : palier 1 (35 à 100 visites par jour).
 
-## L'avis d'hébergement : GitHub Pages ou Cloudflare ?
+## DÉCISION DU 18/09/2026 : on reste chez GitHub Pages, comme maintenant
+
+Constance a tranché après avis : pas de Cloudflare pour l'instant. Tout ce qui suit
+est donc compatible avec un hébergement statique GitHub Pages. Les micro-objectifs
+qui exigeaient Cloudflare sont marqués « hors périmètre » et ne comptent pas dans
+les taux. Impératif posé le même jour : « un site très rapide sur mobile, Android
+et iOS ». L'objectif O3 passe en priorité absolue.
+
+## L'avis d'hébergement (rendu le 18/09, non retenu pour l'instant)
 
 Constat au 18/09/2026 : 7 966 fichiers publiés (48 Mo), accueil de 2,5 Mo, 64
 publications par semaine, aucun en-tête de sécurité servi, redirections faites par
@@ -75,26 +83,30 @@ moyenne de ses micro-objectifs.
 - [0]   En-têtes de sécurité (dépend de Cloudflare devant)
 - [0]   Newsletter : double opt-in, anti-spam, désinscription (samedi 20/09)
 
-### O2 · Infrastructure de niveau mondial · 25 %
+### O2 · Infrastructure (périmètre GitHub Pages) · 60 %
 - [100] HTTPS forcé, http et www redirigés
-- [100] Réseau de diffusion mondial (Fastly via GitHub Pages)
-- [50]  Surveillance de disponibilité (sonde du matin ; sonde externe 24/7 à poser)
-- [0]   Cloudflare devant le site (compte, DNS, proxy) : geste de Constance
-- [0]   En-têtes HSTS, CSP, nosniff, Referrer-Policy, frame-ancestors
-- [0]   Vraies redirections 301 (178 aujourd'hui en pages de renvoi)
-- [0]   HTTP/3 et Brotli
-- [0]   Cache immuable des ressources statiques (photo, JSON, index de recherche)
-- [0]   Bascule d'hébergement sur Cloudflare Pages (avant le palier 3)
-- [0]   R2 pour les médias (quand les photos arrivent)
-- [0]   Workers, KV, D1 pour le rendu à la volée et l'API (palier 4)
+- [100] Réseau de diffusion mondial (Fastly via GitHub Pages, cache 10 minutes)
+- [100] Redirections des anciennes adresses (178 pages de renvoi, le maximum possible ici)
+- [50]  Surveillance de disponibilité (sonde du matin ; sonde 24 h en cours)
+- [0]   Équivalents statiques des en-têtes (CSP en balise meta, referrer en meta)
+- [0]   Empreintes de version sur les ressources (photo, JSON) pour un cache long côté navigateur
+- [hors périmètre] Cloudflare devant, en-têtes HTTP, vrais 301, HTTP/3, Cloudflare Pages, R2, Workers, D1
 
-### O3 · Performance et mobile · 20 %
+### O3 · Vitesse mobile, Android et iOS (PRIORITÉ ABSOLUE) · 15 %
+Mesure de référence du 18/09/2026 : un téléphone reçoit 820 Ko pour l'accueil
+(2 547 Ko bruts), plus 294 Ko de photo et 43 Ko d'index de recherche, soit environ
+1,15 Mo. Le poids vient de deux champs embarqués inutiles au premier affichage :
+les textes de séjour (1 088 Ko) et les journaux d'enquête (619 Ko). Une fiche
+événement ne pèse que 4 Ko transférés : les fiches sont déjà rapides.
 - [100] Polices système (Didot, Avenir), aucune police téléchargée
-- [50]  Photo d'accueil optimisée (296 Ko) ; WebP/AVIF et srcset à faire
-- [0]   Accueil de 2,5 Mo ramené sous 300 Ko de HTML (données en JSON séparé
-        et mis en cache, JSON-LD de l'accueil en liste plutôt qu'en 340 objets)
-- [0]   Budget de poids par page inscrit au verrou
-- [0]   LCP < 2,5 s, INP < 200 ms, CLS < 0,1 mesurés sur téléphone moyen, réseau lent
+- [100] Mesure de référence établie (poids par bloc, transfert réel)
+- [50]  Photo d'accueil optimisée (294 Ko) ; WebP/AVIF et variantes par écran à faire
+- [0]   Séjours et journaux d'enquête sortis de l'accueil, chargés à la demande
+        (cible : accueil sous 250 Ko transférés, soit trois fois moins)
+- [0]   JSON-LD de l'accueil en liste plutôt qu'en 340 objets
+- [0]   Budget de poids par page inscrit au verrou (refus si l'accueil regrossit)
+- [0]   LCP < 2,5 s, INP < 200 ms, CLS < 0,1 mesurés (PageSpeed mobile, chaque semaine)
+- [0]   Rendu progressif des cartes (les 340 cartes ne se construisent pas d'un coup)
 - [0]   Écrans de 320, 360 et 390 px, paysage, zoom 200 %, clavier ouvert
 - [0]   Sitemap scindé par langue avec index (11 Mo aujourd'hui en un fichier)
 
@@ -162,9 +174,22 @@ moyenne de ses micro-objectifs.
         charge, plan de reprise, coûts maîtrisés ; et la distribution mondiale
         (marque, presse, partenaires, assistants d'IA)
 
+## La durée du travail, honnêtement
+
+- Semaine 1 (19 au 26 septembre) : vitesse mobile de l'accueil (O3, cible trois fois
+  plus léger), newsletter du 21, fin des points critiques du registre.
+- Semaines 2 et 3 (jusqu'au 10 octobre) : accessibilité, arabe et langues asiatiques
+  à l'écran, JSON-LD, états vides, aperçus sociaux ; bilan du 2 octobre.
+- Semaines 4 à 6 (jusqu'à fin octobre) : pages Questions en 11 langues, matrice
+  d'intentions, sitemaps scindés, alertes automatiques, tableau de bord unique.
+- Ensuite, en continu : le radar grossit (palier 1 000 événements), les routines
+  tiennent la qualité, les mesures pilotent. Sur GitHub Pages, le plafond technique
+  se situe autour du palier 3 (10 000 par jour) à cause de la bande passante ; au-delà,
+  la question de l'hébergement se rouvrira, à ta main.
+
 ## L'ordre des prochaines semaines
 1. Registre de l'audit jusqu'au bout (O1), en commençant par l'accueil de 2,5 Mo (O3).
-2. Cloudflare devant le site (O2), dès que Constance a créé le compte.
+2. Équivalents statiques des en-têtes et empreintes de version (O2).
 3. Newsletter du 21/09 avec ses contrôles (O6, O7).
 4. Bilan du 2/10 : mesure, puis décision de positionnement.
-5. Bascule Cloudflare Pages quand le palier 2 est solide.
+5. Mesure PageSpeed hebdomadaire jusqu'au vert sur les trois indicateurs.

@@ -1,5 +1,10 @@
 # DOCTRINE DE LA PASSE — ConstanceParis7
 
+> **LIRE D'ABORD : `.radar/REGLE-ALPHA.md`** (cadre fixé par Constance le 18/09/2026 :
+> site de niveau mondial, hébergement GitHub Pages, vitesse mobile impérative, aucun
+> point faible, équipe avec ChatGPT). Puis `.radar/FEUILLE-DE-ROUTE.md`, dont les taux
+> d'avancement se mettent à jour dans le même commit que tout progrès.
+
 > **Ce fichier fait autorité.** La routine cloud le lit à chaque exécution : il
 > prime sur toute habitude générale et sur toute consigne plus ancienne.
 > Pour faire évoluer la boucle, on modifie CE fichier et on pousse — aucune
