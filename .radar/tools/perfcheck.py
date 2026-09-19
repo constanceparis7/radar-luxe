@@ -69,8 +69,31 @@ def measure(path):
         "page_gzip": page_gzip,
         "data_gzip": data_gzip,
         "fr_only_gzip": fr_gzip,  # payload initial visé si langues différées
-        "sej_count": sum(1 for e in evts if e.get("sej")),
+        "sej_count": count_sej(path, evts),
     }
+
+
+def count_sej(path, evts):
+    # Depuis le chantier « vitesse mobile » du 18/09/2026 (commit 3b96ca09c),
+    # iv/sej sont retirés du bloc data de l'index (poids) et vivent dans
+    # details/<slug>.json (un fichier par fiche qui a l'un ou l'autre). Compter
+    # sur evts seul retombait donc à 0 en permanence — un faux signal qui
+    # aurait masqué toute vraie régression de la LOI DU SITE. Repli sur evts si
+    # details/ n'existe pas (ancienne architecture ou chemin non standard).
+    details_dir = os.path.join(os.path.dirname(os.path.abspath(path)), "details")
+    if not os.path.isdir(details_dir):
+        return sum(1 for e in evts if e.get("sej"))
+    n = 0
+    for fn in os.listdir(details_dir):
+        if not fn.endswith(".json"):
+            continue
+        try:
+            d = json.load(open(os.path.join(details_dir, fn), encoding="utf-8"))
+        except Exception:
+            continue
+        if d.get("sej"):
+            n += 1
+    return n
 
 
 def last_record():
