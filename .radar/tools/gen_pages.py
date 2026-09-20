@@ -2053,7 +2053,26 @@ document.querySelectorAll('.ex').forEach(function(a){a.addEventListener('click',
                 _alts += f'<xhtml:link rel="alternate" hreflang="x-default" href="{BASE}{_base}"/>'
         sm.append(f"  <url><loc>{u}</loc>{lm}<changefreq>{cf}</changefreq><priority>{pr}</priority>{_alts}</url>")
     sm.append("</urlset>")
-    open(f"{REPO}/sitemap.xml", "w", encoding="utf-8").write("\n".join(sm) + "\n")
+    # Sitemap scindé par langue avec index (20/09/2026, feuille de route O3) : un
+    # fichier de 11 Mo était lourd à explorer ; treize fichiers plus légers,
+    # réunis par sitemap.xml devenu index. Les anciens robots qui lisent un
+    # urlset dans sitemap.xml trouvent un sitemapindex valide à la place.
+    _entete = sm[:2]
+    _par_langue = {lg: [] for lg in ["fr"] + LANGS}
+    for _ligne in sm[2:-1]:
+        _m = re.search(r"<loc>" + re.escape(BASE) + r"/([a-z]{2})/", _ligne)
+        _lg = _m.group(1) if _m and _m.group(1) in LANGS else "fr"
+        _par_langue[_lg].append(_ligne)
+    _index = ['<?xml version="1.0" encoding="UTF-8"?>',
+              '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+    for _lg, _lignes in _par_langue.items():
+        if not _lignes:
+            continue
+        _nom = f"sitemap-{_lg}.xml"
+        open(f"{REPO}/{_nom}", "w", encoding="utf-8").write("\n".join(_entete + _lignes + ["</urlset>"]) + "\n")
+        _index.append(f"  <sitemap><loc>{BASE}/{_nom}</loc><lastmod>{TODAY}</lastmod></sitemap>")
+    _index.append("</sitemapindex>")
+    open(f"{REPO}/sitemap.xml", "w", encoding="utf-8").write("\n".join(_index) + "\n")
     # --- 404 de la maison (18/09/2026) : GitHub Pages sert /404.html avec le vrai
     # statut 404 ; sans lui, le lecteur tombait sur la page grise de l'hébergeur.
     corps_404 = ("<h1>Cette page n'existe pas, ou a changé d'adresse</h1>"

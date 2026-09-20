@@ -255,7 +255,20 @@ def controle_sitemap():
     if not os.path.exists(sm):
         bloq.append("V7 sitemap.xml absent")
         return 0
-    urls = re.findall(r"<loc>https://constanceparis7\.com(/[^<]*)</loc>", open(sm, encoding="utf-8").read())
+    contenu = open(sm, encoding="utf-8").read()
+    fichiers = [sm]
+    if "<sitemapindex" in contenu:
+        # index (20/09/2026) : un sitemap par langue, listés dans sitemap.xml
+        fichiers = []
+        for u in re.findall(r"<loc>https://constanceparis7\.com(/[^<]*)</loc>", contenu):
+            f = os.path.join(REPO, u.lstrip("/"))
+            if not os.path.exists(f):
+                bloq.append(f"V7 index : {u} absent du dépôt")
+            else:
+                fichiers.append(f)
+    urls = []
+    for f in fichiers:
+        urls += re.findall(r"<loc>https://constanceparis7\.com(/[^<]*)</loc>", open(f, encoding="utf-8").read())
     for u in urls:
         if not cible_existe(u):
             bloq.append(f"V7 sitemap : {u} sans fichier")
