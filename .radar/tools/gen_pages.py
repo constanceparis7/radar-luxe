@@ -476,6 +476,21 @@ def main():
             QST = json.load(_f)
     except Exception:
         QST = []
+
+    UI_Q = {
+     "en": {"radar": "Radar", "questions": "Questions", "sur_radar": "On the radar", "voisines": "Related questions", "toutes": "All questions", "evenements": "All events", "retour": "Back to the radar", "h1": "Your questions, answered", "intro": "Everything one wonders before a door opens: how to get in, what to wear, what it costs, when to book. Verified at the source.", "titre": "Luxury events: your questions answered", "desc": "How to get in, what to wear, what it costs, when to book: verified answers about the world's luxury events.", "themes": {"acces": "Access", "dress-codes": "Dress codes", "prix": "Prices", "fenetres": "Bookings", "glossaire": "Vocabulary"}},
+     "es": {"radar": "Radar", "questions": "Preguntas", "sur_radar": "En el radar", "voisines": "Preguntas relacionadas", "toutes": "Todas las preguntas", "evenements": "Todos los eventos", "retour": "Volver al radar", "h1": "Sus preguntas, respondidas", "intro": "Todo lo que uno se pregunta antes de una puerta: cómo entrar, cómo vestirse, cuánto cuesta, cuándo reservar. Verificado en la fuente.", "titre": "Eventos de lujo: sus preguntas respondidas", "desc": "Cómo entrar, cómo vestirse, cuánto cuesta, cuándo reservar: respuestas verificadas sobre los eventos de lujo del mundo.", "themes": {"acces": "El acceso", "dress-codes": "Los códigos de vestimenta", "prix": "Los precios", "fenetres": "Las reservas", "glossaire": "El vocabulario"}},
+     "it": {"radar": "Radar", "questions": "Domande", "sur_radar": "Sul radar", "voisines": "Domande correlate", "toutes": "Tutte le domande", "evenements": "Tutti gli eventi", "retour": "Torna al radar", "h1": "Le vostre domande, con risposta", "intro": "Tutto ciò che ci si chiede davanti a una porta: come entrare, come vestirsi, quanto costa, quando prenotare. Verificato alla fonte.", "titre": "Eventi di lusso: le vostre domande con risposta", "desc": "Come entrare, come vestirsi, quanto costa, quando prenotare: risposte verificate sugli eventi di lusso nel mondo.", "themes": {"acces": "L'accesso", "dress-codes": "I dress code", "prix": "I prezzi", "fenetres": "Le prenotazioni", "glossaire": "Il vocabolario"}},
+     "pt": {"radar": "Radar", "questions": "Perguntas", "sur_radar": "No radar", "voisines": "Perguntas relacionadas", "toutes": "Todas as perguntas", "evenements": "Todos os eventos", "retour": "Voltar ao radar", "h1": "As suas perguntas, respondidas", "intro": "Tudo o que se pergunta antes de uma porta: como entrar, como vestir, quanto custa, quando reservar. Verificado na fonte.", "titre": "Eventos de luxo: as suas perguntas respondidas", "desc": "Como entrar, como vestir, quanto custa, quando reservar: respostas verificadas sobre os eventos de luxo do mundo.", "themes": {"acces": "O acesso", "dress-codes": "Os códigos de vestuário", "prix": "Os preços", "fenetres": "As reservas", "glossaire": "O vocabulário"}},
+     "de": {"radar": "Radar", "questions": "Fragen", "sur_radar": "Auf dem Radar", "voisines": "Verwandte Fragen", "toutes": "Alle Fragen", "evenements": "Alle Veranstaltungen", "retour": "Zurück zum Radar", "h1": "Ihre Fragen, beantwortet", "intro": "Alles, was man sich vor einer Tür fragt: wie man hineinkommt, was man trägt, was es kostet, wann man bucht. An der Quelle geprüft.", "titre": "Luxusveranstaltungen: Ihre Fragen beantwortet", "desc": "Wie man hineinkommt, was man trägt, was es kostet, wann man bucht: geprüfte Antworten zu den Luxusveranstaltungen der Welt.", "themes": {"acces": "Der Zugang", "dress-codes": "Die Dresscodes", "prix": "Die Preise", "fenetres": "Die Buchungen", "glossaire": "Das Vokabular"}},
+     "ru": {"radar": "Радар", "questions": "Вопросы", "sur_radar": "На радаре", "voisines": "Похожие вопросы", "toutes": "Все вопросы", "evenements": "Все события", "retour": "Вернуться к радару", "h1": "Ваши вопросы, наши ответы", "intro": "Всё, о чём думают перед дверью: как попасть, что надеть, сколько стоит, когда бронировать. Проверено по источникам.", "titre": "События роскоши: ответы на ваши вопросы", "desc": "Как попасть, что надеть, сколько стоит, когда бронировать: проверенные ответы о событиях роскоши в мире.", "themes": {"acces": "Доступ", "dress-codes": "Дресс-коды", "prix": "Цены", "fenetres": "Бронирование", "glossaire": "Словарь"}},
+     "ar": {"radar": "الرادار", "questions": "الأسئلة", "sur_radar": "على الرادار", "voisines": "أسئلة ذات صلة", "toutes": "كل الأسئلة", "evenements": "كل الفعاليات", "retour": "العودة إلى الرادار", "h1": "أسئلتكم وأجوبتها", "intro": "كل ما يتساءل عنه المرء قبل باب ما: كيف تدخل، ماذا ترتدي، كم يكلف، متى تحجز. موثق من المصدر.", "titre": "فعاليات الفخامة: أجوبة على أسئلتكم", "desc": "كيف تدخل، ماذا ترتدي، كم يكلف، متى تحجز: أجوبة موثقة عن فعاليات الفخامة في العالم.", "themes": {"acces": "الدخول", "dress-codes": "قواعد اللباس", "prix": "الأسعار", "fenetres": "الحجوزات", "glossaire": "المفردات"}},
+     "zh": {"radar": "雷达", "questions": "问答", "sur_radar": "雷达上", "voisines": "相关问题", "toutes": "全部问题", "evenements": "全部活动", "retour": "返回雷达", "h1": "你的问题，我们的回答", "intro": "推门之前的一切疑问：如何进入、穿什么、花多少、何时预订。均经源头核实。", "titre": "奢华活动：你的问题，我们的回答", "desc": "如何进入、穿什么、花多少、何时预订：关于全球奢华活动的核实答案。", "themes": {"acces": "入场", "dress-codes": "着装要求", "prix": "价格", "fenetres": "预订", "glossaire": "词汇"}},
+     "ja": {"radar": "レーダー", "questions": "質問", "sur_radar": "レーダー上", "voisines": "関連する質問", "toutes": "すべての質問", "evenements": "すべてのイベント", "retour": "レーダーに戻る", "h1": "あなたの疑問に答えます", "intro": "扉の前で誰もが抱く疑問のすべて。入り方、服装、費用、予約の時期。公式情報で確認済み。", "titre": "ラグジュアリーイベント：あなたの疑問に答えます", "desc": "入り方、服装、費用、予約の時期。世界のラグジュアリーイベントについて確認済みの回答。", "themes": {"acces": "入場", "dress-codes": "ドレスコード", "prix": "価格", "fenetres": "予約", "glossaire": "用語"}},
+     "ko": {"radar": "레이더", "questions": "질문", "sur_radar": "레이더에서", "voisines": "관련 질문", "toutes": "모든 질문", "evenements": "모든 행사", "retour": "레이더로 돌아가기", "h1": "당신의 질문, 우리의 답", "intro": "문 앞에서 누구나 궁금해하는 모든 것: 어떻게 입장하는지, 무엇을 입는지, 얼마인지, 언제 예약하는지. 공식 출처로 확인했습니다.", "titre": "럭셔리 행사: 당신의 질문에 답합니다", "desc": "입장 방법, 복장, 비용, 예약 시기: 세계 럭셔리 행사에 대한 확인된 답변.", "themes": {"acces": "입장", "dress-codes": "드레스 코드", "prix": "가격", "fenetres": "예약", "glossaire": "용어"}},
+     "hi": {"radar": "रडार", "questions": "प्रश्न", "sur_radar": "रडार पर", "voisines": "संबंधित प्रश्न", "toutes": "सभी प्रश्न", "evenements": "सभी आयोजन", "retour": "रडार पर वापस", "h1": "आपके प्रश्न, हमारे उत्तर", "intro": "किसी दरवाज़े से पहले जो कुछ भी पूछा जाता है: कैसे प्रवेश करें, क्या पहनें, कितना खर्च होगा, कब बुक करें। स्रोत से सत्यापित।", "titre": "लक्ज़री आयोजन: आपके प्रश्नों के उत्तर", "desc": "कैसे प्रवेश करें, क्या पहनें, कितना खर्च होगा, कब बुक करें: दुनिया के लक्ज़री आयोजनों पर सत्यापित उत्तर।", "themes": {"acces": "प्रवेश", "dress-codes": "ड्रेस कोड", "prix": "मूल्य", "fenetres": "बुकिंग", "glossaire": "शब्दावली"}},
+     "tr": {"radar": "Radar", "questions": "Sorular", "sur_radar": "Radarda", "voisines": "İlgili sorular", "toutes": "Tüm sorular", "evenements": "Tüm etkinlikler", "retour": "Radara dön", "h1": "Sorularınız, yanıtları", "intro": "Bir kapının önünde akla gelen her şey: nasıl girilir, ne giyilir, ne kadar tutar, ne zaman rezervasyon yapılır. Kaynağından doğrulandı.", "titre": "Lüks etkinlikler: sorularınız yanıtlandı", "desc": "Nasıl girilir, ne giyilir, ne kadar tutar, ne zaman rezervasyon yapılır: dünyanın lüks etkinlikleri hakkında doğrulanmış yanıtlar.", "themes": {"acces": "Giriş", "dress-codes": "Kıyafet kuralları", "prix": "Fiyatlar", "fenetres": "Rezervasyonlar", "glossaire": "Sözlük"}},
+    }
     THEMES_Q = {"acces": "L'accès", "dress-codes": "Les dress codes",
                 "prix": "Les prix", "fenetres": "Les réservations",
                 "glossaire": "Le vocabulaire"}
@@ -483,8 +498,15 @@ def main():
     try:
         with open(os.path.join(_RAD, "questions-en.json"), encoding="utf-8") as _f:
             QEN = {x["slug"]: x for x in json.load(_f)}
+        QL = {"en": QEN}
+        for _lg in LANGS:
+            _pq = os.path.join(_RAD, f"questions-{_lg}.json")
+            if _lg != "en" and os.path.exists(_pq):
+                with open(_pq, encoding="utf-8") as _f:
+                    QL[_lg] = {x["slug"]: x for x in json.load(_f)}
     except Exception:
         QEN = {}
+        QL = {}
 
     def questions_liees(e):
         """Maillage interne (14/09/2026) : chaque fiche pointe vers les
@@ -1826,39 +1848,44 @@ document.querySelectorAll('.ex').forEach(function(a){a.addEventListener('click',
                                   "acceptedAnswer": {"@type": "Answer", "text": q["reponse_courte"]}}]}
             chemin = f"/q/{s}.html"
             hlq = '<link rel="alternate" hreflang="fr" href="%s%s">' % (BASE, chemin)
-            if s in QEN:
-                hlq += '<link rel="alternate" hreflang="en" href="%s/en%s">' % (BASE, chemin)
+            for _lg, _reg in QL.items():
+                if s in _reg:
+                    hlq += '<link rel="alternate" hreflang="%s" href="%s/%s%s">' % (_lg, BASE, _lg, chemin)
+            hlq += '<link rel="alternate" hreflang="x-default" href="%s%s">' % (BASE, chemin)
             write(chemin, page("fr", f"{q['question']} · ConstanceParis7",
                   q["reponse_courte"][:155], chemin, "".join(corps), hlq, ld=ld))
             sitemap_urls.append(f"{BASE}{chemin}")
-            if s in QEN:
-                qe = QEN[s]
-                corps_en = ["<div class=\"bc\"><a href=\"/en/\">Radar</a> · <a href=\"/en/questions.html\">Questions</a></div>",
-                            f"<h1>{esc(qe['question'])}</h1>",
-                            f"<p class=\"meta\"><b>{esc(qe['reponse_courte'])}</b></p>"]
+            for _lg, _reg in QL.items():
+                if s not in _reg:
+                    continue
+                qe = _reg[s]
+                U = UI_Q.get(_lg, UI_Q["en"])
+                corps_l = [f"<div class=\"bc\"><a href=\"/{_lg}/\">{esc(U['radar'])}</a> · <a href=\"/{_lg}/questions.html\">{esc(U['questions'])}</a></div>",
+                           f"<h1>{esc(qe['question'])}</h1>",
+                           f"<p class=\"meta\"><b>{esc(qe['reponse_courte'])}</b></p>"]
                 for par in [x.strip() for x in qe["details"].split("\n") if x.strip()]:
-                    corps_en.append(f"<p>{esc(par)}</p>")
-                puces_en = []
+                    corps_l.append(f"<p>{esc(par)}</p>")
+                puces_l = []
                 for nom in q.get("fiches", []):
                     e2 = par_nom.get(nom)
                     if e2:
-                        puces_en.append(f"<a href=\"{u_event(e2, 'en')}\">{esc((T(e2, 'en', 'n') or nom)[:64])}</a>")
-                if puces_en:
-                    corps_en.append("<h2 class=\"sub\">On the radar</h2><div class=\"chips\">" + "".join(puces_en) + "</div>")
-                freres_en = [x for x in par_theme.get(q.get("theme"), []) if x["slug"] != s and x["slug"] in QEN][:4]
-                if freres_en:
-                    corps_en.append("<h2 class=\"sub\">Related questions</h2><div class=\"chips\">"
-                                    + "".join(f"<a href=\"/en/q/{x['slug']}.html\">{esc(QEN[x['slug']]['question'])}</a>" for x in freres_en)
-                                    + "</div>")
-                corps_en.append("<div class=\"chips\"><a href=\"/en/questions.html\">← All questions</a>"
-                                "<a href=\"/en/evenements.html\">All events</a></div>")
-                ld_en = {"@context": "https://schema.org", "@type": "FAQPage",
-                         "mainEntity": [{"@type": "Question", "name": qe["question"],
-                                         "acceptedAnswer": {"@type": "Answer", "text": qe["reponse_courte"]}}]}
-                chemin_en = f"/en/q/{s}.html"
-                write(chemin_en, page("en", f"{qe['question']} · ConstanceParis7",
-                      qe["reponse_courte"][:155], chemin_en, "".join(corps_en), hlq, ld=ld_en))
-                sitemap_urls.append(f"{BASE}{chemin_en}")
+                        puces_l.append(f"<a href=\"{u_event(e2, _lg)}\">{esc((T(e2, _lg, 'n') or nom)[:64])}</a>")
+                if puces_l:
+                    corps_l.append(f"<h2 class=\"sub\">{esc(U['sur_radar'])}</h2><div class=\"chips\">" + "".join(puces_l) + "</div>")
+                freres_l = [x for x in par_theme.get(q.get("theme"), []) if x["slug"] != s and x["slug"] in _reg][:4]
+                if freres_l:
+                    corps_l.append(f"<h2 class=\"sub\">{esc(U['voisines'])}</h2><div class=\"chips\">"
+                                   + "".join(f"<a href=\"/{_lg}/q/{x['slug']}.html\">{esc(_reg[x['slug']]['question'])}</a>" for x in freres_l)
+                                   + "</div>")
+                corps_l.append(f"<div class=\"chips\"><a href=\"/{_lg}/questions.html\">← {esc(U['toutes'])}</a>"
+                               f"<a href=\"/{_lg}/evenements.html\">{esc(U['evenements'])}</a></div>")
+                ld_l = {"@context": "https://schema.org", "@type": "FAQPage",
+                        "mainEntity": [{"@type": "Question", "name": qe["question"],
+                                        "acceptedAnswer": {"@type": "Answer", "text": qe["reponse_courte"]}}]}
+                chemin_l = f"/{_lg}/q/{s}.html"
+                write(chemin_l, page(_lg, f"{qe['question']} · ConstanceParis7",
+                      qe["reponse_courte"][:155], chemin_l, "".join(corps_l), hlq, ld=ld_l))
+                sitemap_urls.append(f"{BASE}{chemin_l}")
 
         corps = ["<div class=\"bc\"><a href=\"/\">Radar</a> · Questions</div>",
                  "<h1>Les Questions</h1>",
@@ -1874,33 +1901,32 @@ document.querySelectorAll('.ex').forEach(function(a){a.addEventListener('click',
             corps.append("</ul>")
         corps.append("<div class=\"chips\"><a href=\"/\">← Retour au radar</a><a href=\"/entrer.html\">Où voulez-vous entrer ?</a><a href=\"/methode.html\">La méthode</a></div>")
         hlh = '<link rel="alternate" hreflang="fr" href="%s/questions.html">' % BASE
-        if QEN:
-            hlh += '<link rel="alternate" hreflang="en" href="%s/en/questions.html">' % BASE
+        for _lg in QL:
+            hlh += '<link rel="alternate" hreflang="%s" href="%s/%s/questions.html">' % (_lg, BASE, _lg)
+        hlh += '<link rel="alternate" hreflang="x-default" href="%s/questions.html">' % BASE
         write("/questions.html", page("fr", "Les questions de l'accès au luxe · ConstanceParis7",
               "Comment entrer, comment s'habiller, combien ça coûte, quand réserver : toutes les réponses, vérifiées à la source.",
               "/questions.html", "".join(corps), hlh))
         sitemap_urls.append(f"{BASE}/questions.html")
-        if QEN:
-            THEMES_EN = {"acces": "Access", "dress-codes": "Dress codes", "prix": "Prices",
-                         "fenetres": "Bookings", "glossaire": "Vocabulary"}
-            corps = ["<div class=\"bc\"><a href=\"/en/\">Radar</a> · Questions</div>",
-                     "<h1>Your questions, answered</h1>",
-                     "<p class=\"meta\">Everything one wonders before a door opens: how to get in, what to wear, what it costs, when to book. Verified at the source.</p>"]
-            for th, titre_th in THEMES_EN.items():
-                qs = [x for x in par_theme.get(th, []) if x["slug"] in QEN]
+        for _lg, _reg in QL.items():
+            U = UI_Q.get(_lg, UI_Q["en"])
+            corps = [f"<div class=\"bc\"><a href=\"/{_lg}/\">{esc(U['radar'])}</a> · {esc(U['questions'])}</div>",
+                     f"<h1>{esc(U['h1'])}</h1>",
+                     f"<p class=\"meta\">{esc(U['intro'])}</p>"]
+            for th, titre_th in U["themes"].items():
+                qs = [x for x in par_theme.get(th, []) if x["slug"] in _reg]
                 if not qs:
                     continue
                 corps.append(f"<h2 class=\"sub\">{esc(titre_th)}</h2><ul class=\"cards\">")
                 for x in qs:
-                    qe = QEN[x["slug"]]
-                    corps.append(f"<li><a class=\"t\" href=\"/en/q/{x['slug']}.html\">{esc(qe['question'])}</a>"
+                    qe = _reg[x["slug"]]
+                    corps.append(f"<li><a class=\"t\" href=\"/{_lg}/q/{x['slug']}.html\">{esc(qe['question'])}</a>"
                                  f"<div>{esc(qe['reponse_courte'][:120])}</div></li>")
                 corps.append("</ul>")
-            corps.append("<div class=\"chips\"><a href=\"/en/\">← Back to the radar</a><a href=\"/en/evenements.html\">All events</a></div>")
-            write("/en/questions.html", page("en", "Luxury events: your questions answered · ConstanceParis7",
-                  "How to get in, what to wear, what it costs, when to book: verified answers about the world's luxury events.",
-                  "/en/questions.html", "".join(corps), hlh))
-            sitemap_urls.append(f"{BASE}/en/questions.html")
+            corps.append(f"<div class=\"chips\"><a href=\"/{_lg}/\">← {esc(U['retour'])}</a><a href=\"/{_lg}/evenements.html\">{esc(U['evenements'])}</a></div>")
+            write(f"/{_lg}/questions.html", page(_lg, f"{U['titre']} · ConstanceParis7", U["desc"],
+                  f"/{_lg}/questions.html", "".join(corps), hlh))
+            sitemap_urls.append(f"{BASE}/{_lg}/questions.html")
 
     # --- pages de destination des événements imminents (13/09/2026) : surfer
     # la vague de recherche qui précède un grand rendez-vous. Pilotées par le
