@@ -25,11 +25,23 @@ saison (décision expresse de Gérald du 14/07/2026). Migration cloud le 21/07/2
   `constanceparis7/radar-luxe` contient à la fois le site généré (index.html,
   i18n-data/, pages e/*.html…) ET l'outillage privé (`.radar/tools/`,
   `.radar/session/`, doctrine, journaux). L'accès GitHub de la session est
-  scopé à ce seul dépôt. `export RADAR_REPO=<racine du clone>`.
+  scopé à ce seul dépôt : une session ne pourrait pas cloner un second dépôt
+  même en suivant la doctrine à la lettre. `export RADAR_REPO=<racine du
+  clone>`. Le prompt de tâche du scheduler fait foi sur ce point s'il
+  contredit une mention plus ancienne de deux dépôts distincts (leçon du
+  17/09/2026, `tools/lessons.md`).
   *(Historique : ce dépôt remplace l'ancienne architecture à deux dépôts
-  `H2SL-bot/luxe-ete-2026` [public] + `H2SL-bot/luxe-radar-filet` [privé] —
-  si un prompt de routine mentionne encore ces deux dépôts, suivre le prompt
-  de tâche du scheduler, qui documente l'architecture réelle en vigueur.)*
+  `H2SL-bot/luxe-ete-2026` [public] + `H2SL-bot/luxe-radar-filet` [privé].)*
+- **LE CLONE PEUT ÊTRE SUPERFICIEL (shallow) EN SESSION CLOUD** (constaté le
+  20/09/2026) : `git rev-parse --is-shallow-repository` peut répondre `true`
+  avec seulement quelques dizaines de commits d'historique au lieu des
+  centaines réels sur `main`. Sans historique complet, `tools/memoire.py
+  changements` ne trouve aucun commit assez ancien et répond poliment « rien
+  à comparer » au lieu d'échouer — silence qu'on peut prendre à tort pour
+  « rien n'a changé ». Réflexe à AVOIR EN DÉBUT DE PASSE : si la commande
+  ci-dessus répond `true`, lancer `git fetch --unshallow origin` (sûr, ne
+  modifie aucune branche) avant tout outil qui compare l'état courant à
+  l'historique (`tools/lessons.md`).
 - IL N'Y A PLUS de localhost:8026. Les DEUX adresses vivantes : 
   1) https://constanceparis7.com ; 2) l'artifact
   https://claude.ai/code/artifact/89b85688-ff57-481d-82d7-f7792051b066.

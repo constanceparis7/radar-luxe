@@ -1133,3 +1133,41 @@ RÈGLE : avant tout remplacement par regex sur un texte qui doit exister UNE SEU
 HTML/JSON, vérifier d'abord le nombre d'occurrences (`html.count(...)` ou `grep -c`) et inspecter
 CHAQUE contexte trouvé — un préfixe de phrase commun peut très bien être réutilisé ailleurs comme
 clé de gabarit i18n, invisible tant qu'on ne relit pas le contexte complet de chaque correspondance.
+
+## 20/09/2026 — un clone SUPERFICIEL (shallow) désactivait `memoire.py` en silence
+Au démarrage, le clone de cette session cloud n'avait que 53 commits d'historique (`git
+rev-parse --is-shallow-repository` → true, `.git/shallow` présent) au lieu des ~650 réels sur
+`main`. Consequence directe : `tools/memoire.py changements` (règle de la doctrine « à exécuter
+chaque matin ») répondait « aucun commit d'index.html vieux de 7 jours — rien à comparer » — pas
+une erreur, un simple constat silencieux qui aurait pu passer pour « rien n'a changé cette
+semaine » alors que l'historique nécessaire n'existait tout simplement pas localement.
+CORRIGÉ ce jour : `git fetch --unshallow origin` (aucun paramètre, sûr, ne modifie aucune branche)
+a ramené les 646 commits réels ; `memoire.py changements` a alors immédiatement trouvé et consigné
+6 changements de dates sur les 7 derniers jours.
+RÈGLE GÉNÉRALE : au début de toute passe cloud, vérifier `git rev-parse
+--is-shallow-repository` avant de lancer un outil qui compare l'état actuel à un commit passé
+(`memoire.py`, tout futur outil d'historique) — et `git fetch --unshallow origin` systématiquement
+si la réponse est `true`. Comme le seuil de cadence du 13/08 et le repli `|| echo 0` du 22/07 :
+un outil qui répond poliment « rien à faire » au lieu d'échouer bruyamment est le pire cas, car
+rien ne signale qu'il faudrait s'inquiéter.
+
+## 20/09/2026 — le seuil de 400 caractères ne distingue pas, à lui seul, la dérive du contenu dense légitime
+Sélection du lot de condensation du jour : 110 fiches de la fenêtre live dépassent le seuil-cible
+de 400 caractères sur `iv.o`/`iv.g`/`iv.w`. Avant de lancer des agents de condensation en série sur
+les 15-20 premières par imminence, lecture directe du texte intégral d'une vingtaine d'entre elles :
+la grande majorité (Fondazione Prada Milan, ICP New York, Milano Fashion Week, Nikki Beach Ibiza,
+Christie's Genève, Dior Saint-Tropez, Chaumet Vendôme…) sont déjà des modes d'emploi visiteur
+propres et directs — leur longueur vient de faits réels et nombreux (plusieurs contacts, plusieurs
+tarifs, plusieurs horaires saisonniers), pas d'une dérive « journal d'enquête ». Seules 4 fiches
+avaient une vraie dérive identifiable (méta-commentaire de méthode, piste de contact rejetée
+racontée au visiteur, liste de contacts dupliquée mot pour mot entre `iv.o` et `iv.g`) : Amiri
+Saint-Tropez, The Alpina Gstaad, Les Airelles Courchevel, Fondazione Prada Venise — condensées ce
+jour, `verif_faits.py` à l'appui.
+RÈGLE : le seuil de 400 caractères reste le bon outil de SÉLECTION (leçon du 17/09), mais ne
+prouve pas la présence de dérive — seule la LECTURE du texte le prouve. Un détecteur de motifs
+(« vérifié le JJ/MM », « lu en navigateur », liste numérotée dupliquée entre champs, sous-chaîne de
+plus de 60 caractères répétée entre `iv.o`/`iv.g`/`iv.w` de la même fiche) permet de trier
+rapidement les vrais candidats avant d'engager des agents, plutôt que de traiter tout le stock
+>400 caractères comme s'il s'agissait uniformément de dérive à corriger. Corollaire : un compte
+rendu qui annonce « X fiches restent au-dessus du seuil cible » doit préciser que ce chiffre
+mélange dérive réelle et densité factuelle légitime — les deux n'appellent pas la même action.

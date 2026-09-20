@@ -1,101 +1,121 @@
-# Compte rendu — passe du 18/09/2026 (session cloud)
+# Compte rendu — passe du 20/09/2026 (session cloud)
+
+## Anomalie de déclenchement
+
+`precheck.sh` a signalé une cadence rompue : dernier run journalisé il y a 35 h
+(seuil 30 h). Pas de trace de passe complète le 19/09 après-midi/soir — la
+passe de ce jour est une passe de RATTRAPAGE. Aucune cause identifiée dans le
+dépôt (pas d'erreur, pas de commit orphelin).
 
 ## Priorité du moment : condensation des voies d'invitation
 
-16 fiches condensées ce jour, sélectionnées par le seuil CIBLE (≥400 caractères
-sur `iv.o`/`iv.g`/`iv.w`, pas le seuil WARN de tolérance à 1200 — leçon du
-17/09), en commençant par les plus imminentes de la fenêtre live (Fine Arts
-Paris, L'École des Arts Joailliers, Petit Palais, London/Milano Fashion Week,
-Dior Spa Cheval Blanc, Régates Royales, Vogue World Milano, Ron Mueck, Zurich
-Film Festival, Nammos Mykonos, Dolce & Gabbana Beach Club, Voiles de
-Saint-Tropez, Jacquemus x Monte-Carlo Beach, LIV at Fontainebleau, Van Cleef &
-Arpels au MAK de Vienne).
+Sélection au seuil CIBLE (≥400 caractères sur `iv.o`/`iv.g`/`iv.w`, priorité
+fenêtre live, plus imminentes d'abord) : 110 fiches en fenêtre live dépassent
+ce seuil. Avant de lancer des agents en série, lecture intégrale d'une
+vingtaine des plus imminentes (Fondazione Prada Milan, ICP New York, Milano
+Fashion Week, Nikki Beach Ibiza, Christie's Genève, Dior Saint-Tropez, Chaumet
+Vendôme, Chanel East Hampton, Covo di Nord-Est, Sotheby's Genève…) : la
+quasi-totalité sont déjà des modes d'emploi visiteur propres et directs, leur
+longueur venant de faits réels nombreux (plusieurs contacts, tarifs, horaires
+saisonniers), pas d'une dérive « journal d'enquête ». Un détecteur de motifs
+(dates de vérification, formulations de méthode, redites entre champs) a
+isolé 4 fiches avec une vraie dérive :
 
-Un agent par fiche, prompt rappelant les règles de condensation (garder
-intégralement noms/fonctions/e-mails/téléphones/adresses/URLs/tarifs/horaires,
-jeter les tournures d'enquêteur, cible 400 car., jamais l'inverse) et le
-garde-fou vie privée (retirer toute ligne « portable »/« ligne directe » ou
-e-mail `prenom.nom@`/`initiale.nom@` visant une personne physique).
+- **Amiri, boutique saisonnière Saint-Tropez** — condensée ET corrigée : l'adresse
+  publiée (« avenue Maréchal Foch ») était fausse depuis l'origine ; vérifié ce
+  jour à la source (store locator officiel amiri.com, en direct) : la boutique
+  est au **21 rue Gambetta**. Corrigé dans le champ lieu et dans `iv`. Horaires
+  aussi remis à jour (la fiche affichait un horaire d'été constant « 10h-21h » ;
+  la période en cours, mi-septembre à octobre, ferme à 19h30, confirmé sur
+  amiri.com/pages/stores). Retiré : une piste de contact presse explicitement
+  non étayée que la fiche racontait au visiteur au lieu de la rejeter en
+  silence.
+- **Réouverture d'hiver de The Alpina Gstaad** — la liste des quatre agences
+  presse par marché était recopiée mot pour mot dans `iv.o` ET `iv.g` ; gardée
+  une seule fois (porte principale), `iv.g` recentré sur la nature de l'accès.
+- **Réouverture d'hiver des Airelles Courchevel** — `iv.g` allégé du récit
+  d'enquête (« aucune accréditation... aucun voyage de presse... ») en gardant
+  tous les contacts, URL et téléphones.
+- **Helter Skelter, Fondazione Prada Venise** — retiré le cadrage méthodologique
+  (« vérifié à la source le 11/08/2026, page officielle lue en navigateur ») de
+  `iv.g`/`iv.w`, gardé la citation officielle et tous les tarifs.
 
-Contrôle mécanique `verif_faits.py` (dossiers entrée/sortie séparés — piège du
-20/08 sur le même dossier évité) : 15/16 fiches sans aucune perte de fait ; la
-seule alerte (Jacquemus x Monte-Carlo Beach) correspond exactement au retrait
-volontaire signalé par l'agent lui-même (deux e-mails `initiale.nom@` d'un
-directeur et d'une directrice du SBM, noms et fonctions conservés) —
-c'est le garde-fou vie privée qui a fonctionné, pas une perte.
+Contrôle mécanique `verif_faits.py` (dossiers séparés) : 1 alerte sur les 4
+(URL Instagram raccourcie en `@amiri` sans le lien littéral) — corrigée avant
+publication ; TOUT OK à la deuxième passe.
 
-État du chantier : 197 → 190 fiches ≥400 car. au global, 135 → 129 en fenêtre
-live. La baisse est modeste par fiche traitée : conforme à la leçon du 20-21/08
-— une fiche condensée qui garde plusieurs contacts nominatifs légitimes reste
-au-dessus de 400 caractères par construction (« garder le fait, jamais
-l'inverse »), le compteur ne peut pas tomber à zéro. 174 fiches restent
-(dont 129 en fenêtre live) à poursuivre par lots aux prochaines passes.
+Le compteur global (186 fiches ≥400 car., 110 en fenêtre live) n'a pas bougé :
+attendu, une fiche condensée qui garde plusieurs faits réels reste au-dessus
+du seuil par construction (leçon du 20-21/08). Leçon nouvelle consignée dans
+`tools/lessons.md` : le seuil de 400 caractères sert à SÉLECTIONNER, pas à
+mesurer la dérive elle-même — seule la lecture le prouve. Poursuite aux
+prochaines passes avec un détecteur de motifs pour trier les candidats avant
+d'engager des agents, plutôt que de traiter tout le stock >400 comme une
+dérive uniforme.
 
-## Purge
+## Purge et vérification des liens
 
-1 zombie purgé : « Cavo Paradiso, Saison DJ 2026 » (d2=2026-08-18, > 30 j).
-340 événements en ligne après purge (341 avant).
+2 zombies purgés (fin de saison 20/08/2026, >30 j) : « White Party avec
+Laurent Wolf, Casino Barrière » et « Dîner quatre mains Ayla Privé, Aret
+Sahakyan × Francesco Sodano ». 338 → 336 événements en ligne. 119 liens des
+événements les plus imminents testés : 0 mort. Bascule automatique de saison
+du titre confirmée (Summer 2026, aucune anomalie — l'équinoxe n'est pas encore
+atteint).
 
-## Bug trouvé et corrigé dans le filet
+## LOI DU SITE — les trois compteurs (`reste.py`, fenêtre live)
 
-`verrou.py` (le nouveau contrôle bloquant posé le 17/09) codait en dur
-`~/radar-luxe` au lieu de suivre la convention `RADAR_REPO` de tout le reste
-du filet — il plantait (`FileNotFoundError`) dans cette session cloud où le
-dépôt vit à `/home/user/radar-luxe`, ce qui aurait fait échouer `validate.py`
-(donc bloqué toute publication) à 100 % des passes cloud. Corrigé et publié.
-Leçon consignée dans `tools/lessons.md`.
-
-Erreur personnelle repérée et corrigée avant publication : une mise à jour de
-la date de l'eyebrow par regex a d'abord empoisonné une clé du dictionnaire
-i18n qui partage le même préfixe de texte (elle sert de gabarit, sans date en
-dur) — repéré par relecture immédiate, corrigé avant tout commit. Leçon
-consignée.
-
-## LOI DU SITE — les trois compteurs (`reste.py`, fenêtre entière)
-
-- Traductions 13 langues : 340/340 (100 %)
-- Séjours clé en main : 334/340 (les 6 manquants sont des fiches-conseil
+- Traductions 13 langues : 336/336 (100 %)
+- Voies d'invitation : 336/336 (100 %)
+- Séjours clé en main : 330/336 (les 6 manquants sont des fiches-conseil
   `c=acces`, exemptées par doctrine)
-- Voies d'invitation : 340/340 (100 %)
 
-La LOI DU SITE est honorée à 100 % sur tout ce qui n'est pas explicitement
-exempté — rien à rattraper de ce côté aujourd'hui.
+Rien à rattraper de ce côté aujourd'hui.
+
+## Bug d'environnement trouvé et corrigé
+
+Le clone de cette session était **superficiel** (`git rev-parse
+--is-shallow-repository` → true, 53 commits au lieu de ~650) : `main` local
+avait aussi divergé de `origin/main` au démarrage (reset propre sur
+`origin/main`, aucune perte — aucun travail local en cours). Le clone
+superficiel désactivait en silence `tools/memoire.py changements` (règle
+quotidienne de la doctrine), qui répondait poliment « rien à comparer » au
+lieu d'échouer. Corrigé par `git fetch --unshallow origin` ; 6 changements de
+dates ont alors été consignés dans `.radar/memoire.ndjson`. Leçon consignée
+dans `tools/lessons.md`, et la section « Environnement cloud » de
+`DOCTRINE.md` mise à jour (elle documentait encore, comme signalé le
+17/09/2026, une architecture à deux dépôts qui n'existe plus pour cette
+session — corrigé au passage).
 
 ## Contrôles
 
-`validate.py` : OK — 0 blocker, 2 warnings (iv.g/iv.w encore >1200 car. sur
-2+9 fiches résiduelles, en baisse). `verrou.py` (sous-contrôle de
-validate.py, 6354 pages/340 fiches/5558 URLs sitemap) : 0 bloqueur, 3
-avertissements W1 mineurs pré-existants (dates écrites dans `dt` légèrement
-hors de la fenêtre machine sur 3 fiches — à vérifier à une prochaine passe,
-non traité aujourd'hui faute de temps). `perfcheck.py` : OK, 0 régression
-(poids -0,03 Mo, -12 événements/-9 séjours vs dernier point — cohérent avec
-la purge). `healthcheck.sh` : OK (http=200, compte_live=340=attendu, date
-fraîche).
+`validate.py` : OK — 0 blocker, 2 warnings résiduels (iv.g/iv.w encore >1200
+car. sur 2+9 fiches, stables). `perfcheck.py` non lancé séparément (le
+publieur l'inclut implicitement via `verrou.py`/`gen_pages`) — accueil à
+852 Ko, cohérent avec la purge. `healthcheck.sh` : OK (http=200,
+compte_live=336=attendu, date fraîche). 3 avertissements W1 mineurs
+pré-existants (dates `dt` hors fenêtre machine sur Taste of Tennis New York,
+Covo di Nord-Est, Nikki Beach Ibiza) : non traités, non bloquants — le
+premier concerne un événement déjà passé qui sera purgé demain (30 j
+atteints), les deux autres sont des dates d'ouverture de saison antérieures à
+la fenêtre affichée, normales.
 
 ## Publication
 
-Un seul commit : `bash .radar/session/publier.sh` a poussé directement sur
-`main` (pas de repli branche nécessaire aujourd'hui). Journal privé
-(lessons.md, ce compte rendu) poussé séparément.
-
-## Analyse des visites
-
-2 885 visiteurs/pages vues aujourd'hui contre 2 836 hier (+1,7 %), en
-croissance continue depuis le 15/09 (2 737 → 2 791 → 2 836 → 2 885) : une
-progression régulière, sans pic ni chute, cohérente avec un site qui gagne
-lentement en indexation plutôt qu'un effet ponctuel.
+Trois commits distincts poussés directement sur `main` (aucun repli de
+branche nécessaire) : (1) purge + liens + saison, (2) condensation +
+correction Amiri, (3) mémoire du radar. Journal privé (lessons.md, DOCTRINE.md,
+ce compte rendu) poussé séparément.
 
 ## Non vérifié / reporté
 
-- Les 3 avertissements W1 du VERROU (dates `dt` hors fenêtre machine sur
-  Taste of Tennis New York, Covo di Nord-Est, Nikki Beach Ibiza) — non
-  bloquants, à trancher à une prochaine passe (corriger `dt` ou `d1/d2`,
-  selon quelle donnée est fausse).
-- 174 fiches restent au-dessus du seuil cible de condensation (129 en
-  fenêtre live) — à poursuivre par lots de 15-20/passe.
-- Pas de recherche de nouveaux événements ni de vérification des liens à
-  7 jours effectuée aujourd'hui : tout le temps de la passe est allé à la
-  priorité du moment (condensation) et au bug bloquant du filet, conforme à
-  la doctrine qui place la condensation avant la recherche tant qu'il en
-  reste.
+- 110 fiches restent au-dessus du seuil-cible de condensation en fenêtre live,
+  mais la lecture de ce jour indique que la grande majorité est déjà propre :
+  à trier par détecteur de motifs avant d'engager des agents, plutôt qu'à
+  traiter en bloc.
+- Les 3 avertissements W1 (dates `dt`), non bloquants.
+- Pas de recherche de nouveaux événements aujourd'hui : le temps de la passe
+  est allé à la priorité de condensation, au diagnostic du clone superficiel
+  et de la divergence de branche, conforme à la doctrine qui place la
+  condensation avant la recherche.
+- Analyse des visites non faite (GoatCounter non consulté ce jour, faute de
+  temps) — à rattraper à la prochaine passe.
