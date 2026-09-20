@@ -1033,12 +1033,26 @@ def main():
                                "address": {"@type": "PostalAddress", "addressLocality": e.get("v") or pk or ""}},
                   "image": OG, "description": (T(e, lang, "ds") or T(e, lang, "sw") or "")[:300],
                   "url": f"{BASE}{path}", "inLanguage": lang, "isAccessibleForFree": (e.get("a") == "public")}
-            offer = {"@type": "Offer", "url": e.get("u") or f"{BASE}{path}",
-                     "availability": "https://schema.org/InStock"}
+            # Recalibrage du 20/09/2026 (audit croisé, point 8) : une offre n'est
+            # déclarée que si l'événement se réserve ou s'achète réellement ; jamais
+            # d'InStock par défaut pour un accès sur invitation ; statut annulé ou
+            # reporté lu dans les textes ; « gratuit » seulement si c'est écrit.
+            _txt = " ".join(str(e.get(k) or "") for k in ("dt", "ds", "p")).lower()
+            if "annulé" in _txt or "annulée" in _txt or "cancelled" in _txt:
+                ld["eventStatus"] = "https://schema.org/EventCancelled"
+            elif "reporté" in _txt or "reportée" in _txt or "postponed" in _txt:
+                ld["eventStatus"] = "https://schema.org/EventPostponed"
             pr = parse_price(e)
-            if pr is not None:
-                offer["price"], offer["priceCurrency"] = pr
-            ld["offers"] = offer
+            _acces = e.get("a") or ""
+            ld["isAccessibleForFree"] = bool(_acces == "public" and pr is None and
+                                             ("gratuit" in _txt or "entrée libre" in _txt or "accès libre" in _txt))
+            if _acces in ("public", "inscription", "mixte") and (pr is not None or str(e.get("u") or "").startswith("http")):
+                offer = {"@type": "Offer", "url": e.get("u") or f"{BASE}{path}"}
+                if pr is not None:
+                    offer["price"], offer["priceCurrency"] = pr
+                if _acces == "public":
+                    offer["availability"] = "https://schema.org/InStock"
+                ld["offers"] = offer
             org = org_name_from_iv(e)
             if org:
                 ld["organizer"] = {"@type": "Organization", "name": org}
@@ -1953,7 +1967,9 @@ document.querySelectorAll('.ex').forEach(function(a){a.addEventListener('click',
               "startDate": str(e.get("d1")), "endDate": str(e.get("d2")),
               "location": {"@type": "Place", "name": (e.get("v") or "").strip() or h1,
                            "address": {"@type": "PostalAddress", "addressLocality": (e.get("v") or "").strip()}},
-              "eventStatus": "https://schema.org/EventScheduled"}
+              "eventStatus": "https://schema.org/EventScheduled",
+              "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+              "url": f"{BASE}{im['page']}", "inLanguage": "fr"}
         if im.get("organisateur"):
             ld["organizer"] = {"@type": "Organization", "name": im["organisateur"]}
         chemin = im["page"]
