@@ -78,7 +78,8 @@ moyenne de ses micro-objectifs.
 - [0]   Statuts des récurrents et saisons (EventCancelled, estimations)
 - [0]   Règle 403/429 des liens externes vérifiée
 - [0]   Cohérence éditoriale (graphies, formats de prix et de dates)
-- [0]   Accessibilité (H1, landmarks, clavier, noms accessibles, contraste)
+- [50]  Accessibilité : lien d'évitement, <main>, focus visible, coeurs nommés posés
+        le 20/09 sur l'accueil et les 7 876 pages ; reste contraste et lecteurs d'écran
 - [0]   Arabe de droite à gauche et langues CJK contrôlés à l'écran
 - [0]   En-têtes de sécurité (dépend de Cloudflare devant)
 - [0]   Newsletter : double opt-in, anti-spam, désinscription (samedi 20/09)
@@ -92,7 +93,7 @@ moyenne de ses micro-objectifs.
 - [0]   Empreintes de version sur les ressources (photo, JSON) pour un cache long côté navigateur
 - [hors périmètre] Cloudflare devant, en-têtes HTTP, vrais 301, HTTP/3, Cloudflare Pages, R2, Workers, D1
 
-### O3 · Vitesse mobile, Android et iOS (PRIORITÉ ABSOLUE) · 45 %
+### O3 · Vitesse mobile, Android et iOS (PRIORITÉ ABSOLUE) · 55 %
 Mesure de référence du 18/09/2026 : un téléphone reçoit 820 Ko pour l'accueil
 (2 547 Ko bruts), plus 294 Ko de photo et 43 Ko d'index de recherche, soit environ
 1,15 Mo. Le poids vient de deux champs embarqués inutiles au premier affichage :
@@ -100,11 +101,13 @@ les textes de séjour (1 088 Ko) et les journaux d'enquête (619 Ko). Une fiche
 événement ne pèse que 4 Ko transférés : les fiches sont déjà rapides.
 - [100] Polices système (Didot, Avenir), aucune police téléchargée
 - [100] Mesure de référence établie (poids par bloc, transfert réel)
-- [50]  Photo d'accueil optimisée (294 Ko) ; WebP/AVIF et variantes par écran à faire
+- [100] Photo d'accueil en AVIF/WebP par largeur d'écran : 34 Ko sur téléphone, 67 Ko sur
+        ordinateur, au lieu de 294 Ko (20/09) ; JPEG conservé pour les vieux navigateurs
 - [100] Séjours et journaux d'enquête sortis de l'accueil, chargés à la demande
         (18/09 : accueil de 2 547 Ko à 868 Ko bruts, de 820 Ko à 264 Ko transférés,
         trois fois plus léger ; sections conservées, contenu chargé au dépliage)
-- [0]   JSON-LD de l'accueil en liste plutôt qu'en 340 objets
+- [écarté 20/09] JSON-LD de l'accueil en liste : gain mesuré de 8 Ko compressés seulement,
+        contre la règle « gen_pages ne modifie jamais index.html » ; pas rentable
 - [100] Budget de poids au verrou (V11 : accueil sous 1 000 Ko bruts, fiche sous 60 Ko)
 - [10]  LCP < 2,5 s, INP < 200 ms, CLS < 0,1 mesurés (PageSpeed mobile, chaque semaine ; première mesure bloquée par le quota de l'API, à refaire)
 - [0]   Rendu progressif des cartes (les 340 cartes ne se construisent pas d'un coup)

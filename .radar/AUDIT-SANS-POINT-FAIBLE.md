@@ -92,8 +92,9 @@ de chaque correction, et le verrou final est un validateur de build BLOQUANT.
     [Reste : mesure LCP/INP/CLS hebdomadaire, JSON-LD en liste, photo WebP.]
 22. [À FAIRE] Petits écrans : 320/360/390 px, paysage, zoom 200 %, clavier ouvert,
     cibles 44 px, pas de défilement horizontal.
-23. [À FAIRE] Accessibilité : H1 unique, landmarks, clavier, focus visible, labels,
-    noms accessibles des coeurs (♡/◐/→), contraste deux thèmes, reduced-motion.
+23. [EN COURS 20/09] Posé : lien d'évitement, landmark main, focus visible, aria-label sur
+    les coeurs, reduced-motion (déjà). Reste : contraste des deux thèmes, labels des
+    selects, test lecteur d'écran, noms des symboles ◐ et →.
 24. [À FAIRE] RTL arabe (nombres/dates isolés, flèches, fil d'Ariane) et CJK
     (polices, coupures, pas de troncature au compte de caractères latins).
 25. [À FAIRE] En-têtes HTTP : HSTS, CSP (en mode rapport d'abord), nosniff,

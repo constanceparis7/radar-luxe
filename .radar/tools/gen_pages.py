@@ -641,7 +641,7 @@ def main():
             # Même mesure d'audience que la page d'accueil : sans elle, les
             # arrivées Google directes sur une fiche étaient invisibles.
             "<script data-goatcounter=\"https://constanceparis7.goatcounter.com/count\" async src=\"//gc.zgo.at/count.js\"></script>"
-            "<style>.trust{display:flex;flex-wrap:wrap;align-items:center;gap:10px;border:1px solid rgba(211,176,106,.4);border-left:3px solid #d3b06a;border-radius:6px;padding:9px 14px;margin:12px 0;font-size:13px}.trust b{color:#d3b06a;font-weight:600}.trust a{color:#d3b06a;text-decoration:none}.trust a:hover{text-decoration:underline}.trust .tm{margin-left:auto;font-size:12px;opacity:.85}.fav-mini{background:none;border:none;cursor:pointer;color:#d3b06a;font-size:15px;padding:0 3px;vertical-align:baseline;line-height:1}.fav-mini.on{color:#b48a3c}</style>"
+            "<style>a:focus-visible,button:focus-visible,select:focus-visible,input:focus-visible{outline:2px solid #d3b06a;outline-offset:2px}.skip{position:absolute;left:-999px;top:8px;background:#d3b06a;color:#101722;padding:8px 14px;border-radius:4px;z-index:9}.skip:focus{left:12px}.trust{display:flex;flex-wrap:wrap;align-items:center;gap:10px;border:1px solid rgba(211,176,106,.4);border-left:3px solid #d3b06a;border-radius:6px;padding:9px 14px;margin:12px 0;font-size:13px}.trust b{color:#d3b06a;font-weight:600}.trust a{color:#d3b06a;text-decoration:none}.trust a:hover{text-decoration:underline}.trust .tm{margin-left:auto;font-size:12px;opacity:.85}.fav-mini{background:none;border:none;cursor:pointer;color:#d3b06a;font-size:15px;padding:0 3px;vertical-align:baseline;line-height:1}.fav-mini.on{color:#b48a3c}</style>"
             "<script>(function(){var C='cp7favs';function L(){try{return JSON.parse(localStorage.getItem(C))||[]}catch(e){return[]}}"
             "function S(){var f=L();document.querySelectorAll('.fav-nb').forEach(function(n){n.textContent=f.length?' · '+f.length:'';});document.querySelectorAll('.fav-mini[data-slug]').forEach(function(b){var on=f.indexOf(b.getAttribute('data-slug'))>-1;"
             "b.textContent=on?'\\u2665':'\\u2661';b.classList.toggle('on',on);});}"
@@ -649,11 +649,12 @@ def main():
             "var s=b.getAttribute('data-slug'),f=L(),i=f.indexOf(s);if(i>-1)f.splice(i,1);else f.push(s);"
             "try{localStorage.setItem(C,JSON.stringify(f))}catch(e){}S();});"
             "window.addEventListener('DOMContentLoaded',S);})();</script>"
-            "</head><body><div class=\"wrap\">"
+            "</head><body><a class=\"skip\" href=\"#contenu\">Aller au contenu</a><div class=\"wrap\">"
             f"<header class=\"site\"><a href=\"{prefix(lang)}/\" class=\"brand\">ConstanceParis<span class=\"s\">7</span></a>"
             f"<a class=\"fav-head\" href=\"/favoris.html\">\u2665 {esc(UI['favs'][lang])}<span class=\"fav-nb\"></span></a>"
-            "<div class=\"edition\">International Luxury Events</div></header>"
+            "<div class=\"edition\">International Luxury Events</div></header><main id=\"contenu\">"
             f"{body}"
+            "</main>"
             f"<footer class=\"site\">{esc(UI['footer'][lang])} "
             f"<a href=\"/\">{esc(UI['see_live'][lang])} →</a>"
             # Obligation légale (LCEN art. 6) : la page doit être atteignable
