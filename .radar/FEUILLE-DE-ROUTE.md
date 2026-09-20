@@ -82,9 +82,9 @@ moyenne de ses micro-objectifs.
 - [0]   Statuts des récurrents et saisons (EventCancelled, estimations)
 - [0]   Règle 403/429 des liens externes vérifiée
 - [0]   Cohérence éditoriale (graphies, formats de prix et de dates)
-- [75]  Accessibilité : lien d'évitement, <main>, focus visible, coeurs nommés, contrastes
-        des deux thèmes vérifiés (or du thème clair porté à 4,6) ; reste le test au
-        lecteur d'écran et les noms des symboles ◐ et →
+- [85]  Accessibilité : lien d'évitement, <main>, focus visible, coeurs nommés, contrastes
+        vérifiés, commandes symboliques (thème, langue, flèche) nommées en 13 langues
+        (20/09) ; reste le test au lecteur d'écran
 - [70]  Arabe de droite à gauche et langues CJK contrôlés à l'écran le 20/09 : rendu
         correct, et un vrai bogue attrapé (le lien d'évitement décalait toute la page
         arabe hors de l'écran) ; reste les flèches directionnelles et la ponctuation mixte
@@ -100,7 +100,7 @@ moyenne de ses micro-objectifs.
 - [0]   Empreintes de version sur les ressources (photo, JSON) pour un cache long côté navigateur
 - [hors périmètre] Cloudflare devant, en-têtes HTTP, vrais 301, HTTP/3, Cloudflare Pages, R2, Workers, D1
 
-### O3 · Vitesse mobile, Android et iOS (PRIORITÉ ABSOLUE) · 65 %
+### O3 · Vitesse mobile, Android et iOS (PRIORITÉ ABSOLUE) · 72 %
 Mesure de référence du 18/09/2026 : un téléphone reçoit 820 Ko pour l'accueil
 (2 547 Ko bruts), plus 294 Ko de photo et 43 Ko d'index de recherche, soit environ
 1,15 Mo. Le poids vient de deux champs embarqués inutiles au premier affichage :
@@ -120,7 +120,8 @@ les textes de séjour (1 088 Ko) et les journaux d'enquête (619 Ko). Une fiche
 - [0]   Rendu progressif des cartes (les 340 cartes ne se construisent pas d'un coup)
 - [80]  Écrans de 320, 375 et 390 px contrôlés le 20/09 : plus aucun débordement horizontal
         (accueil, fiches, hubs, arabe compris) ; reste paysage, zoom 200 %, clavier ouvert
-- [0]   Sitemap scindé par langue avec index (11 Mo aujourd'hui en un fichier)
+- [100] Sitemap scindé par langue avec index (20/09) : 13 fichiers de 850 Ko au lieu d'un
+        seul de 11 Mo ; le verrou lit l'index
 
 ### O4 · Données et contenu à l'échelle · 35 %
 - [100] Passes de nuit (purge, liens, condensation)
@@ -164,7 +165,7 @@ les textes de séjour (1 088 Ko) et les journaux d'enquête (619 Ko). Une fiche
 - [0]   Double opt-in, SPF, DKIM, DMARC pour la newsletter
 - [0]   En-têtes de sécurité (Cloudflare)
 
-### O8 · Observabilité et pilotage · 55 %
+### O8 · Observabilité et pilotage · 62 %
 - [100] Compteur public GoatCounter
 - [100] Search Console vérifiée, exports lus
 - [100] Sonde du matin (quotidienne) et contrôle Google contre site (hebdomadaire)
@@ -172,7 +173,9 @@ les textes de séjour (1 088 Ko) et les journaux d'enquête (619 Ko). Une fiche
 - [50]  Sonde de disponibilité 24 h (en cours) puis permanente
 - [30]  Tableau de bord unique (tableau-de-bord.html à enrichir)
 - [0]   Statistiques Cloudflare sans cookie
-- [0]   Alertes automatiques en cas d'erreur (5xx, verrou en échec la nuit)
+- [60]  Alertes : la sonde du matin contrôle désormais que la passe de nuit a tourné et
+        la relance sinon, mesure PageSpeed et tient un journal de vitesse (20/09) ;
+        reste une alerte hors session (courriel) le jour où un canal existera
 
 ### O9 · Les paliers d'audience et leur prérequis technique
 - [100] Palier 1, 100 par jour : atteint (35 à 100)
