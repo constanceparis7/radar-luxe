@@ -63,7 +63,7 @@ reste dérisoire pour un million de visiteurs par jour.
 Légende : [100] fait · [50] à moitié · [0] à faire. Le taux d'un objectif est la
 moyenne de ses micro-objectifs.
 
-### O1 · Fondations sans point faible (registre de l'audit croisé) · 53 %
+### O1 · Fondations sans point faible (registre de l'audit croisé) · 62 %
 - [100] Verrou de build bloquant sur les 7 876 pages, 13 langues
 - [100] Compteurs réconciliés et expliqués
 - [100] Redirections des anciennes adresses (lieux et fiches)
@@ -73,14 +73,18 @@ moyenne de ses micro-objectifs.
 - [30]  Cannibalisation entre langues (hreflang sitemap posé, matrice à faire)
 - [30]  États vides (aucun favori, aucun résultat, hors connexion)
 - [20]  Aperçus sociaux par page (og/twitter, rendu messageries)
-- [0]   JSON-LD Event recalibré (url vers la fiche, offres réelles, statuts)
+- [100] JSON-LD Event recalibré le 20/09 : offre seulement si l'accès s'achète ou se
+        réserve (237 fiches sur 320 au lieu de toutes), jamais d'InStock sur invitation,
+        gratuité seulement si écrite, statut annulé ou reporté lu dans les textes
 - [0]   Fraîcheur : dernière vérification distinguée du build quotidien
 - [0]   Statuts des récurrents et saisons (EventCancelled, estimations)
 - [0]   Règle 403/429 des liens externes vérifiée
 - [0]   Cohérence éditoriale (graphies, formats de prix et de dates)
 - [50]  Accessibilité : lien d'évitement, <main>, focus visible, coeurs nommés posés
         le 20/09 sur l'accueil et les 7 876 pages ; reste contraste et lecteurs d'écran
-- [0]   Arabe de droite à gauche et langues CJK contrôlés à l'écran
+- [70]  Arabe de droite à gauche et langues CJK contrôlés à l'écran le 20/09 : rendu
+        correct, et un vrai bogue attrapé (le lien d'évitement décalait toute la page
+        arabe hors de l'écran) ; reste les flèches directionnelles et la ponctuation mixte
 - [0]   En-têtes de sécurité (dépend de Cloudflare devant)
 - [0]   Newsletter : double opt-in, anti-spam, désinscription (samedi 20/09)
 
@@ -93,7 +97,7 @@ moyenne de ses micro-objectifs.
 - [0]   Empreintes de version sur les ressources (photo, JSON) pour un cache long côté navigateur
 - [hors périmètre] Cloudflare devant, en-têtes HTTP, vrais 301, HTTP/3, Cloudflare Pages, R2, Workers, D1
 
-### O3 · Vitesse mobile, Android et iOS (PRIORITÉ ABSOLUE) · 55 %
+### O3 · Vitesse mobile, Android et iOS (PRIORITÉ ABSOLUE) · 65 %
 Mesure de référence du 18/09/2026 : un téléphone reçoit 820 Ko pour l'accueil
 (2 547 Ko bruts), plus 294 Ko de photo et 43 Ko d'index de recherche, soit environ
 1,15 Mo. Le poids vient de deux champs embarqués inutiles au premier affichage :
@@ -111,7 +115,8 @@ les textes de séjour (1 088 Ko) et les journaux d'enquête (619 Ko). Une fiche
 - [100] Budget de poids au verrou (V11 : accueil sous 1 000 Ko bruts, fiche sous 60 Ko)
 - [10]  LCP < 2,5 s, INP < 200 ms, CLS < 0,1 mesurés (PageSpeed mobile, chaque semaine ; première mesure bloquée par le quota de l'API, à refaire)
 - [0]   Rendu progressif des cartes (les 340 cartes ne se construisent pas d'un coup)
-- [0]   Écrans de 320, 360 et 390 px, paysage, zoom 200 %, clavier ouvert
+- [80]  Écrans de 320, 375 et 390 px contrôlés le 20/09 : plus aucun débordement horizontal
+        (accueil, fiches, hubs, arabe compris) ; reste paysage, zoom 200 %, clavier ouvert
 - [0]   Sitemap scindé par langue avec index (11 Mo aujourd'hui en un fichier)
 
 ### O4 · Données et contenu à l'échelle · 35 %
@@ -130,7 +135,7 @@ les textes de séjour (1 088 Ko) et les journaux d'enquête (619 Ko). Une fiche
 - [100] 88 pages Questions FR et EN, balisage FAQ
 - [100] Search Console lue en entier et exploitée
 - [50]  Résorption du cache Google (titres None, saison) : en cours
-- [40]  JSON-LD Event propre (voir O1)
+- [100] JSON-LD Event propre (recalibré le 20/09)
 - [30]  Taux de clic des pages villes (mesure au bilan du 2/10)
 - [0]   Pages Questions dans les 11 autres langues
 - [0]   Matrice intention vers URL unique (Milan, PFW, Vogue World)

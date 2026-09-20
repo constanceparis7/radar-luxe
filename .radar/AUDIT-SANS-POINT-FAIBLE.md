@@ -40,7 +40,7 @@ de chaque correction, et le verrou final est un validateur de build BLOQUANT.
    Лондон, 伦敦 selon la langue ; « Divers lieux » et « Mentions légales » traduits.
 7. [FAIT 18/09] Grappes hreflang : contrôle V10 au verrou (13 alternates par fiche,
    jeux identiques entre langues, fichiers présents). Zéro divergence au premier passage.
-8. [À FAIRE] JSON-LD Event à recalibrer : Event.url doit pointer la fiche CP7 (pas le site
+8. [FAIT 20/09] JSON-LD Event recalibré (offre réelle seulement, statuts lus, gratuité écrite) ; à recalibrer : Event.url doit pointer la fiche CP7 (pas le site
    officiel), offers seulement si vraie offre publique, pas d'InStock par défaut,
    pas d'estimation déclarée EventScheduled, accueil en ItemList plutôt que
    des centaines d'Event complets, JSON-LD strictement égal au visible.
@@ -90,12 +90,12 @@ de chaque correction, et le verrou final est un validateur de build BLOQUANT.
 21. [EN COURS 18/09] Poids de l'accueil divisé par trois (820 à 264 Ko transférés) :
     journaux d'enquête et séjours chargés au dépliage ; budget V11 au verrou.
     [Reste : mesure LCP/INP/CLS hebdomadaire, JSON-LD en liste, photo WebP.]
-22. [À FAIRE] Petits écrans : 320/360/390 px, paysage, zoom 200 %, clavier ouvert,
+22. [EN COURS 20/09 : 320/375/390 sans débordement] Petits écrans : 320/360/390 px, paysage, zoom 200 %, clavier ouvert,
     cibles 44 px, pas de défilement horizontal.
 23. [EN COURS 20/09] Posé : lien d'évitement, landmark main, focus visible, aria-label sur
     les coeurs, reduced-motion (déjà). Reste : contraste des deux thèmes, labels des
     selects, test lecteur d'écran, noms des symboles ◐ et →.
-24. [À FAIRE] RTL arabe (nombres/dates isolés, flèches, fil d'Ariane) et CJK
+24. [EN COURS 20/09, rendu vérifié à 375 et 320 px, bogue du lien d'évitement corrigé] RTL arabe (nombres/dates isolés, flèches, fil d'Ariane) et CJK
     (polices, coupures, pas de troncature au compte de caractères latins).
 25. [À FAIRE] En-têtes HTTP : HSTS, CSP (en mode rapport d'abord), nosniff,
     Referrer-Policy, frame-ancestors. Limite : GitHub Pages ne permet pas tout,
