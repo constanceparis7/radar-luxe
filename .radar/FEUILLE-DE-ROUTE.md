@@ -63,7 +63,7 @@ reste dérisoire pour un million de visiteurs par jour.
 Légende : [100] fait · [50] à moitié · [0] à faire. Le taux d'un objectif est la
 moyenne de ses micro-objectifs.
 
-### O1 · Fondations sans point faible (registre de l'audit croisé) · 68 %
+### O1 · Fondations sans point faible (registre de l'audit croisé) · 75 %
 - [100] Verrou de build bloquant sur les 7 876 pages, 13 langues
 - [100] Compteurs réconciliés et expliqués
 - [100] Redirections des anciennes adresses (lieux et fiches)
@@ -80,8 +80,8 @@ moyenne de ses micro-objectifs.
         gratuité seulement si écrite, statut annulé ou reporté lu dans les textes
 - [0]   Fraîcheur : dernière vérification distinguée du build quotidien
 - [0]   Statuts des récurrents et saisons (EventCancelled, estimations)
-- [0]   Règle 403/429 des liens externes vérifiée
-- [0]   Cohérence éditoriale (graphies, formats de prix et de dates)
+- [100] Règle 403/429 des liens externes vérifiée le 20/09 (déjà juste dans la passe)
+- [60]  Cohérence éditoriale : graphies normalisées le 20/09 ; reste le vocabulaire des doutes
 - [85]  Accessibilité : lien d'évitement, <main>, focus visible, coeurs nommés, contrastes
         vérifiés, commandes symboliques (thème, langue, flèche) nommées en 13 langues
         (20/09) ; reste le test au lecteur d'écran

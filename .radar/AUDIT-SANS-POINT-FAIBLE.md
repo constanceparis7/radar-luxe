@@ -55,8 +55,8 @@ de chaque correction, et le verrou final est un validateur de build BLOQUANT.
     Prises du premier passage : les 4 pages d'atterrissage imminentes et les pages
     Note étrangères n'avaient AUCUN lien entrant ; désormais liées depuis les fiches.
     [Reste : profondeur de clic, non critique.]
-12. [À FAIRE] Liens externes/sources : 404, domaines expirés, redirections génériques ;
-    ne pas classer 403/429 comme morts (nos passes le font déjà en partie : vérifier la règle).
+12. [FAIT 20/09, règle vérifiée] Liens externes : la passe traite 403, 405, 406 et 429
+    comme « vu et refusé, donc vivant » ; seuls les 404 sont des morts. Contrôle quotidien.
 13. [FAIT 18/09] Testé en ligne : http vers https 301, www vers domaine nu 301,
     /index.html en 200 avec canonical vers /, 404 réel sur URL inconnue.
 14. [FAIT 18/09] lastmod honnête : 433 pages réellement quotidiennes datées (accueils,
@@ -108,8 +108,9 @@ de chaque correction, et le verrou final est un validateur de build BLOQUANT.
 
 ## P2 : confort
 
-28. [À FAIRE] Cohérence éditoriale : graphies (ConstanceParis7, Monte-Carlo/Monaco),
-    formats de prix et de dates, vocabulaire confirmé/probable/à vérifier.
+28. [EN COURS 20/09] Graphies françaises normalisées (Monte-Carlo, Saint-Tropez) ; marque
+    déjà uniforme ; heures 19h30 en français et 19:30 dans les traductions, par règle.
+    Reste : vocabulaire confirmé/probable/à vérifier à harmoniser.
 29. [EN COURS 20/09 : favoris, recherche 13 langues, carte du moment] États vides : aucun favori, aucun résultat, fiche retirée, hors connexion.
 30. [EN COURS 20/09 : og + cartes Twitter partout] Aperçus sociaux : og/twitter par page, rendu WhatsApp/iMessage/LinkedIn,
     impression propre des fiches.
