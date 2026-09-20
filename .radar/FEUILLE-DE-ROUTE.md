@@ -63,7 +63,7 @@ reste dérisoire pour un million de visiteurs par jour.
 Légende : [100] fait · [50] à moitié · [0] à faire. Le taux d'un objectif est la
 moyenne de ses micro-objectifs.
 
-### O1 · Fondations sans point faible (registre de l'audit croisé) · 62 %
+### O1 · Fondations sans point faible (registre de l'audit croisé) · 68 %
 - [100] Verrou de build bloquant sur les 7 876 pages, 13 langues
 - [100] Compteurs réconciliés et expliqués
 - [100] Redirections des anciennes adresses (lieux et fiches)
@@ -71,8 +71,10 @@ moyenne de ses micro-objectifs.
 - [100] Métadonnées saisonnières purgées, titres « None » réparés
 - [80]  Échappement et injection (recherche, favoris, JS)
 - [30]  Cannibalisation entre langues (hreflang sitemap posé, matrice à faire)
-- [30]  États vides (aucun favori, aucun résultat, hors connexion)
-- [20]  Aperçus sociaux par page (og/twitter, rendu messageries)
+- [70]  États vides : aucun favori (page), aucun résultat (recherche, 13 langues), carte
+        du moment cachée si indisponible ; reste le mode hors connexion
+- [60]  Aperçus sociaux : og et cartes Twitter/X sur toutes les pages ; reste le contrôle
+        du rendu WhatsApp, iMessage, LinkedIn et une image par événement
 - [100] JSON-LD Event recalibré le 20/09 : offre seulement si l'accès s'achète ou se
         réserve (237 fiches sur 320 au lieu de toutes), jamais d'InStock sur invitation,
         gratuité seulement si écrite, statut annulé ou reporté lu dans les textes
@@ -80,8 +82,9 @@ moyenne de ses micro-objectifs.
 - [0]   Statuts des récurrents et saisons (EventCancelled, estimations)
 - [0]   Règle 403/429 des liens externes vérifiée
 - [0]   Cohérence éditoriale (graphies, formats de prix et de dates)
-- [50]  Accessibilité : lien d'évitement, <main>, focus visible, coeurs nommés posés
-        le 20/09 sur l'accueil et les 7 876 pages ; reste contraste et lecteurs d'écran
+- [75]  Accessibilité : lien d'évitement, <main>, focus visible, coeurs nommés, contrastes
+        des deux thèmes vérifiés (or du thème clair porté à 4,6) ; reste le test au
+        lecteur d'écran et les noms des symboles ◐ et →
 - [70]  Arabe de droite à gauche et langues CJK contrôlés à l'écran le 20/09 : rendu
         correct, et un vrai bogue attrapé (le lien d'évitement décalait toute la page
         arabe hors de l'écran) ; reste les flèches directionnelles et la ponctuation mixte

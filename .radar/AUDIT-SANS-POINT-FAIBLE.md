@@ -110,8 +110,8 @@ de chaque correction, et le verrou final est un validateur de build BLOQUANT.
 
 28. [À FAIRE] Cohérence éditoriale : graphies (ConstanceParis7, Monte-Carlo/Monaco),
     formats de prix et de dates, vocabulaire confirmé/probable/à vérifier.
-29. [À FAIRE] États vides : aucun favori, aucun résultat, fiche retirée, hors connexion.
-30. [À FAIRE] Aperçus sociaux : og/twitter par page, rendu WhatsApp/iMessage/LinkedIn,
+29. [EN COURS 20/09 : favoris, recherche 13 langues, carte du moment] États vides : aucun favori, aucun résultat, fiche retirée, hors connexion.
+30. [EN COURS 20/09 : og + cartes Twitter partout] Aperçus sociaux : og/twitter par page, rendu WhatsApp/iMessage/LinkedIn,
     impression propre des fiches.
 
 ## LE VERROU : le validateur de build bloquant
