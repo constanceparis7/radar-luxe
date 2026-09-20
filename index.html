@@ -52,7 +52,7 @@
   :root[data-theme="light"]{
     --bg:#fafaf7; --bg2:#ffffff; --bg3:#f1efe8;
     --ink:#1a2230; --ink2:#5a6374; --line:#e3e1d8;
-    --or:#a07c2e; --or-soft:rgba(160,124,46,.10); --or-line:rgba(160,124,46,.35);
+    --or:#8c6d2a; --or-soft:rgba(160,124,46,.10); --or-line:rgba(160,124,46,.35);
     --azur:#16657f; --azur-soft:rgba(22,101,127,.09);
     --good:#1e7a52; --good-soft:rgba(30,122,82,.10);
     --shadow:0 1px 2px rgba(20,25,35,.05),0 8px 28px rgba(20,25,35,.06);
@@ -1492,7 +1492,7 @@ header.mast{display:none}
    for(i=0;i<IDX.length;i++){e=IDX[i];
     if((norm(e.n)+' '+norm(e.v)+' '+norm(e.c)).indexOf(t)>-1)hlist.push(e);}
    hlist.sort(function(a,b){return (b.no||0)-(a.no||0)});hlist=hlist.slice(0,6);
-   res.innerHTML=hlist.map(function(e){return '<a href="'+e.u+'"><b>'+esc(e.n)+'</b><span>'+esc(e.v||'')+((e.no)?' \u00b7 '+e.no+'/100':'')+'</span></a>';}).join('')
+   res.innerHTML=(hlist.length?hlist.map(function(e){return '<a href="'+e.u+'"><b>'+esc(e.n)+'</b><span>'+esc(e.v||'')+((e.no)?' \u00b7 '+e.no+'/100':'')+'</span></a>';}).join(''):'<span class="hm-err">'+esc((window.I18N_SEARCH_NONE||{})[LANG]||'Aucun résultat \u00b7 No result')+'</span>')
      +'<a class="hm-plus" href="/entrer.html">\u2192</a>';
    res.hidden=false;};
   if(IDX){run();}
@@ -1518,5 +1518,6 @@ function sync(){var f=L();document.querySelectorAll('.fav-nb').forEach(function(
 document.addEventListener('click',function(ev){var b=ev.target.closest('.fav-mini[data-k]');if(!b)return;ev.preventDefault();ev.stopPropagation();charge(function(){var s=SL[decodeURIComponent(b.getAttribute('data-k'))];if(!s)return;var f=L(),i=f.indexOf(s);if(i>-1)f.splice(i,1);else f.push(s);try{localStorage.setItem(C,JSON.stringify(f))}catch(e){}sync();});});
 window.addEventListener('DOMContentLoaded',function(){charge(function(){sync();var t=null;new MutationObserver(function(){clearTimeout(t);t=setTimeout(sync,150);}).observe(document.body,{childList:true,subtree:true});});});
 })();</script>
+<script>window.I18N_SEARCH_NONE={"fr": "Aucun résultat pour cette recherche", "en": "No result for this search", "es": "Ningún resultado para esta búsqueda", "it": "Nessun risultato per questa ricerca", "pt": "Nenhum resultado para esta pesquisa", "de": "Kein Ergebnis für diese Suche", "ru": "По этому запросу ничего не найдено", "ar": "لا توجد نتائج لهذا البحث", "zh": "没有找到相关结果", "ja": "該当する結果はありません", "ko": "검색 결과가 없습니다", "hi": "इस खोज के लिए कोई परिणाम नहीं", "tr": "Bu arama için sonuç yok"};</script>
 </body>
 </html>

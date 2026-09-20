@@ -637,6 +637,8 @@ def main():
             "<meta property=\"og:type\" content=\"website\">"
             f"<meta property=\"og:title\" content=\"{esc(title)}\"><meta property=\"og:description\" content=\"{esc(desc)}\">"
             f"<meta property=\"og:url\" content=\"{canonical}\"><meta property=\"og:image\" content=\"{OG}\">"
+            f"<meta name=\"twitter:card\" content=\"summary_large_image\"><meta name=\"twitter:title\" content=\"{esc(title)}\">"
+            f"<meta name=\"twitter:description\" content=\"{esc(desc)}\"><meta name=\"twitter:image\" content=\"{OG}\">"
             f"<style>{CSS}</style>{ldblock}"
             # Même mesure d'audience que la page d'accueil : sans elle, les
             # arrivées Google directes sur une fiche étaient invisibles.
