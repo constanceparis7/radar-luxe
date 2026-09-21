@@ -1,121 +1,122 @@
-# Compte rendu — passe du 20/09/2026 (session cloud)
+# Compte rendu — passe du 21/09/2026 (session cloud)
 
-## Anomalie de déclenchement
+## Démarrage
 
-`precheck.sh` a signalé une cadence rompue : dernier run journalisé il y a 35 h
-(seuil 30 h). Pas de trace de passe complète le 19/09 après-midi/soir — la
-passe de ce jour est une passe de RATTRAPAGE. Aucune cause identifiée dans le
-dépôt (pas d'erreur, pas de commit orphelin).
+Clone superficiel (`git rev-parse --is-shallow-repository` → true, 53 commits
+au lieu des ~650 réels) : `git fetch --unshallow origin` fait dès le début,
+comme la leçon du 20/09 le demande. Aucune anomalie de cadence (dernier run
+la veille, dans le seuil normal). `.radar/DOCTRINE.md`, `.radar/PASSATION.md`
+et `.radar/tools/lessons.md` (1174 lignes) lus intégralement avant tout
+travail.
 
-## Priorité du moment : condensation des voies d'invitation
+## Priorité du moment : condensation des voies d'invitation — chantier retombé à zéro dérive réelle
 
-Sélection au seuil CIBLE (≥400 caractères sur `iv.o`/`iv.g`/`iv.w`, priorité
-fenêtre live, plus imminentes d'abord) : 110 fiches en fenêtre live dépassent
-ce seuil. Avant de lancer des agents en série, lecture intégrale d'une
-vingtaine des plus imminentes (Fondazione Prada Milan, ICP New York, Milano
-Fashion Week, Nikki Beach Ibiza, Christie's Genève, Dior Saint-Tropez, Chaumet
-Vendôme, Chanel East Hampton, Covo di Nord-Est, Sotheby's Genève…) : la
-quasi-totalité sont déjà des modes d'emploi visiteur propres et directs, leur
-longueur venant de faits réels nombreux (plusieurs contacts, tarifs, horaires
-saisonniers), pas d'une dérive « journal d'enquête ». Un détecteur de motifs
-(dates de vérification, formulations de méthode, redites entre champs) a
-isolé 4 fiches avec une vraie dérive :
+Lecture intégrale des 11 champs `iv.o`/`iv.g`/`iv.w` au-dessus du seuil WARN
+de `validate.py` (1200 car., de « POINT D'ENTRÉE, Ventes aux enchères »
+2675 car. à « Milan en mode Ferragosto » 1207 car.) et des 25 fiches les plus
+imminentes de la fenêtre live parmi les 86 encore au-dessus du seuil cible de
+400 car. (Fondazione Prada, Ron Mueck, Nammos Mykonos, Loro Piana x La Réserve,
+Chanel East Hampton, Le Jardin de Cheval Blanc, Hermès Ginza, Gucci Flora,
+Capri, La Co(o)rniche, Bagni Fiore, Covo di Nord-Est, Bagatelle Bodrum,
+Jumeirah Capri Palace, Grand Hôtel de Cala Rossa, F1 Abu Dhabi, Gstaad New
+Year Festival, Melbourne Cup…), plus un détecteur automatique (motifs de
+dérive + sous-chaîne >60 car. dupliquée entre champs, méthode du 20/09/2026).
 
-- **Amiri, boutique saisonnière Saint-Tropez** — condensée ET corrigée : l'adresse
-  publiée (« avenue Maréchal Foch ») était fausse depuis l'origine ; vérifié ce
-  jour à la source (store locator officiel amiri.com, en direct) : la boutique
-  est au **21 rue Gambetta**. Corrigé dans le champ lieu et dans `iv`. Horaires
-  aussi remis à jour (la fiche affichait un horaire d'été constant « 10h-21h » ;
-  la période en cours, mi-septembre à octobre, ferme à 19h30, confirmé sur
-  amiri.com/pages/stores). Retiré : une piste de contact presse explicitement
-  non étayée que la fiche racontait au visiteur au lieu de la rejeter en
-  silence.
-- **Réouverture d'hiver de The Alpina Gstaad** — la liste des quatre agences
-  presse par marché était recopiée mot pour mot dans `iv.o` ET `iv.g` ; gardée
-  une seule fois (porte principale), `iv.g` recentré sur la nature de l'accès.
-- **Réouverture d'hiver des Airelles Courchevel** — `iv.g` allégé du récit
-  d'enquête (« aucune accréditation... aucun voyage de presse... ») en gardant
-  tous les contacts, URL et téléphones.
-- **Helter Skelter, Fondazione Prada Venise** — retiré le cadrage méthodologique
-  (« vérifié à la source le 11/08/2026, page officielle lue en navigateur ») de
-  `iv.g`/`iv.w`, gardé la citation officielle et tous les tarifs.
+**Résultat : zéro dérive « journal d'enquête » trouvée.** Tout l'excédent est
+de la densité factuelle légitime — plusieurs contacts nominatifs, tarifs et
+horaires réels par fiche, exactement le constat déjà fait le 20/09 sur un
+échantillon plus restreint, mais ici sur la quasi-totalité du stock restant.
+Conformément à la doctrine elle-même (« si tu n'as rien trouvé de digne, ne
+publie rien »), aucune fiche n'a été retouchée : forcer un quota de 15-20
+fiches condensées sur du contenu déjà sain aurait repris le risque identifié
+les 21/08 et 25/08 (URL abrégées, adresses déformées par un exercice de
+concision inutile). Nouvelle leçon consignée dans `lessons.md` avec le détail
+des 11+25 fiches relues. Le chantier condensation passe donc en mode
+ENTRETIEN : à ne relancer que si un nouveau signal de dérive réapparaît.
 
-Contrôle mécanique `verif_faits.py` (dossiers séparés) : 1 alerte sur les 4
-(URL Instagram raccourcie en `@amiri` sans le lien littéral) — corrigée avant
-publication ; TOUT OK à la deuxième passe.
+## Purge
 
-Le compteur global (186 fiches ≥400 car., 110 en fenêtre live) n'a pas bougé :
-attendu, une fiche condensée qui garde plusieurs faits réels reste au-dessus
-du seuil par construction (leçon du 20-21/08). Leçon nouvelle consignée dans
-`tools/lessons.md` : le seuil de 400 caractères sert à SÉLECTIONNER, pas à
-mesurer la dérive elle-même — seule la lecture le prouve. Poursuite aux
-prochaines passes avec un détecteur de motifs pour trier les candidats avant
-d'engager des agents, plutôt que de traiter tout le stock >400 comme une
-dérive uniforme.
+1 zombie purgé (« Taste of Tennis New York 2026 », fin 21/08/2026, >30 j).
+336 → 335 événements en ligne.
 
-## Purge et vérification des liens
+## Test hebdomadaire des liens (lundi)
 
-2 zombies purgés (fin de saison 20/08/2026, >30 j) : « White Party avec
-Laurent Wolf, Casino Barrière » et « Dîner quatre mains Ayla Privé, Aret
-Sahakyan × Francesco Sodano ». 338 → 336 événements en ligne. 119 liens des
-événements les plus imminents testés : 0 mort. Bascule automatique de saison
-du titre confirmée (Summer 2026, aucune anomalie — l'équinoxe n'est pas encore
-atteint).
+232 URL uniques à venir testées (HEAD threadé) : 190×200, 26×403 (bloqué mais
+vivant, convention du site), 4×429, 3×202, **0×404**. 6 domaines ont échoué de
+façon persistante (chateaudechantilly.fr, theatre-chaillot.fr, atlantis.com,
+marinabaysands.com, oneandonlyresorts.com, opera.mc) avec une erreur de
+certificat TLS répétée (curl erreur 60) malgré 3 essais et un `--cacert`
+explicite, alors que des domaines témoins (google.com) et la quasi-totalité
+des 232 URL passaient normalement — incident d'environnement (tunnel proxy
+capricieux, confirmé par `$HTTPS_PROXY/__agentproxy/status`), pas un verdict
+sur les fiches. Rien changé, à retester la semaine prochaine. Détail et
+nouvelle règle consignés dans `lessons.md`.
 
-## LOI DU SITE — les trois compteurs (`reste.py`, fenêtre live)
+## Vague des imminents (lundi)
 
-- Traductions 13 langues : 336/336 (100 %)
-- Voies d'invitation : 336/336 (100 %)
-- Séjours clé en main : 330/336 (les 6 manquants sont des fiches-conseil
-  `c=acces`, exemptées par doctrine)
+Nouveau candidat détecté par le calcul systématique (Note du radar ≥ 85,
+J+7 à J+28, durée ≤ 30 j) : **Qatar Prix de l'Arc de Triomphe 2026** (Note 88,
+3-4 octobre, J+12) — le nom qui claque le plus mondialement reconnu de la
+sélection du jour (deux autres candidats, un gala du New York Philharmonic et
+un gala du New York City Ballet, écartés par prudence : notoriété trop
+new-yorkaise/niche pour le test du nom, doctrine « en cas de doute,
+s'abstenir »). Page de destination `/prix-de-larc-de-triomphe.html` créée,
+composée uniquement de contenus déjà vérifiés (la fiche elle-même, 3 Questions
+existantes sur le sujet : prix, dress code, enclosure), liens vers Le Protocole,
+Octobre à Paris, deux galas parisiens de la même semaine (Global Gift Gala,
+ADOR's Gala Dinner) et la fiche complète. `validate.py` : 0 blocage.
 
-Rien à rattraper de ce côté aujourd'hui.
+## Recherche complémentaire : Bal de la Rose / Gala Croix-Rouge Monaco 2027 — pas de fiche créée
 
-## Bug d'environnement trouvé et corrigé
+Vérification à la source (montecarlosbm.com, croix-rouge.mc, communiqué de
+presse officiel) : ce sont deux galas DISTINCTS (Bal de la Rose en mars,
+Fondation Princesse Grace ; Gala de la Croix-Rouge monégasque en juillet,
+Prince Albert II/Princesse Charlène), tous deux à la Salle des Étoiles du
+Sporting Monte-Carlo. **Aucune date 2027 n'est encore annoncée pour l'un ou
+l'autre** à ce jour. Conformément à la règle du « bouchon du 31 août »
+(jamais de date devinée présentée comme sûre), aucune fiche n'a été créée
+cette passe. Des contacts presse nominatifs réels existent pour le Gala
+Croix-Rouge 2026 (Sylvie Cristin, SBM ; deux contacts Croix-Rouge monégasque)
+mais au format `initiale.nom@`, donc à filtrer par `contacts_classer.py`
+avant toute mise en fiche le jour où 2027 sera annoncé. À reprendre à une
+passe future, une fois la date confirmée à la source.
 
-Le clone de cette session était **superficiel** (`git rev-parse
---is-shallow-repository` → true, 53 commits au lieu de ~650) : `main` local
-avait aussi divergé de `origin/main` au démarrage (reset propre sur
-`origin/main`, aucune perte — aucun travail local en cours). Le clone
-superficiel désactivait en silence `tools/memoire.py changements` (règle
-quotidienne de la doctrine), qui répondait poliment « rien à comparer » au
-lieu d'échouer. Corrigé par `git fetch --unshallow origin` ; 6 changements de
-dates ont alors été consignés dans `.radar/memoire.ndjson`. Leçon consignée
-dans `tools/lessons.md`, et la section « Environnement cloud » de
-`DOCTRINE.md` mise à jour (elle documentait encore, comme signalé le
-17/09/2026, une architecture à deux dépôts qui n'existe plus pour cette
-session — corrigé au passage).
+## État de la LOI DU SITE (iv + séjour + traductions)
 
-## Contrôles
+`reste.py` : traductions 335/335 (100 %), voies d'invitation 335/335 (100 %),
+séjours 329/335 — les 6 manquants sont les fiches-guide `c=acces` (« POINT
+D'ENTRÉE… »), exemptées par la doctrine. **0 écart réel.** Joaillerie : 13
+fiches en fenêtre live (chantier du 20/08 résolu, largement au-dessus du
+plancher de 10). Les 8 ancres printemps 2027 sont toutes présentes sur le
+site. Bandeau Ouvertures & délais : 3 entrées, aucune périmée.
+`memoire.py changements` : 0 changement de date à consigner cette semaine.
+Bascule de saison : pas encore due (équinoxe d'automne calculé après le
+21/09 ; le titre reste « Summer 2026 », normal, rien à retraduire).
 
-`validate.py` : OK — 0 blocker, 2 warnings résiduels (iv.g/iv.w encore >1200
-car. sur 2+9 fiches, stables). `perfcheck.py` non lancé séparément (le
-publieur l'inclut implicitement via `verrou.py`/`gen_pages`) — accueil à
-852 Ko, cohérent avec la purge. `healthcheck.sh` : OK (http=200,
-compte_live=336=attendu, date fraîche). 3 avertissements W1 mineurs
-pré-existants (dates `dt` hors fenêtre machine sur Taste of Tennis New York,
-Covo di Nord-Est, Nikki Beach Ibiza) : non traités, non bloquants — le
-premier concerne un événement déjà passé qui sera purgé demain (30 j
-atteints), les deux autres sont des dates d'ouverture de saison antérieures à
-la fenêtre affichée, normales.
+## Analyse des visites
+
+Compteur cumulé à 3 000 visiteurs/pages vues (GoatCounter), +39 depuis la
+veille (2 961 → 3 000), dans la continuité de la croissance régulière des
+derniers jours (+45, +49, +47, +29, +39) — toujours dans le palier 1 (35 à
+100/jour) de la feuille de route, sans rupture ni pic.
+
+## Anomalies et non-fait
+
+- 6 domaines non vérifiables cette semaine (incident réseau, voir ci-dessus).
+- `healthcheck.sh` OK (335/335, date fraîche) ; la page fraîchement publiée
+  `/prix-de-larc-de-triomphe.html` répond encore 404 en direct au moment
+  d'écrire ce compte rendu — propagation GitHub Pages normale, à confirmer à
+  la prochaine passe.
+- Search Console non consultée cette passe (pas d'accès direct dans cet
+  outillage) ; à faire par Constance/Gérald ou une session avec cet accès.
+- Le chantier « Feuille de route » (O1-O9, newsletter, en-têtes de sécurité,
+  Cloudflare) n'a pas été touché : hors du périmètre de la passe quotidienne
+  de contenu, laissé aux sessions dédiées à ce chantier. Compteur d'événements
+  de O4 mis à jour (341 → 335).
 
 ## Publication
 
-Trois commits distincts poussés directement sur `main` (aucun repli de
-branche nécessaire) : (1) purge + liens + saison, (2) condensation +
-correction Amiri, (3) mémoire du radar. Journal privé (lessons.md, DOCTRINE.md,
-ce compte rendu) poussé séparément.
-
-## Non vérifié / reporté
-
-- 110 fiches restent au-dessus du seuil-cible de condensation en fenêtre live,
-  mais la lecture de ce jour indique que la grande majorité est déjà propre :
-  à trier par détecteur de motifs avant d'engager des agents, plutôt qu'à
-  traiter en bloc.
-- Les 3 avertissements W1 (dates `dt`), non bloquants.
-- Pas de recherche de nouveaux événements aujourd'hui : le temps de la passe
-  est allé à la priorité de condensation, au diagnostic du clone superficiel
-  et de la divergence de branche, conforme à la doctrine qui place la
-  condensation avant la recherche.
-- Analyse des visites non faite (GoatCounter non consulté ce jour, faute de
-  temps) — à rattraper à la prochaine passe.
+Deux commits poussés directement sur `main` (aucun repli de branche
+nécessaire) : purge + nettoyage `.gitignore`, puis la page imminente Arc de
+Triomphe. Signature `radar-routine-claude` posée avant chaque commit. Journal
+privé (lessons.md, ce compte rendu) à pousser à la suite.

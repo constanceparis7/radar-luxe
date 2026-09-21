@@ -128,7 +128,7 @@ les textes de séjour (1 088 Ko) et les journaux d'enquête (619 Ko). Une fiche
 - [100] Résorption hebdomadaire de tous les doutes, aux sources
 - [100] Sentinelle des imminents (lundi)
 - [100] Mémoire du radar (archives, changements)
-- [34]  341 événements sur un palier de 1 000
+- [34]  335 événements sur un palier de 1 000
 - [0]   Photos par événement (R2)
 - [0]   Rendu à la volée au-delà de 850 événements (limite des 20 000 fichiers)
 - [0]   API publique JSON (partenaires, assistants d'IA, applications)
