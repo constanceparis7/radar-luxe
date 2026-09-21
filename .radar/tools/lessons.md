@@ -1171,3 +1171,41 @@ rapidement les vrais candidats avant d'engager des agents, plutôt que de traite
 >400 caractères comme s'il s'agissait uniformément de dérive à corriger. Corollaire : un compte
 rendu qui annonce « X fiches restent au-dessus du seuil cible » doit préciser que ce chiffre
 mélange dérive réelle et densité factuelle légitime — les deux n'appellent pas la même action.
+
+## 21/09/2026 — la condensation `iv` est retombée à zéro dérive réelle détectable ; et un nouveau signal de panne réseau : l'échec SSL persistant sur un sous-ensemble de domaines
+1. **Condensation** : passage systématique des 11 champs `iv.*` >1200 car. (seuil WARN de
+   `validate.py`) et des 25 fiches les plus imminentes de la fenêtre live parmi les 86 encore
+   >400 car. (seuil cible) — lecture intégrale de chaque champ, plus détecteur automatique
+   (motifs de dérive + sous-chaîne dupliquée >60 car. entre `o`/`g`/`w`, méthode du 20/09).
+   RÉSULTAT : zéro dérive « journal d'enquête » trouvée ; tout l'excédent restant est de la
+   densité factuelle légitime (plusieurs contacts/tarifs/horaires réels par fiche), exactement
+   le schéma déjà observé le 20/09 sur un échantillon plus restreint. RÈGLE : quand une lecture
+   complète et outillée ne trouve rien à condenser, NE PAS forcer un quota de « 15-20 fiches
+   condensées par passe » sur du contenu sain — republier un fait réel réécrit dans un exercice
+   de concision inutile est le risque exact identifié le 21/08 et le 25/08 (URL abrégées,
+   adresses déformées). Un chantier peut légitimement retomber à zéro ; le dire est le résultat
+   honnête prévu par la doctrine elle-même (« si tu n'as rien trouvé de digne, ne publie rien »),
+   transposé ici à « rien à condenser ».
+2. **Réseau** : test hebdomadaire du lundi (232 URL à venir, HEAD threadé). 190×200, 26×403,
+   4×429, 3×202, 0×404 — mais 6 domaines (chateaudechantilly.fr, theatre-chaillot.fr,
+   atlantis.com, marinabaysands.com, oneandonlyresorts.com, opera.mc) ont échoué de façon
+   PERSISTANTE (3 essais espacés, `curl -sL` ET `urllib`, y compris avec `--cacert
+   /root/.ccr/ca-bundle.crt` explicite) avec une signature différente des incidents connus :
+   curl erreur 60 (échec de vérification de certificat), jamais un 403/404 propre. Dans le même
+   temps, des domaines témoins (google.com, example.com) et la grande majorité des 232 URL
+   passaient normalement, et `$HTTPS_PROXY/__agentproxy/status` montrait des `ws_closed_mid_exchange`
+   ponctuels sur DEUX domaines qui ont ensuite réussi au réessai (madparis.fr, musicontherocks.it)
+   — signe d'un tunnel proxy capricieux plutôt que d'un blocage de politique ferme.
+   RÈGLE : ajouter à la checklist déjà connue (403/406/CAPTCHA n'est pas une preuve d'absence,
+   tester un domaine témoin) un troisième signal : une erreur de certificat TLS répétée sur un
+   sous-ensemble de domaines alors que d'autres passent est aussi un incident d'environnement,
+   pas un verdict sur les fiches — ne rien changer aux fiches concernées, retester à la
+   prochaine passe hebdomadaire.
+3. **Piège d'outillage retrouvé** : dans cette session, un `mkdir -p` suivi d'un `curl -o
+   sous-dossier/fichier` À L'INTÉRIEUR D'UNE BOUCLE BASH `for` a échoué de façon répétée
+   (« No such file or directory ») alors que la même commande hors boucle, ou depuis un script
+   Python séparé avec un chemin à plat (sans sous-dossier), fonctionnait. Cause non élucidée
+   (probablement une particularité du bac à sable de cette session cloud). RÈGLE PRATIQUE : pour
+   tout script de test de liens dans une session cloud, écrire les fichiers temporaires dans un
+   dossier à plat à la racine du dépôt (ajouté au `.gitignore`), jamais dans un sous-dossier
+   profond, et depuis un script Python unique plutôt qu'une boucle shell `for` avec redirections.
