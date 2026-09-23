@@ -899,10 +899,17 @@ def main():
      "verde-beach-saint-tropez-nuits-dj-d-exception-2026-ramatuelle-sa": "verde-beach-saint-tropez-nuits-dj-d-exception-2026-ramatuelle",
      "zamna-bali-uluwatu-bali": "zamna-bali-uluwatu"
     }
+    # Leçon du 23/09/2026 : une fiche visée par une redirection peut ensuite être
+    # PURGÉE (fin > 30 j) — sa page réelle disparaît alors du site, et la
+    # redirection pointait vers un slug qui ne sera plus jamais généré (39 liens
+    # internes cassés trouvés ce jour sur Hublot Polo Gstaad et Versiliana). On
+    # ne redirige vers le NOUVEAU slug que s'il correspond à une fiche vivante ;
+    # sinon, on renvoie vers le hub événements de la langue plutôt qu'un lien mort.
+    _slugs_vivants = {e["_slug"] for e in pages if e.get("_slug")}
     for _old, _new in FICHE_REDIRECTS.items():
         for _lg in ["fr"] + LANGS:
             _pf = "" if _lg == "fr" else f"/{_lg}"
-            _cible = f"{_pf}/e/{_new}.html"
+            _cible = f"{_pf}/e/{_new}.html" if _new in _slugs_vivants else f"{_pf}/evenements.html"
             write(f"{_pf}/e/{_old}.html",
                   f"<!doctype html><html lang=\"{_lg}\"><head><meta charset=\"utf-8\">"
                   f"<meta name=\"robots\" content=\"noindex\"><link rel=\"canonical\" href=\"{BASE}{_cible}\">"
