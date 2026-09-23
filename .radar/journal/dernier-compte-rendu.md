@@ -1,122 +1,110 @@
-# Compte rendu — passe du 21/09/2026 (session cloud)
+# Compte rendu — passe du 23/09/2026 (session cloud, rattrapage)
 
-## Démarrage
+## Démarrage — anomalie de cadence
 
-Clone superficiel (`git rev-parse --is-shallow-repository` → true, 53 commits
-au lieu des ~650 réels) : `git fetch --unshallow origin` fait dès le début,
-comme la leçon du 20/09 le demande. Aucune anomalie de cadence (dernier run
-la veille, dans le seuil normal). `.radar/DOCTRINE.md`, `.radar/PASSATION.md`
-et `.radar/tools/lessons.md` (1174 lignes) lus intégralement avant tout
-travail.
+`precheck.sh` a signalé une cadence rompue (dernier run journalisé il y a 47 h,
+> 30 h). Investigation : la session du 22/09 a bien démarré (`DEMARRAGE` dans
+`passages.log`) mais n'a jamais poussé de `FIN` ni de compte rendu — seuls les
+deux commits automatiques SANS IA (plancher `passe-quotidienne.yml` et
+`surveillance.yml`) sont partis ce jour-là. Cause de l'arrêt non identifiable
+depuis le dépôt (aucune trace d'erreur). Traité comme une passe de
+RATTRAPAGE complète, conformément à la doctrine. `.radar/DOCTRINE.md`,
+`.radar/PASSATION.md`, `.radar/REGLE-ALPHA.md` et `.radar/tools/lessons.md`
+(1 212 lignes) lus intégralement avant tout travail. Clone superficiel
+détecté et réparé (`git fetch --unshallow`).
 
-## Priorité du moment : condensation des voies d'invitation — chantier retombé à zéro dérive réelle
+## Purge et bascule de saison
 
-Lecture intégrale des 11 champs `iv.o`/`iv.g`/`iv.w` au-dessus du seuil WARN
-de `validate.py` (1200 car., de « POINT D'ENTRÉE, Ventes aux enchères »
-2675 car. à « Milan en mode Ferragosto » 1207 car.) et des 25 fiches les plus
-imminentes de la fenêtre live parmi les 86 encore au-dessus du seuil cible de
-400 car. (Fondazione Prada, Ron Mueck, Nammos Mykonos, Loro Piana x La Réserve,
-Chanel East Hampton, Le Jardin de Cheval Blanc, Hermès Ginza, Gucci Flora,
-Capri, La Co(o)rniche, Bagni Fiore, Covo di Nord-Est, Bagatelle Bodrum,
-Jumeirah Capri Palace, Grand Hôtel de Cala Rossa, F1 Abu Dhabi, Gstaad New
-Year Festival, Melbourne Cup…), plus un détecteur automatique (motifs de
-dérive + sous-chaîne >60 car. dupliquée entre champs, méthode du 20/09/2026).
+6 zombies purgés (fin 23/08/2026, > 30 j) : Exposition Générale (nouvelle
+Fondation), pop-up omakase Hatsune, 47e Festival La Versiliana, Prix Morny,
+Hublot Polo Gold Cup Gstaad (44e édition), Regata Palermo-Montecarlo (21e).
+332 → 326 événements. Liens des 118 événements les plus imminents retestés :
+aucun mort. Bascule automatique de saison confirmée : **Autumn 2026** (le
+badge et le titre indexé basculent tout seuls à l'équinoxe, `saison.py`) ;
+les trois clés saisonnières de l'interface (`brandsub`, `intl_p1`,
+`intl_p2`) ont été relues : leur contenu (« Septembre et octobre 2026 »)
+reste factuellement exact pour la période en cours, aucune réécriture
+nécessaire aujourd'hui — à surveiller quand novembre approchera.
 
-**Résultat : zéro dérive « journal d'enquête » trouvée.** Tout l'excédent est
-de la densité factuelle légitime — plusieurs contacts nominatifs, tarifs et
-horaires réels par fiche, exactement le constat déjà fait le 20/09 sur un
-échantillon plus restreint, mais ici sur la quasi-totalité du stock restant.
-Conformément à la doctrine elle-même (« si tu n'as rien trouvé de digne, ne
-publie rien »), aucune fiche n'a été retouchée : forcer un quota de 15-20
-fiches condensées sur du contenu déjà sain aurait repris le risque identifié
-les 21/08 et 25/08 (URL abrégées, adresses déformées par un exercice de
-concision inutile). Nouvelle leçon consignée dans `lessons.md` avec le détail
-des 11+25 fiches relues. Le chantier condensation passe donc en mode
-ENTRETIEN : à ne relancer que si un nouveau signal de dérive réapparaît.
+## Correctif de fond : redirections de fiches vers un slug purgé = lien mort
 
-## Purge
+La purge a fait apparaître 39 BLOQUEURS `V6` (lien interne cassé, 13 langues
+× 3 pages) : les pages des deux événements venant d'être purgés (Hublot Polo
+Gstaad, Versiliana) portaient chacune une ancienne redirection codée en dur
+dans `gen_pages.py` (`FICHE_REDIRECTS`, héritée de la normalisation des lieux
+du 17/09) vers un slug qui, en réalité, n'a **jamais** correspondu à une page
+réellement générée — un slug fantôme resté invisible tant que la fiche
+vivait sous son vrai nom. Corrigé à la source : `gen_pages.py` ne pointe
+plus qu'une redirection dont la cible correspond à une fiche encore vivante ;
+sinon elle renvoie vers le hub `evenements.html` de la langue. Détail et
+règle générale consignés dans `lessons.md`. `validate.py` : 0 bloqueur après
+correctif.
 
-1 zombie purgé (« Taste of Tennis New York 2026 », fin 21/08/2026, >30 j).
-336 → 335 événements en ligne.
+## Priorité du moment : condensation des voies d'invitation
 
-## Test hebdomadaire des liens (lundi)
-
-232 URL uniques à venir testées (HEAD threadé) : 190×200, 26×403 (bloqué mais
-vivant, convention du site), 4×429, 3×202, **0×404**. 6 domaines ont échoué de
-façon persistante (chateaudechantilly.fr, theatre-chaillot.fr, atlantis.com,
-marinabaysands.com, oneandonlyresorts.com, opera.mc) avec une erreur de
-certificat TLS répétée (curl erreur 60) malgré 3 essais et un `--cacert`
-explicite, alors que des domaines témoins (google.com) et la quasi-totalité
-des 232 URL passaient normalement — incident d'environnement (tunnel proxy
-capricieux, confirmé par `$HTTPS_PROXY/__agentproxy/status`), pas un verdict
-sur les fiches. Rien changé, à retester la semaine prochaine. Détail et
-nouvelle règle consignés dans `lessons.md`.
-
-## Vague des imminents (lundi)
-
-Nouveau candidat détecté par le calcul systématique (Note du radar ≥ 85,
-J+7 à J+28, durée ≤ 30 j) : **Qatar Prix de l'Arc de Triomphe 2026** (Note 88,
-3-4 octobre, J+12) — le nom qui claque le plus mondialement reconnu de la
-sélection du jour (deux autres candidats, un gala du New York Philharmonic et
-un gala du New York City Ballet, écartés par prudence : notoriété trop
-new-yorkaise/niche pour le test du nom, doctrine « en cas de doute,
-s'abstenir »). Page de destination `/prix-de-larc-de-triomphe.html` créée,
-composée uniquement de contenus déjà vérifiés (la fiche elle-même, 3 Questions
-existantes sur le sujet : prix, dress code, enclosure), liens vers Le Protocole,
-Octobre à Paris, deux galas parisiens de la même semaine (Global Gift Gala,
-ADOR's Gala Dinner) et la fiche complète. `validate.py` : 0 blocage.
-
-## Recherche complémentaire : Bal de la Rose / Gala Croix-Rouge Monaco 2027 — pas de fiche créée
-
-Vérification à la source (montecarlosbm.com, croix-rouge.mc, communiqué de
-presse officiel) : ce sont deux galas DISTINCTS (Bal de la Rose en mars,
-Fondation Princesse Grace ; Gala de la Croix-Rouge monégasque en juillet,
-Prince Albert II/Princesse Charlène), tous deux à la Salle des Étoiles du
-Sporting Monte-Carlo. **Aucune date 2027 n'est encore annoncée pour l'un ou
-l'autre** à ce jour. Conformément à la règle du « bouchon du 31 août »
-(jamais de date devinée présentée comme sûre), aucune fiche n'a été créée
-cette passe. Des contacts presse nominatifs réels existent pour le Gala
-Croix-Rouge 2026 (Sylvie Cristin, SBM ; deux contacts Croix-Rouge monégasque)
-mais au format `initiale.nom@`, donc à filtrer par `contacts_classer.py`
-avant toute mise en fiche le jour où 2027 sera annoncé. À reprendre à une
-passe future, une fois la date confirmée à la source.
+Chantier en mode ENTRETIEN depuis le 21/09 (dernière lecture exhaustive :
+zéro dérive réelle). Contrôle de non-régression ce jour : détecteur
+automatique (motifs de dérive + sous-chaîne dupliquée > 60 car. entre
+`iv.o`/`iv.g`/`iv.w`) sur les 76 fiches de la fenêtre live, puis lecture
+intégrale des 13 candidates relevées (Shop on the Corner Saint-Tropez,
+Negresco, Nikki Beach Ibiza, Loewe pop-up, Chaumet Vendôme, Amiri,
+Dior Saint-Tropez, Melbourne Cup, ventes Sotheby's et Christie's Genève,
+Fondazione Prada Venise, Airelles Courchevel, Alpina Gstaad). **Résultat :
+zéro dérive.** Tout l'excédent est de la densité factuelle légitime (noms,
+fonctions, e-mails professionnels, tarifs, horaires réels et nombreux par
+fiche) — y compris une phrase partagée entre deux champs de la fiche
+Sotheby's Genève (formalités d'enchère), simple répétition naturelle du
+sujet et non un artefact de rédaction. Conformément à la doctrine, aucune
+fiche n'a été retouchée pour ne pas dégrader du contenu déjà sain.
 
 ## État de la LOI DU SITE (iv + séjour + traductions)
 
-`reste.py` : traductions 335/335 (100 %), voies d'invitation 335/335 (100 %),
-séjours 329/335 — les 6 manquants sont les fiches-guide `c=acces` (« POINT
-D'ENTRÉE… »), exemptées par la doctrine. **0 écart réel.** Joaillerie : 13
-fiches en fenêtre live (chantier du 20/08 résolu, largement au-dessus du
-plancher de 10). Les 8 ancres printemps 2027 sont toutes présentes sur le
-site. Bandeau Ouvertures & délais : 3 entrées, aucune périmée.
-`memoire.py changements` : 0 changement de date à consigner cette semaine.
-Bascule de saison : pas encore due (équinoxe d'automne calculé après le
-21/09 ; le titre reste « Summer 2026 », normal, rien à retraduire).
+`reste.py` : traductions 326/326 (100 %), voies d'invitation 326/326
+(100 %), séjours 320/326 — les 6 manquants sont les fiches-guide `c=acces`,
+exemptées par la doctrine. **0 écart réel.** Joaillerie : 15 fiches en
+fenêtre live (plancher de 10 largement tenu). Bandeau Ouvertures & délais :
+3 entrées, aucune périmée (échéances 30/09, 15/10, 31/01/2027).
+`memoire.py changements` : 0 nouvelle date à consigner cette semaine.
+
+## Bascule de majorité (21/09/2026)
+
+Vérifiée sur pièces : `gen_pages.py` (constante `MAJORITE = 2026-09-21`) a
+bien basculé `mentions-legales.html` — la page ne nomme plus Gérald Lefebvre,
+elle indique que l'identité de la directrice de la publication n'est pas
+rendue publique (LCEN art. 6-III-2°) et a été communiquée à l'hébergeur.
+Bascule automatique confirmée fonctionnelle, sans intervention.
+
+## Recherche de nouveaux événements
+
+Non entreprise cette passe : le temps disponible a été consacré au
+rattrapage de cadence, à la purge et au correctif de lien mort (bloquant
+pour toute publication), conformément à l'ordre de priorité de la doctrine
+(entretien et filet avant recherche). Rien de nouveau n'a donc été ajouté ;
+c'est un résultat honnête, pas un renoncement à la mission.
 
 ## Analyse des visites
 
-Compteur cumulé à 3 000 visiteurs/pages vues (GoatCounter), +39 depuis la
-veille (2 961 → 3 000), dans la continuité de la croissance régulière des
-derniers jours (+45, +49, +47, +29, +39) — toujours dans le palier 1 (35 à
-100/jour) de la feuille de route, sans rupture ni pic.
+GoatCounter : 3 119 visiteurs/pages vues cumulés, contre 3 094 hier
+(22/09) et 3 000 avant-hier (21/09) — croissance qui se poursuit, palier 1
+de la feuille de route (35-100/jour), rien d'anormal.
 
 ## Anomalies et non-fait
 
-- 6 domaines non vérifiables cette semaine (incident réseau, voir ci-dessus).
-- `healthcheck.sh` OK (335/335, date fraîche) ; la page fraîchement publiée
-  `/prix-de-larc-de-triomphe.html` répond encore 404 en direct au moment
-  d'écrire ce compte rendu — propagation GitHub Pages normale, à confirmer à
-  la prochaine passe.
-- Search Console non consultée cette passe (pas d'accès direct dans cet
-  outillage) ; à faire par Constance/Gérald ou une session avec cet accès.
-- Le chantier « Feuille de route » (O1-O9, newsletter, en-têtes de sécurité,
-  Cloudflare) n'a pas été touché : hors du périmètre de la passe quotidienne
-  de contenu, laissé aux sessions dédiées à ce chantier. Compteur d'événements
-  de O4 mis à jour (341 → 335).
+- Cadence rompue le 22/09 (session interrompue sans trace d'erreur) —
+  signalé ci-dessus, sans action corrective possible au-delà du constat.
+- Search Console non consultée (pas d'accès direct dans cet outillage).
+- Recherche de nouveaux événements et guides d'accès non traitées cette
+  passe (voir ci-dessus).
+- Le chantier « Feuille de route » (O1-O9) n'a pas été touché : hors du
+  périmètre de la passe quotidienne de contenu.
 
 ## Publication
 
-Deux commits poussés directement sur `main` (aucun repli de branche
-nécessaire) : purge + nettoyage `.gitignore`, puis la page imminente Arc de
-Triomphe. Signature `radar-routine-claude` posée avant chaque commit. Journal
-privé (lessons.md, ce compte rendu) à pousser à la suite.
+Commit `Passage : démarrage` poussé directement sur `main` en tout début de
+passe. Un second commit (purge, bascule de saison, correctif `gen_pages.py`,
+39 pages réparées) publié via `publier.sh` — `validate.py` : 0 bloqueur, 2
+avertissements (fiches denses connues, sous le seuil bloquant) — puis
+`git push origin main` réussi (aucun repli de branche nécessaire).
+`healthcheck.sh` : OK (326/326, date fraîche). Signature
+`radar-routine-claude` posée avant chaque commit. Journal privé
+(`lessons.md`, ce compte rendu, `passages.log`) à pousser à la suite.

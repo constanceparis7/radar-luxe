@@ -1209,3 +1209,37 @@ mélange dérive réelle et densité factuelle légitime — les deux n'appellen
    tout script de test de liens dans une session cloud, écrire les fichiers temporaires dans un
    dossier à plat à la racine du dépôt (ajouté au `.gitignore`), jamais dans un sous-dossier
    profond, et depuis un script Python unique plutôt qu'une boucle shell `for` avec redirections.
+
+## 23/09/2026 — un `FICHE_REDIRECTS` codé en dur fabriquait un lien mort dès que sa cible était purgée
+Passe de rattrapage (cadence rompue : la session du 22/09 avait démarré — `DEMARRAGE` dans
+`passages.log` — sans jamais finir ; seuls les deux commits automatiques sans IA du plancher et de
+la surveillance des liens sont partis ce jour-là, aucun compte rendu). Après la purge normale de 6
+zombies (`d2=2026-08-23`, >30 j), `validate.py`/`verrou.py` a bloqué la publication avec 39
+BLOQUEURS `V6` (lien interne cassé) sur les pages, dans les 13 langues, de deux événements : Hublot
+Polo Gold Cup Gstaad (44e édition) et le 47e Festival La Versiliana — tous deux venant d'être
+purgés.
+CAUSE : `gen_pages.py` porte un dictionnaire `FICHE_REDIRECTS` (créé le 17/09/2026 pour rediriger
+114 anciennes adresses de fiches vers leur nouveau slug après la normalisation des lieux) qui écrit
+inconditionnellement une page de redirection (`meta http-equiv="refresh"`) vers le NOUVEAU slug,
+sans jamais vérifier que ce slug correspond encore à une fiche vivante. Les deux événements
+purgés ce jour avaient une entrée dans ce dictionnaire dont la cible ("...-gstaad.html",
+"...-marina-di-pietrasanta.html", sans le suffixe de désambiguïsation) n'a en réalité jamais été
+générée comme page réelle — un slug fantôme depuis la création du dictionnaire lui-même,
+resté invisible tant que les fiches vivaient encore (personne ne clique sur une redirection dont
+la fiche existe par ailleurs sous son vrai nom) et rendu visible seulement le jour où la fiche a
+disparu du site et où plus aucune page ne pouvait accidentellement occuper ce chemin.
+CORRIGÉ à la source : `gen_pages.py` calcule désormais `_slugs_vivants` (l'ensemble des `_slug`
+de `pages`, la liste des fiches réellement en ligne) et ne pointe la redirection vers le nouveau
+slug QUE s'il appartient à cet ensemble ; sinon elle renvoie vers `/[<lang>/]evenements.html`, une
+page qui existe toujours. Les 39 pages cassées ont d'abord été rustinées à la main (pour publier
+sans attendre), puis regénérées correctement une fois le correctif posé dans l'outil — la
+rustine à la main aurait été écrasée dès la prochaine régénération si le correctif de fond n'avait
+pas suivi (vérifié : `gen_pages.py` régénère bien ces pages inconditionnellement à chaque passage,
+ce n'est PAS un mode « ajout pur » pour cette famille de fichiers).
+RÈGLE GÉNÉRALE : toute redirection codée en dur vers un slug qui vit dans les DONNÉES (pas dans le
+code) doit vérifier l'existence de sa cible au moment de la génération plutôt que de faire confiance
+au dictionnaire — les données changent (purge, renommage), le dictionnaire de redirection, lui,
+ne se corrige jamais tout seul. Corollaire à surveiller : `LIEU_REDIRECTS` (même fichier, même
+patron) n'a pas ce garde-fou non plus ; il est protégé pour l'instant par le fait qu'une page de
+lieu n'est jamais purgée comme une fiche d'événement, mais mérite le même traitement si un lieu
+venait à disparaître du site.
