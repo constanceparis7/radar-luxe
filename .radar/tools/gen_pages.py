@@ -781,6 +781,15 @@ def main():
     # Anciennes adresses de FICHES (la ville entre dans le slug) rendues 404 par la
     # normalisation des lieux du 17/09/2026 : 114 URL en 404 vues dans Search Console.
     FICHE_REDIRECTS = {
+     "reouverture-d-hiver-du-kulm-hotel-st-moritz-saint-moritz": "reouverture-d-hiver-du-kulm-hotel-saint-moritz-saint-moritz",
+     "42e-snow-polo-world-cup-st-moritz-saint-moritz": "42e-snow-polo-world-cup-saint-moritz-saint-moritz",
+     "the-i-c-e-international-concours-of-elegance-st-moritz-saint-mor": "the-i-c-e-international-concours-of-elegance-saint-moritz-saint",
+     "120e-white-turf-st-moritz-courses-sur-le-lac-gele-saint-moritz": "120e-white-turf-saint-moritz-courses-sur-le-lac-gele-saint-morit",
+     "st-barth-gourmet-festival-13e-edition-saint-barthelemy": "saint-barth-gourmet-festival-13e-edition-saint-barthelemy",
+     "reveillon-nikki-beach-st-barth-paradisco-saint-barthelemy": "reveillon-nikki-beach-saint-barth-paradisco-saint-barthelemy",
+     "reveillon-d-eden-rock-st-barths-diner-de-gala-et-soiree-dansante": "reveillon-d-eden-rock-saint-barth-diner-de-gala-et-soiree-dansan",
+     "st-barth-music-festival-43e-edition-gustavia": "saint-barth-music-festival-43e-edition-gustavia",
+     "st-barths-bucket-regatta-2027-gustavia": "saint-barth-bucket-regatta-2027-gustavia",
      "120e-white-turf-st-moritz-courses-sur-le-lac-gele-st-moritz": "120e-white-turf-st-moritz-courses-sur-le-lac-gele-saint-moritz",
      "133-abierto-del-hurlingham-club-hurlingham-gran-buenos-aires": "133-abierto-del-hurlingham-club-hurlingham",
      "42e-snow-polo-world-cup-st-moritz-st-moritz": "42e-snow-polo-world-cup-st-moritz-saint-moritz",
@@ -1401,7 +1410,7 @@ L'éditrice n'exerce aucun contrôle sur ces sites et décline toute responsabil
      {"slug": "le-reveillon-des-palaces",
       "noms": ["Gala du Nouvel An du Badrutt's Palace",
                "Réouverture d'hiver du Gstaad Palace et Gala du Nouvel An",
-               "Réveillon d'Eden Rock, St Barths (dîner de gala et soirée dansante)",
+               "Réveillon d'Eden Rock, Saint-Barth (dîner de gala et soirée dansante)",
                "Dîner de gala du Réveillon au Cheval Blanc St-Barth Isle de France",
                "Réveillon de la Saint-Sylvestre à La Mamounia",
                "Réveillon du Nouvel An au Royal Mansour Marrakech",

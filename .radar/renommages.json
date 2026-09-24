@@ -1540,5 +1540,59 @@
   "apres": "Les Grimaldines, 23e édition",
   "date": "2026-08-22",
   "motif": "Fusion de doublon du 22/08/2026. La mention « (soirées de juillet) » était fausse : la fiche portait déjà d1=2026-07-21 et d2=2026-08-11, donc les quatre mardis du festival, dont deux en août. Un titre sans mention de mois évite de rejouer la scission qu'on vient de défaire. L'ancienne adresse de page disparaît : coût assumé sur une fiche dont le festival s'est achevé le 11 août."
+ },
+ {
+  "avant": "Réouverture d'hiver du Kulm Hotel St. Moritz",
+  "apres": "Réouverture d'hiver du Kulm Hotel Saint-Moritz",
+  "date": "2026-09-24",
+  "motif": "Normalisation de la graphie du lieu, décision du 20/09/2026 (cohérence éditoriale, point 28 du registre) : « St. Moritz »/« St Barth(s) » deviennent « Saint-Moritz »/« Saint-Barth » dans les champs français, comme déjà fait pour Monte-Carlo et Saint-Tropez le 20/09. Contenu, dates et adresse identiques ; seule l'orthographe du nom du lieu change. La fonction slugify écrase la ponctuation : l'URL change ici (espace/point supprimés au profit d'un trait d'union), donc une redirection existe depuis l'ancienne adresse."
+ },
+ {
+  "avant": "42e Snow Polo World Cup St. Moritz",
+  "apres": "42e Snow Polo World Cup Saint-Moritz",
+  "date": "2026-09-24",
+  "motif": "Normalisation de la graphie du lieu, décision du 20/09/2026 (cohérence éditoriale, point 28 du registre) : « St. Moritz »/« St Barth(s) » deviennent « Saint-Moritz »/« Saint-Barth » dans les champs français, comme déjà fait pour Monte-Carlo et Saint-Tropez le 20/09. Contenu, dates et adresse identiques ; seule l'orthographe du nom du lieu change. La fonction slugify écrase la ponctuation : l'URL change ici (espace/point supprimés au profit d'un trait d'union), donc une redirection existe depuis l'ancienne adresse."
+ },
+ {
+  "avant": "The I.C.E., International Concours of Elegance St. Moritz",
+  "apres": "The I.C.E., International Concours of Elegance Saint-Moritz",
+  "date": "2026-09-24",
+  "motif": "Normalisation de la graphie du lieu, décision du 20/09/2026 (cohérence éditoriale, point 28 du registre) : « St. Moritz »/« St Barth(s) » deviennent « Saint-Moritz »/« Saint-Barth » dans les champs français, comme déjà fait pour Monte-Carlo et Saint-Tropez le 20/09. Contenu, dates et adresse identiques ; seule l'orthographe du nom du lieu change. La fonction slugify écrase la ponctuation : l'URL change ici (espace/point supprimés au profit d'un trait d'union), donc une redirection existe depuis l'ancienne adresse."
+ },
+ {
+  "avant": "120e White Turf St. Moritz, courses sur le lac gelé",
+  "apres": "120e White Turf Saint-Moritz, courses sur le lac gelé",
+  "date": "2026-09-24",
+  "motif": "Normalisation de la graphie du lieu, décision du 20/09/2026 (cohérence éditoriale, point 28 du registre) : « St. Moritz »/« St Barth(s) » deviennent « Saint-Moritz »/« Saint-Barth » dans les champs français, comme déjà fait pour Monte-Carlo et Saint-Tropez le 20/09. Contenu, dates et adresse identiques ; seule l'orthographe du nom du lieu change. La fonction slugify écrase la ponctuation : l'URL change ici (espace/point supprimés au profit d'un trait d'union), donc une redirection existe depuis l'ancienne adresse."
+ },
+ {
+  "avant": "St Barth Gourmet Festival, 13e édition",
+  "apres": "Saint-Barth Gourmet Festival, 13e édition",
+  "date": "2026-09-24",
+  "motif": "Normalisation de la graphie du lieu, décision du 20/09/2026 (cohérence éditoriale, point 28 du registre) : « St. Moritz »/« St Barth(s) » deviennent « Saint-Moritz »/« Saint-Barth » dans les champs français, comme déjà fait pour Monte-Carlo et Saint-Tropez le 20/09. Contenu, dates et adresse identiques ; seule l'orthographe du nom du lieu change. La fonction slugify écrase la ponctuation : l'URL change ici (espace/point supprimés au profit d'un trait d'union), donc une redirection existe depuis l'ancienne adresse."
+ },
+ {
+  "avant": "Réveillon Nikki Beach St Barth, « Paradisco »",
+  "apres": "Réveillon Nikki Beach Saint-Barth, « Paradisco »",
+  "date": "2026-09-24",
+  "motif": "Normalisation de la graphie du lieu, décision du 20/09/2026 (cohérence éditoriale, point 28 du registre) : « St. Moritz »/« St Barth(s) » deviennent « Saint-Moritz »/« Saint-Barth » dans les champs français, comme déjà fait pour Monte-Carlo et Saint-Tropez le 20/09. Contenu, dates et adresse identiques ; seule l'orthographe du nom du lieu change. La fonction slugify écrase la ponctuation : l'URL change ici (espace/point supprimés au profit d'un trait d'union), donc une redirection existe depuis l'ancienne adresse."
+ },
+ {
+  "avant": "Réveillon d'Eden Rock, St Barths (dîner de gala et soirée dansante)",
+  "apres": "Réveillon d'Eden Rock, Saint-Barth (dîner de gala et soirée dansante)",
+  "date": "2026-09-24",
+  "motif": "Normalisation de la graphie du lieu, décision du 20/09/2026 (cohérence éditoriale, point 28 du registre) : « St. Moritz »/« St Barth(s) » deviennent « Saint-Moritz »/« Saint-Barth » dans les champs français, comme déjà fait pour Monte-Carlo et Saint-Tropez le 20/09. Contenu, dates et adresse identiques ; seule l'orthographe du nom du lieu change. La fonction slugify écrase la ponctuation : l'URL change ici (espace/point supprimés au profit d'un trait d'union), donc une redirection existe depuis l'ancienne adresse."
+ },
+ {
+  "avant": "St Barth Music Festival, 43e édition",
+  "apres": "Saint-Barth Music Festival, 43e édition",
+  "date": "2026-09-24",
+  "motif": "Normalisation de la graphie du lieu, décision du 20/09/2026 (cohérence éditoriale, point 28 du registre) : « St. Moritz »/« St Barth(s) » deviennent « Saint-Moritz »/« Saint-Barth » dans les champs français, comme déjà fait pour Monte-Carlo et Saint-Tropez le 20/09. Contenu, dates et adresse identiques ; seule l'orthographe du nom du lieu change. La fonction slugify écrase la ponctuation : l'URL change ici (espace/point supprimés au profit d'un trait d'union), donc une redirection existe depuis l'ancienne adresse."
+ },
+ {
+  "avant": "St Barths Bucket Regatta 2027",
+  "apres": "Saint-Barth Bucket Regatta 2027",
+  "date": "2026-09-24",
+  "motif": "Normalisation de la graphie du lieu, décision du 20/09/2026 (cohérence éditoriale, point 28 du registre) : « St. Moritz »/« St Barth(s) » deviennent « Saint-Moritz »/« Saint-Barth » dans les champs français, comme déjà fait pour Monte-Carlo et Saint-Tropez le 20/09. Contenu, dates et adresse identiques ; seule l'orthographe du nom du lieu change. La fonction slugify écrase la ponctuation : l'URL change ici (espace/point supprimés au profit d'un trait d'union), donc une redirection existe depuis l'ancienne adresse."
  }
 ]
