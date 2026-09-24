@@ -108,9 +108,13 @@ de chaque correction, et le verrou final est un validateur de build BLOQUANT.
 
 ## P2 : confort
 
-28. [EN COURS 20/09] Graphies françaises normalisées (Monte-Carlo, Saint-Tropez) ; marque
-    déjà uniforme ; heures 19h30 en français et 19:30 dans les traductions, par règle.
-    Reste : vocabulaire confirmé/probable/à vérifier à harmoniser.
+28. [FAIT 24/09] Graphies normalisées (Monte-Carlo, Saint-Tropez, Saint-Moritz, Saint-Barth,
+    9 fiches renommées avec redirection). Tirets longs (– et —) interdits par Constance :
+    purge exhaustive le 24/09, plus de 10 600 corrections retrouvées dans les traductions
+    imbriquées et le bandeau d'interface (jamais couverts par les passes du 20-21/08, qui
+    n'avaient traité que les titres) — 0 restant dans le contenu publié des 13 langues,
+    vérifié en ligne. Reste, mineur : vocabulaire confirmé/probable/à vérifier, format des
+    prix et des heures, à harmoniser si un nouveau signal le justifie.
 29. [EN COURS 20/09 : favoris, recherche 13 langues, carte du moment] États vides : aucun favori, aucun résultat, fiche retirée, hors connexion.
 30. [EN COURS 20/09 : og + cartes Twitter partout] Aperçus sociaux : og/twitter par page, rendu WhatsApp/iMessage/LinkedIn,
     impression propre des fiches.
