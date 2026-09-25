@@ -1004,6 +1004,9 @@ header.mast{display:none}
     return '✦'.repeat(n);
   }
 
+  // Recherche insensible aux accents : « Cote » doit trouver « Côte », sans clavier
+  // à accents ni normalisation à faire par le visiteur.
+  function sansAccents(s){ return (s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, ''); }
   function match(e){
     if (state.zone !== 'tous' && e.z !== state.zone) return false;
     if (state.cat !== 'tous' && e.c !== state.cat) return false;
@@ -1011,7 +1014,7 @@ header.mast{display:none}
     if (state.statut !== 'tous' && statut(e) !== state.statut) return false;
     if (state.day && !(e.d1 <= state.day && state.day <= e.d2)) return false;
     if (state.q){
-      const hay = (e.n+' '+e.v+' '+e.l+' '+e.ds+' '+e.pe+' '+e.g+' '+e.ci).toLowerCase();
+      const hay = sansAccents((e.n+' '+e.v+' '+e.l+' '+e.ds+' '+e.pe+' '+e.g+' '+e.ci).toLowerCase());
       if (!hay.includes(state.q)) return false;
     }
     return true;
@@ -1368,7 +1371,7 @@ header.mast{display:none}
     chipRow('f-statut', STATUTS, 's');
   }
   document.getElementById('q').addEventListener('input', ev => {
-    state.q = ev.target.value.trim().toLowerCase();
+    state.q = sansAccents(ev.target.value.trim().toLowerCase());
     renderAgenda(); renderContinu(); renderNow(); renderCal(); renderPrestige(); renderCountdown(); renderToday();
   });
 
