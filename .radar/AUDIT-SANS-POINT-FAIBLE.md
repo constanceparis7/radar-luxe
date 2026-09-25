@@ -80,8 +80,15 @@ de chaque correction, et le verrou final est un validateur de build BLOQUANT.
 18. [FAIT 18/09, vérifié] Toutes les lectures et écritures localStorage sont sous
     try/catch (fiches, accueil, page favoris) ; un slug disparu est simplement
     ignoré par la page favoris ; un échec de stockage n'empêche rien d'autre.
-19. [À FAIRE] Recherche : accents, apostrophes typographiques, CJK/arabe/cyrillique,
-    entrées longues, emojis, HTML échappé (jamais d'injection).
+19. [FAIT 25/09] Recherche testée en direct sur le site publié : injection HTML/script
+    bloquée (img onerror, script, svg onload — aucune exécution, aucune balise brute
+    dans le rendu) ; CJK, arabe, cyrillique, emojis et 6 000 caractères ne cassent rien
+    (résultat vide, honnête, aucune erreur console). Un vrai défaut trouvé et corrigé le
+    25/09 : la recherche était sensible aux accents (« Cote » ne trouvait pas « Côte »,
+    15 résultats contre 0) ; normalisation Unicode NFD posée sur la requête et le texte
+    cherché, vérifiée avant et après publication (Cote/COTE/Côte/cÔtE donnent maintenant
+    tous 15). Reste : apostrophes typographiques (moins prioritaire, la recherche ne
+    porte déjà pas sur les libellés de zone où elles apparaissent).
 20. [À FAIRE] Dates et fuseaux : minuit, été/hiver, événement NY vu de Tokyo, 29 février ;
     définir et documenter le fuseau de référence d'« aujourd'hui ».
 

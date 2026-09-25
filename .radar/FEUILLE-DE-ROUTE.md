@@ -63,13 +63,16 @@ reste dérisoire pour un million de visiteurs par jour.
 Légende : [100] fait · [50] à moitié · [0] à faire. Le taux d'un objectif est la
 moyenne de ses micro-objectifs.
 
-### O1 · Fondations sans point faible (registre de l'audit croisé) · 78 %
+### O1 · Fondations sans point faible (registre de l'audit croisé) · 80 %
 - [100] Verrou de build bloquant sur les 7 876 pages, 13 langues
 - [100] Compteurs réconciliés et expliqués
 - [100] Redirections des anciennes adresses (lieux et fiches)
 - [100] Français résiduel traduit dans les 12 langues
 - [100] Métadonnées saisonnières purgées, titres « None » réparés
-- [80]  Échappement et injection (recherche, favoris, JS)
+- [95]  Échappement et injection (recherche, favoris, JS) : testé en direct le 25/09,
+        injection HTML/script bloquée, script CJK/arabe/cyrillique/emoji/entrées très
+        longues sans casse ; défaut trouvé et corrigé (recherche insensible aux accents
+        depuis le 25/09, « Cote » trouve « Côte »)
 - [30]  Cannibalisation entre langues (hreflang sitemap posé, matrice à faire)
 - [70]  États vides : aucun favori (page), aucun résultat (recherche, 13 langues), carte
         du moment cachée si indisponible ; reste le mode hors connexion
