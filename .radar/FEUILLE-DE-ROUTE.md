@@ -99,12 +99,14 @@ moyenne de ses micro-objectifs.
 - [0]   En-têtes de sécurité (dépend de Cloudflare devant)
 - [0]   Newsletter : double opt-in, anti-spam, désinscription (samedi 20/09)
 
-### O2 · Infrastructure (périmètre GitHub Pages) · 60 %
+### O2 · Infrastructure (périmètre GitHub Pages) · 68 %
 - [100] HTTPS forcé, http et www redirigés
 - [100] Réseau de diffusion mondial (Fastly via GitHub Pages, cache 10 minutes)
 - [100] Redirections des anciennes adresses (178 pages de renvoi, le maximum possible ici)
 - [50]  Surveillance de disponibilité (sonde du matin ; sonde 24 h en cours)
-- [0]   Équivalents statiques des en-têtes (CSP en balise meta, referrer en meta)
+- [100] Équivalents statiques des en-têtes : CSP et referrer en balise meta sur toutes
+        les pages (25/09), testés avant et après publication ; HSTS, nosniff et
+        frame-ancestors restent hors de portée sans Cloudflare devant le site
 - [0]   Empreintes de version sur les ressources (photo, JSON) pour un cache long côté navigateur
 - [hors périmètre] Cloudflare devant, en-têtes HTTP, vrais 301, HTTP/3, Cloudflare Pages, R2, Workers, D1
 
@@ -176,7 +178,7 @@ les textes de séjour (1 088 Ko) et les journaux d'enquête (619 Ko). Une fiche
 - [0]   Site installable et consultable hors connexion (PWA)
 - [0]   Impression propre des fiches
 
-### O7 · Confiance, sécurité, conformité · 55 %
+### O7 · Confiance, sécurité, conformité · 60 %
 - [100] HTTPS, zéro cookie, zéro donnée collectée
 - [100] Aucun fichier de travail en ligne, aucun secret dans le code
 - [100] Sonde quotidienne du site en ligne

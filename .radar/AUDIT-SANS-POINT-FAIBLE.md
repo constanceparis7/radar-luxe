@@ -130,9 +130,20 @@ de chaque correction, et le verrou final est un validateur de build BLOQUANT.
     lecteur d'écran, noms des symboles ◐ et →, le saut de niveau de titre h2→h4.
 24. [EN COURS 20/09, rendu vérifié à 375 et 320 px, bogue du lien d'évitement corrigé] RTL arabe (nombres/dates isolés, flèches, fil d'Ariane) et CJK
     (polices, coupures, pas de troncature au compte de caractères latins).
-25. [À FAIRE] En-têtes HTTP : HSTS, CSP (en mode rapport d'abord), nosniff,
-    Referrer-Policy, frame-ancestors. Limite : GitHub Pages ne permet pas tout,
-    documenter ce qui est hors de portée.
+25. [FAIT 25/09, dans la limite du possible sans Cloudflare] En-têtes de sécurité :
+    Content-Security-Policy et Referrer-Policy posées en balise <meta> sur toutes les
+    pages (le site n'a aucun en-tête HTTP configurable sur GitHub Pages). La CSP
+    restreint script/style/police/image/appel réseau aux origines nécessaires (le site
+    lui-même et GoatCounter) ; script-src et style-src gardent 'unsafe-inline' car tout
+    le site est un fichier autonome sans serveur pour générer un nonce par page — gain
+    réel malgré tout : bloque le chargement de toute ressource distante non listée.
+    Testé avant publication sur un serveur local propre (recherche, filtres, thème,
+    favoris, changement de langue, page arabe) : aucune violation, aucune erreur
+    console ; revérifié en direct sur constanceparis7.com après publication.
+    HORS DE PORTÉE sans Cloudflare devant le site (balise <meta> ignorée par la
+    spec pour ces cas) : HSTS, nosniff (X-Content-Type-Options), frame-ancestors
+    (protection anti-clickjacking), un CSP en vrai mode rapport (report-only), des
+    nonces par page. Ne pas les croire posés tant que Cloudflare n'est pas devant.
 26. [Politique de confidentialité FAITE le 25/09, reste la newsletter] Politique de
     confidentialité publiée en page dédiée le 25/09 (reprend et complète la section déjà
     écrite des mentions légales), liée depuis le pied de page de tout le site. Reste,
