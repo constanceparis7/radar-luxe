@@ -125,8 +125,9 @@ de chaque correction, et le verrou final est un validateur de build BLOQUANT.
     vers h4) sous Classement Prestige, mineur, toujours ouvert. Contraste des deux thèmes
     mesuré en direct le 25/09 (formule WCAG, texte réel sur fond réel) : thème sombre
     6,41 à 19,19 pour 1, thème clair 5,78 à 15,96 pour 1 ; largement au-dessus du seuil de
-    4,5 pour 1 partout testé. Reste : labels des selects, un vrai passage au lecteur
-    d'écran, noms des symboles ◐ et →, le saut de niveau de titre h2→h4.
+    4,5 pour 1 partout testé. Vérifié aussi le 25/09 : le seul select de l'accueil (langue)
+    porte déjà un aria-label (« Langue ») ; rien à corriger là. Reste : un vrai passage au
+    lecteur d'écran, noms des symboles ◐ et →, le saut de niveau de titre h2→h4.
 24. [EN COURS 20/09, rendu vérifié à 375 et 320 px, bogue du lien d'évitement corrigé] RTL arabe (nombres/dates isolés, flèches, fil d'Ariane) et CJK
     (polices, coupures, pas de troncature au compte de caractères latins).
 25. [À FAIRE] En-têtes HTTP : HSTS, CSP (en mode rapport d'abord), nosniff,
