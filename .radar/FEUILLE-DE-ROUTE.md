@@ -84,9 +84,12 @@ moyenne de ses micro-objectifs.
 - [90]  Cohérence éditoriale : graphies normalisées (Monte-Carlo, Saint-Tropez, Saint-Moritz,
         Saint-Barth) ; tirets longs interdits purgés du site entier le 24/09 (plus de 10 600
         corrections, 13 langues, vérifié en ligne) ; reste le vocabulaire des doutes, mineur
-- [85]  Accessibilité : lien d'évitement, <main>, focus visible, coeurs nommés, contrastes
+- [88]  Accessibilité : lien d'évitement, <main>, focus visible, coeurs nommés, contrastes
         vérifiés, commandes symboliques (thème, langue, flèche) nommées en 13 langues
-        (20/09) ; reste le test au lecteur d'écran
+        (20/09) ; audit structurel par arbre d'accessibilité le 25/09 (1 seul h1, 0 image
+        sans alt, landmarks propres) : un vrai défaut trouvé et documenté (bouton favori
+        niché dans 217 titres de cartes, tâche séparée créée) ; reste un vrai passage au
+        lecteur d'écran et la correction de ce défaut
 - [70]  Arabe de droite à gauche et langues CJK contrôlés à l'écran le 20/09 : rendu
         correct, et un vrai bogue attrapé (le lien d'évitement décalait toute la page
         arabe hors de l'écran) ; reste les flèches directionnelles et la ponctuation mixte

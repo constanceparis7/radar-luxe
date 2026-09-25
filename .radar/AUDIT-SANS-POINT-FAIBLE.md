@@ -98,9 +98,21 @@ de chaque correction, et le verrou final est un validateur de build BLOQUANT.
     débordement horizontal ni élément fixe piégé. Reste : cibles tactiles de 44 px, et le
     zoom 200 % à vérifier avec un vrai zoom (l'essai au zoom CSS simulé du 25/09 n'était
     pas fiable).
-23. [EN COURS 20/09] Posé : lien d'évitement, landmark main, focus visible, aria-label sur
-    les coeurs, reduced-motion (déjà). Reste : contraste des deux thèmes, labels des
-    selects, test lecteur d'écran, noms des symboles ◐ et →.
+23. [EN COURS 25/09] Posé : lien d'évitement, landmark main, focus visible, aria-label sur
+    les coeurs, reduced-motion (déjà). Audit structurel par arbre d'accessibilité le 25/09
+    (accueil, pas un vrai passage VoiceOver/NVDA) : un seul h1, zéro image sans alt (le site
+    n'utilise aucune balise img, la photo d'accueil est en fond CSS), landmarks propres
+    (main, header, nav Catégories/Explorer/Filtres, footer), lien d'évitement fonctionnel.
+    Un vrai défaut trouvé : le bouton coeur (♡, .fav-mini) est niché À L'INTÉRIEUR du titre
+    (h1 à h6) sur les 217 cartes d'événements de l'accueil (et vraisemblablement sur les
+    fiches et les listes, même patron) ; un lecteur d'écran qui saute de titre en titre
+    risque d'annoncer « Favoris » à la suite du nom de l'événement. Correctif identifié
+    (sortir le bouton du titre, l'en rendre frère) mais pas appliqué : le patron est
+    répété sur des dizaines de gabarits (index-full.html et gen_pages.py), donc à traiter
+    à part, pas dans cette passe. Signalé aussi : un saut de niveau de titre (h2 direct
+    vers h4) sous Classement Prestige, mineur. Reste : contraste des deux thèmes, labels
+    des selects, un vrai passage au lecteur d'écran, noms des symboles ◐ et →, correction
+    du bouton coeur niché dans les titres.
 24. [EN COURS 20/09, rendu vérifié à 375 et 320 px, bogue du lien d'évitement corrigé] RTL arabe (nombres/dates isolés, flèches, fil d'Ariane) et CJK
     (polices, coupures, pas de troncature au compte de caractères latins).
 25. [À FAIRE] En-têtes HTTP : HSTS, CSP (en mode rapport d'abord), nosniff,
