@@ -109,16 +109,24 @@ de chaque correction, et le verrou final est un validateur de build BLOQUANT.
     (accueil, pas un vrai passage VoiceOver/NVDA) : un seul h1, zéro image sans alt (le site
     n'utilise aucune balise img, la photo d'accueil est en fond CSS), landmarks propres
     (main, header, nav Catégories/Explorer/Filtres, footer), lien d'évitement fonctionnel.
-    Un vrai défaut trouvé : le bouton coeur (♡, .fav-mini) est niché À L'INTÉRIEUR du titre
-    (h1 à h6) sur les 217 cartes d'événements de l'accueil (et vraisemblablement sur les
-    fiches et les listes, même patron) ; un lecteur d'écran qui saute de titre en titre
-    risque d'annoncer « Favoris » à la suite du nom de l'événement. Correctif identifié
-    (sortir le bouton du titre, l'en rendre frère) mais pas appliqué : le patron est
-    répété sur des dizaines de gabarits (index-full.html et gen_pages.py), donc à traiter
-    à part, pas dans cette passe. Signalé aussi : un saut de niveau de titre (h2 direct
-    vers h4) sous Classement Prestige, mineur. Reste : contraste des deux thèmes, labels
-    des selects, un vrai passage au lecteur d'écran, noms des symboles ◐ et →, correction
-    du bouton coeur niché dans les titres.
+    [CORRIGÉ 25/09] Un vrai défaut trouvé : le bouton coeur (♡, .fav-mini) était niché
+    À L'INTÉRIEUR du titre (h1 à h6) sur les 217 cartes d'événements de l'accueil
+    (evCard() et renderPrestige(), les deux dans index-full.html) ; un lecteur d'écran
+    qui saute de titre en titre risquait d'annoncer « Favoris » à la suite du nom de
+    l'événement. Corrigé : bouton sorti du titre, rendu frère juste après la balise
+    fermante (<h4 class="t">Titre</h4> <button class="fav-mini">…), CSS .ev .t passé en
+    display:inline-block pour garder le coeur visuellement à côté du titre (même ligne,
+    ou juste après si le titre est long) — rendu, bascule favoris/défavoris et absence
+    d'erreur console vérifiés au navigateur avant publication (217 → 0 occurrences
+    nichées). Vérification faite sur gen_pages.py (fiches individuelles, pages de liste,
+    accueils par langue) : PAS le même patron, le bouton y est déjà frère de l'ancre du
+    titre plutôt qu'enfant d'un h1-h6 — aucune correction nécessaire là, fausse piste de
+    l'audit initial écartée. Signalé aussi : un saut de niveau de titre (h2 direct
+    vers h4) sous Classement Prestige, mineur, toujours ouvert. Contraste des deux thèmes
+    mesuré en direct le 25/09 (formule WCAG, texte réel sur fond réel) : thème sombre
+    6,41 à 19,19 pour 1, thème clair 5,78 à 15,96 pour 1 ; largement au-dessus du seuil de
+    4,5 pour 1 partout testé. Reste : labels des selects, un vrai passage au lecteur
+    d'écran, noms des symboles ◐ et →, le saut de niveau de titre h2→h4.
 24. [EN COURS 20/09, rendu vérifié à 375 et 320 px, bogue du lien d'évitement corrigé] RTL arabe (nombres/dates isolés, flèches, fil d'Ariane) et CJK
     (polices, coupures, pas de troncature au compte de caractères latins).
 25. [À FAIRE] En-têtes HTTP : HSTS, CSP (en mode rapport d'abord), nosniff,
