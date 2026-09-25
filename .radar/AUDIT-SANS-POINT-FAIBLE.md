@@ -93,9 +93,15 @@ de chaque correction, et le verrou final est un validateur de build BLOQUANT.
     affichage). Mesure de repli en 3G simulée le 25/09 : DOM prêt 590 ms, chargement
     complet 886 ms, aucun décalage de mise en page. [Reste : LCP/INP/CLS exacts, bloqués
     par le quota PageSpeed ; JSON-LD en liste, écarté (gain jugé trop faible).]
-22. [EN COURS 25/09 : 320/375/390, paysage et clavier ouvert propres] Petits écrans :
-    320/360/390 px, paysage (812×375) et clavier ouvert (hauteur réduite) contrôlés sans
-    débordement horizontal ni élément fixe piégé. Reste : cibles tactiles de 44 px, et le
+22. [EN COURS 25/09 : 320/375/390, paysage, clavier ouvert et cibles tactiles propres]
+    Petits écrans : 320/360/390 px, paysage (812×375) et clavier ouvert (hauteur réduite)
+    contrôlés sans débordement horizontal ni élément fixe piégé. Cibles tactiles portées à
+    44 px le 25/09 (bouton thème, sélecteur de langue, les deux champs de recherche, liens
+    de catégories, bouton de filtres, crédit Instagram, flèche « voir plus ») par un cadre
+    invisible élargi (padding + box-sizing), sans rien changer à l'apparence visible ;
+    vérifié en ligne, mesuré et à l'écran (33 cibles sous 44 px avant, 21 après ; les
+    restantes sont des puces de compte à rebours secondaires, volontairement laissées
+    compactes pour ne pas surcharger visuellement une rangée serrée). Reste : le
     zoom 200 % à vérifier avec un vrai zoom (l'essai au zoom CSS simulé du 25/09 n'était
     pas fiable).
 23. [EN COURS 25/09] Posé : lien d'évitement, landmark main, focus visible, aria-label sur

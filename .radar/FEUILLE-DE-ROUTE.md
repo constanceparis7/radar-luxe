@@ -105,7 +105,7 @@ moyenne de ses micro-objectifs.
 - [0]   Empreintes de version sur les ressources (photo, JSON) pour un cache long côté navigateur
 - [hors périmètre] Cloudflare devant, en-têtes HTTP, vrais 301, HTTP/3, Cloudflare Pages, R2, Workers, D1
 
-### O3 · Vitesse mobile, Android et iOS (PRIORITÉ ABSOLUE) · 80 %
+### O3 · Vitesse mobile, Android et iOS (PRIORITÉ ABSOLUE) · 83 %
 Mesure de référence du 18/09/2026 : un téléphone reçoit 820 Ko pour l'accueil
 (2 547 Ko bruts), plus 294 Ko de photo et 43 Ko d'index de recherche, soit environ
 1,15 Mo. Le poids vient de deux champs embarqués inutiles au premier affichage :
@@ -131,9 +131,11 @@ les textes de séjour (1 088 Ko) et les journaux d'enquête (619 Ko). Une fiche
 - [100] Rendu progressif des cartes (25/09) : les deux premiers jours s'affichent aussitôt,
         le reste par lots hors du fil principal (requestIdleCallback, repli iOS/Safari),
         recherche toujours instantanée, vérifié sans doublon ni erreur
-- [90]  Écrans de 320, 375 et 390 px contrôlés le 20/09 : plus aucun débordement horizontal
+- [95]  Écrans de 320, 375 et 390 px contrôlés le 20/09 : plus aucun débordement horizontal
         (accueil, fiches, hubs, arabe compris) ; paysage (812×375) et clavier ouvert (hauteur
-        réduite à 320 px) contrôlés le 25/09, propres l'un et l'autre ; le zoom 200 % reste
+        réduite à 320 px) contrôlés le 25/09, propres l'un et l'autre ; cibles tactiles
+        portées à 44 px le 25/09 (33 cibles sous la barre avant, 21 après, le reste des
+        puces secondaires laissées compactes) ; le zoom 200 % reste
         à vérifier proprement, l'essai du 25/09 n'était pas fiable (le zoom CSS simulé fausse
         les unités vw, contrairement au vrai zoom d'un téléphone ou d'un navigateur)
 - [100] Sitemap scindé par langue avec index (20/09) : 13 fichiers de 850 Ko au lieu d'un
