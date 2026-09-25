@@ -127,6 +127,22 @@ BASE = "https://constanceparis7.com"
 OG = f"{BASE}/og-image.png"
 TODAY = date.today().isoformat()
 
+# En-tête de sécurité statique (objectif O2/O7) : GitHub Pages ne sert aucun en-tête
+# HTTP configurable, donc pas de vrai Content-Security-Policy ni de X-Frame-Options —
+# seule la balise <meta> marche, et elle ignore frame-ancestors, sandbox et report-uri
+# (spec CSP). 'unsafe-inline' reste nécessaire pour script-src et style-src : tout le
+# site est un unique fichier autonome, script et style embarqués, sans build ni serveur
+# capable de générer un nonce par page. Le gain réel malgré tout : aucune ressource
+# (script, style, police, image, appel réseau) ne peut être chargée depuis un domaine
+# non listé, ce qui bloque une classe entière d'attaques par injection de ressource
+# distante, même si l'injection de script inline elle-même n'est pas couverte.
+CSP = ("default-src 'self'; script-src 'self' 'unsafe-inline' https://gc.zgo.at; "
+       "style-src 'self' 'unsafe-inline'; "
+       "img-src 'self' data: https://constanceparis7.goatcounter.com; "
+       "connect-src 'self' https://constanceparis7.goatcounter.com; "
+       "font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; "
+       "upgrade-insecure-requests")
+
 LANGS = ["fr", "en", "es", "it", "pt", "de", "ru", "ar", "zh", "ja", "ko", "hi", "tr"]
 RTL = {"ar"}
 CAT_I18N = {"art": "c_art", "mode": "c_mode", "artdevivre": "c_art2",
@@ -654,6 +670,8 @@ def main():
         return (
             f"<!doctype html><html lang=\"{lang}\"{dirattr}><head><meta charset=\"utf-8\">"
             "<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">"
+            f"<meta http-equiv=\"Content-Security-Policy\" content=\"{CSP}\">"
+            "<meta name=\"referrer\" content=\"strict-origin-when-cross-origin\">"
             f"<title>{esc(title)}</title><meta name=\"description\" content=\"{esc(desc)}\">"
             f"<link rel=\"canonical\" href=\"{canonical}\">{hreflang}"
             "<meta property=\"og:type\" content=\"website\">"
