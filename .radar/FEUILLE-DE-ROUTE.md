@@ -168,7 +168,7 @@ les textes de séjour (1 088 Ko) et les journaux d'enquête (619 Ko). Une fiche
 - [0]   Rendu à la volée au-delà de 850 événements (limite des 20 000 fichiers)
 - [0]   API publique JSON (partenaires, assistants d'IA, applications)
 
-### O5 · Visibilité organique mondiale · 55 %
+### O5 · Visibilité organique mondiale · 65 %
 - [100] Titres en forme de requêtes, 13 langues, mois courant automatique
 - [100] hreflang sur les pages et dans le sitemap
 - [100] 88 pages Questions FR et EN, balisage FAQ
@@ -176,7 +176,12 @@ les textes de séjour (1 088 Ko) et les journaux d'enquête (619 Ko). Une fiche
 - [50]  Résorption du cache Google (titres None, saison) : en cours
 - [100] JSON-LD Event propre (recalibré le 20/09)
 - [30]  Taux de clic des pages villes (mesure au bilan du 2/10)
-- [0]   Pages Questions dans les 11 autres langues
+- [90]  Pages Questions dans les 11 autres langues : 10 publiées le 26/09 (allemand,
+        espagnol, italien, portugais, russe, arabe, chinois, japonais, coréen, hindi),
+        44 questions chacune, vérifiées par un contrôle factuel indépendant par langue
+        qui a trouvé et fait corriger 20 défauts réels avant publication (ponctuation,
+        noms propres incohérents, gloses ajoutées) ; zéro tiret long, vérifié en ligne.
+        Reste le turc, l'agent a échoué après 6 tentatives, à relancer séparément
 - [0]   Matrice intention vers URL unique (Milan, PFW, Vogue World)
 - [0]   Liens entrants (en pause volontaire ; liste de 20 relais prête)
 
