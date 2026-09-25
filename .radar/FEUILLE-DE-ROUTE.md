@@ -99,7 +99,7 @@ moyenne de ses micro-objectifs.
 - [0]   En-têtes de sécurité (dépend de Cloudflare devant)
 - [0]   Newsletter : double opt-in, anti-spam, désinscription (samedi 20/09)
 
-### O2 · Infrastructure (périmètre GitHub Pages) · 68 %
+### O2 · Infrastructure (périmètre GitHub Pages) · 90 %
 - [100] HTTPS forcé, http et www redirigés
 - [100] Réseau de diffusion mondial (Fastly via GitHub Pages, cache 10 minutes)
 - [100] Redirections des anciennes adresses (178 pages de renvoi, le maximum possible ici)
@@ -107,7 +107,14 @@ moyenne de ses micro-objectifs.
 - [100] Équivalents statiques des en-têtes : CSP et referrer en balise meta sur toutes
         les pages (25/09), testés avant et après publication ; HSTS, nosniff et
         frame-ancestors restent hors de portée sans Cloudflare devant le site
-- [0]   Empreintes de version sur les ressources (photo, JSON) pour un cache long côté navigateur
+- [hors périmètre, vérifié 25/09] Empreintes de version pour un cache long côté
+        navigateur : GitHub Pages impose `cache-control: max-age=600` (10 minutes) sur
+        TOUT, y compris la photo d'accueil, sans aucun moyen de le changer par fichier
+        ou par balise ; un nom de fichier à empreinte recevrait le même en-tête. La
+        technique n'apporte donc rien ici (vérifié par une requête réelle sur la photo,
+        moment.json et un fichier i18n-data) ; les ETags présents limitent déjà le coût
+        au strict minimum (304 Non modifié) après les 10 minutes. À revoir seulement
+        si Cloudflare passe devant le site
 - [hors périmètre] Cloudflare devant, en-têtes HTTP, vrais 301, HTTP/3, Cloudflare Pages, R2, Workers, D1
 
 ### O3 · Vitesse mobile, Android et iOS (PRIORITÉ ABSOLUE) · 83 %
