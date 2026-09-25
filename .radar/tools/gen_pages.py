@@ -2258,6 +2258,19 @@ CSS = (
     "footer.site{border-top:1px solid #26313a;margin-top:34px;padding-top:16px;color:#8b9aa6;font-size:.85rem}"
     "[dir=rtl] .box ul{padding-left:0;padding-right:1.1em}[dir=rtl] .chips a{margin:4px 0 4px 4px}"
     "@media(max-width:520px){h1{font-size:1.4rem}.wrap{padding:16px 14px 48px}}"
+    # Impression propre (objectif O6) : la navigation et les commandes tactiles ne
+    # servent à rien sur papier ; les adresses des liens utiles (billetterie, carte,
+    # source), si.
+    "@media print{"
+    "header.site,.chips,footer.site,.skip,.fav-mini,.fav-head,.fav-nb{display:none!important}"
+    "body{background:#fff;color:#000}"
+    ".wrap{max-width:100%;padding:0}"
+    "a{color:#000;text-decoration:underline}"
+    "a[href^=\"http\"]:after{content:\" (\" attr(href) \")\";font-size:.78em;color:#333;word-break:break-all}"
+    "h1,h2.sub,.meta b,.brand{color:#000}"
+    ".box{background:#fff;border:1px solid #999}"
+    ".bc,.meta,.edition{color:#333}"
+    "}"
 )
 
 if __name__ == "__main__":
