@@ -1,110 +1,106 @@
-# Compte rendu — passe du 23/09/2026 (session cloud, rattrapage)
+# Compte rendu — passe du 25/09/2026 (session cloud)
 
-## Démarrage — anomalie de cadence
+## Démarrage
 
-`precheck.sh` a signalé une cadence rompue (dernier run journalisé il y a 47 h,
-> 30 h). Investigation : la session du 22/09 a bien démarré (`DEMARRAGE` dans
-`passages.log`) mais n'a jamais poussé de `FIN` ni de compte rendu — seuls les
-deux commits automatiques SANS IA (plancher `passe-quotidienne.yml` et
-`surveillance.yml`) sont partis ce jour-là. Cause de l'arrêt non identifiable
-depuis le dépôt (aucune trace d'erreur). Traité comme une passe de
-RATTRAPAGE complète, conformément à la doctrine. `.radar/DOCTRINE.md`,
-`.radar/PASSATION.md`, `.radar/REGLE-ALPHA.md` et `.radar/tools/lessons.md`
-(1 212 lignes) lus intégralement avant tout travail. Clone superficiel
-détecté et réparé (`git fetch --unshallow`).
+`.radar/DOCTRINE.md` (953 lignes), `.radar/PASSATION.md`, `.radar/REGLE-ALPHA.md`,
+`.radar/AUDIT-SANS-POINT-FAIBLE.md` et `.radar/tools/lessons.md` (1 246 lignes) lus
+intégralement avant tout travail. Trace de démarrage poussée directement sur `main`.
+Clone superficiel détecté et réparé (`git fetch --unshallow`, 674 commits récupérés).
+`precheck.sh` : verrou libre, arbre propre, aucune cadence rompue (dernier passage
+technique le 24/09 au soir — voir « anomalie » ci-dessous). `rebuild_full.py` :
+321 événements, 12 langues réinjectées, 0 orpheline.
 
-## Purge et bascule de saison
+## Constat sur la priorité annoncée (condensation des voies d'invitation)
 
-6 zombies purgés (fin 23/08/2026, > 30 j) : Exposition Générale (nouvelle
-Fondation), pop-up omakase Hatsune, 47e Festival La Versiliana, Prix Morny,
-Hublot Polo Gold Cup Gstaad (44e édition), Regata Palermo-Montecarlo (21e).
-332 → 326 événements. Liens des 118 événements les plus imminents retestés :
-aucun mort. Bascule automatique de saison confirmée : **Autumn 2026** (le
-badge et le titre indexé basculent tout seuls à l'équinoxe, `saison.py`) ;
-les trois clés saisonnières de l'interface (`brandsub`, `intl_p1`,
-`intl_p2`) ont été relues : leur contenu (« Septembre et octobre 2026 »)
-reste factuellement exact pour la période en cours, aucune réécriture
-nécessaire aujourd'hui — à surveiller quand novembre approchera.
+Le prompt de tâche décrit un arriéré de 255 fiches en dérive « journal d'enquête »
+(159 en fenêtre live), chiffre qui date de mi-août. L'historique du dépôt montre que
+ce chantier a été mené à son terme par les passes successives (10/09 : « 255 → 7
+candidats » ; puis reconfirmations quotidiennes à zéro dérive du 11/09 au 23/09).
+Vérification faite aujourd'hui plutôt que de me fier au chiffre du prompt :
+`validate.py` relève 11 fiches au-dessus du seuil de sélection (1 200 caractères
+sur `iv.o`/`iv.g`/`iv.w`, excédent total 4 192 caractères). Lecture intégrale de
+3 des plus longues (POINT D'ENTRÉE ventes aux enchères, Gstaad New Year Music
+Festival, Formula 1 Abu Dhabi) : dans les trois cas, l'excédent est fait de faits
+durs légitimes (noms, fonctions, téléphones, adresses, tarifs, dates de vente) sans
+aucune tournure d'enquêteur — exactement le motif déjà consigné les 20-21/08 et
+23/09 (« le seuil de sélection redétecte le travail bien fait »). **Aucune fiche
+condensée aujourd'hui : zéro dérive réelle constatée, comme lors des 13 dernières
+vérifications.**
 
-## Correctif de fond : redirections de fiches vers un slug purgé = lien mort
+## Entretien effectué
 
-La purge a fait apparaître 39 BLOQUEURS `V6` (lien interne cassé, 13 langues
-× 3 pages) : les pages des deux événements venant d'être purgés (Hublot Polo
-Gstaad, Versiliana) portaient chacune une ancienne redirection codée en dur
-dans `gen_pages.py` (`FICHE_REDIRECTS`, héritée de la normalisation des lieux
-du 17/09) vers un slug qui, en réalité, n'a **jamais** correspondu à une page
-réellement générée — un slug fantôme resté invisible tant que la fiche
-vivait sous son vrai nom. Corrigé à la source : `gen_pages.py` ne pointe
-plus qu'une redirection dont la cible correspond à une fiche encore vivante ;
-sinon elle renvoie vers le hub `evenements.html` de la langue. Détail et
-règle générale consignés dans `lessons.md`. `validate.py` : 0 bloqueur après
-correctif.
-
-## Priorité du moment : condensation des voies d'invitation
-
-Chantier en mode ENTRETIEN depuis le 21/09 (dernière lecture exhaustive :
-zéro dérive réelle). Contrôle de non-régression ce jour : détecteur
-automatique (motifs de dérive + sous-chaîne dupliquée > 60 car. entre
-`iv.o`/`iv.g`/`iv.w`) sur les 76 fiches de la fenêtre live, puis lecture
-intégrale des 13 candidates relevées (Shop on the Corner Saint-Tropez,
-Negresco, Nikki Beach Ibiza, Loewe pop-up, Chaumet Vendôme, Amiri,
-Dior Saint-Tropez, Melbourne Cup, ventes Sotheby's et Christie's Genève,
-Fondazione Prada Venise, Airelles Courchevel, Alpina Gstaad). **Résultat :
-zéro dérive.** Tout l'excédent est de la densité factuelle légitime (noms,
-fonctions, e-mails professionnels, tarifs, horaires réels et nombreux par
-fiche) — y compris une phrase partagée entre deux champs de la fiche
-Sotheby's Genève (formalités d'enchère), simple répétition naturelle du
-sujet et non un artefact de rédaction. Conformément à la doctrine, aucune
-fiche n'a été retouchée pour ne pas dégrader du contenu déjà sain.
+- **Purge** : 0 zombie (`d2 < aujourd'hui-30j`, hors guides) — le plancher
+  automatique de 8h40 fait déjà ce travail chaque jour.
+- **Liens** : les 15 événements des 7 prochains jours retestés en `curl -sL`
+  (Voiles de Saint-Tropez, Fashion Week Paris et ses 6 portes d'accès, galas NYC/NY
+  Philharmonic, ventes Sotheby's Paris et Hong Kong, Caves du Roy, Global Gift Gala,
+  Doha Jewellery and Watches). 2 x 403 (site vu et refusé, donc vivant, règle du
+  12/08) ; 2 faux positifs de ma propre détection de « 404 caché dans un 200 »
+  (mot « oops » trouvé dans un nom propre et dans une chaîne d'interface générique,
+  vérifiés au corps de page). **0 lien mort.**
+- **Mémoire du radar** : `memoire.py changements` — 0 nouvelle date sur 7 jours.
+- **Bandeau Ouvertures & délais** : 3 entrées, aucune périmée (échéances 30/09,
+  15/10, 31/01/2027) — pas de nouvelle fenêtre datée trouvée à ajouter aujourd'hui.
+- **Eyebrow** : bloquée sur « 23 septembre » depuis 2 jours (la session du 24/09 a
+  travaillé sur le chantier technique Feuille de route — rendu progressif des
+  cartes O3, tirets purgés — sans lancer la passe de contenu quotidienne).
+  Corrigée à « 25 septembre 2026 ».
 
 ## État de la LOI DU SITE (iv + séjour + traductions)
 
-`reste.py` : traductions 326/326 (100 %), voies d'invitation 326/326
-(100 %), séjours 320/326 — les 6 manquants sont les fiches-guide `c=acces`,
-exemptées par la doctrine. **0 écart réel.** Joaillerie : 15 fiches en
-fenêtre live (plancher de 10 largement tenu). Bandeau Ouvertures & délais :
-3 entrées, aucune périmée (échéances 30/09, 15/10, 31/01/2027).
-`memoire.py changements` : 0 nouvelle date à consigner cette semaine.
-
-## Bascule de majorité (21/09/2026)
-
-Vérifiée sur pièces : `gen_pages.py` (constante `MAJORITE = 2026-09-21`) a
-bien basculé `mentions-legales.html` — la page ne nomme plus Gérald Lefebvre,
-elle indique que l'identité de la directrice de la publication n'est pas
-rendue publique (LCEN art. 6-III-2°) et a été communiquée à l'hébergeur.
-Bascule automatique confirmée fonctionnelle, sans intervention.
+`reste.py` : traductions 321/321 (100 %), voies d'invitation 321/321 (100 %),
+séjours 315/321 (100 % réel — les 6 manquants sont les 6 fiches-guide `c=acces`
+exemptées par la doctrine). **0 écart réel.** Joaillerie : 15 fiches en fenêtre
+live (plancher de 10 largement tenu). Guides d'accès (`c=acces`) : 16 en ligne.
+Les 8 ancres du printemps 2027 (TEFAF, Art Basel HK, Watches and Wonders, Salone
+del Mobile, Festival de Cannes, GemGenève, Grand Prix de Monaco, Royal Ascot)
+sont toutes publiées.
 
 ## Recherche de nouveaux événements
 
-Non entreprise cette passe : le temps disponible a été consacré au
-rattrapage de cadence, à la purge et au correctif de lien mort (bloquant
-pour toute publication), conformément à l'ordre de priorité de la doctrine
-(entretien et filet avant recherche). Rien de nouveau n'a donc été ajouté ;
-c'est un résultat honnête, pas un renoncement à la mission.
+Deux pistes de la doctrine (« élargir » le printemps/l'international) vérifiées à
+la source, sans ajout :
+- **Bal de la Rose Monaco** : le site officiel Monte-Carlo SBM n'affiche que
+  l'édition 2026 (21 mars, déjà passée, page marquée « Concluded »), aucune date
+  2027 publiée à ce jour. Confirme le constat du 06/09 (« date non publiable »).
+  Non ajouté — aucune date réelle à afficher.
+- **24 Heures du Mans 2027** (9-13 juin, dates officielles confirmées sur
+  24h-lemans.com) : la porte VIP existe (page hospitalité officielle) mais je n'ai
+  pas pu, en une passe solo sans vérification adverse, bâtir dans le temps imparti
+  un séjour du calibre exigé (palace/table iconique à proximité du circuit) ni un
+  contact d'invitation nominatif réellement publié. Conformément à la doctrine
+  (« au moindre doute, ne pas ajouter » / « mieux vaut ne rien publier que d'ajouter
+  du grand public déguisé »), non ajouté aujourd'hui — à reprendre lors d'une passe
+  disposant de plus de temps ou d'agents de vérification adverses.
 
-## Analyse des visites
-
-GoatCounter : 3 119 visiteurs/pages vues cumulés, contre 3 094 hier
-(22/09) et 3 000 avant-hier (21/09) — croissance qui se poursuit, palier 1
-de la feuille de route (35-100/jour), rien d'anormal.
-
-## Anomalies et non-fait
-
-- Cadence rompue le 22/09 (session interrompue sans trace d'erreur) —
-  signalé ci-dessus, sans action corrective possible au-delà du constat.
-- Search Console non consultée (pas d'accès direct dans cet outillage).
-- Recherche de nouveaux événements et guides d'accès non traitées cette
-  passe (voir ci-dessus).
-- Le chantier « Feuille de route » (O1-O9) n'a pas été touché : hors du
-  périmètre de la passe quotidienne de contenu.
+**Rien de digne trouvé à ajouter aujourd'hui au-delà de ce qui existe déjà : résultat
+honnête, pas un renoncement.**
 
 ## Publication
 
-Commit `Passage : démarrage` poussé directement sur `main` en tout début de
-passe. Un second commit (purge, bascule de saison, correctif `gen_pages.py`,
-39 pages réparées) publié via `publier.sh` — `validate.py` : 0 bloqueur, 2
-avertissements (fiches denses connues, sous le seuil bloquant) — puis
-`git push origin main` réussi (aucun repli de branche nécessaire).
-`healthcheck.sh` : OK (326/326, date fraîche). Signature
-`radar-routine-claude` posée avant chaque commit. Journal privé
-(`lessons.md`, ce compte rendu, `passages.log`) à pousser à la suite.
+`bash .radar/session/publier.sh` : `inject.py` (rien à récolter), `gen_ldjson.py`,
+`split_i18n.py --apply`, `gen_seo.py`, `gen_pages.py`, `validate.py` → OK, 0
+bloqueur, 2 avertissements (les deux mêmes fiches denses déjà connues, sous le
+seuil bloquant). Poussé directement sur `main` (aucun repli de branche
+nécessaire). `healthcheck.sh` : OK (321/321, date fraîche, http 200).
+
+## Analyse des visites
+
+GoatCounter : 3 189 visiteurs/pages vues cumulés, stable depuis le relevé de la
+veille (24/09 : 3 189) — probablement un relevé pris tôt dans la journée, avant
+la reprise du trafic ; la tendance des 5 derniers jours reste à la hausse régulière
+(2 961 → 3 000 → 3 094 → 3 119 → 3 189), cohérente avec le palier 1 de la feuille
+de route (35-100 visites/jour).
+
+## Anomalies et non-fait
+
+- Aucune passe de contenu n'a tourné le 24/09 (une session technique a travaillé
+  sur la Feuille de route à la place — voir Feuille de route et Audit sans point
+  faible, entrées « [FAIT 24/09] ») ; l'écart est resté sous le seuil de cadence
+  (healthcheck du 24/09 21h32 a maintenu `precheck.sh` silencieux). Signalé pour
+  mémoire, aucune action requise.
+- Search Console non consultée (pas d'accès direct dans cet outillage).
+- Chantier Feuille de route (O1-O9) non touché : hors périmètre de la passe
+  quotidienne de contenu, comme les jours précédents.
+- Résorption des doutes (`a-reverifier.md`, 170 entrées) et vague des imminents :
+  routines hebdomadaires dédiées (mercredi, lundi), non dues aujourd'hui (vendredi).
