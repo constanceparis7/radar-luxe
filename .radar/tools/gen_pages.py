@@ -686,6 +686,7 @@ def main():
             # elle-même est en français, c'est un texte de droit français.
             f" · <a href=\"/a-propos.html\">{esc(LIEUX_I18N.get(lang, {}).get('À propos', 'À propos'))} · {esc(LIEUX_I18N.get(lang, {}).get('Contact', 'Contact'))}</a>"
             f" · <a href=\"/mentions-legales.html\">{esc(LIEUX_I18N.get(lang, {}).get('Mentions légales', 'Mentions légales'))}</a>"
+            f" · <a href=\"/politique-de-confidentialite.html\">{esc(LIEUX_I18N.get(lang, {}).get('Politique de confidentialité', 'Politique de confidentialité'))}</a>"
             "</footer></div></body></html>"
         )
 
@@ -1347,10 +1348,12 @@ leurs titulaires respectifs. Ils sont mentionnés à seule fin d'information du 
 n'enregistre aucun identifiant individuel et ne permet pas de reconnaître un visiteur
 d'une visite à l'autre. Seules des données agrégées sont produites : nombre de pages
 vues, page consultée, pays, site de provenance.</p>
-<p><b>Mémoire de la langue.</b> La langue que vous choisissez est enregistrée dans votre
-navigateur sous la clé <b>luxe_lang</b>, afin de ne pas vous la redemander. Cette
-information reste sur votre appareil et n'est jamais transmise. Vider les données du
-site l'efface.</p>
+<p><b>Mémoire de la langue et des favoris.</b> La langue que vous choisissez (clé
+<b>luxe_lang</b>) et les événements que vous marquez d'un coeur (clé <b>cp7favs</b>) sont
+enregistrés dans votre navigateur, afin de ne pas vous les redemander. Ces informations
+restent sur votre appareil et ne sont jamais transmises. Vider les données du site les
+efface. Détail complet : <a href="/politique-de-confidentialite.html">politique de
+confidentialité</a>.</p>
 <p><b>Courriels.</b> Si vous écrivez à l'adresse de contact, votre message et votre
 adresse sont conservés le temps nécessaire au traitement de votre demande, puis
 supprimés.</p>
@@ -1369,7 +1372,7 @@ L'éditrice n'exerce aucun contrôle sur ces sites et décline toute responsabil
 <h2 class="sub">Droit applicable</h2>
 <p>Le présent site et les présentes mentions légales sont soumis au droit français.</p>
 
-<div class="chips"><a href="/">← Retour au radar</a></div>"""
+<div class="chips"><a href="/">← Retour au radar</a><a href="/politique-de-confidentialite.html">Politique de confidentialité</a></div>"""
     write("/mentions-legales.html",
           page("fr", "Mentions légales · ConstanceParis7",
                "Éditrice, directrice de la publication, hébergeur, propriété "
@@ -1377,6 +1380,82 @@ L'éditrice n'exerce aucun contrôle sur ces sites et décline toute responsabil
                "/mentions-legales.html", ML.replace("__DIRPUB__", DIRPUB),
                '<link rel="alternate" hreflang="fr" href="%s/mentions-legales.html">' % BASE))
     sitemap_urls.append(f"{BASE}/mentions-legales.html")
+
+    # --- politique de confidentialité : page dédiée, en clair -----------------
+    # La section « Données personnelles » des mentions légales dit déjà
+    # l'essentiel ; cette page le reprend en entier, seule, à l'adresse que les
+    # visiteurs et les moteurs de recherche s'attendent à trouver.
+    PC = """<div class="bc"><a href="/">Radar</a> · Politique de confidentialité</div>
+<h1>Politique de confidentialité</h1>
+<p class="meta">Dernière mise à jour : <b>25 septembre 2026</b></p>
+
+<div class="box">
+<h2>En résumé</h2>
+<ul>
+<li>Aucun compte, aucun formulaire, aucune inscription.</li>
+<li><b>Aucun cookie</b> n'est déposé sur votre appareil.</li>
+<li>Aucune donnée n'est vendue, louée, ni transmise à un tiers.</li>
+<li>Ce que le site retient reste sur votre appareil : la langue choisie et vos favoris.</li>
+</ul>
+</div>
+
+<h2 class="sub">Qui gère ce site</h2>
+<p>ConstanceParis7 est édité par une personne physique, à titre non professionnel. Le
+détail (éditrice, directrice de la publication, hébergeur) est dans les
+<a href="/mentions-legales.html">mentions légales</a>. Pour toute question sur vos
+données, la même adresse fait foi :
+<a href="mailto:constanceparis75007@gmail.com">constanceparis75007@gmail.com</a>.</p>
+
+<h2 class="sub">Mesure d'audience</h2>
+<p>Le site utilise <a href="https://www.goatcounter.com" target="_blank" rel="noopener nofollow">GoatCounter</a>
+(constanceparis7.goatcounter.com), un service de statistiques sans cookie, qui
+n'enregistre aucun identifiant individuel et ne permet pas de reconnaître un visiteur
+d'une visite à l'autre. Seules des données agrégées sont produites : nombre de pages
+vues, page consultée, pays, site de provenance. Les totaux quotidiens sont publics,
+consultables depuis la page <a href="/methode.html">La méthode</a>.</p>
+
+<h2 class="sub">Ce qui est mémorisé sur votre appareil</h2>
+<p>Le site utilise le stockage local de votre navigateur (« localStorage »), et non des
+cookies : cette information n'est jamais envoyée au serveur ni à un tiers, elle reste sur
+votre appareil, et vous pouvez l'effacer à tout moment en vidant les données du site dans
+les réglages de votre navigateur.</p>
+<p><b>La langue choisie</b> (clé <b>luxe_lang</b>), pour ne pas vous la redemander à
+chaque visite.</p>
+<p><b>Vos favoris</b> (clé <b>cp7favs</b>) : la liste des événements que vous marquez
+d'un coeur, pour vous permettre de les retrouver sur la page
+<a href="/favoris.html">Mes favoris</a>. Cette liste n'existe que dans votre navigateur ;
+elle disparaît si vous changez d'appareil ou videz les données du site.</p>
+
+<h2 class="sub">Courriels</h2>
+<p>Si vous écrivez à l'adresse de contact, votre message et votre adresse sont conservés
+le temps nécessaire au traitement de votre demande, puis supprimés.</p>
+
+<h2 class="sub">Liens sortants</h2>
+<p>Ce site renvoie vers les sites officiels des organisateurs et des lieux cités.
+L'éditrice n'exerce aucun contrôle sur ces sites tiers et décline toute responsabilité
+quant à leurs propres pratiques de confidentialité.</p>
+
+<h2 class="sub">Vos droits</h2>
+<p>Conformément au Règlement général sur la protection des données et à la loi
+Informatique et Libertés, vous disposez d'un droit d'accès, de rectification,
+d'effacement et d'opposition sur toute donnée vous concernant. Pour l'exercer, écrivez à
+<a href="mailto:constanceparis75007@gmail.com">constanceparis75007@gmail.com</a>. Vous pouvez
+également introduire une réclamation auprès de la CNIL
+(<a href="https://www.cnil.fr" target="_blank" rel="noopener nofollow">cnil.fr</a>).</p>
+
+<h2 class="sub">Modifications</h2>
+<p>Cette politique peut évoluer si le site change (par exemple l'ajout d'une lettre
+d'information). Toute modification sera datée ci-dessus ; les changements de fond seront
+signalés sur la page d'accueil.</p>
+
+<div class="chips"><a href="/">← Retour au radar</a><a href="/mentions-legales.html">Mentions légales</a></div>"""
+    write("/politique-de-confidentialite.html",
+          page("fr", "Politique de confidentialité · ConstanceParis7",
+               "Aucun cookie, aucune donnée vendue : ce que ConstanceParis7 mesure, ce "
+               "qu'il retient sur votre appareil, et vos droits.",
+               "/politique-de-confidentialite.html", PC,
+               '<link rel="alternate" hreflang="fr" href="%s/politique-de-confidentialite.html">' % BASE))
+    sitemap_urls.append(f"{BASE}/politique-de-confidentialite.html")
 
 
     MOMENTS = [
