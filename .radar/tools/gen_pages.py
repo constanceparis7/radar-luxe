@@ -698,7 +698,7 @@ def main():
             f"{body}"
             "</main>"
             f"<footer class=\"site\">{esc(UI['footer'][lang])} "
-            f"<a href=\"/\">{esc(UI['see_live'][lang])} →</a>"
+            f"<a href=\"/\">{esc(UI['see_live'][lang])} <span class='arw'>→</span></a>"
             # Obligation légale (LCEN art. 6) : la page doit être atteignable
             # depuis n'importe quelle page du site. Libellé bilingue : la page
             # elle-même est en français, c'est un texte de droit français.
@@ -1075,7 +1075,7 @@ def main():
                 bloc.append("</div>")
                 body.append("".join(bloc))
             if e.get("u"):
-                body.append(f"<p><a class=\"cta\" href=\"{esc(e['u'])}\" target=\"_blank\" rel=\"noopener nofollow\">{esc(UI['official'][lang])} →</a></p>")
+                body.append(f"<p><a class=\"cta\" href=\"{esc(e['u'])}\" target=\"_blank\" rel=\"noopener nofollow\">{esc(UI['official'][lang])} <span class='arw'>→</span></a></p>")
             nav = []
             if lieu:
                 nav.append(f"<a href=\"{u_place(lieu, lang)}\">{esc(UI['all_in'][lang])} · {esc(place_label(pk, lang))}</a>")
@@ -1193,7 +1193,7 @@ def main():
 
             home = [f"<h1>ConstanceParis7 · {esc(UI['luxury_events'][lang])}</h1>",
                     f"<p class=\"meta\">{esc(tk('brandsub', UI['tagline'][lang]))}</p>",
-                    f"<p><a class=\"cta\" href=\"/\">{esc(UI['see_live'][lang])} →</a></p>"]
+                    f"<p><a class=\"cta\" href=\"/\">{esc(UI['see_live'][lang])} <span class='arw'>→</span></a></p>"]
 
             rubriques = [tk(k) for k in ("nav_today", "nav_prestige", "nav_calendar",
                                          "nav_agenda", "nav_continu", "nav_intl",
@@ -1219,7 +1219,7 @@ def main():
             home.append(f"</div><h2 class=\"sub\">{esc(UI['by_place'][lang])}</h2><div class=\"chips\">")
             for k, v in sorted(places.items(), key=lambda kv: -len(kv[1]["events"]))[:40]:
                 home.append(f"<a href=\"{u_place(v, lang)}\">{esc(place_label(k, lang))} ({len(v['events'])})</a>")
-            home.append(f"</div><p><a href=\"{u_hub(lang)}\">{esc(UI['places_cats'][lang])} →</a></p>")
+            home.append(f"</div><p><a href=\"{u_hub(lang)}\">{esc(UI['places_cats'][lang])} <span class='arw'>→</span></a></p>")
 
             # Le radar ne lit sa langue que dans localStorage — il n'existe
             # aucun paramètre d'URL. Sans cette ligne, un lecteur arrivé sur
@@ -2077,17 +2077,17 @@ document.querySelectorAll('.ex').forEach(function(a){a.addEventListener('click',
             qa = qs[0]
             corps.append(f"<div class=\"box\"><h2>Comment y assister</h2><p><b>{esc(qa['reponse_courte'])}</b></p>"
                          + "".join(f"<p>{esc(par)}</p>" for par in qa["details"].split("\n") if par.strip())
-                         + f"<p><a href=\"/q/{qa['slug']}.html\">La réponse complète →</a></p></div>")
+                         + f"<p><a href=\"/q/{qa['slug']}.html\">La réponse complète <span class='arw'>→</span></a></p></div>")
             for qi in qs[1:2]:
                 corps.append(f"<h2 class=\"sub\">{esc(qi['question'])}</h2><p>{esc(qi['reponse_courte'])} "
-                             f"<a href=\"/q/{qi['slug']}.html\">Le détail →</a></p>")
+                             f"<a href=\"/q/{qi['slug']}.html\">Le détail <span class='arw'>→</span></a></p>")
         else:
             ivo, ivw = T(e, "fr", "iv_o"), T(e, "fr", "iv_w")
             acc = ivo or T(e, "fr", "p") or ""
             if acc:
                 corps.append(f"<div class=\"box\"><h2>Comment y assister</h2><p>{esc(acc[:600])}</p>"
                              + (f"<p>{esc(ivw[:400])}</p>" if ivw else "")
-                             + f"<p><a href=\"{u_event(e,'fr')}\">La voie d'entrée détaillée →</a></p></div>")
+                             + f"<p><a href=\"{u_event(e,'fr')}\">La voie d'entrée détaillée <span class='arw'>→</span></a></p></div>")
         prep = ["<a href=\"/protocole.html\">Le Protocole</a>", "<a href=\"/vestiaire.html\">Le Vestiaire</a>"]
         if im.get("moment"):
             prep.append(f"<a href=\"{im['moment']}\">{esc(im.get('moment_titre') or 'Le moment de la saison')}</a>")
@@ -2257,6 +2257,7 @@ CSS = (
     ".chips{margin:16px 0}.chips a{display:inline-block;background:#151d23;border:1px solid #26313a;border-radius:20px;padding:6px 13px;margin:4px 4px 4px 0;font-size:.9rem}"
     "footer.site{border-top:1px solid #26313a;margin-top:34px;padding-top:16px;color:#8b9aa6;font-size:.85rem}"
     "[dir=rtl] .box ul{padding-left:0;padding-right:1.1em}[dir=rtl] .chips a{margin:4px 0 4px 4px}"
+    ".arw{display:inline-block}[dir=rtl] .arw{transform:scaleX(-1)}"
     "@media(max-width:520px){h1{font-size:1.4rem}.wrap{padding:16px 14px 48px}}"
     # Impression propre (objectif O6) : la navigation et les commandes tactiles ne
     # servent à rien sur papier ; les adresses des liens utiles (billetterie, carte,
