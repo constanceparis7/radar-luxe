@@ -133,8 +133,11 @@ de chaque correction, et le verrou final est un validateur de build BLOQUANT.
 25. [À FAIRE] En-têtes HTTP : HSTS, CSP (en mode rapport d'abord), nosniff,
     Referrer-Policy, frame-ancestors. Limite : GitHub Pages ne permet pas tout,
     documenter ce qui est hors de portée.
-26. [À FAIRE, samedi 20/09] Newsletter : double opt-in, anti-spam, erreurs visibles,
-    SPF/DKIM/DMARC, désinscription, politique de confidentialité.
+26. [Politique de confidentialité FAITE le 25/09, reste la newsletter] Politique de
+    confidentialité publiée en page dédiée le 25/09 (reprend et complète la section déjà
+    écrite des mentions légales), liée depuis le pied de page de tout le site. Reste,
+    bloqué sur le compte Brevo de Constance : double opt-in, anti-spam, erreurs visibles,
+    SPF/DKIM/DMARC, désinscription de la newsletter elle-même.
 27. [FAIT 18/09 pour l'essentiel] Recherche : entrée jamais réinjectée, résultats
     échappés ; aucun secret dans le JS ; index-full.html confirmé hors ligne (404,
     gitignore) ; target=_blank avec rel noopener sur les gabarits contrôlés.

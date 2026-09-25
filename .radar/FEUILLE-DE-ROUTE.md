@@ -176,13 +176,15 @@ les textes de séjour (1 088 Ko) et les journaux d'enquête (619 Ko). Une fiche
 - [0]   Site installable et consultable hors connexion (PWA)
 - [0]   Impression propre des fiches
 
-### O7 · Confiance, sécurité, conformité · 45 %
+### O7 · Confiance, sécurité, conformité · 55 %
 - [100] HTTPS, zéro cookie, zéro donnée collectée
 - [100] Aucun fichier de travail en ligne, aucun secret dans le code
 - [100] Sonde quotidienne du site en ligne
 - [80]  Échappement et protection des liens externes
 - [50]  Mentions légales (page existante, à compléter le 21/09)
-- [0]   Politique de confidentialité
+- [100] Politique de confidentialité : page dédiée publiée le 25/09, reprend et complète
+        la section déjà écrite des mentions légales (la mention des favoris manquait),
+        liée depuis le pied de page de tout le site ; vérifiée en ligne
 - [0]   Double opt-in, SPF, DKIM, DMARC pour la newsletter
 - [0]   En-têtes de sécurité (Cloudflare)
 
