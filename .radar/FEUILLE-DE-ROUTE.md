@@ -175,7 +175,7 @@ les textes de séjour (1 088 Ko) et les journaux d'enquête (619 Ko). Une fiche
 - [0]   Matrice intention vers URL unique (Milan, PFW, Vogue World)
 - [0]   Liens entrants (en pause volontaire ; liste de 20 relais prête)
 
-### O6 · Produit et rétention · 35 %
+### O6 · Produit et rétention · 42 %
 - [100] Favoris partout, page Mes favoris, compteur
 - [100] Moteur Comment entrer, Note du radar, Protocole, Questions
 - [60]  Partage : aperçus og par page (à contrôler messagerie par messagerie)
@@ -183,7 +183,9 @@ les textes de séjour (1 088 Ko) et les journaux d'enquête (619 Ko). Une fiche
 - [0]   Alertes liées aux favoris
 - [0]   Le Cercle (on ne peut pas acheter, on est choisi)
 - [0]   Site installable et consultable hors connexion (PWA)
-- [0]   Impression propre des fiches
+- [100] Impression propre des fiches (25/09) : feuille d'impression dédiée sur toutes
+        les pages générées, navigation et favoris masqués, adresses des liens utiles
+        affichées en clair, fond blanc ; n'affecte jamais l'écran, vérifié en ligne
 
 ### O7 · Confiance, sécurité, conformité · 60 %
 - [100] HTTPS, zéro cookie, zéro donnée collectée
