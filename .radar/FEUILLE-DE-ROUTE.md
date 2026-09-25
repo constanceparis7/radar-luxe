@@ -102,7 +102,7 @@ moyenne de ses micro-objectifs.
 - [0]   Empreintes de version sur les ressources (photo, JSON) pour un cache long côté navigateur
 - [hors périmètre] Cloudflare devant, en-têtes HTTP, vrais 301, HTTP/3, Cloudflare Pages, R2, Workers, D1
 
-### O3 · Vitesse mobile, Android et iOS (PRIORITÉ ABSOLUE) · 72 %
+### O3 · Vitesse mobile, Android et iOS (PRIORITÉ ABSOLUE) · 80 %
 Mesure de référence du 18/09/2026 : un téléphone reçoit 820 Ko pour l'accueil
 (2 547 Ko bruts), plus 294 Ko de photo et 43 Ko d'index de recherche, soit environ
 1,15 Mo. Le poids vient de deux champs embarqués inutiles au premier affichage :
@@ -118,10 +118,21 @@ les textes de séjour (1 088 Ko) et les journaux d'enquête (619 Ko). Une fiche
 - [écarté 20/09] JSON-LD de l'accueil en liste : gain mesuré de 8 Ko compressés seulement,
         contre la règle « gen_pages ne modifie jamais index.html » ; pas rentable
 - [100] Budget de poids au verrou (V11 : accueil sous 1 000 Ko bruts, fiche sous 60 Ko)
-- [10]  LCP < 2,5 s, INP < 200 ms, CLS < 0,1 mesurés (PageSpeed mobile, chaque semaine ; première mesure bloquée par le quota de l'API, à refaire)
-- [0]   Rendu progressif des cartes (les 340 cartes ne se construisent pas d'un coup)
-- [80]  Écrans de 320, 375 et 390 px contrôlés le 20/09 : plus aucun débordement horizontal
-        (accueil, fiches, hubs, arabe compris) ; reste paysage, zoom 200 %, clavier ouvert
+- [20]  LCP < 2,5 s, INP < 200 ms, CLS < 0,1 mesurés (PageSpeed mobile, chaque semaine ; le
+        quota de l'API reste épuisé à chaque essai). Mesure de repli le 25/09, en conditions
+        réelles 3G simulées dans le navigateur (TTFB 324 ms, DOM prêt 590 ms, chargement
+        complet 886 ms, 267 Ko transférés pour l'accueil) : le décalage cumulé (CLS) mesuré
+        est nul. Le LCP et l'INP exacts restent hors d'atteinte : l'outil de mesure du
+        navigateur de cette session ne peuple pas ces deux entrées de performance ; seul
+        PageSpeed les donnerait, et son quota reste bloqué.
+- [100] Rendu progressif des cartes (25/09) : les deux premiers jours s'affichent aussitôt,
+        le reste par lots hors du fil principal (requestIdleCallback, repli iOS/Safari),
+        recherche toujours instantanée, vérifié sans doublon ni erreur
+- [90]  Écrans de 320, 375 et 390 px contrôlés le 20/09 : plus aucun débordement horizontal
+        (accueil, fiches, hubs, arabe compris) ; paysage (812×375) et clavier ouvert (hauteur
+        réduite à 320 px) contrôlés le 25/09, propres l'un et l'autre ; le zoom 200 % reste
+        à vérifier proprement, l'essai du 25/09 n'était pas fiable (le zoom CSS simulé fausse
+        les unités vw, contrairement au vrai zoom d'un téléphone ou d'un navigateur)
 - [100] Sitemap scindé par langue avec index (20/09) : 13 fichiers de 850 Ko au lieu d'un
         seul de 11 Mo ; le verrou lit l'index
 

@@ -87,11 +87,17 @@ de chaque correction, et le verrou final est un validateur de build BLOQUANT.
 
 ## P1 : mobile, performance, accessibilité, sécurité
 
-21. [EN COURS 18/09] Poids de l'accueil divisé par trois (820 à 264 Ko transférés) :
-    journaux d'enquête et séjours chargés au dépliage ; budget V11 au verrou.
-    [Reste : mesure LCP/INP/CLS hebdomadaire, JSON-LD en liste, photo WebP.]
-22. [EN COURS 20/09 : 320/375/390 sans débordement] Petits écrans : 320/360/390 px, paysage, zoom 200 %, clavier ouvert,
-    cibles 44 px, pas de défilement horizontal.
+21. [EN COURS 25/09] Poids de l'accueil divisé par trois (820 à 264 Ko transférés) :
+    journaux d'enquête et séjours chargés au dépliage ; budget V11 au verrou. Rendu
+    progressif des cartes posé le 25/09 (fil principal jamais bloqué au premier
+    affichage). Mesure de repli en 3G simulée le 25/09 : DOM prêt 590 ms, chargement
+    complet 886 ms, aucun décalage de mise en page. [Reste : LCP/INP/CLS exacts, bloqués
+    par le quota PageSpeed ; JSON-LD en liste, écarté (gain jugé trop faible).]
+22. [EN COURS 25/09 : 320/375/390, paysage et clavier ouvert propres] Petits écrans :
+    320/360/390 px, paysage (812×375) et clavier ouvert (hauteur réduite) contrôlés sans
+    débordement horizontal ni élément fixe piégé. Reste : cibles tactiles de 44 px, et le
+    zoom 200 % à vérifier avec un vrai zoom (l'essai au zoom CSS simulé du 25/09 n'était
+    pas fiable).
 23. [EN COURS 20/09] Posé : lien d'évitement, landmark main, focus visible, aria-label sur
     les coeurs, reduced-motion (déjà). Reste : contraste des deux thèmes, labels des
     selects, test lecteur d'écran, noms des symboles ◐ et →.
