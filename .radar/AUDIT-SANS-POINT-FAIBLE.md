@@ -135,8 +135,14 @@ de chaque correction, et le verrou final est un validateur de build BLOQUANT.
     4,5 pour 1 partout testé. Vérifié aussi le 25/09 : le seul select de l'accueil (langue)
     porte déjà un aria-label (« Langue ») ; rien à corriger là. Reste : un vrai passage au
     lecteur d'écran, noms des symboles ◐ et →, le saut de niveau de titre h2→h4.
-24. [EN COURS 20/09, rendu vérifié à 375 et 320 px, bogue du lien d'évitement corrigé] RTL arabe (nombres/dates isolés, flèches, fil d'Ariane) et CJK
-    (polices, coupures, pas de troncature au compte de caractères latins).
+24. [EN COURS 25/09, flèches directionnelles corrigées] RTL arabe (nombres/dates
+    isolés, fil d'Ariane) et CJK (polices, coupures, pas de troncature au compte de
+    caractères latins) : rendu vérifié à 375 et 320 px le 20/09, bogue du lien
+    d'évitement corrigé. Trouvé et corrigé le 25/09 : la flèche « → » restait orientée
+    de gauche à droite sur les pages arabes et sur l'accueil basculé en arabe, malgré
+    la lecture de droite à gauche ; retournée en CSS (toutes les pages générées et
+    l'accueil), testée avant et après publication dans les deux sens de bascule.
+    Reste : la ponctuation mixte (chiffres latins dans une phrase arabe).
 25. [FAIT 25/09, dans la limite du possible sans Cloudflare] En-têtes de sécurité :
     Content-Security-Policy et Referrer-Policy posées en balise <meta> sur toutes les
     pages (le site n'a aucun en-tête HTTP configurable sur GitHub Pages). La CSP

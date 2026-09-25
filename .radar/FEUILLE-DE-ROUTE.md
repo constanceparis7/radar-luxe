@@ -63,7 +63,7 @@ reste dérisoire pour un million de visiteurs par jour.
 Légende : [100] fait · [50] à moitié · [0] à faire. Le taux d'un objectif est la
 moyenne de ses micro-objectifs.
 
-### O1 · Fondations sans point faible (registre de l'audit croisé) · 80 %
+### O1 · Fondations sans point faible (registre de l'audit croisé) · 82 %
 - [100] Verrou de build bloquant sur les 7 876 pages, 13 langues
 - [100] Compteurs réconciliés et expliqués
 - [100] Redirections des anciennes adresses (lieux et fiches)
@@ -96,9 +96,11 @@ moyenne de ses micro-objectifs.
         direct le 25/09 (formule WCAG) : thème sombre 6,41 à 19,19, thème clair 5,78 à
         15,96, tout au-dessus du seuil de 4,5 pour 1 ; reste un vrai passage au lecteur
         d'écran et le saut de niveau de titre h2→h4 sous Prestige
-- [70]  Arabe de droite à gauche et langues CJK contrôlés à l'écran le 20/09 : rendu
+- [88]  Arabe de droite à gauche et langues CJK contrôlés à l'écran le 20/09 : rendu
         correct, et un vrai bogue attrapé (le lien d'évitement décalait toute la page
-        arabe hors de l'écran) ; reste les flèches directionnelles et la ponctuation mixte
+        arabe hors de l'écran) ; flèches directionnelles retournées le 25/09 (page
+        arabe et accueil basculé en arabe, testé dans les deux sens) ; reste la
+        ponctuation mixte (chiffres latins dans une phrase arabe)
 - [0]   En-têtes de sécurité (dépend de Cloudflare devant)
 - [0]   Newsletter : double opt-in, anti-spam, désinscription (samedi 20/09)
 
