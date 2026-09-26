@@ -1,106 +1,77 @@
-# Compte rendu — passe du 25/09/2026 (session cloud)
+# Compte rendu — passe du 26/09/2026
+
+## Lu avant tout travail
+`.radar/DOCTRINE.md` (intégral), `.radar/PASSATION.md`, `.radar/tools/lessons.md`
+(intégral, 1246 lignes), puis `.radar/FEUILLE-DE-ROUTE.md`, `.radar/REGLE-ALPHA.md`,
+`.radar/AUDIT-SANS-POINT-FAIBLE.md` (la RÈGLE ALPHA du 18/09 prime sur toute demande de
+contenu et fait de ces trois derniers documents la référence de priorité active).
 
 ## Démarrage
+Signature `radar-routine-claude` posée, trace `DEMARRAGE` poussée sur `main` avant tout
+travail (push direct accepté, pas de repli de branche nécessaire). Dépôt shallow détecté
+(`git rev-parse --is-shallow-repository` → true) : `git fetch --unshallow origin` fait
+(2 branches `claude/*` non fusionnées découvertes en passant, non touchées — hors mandat
+de cette passe). `index-full.html` reconstruit (absent, non versionné comme prévu).
 
-`.radar/DOCTRINE.md` (953 lignes), `.radar/PASSATION.md`, `.radar/REGLE-ALPHA.md`,
-`.radar/AUDIT-SANS-POINT-FAIBLE.md` et `.radar/tools/lessons.md` (1 246 lignes) lus
-intégralement avant tout travail. Trace de démarrage poussée directement sur `main`.
-Clone superficiel détecté et réparé (`git fetch --unshallow`, 674 commits récupérés).
-`precheck.sh` : verrou libre, arbre propre, aucune cadence rompue (dernier passage
-technique le 24/09 au soir — voir « anomalie » ci-dessous). `rebuild_full.py` :
-321 événements, 12 langues réinjectées, 0 orpheline.
+## Priorité du prompt — condensation des voies d'invitation
+Vérifiée à nouveau avec la même méthode que les 20/21/25/09 (lecture intégrale des champs
+`iv.o`/`iv.g`/`iv.w` >1200 car. WARN + détecteur de motifs de dérive sur l'échantillon
+>400 car. de la fenêtre live) : **0 dérive « journal d'enquête » trouvée**, troisième jour
+consécutif. Les 11 champs encore au-dessus du seuil WARN et les ~104 encore au-dessus du
+seuil-cible de 400 car. sont de la densité factuelle légitime (tarifs, horaires, plusieurs
+contacts réels par fiche) — vérifié en lisant chacun des 11 en intégralité. Conformément à
+la doctrine (« si tu n'as rien trouvé de digne, ne publie rien » transposé à la
+condensation) : rien condensé aujourd'hui, pour ne pas réintroduire le risque connu
+(URL abrégées, adresses déformées) sur du contenu déjà propre. Détail dans lessons.md.
 
-## Constat sur la priorité annoncée (condensation des voies d'invitation)
+## LOI DU SITE (iv + séjour + 13 langues)
+`reste.py` : traductions 319/319 (100 %), voies d'invitation 319/319 (100 %), séjours
+313/319 (reste 6, tous hors fenêtre live ou marginaux — non retraités aujourd'hui faute
+de mandat prioritaire, la Règle Alpha plaçant l'audit technique au-dessus).
 
-Le prompt de tâche décrit un arriéré de 255 fiches en dérive « journal d'enquête »
-(159 en fenêtre live), chiffre qui date de mi-août. L'historique du dépôt montre que
-ce chantier a été mené à son terme par les passes successives (10/09 : « 255 → 7
-candidats » ; puis reconfirmations quotidiennes à zéro dérive du 11/09 au 23/09).
-Vérification faite aujourd'hui plutôt que de me fier au chiffre du prompt :
-`validate.py` relève 11 fiches au-dessus du seuil de sélection (1 200 caractères
-sur `iv.o`/`iv.g`/`iv.w`, excédent total 4 192 caractères). Lecture intégrale de
-3 des plus longues (POINT D'ENTRÉE ventes aux enchères, Gstaad New Year Music
-Festival, Formula 1 Abu Dhabi) : dans les trois cas, l'excédent est fait de faits
-durs légitimes (noms, fonctions, téléphones, adresses, tarifs, dates de vente) sans
-aucune tournure d'enquêteur — exactement le motif déjà consigné les 20-21/08 et
-23/09 (« le seuil de sélection redétecte le travail bien fait »). **Aucune fiche
-condensée aujourd'hui : zéro dérive réelle constatée, comme lors des 13 dernières
-vérifications.**
+## Travail effectué — registre « aucun point faible » (Règle Alpha, priorité active)
+1. **Scan global P0.3** (5 890 fichiers générés) : 0 occurrence de `None`/`null`/
+   `undefined`/`NaN`/`[object Object]` hors balises `<script>`. Les occurrences de
+   « été 2026 »/« cet été »/« summer 2026 » (333+65+67) sont toutes du contenu factuel
+   légitime (le sujet réel d'un événement ou d'une programmation datée), y compris dans
+   les 14 `<title>`/`<meta description>` qui en portent — aucune méta périmée. Item classé
+   FAIT dans `AUDIT-SANS-POINT-FAIBLE.md`.
+2. **Saut de niveau de titre h2→h4 corrigé** (item 23 du registre, ouvert depuis le 25/09) :
+   deux occurrences trouvées (`renderPrestige()` sous « Classement Prestige », et
+   `renderArchives()` sous « Archives »), toutes deux hors de la structure h2>h3>h4
+   correcte de l'Agenda. Passées en h3 ; vérifié avant modification que le style visuel
+   dépend uniquement de la classe CSS `.t`, jamais du nom de balise — aucun changement
+   visuel. Diff de 2 lignes exactement dans `index.html`, `validate.py` et `perfcheck.py`
+   relancés après coup, 0 régression.
+3. **PageSpeed Insights** retesté pour LCP/INP/CLS (item 21) : quota toujours épuisé
+   (429 `RESOURCE_EXHAUSTED`), rien de nouveau, à réessayer plus tard dans la semaine.
+4. Reste ouvert, non traité aujourd'hui faute de temps : noms des symboles ◐ et →
+   (priorité plus faible, le bouton thème a déjà un aria-label qui couvre ◐), vrai
+   passage au lecteur d'écran, zoom 200 % avec un vrai zoom, matrice cannibalisation
+   inter-langues, newsletter (bloquée sur le compte Brevo de Constance).
 
-## Entretien effectué
+## Routine quotidienne
+- `memoire.py changements` : 0 changement de date sur 7 jours.
+- Bandeau « Ouvertures & délais » : 3 entrées, aucune expirée (2026-09-30, 2026-10-15,
+  2027-01-31) — rien à retirer, rien de nouveau trouvé à ajouter aujourd'hui.
+- Eyebrow mis à jour : « données collectées et vérifiées le 26 septembre 2026 »
+  (remplacement vérifié unique avant application, piège du 18/09 évité).
+- 2 AVERT W1 pré-existants et inchangés (Covo di Nord-Est, Nikki Beach Ibiza — dates
+  écrites hors fenêtre saisonnière), non blocants, non traités aujourd'hui.
 
-- **Purge** : 0 zombie (`d2 < aujourd'hui-30j`, hors guides) — le plancher
-  automatique de 8h40 fait déjà ce travail chaque jour.
-- **Liens** : les 15 événements des 7 prochains jours retestés en `curl -sL`
-  (Voiles de Saint-Tropez, Fashion Week Paris et ses 6 portes d'accès, galas NYC/NY
-  Philharmonic, ventes Sotheby's Paris et Hong Kong, Caves du Roy, Global Gift Gala,
-  Doha Jewellery and Watches). 2 x 403 (site vu et refusé, donc vivant, règle du
-  12/08) ; 2 faux positifs de ma propre détection de « 404 caché dans un 200 »
-  (mot « oops » trouvé dans un nom propre et dans une chaîne d'interface générique,
-  vérifiés au corps de page). **0 lien mort.**
-- **Mémoire du radar** : `memoire.py changements` — 0 nouvelle date sur 7 jours.
-- **Bandeau Ouvertures & délais** : 3 entrées, aucune périmée (échéances 30/09,
-  15/10, 31/01/2027) — pas de nouvelle fenêtre datée trouvée à ajouter aujourd'hui.
-- **Eyebrow** : bloquée sur « 23 septembre » depuis 2 jours (la session du 24/09 a
-  travaillé sur le chantier technique Feuille de route — rendu progressif des
-  cartes O3, tirets purgés — sans lancer la passe de contenu quotidienne).
-  Corrigée à « 25 septembre 2026 ».
+## Pipeline et publication
+`split_i18n.py --apply` → `gen_seo.py 2026-09-26` → `gen_pages.py` → `validate.py`
+(0 bloqueur, 2 avertissements inchangés) → `perfcheck.py` (0 régression) →
+`.radar/session/publier.sh`. Diff final limité aux fichiers attendus (index.html,
+sitemap, ld+json, pages e/* touchées par gen_seo/gen_pages, journaux).
 
-## État de la LOI DU SITE (iv + séjour + traductions)
-
-`reste.py` : traductions 321/321 (100 %), voies d'invitation 321/321 (100 %),
-séjours 315/321 (100 % réel — les 6 manquants sont les 6 fiches-guide `c=acces`
-exemptées par la doctrine). **0 écart réel.** Joaillerie : 15 fiches en fenêtre
-live (plancher de 10 largement tenu). Guides d'accès (`c=acces`) : 16 en ligne.
-Les 8 ancres du printemps 2027 (TEFAF, Art Basel HK, Watches and Wonders, Salone
-del Mobile, Festival de Cannes, GemGenève, Grand Prix de Monaco, Royal Ascot)
-sont toutes publiées.
-
-## Recherche de nouveaux événements
-
-Deux pistes de la doctrine (« élargir » le printemps/l'international) vérifiées à
-la source, sans ajout :
-- **Bal de la Rose Monaco** : le site officiel Monte-Carlo SBM n'affiche que
-  l'édition 2026 (21 mars, déjà passée, page marquée « Concluded »), aucune date
-  2027 publiée à ce jour. Confirme le constat du 06/09 (« date non publiable »).
-  Non ajouté — aucune date réelle à afficher.
-- **24 Heures du Mans 2027** (9-13 juin, dates officielles confirmées sur
-  24h-lemans.com) : la porte VIP existe (page hospitalité officielle) mais je n'ai
-  pas pu, en une passe solo sans vérification adverse, bâtir dans le temps imparti
-  un séjour du calibre exigé (palace/table iconique à proximité du circuit) ni un
-  contact d'invitation nominatif réellement publié. Conformément à la doctrine
-  (« au moindre doute, ne pas ajouter » / « mieux vaut ne rien publier que d'ajouter
-  du grand public déguisé »), non ajouté aujourd'hui — à reprendre lors d'une passe
-  disposant de plus de temps ou d'agents de vérification adverses.
-
-**Rien de digne trouvé à ajouter aujourd'hui au-delà de ce qui existe déjà : résultat
-honnête, pas un renoncement.**
-
-## Publication
-
-`bash .radar/session/publier.sh` : `inject.py` (rien à récolter), `gen_ldjson.py`,
-`split_i18n.py --apply`, `gen_seo.py`, `gen_pages.py`, `validate.py` → OK, 0
-bloqueur, 2 avertissements (les deux mêmes fiches denses déjà connues, sous le
-seuil bloquant). Poussé directement sur `main` (aucun repli de branche
-nécessaire). `healthcheck.sh` : OK (321/321, date fraîche, http 200).
-
-## Analyse des visites
-
-GoatCounter : 3 189 visiteurs/pages vues cumulés, stable depuis le relevé de la
-veille (24/09 : 3 189) — probablement un relevé pris tôt dans la journée, avant
-la reprise du trafic ; la tendance des 5 derniers jours reste à la hausse régulière
-(2 961 → 3 000 → 3 094 → 3 119 → 3 189), cohérente avec le palier 1 de la feuille
-de route (35-100 visites/jour).
-
-## Anomalies et non-fait
-
-- Aucune passe de contenu n'a tourné le 24/09 (une session technique a travaillé
-  sur la Feuille de route à la place — voir Feuille de route et Audit sans point
-  faible, entrées « [FAIT 24/09] ») ; l'écart est resté sous le seuil de cadence
-  (healthcheck du 24/09 21h32 a maintenu `precheck.sh` silencieux). Signalé pour
-  mémoire, aucune action requise.
-- Search Console non consultée (pas d'accès direct dans cet outillage).
-- Chantier Feuille de route (O1-O9) non touché : hors périmètre de la passe
-  quotidienne de contenu, comme les jours précédents.
-- Résorption des doutes (`a-reverifier.md`, 170 entrées) et vague des imminents :
-  routines hebdomadaires dédiées (mercredi, lundi), non dues aujourd'hui (vendredi).
+## Non vérifié / laissé en l'état
+- Les 6 séjours manquants (LOI DU SITE) n'ont pas été recomposés : à recroiser avec la
+  fenêtre live à la prochaine passe avant de lancer une recherche.
+- Aucun contrôle visuel au vrai navigateur (Playwright non installé dans cette session
+  cloud) pour la correction h2→h3 : la garantie vient de l'analyse statique du CSS
+  (styles par classe, jamais par balise), pas d'une capture d'écran.
+- Feuille de route : le sous-item accessibilité d'O1 remonté de 93 à 95 ; le taux global
+  d'O1 (82 %) n'a pas été recalculé — la méthode de pondération exacte de la moyenne
+  n'est pas assez sûre pour être recalculée sans risquer un chiffre faux plutôt qu'un
+  chiffre simplement pas encore rafraîchi.

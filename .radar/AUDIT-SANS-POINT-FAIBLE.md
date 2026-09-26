@@ -20,10 +20,14 @@ de chaque correction, et le verrou final est un validateur de build BLOQUANT.
    Test bloquant V5 en place : hub vs pages catégories vs base, et compteur de note.html.
 2. [FAIT 17/09] Gala Planetary Health : d1/d2 disaient 25/09, le texte vérifié dit 18/09.
    Synchronisé. Généraliser : test bloquant date machine vs date écrite (chantier n° 20).
-3. [FAIT 17/09 pour la description] Meta description FR de l'accueil encore estivale
-   (avec un tiret long). Réécrite automne, 13 langues servies par la même page.
-   [À FAIRE] Scan global de tous les fichiers générés : "été 2026", "summer 2026",
-   "cet été", "None", "null", "undefined", "NaN", "[object Object]", clés i18n nues.
+3. [FAIT 17/09 pour la description, scan FAIT le 26/09] Meta description FR de l'accueil
+   encore estivale (avec un tiret long). Réécrite automne, 13 langues servies par la même
+   page. Scan global des 5 890 fichiers générés (title/meta description/og) : 0 "None",
+   "null", "undefined", "NaN", "[object Object]" hors balises &lt;script&gt; ; les 333+65+67
+   occurrences de "été 2026"/"cet été"/"summer 2026" restantes sont toutes du contenu
+   factuel légitime (nom ou sujet réel d'un événement/d'une programmation datée), aucune
+   méta périmée trouvée dans les title/description des 14 pages qui en portaient — leur
+   sujet même EST l'été 2026, pas une saison "courante" oubliée.
 4. [FAIT 17-18/09] Titres « None » corrigés ; garde bloquante V1 au verrou (title,
    description, og, h1). Search Console du 18/09 : les pages catégories étrangères
    avaient des centaines d'affichages et zéro clic, preuve de l'impact ; recrawl
@@ -129,12 +133,20 @@ de chaque correction, et le verrou final est un validateur de build BLOQUANT.
     accueils par langue) : PAS le même patron, le bouton y est déjà frère de l'ancre du
     titre plutôt qu'enfant d'un h1-h6 — aucune correction nécessaire là, fausse piste de
     l'audit initial écartée. Signalé aussi : un saut de niveau de titre (h2 direct
-    vers h4) sous Classement Prestige, mineur, toujours ouvert. Contraste des deux thèmes
+    vers h4) sous Classement Prestige [CORRIGÉ 26/09, voir plus bas]. Contraste des deux thèmes
     mesuré en direct le 25/09 (formule WCAG, texte réel sur fond réel) : thème sombre
     6,41 à 19,19 pour 1, thème clair 5,78 à 15,96 pour 1 ; largement au-dessus du seuil de
     4,5 pour 1 partout testé. Vérifié aussi le 25/09 : le seul select de l'accueil (langue)
-    porte déjà un aria-label (« Langue ») ; rien à corriger là. Reste : un vrai passage au
-    lecteur d'écran, noms des symboles ◐ et →, le saut de niveau de titre h2→h4.
+    porte déjà un aria-label (« Langue ») ; rien à corriger là.
+    [CORRIGÉ 26/09] Saut de niveau de titre h2→h4 : deux occurrences, toutes deux hors de
+    la structure h2>h3>h4 correcte de l'Agenda (qui groupe par jour en h3 avant chaque
+    carte en h4). Sous « Classement Prestige » (h2) et sous « Archives » (h2), les cartes
+    rendaient directement en h4 (renderPrestige(), renderArchives()) — les deux passées en
+    h3 (le style visuel dépend uniquement de la classe CSS .t, jamais du nom de balise,
+    vérifié par grep des règles CSS avant modification : aucun changement visuel). Diff de
+    2 lignes dans index.html, validate.py et perfcheck.py relancés, 0 régression. Reste : un
+    vrai passage au lecteur d'écran, noms des symboles ◐ et → (non repris ce jour — le
+    bouton thème porte déjà un aria-label qui couvre le symbole ◐, priorité plus faible).
 24. [EN COURS 25/09, flèches directionnelles corrigées] RTL arabe (nombres/dates
     isolés, fil d'Ariane) et CJK (polices, coupures, pas de troncature au compte de
     caractères latins) : rendu vérifié à 375 et 320 px le 20/09, bogue du lien

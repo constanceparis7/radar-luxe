@@ -87,15 +87,17 @@ moyenne de ses micro-objectifs.
 - [90]  Cohérence éditoriale : graphies normalisées (Monte-Carlo, Saint-Tropez, Saint-Moritz,
         Saint-Barth) ; tirets longs interdits purgés du site entier le 24/09 (plus de 10 600
         corrections, 13 langues, vérifié en ligne) ; reste le vocabulaire des doutes, mineur
-- [93]  Accessibilité : lien d'évitement, <main>, focus visible, coeurs nommés, contrastes
+- [95]  Accessibilité : lien d'évitement, <main>, focus visible, coeurs nommés, contrastes
         vérifiés, commandes symboliques (thème, langue, flèche) nommées en 13 langues
         (20/09) ; audit structurel par arbre d'accessibilité le 25/09 (1 seul h1, 0 image
         sans alt, landmarks propres) : un vrai défaut trouvé, corrigé le 25/09 (bouton
         favori sorti des 217 titres de cartes, rendu frère, testé au navigateur avant
         publication ; gen_pages.py vérifié indemne du même patron) ; contraste mesuré en
         direct le 25/09 (formule WCAG) : thème sombre 6,41 à 19,19, thème clair 5,78 à
-        15,96, tout au-dessus du seuil de 4,5 pour 1 ; reste un vrai passage au lecteur
-        d'écran et le saut de niveau de titre h2→h4 sous Prestige
+        15,96, tout au-dessus du seuil de 4,5 pour 1 ; saut de niveau de titre h2→h4
+        corrigé le 26/09 (Classement Prestige et Archives, passés en h3, aucun changement
+        visuel — style porté par la classe CSS, pas la balise) ; reste un vrai passage au
+        lecteur d'écran et les noms des symboles ◐ et →
 - [88]  Arabe de droite à gauche et langues CJK contrôlés à l'écran le 20/09 : rendu
         correct, et un vrai bogue attrapé (le lien d'évitement décalait toute la page
         arabe hors de l'écran) ; flèches directionnelles retournées le 25/09 (page

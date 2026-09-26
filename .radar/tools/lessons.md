@@ -1243,3 +1243,32 @@ ne se corrige jamais tout seul. Corollaire à surveiller : `LIEU_REDIRECTS` (mê
 patron) n'a pas ce garde-fou non plus ; il est protégé pour l'instant par le fait qu'une page de
 lieu n'est jamais purgée comme une fiche d'événement, mais mérite le même traitement si un lieu
 venait à disparaître du site.
+
+## 26/09/2026 — condensation `iv` : troisième jour consécutif à zéro dérive réelle
+Même méthode que le 20 et le 21/09 (lecture intégrale des 11 champs >1200 car. WARN, plus
+détecteur de motifs de dérive + sous-chaîne dupliquée >60 car. sur un échantillon des 104
+fiches de la fenêtre live >400 car.) : zéro dérive « journal d'enquête » trouvée, tout
+l'excédent est de la densité factuelle légitime (tarifs, horaires, contacts multiples
+réels). Un seul faux positif du détecteur relevé et vérifié à la main (Vente Sotheby's
+Royal & Noble Jewels : une phrase procédurale légitimement répétée entre `iv.o` et `iv.w`,
+pas une duplication de rédaction). RÈGLE CONFIRMÉE : ce chantier est retombé à zéro de façon
+stable sur trois passes distinctes ; continuer à le revérifier au fil de l'eau (le motif
+peut réapparaître si de nouvelles fiches sont composées sans relire la doctrine du 20/08),
+mais cesser de le traiter comme un chantier ouvert au sens du quota « 15-20 fiches/passe ».
+
+## 26/09/2026 — deux sauts de niveau de titre h2→h4 trouvés et corrigés (Prestige, Archives)
+L'audit du 25/09 avait signalé un saut de niveau de titre sous Classement Prestige sans
+l'avoir corrigé. Recherche exhaustive de tous les `<h1>`-`<h6>` du gabarit (en excluant le
+bloc JSON `id="data"`, qui contient de fausses correspondances) : deux fonctions de rendu
+(`renderPrestige()`, `renderArchives()`) posent directement un `<h4 class="t">` sous un
+`<h2>` de section sans `<h3>` intermédiaire — contrairement à `renderAgenda()`/`evCard()`,
+qui groupe correctement par jour en `<h3>` avant chaque carte en `<h4>`. Corrigées en `<h3>`
+aux deux endroits (2 lignes dans index-full.html/index.html). Vérifié avant de toucher au
+code que `.ev .t`/`.ccard .t` stylent par CLASSE, jamais par nom de balise : le changement
+h4→h3 est donc sans aucun effet visuel, seulement structurel. validate.py et perfcheck.py
+relancés après coup : 0 régression, diff de 2 lignes exactement dans index.html.
+Piège d'outillage rencontré en le cherchant : `grep` sur `index-full.html` remonte des
+dizaines de faux positifs venant du bloc `id="data"` (JSON de 4+ Mo) et du `ld+json` — pour
+chercher un motif dans le GABARIT (JS/CSS/HTML), toujours exclure ces deux blocs en premier
+(trouver leurs bornes par `<script type="application/json" id="data">` et sa fermeture),
+sinon le signal utile est noyé sous des milliers de correspondances dans les données.
