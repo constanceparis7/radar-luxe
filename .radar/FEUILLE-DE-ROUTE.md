@@ -170,7 +170,7 @@ les textes de séjour (1 088 Ko) et les journaux d'enquête (619 Ko). Une fiche
 - [0]   Rendu à la volée au-delà de 850 événements (limite des 20 000 fichiers)
 - [0]   API publique JSON (partenaires, assistants d'IA, applications)
 
-### O5 · Visibilité organique mondiale · 65 %
+### O5 · Visibilité organique mondiale · 68 %
 - [100] Titres en forme de requêtes, 13 langues, mois courant automatique
 - [100] hreflang sur les pages et dans le sitemap
 - [100] 88 pages Questions FR et EN, balisage FAQ
@@ -178,12 +178,15 @@ les textes de séjour (1 088 Ko) et les journaux d'enquête (619 Ko). Une fiche
 - [50]  Résorption du cache Google (titres None, saison) : en cours
 - [100] JSON-LD Event propre (recalibré le 20/09)
 - [30]  Taux de clic des pages villes (mesure au bilan du 2/10)
-- [90]  Pages Questions dans les 11 autres langues : 10 publiées le 26/09 (allemand,
-        espagnol, italien, portugais, russe, arabe, chinois, japonais, coréen, hindi),
-        44 questions chacune, vérifiées par un contrôle factuel indépendant par langue
-        qui a trouvé et fait corriger 20 défauts réels avant publication (ponctuation,
-        noms propres incohérents, gloses ajoutées) ; zéro tiret long, vérifié en ligne.
-        Reste le turc, l'agent a échoué après 6 tentatives, à relancer séparément
+- [100] Pages Questions dans les 12 langues : les 11 publiées le 26/09 (allemand,
+        espagnol, italien, portugais, russe, arabe, chinois, japonais, coréen, hindi)
+        et le TURC le 27/09 (44 questions, 4 lots parallèles), qui avait échoué
+        6 fois auparavant. Contrôle factuel mécanique (`.radar/tools/verif_traduction.py`,
+        nouvel outil persisté ce jour, contacts/URLs/tarifs comparés au français) :
+        1 seule alerte sur 44, une localisation de devise (« 400 francs suisses » →
+        « 400 İsviçre frangı ») non reconnue par le détecteur, vérifiée à la main,
+        aucune perte réelle. Zéro tiret long. Les 12 langues + le français sont
+        désormais complètes sur les 44 questions.
 - [0]   Matrice intention vers URL unique (Milan, PFW, Vogue World)
 - [0]   Liens entrants (en pause volontaire ; liste de 20 relais prête)
 

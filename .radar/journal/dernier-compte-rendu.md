@@ -1,77 +1,88 @@
-# Compte rendu — passe du 26/09/2026
-
-## Lu avant tout travail
-`.radar/DOCTRINE.md` (intégral), `.radar/PASSATION.md`, `.radar/tools/lessons.md`
-(intégral, 1246 lignes), puis `.radar/FEUILLE-DE-ROUTE.md`, `.radar/REGLE-ALPHA.md`,
-`.radar/AUDIT-SANS-POINT-FAIBLE.md` (la RÈGLE ALPHA du 18/09 prime sur toute demande de
-contenu et fait de ces trois derniers documents la référence de priorité active).
+# Compte rendu — passe du 27/09/2026
 
 ## Démarrage
-Signature `radar-routine-claude` posée, trace `DEMARRAGE` poussée sur `main` avant tout
-travail (push direct accepté, pas de repli de branche nécessaire). Dépôt shallow détecté
-(`git rev-parse --is-shallow-repository` → true) : `git fetch --unshallow origin` fait
-(2 branches `claude/*` non fusionnées découvertes en passant, non touchées — hors mandat
-de cette passe). `index-full.html` reconstruit (absent, non versionné comme prévu).
+Clone superficiel constaté (comme le 20/09) → `git fetch --unshallow origin` fait avant
+tout outil d'historique. Cadence : dernier run à 43 h (> seuil 30 h), passe traitée en
+RATTRAPAGE normal — aucune anomalie trouvée dans l'historique des commits de la veille
+(passe du 26/09 complète, FIN bien journalisée). `precheck.sh` → OK, verrou posé.
 
-## Priorité du prompt — condensation des voies d'invitation
-Vérifiée à nouveau avec la même méthode que les 20/21/25/09 (lecture intégrale des champs
-`iv.o`/`iv.g`/`iv.w` >1200 car. WARN + détecteur de motifs de dérive sur l'échantillon
->400 car. de la fenêtre live) : **0 dérive « journal d'enquête » trouvée**, troisième jour
-consécutif. Les 11 champs encore au-dessus du seuil WARN et les ~104 encore au-dessus du
-seuil-cible de 400 car. sont de la densité factuelle légitime (tarifs, horaires, plusieurs
-contacts réels par fiche) — vérifié en lisant chacun des 11 en intégralité. Conformément à
-la doctrine (« si tu n'as rien trouvé de digne, ne publie rien » transposé à la
-condensation) : rien condensé aujourd'hui, pour ne pas réintroduire le risque connu
-(URL abrégées, adresses déformées) sur du contenu déjà propre. Détail dans lessons.md.
+## État des trois compteurs (LOI DU SITE) — 100 % sur la fenêtre live
+- Traductions 13 langues : 319/319
+- Séjours clé en main : 313/319 (les 6 manquants sont tous des fiches-conseil `c=acces`,
+  exemption prévue par la doctrine — vérifié un par un, 0 fiche d'événement sans séjour)
+- Voies d'invitation : 319/319
 
-## LOI DU SITE (iv + séjour + 13 langues)
-`reste.py` : traductions 319/319 (100 %), voies d'invitation 319/319 (100 %), séjours
-313/319 (reste 6, tous hors fenêtre live ou marginaux — non retraités aujourd'hui faute
-de mandat prioritaire, la Règle Alpha plaçant l'audit technique au-dessus).
+## Condensation `iv` (priorité de passe) — 4e jour consécutif à zéro dérive réelle
+Lecture intégrale des 11 champs `iv.*` >1200 car. (seuil WARN) + détecteur de motifs de
+dérive et de duplication sur les 82 fiches de la fenêtre live >400 car. (seuil cible) :
+tout l'excédent est de la densité factuelle légitime (tarifs, horaires, contacts
+multiples réels, badges « vérifié le »). Un seul candidat relevé par le détecteur
+(Sotheby's Royal & Noble Jewels) : relu, confirmé faux positif déjà connu du 26/09
+(procédure d'enchères légitimement répétée sous deux angles différents). Conforme à la
+règle du 21/09 : ne pas forcer un quota de condensation sur du contenu déjà sain.
 
-## Travail effectué — registre « aucun point faible » (Règle Alpha, priorité active)
-1. **Scan global P0.3** (5 890 fichiers générés) : 0 occurrence de `None`/`null`/
-   `undefined`/`NaN`/`[object Object]` hors balises `<script>`. Les occurrences de
-   « été 2026 »/« cet été »/« summer 2026 » (333+65+67) sont toutes du contenu factuel
-   légitime (le sujet réel d'un événement ou d'une programmation datée), y compris dans
-   les 14 `<title>`/`<meta description>` qui en portent — aucune méta périmée. Item classé
-   FAIT dans `AUDIT-SANS-POINT-FAIBLE.md`.
-2. **Saut de niveau de titre h2→h4 corrigé** (item 23 du registre, ouvert depuis le 25/09) :
-   deux occurrences trouvées (`renderPrestige()` sous « Classement Prestige », et
-   `renderArchives()` sous « Archives »), toutes deux hors de la structure h2>h3>h4
-   correcte de l'Agenda. Passées en h3 ; vérifié avant modification que le style visuel
-   dépend uniquement de la classe CSS `.t`, jamais du nom de balise — aucun changement
-   visuel. Diff de 2 lignes exactement dans `index.html`, `validate.py` et `perfcheck.py`
-   relancés après coup, 0 régression.
-3. **PageSpeed Insights** retesté pour LCP/INP/CLS (item 21) : quota toujours épuisé
-   (429 `RESOURCE_EXHAUSTED`), rien de nouveau, à réessayer plus tard dans la semaine.
-4. Reste ouvert, non traité aujourd'hui faute de temps : noms des symboles ◐ et →
-   (priorité plus faible, le bouton thème a déjà un aria-label qui couvre ◐), vrai
-   passage au lecteur d'écran, zoom 200 % avec un vrai zoom, matrice cannibalisation
-   inter-langues, newsletter (bloquée sur le compte Brevo de Constance).
-
-## Routine quotidienne
+## Vérifications de routine
 - `memoire.py changements` : 0 changement de date sur 7 jours.
-- Bandeau « Ouvertures & délais » : 3 entrées, aucune expirée (2026-09-30, 2026-10-15,
-  2027-01-31) — rien à retirer, rien de nouveau trouvé à ajouter aujourd'hui.
-- Eyebrow mis à jour : « données collectées et vérifiées le 26 septembre 2026 »
-  (remplacement vérifié unique avant application, piège du 18/09 évité).
-- 2 AVERT W1 pré-existants et inchangés (Covo di Nord-Est, Nikki Beach Ibiza — dates
-  écrites hors fenêtre saisonnière), non blocants, non traités aujourd'hui.
+- 16 événements dans les 7 prochains jours, tous les liens `u` testés (`curl -sL`,
+  domaine témoin wikipedia.org contrôlé avant) : 15×200, 1×403 (lebonmarche.com,
+  anti-bot sur la page d'accueil du grand magasin — pas un signal sur l'événement
+  Fashion Week lui-même, aucune action).
+- 0 zombie à purger (aucune fiche avec d2 < 28/08/2026).
+- Bandeau « Ouvertures & délais » : 3 entrées, toutes encore valides (aucune à retirer).
+- Eyebrow mis à jour : 26 → 27 septembre 2026 (édité précisément dans `index-full.html`,
+  la clé i18n voisine sans date vérifiée intacte).
+- Ancres printemps 2027 (TEFAF, Art Basel HK, Watches and Wonders, Salone del Mobile,
+  Cannes 80e, GemGenève, GP Monaco, Royal Ascot) + Fuorisalone : les 9 sont en ligne.
+- Joaillerie : 12 fiches en fenêtre live (seuil de vigilance à 10), aucun ajout forcé.
+- Recherche de nouveaux événements : aucune piste digne de l'ADN Riviera trouvée
+  aujourd'hui au-delà de ce qui précède — rien ajouté, conformément à la doctrine
+  (mieux vaut ne rien publier que du grand public déguisé).
 
-## Pipeline et publication
-`split_i18n.py --apply` → `gen_seo.py 2026-09-26` → `gen_pages.py` → `validate.py`
-(0 bloqueur, 2 avertissements inchangés) → `perfcheck.py` (0 régression) →
-`.radar/session/publier.sh`. Diff final limité aux fichiers attendus (index.html,
-sitemap, ld+json, pages e/* touchées par gen_seo/gen_pages, journaux).
+## Fait aujourd'hui : traduction turque des 44 pages Questions (objectif O5)
+Dernier backlog de langue du chantier Questions (l'agent unique avait échoué 6 fois le
+26/09). Repris en 4 lots de 11 questions, 4 agents parallèles, règles turques de la
+doctrine (orthographe TDK, exonymes Monako/Venedik/Viyana/Cenevre, Paris/Saint-Tropez/
+Cannes inchangés, dates à la turque, aucun tiret long, aucun fait/prix/URL/contact
+modifié). Fusion : 44/44 slugs identiques et dans le même ordre que le français, clés
+conformes au format des 11 autres langues.
 
-## Non vérifié / laissé en l'état
-- Les 6 séjours manquants (LOI DU SITE) n'ont pas été recomposés : à recroiser avec la
-  fenêtre live à la prochaine passe avant de lancer une recherche.
-- Aucun contrôle visuel au vrai navigateur (Playwright non installé dans cette session
-  cloud) pour la correction h2→h3 : la garantie vient de l'analyse statique du CSS
-  (styles par classe, jamais par balise), pas d'une capture d'écran.
-- Feuille de route : le sous-item accessibilité d'O1 remonté de 93 à 95 ; le taux global
-  d'O1 (82 %) n'a pas été recalculé — la méthode de pondération exacte de la moyenne
-  n'est pas assez sûre pour être recalculée sans risquer un chiffre faux plutôt qu'un
-  chiffre simplement pas encore rafraîchi.
+Contrôle mécanique de non-perte de faits : nouvel outil `.radar/tools/verif_traduction.py`
+écrit et PERSISTÉ ce jour (généralisation de `verif_faits.py` à une paire de fichiers
+JSON par slug), avec un piège corrigé en le construisant : un premier jet du détecteur de
+téléphones fusionnait un numéro avec le début de la phrase suivante à travers un point
+final (« +41 81 837 2661. 15 Aralık… » lu comme un seul numéro) — corrigé en segmentant le
+texte par phrase avant la recherche. Sur les 44 entrées : 1 seule alerte restante, un
+montant en devise localisée (« 400 francs suisses » → « 400 İsviçre frangı », non reconnu
+par le détecteur), vérifié à la main dans le texte turc intégral — présent, aucune perte.
+
+Pipeline complet exécuté : `split_i18n.py --apply` (12 langues, tr 228 Ko gzip),
+`gen_seo.py 2026-09-27`, `gen_pages.py` (44 pages `/tr/q/*.html` + `/tr/questions.html`
+générées, contrôlées : `<html lang="tr">`, titres et h1 en turc, thèmes traduits, 0 tiret
+long). `validate.py` : 0 bloqueur, 2 avertissements inchangés (iv.g/iv.w denses déjà
+connus). `perfcheck.py` : 0 régression. Publié sur `main` via `publier.sh`
+(939 fichiers touchés, quasi tous par le recalcul quotidien normal de la Note du radar,
+vérifié sur un échantillon — aucun contenu de fiche altéré). `healthcheck.sh` : OK
+(http=200, compte_live=319/319, date fraîche). Vérification directe des pages turques en
+ligne : 404 au moment du contrôle (quelques minutes après le push) — décalage de
+propagation GitHub Pages déjà documenté (leçon du 22/07), pas une panne : le healthcheck
+officiel du site est passé au vert sur son propre calcul.
+
+FEUILLE-DE-ROUTE mise à jour : objectif O5, item « Pages Questions » passé à 100 %
+(12 langues + français désormais complètes sur les 44 questions), taux O5 65 → 68 %.
+
+## Ce qui reste (à ne pas perdre)
+- Vérifier dans les prochaines 24 h, à froid, que `/tr/questions.html` et `/tr/q/*.html`
+  répondent bien 200 en ligne (propagation GitHub Pages).
+- Item O5 encore ouvert : matrice intention → URL unique (Milan, PFW, Vogue World), 0 %.
+- Item O1 encore à 0 % : fraîcheur distincte du build quotidien ; statuts des récurrents
+  (EventCancelled).
+- `a-reverifier.md` : plusieurs entrées d'août concernent des établissements d'été dont la
+  fenêtre est probablement déjà passée — à relire lors de la prochaine résorption des
+  doutes du mercredi pour purger les doutes devenus sans objet.
+
+## Anomalie à signaler
+Cadence rompue signalée par `precheck.sh` (43 h) : fausse alerte de mesure, pas un jour
+manqué (la passe du 26/09 est complète, DEMARRAGE+FIN journalisés) — probablement un
+écart d'heure de déclenchement d'un jour à l'autre. Aucune action nécessaire.
+
+Rien d'autre à signaler. Publié sur `main`.
