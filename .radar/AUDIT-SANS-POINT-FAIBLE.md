@@ -32,8 +32,17 @@ de chaque correction, et le verrou final est un validateur de build BLOQUANT.
    description, og, h1). Search Console du 18/09 : les pages catégories étrangères
    avaient des centaines d'affichages et zéro clic, preuve de l'impact ; recrawl
    en cours, à mesurer au 2/10. [Reste : comparaison title servi vs attendu.]
-5. [À FAIRE] Signal 502 vu par le navigateur d'audit (peut venir de son infra).
-   Sonde de disponibilité sur 24 h : /, /en/, /ar/, fiches, sitemap ; taux de 5xx.
+5. [FAIT 27/09, sonde tenue 9 jours] Signal 502 vu par le navigateur d'audit : non
+   reproduit. Sonde de disponibilité lancée le 18/09 et toujours en marche (5 adresses
+   toutes les 20 minutes environ : accueil, /ar/, un lieu anglais, une fiche, le
+   sitemap) : 525 mesures du 18 au 27/09, 480 réponses 200, ZÉRO 5xx, temps de
+   réponse médian 0,20 s, 95 % sous 0,61 s, pire cas 2,61 s. Les 45 échecs restants
+   sont des « connexion impossible » (code 000) dont 40 tombent par paquets de cinq
+   à la même seconde, toutes adresses ensemble : c'est la machine qui sonde qui
+   dormait ou perdait le réseau, pas le site (GitHub Pages ne tombe pas pour cinq
+   adresses à la fois pendant une seconde). Conclusion honnête : aucune panne du
+   site prouvée sur la période ; le 502 de l'audit venait de l'infrastructure de
+   l'auditeur, comme envisagé. La sonde continue.
 
 ## P1 : SEO et crédibilité
 

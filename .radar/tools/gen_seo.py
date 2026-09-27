@@ -94,6 +94,8 @@ for e in data:
         "u": e.get("u"),
         "price": parse_price(e),
         "matched": True,
+        "cf": e.get("cf"),
+        "txt": " ".join(str(e.get(k) or "") for k in ("dt", "ds", "p")).lower(),
     }
 
 # --- ld+json : enrichissement additif ---
@@ -104,9 +106,25 @@ n_status = n_org = n_free = n_orgurl = n_offers = n_price = 0
 for ev in graph:
     if ev.get("@type") != "Event":
         continue
-    ev.setdefault("eventStatus", "https://schema.org/EventScheduled")
-    n_status += 1
     info = lookup.get((ev.get("name") or "").strip())
+    # Statut (audit croisé, point 10, 27/09/2026) : même lecture que les fiches
+    # (gen_pages.py) pour annulé/reporté, et PAS de « EventScheduled » affirmé quand
+    # la date n'est qu'estimée (cf probable ou à vérifier) : l'absence de statut est
+    # honnête, un statut affirmé sur une estimation ne l'est pas.
+    # Recalculé à chaque build, y compris par-dessus un statut déjà présent dans la
+    # source : c'est le seul moyen de retirer un « programmé » posé avant la règle.
+    _t = (info or {}).get("txt", "")
+    if "annulé" in _t or "annulée" in _t or "cancelled" in _t:
+        ev["eventStatus"] = "https://schema.org/EventCancelled"
+        n_status += 1
+    elif "reporté" in _t or "reportée" in _t or "postponed" in _t:
+        ev["eventStatus"] = "https://schema.org/EventPostponed"
+        n_status += 1
+    elif (info or {}).get("cf") == "confirme":
+        ev["eventStatus"] = "https://schema.org/EventScheduled"
+        n_status += 1
+    else:
+        ev.pop("eventStatus", None)
     if info:
         if info["org"] and "organizer" not in ev:
             ev["organizer"] = {"@type": "Organization", "name": info["org"]}

@@ -110,7 +110,10 @@ moyenne de ses micro-objectifs.
 - [100] HTTPS forcé, http et www redirigés
 - [100] Réseau de diffusion mondial (Fastly via GitHub Pages, cache 10 minutes)
 - [100] Redirections des anciennes adresses (178 pages de renvoi, le maximum possible ici)
-- [50]  Surveillance de disponibilité (sonde du matin ; sonde 24 h en cours)
+- [90]  Surveillance de disponibilité : sonde du matin, et sonde continue depuis le
+        18/09 (5 adresses, 525 mesures en 9 jours au 27/09 : zéro 5xx, médiane 0,20 s,
+        95 % sous 0,61 s ; les seuls échecs sont des coupures de la machine qui sonde,
+        toutes adresses à la même seconde) ; reste une alerte hors session
 - [100] Équivalents statiques des en-têtes : CSP et referrer en balise meta sur toutes
         les pages (25/09), testés avant et après publication ; HSTS, nosniff et
         frame-ancestors restent hors de portée sans Cloudflare devant le site
@@ -219,7 +222,9 @@ les textes de séjour (1 088 Ko) et les journaux d'enquête (619 Ko). Une fiche
 - [100] Search Console vérifiée, exports lus
 - [100] Sonde du matin (quotidienne) et contrôle Google contre site (hebdomadaire)
 - [100] Bilan observatoire du 2 octobre programmé
-- [50]  Sonde de disponibilité 24 h (en cours) puis permanente
+- [90]  Sonde de disponibilité : devenue permanente de fait (en marche sans
+        interruption depuis le 18/09, 9 jours de mesures au 27/09, zéro 5xx) ; reste
+        à la relancer automatiquement si la machine redémarre
 - [30]  Tableau de bord unique (tableau-de-bord.html à enrichir)
 - [0]   Statistiques Cloudflare sans cookie
 - [60]  Alertes : la sonde du matin contrôle désormais que la passe de nuit a tourné et

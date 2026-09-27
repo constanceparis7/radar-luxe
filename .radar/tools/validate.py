@@ -202,6 +202,16 @@ def main():
         if dc not in (None, "") and dc not in DC_ENUM:
             blk(f"dc hors liste ({dc!r}) — {n}")
 
+        # Statut de confirmation : trois valeurs canoniques, sans accent ni espace
+        # (l'accueil ne reconnaît que « confirme » et « probable » ; toute autre
+        # graphie s'affichait « à vérifier », y compris « confirmé » avec accent :
+        # 35 fiches confirmées étaient ainsi rétrogradées à l'écran, corrigé le 27/09).
+        # split_i18n.py normalise à chaque build ; ici on avertit seulement, pour ne
+        # jamais bloquer une passe de nuit sur une graphie.
+        cf = e.get("cf")
+        if cf not in ("confirme", "probable", "averifier"):
+            wrn(f"cf hors des trois valeurs canoniques ({cf!r}), normalisé au build — {n}")
+
         iv = e.get("iv")
         if isinstance(iv, dict):
             for ct in iv.get("c", []) or []:

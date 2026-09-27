@@ -23,7 +23,7 @@ Usage :
   python3 split_i18n.py --out /chemin/essai
   python3 split_i18n.py --apply               # écrit dans le dépôt (après vérif)
 """
-import argparse, json, os, re, shutil, sys, gzip
+import argparse, json, os, re, shutil, sys, gzip, unicodedata
 
 REPO = os.environ.get("RADAR_REPO") or os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
@@ -114,6 +114,11 @@ def build(out_dir, src=SRC):
     light = []
     for e in data:
         d = {k: v for k, v in e.items() if k not in ("tr", "iv", "sej", "hi", "hs")}
+        # Statut de confirmation ramené à ses trois valeurs canoniques à chaque build
+        # (27/09/2026) : les passes écrivaient « confirmé », « à vérifier », « a verifier »
+        # ou rien, et l'accueil ne reconnaissait que « confirme »/« probable ».
+        _cf = unicodedata.normalize("NFD", str(d.get("cf") or "")).encode("ascii", "ignore").decode().lower().replace(" ", "")
+        d["cf"] = "confirme" if _cf.startswith("confirm") else "probable" if _cf.startswith("probab") else "averifier"
         if e.get("iv"):
             d["hi"] = 1
         if e.get("sej"):
