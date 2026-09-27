@@ -879,6 +879,16 @@ une issue GitHub.
    live la mieux notée. (`iv.c` jamais traduit.)
 5. Chaque LUNDI : retester TOUS les liens (décompte au compte rendu) et
    régénérer le ld+json (60 meilleurs à venir).
+5bis. CHAQUE PASSE, fraîcheur des fiches (point 9 du registre, 27/09/2026) :
+   `python3 .radar/tools/reverification.py` écrit
+   `.radar/reverification-prioritaire.json`, la file des fiches imminentes ou
+   en cours dont la vérification écrite est absente ou vieille de plus de
+   30 jours. Prendre les 3 à 5 premières, les confronter à leur source
+   officielle, corriger ce qui a changé, et ÉCRIRE la date dans `so`
+   (« vérifié le JJ/MM/AAAA ») : c'est cette mention, et elle seule, qui fait
+   apparaître le badge « ✓ Vérifié à la source le… » sur la fiche. Pas de
+   vérification réelle, pas de date : ne jamais dater sans avoir regardé.
+   Compte rendu : combien revérifiées, combien corrigées.
 6. Mettre à jour la date de l'eyebrow (« données collectées et vérifiées le
    JJ mois 2026 »).
 7. Ré-injecter le JSON data (« </ » → « <\/ »), réécrire index.html.

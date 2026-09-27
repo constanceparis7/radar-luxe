@@ -57,8 +57,18 @@ de chaque correction, et le verrou final est un validateur de build BLOQUANT.
    officiel), offers seulement si vraie offre publique, pas d'InStock par défaut,
    pas d'estimation déclarée EventScheduled, accueil en ItemList plutôt que
    des centaines d'Event complets, JSON-LD strictement égal au visible.
-9. [À FAIRE] Fraîcheur : distinguer build quotidien / dernière modification / dernière
-   vérification de source ; une fiche imminente se revérifie plus souvent.
+9. [EN COURS 27/09, mécanique posée] Fraîcheur. Les trois dates sont désormais distinctes
+   et honnêtes : la date de l'eyebrow de l'accueil est celle de la passe (avancée
+   seulement quand une passe a vérifié quelque chose, règle de passe_automatique.py) ;
+   le badge « ✓ Vérifié à la source le… » d'une fiche n'apparaît que si la date est
+   écrite dans ses sources (gen_pages.date_verif, depuis le 26/08) ; et une file de
+   revérification tient la différence entre les deux. Mesure du 27/09 : 219 fiches
+   vivantes, 59 seulement avec une date écrite (âge médian 35 jours), 160 sans ; parmi
+   les imminentes ou en cours, 109 sont à revérifier. Nouvel outil persisté
+   `.radar/tools/reverification.py` → `.radar/reverification-prioritaire.json`, et
+   étape 5bis de la doctrine : chaque passe de nuit en revérifie 3 à 5 à la source et
+   écrit la date. Reste : faire descendre les 109, au rythme des passes (suivi au
+   compte rendu quotidien).
 10. [FAIT 27/09] Statuts : le JSON-LD de l'accueil déclarait « programmé » pour tous
     les événements, date estimée comprise. Désormais recalculé à chaque build comme
     sur les fiches : annulé → EventCancelled, reporté → EventPostponed, programmé

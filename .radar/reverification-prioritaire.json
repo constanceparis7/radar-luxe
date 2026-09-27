@@ -1,0 +1,989 @@
+{
+ "genere_le": "2026-09-27",
+ "regle": "fiche non terminée, commençant dans 21 jours ou déjà en cours, dont la dernière vérification écrite est absente ou date de plus de 30 jours ; triée par imminence puis par ancienneté",
+ "total_vivantes": 219,
+ "avec_date_verif": 59,
+ "prioritaires": [
+  {
+   "n": "Gaïo Saint-Tropez, dîner-cabaret & club 2026",
+   "d1": "2026-04-01",
+   "d2": "2026-10-31",
+   "dans_jours": -179,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "probable"
+  },
+  {
+   "n": "Fondazione Prada, programme d'été (Cao Fei « DASH », Mona Hatoum, Hito Steyerl à l'Osservatorio)",
+   "d1": "2026-04-09",
+   "d2": "2026-09-28",
+   "dans_jours": -171,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "confirme"
+  },
+  {
+   "n": "The Shop on the Corner, pop-up multi-maisons (Globe-Trotter, Connolly, Smythson, Fornasetti, Alessi)",
+   "d1": "2026-04-14",
+   "d2": "2026-10-05",
+   "dans_jours": -166,
+   "verifie_le": "2026-08-12",
+   "age_jours": 46,
+   "cf": "confirme"
+  },
+  {
+   "n": "PatBO x Loulou Ramatuelle, pop-up beachwear de l'été 2026",
+   "d1": "2026-04-23",
+   "d2": "2026-10-03",
+   "dans_jours": -157,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "confirme"
+  },
+  {
+   "n": "Villa Carmignac, Exposition « Sea, Pop & Sun » et nocturnes d'été",
+   "d1": "2026-04-25",
+   "d2": "2026-11-01",
+   "dans_jours": -155,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "confirme"
+  },
+  {
+   "n": "L'Opéra Saint-Tropez, dîner-spectacle 2026 « Luxury Futuristic World »",
+   "d1": "2026-04-30",
+   "d2": "2026-10-04",
+   "dans_jours": -150,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "confirme"
+  },
+  {
+   "n": "Loro Piana x La Reserve a la Plage (Pampelonne), reconduction 2026 non confirmee",
+   "d1": "2026-05-01",
+   "d2": "2026-09-30",
+   "dans_jours": -149,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "averifier"
+  },
+  {
+   "n": "Les Jardins de Bagatelle, Garden Club (saison estivale 2026)",
+   "d1": "2026-05-01",
+   "d2": "2026-09-30",
+   "dans_jours": -149,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "probable"
+  },
+  {
+   "n": "Biennale Arte 2026, In Minor Keys (61e Exposition internationale d'art)",
+   "d1": "2026-05-09",
+   "d2": "2026-11-22",
+   "dans_jours": -141,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "confirme"
+  },
+  {
+   "n": "Helter Skelter: Arthur Jafa and Richard Prince (Fondazione Prada Venise)",
+   "d1": "2026-05-09",
+   "d2": "2026-11-23",
+   "dans_jours": -141,
+   "verifie_le": "2026-08-11",
+   "age_jours": 47,
+   "cf": "confirme"
+  },
+  {
+   "n": "La Mode en majesté. Haute couture et tradition à la cour de Thaïlande, Musée des Arts Décoratifs",
+   "d1": "2026-05-13",
+   "d2": "2026-11-01",
+   "dans_jours": -137,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "confirme"
+  },
+  {
+   "n": "Fondation Maeght, « Peter Knapp : Le Temps Courrèges »",
+   "d1": "2026-05-14",
+   "d2": "2026-11-08",
+   "dans_jours": -136,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "confirme"
+  },
+  {
+   "n": "Boutique ephemere Chanel a East Hampton",
+   "d1": "2026-05-22",
+   "d2": "2026-09-30",
+   "dans_jours": -128,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "confirme"
+  },
+  {
+   "n": "Le Jardin de Cheval Blanc Paris, rooftop d'été (7e étage)",
+   "d1": "2026-05-22",
+   "d2": "2026-09-30",
+   "dans_jours": -128,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "confirme"
+  },
+  {
+   "n": "Life Cycles: An Amanzoe Exhibition",
+   "d1": "2026-05-22",
+   "d2": "2026-10-31",
+   "dans_jours": -128,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "confirme"
+  },
+  {
+   "n": "Exposition « Precious Coral », L'École des Arts Joailliers à Hong Kong",
+   "d1": "2026-05-23",
+   "d2": "2026-10-11",
+   "dans_jours": -127,
+   "verifie_le": "2026-08-23",
+   "age_jours": 35,
+   "cf": "confirme"
+  },
+  {
+   "n": "Nammos Baja Sardinia, saison beach club 2026 (nouvelle ouverture)",
+   "d1": "2026-05-29",
+   "d2": "2026-09-30",
+   "dans_jours": -121,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "probable"
+  },
+  {
+   "n": "Music on the Rocks, nights (saison 2026)",
+   "d1": "2026-06-01",
+   "d2": "2026-09-30",
+   "dans_jours": -118,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "probable"
+  },
+  {
+   "n": "Exposition « Van Cleef & Arpels : l'éclat des années 1980-1990 », Galerie du Patrimoine",
+   "d1": "2026-06-04",
+   "d2": "2026-11-28",
+   "dans_jours": -115,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "confirme"
+  },
+  {
+   "n": "Into the Ocean: Journey Beneath (ArtScience Museum x OceanX)",
+   "d1": "2026-06-06",
+   "d2": "2026-11-01",
+   "dans_jours": -113,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "confirme"
+  },
+  {
+   "n": "Exposition « Daniel Brush, l'art de la ligne et de la lumière », L'École des Arts Joailliers",
+   "d1": "2026-06-08",
+   "d2": "2026-10-04",
+   "dans_jours": -111,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "confirme"
+  },
+  {
+   "n": "Jacquemus Beach Experience, takeover de Blue Beach au Mandarin Oriental, Bodrum",
+   "d1": "2026-06-08",
+   "d2": "2026-10-31",
+   "dans_jours": -111,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "confirme"
+  },
+  {
+   "n": "Exposition « Glanzstücke », Van Cleef & Arpels au MAK de Vienne",
+   "d1": "2026-06-10",
+   "d2": "2026-09-27",
+   "dans_jours": -109,
+   "verifie_le": "2026-08-23",
+   "age_jours": 35,
+   "cf": "confirme"
+  },
+  {
+   "n": "Yves Saint Laurent and Photography, International Center of Photography (pendant la fermeture du musée YSL Paris)",
+   "d1": "2026-06-11",
+   "d2": "2026-09-28",
+   "dans_jours": -108,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "confirme"
+  },
+  {
+   "n": "Exposition « Cartier », National Gallery of Victoria, Melbourne Winter Masterpieces",
+   "d1": "2026-06-12",
+   "d2": "2026-10-04",
+   "dans_jours": -107,
+   "verifie_le": "2026-08-23",
+   "age_jours": 35,
+   "cf": "confirme"
+  },
+  {
+   "n": "Givenchy, pop-up estival rue Gambetta",
+   "d1": "2026-06-17",
+   "d2": "2026-10-04",
+   "dans_jours": -102,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "confirme"
+  },
+  {
+   "n": "SAINT Ramatuelle, nouveau beach club d'exception (Bagatelle Group)",
+   "d1": "2026-06-26",
+   "d2": "2026-09-30",
+   "dans_jours": -93,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "confirme"
+  },
+  {
+   "n": "Ellsworth Kelly, Aux bords de l'eau (exposition d'été Fondation Maeght)",
+   "d1": "2026-06-27",
+   "d2": "2026-11-15",
+   "dans_jours": -92,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "confirme"
+  },
+  {
+   "n": "Terrasses et jardins d'été des palaces parisiens (Plaza Athénée, Bristol, Peninsula, Mandarin Oriental, Crillon)",
+   "d1": "2026-07-01",
+   "d2": "2026-10-04",
+   "dans_jours": -88,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "probable"
+  },
+  {
+   "n": "La Lanterne d'Hermes a Ginza - programme d'ete 2026 (theme \"L'appel du large\", Flaneur Tour, vitrines)",
+   "d1": "2026-07-01",
+   "d2": "2026-09-30",
+   "dans_jours": -88,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "probable"
+  },
+  {
+   "n": "Jacquemus x Monte-Carlo Beach, takeover été 2026 (2e année)",
+   "d1": "2026-07-01",
+   "d2": "2026-09-27",
+   "dans_jours": -88,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "confirme"
+  },
+  {
+   "n": "Villa Louis Vuitton et restaurant étoilé Arnaud Donckele & Maxime Frédéric au White 1921",
+   "d1": "2026-07-01",
+   "d2": "2026-10-04",
+   "dans_jours": -88,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "confirme"
+  },
+  {
+   "n": "Exposition 'On aura tout vu : Icônes' au Sofitel Paris Le Faubourg (robe de Lady Gaga)",
+   "d1": "2026-07-01",
+   "d2": "2026-10-06",
+   "dans_jours": -88,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "confirme"
+  },
+  {
+   "n": "Chanel, boutique estivale à la villa La Mistralée",
+   "d1": "2026-07-01",
+   "d2": "2026-10-15",
+   "dans_jours": -88,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "probable"
+  },
+  {
+   "n": "Dolce & Gabbana x Casa Amor, takeover 'DG Resort' (thème Carretto Siciliano)",
+   "d1": "2026-07-01",
+   "d2": "2026-10-31",
+   "dans_jours": -88,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "confirme"
+  },
+  {
+   "n": "Armani/Silos, exposition « Giorgio Armani Privé 2005-2025, vingt ans de haute couture »",
+   "d1": "2026-07-01",
+   "d2": "2026-12-20",
+   "dans_jours": -88,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "confirme"
+  },
+  {
+   "n": "Grand Hôtel de Cala Rossa, saison 2026 et table étoilée La Pinède",
+   "d1": "2026-07-01",
+   "d2": "2026-10-25",
+   "dans_jours": -88,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "confirme"
+  },
+  {
+   "n": "Hôtel & Spa des Pêcheurs, saison 2026 sur l'île de Cavallo (« l'île des milliardaires »)",
+   "d1": "2026-07-01",
+   "d2": "2026-09-30",
+   "dans_jours": -88,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "confirme"
+  },
+  {
+   "n": "Sunset sessions & DJ sets à La Co(o)rniche (Philippe Starck)",
+   "d1": "2026-07-01",
+   "d2": "2026-09-30",
+   "dans_jours": -88,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "confirme"
+  },
+  {
+   "n": "L'été au Westminster, palace Barrière du Touquet (table étoilée Le Pavillon)",
+   "d1": "2026-07-01",
+   "d2": "2027-12-31",
+   "dans_jours": -88,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "confirme"
+  },
+  {
+   "n": "Clubs prives Mayfair - Annabel's, 5 Hertford Street, Oswald's (Birley)",
+   "d1": "2026-07-01",
+   "d2": "2027-02-15",
+   "dans_jours": -88,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "confirme"
+  },
+  {
+   "n": "Bagni Fiore Paraggi & Langosteria Paraggi (terrasse Dior)",
+   "d1": "2026-07-01",
+   "d2": "2026-09-30",
+   "dans_jours": -88,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "confirme"
+  },
+  {
+   "n": "DaV Mare, Splendido Mare, A Belmond Hotel (famille Cerea / Da Vittorio)",
+   "d1": "2026-07-01",
+   "d2": "2027-01-05",
+   "dans_jours": -88,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "confirme"
+  },
+  {
+   "n": "Covo di Nord-Est, club iconique de la Riviera",
+   "d1": "2026-07-01",
+   "d2": "2026-09-30",
+   "dans_jours": -88,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "confirme"
+  },
+  {
+   "n": "La Gritta American Bar, Portofino",
+   "d1": "2026-07-01",
+   "d2": "2027-12-31",
+   "dans_jours": -88,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "confirme"
+  },
+  {
+   "n": "David Guetta F*** Me I'm Famous!, Ushuaia Ibiza",
+   "d1": "2026-07-01",
+   "d2": "2026-10-05",
+   "dans_jours": -88,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "confirme"
+  },
+  {
+   "n": "Lio Ibiza, Cabaret dinner-show 'Halftime Show' & club",
+   "d1": "2026-07-01",
+   "d2": "2026-10-04",
+   "dans_jours": -88,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "confirme"
+  },
+  {
+   "n": "Blue Marlin Ibiza, Beach club VIP (Cala Jondal)",
+   "d1": "2026-07-01",
+   "d2": "2026-10-04",
+   "dans_jours": -88,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "confirme"
+  },
+  {
+   "n": "Scene yacht & superyachts Ibiza-Formentera",
+   "d1": "2026-07-01",
+   "d2": "2026-10-04",
+   "dans_jours": -88,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "probable"
+  },
+  {
+   "n": "Nikki Beach Mallorca, Beach club (Calvia)",
+   "d1": "2026-07-01",
+   "d2": "2026-10-11",
+   "dans_jours": -88,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "confirme"
+  },
+  {
+   "n": "Principote, Beach club chic de Panormos",
+   "d1": "2026-07-01",
+   "d2": "2026-09-30",
+   "dans_jours": -88,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "confirme"
+  },
+  {
+   "n": "LIV at Fontainebleau, nightclub iconique (soirees d'ete)",
+   "d1": "2026-07-01",
+   "d2": "2026-09-27",
+   "dans_jours": -88,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "confirme"
+  },
+  {
+   "n": "Saison 2026 de la Taverna Anema e Core de Gianluigi Lembo",
+   "d1": "2026-07-01",
+   "d2": "2026-09-30",
+   "dans_jours": -88,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "confirme"
+  },
+  {
+   "n": "Cene a quattro mani à L'Olivo**, Jumeirah Capri Palace (série été 2026)",
+   "d1": "2026-07-01",
+   "d2": "2026-09-30",
+   "dans_jours": -88,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "probable"
+  },
+  {
+   "n": "Verde Beach Saint-Tropez, nuits DJ d'exception 2026",
+   "d1": "2026-07-01",
+   "d2": "2026-09-30",
+   "dans_jours": -88,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "probable"
+  },
+  {
+   "n": "Soirées d'été du Casino Barrière Le Touquet",
+   "d1": "2026-07-01",
+   "d2": "2026-10-24",
+   "dans_jours": -88,
+   "verifie_le": "2026-07-11",
+   "age_jours": 78,
+   "cf": "averifier"
+  },
+  {
+   "n": "Nikki Beach Miami Beach, Amazing Sundays & Saturdance (beach club ADN Riviera)",
+   "d1": "2026-07-01",
+   "d2": "2027-08-06",
+   "dans_jours": -88,
+   "verifie_le": "2026-08-11",
+   "age_jours": 47,
+   "cf": "confirme"
+  },
+  {
+   "n": "LUMA Arles, Semaine d'ouverture et expositions de l'été 2026 (Fondation Maja Hoffmann)",
+   "d1": "2026-07-04",
+   "d2": "2026-11-08",
+   "dans_jours": -85,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "confirme"
+  },
+  {
+   "n": "Bagatelle Bodrum, Iconic Shows et guest DJs internationaux du jeudi",
+   "d1": "2026-07-16",
+   "d2": "2026-09-30",
+   "dans_jours": -73,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "confirme"
+  },
+  {
+   "n": "GAIA Bodrum, résidence estivale grecque-méditerranéenne au Mandarin Oriental",
+   "d1": "2026-07-16",
+   "d2": "2026-09-30",
+   "dans_jours": -73,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "confirme"
+  },
+  {
+   "n": "La Guérite, dîners au coucher du soleil, Île Sainte-Marguerite",
+   "d1": "2026-07-17",
+   "d2": "2026-10-31",
+   "dans_jours": -72,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "confirme"
+  },
+  {
+   "n": "Le Bâoli Cannes, saison estivale 2026 (club & dîner festif)",
+   "d1": "2026-07-18",
+   "d2": "2026-09-30",
+   "dans_jours": -71,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "probable"
+  },
+  {
+   "n": "Sass Café Monte-Carlo, dîner-club des célébrités (soirées d'été)",
+   "d1": "2026-07-18",
+   "d2": "2026-09-30",
+   "dans_jours": -71,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "probable"
+  },
+  {
+   "n": "Exposition « De la caserne au musée... 10 ans déjà », Musée de la Gendarmerie et du Cinéma",
+   "d1": "2026-07-20",
+   "d2": "2026-12-31",
+   "dans_jours": -69,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "confirme"
+  },
+  {
+   "n": "Scorpios, Nuits signature (Innervisions, Keinemusik, Peggy Gou)",
+   "d1": "2026-07-21",
+   "d2": "2026-10-04",
+   "dans_jours": -68,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "confirme"
+  },
+  {
+   "n": "Beach clubs de Pampelonne, Loulou, Casa Amor, Bagatelle, Gigi : soirées d'août",
+   "d1": "2026-08-01",
+   "d2": "2026-10-03",
+   "dans_jours": -57,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "probable"
+  },
+  {
+   "n": "Palaces de la presqu'île, expériences d'août (Byblos, Cheval Blanc, Airelles Château de la Messardière, La Réserve Ramatuelle)",
+   "d1": "2026-08-01",
+   "d2": "2026-10-11",
+   "dans_jours": -57,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "probable"
+  },
+  {
+   "n": "Gucci Flora x La Rose des Vents, beach club takeover",
+   "d1": "2026-08-01",
+   "d2": "2026-09-30",
+   "dans_jours": -57,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "confirme"
+  },
+  {
+   "n": "Soirées d'été du Grand-Hôtel du Cap-Ferrat (Four Seasons), live music et sunsets au Club Dauphin",
+   "d1": "2026-08-01",
+   "d2": "2026-11-15",
+   "dans_jours": -57,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "confirme"
+  },
+  {
+   "n": "Saison d'été à l'Hôtel du Cap-Eden-Roc (Oetker Collection)",
+   "d1": "2026-08-01",
+   "d2": "2026-10-18",
+   "dans_jours": -57,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "confirme"
+  },
+  {
+   "n": "Capri en aout : saison de la taverne Anema e Core et programme municipal Emozioni d'Estate",
+   "d1": "2026-08-01",
+   "d2": "2026-09-30",
+   "dans_jours": -57,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "confirme"
+  },
+  {
+   "n": "Circuit vacances des mannequins - Mediterranee (Saint-Tropez, Ibiza, Mykonos, Sardaigne)",
+   "d1": "2026-08-01",
+   "d2": "2026-10-04",
+   "dans_jours": -57,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "probable"
+  },
+  {
+   "n": "Marie Antoinette Style (tournee mondiale du V&A - unique etape au Japon)",
+   "d1": "2026-08-01",
+   "d2": "2026-11-23",
+   "dans_jours": -57,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "confirme"
+  },
+  {
+   "n": "« La Jeune Fille à la perle » à Osaka, sous le mécénat de Mikimoto",
+   "d1": "2026-08-21",
+   "d2": "2026-09-27",
+   "dans_jours": -37,
+   "verifie_le": "2026-08-23",
+   "age_jours": 35,
+   "cf": "confirme"
+  },
+  {
+   "n": "Dior Spa Cheval Blanc Paris, expérience bien-être Dioriviera",
+   "d1": "2026-09-22",
+   "d2": "2026-11-22",
+   "dans_jours": -5,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "averifier"
+  },
+  {
+   "n": "Régates Royales, Trophée Panerai, Cannes 2026",
+   "d1": "2026-09-22",
+   "d2": "2026-09-27",
+   "dans_jours": -5,
+   "verifie_le": "2026-07-16",
+   "age_jours": 73,
+   "cf": "confirme"
+  },
+  {
+   "n": "Milano Fashion Week, Printemps-Été 2027",
+   "d1": "2026-09-22",
+   "d2": "2026-09-28",
+   "dans_jours": -5,
+   "verifie_le": "2026-07-16",
+   "age_jours": 73,
+   "cf": "probable"
+  },
+  {
+   "n": "133° Abierto del Hurlingham Club",
+   "d1": "2026-09-22",
+   "d2": "2026-10-03",
+   "dans_jours": -5,
+   "verifie_le": "2026-07-29",
+   "age_jours": 60,
+   "cf": "confirme"
+  },
+  {
+   "n": "22e Zurich Film Festival 2026",
+   "d1": "2026-09-24",
+   "d2": "2026-10-04",
+   "dans_jours": -3,
+   "verifie_le": "2026-07-15",
+   "age_jours": 74,
+   "cf": "confirme"
+  },
+  {
+   "n": "Les Voiles de Saint-Tropez 2026",
+   "d1": "2026-09-26",
+   "d2": "2026-10-04",
+   "dans_jours": -1,
+   "verifie_le": "2026-07-15",
+   "age_jours": 74,
+   "cf": "confirme"
+  },
+  {
+   "n": "Fashion Week Paris, invitations des maisons : bureaux de presse & VIC",
+   "d1": "2026-09-28",
+   "d2": "2026-10-06",
+   "dans_jours": 1,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "averifier"
+  },
+  {
+   "n": "Sphère, showroom officiel des créateurs émergents (FHCM)",
+   "d1": "2026-09-28",
+   "d2": "2026-10-06",
+   "dans_jours": 1,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "averifier"
+  },
+  {
+   "n": "Grands magasins & concept stores, accès libre pendant la Fashion Week",
+   "d1": "2026-09-28",
+   "d2": "2026-10-06",
+   "dans_jours": 1,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "averifier"
+  },
+  {
+   "n": "Accès payant, billetterie de défilés & conciergerie de luxe",
+   "d1": "2026-09-28",
+   "d2": "2026-10-06",
+   "dans_jours": 1,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "averifier"
+  },
+  {
+   "n": "Créateurs émergents au calendrier, contacts directs (voie la plus accessible)",
+   "d1": "2026-09-28",
+   "d2": "2026-10-06",
+   "dans_jours": 1,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "averifier"
+  },
+  {
+   "n": "Paris Fashion Week, Prêt-à-porter Printemps-Été 2027",
+   "d1": "2026-09-28",
+   "d2": "2026-10-06",
+   "dans_jours": 1,
+   "verifie_le": "2026-07-15",
+   "age_jours": 74,
+   "cf": "confirme"
+  },
+  {
+   "n": "Doha Jewellery and Watches Exhibition 2026",
+   "d1": "2026-09-28",
+   "d2": "2026-10-03",
+   "dans_jours": 1,
+   "verifie_le": "2026-08-23",
+   "age_jours": 35,
+   "cf": "confirme"
+  },
+  {
+   "n": "Sotheby's Hong Kong, Modern & Contemporary Evening Auction",
+   "d1": "2026-09-29",
+   "d2": "2026-09-30",
+   "dans_jours": 2,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "confirme"
+  },
+  {
+   "n": "New York Philharmonic, Gala inaugural de Gustavo Dudamel",
+   "d1": "2026-09-30",
+   "d2": "2026-09-30",
+   "dans_jours": 3,
+   "verifie_le": "2026-07-15",
+   "age_jours": 74,
+   "cf": "confirme"
+  },
+  {
+   "n": "Salons professionnels, Tranoï, Première Classe, JILL, WOMAN Paris",
+   "d1": "2026-10-01",
+   "d2": "2026-10-05",
+   "dans_jours": 4,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "averifier"
+  },
+  {
+   "n": "The Global Gift Gala Paris 2026",
+   "d1": "2026-10-01",
+   "d2": "2026-10-01",
+   "dans_jours": 4,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "probable"
+  },
+  {
+   "n": "New York City Ballet, Fall Fashion Gala 2026",
+   "d1": "2026-10-01",
+   "d2": "2026-10-01",
+   "dans_jours": 4,
+   "verifie_le": "2026-07-15",
+   "age_jours": 74,
+   "cf": "confirme"
+  },
+  {
+   "n": "Vente Sotheby's « Château Haut-Brion, Domaine Clarence Dillon » (90 ans de la propriété)",
+   "d1": "2026-10-01",
+   "d2": "2026-10-01",
+   "dans_jours": 4,
+   "verifie_le": "2026-07-22",
+   "age_jours": 67,
+   "cf": "confirme"
+  },
+  {
+   "n": "Les Caves du Roy, clôture de la saison 2026 (Hôtel Byblos)",
+   "d1": "2026-10-02",
+   "d2": "2026-10-03",
+   "dans_jours": 5,
+   "verifie_le": "2026-07-22",
+   "age_jours": 67,
+   "cf": "confirme"
+  },
+  {
+   "n": "ADOR's Gala Dinner 2026, Dîner de gala de l'Opéra Royal",
+   "d1": "2026-10-03",
+   "d2": "2026-10-03",
+   "dans_jours": 6,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "confirme"
+  },
+  {
+   "n": "Qatar Prix de l'Arc de Triomphe 2026",
+   "d1": "2026-10-03",
+   "d2": "2026-10-04",
+   "dans_jours": 6,
+   "verifie_le": "2026-08-22",
+   "age_jours": 36,
+   "cf": "confirme"
+  },
+  {
+   "n": "RSVP Symposium Hvar 2026",
+   "d1": "2026-10-05",
+   "d2": "2026-10-08",
+   "dans_jours": 8,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "confirme"
+  },
+  {
+   "n": "86° Abierto del Tortugas Country Club",
+   "d1": "2026-10-06",
+   "d2": "2026-11-07",
+   "dans_jours": 9,
+   "verifie_le": "2026-07-29",
+   "age_jours": 60,
+   "cf": "confirme"
+  },
+  {
+   "n": "Gala d'ouverture de la saison de danse, Opéra national de Paris (Palais Garnier)",
+   "d1": "2026-10-10",
+   "d2": "2026-10-10",
+   "dans_jours": 13,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "confirme"
+  },
+  {
+   "n": "AROP, Gala d'ouverture de la saison de danse 26/27",
+   "d1": "2026-10-10",
+   "d2": "2026-10-10",
+   "dans_jours": 13,
+   "verifie_le": "2026-07-15",
+   "age_jours": 74,
+   "cf": "confirme"
+  },
+  {
+   "n": "PAD London 2026, Collectors Preview",
+   "d1": "2026-10-13",
+   "d2": "2026-10-18",
+   "dans_jours": 16,
+   "verifie_le": "2026-07-15",
+   "age_jours": 74,
+   "cf": "confirme"
+  },
+  {
+   "n": "Frieze London & Frieze Masters 2026",
+   "d1": "2026-10-14",
+   "d2": "2026-10-18",
+   "dans_jours": 17,
+   "verifie_le": "2026-07-21",
+   "age_jours": 68,
+   "cf": "confirme"
+  },
+  {
+   "n": "Olympic Yacht Show 2026",
+   "d1": "2026-10-15",
+   "d2": "2026-10-18",
+   "dans_jours": 18,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "confirme"
+  },
+  {
+   "n": "Targa Florio Classica 2026",
+   "d1": "2026-10-15",
+   "d2": "2026-10-18",
+   "dans_jours": 18,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "confirme"
+  },
+  {
+   "n": "Repossi ouvre le 6 place Vendôme, Journées Particulières LVMH",
+   "d1": "2026-10-16",
+   "d2": "2026-10-18",
+   "dans_jours": 19,
+   "verifie_le": "2026-08-23",
+   "age_jours": 35,
+   "cf": "confirme"
+  },
+  {
+   "n": "Les Journées Particulières LVMH 2026, 69 lieux ouverts dans 12 pays",
+   "d1": "2026-10-16",
+   "d2": "2026-10-18",
+   "dans_jours": 19,
+   "verifie_le": "2026-08-23",
+   "age_jours": 35,
+   "cf": "confirme"
+  },
+  {
+   "n": "Zamna Bali",
+   "d1": "2026-10-17",
+   "d2": "2026-10-18",
+   "dans_jours": 20,
+   "verifie_le": null,
+   "age_jours": null,
+   "cf": "confirme"
+  },
+  {
+   "n": "Venice Hospitality Challenge 2026 (13e édition)",
+   "d1": "2026-10-17",
+   "d2": "2026-10-17",
+   "dans_jours": 20,
+   "verifie_le": "2026-07-21",
+   "age_jours": 68,
+   "cf": "confirme"
+  },
+  {
+   "n": "Exposition « Le Diamant rose », château de Chantilly et L'École des Arts Joailliers",
+   "d1": "2026-10-17",
+   "d2": "2027-01-03",
+   "dans_jours": 20,
+   "verifie_le": "2026-08-23",
+   "age_jours": 35,
+   "cf": "confirme"
+  }
+ ]
+}
