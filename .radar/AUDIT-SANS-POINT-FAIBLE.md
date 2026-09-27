@@ -69,7 +69,13 @@ de chaque correction, et le verrou final est un validateur de build BLOQUANT.
     confirmées s'affichaient « à vérifier » ; données ramenées à trois valeurs,
     normalisation à chaque build, avertissement au validateur, lecture tolérante côté
     navigateur (137 badges « confirmé » avant, 166 après, mesuré en ligne).
-    Reste : « année cohérente partout » (contrôle title/dt/JSON-LD d'une même fiche).
+    « Année cohérente partout » contrôlé le 27/09 : sur les 319 fiches, 22 citent dans
+    leur titre ou leur date écrite une année autre que celle de leurs dates machine, et
+    les 22 sont légitimes (nom de collection « Printemps-Été 2027 » d'une Fashion Week
+    de septembre 2026, fin de saison en 2027 d'une réouverture de décembre 2026, éditions
+    précédentes citées comme référence, exposition ouverte en 2025). Aucune incohérence
+    réelle ; le titre, la date écrite et le JSON-LD d'une même fiche sortent des mêmes
+    champs d1/d2, donc ne peuvent pas diverger entre eux.
 
 ## P1 : architecture, liens, indexation
 

@@ -82,11 +82,11 @@ moyenne de ses micro-objectifs.
         réserve (237 fiches sur 320 au lieu de toutes), jamais d'InStock sur invitation,
         gratuité seulement si écrite, statut annulé ou reporté lu dans les textes
 - [0]   Fraîcheur : dernière vérification distinguée du build quotidien
-- [85]  Statuts des récurrents et saisons : JSON-LD de l'accueil recalculé à chaque
+- [100] Statuts des récurrents et saisons : JSON-LD de l'accueil recalculé à chaque
         build depuis le 27/09 (annulé, reporté, programmé seulement si confirmé, sinon
         aucun statut affirmé) ; champ de confirmation ramené à trois valeurs, 35 fiches
-        confirmées qui s'affichaient « à vérifier » réparées ; reste le contrôle d'année
-        cohérente entre titre, date écrite et JSON-LD d'une même fiche
+        confirmées qui s'affichaient « à vérifier » réparées ; années contrôlées sur les
+        319 fiches le 27/09 (22 mentions d'une autre année, toutes légitimes)
 - [100] Règle 403/429 des liens externes vérifiée le 20/09 (déjà juste dans la passe)
 - [100] Cohérence éditoriale : graphies normalisées (Monte-Carlo, Saint-Tropez, Saint-Moritz,
         Saint-Barth) ; tirets longs interdits purgés du site entier le 24/09 (plus de 10 600
