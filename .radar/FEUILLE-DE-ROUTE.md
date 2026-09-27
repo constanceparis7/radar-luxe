@@ -63,7 +63,7 @@ reste dérisoire pour un million de visiteurs par jour.
 Légende : [100] fait · [50] à moitié · [0] à faire. Le taux d'un objectif est la
 moyenne de ses micro-objectifs.
 
-### O1 · Fondations sans point faible (registre de l'audit croisé) · 82 %
+### O1 · Fondations sans point faible (registre de l'audit croisé) · 86 %
 - [100] Verrou de build bloquant sur les 7 876 pages, 13 langues
 - [100] Compteurs réconciliés et expliqués
 - [100] Redirections des anciennes adresses (lieux et fiches)
@@ -82,11 +82,16 @@ moyenne de ses micro-objectifs.
         réserve (237 fiches sur 320 au lieu de toutes), jamais d'InStock sur invitation,
         gratuité seulement si écrite, statut annulé ou reporté lu dans les textes
 - [0]   Fraîcheur : dernière vérification distinguée du build quotidien
-- [0]   Statuts des récurrents et saisons (EventCancelled, estimations)
+- [85]  Statuts des récurrents et saisons : JSON-LD de l'accueil recalculé à chaque
+        build depuis le 27/09 (annulé, reporté, programmé seulement si confirmé, sinon
+        aucun statut affirmé) ; champ de confirmation ramené à trois valeurs, 35 fiches
+        confirmées qui s'affichaient « à vérifier » réparées ; reste le contrôle d'année
+        cohérente entre titre, date écrite et JSON-LD d'une même fiche
 - [100] Règle 403/429 des liens externes vérifiée le 20/09 (déjà juste dans la passe)
-- [90]  Cohérence éditoriale : graphies normalisées (Monte-Carlo, Saint-Tropez, Saint-Moritz,
+- [100] Cohérence éditoriale : graphies normalisées (Monte-Carlo, Saint-Tropez, Saint-Moritz,
         Saint-Barth) ; tirets longs interdits purgés du site entier le 24/09 (plus de 10 600
-        corrections, 13 langues, vérifié en ligne) ; reste le vocabulaire des doutes, mineur
+        corrections, 13 langues, vérifié en ligne) ; vocabulaire des doutes unifié le 27/09
+        (confirmé / probable / à vérifier, trois valeurs et pas cinq graphies)
 - [95]  Accessibilité : lien d'évitement, <main>, focus visible, coeurs nommés, contrastes
         vérifiés, commandes symboliques (thème, langue, flèche) nommées en 13 langues
         (20/09) ; audit structurel par arbre d'accessibilité le 25/09 (1 seul h1, 0 image

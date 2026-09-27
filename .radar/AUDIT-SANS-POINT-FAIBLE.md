@@ -59,8 +59,17 @@ de chaque correction, et le verrou final est un validateur de build BLOQUANT.
    des centaines d'Event complets, JSON-LD strictement égal au visible.
 9. [À FAIRE] Fraîcheur : distinguer build quotidien / dernière modification / dernière
    vérification de source ; une fiche imminente se revérifie plus souvent.
-10. [À FAIRE] Statuts des récurrents/saisons/sans-date : ne pas tout déclarer
-    EventScheduled ; annulé = EventCancelled ; année cohérente partout.
+10. [FAIT 27/09] Statuts : le JSON-LD de l'accueil déclarait « programmé » pour tous
+    les événements, date estimée comprise. Désormais recalculé à chaque build comme
+    sur les fiches : annulé → EventCancelled, reporté → EventPostponed, programmé
+    SEULEMENT si la fiche est confirmée, sinon aucun statut affirmé (48 programmés,
+    12 sans statut sur l'accueil du 27/09). Trouvé au passage et corrigé : le champ de
+    confirmation lui-même avait cinq graphies (« confirme », « confirmé », « à
+    vérifier », « a verifier », vide) et l'accueil n'en lisait que deux, donc 35 fiches
+    confirmées s'affichaient « à vérifier » ; données ramenées à trois valeurs,
+    normalisation à chaque build, avertissement au validateur, lecture tolérante côté
+    navigateur (137 badges « confirmé » avant, 166 après, mesuré en ligne).
+    Reste : « année cohérente partout » (contrôle title/dt/JSON-LD d'une même fiche).
 
 ## P1 : architecture, liens, indexation
 
@@ -102,8 +111,16 @@ de chaque correction, et le verrou final est un validateur de build BLOQUANT.
     cherché, vérifiée avant et après publication (Cote/COTE/Côte/cÔtE donnent maintenant
     tous 15). Reste : apostrophes typographiques (moins prioritaire, la recherche ne
     porte déjà pas sur les libellés de zone où elles apparaissent).
-20. [À FAIRE] Dates et fuseaux : minuit, été/hiver, événement NY vu de Tokyo, 29 février ;
-    définir et documenter le fuseau de référence d'« aujourd'hui ».
+20. [FAIT 27/09] Dates et fuseaux. Fuseau de référence : Paris, via Intl (Europe/Paris)
+    pour « aujourd'hui », « en cours » et les horloges, donc juste été comme hiver et
+    pour un lecteur à New York ou Tokyo ; documenté sur la page La méthode depuis le
+    18/09. Un vrai défaut trouvé et corrigé le 27/09 : le compte à rebours convertissait
+    l'heure de Paris en UTC avec un « -2 » figé (heure d'été), faux d'une heure autour
+    du passage à l'heure d'hiver (25/10/2026) ; les deux bornes sont désormais posées
+    sur la même grille sans décalage supposé, valeurs identiques à la seconde près
+    aujourd'hui, justes toute l'année. Minuit : le jour bascule quand Paris passe minuit
+    (la fonction tick() le détecte et re-rend). 29 février : dates ISO manipulées par
+    Date.UTC, qui gère les années bissextiles ; rien à faire.
 
 ## P1 : mobile, performance, accessibilité, sécurité
 
@@ -194,8 +211,10 @@ de chaque correction, et le verrou final est un validateur de build BLOQUANT.
     purge exhaustive le 24/09, plus de 10 600 corrections retrouvées dans les traductions
     imbriquées et le bandeau d'interface (jamais couverts par les passes du 20-21/08, qui
     n'avaient traité que les titres) — 0 restant dans le contenu publié des 13 langues,
-    vérifié en ligne. Reste, mineur : vocabulaire confirmé/probable/à vérifier, format des
-    prix et des heures, à harmoniser si un nouveau signal le justifie.
+    vérifié en ligne. Vocabulaire des doutes unifié le 27/09 (confirmé / probable / à
+    vérifier : trois valeurs canoniques dans les données, normalisées à chaque build, voir
+    le point 10). Reste, mineur : format des prix et des heures, à harmoniser si un nouveau
+    signal le justifie.
 29. [EN COURS 20/09 : favoris, recherche 13 langues, carte du moment] États vides : aucun favori, aucun résultat, fiche retirée, hors connexion.
 30. [EN COURS 20/09 : og + cartes Twitter partout] Aperçus sociaux : og/twitter par page, rendu WhatsApp/iMessage/LinkedIn,
     impression propre des fiches.
