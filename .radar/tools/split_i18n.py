@@ -130,6 +130,32 @@ def build(out_dir, src=SRC):
     with open(os.path.join(out_dir, ".radar", "details-data.json"), "w", encoding="utf-8") as f:
         json.dump(details, f, ensure_ascii=False, separators=(",", ":"))
     new_html = html[:m.start(2)] + dump_data(light) + html[m.end(2):]
+
+    # 2ter) BLOC D'ACCUEIL SANS DÉCALAGE (28/09/2026, CLS mesuré à 0,08) : les
+    #       libellés du bloc d'accueil (question, catégories, ligne de marque)
+    #       étaient remplacés par le script principal, en fin de page, donc APRÈS
+    #       le premier affichage ; la barre de catégories passait sur une ligne de
+    #       plus et tout le bloc remontait. Le HTML statique porte désormais les
+    #       libellés français exacts, et ce petit bloc, régénéré ici depuis le
+    #       JSON d'interface et placé juste après le bloc d'accueil, applique la
+    #       langue mémorisée avant que le reste de la page ne soit lu.
+    HERO_KEYS = ("brandline_main", "brandline_season", "hero_q",
+                 "c_joa", "c_mode", "c_art", "c_fest", "c_sport", "c_art2")
+    mi = re.search(r'<script type="application/json" id="i18n">(.*?)</script>', html, re.S)
+    if mi and '<script id="hero-i18n">' in new_html:
+        ui = json.loads(mi.group(1))
+        hero = {lg: {k: ui[lg][k] for k in HERO_KEYS if k in ui[lg]} for lg in ui}
+        bloc = ('<script id="hero-i18n">(function(){var M='
+                + json.dumps(hero, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
+                + ";var l;try{l=localStorage.getItem('luxe_lang')||'fr'}catch(e){l='fr'}"
+                "var m=M[l];if(!m||l==='fr')return;"
+                "var n=document.querySelectorAll('#hero-maison [data-i18n]');"
+                "for(var i=0;i<n.length;i++){var v=m[n[i].getAttribute('data-i18n')];if(v!=null)n[i].textContent=v;}"
+                "})();</script>")
+        rx_hero = re.compile(r'<script id="hero-i18n">.*?</script>', re.S)
+        new_html = rx_hero.sub(lambda _: bloc, new_html, count=1)
+        html = rx_hero.sub(lambda _: bloc, html, count=1)
+
     anchor = "const DATA = JSON.parse(document.getElementById('data').textContent);"
     if anchor not in new_html:
         sys.exit("split_i18n: ancre DATA introuvable — script applicatif modifié ?")

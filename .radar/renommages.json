@@ -1594,5 +1594,11 @@
   "apres": "Saint-Barth Bucket Regatta 2027",
   "date": "2026-09-24",
   "motif": "Normalisation de la graphie du lieu, décision du 20/09/2026 (cohérence éditoriale, point 28 du registre) : « St. Moritz »/« St Barth(s) » deviennent « Saint-Moritz »/« Saint-Barth » dans les champs français, comme déjà fait pour Monte-Carlo et Saint-Tropez le 20/09. Contenu, dates et adresse identiques ; seule l'orthographe du nom du lieu change. La fonction slugify écrase la ponctuation : l'URL change ici (espace/point supprimés au profit d'un trait d'union), donc une redirection existe depuis l'ancienne adresse."
+ },
+ {
+  "avant": "Les Journées Particulières LVMH 2026, 69 lieux ouverts dans 12 pays",
+  "apres": "Les Journées Particulières LVMH 2026, 71 lieux ouverts dans 13 pays",
+  "date": "2026-09-28",
+  "motif": "Chiffres officiels relus sur lvmh.com le 28/09/2026 : 71 lieux ouverts dans 13 pays (45 Maisons) au lieu de 69 lieux dans 12 pays annoncés en juillet. Redirection de l'ancienne adresse dans gen_pages (FICHE_REDIRECTS)."
  }
 ]

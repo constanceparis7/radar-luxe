@@ -2,7 +2,7 @@
  "genere_le": "2026-09-28",
  "regle": "fiche non terminée, commençant dans 21 jours ou déjà en cours, dont la dernière vérification écrite est absente ou date de plus de 30 jours ; triée par imminence puis par ancienneté",
  "total_vivantes": 214,
- "avec_date_verif": 56,
+ "avec_date_verif": 69,
  "prioritaires": [
   {
    "n": "Gaïo Saint-Tropez, dîner-cabaret & club 2026",
@@ -12,15 +12,6 @@
    "verifie_le": null,
    "age_jours": null,
    "cf": "probable"
-  },
-  {
-   "n": "Fondazione Prada, programme d'été (Cao Fei « DASH », Mona Hatoum, Hito Steyerl à l'Osservatorio)",
-   "d1": "2026-04-09",
-   "d2": "2026-09-28",
-   "dans_jours": -172,
-   "verifie_le": null,
-   "age_jours": null,
-   "cf": "confirme"
   },
   {
    "n": "The Shop on the Corner, pop-up multi-maisons (Globe-Trotter, Connolly, Smythson, Fornasetti, Alessi)",
@@ -36,15 +27,6 @@
    "d1": "2026-04-23",
    "d2": "2026-10-03",
    "dans_jours": -158,
-   "verifie_le": null,
-   "age_jours": null,
-   "cf": "confirme"
-  },
-  {
-   "n": "Villa Carmignac, Exposition « Sea, Pop & Sun » et nocturnes d'été",
-   "d1": "2026-04-25",
-   "d2": "2026-11-01",
-   "dans_jours": -156,
    "verifie_le": null,
    "age_jours": null,
    "cf": "confirme"
@@ -644,60 +626,6 @@
    "cf": "averifier"
   },
   {
-   "n": "Milano Fashion Week, Printemps-Été 2027",
-   "d1": "2026-09-22",
-   "d2": "2026-09-28",
-   "dans_jours": -6,
-   "verifie_le": "2026-07-16",
-   "age_jours": 74,
-   "cf": "probable"
-  },
-  {
-   "n": "133° Abierto del Hurlingham Club",
-   "d1": "2026-09-22",
-   "d2": "2026-10-03",
-   "dans_jours": -6,
-   "verifie_le": "2026-07-29",
-   "age_jours": 61,
-   "cf": "confirme"
-  },
-  {
-   "n": "22e Zurich Film Festival 2026",
-   "d1": "2026-09-24",
-   "d2": "2026-10-04",
-   "dans_jours": -4,
-   "verifie_le": "2026-07-15",
-   "age_jours": 75,
-   "cf": "confirme"
-  },
-  {
-   "n": "Les Voiles de Saint-Tropez 2026",
-   "d1": "2026-09-26",
-   "d2": "2026-10-04",
-   "dans_jours": -2,
-   "verifie_le": "2026-07-15",
-   "age_jours": 75,
-   "cf": "confirme"
-  },
-  {
-   "n": "Fashion Week Paris, invitations des maisons : bureaux de presse & VIC",
-   "d1": "2026-09-28",
-   "d2": "2026-10-06",
-   "dans_jours": 0,
-   "verifie_le": null,
-   "age_jours": null,
-   "cf": "averifier"
-  },
-  {
-   "n": "Sphère, showroom officiel des créateurs émergents (FHCM)",
-   "d1": "2026-09-28",
-   "d2": "2026-10-06",
-   "dans_jours": 0,
-   "verifie_le": null,
-   "age_jours": null,
-   "cf": "averifier"
-  },
-  {
    "n": "Grands magasins & concept stores, accès libre pendant la Fashion Week",
    "d1": "2026-09-28",
    "d2": "2026-10-06",
@@ -716,33 +644,6 @@
    "cf": "averifier"
   },
   {
-   "n": "Créateurs émergents au calendrier, contacts directs (voie la plus accessible)",
-   "d1": "2026-09-28",
-   "d2": "2026-10-06",
-   "dans_jours": 0,
-   "verifie_le": null,
-   "age_jours": null,
-   "cf": "averifier"
-  },
-  {
-   "n": "Paris Fashion Week, Prêt-à-porter Printemps-Été 2027",
-   "d1": "2026-09-28",
-   "d2": "2026-10-06",
-   "dans_jours": 0,
-   "verifie_le": "2026-07-15",
-   "age_jours": 75,
-   "cf": "confirme"
-  },
-  {
-   "n": "Doha Jewellery and Watches Exhibition 2026",
-   "d1": "2026-09-28",
-   "d2": "2026-10-03",
-   "dans_jours": 0,
-   "verifie_le": "2026-08-23",
-   "age_jours": 36,
-   "cf": "confirme"
-  },
-  {
    "n": "Sotheby's Hong Kong, Modern & Contemporary Evening Auction",
    "d1": "2026-09-29",
    "d2": "2026-09-30",
@@ -750,24 +651,6 @@
    "verifie_le": null,
    "age_jours": null,
    "cf": "confirme"
-  },
-  {
-   "n": "New York Philharmonic, Gala inaugural de Gustavo Dudamel",
-   "d1": "2026-09-30",
-   "d2": "2026-09-30",
-   "dans_jours": 2,
-   "verifie_le": "2026-07-15",
-   "age_jours": 75,
-   "cf": "confirme"
-  },
-  {
-   "n": "Salons professionnels, Tranoï, Première Classe, JILL, WOMAN Paris",
-   "d1": "2026-10-01",
-   "d2": "2026-10-05",
-   "dans_jours": 3,
-   "verifie_le": null,
-   "age_jours": null,
-   "cf": "averifier"
   },
   {
    "n": "The Global Gift Gala Paris 2026",
@@ -779,183 +662,12 @@
    "cf": "probable"
   },
   {
-   "n": "New York City Ballet, Fall Fashion Gala 2026",
-   "d1": "2026-10-01",
-   "d2": "2026-10-01",
-   "dans_jours": 3,
-   "verifie_le": "2026-07-15",
-   "age_jours": 75,
-   "cf": "confirme"
-  },
-  {
-   "n": "Vente Sotheby's « Château Haut-Brion, Domaine Clarence Dillon » (90 ans de la propriété)",
-   "d1": "2026-10-01",
-   "d2": "2026-10-01",
-   "dans_jours": 3,
-   "verifie_le": "2026-07-22",
-   "age_jours": 68,
-   "cf": "confirme"
-  },
-  {
-   "n": "Les Caves du Roy, clôture de la saison 2026 (Hôtel Byblos)",
-   "d1": "2026-10-02",
-   "d2": "2026-10-03",
-   "dans_jours": 4,
-   "verifie_le": "2026-07-22",
-   "age_jours": 68,
-   "cf": "confirme"
-  },
-  {
-   "n": "ADOR's Gala Dinner 2026, Dîner de gala de l'Opéra Royal",
-   "d1": "2026-10-03",
-   "d2": "2026-10-03",
-   "dans_jours": 5,
-   "verifie_le": null,
-   "age_jours": null,
-   "cf": "confirme"
-  },
-  {
-   "n": "Qatar Prix de l'Arc de Triomphe 2026",
-   "d1": "2026-10-03",
-   "d2": "2026-10-04",
-   "dans_jours": 5,
-   "verifie_le": "2026-08-22",
-   "age_jours": 37,
-   "cf": "confirme"
-  },
-  {
-   "n": "RSVP Symposium Hvar 2026",
-   "d1": "2026-10-05",
-   "d2": "2026-10-08",
-   "dans_jours": 7,
-   "verifie_le": null,
-   "age_jours": null,
-   "cf": "confirme"
-  },
-  {
-   "n": "86° Abierto del Tortugas Country Club",
-   "d1": "2026-10-06",
-   "d2": "2026-11-07",
-   "dans_jours": 8,
-   "verifie_le": "2026-07-29",
-   "age_jours": 61,
-   "cf": "confirme"
-  },
-  {
-   "n": "Gala d'ouverture de la saison de danse, Opéra national de Paris (Palais Garnier)",
-   "d1": "2026-10-10",
-   "d2": "2026-10-10",
-   "dans_jours": 12,
-   "verifie_le": null,
-   "age_jours": null,
-   "cf": "confirme"
-  },
-  {
-   "n": "AROP, Gala d'ouverture de la saison de danse 26/27",
-   "d1": "2026-10-10",
-   "d2": "2026-10-10",
-   "dans_jours": 12,
-   "verifie_le": "2026-07-15",
-   "age_jours": 75,
-   "cf": "confirme"
-  },
-  {
-   "n": "PAD London 2026, Collectors Preview",
-   "d1": "2026-10-13",
-   "d2": "2026-10-18",
-   "dans_jours": 15,
-   "verifie_le": "2026-07-15",
-   "age_jours": 75,
-   "cf": "confirme"
-  },
-  {
-   "n": "Frieze London & Frieze Masters 2026",
-   "d1": "2026-10-14",
-   "d2": "2026-10-18",
-   "dans_jours": 16,
-   "verifie_le": "2026-07-21",
-   "age_jours": 69,
-   "cf": "confirme"
-  },
-  {
-   "n": "Olympic Yacht Show 2026",
-   "d1": "2026-10-15",
-   "d2": "2026-10-18",
-   "dans_jours": 17,
-   "verifie_le": null,
-   "age_jours": null,
-   "cf": "confirme"
-  },
-  {
-   "n": "Targa Florio Classica 2026",
-   "d1": "2026-10-15",
-   "d2": "2026-10-18",
-   "dans_jours": 17,
-   "verifie_le": null,
-   "age_jours": null,
-   "cf": "confirme"
-  },
-  {
-   "n": "Repossi ouvre le 6 place Vendôme, Journées Particulières LVMH",
-   "d1": "2026-10-16",
-   "d2": "2026-10-18",
-   "dans_jours": 18,
-   "verifie_le": "2026-08-23",
-   "age_jours": 36,
-   "cf": "confirme"
-  },
-  {
-   "n": "Les Journées Particulières LVMH 2026, 69 lieux ouverts dans 12 pays",
-   "d1": "2026-10-16",
-   "d2": "2026-10-18",
-   "dans_jours": 18,
-   "verifie_le": "2026-08-23",
-   "age_jours": 36,
-   "cf": "confirme"
-  },
-  {
-   "n": "Zamna Bali",
-   "d1": "2026-10-17",
-   "d2": "2026-10-18",
-   "dans_jours": 19,
-   "verifie_le": null,
-   "age_jours": null,
-   "cf": "confirme"
-  },
-  {
    "n": "Venice Hospitality Challenge 2026 (13e édition)",
    "d1": "2026-10-17",
    "d2": "2026-10-17",
    "dans_jours": 19,
    "verifie_le": "2026-07-21",
    "age_jours": 69,
-   "cf": "confirme"
-  },
-  {
-   "n": "Exposition « Le Diamant rose », château de Chantilly et L'École des Arts Joailliers",
-   "d1": "2026-10-17",
-   "d2": "2027-01-03",
-   "dans_jours": 19,
-   "verifie_le": "2026-08-23",
-   "age_jours": 36,
-   "cf": "confirme"
-  },
-  {
-   "n": "Bisbee's Black & Blue",
-   "d1": "2026-10-19",
-   "d2": "2026-10-24",
-   "dans_jours": 21,
-   "verifie_le": null,
-   "age_jours": null,
-   "cf": "confirme"
-  },
-  {
-   "n": "Arqana, October Yearling Sale 2026",
-   "d1": "2026-10-19",
-   "d2": "2026-10-24",
-   "dans_jours": 21,
-   "verifie_le": "2026-07-22",
-   "age_jours": 68,
    "cf": "confirme"
   }
  ]

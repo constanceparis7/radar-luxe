@@ -808,6 +808,7 @@ def main():
     # Anciennes adresses de FICHES (la ville entre dans le slug) rendues 404 par la
     # normalisation des lieux du 17/09/2026 : 114 URL en 404 vues dans Search Console.
     FICHE_REDIRECTS = {
+     "les-journees-particulieres-lvmh-2026-69-lieux-ouverts-dans-12-pa": "les-journees-particulieres-lvmh-2026-71-lieux-ouverts-dans-13-pa",  # 28/09/2026, chiffres officiels LVMH
      "reouverture-d-hiver-du-kulm-hotel-st-moritz-saint-moritz": "reouverture-d-hiver-du-kulm-hotel-saint-moritz-saint-moritz",
      "42e-snow-polo-world-cup-st-moritz-saint-moritz": "42e-snow-polo-world-cup-saint-moritz-saint-moritz",
      "the-i-c-e-international-concours-of-elegance-st-moritz-saint-mor": "the-i-c-e-international-concours-of-elegance-saint-moritz-saint",
@@ -988,7 +989,10 @@ def main():
             if lieu:
                 bc += f" › <a href=\"{u_place(lieu, lang)}\">{esc(pk)}</a>"
             bc += "</div>"
-            body = [bc, f"<h1>{esc(n)}</h1>",
+            # dir="auto" (28/09/2026) : sur une page arabe, un titre latin qui commence par
+            # un nombre (« 104. Jägerball… ») se lisait « Jägerball… .104 » ; le navigateur
+            # choisit désormais le sens d'après le premier caractère fort du titre.
+            body = [bc, f"<h1 dir=\"auto\">{esc(n)}</h1>",
                     f"<button class=\"fav-btn\" data-slug=\"{e['_slug']}\" "
                     f"data-add=\"\u2661 {esc(UI['fav_add'][lang])}\" data-on=\"\u2665 {esc(UI['fav_on'][lang])}\" "
                     f"aria-label=\"{esc(UI['fav_add'][lang])}\">\u2661 {esc(UI['fav_add'][lang])}</button>",
@@ -1145,7 +1149,7 @@ def main():
                     "<ul class=\"cards\">"]
             for e in events:
                 body.append(f"<li><div class=\"d\">{esc(T(e,lang,'dt') or e.get('d1',''))}</div>"
-                            f"<a class=\"t\" href=\"{u_event(e, lang)}\">{esc(T(e,lang,'n'))}</a> "+f"<button class=\"fav-mini\" data-slug=\"{e['_slug']}\" aria-label=\"{esc(UI['fav_add'][lang])}\">\u2661</button>"
+                            f"<a class=\"t\" dir=\"auto\" href=\"{u_event(e, lang)}\">{esc(T(e,lang,'n'))}</a> "+f"<button class=\"fav-mini\" data-slug=\"{e['_slug']}\" aria-label=\"{esc(UI['fav_add'][lang])}\">\u2661</button>"
                             + (f"<div>{esc((T(e,lang,'sw') or '')[:120])}</div>" if T(e, lang, "sw") else "") + "</li>")
             body.append(f"</ul><div class=\"chips\"><a href=\"{u_hub(lang)}\">{esc(UI['places_cats'][lang])}</a>"
                         f"<a href=\"{prefix(lang)}/\">← {esc(UI['back'][lang])}</a></div>")
@@ -1218,7 +1222,7 @@ def main():
                 home.append(f"<h2 class=\"sub\">{esc(UI['affiche'][lang])}</h2><ul class=\"cards\">")
                 for e in aff:
                     home.append(f"<li><div class=\"d\">{esc(e.get('d1',''))} · {esc(place_label((e.get('v') or '').strip(), lang))}</div>"
-                                f"<div class=\"t\"><a href=\"{u_event(e, lang)}\">{esc(T(e, lang, 'n'))}</a> "+f"<button class=\"fav-mini\" data-slug=\"{e['_slug']}\" aria-label=\"{esc(UI['fav_add'][lang])}\">\u2661</button>"+"</div></li>")
+                                f"<div class=\"t\" dir=\"auto\"><a href=\"{u_event(e, lang)}\">{esc(T(e, lang, 'n'))}</a> "+f"<button class=\"fav-mini\" data-slug=\"{e['_slug']}\" aria-label=\"{esc(UI['fav_add'][lang])}\">\u2661</button>"+"</div></li>")
                 home.append("</ul>")
 
             home.append(f"<h2 class=\"sub\">{esc(UI['by_cat'][lang])}</h2><div class=\"chips\">")
@@ -1488,7 +1492,7 @@ signalés sur la page d'accueil.</p>
      {"slug": "octobre-a-paris",
       "noms": ["Paris Fashion Week, Prêt-à-porter Printemps-Été 2027",
                "Qatar Prix de l'Arc de Triomphe 2026",
-               "Les Journées Particulières LVMH 2026, 69 lieux ouverts dans 12 pays",
+               "Les Journées Particulières LVMH 2026, 71 lieux ouverts dans 13 pays",
                "Chaumet ouvre le 12 place Vendôme, Journées Particulières LVMH",
                "Repossi ouvre le 6 place Vendôme, Journées Particulières LVMH",
                "Art Basel Paris 2026, Grand Palais",
@@ -1590,7 +1594,7 @@ signalés sur la page d'accueil.</p>
                     absents_pages.add(nom); continue
                 sw = T(e, lang, "sw") or ""
                 corps.append(f"<li><div class=\"d\">{esc(T(e,lang,'dt') or e.get('d1',''))}</div>"
-                             f"<a class=\"t\" href=\"{u_event(e,lang)}\">{esc(T(e,lang,'n'))}</a> "+f"<button class=\"fav-mini\" data-slug=\"{e['_slug']}\" aria-label=\"{esc(UI['fav_add'][lang])}\">\u2661</button>"
+                             f"<a class=\"t\" dir=\"auto\" href=\"{u_event(e,lang)}\">{esc(T(e,lang,'n'))}</a> "+f"<button class=\"fav-mini\" data-slug=\"{e['_slug']}\" aria-label=\"{esc(UI['fav_add'][lang])}\">\u2661</button>"
                              + (f"<div>{esc(sw[:140])}</div>" if sw else "") + "</li>")
             corps.append("</ul>")
             if s == "vienne-la-saison-des-bals" and lang == "fr":
@@ -1614,7 +1618,7 @@ signalés sur la page d'accueil.</p>
                 if not e:
                     absents_pages.add(nom); continue
                 sw = T(e, lang, "sw") or ""
-                corps.append(f"<li><a class=\"t\" href=\"{u_event(e,lang)}\">{esc(T(e,lang,'n'))}</a> "+f"<button class=\"fav-mini\" data-slug=\"{e['_slug']}\" aria-label=\"{esc(UI['fav_add'][lang])}\">\u2661</button>"
+                corps.append(f"<li><a class=\"t\" dir=\"auto\" href=\"{u_event(e,lang)}\">{esc(T(e,lang,'n'))}</a> "+f"<button class=\"fav-mini\" data-slug=\"{e['_slug']}\" aria-label=\"{esc(UI['fav_add'][lang])}\">\u2661</button>"
                              + (f"<div>{esc(sw[:130])}</div>" if sw else "") + "</li>")
             corps.append("</ul>")
         corps.append(f"<div class=\"chips\"><a href=\"{prefix(lang)}/\">← {esc(X(lang,'retour'))}</a>"
@@ -1634,7 +1638,7 @@ signalés sur la page d'accueil.</p>
             corps.append(f"<h2 class=\"sub\">{esc(Xdc(lang, dcfr))}</h2><ul class=\"cards\">")
             for e in evs:
                 corps.append(f"<li><div class=\"d\">{esc(e.get('d1',''))} · {esc(place_label((e.get('v') or '').strip(), lang))}</div>"
-                             f"<a class=\"t\" href=\"{u_event(e,lang)}\">{esc(T(e,lang,'n'))}</a> "+f"<button class=\"fav-mini\" data-slug=\"{e['_slug']}\" aria-label=\"{esc(UI['fav_add'][lang])}\">\u2661</button>"+"</li>")
+                             f"<a class=\"t\" dir=\"auto\" href=\"{u_event(e,lang)}\">{esc(T(e,lang,'n'))}</a> "+f"<button class=\"fav-mini\" data-slug=\"{e['_slug']}\" aria-label=\"{esc(UI['fav_add'][lang])}\">\u2661</button>"+"</li>")
             corps.append("</ul>")
         if ascot:
             corps.append(f"<div class=\"box\"><h2>{esc(X(lang,'v_ascot_t'))}</h2>"
@@ -1821,7 +1825,7 @@ signalés sur la page d'accueil.</p>
                      "<ul class=\"cards\">"]
             for nr, e in vitrine:
                 corps.append(f"<li><div class=\"d\">{diamants(nr)} {nr}/100</div>"
-                             f"<a class=\"t\" href=\"{u_event(e,lang)}\">{esc(T(e,lang,'n'))}</a> "+f"<button class=\"fav-mini\" data-slug=\"{e['_slug']}\" aria-label=\"{esc(UI['fav_add'][lang])}\">\u2661</button>"+"</li>")
+                             f"<a class=\"t\" dir=\"auto\" href=\"{u_event(e,lang)}\">{esc(T(e,lang,'n'))}</a> "+f"<button class=\"fav-mini\" data-slug=\"{e['_slug']}\" aria-label=\"{esc(UI['fav_add'][lang])}\">\u2661</button>"+"</li>")
             corps.append("</ul>")
             corps.append(f"<h2 class=\"sub\">{esc(X(lang,'note_sub5'))}</h2>")
             mem_link = f"<a href=\"/changements.html\">{esc(X(lang,'note_mem_link'))}</a>"

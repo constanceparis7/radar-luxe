@@ -889,6 +889,15 @@ une issue GitHub.
    apparaître le badge « ✓ Vérifié à la source le… » sur la fiche. Pas de
    vérification réelle, pas de date : ne jamais dater sans avoir regardé.
    Compte rendu : combien revérifiées, combien corrigées.
+5ter. Chaque LUNDI, vitesse mobile réelle (O3, 28/09/2026) : sur la machine où
+   Chrome est installé, `python3 .radar/tools/mesure_cdp.py --log
+   https://constanceparis7.com/ https://constanceparis7.com/ar/
+   https://constanceparis7.com/e/<une fiche imminente>.html` : LCP, CLS, INP
+   dans les conditions de Lighthouse mobile (4G lent, CPU ralenti 4 fois),
+   journalisés dans `.radar/tools/vitals-log.ndjson`. Seuils : LCP 2 500 ms,
+   INP 200 ms, CLS 0,1 ; au-dessus, c'est un défaut à corriger avant toute
+   autre tâche (priorité absolue de Constance). Le quota PageSpeed étant
+   épuisé en permanence, c'est la mesure de référence du radar.
 6. Mettre à jour la date de l'eyebrow (« données collectées et vérifiées le
    JJ mois 2026 »).
 7. Ré-injecter le JSON data (« </ » → « <\/ »), réécrire index.html.

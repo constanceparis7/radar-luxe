@@ -122,7 +122,7 @@ def appliquer(jour=None, ecrire=True):
 
     attendu = f"{ANGLAIS[saison]} {annee}"
     # Le titre : une seule langue, l'anglais, parce que Google n'en indexe qu'un.
-    motif = r"(ConstanceParis7 — International Luxury Events · )(Spring|Summer|Autumn|Winter) \d{4}"
+    motif = r"(ConstanceParis7 (?:—|·) International Luxury Events · )(Spring|Summer|Autumn|Winter) \d{4}"
     avant = re.search(motif, s)
     s2 = re.sub(motif, lambda m: m.group(1) + attendu, s)
 
