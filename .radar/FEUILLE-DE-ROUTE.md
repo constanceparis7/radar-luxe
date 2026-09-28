@@ -82,10 +82,14 @@ moyenne de ses micro-objectifs.
         réserve (237 fiches sur 320 au lieu de toutes), jamais d'InStock sur invitation,
         gratuité seulement si écrite, statut annulé ou reporté lu dans les textes
 - [60]  Fraîcheur : trois dates distinctes et honnêtes (passe, fiche, file de
-        revérification) ; mesure du 27/09 : 59 fiches vivantes sur 219 portent une date
-        de vérification écrite, 109 imminentes ou en cours à revérifier ; outil
-        reverification.py et étape 5bis de la doctrine posés le 27/09, 3 à 5 fiches
-        revérifiées à la source par passe de nuit ; reste à faire descendre la file
+        revérification) ; mesure du 28/09 (après purge de 3 zombies) : 58 fiches
+        vivantes sur 214 portent une date de vérification écrite, 106 imminentes ou
+        en cours à revérifier ; outil reverification.py et étape 5bis de la doctrine
+        posés le 27/09 ; 2 fiches revérifiées à la source le 28/09 (Fondazione Prada
+        programme d'été, Villa Carmignac « Sea, Pop & Sun » — dates officielles
+        confirmées à l'identique), 1 doute maintenu avec preuve de recherche (Gaïo
+        Saint-Tropez : aucune date de fin de saison publiée sur le site officiel) ;
+        reste à faire descendre la file
 - [100] Statuts des récurrents et saisons : JSON-LD de l'accueil recalculé à chaque
         build depuis le 27/09 (annulé, reporté, programmé seulement si confirmé, sinon
         aucun statut affirmé) ; champ de confirmation ramené à trois valeurs, 35 fiches
