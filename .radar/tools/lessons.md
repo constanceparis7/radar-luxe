@@ -1325,3 +1325,17 @@ les fiches concernées — ne rien changer, retester au prochain lundi. Si le m�
 persiste sur plusieurs semaines de plus, cela vaudrait la peine de signaler le motif exact
 (`chateaudechantilly.fr`, `theatre-chaillot.fr`, `marinabaysands.com`) au README du proxy plutôt que
 de le redécouvrir chaque semaine.
+
+## 28/09/2026 : une règle éditoriale se contrôle sur ce qui est PUBLIÉ, pas sur ce qui est stocké
+
+La purge des tirets longs du 24/09 avait nettoyé les données (index-full, traductions
+imbriquées) et vérifié « 0 restant » sur les fiches. Mais deux lignes du générateur de
+pages (`gen_pages.py` : l'en-tête des hubs « N événements — accroche » et la ligne
+d'hôtel des séjours « Hôtel — description ») réécrivaient un tiret à chaque génération :
+4 898 pages des 12 langues étrangères, près de 22 000 occurrences, republiées chaque nuit
+pendant quatre jours sans qu'aucun contrôle ne regarde les pages produites. Réflexes gravés :
+(1) toute règle sur le texte se vérifie par un scan du texte visible des fichiers HTML
+publiés (scripts, styles et balises retirés), jamais seulement des données ; (2) le verrou
+porte désormais V12 (tiret long visible = publication refusée) ; (3) quand on cherche un
+motif interdit, chercher aussi dans les gabarits du générateur (`grep` sur gen_pages.py),
+pas seulement dans les données.

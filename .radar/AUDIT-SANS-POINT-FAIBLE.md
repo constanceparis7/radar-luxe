@@ -42,7 +42,10 @@ de chaque correction, et le verrou final est un validateur de build BLOQUANT.
    dormait ou perdait le réseau, pas le site (GitHub Pages ne tombe pas pour cinq
    adresses à la fois pendant une seconde). Conclusion honnête : aucune panne du
    site prouvée sur la période ; le 502 de l'audit venait de l'infrastructure de
-   l'auditeur, comme envisagé. La sonde continue.
+   l'auditeur, comme envisagé. La sonde continue. Depuis le 28/09, une seconde sonde
+   tourne chez GitHub toutes les 30 minutes, indépendante de cette machine (qui dort
+   la nuit) : 5 adresses, 3 essais à 20 s d'écart, puis issue et courriel au propriétaire,
+   refermée d'elle-même au retour ; premier passage vérifié vert.
 
 ## P1 : SEO et crédibilité
 
@@ -140,13 +143,19 @@ de chaque correction, et le verrou final est un validateur de build BLOQUANT.
 
 ## P1 : mobile, performance, accessibilité, sécurité
 
-21. [EN COURS 25/09] Poids de l'accueil divisé par trois (820 à 264 Ko transférés) :
-    journaux d'enquête et séjours chargés au dépliage ; budget V11 au verrou. Rendu
-    progressif des cartes posé le 25/09 (fil principal jamais bloqué au premier
-    affichage). Mesure de repli en 3G simulée le 25/09 : DOM prêt 590 ms, chargement
-    complet 886 ms, aucun décalage de mise en page. [Reste : LCP/INP/CLS exacts, bloqués
-    par le quota PageSpeed ; JSON-LD en liste, écarté (gain jugé trop faible).]
-22. [EN COURS 25/09 : 320/375/390, paysage, clavier ouvert et cibles tactiles propres]
+21. [FAIT 28/09 pour la mesure, un vrai défaut corrigé] Poids de l'accueil divisé par
+    trois (820 à 264 Ko transférés) : journaux d'enquête et séjours chargés au dépliage ;
+    budget V11 au verrou. Rendu progressif des cartes posé le 25/09. Mesure exacte le
+    28/09 par le protocole DevTools de Chrome dans les conditions de Lighthouse mobile
+    (412 px, 4G lent, CPU ralenti 4 fois ; outil `mesure_cdp.py`) : accueil LCP 0,43 à
+    1,07 s, CLS 0,08, fiches LCP 0,34 à 0,67 s et CLS 0. Défaut trouvé : l'INP de
+    l'accueil (réactivité aux interactions) atteignait 264 ms sur le bouton thème, et
+    jusqu'à 3 s quand le clic tombait pendant le rendu des lots de cartes. Corrigé le
+    même jour : jours hors écran rendus à la demande (content-visibility), frappe de
+    recherche regroupée à 120 ms ; INP 88 à 120 ms mesuré en ligne, aucune erreur. [Reste :
+    la mesure PageSpeed officielle (quota) ; CLS 0,08 sous le seuil mais à ramener vers 0.]
+22. [FAIT 28/09 : zoom 200 % et 400 % vérifiés avec de vraies largeurs de 640 et 320 px
+    sur cinq pages, aucun débordement ; le reste ci-dessous était déjà fait le 25/09]
     Petits écrans : 320/360/390 px, paysage (812×375) et clavier ouvert (hauteur réduite)
     contrôlés sans débordement horizontal ni élément fixe piégé. Cibles tactiles portées à
     44 px le 25/09 (bouton thème, sélecteur de langue, les deux champs de recherche, liens
@@ -186,9 +195,10 @@ de chaque correction, et le verrou final est un validateur de build BLOQUANT.
     rendaient directement en h4 (renderPrestige(), renderArchives()) — les deux passées en
     h3 (le style visuel dépend uniquement de la classe CSS .t, jamais du nom de balise,
     vérifié par grep des règles CSS avant modification : aucun changement visuel). Diff de
-    2 lignes dans index.html, validate.py et perfcheck.py relancés, 0 régression. Reste : un
-    vrai passage au lecteur d'écran, noms des symboles ◐ et → (non repris ce jour — le
-    bouton thème porte déjà un aria-label qui couvre le symbole ◐, priorité plus faible).
+    2 lignes dans index.html, validate.py et perfcheck.py relancés, 0 régression. Symboles :
+    le bouton thème porte un aria-label qui couvre ◐ ; les flèches → décoratives des liens
+    sont masquées aux lecteurs d'écran depuis le 28/09 (aria-hidden, toutes les pages
+    générées). Reste : un vrai passage au lecteur d'écran.
 24. [EN COURS 25/09, flèches directionnelles corrigées] RTL arabe (nombres/dates
     isolés, fil d'Ariane) et CJK (polices, coupures, pas de troncature au compte de
     caractères latins) : rendu vérifié à 375 et 320 px le 20/09, bogue du lien
@@ -229,11 +239,26 @@ de chaque correction, et le verrou final est un validateur de build BLOQUANT.
     n'avaient traité que les titres) — 0 restant dans le contenu publié des 13 langues,
     vérifié en ligne. Vocabulaire des doutes unifié le 27/09 (confirmé / probable / à
     vérifier : trois valeurs canoniques dans les données, normalisées à chaque build, voir
-    le point 10). Reste, mineur : format des prix et des heures, à harmoniser si un nouveau
-    signal le justifie.
-29. [EN COURS 20/09 : favoris, recherche 13 langues, carte du moment] États vides : aucun favori, aucun résultat, fiche retirée, hors connexion.
-30. [EN COURS 20/09 : og + cartes Twitter partout] Aperçus sociaux : og/twitter par page, rendu WhatsApp/iMessage/LinkedIn,
-    impression propre des fiches.
+    le point 10). DÉCOUVERTE DU 28/09 : la purge du 24/09 avait nettoyé les données, mais
+    deux lignes du générateur de pages (l'en-tête des hubs et la ligne d'hôtel des séjours)
+    réécrivaient un tiret long à chaque génération : près de 22 000 tirets republiés
+    chaque nuit sur 4 898 pages des 12 langues étrangères, sans qu'aucun contrôle ne
+    regarde les pages produites. Corrigé à la source ; 45 tirets corrigés à la main dans
+    les traductions de la page Note (règles par langue, relus), 1 dans la mémoire du radar,
+    7 dans le tableau de bord public. Verrou V12 posé : tiret long dans le texte visible de
+    n'importe quelle page publiée = publication refusée (8 166 pages, 0 restant, vérifié
+    en ligne). Leçon : une règle éditoriale se contrôle sur ce qui est PUBLIÉ, pas sur ce
+    qui est stocké. Reste, mineur : format des prix et des heures.
+29. [FAIT 28/09] États vides : aucun favori, aucun résultat (13 langues), carte du moment
+    cachée si indisponible, fiche retirée (404 maison, favoris ignorent un slug disparu) ;
+    hors connexion posé le 28/09 : manifeste et icônes (le site s'installe sur l'écran
+    d'accueil), service worker réseau d'abord avec copie de secours des pages visitées,
+    page « Hors connexion » dédiée ; testé serveur coupé en local (accueil 116 cartes,
+    fiche, page inconnue), vérifié en ligne (worker actif, 6 entrées en cache).
+30. [EN COURS 28/09 : og + cartes Twitter partout, dimensions et alt de l'image] Aperçus
+    sociaux : og/twitter par page ; og:image:width, height et alt sur toutes les pages
+    depuis le 28/09 ; impression propre des fiches faite le 25/09. Reste : le rendu
+    WhatsApp/iMessage/LinkedIn à contrôler, et une image par événement.
 
 ## LE VERROU : le validateur de build bloquant
 
@@ -242,8 +267,10 @@ toute publication échoue sur V1 champs empoisonnés (None/null/undefined/NaN/[o
 Object]) dans title/description/og/h1, V2 saison périmée dans les métadonnées de
 structure, V3 page sans title/description/canonical, V4 d2 < d1, V5 compteurs
 divergents, V6 lien interne cassé, V7 URL de sitemap sans fichier, V8 JSON-LD
-illisible, V9 hreflang vers fichier absent. En avertissement (promotion à venir) :
-W1 date écrite hors fenêtre machine, W2 page sans h1. 6 367 pages contrôlées en 3 s.
+illisible, V9 hreflang vers fichier absent, V10 grappes hreflang réciproques, V11 budget
+de poids, V12 tiret long dans le texte visible d'une page publiée (28/09). En
+avertissement (promotion à venir) : W1 date écrite hors fenêtre machine, W2 page sans
+h1. 8 166 pages contrôlées au 28/09.
 Dès sa première exécution, le verrou a attrapé : le lien du bandeau vers Royal Ascot
 cassé par la normalisation des lieux, les liens mémoire brisés des pages Note en
 12 langues, et la fiche D&G Casa Amor finissant en machine le 30/08 alors que son

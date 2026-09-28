@@ -74,10 +74,13 @@ moyenne de ses micro-objectifs.
         longues sans casse ; défaut trouvé et corrigé (recherche insensible aux accents
         depuis le 25/09, « Cote » trouve « Côte »)
 - [30]  Cannibalisation entre langues (hreflang sitemap posé, matrice à faire)
-- [70]  États vides : aucun favori (page), aucun résultat (recherche, 13 langues), carte
-        du moment cachée si indisponible ; reste le mode hors connexion
-- [60]  Aperçus sociaux : og et cartes Twitter/X sur toutes les pages ; reste le contrôle
-        du rendu WhatsApp, iMessage, LinkedIn et une image par événement
+- [100] États vides : aucun favori (page), aucun résultat (recherche, 13 langues), carte
+        du moment cachée si indisponible ; mode hors connexion posé le 28/09 (service
+        worker, page « Hors connexion », pages visitées consultables sans réseau, testé
+        serveur coupé puis vérifié en ligne)
+- [80]  Aperçus sociaux : og et cartes Twitter/X sur toutes les pages ; dimensions et
+        texte alternatif de l'image ajoutés sur toutes les pages le 28/09 ; reste le
+        contrôle du rendu WhatsApp, iMessage, LinkedIn et une image par événement
 - [100] JSON-LD Event recalibré le 20/09 : offre seulement si l'accès s'achète ou se
         réserve (237 fiches sur 320 au lieu de toutes), jamais d'InStock sur invitation,
         gratuité seulement si écrite, statut annulé ou reporté lu dans les textes
@@ -99,8 +102,14 @@ moyenne de ses micro-objectifs.
 - [100] Cohérence éditoriale : graphies normalisées (Monte-Carlo, Saint-Tropez, Saint-Moritz,
         Saint-Barth) ; tirets longs interdits purgés du site entier le 24/09 (plus de 10 600
         corrections, 13 langues, vérifié en ligne) ; vocabulaire des doutes unifié le 27/09
-        (confirmé / probable / à vérifier, trois valeurs et pas cinq graphies)
-- [95]  Accessibilité : lien d'évitement, <main>, focus visible, coeurs nommés, contrastes
+        (confirmé / probable / à vérifier, trois valeurs et pas cinq graphies) ; découverte
+        du 28/09 : deux lignes du générateur de pages republiaient chaque nuit près de
+        22 000 tirets sur les hubs et les séjours des 12 langues étrangères, invisibles aux
+        purges qui ne lisaient que les données ; corrigées à la source, 45 tirets corrigés à
+        la main dans la page Note traduite, 1 dans la mémoire du radar, 7 dans le tableau de
+        bord public ; contrôle bloquant V12 au verrou sur le texte visible de toute page
+        publiée (8 166 pages, 0 restant, vérifié en ligne)
+- [97]  Accessibilité : lien d'évitement, <main>, focus visible, coeurs nommés, contrastes
         vérifiés, commandes symboliques (thème, langue, flèche) nommées en 13 langues
         (20/09) ; audit structurel par arbre d'accessibilité le 25/09 (1 seul h1, 0 image
         sans alt, landmarks propres) : un vrai défaut trouvé, corrigé le 25/09 (bouton
@@ -109,8 +118,9 @@ moyenne de ses micro-objectifs.
         direct le 25/09 (formule WCAG) : thème sombre 6,41 à 19,19, thème clair 5,78 à
         15,96, tout au-dessus du seuil de 4,5 pour 1 ; saut de niveau de titre h2→h4
         corrigé le 26/09 (Classement Prestige et Archives, passés en h3, aucun changement
-        visuel — style porté par la classe CSS, pas la balise) ; reste un vrai passage au
-        lecteur d'écran et les noms des symboles ◐ et →
+        visuel, style porté par la classe CSS, pas la balise) ; flèches décoratives des
+        liens masquées aux lecteurs d'écran le 28/09 (aria-hidden, toutes les pages) ; reste
+        un vrai passage au lecteur d'écran
 - [88]  Arabe de droite à gauche et langues CJK contrôlés à l'écran le 20/09 : rendu
         correct, et un vrai bogue attrapé (le lien d'évitement décalait toute la page
         arabe hors de l'écran) ; flèches directionnelles retournées le 25/09 (page
@@ -123,10 +133,13 @@ moyenne de ses micro-objectifs.
 - [100] HTTPS forcé, http et www redirigés
 - [100] Réseau de diffusion mondial (Fastly via GitHub Pages, cache 10 minutes)
 - [100] Redirections des anciennes adresses (178 pages de renvoi, le maximum possible ici)
-- [90]  Surveillance de disponibilité : sonde du matin, et sonde continue depuis le
+- [100] Surveillance de disponibilité : sonde du matin, sonde continue locale depuis le
         18/09 (5 adresses, 525 mesures en 9 jours au 27/09 : zéro 5xx, médiane 0,20 s,
         95 % sous 0,61 s ; les seuls échecs sont des coupures de la machine qui sonde,
-        toutes adresses à la même seconde) ; reste une alerte hors session
+        toutes adresses à la même seconde) et, depuis le 28/09, sonde GitHub indépendante
+        de toute machine toutes les 30 minutes (5 adresses, 3 essais à 20 s d'écart avant
+        alerte) : alerte par issue et courriel GitHub, fermeture automatique au retour ;
+        premier passage vérifié vert (5 fois 200, 0,16 à 0,35 s)
 - [100] Équivalents statiques des en-têtes : CSP et referrer en balise meta sur toutes
         les pages (25/09), testés avant et après publication ; HSTS, nosniff et
         frame-ancestors restent hors de portée sans Cloudflare devant le site
@@ -156,23 +169,25 @@ les textes de séjour (1 088 Ko) et les journaux d'enquête (619 Ko). Une fiche
 - [écarté 20/09] JSON-LD de l'accueil en liste : gain mesuré de 8 Ko compressés seulement,
         contre la règle « gen_pages ne modifie jamais index.html » ; pas rentable
 - [100] Budget de poids au verrou (V11 : accueil sous 1 000 Ko bruts, fiche sous 60 Ko)
-- [20]  LCP < 2,5 s, INP < 200 ms, CLS < 0,1 mesurés (PageSpeed mobile, chaque semaine ; le
-        quota de l'API reste épuisé à chaque essai). Mesure de repli le 25/09, en conditions
-        réelles 3G simulées dans le navigateur (TTFB 324 ms, DOM prêt 590 ms, chargement
-        complet 886 ms, 267 Ko transférés pour l'accueil) : le décalage cumulé (CLS) mesuré
-        est nul. Le LCP et l'INP exacts restent hors d'atteinte : l'outil de mesure du
-        navigateur de cette session ne peuple pas ces deux entrées de performance ; seul
-        PageSpeed les donnerait, et son quota reste bloqué.
+- [85]  LCP < 2,5 s, INP < 200 ms, CLS < 0,1 : mesurés le 28/09 par le protocole DevTools
+        de Chrome dans les conditions de Lighthouse mobile (écran 412 px, 4G lent 1,6 Mbit/s
+        et 150 ms, CPU ralenti 4 fois), outil persisté. Accueil : LCP 0,43 à 1,07 s, CLS
+        0,08, INP 264 ms (et jusqu'à 3 s quand le clic tombait pendant le rendu des cartes)
+        AVANT correction ; corrigé le même jour (rendu différé des jours hors écran par
+        content-visibility, frappe de recherche regroupée à 120 ms) : INP 88 à 120 ms en
+        ligne, aucune erreur. Fiches : LCP 0,34 à 0,67 s, CLS 0, 4 à 6 Ko transférés. Reste
+        la mesure PageSpeed officielle (quota toujours épuisé) et une mesure hebdomadaire ;
+        le CLS de 0,08 de l'accueil reste sous le seuil mais mérite d'être ramené vers 0.
 - [100] Rendu progressif des cartes (25/09) : les deux premiers jours s'affichent aussitôt,
         le reste par lots hors du fil principal (requestIdleCallback, repli iOS/Safari),
         recherche toujours instantanée, vérifié sans doublon ni erreur
-- [95]  Écrans de 320, 375 et 390 px contrôlés le 20/09 : plus aucun débordement horizontal
+- [100] Écrans de 320, 375 et 390 px contrôlés le 20/09 : plus aucun débordement horizontal
         (accueil, fiches, hubs, arabe compris) ; paysage (812×375) et clavier ouvert (hauteur
         réduite à 320 px) contrôlés le 25/09, propres l'un et l'autre ; cibles tactiles
         portées à 44 px le 25/09 (33 cibles sous la barre avant, 21 après, le reste des
-        puces secondaires laissées compactes) ; le zoom 200 % reste
-        à vérifier proprement, l'essai du 25/09 n'était pas fiable (le zoom CSS simulé fausse
-        les unités vw, contrairement au vrai zoom d'un téléphone ou d'un navigateur)
+        puces secondaires laissées compactes) ; zoom 200 % et 400 % vérifiés le 28/09 avec
+        de vraies largeurs de 640 et 320 px CSS (accueil, fiche, arabe, lieu anglais, page
+        hors connexion) : aucun débordement
 - [100] Sitemap scindé par langue avec index (20/09) : 13 fichiers de 850 Ko au lieu d'un
         seul de 11 Mo ; le verrou lit l'index
 
@@ -209,11 +224,18 @@ les textes de séjour (1 088 Ko) et les journaux d'enquête (619 Ko). Une fiche
 ### O6 · Produit et rétention · 42 %
 - [100] Favoris partout, page Mes favoris, compteur
 - [100] Moteur Comment entrer, Note du radar, Protocole, Questions
-- [60]  Partage : aperçus og par page (à contrôler messagerie par messagerie)
+- [75]  Partage : aperçus og par page, dimensions et texte alternatif de l'image depuis le
+        28/09 (à contrôler messagerie par messagerie)
 - [0]   Newsletter hebdomadaire (dimanche 21/09)
 - [0]   Alertes liées aux favoris
 - [0]   Le Cercle (on ne peut pas acheter, on est choisi)
-- [0]   Site installable et consultable hors connexion (PWA)
+- [100] Site installable et consultable hors connexion (28/09) : manifeste, icônes (onglet,
+        écran d'accueil iOS et Android, monogramme C7 en Didot), service worker réseau
+        d'abord avec copie de secours des pages visitées (90 entrées au plus, jamais de
+        ressource tierce), page « Hors connexion » dédiée ; testé serveur coupé en local
+        (accueil avec 116 cartes, fiche visitée, page inconnue vers la page de secours,
+        zéro erreur) puis vérifié en ligne (worker actif, 6 entrées en cache, manifeste
+        lu avec ses 3 icônes)
 - [100] Impression propre des fiches (25/09) : feuille d'impression dédiée sur toutes
         les pages générées, navigation et favoris masqués, adresses des liens utiles
         affichées en clair, fond blanc ; n'affecte jamais l'écran, vérifié en ligne
@@ -222,8 +244,14 @@ les textes de séjour (1 088 Ko) et les journaux d'enquête (619 Ko). Une fiche
 - [100] HTTPS, zéro cookie, zéro donnée collectée
 - [100] Aucun fichier de travail en ligne, aucun secret dans le code
 - [100] Sonde quotidienne du site en ligne
-- [80]  Échappement et protection des liens externes
-- [50]  Mentions légales (page existante, à compléter le 21/09)
+- [100] Échappement et protection des liens externes : contrôle du 28/09 sur les 3 904
+        pages qui portent un lien externe, zéro lien ouvert dans un nouvel onglet sans
+        rel=noopener, zéro lien externe sans attribut rel
+- [70]  Mentions légales : page complète pour le site tel qu'il est (éditrice non
+        professionnelle et anonymat LCEN, hébergeur, domaine, propriété intellectuelle,
+        données personnelles, GoatCounter, mémoire des favoris, droits RGPD, liens
+        sortants, droit applicable) ; reste la mention du prestataire de newsletter le
+        jour où elle existe
 - [100] Politique de confidentialité : page dédiée publiée le 25/09, reprend et complète
         la section déjà écrite des mentions légales (la mention des favoris manquait),
         liée depuis le pied de page de tout le site ; vérifiée en ligne
@@ -235,14 +263,18 @@ les textes de séjour (1 088 Ko) et les journaux d'enquête (619 Ko). Une fiche
 - [100] Search Console vérifiée, exports lus
 - [100] Sonde du matin (quotidienne) et contrôle Google contre site (hebdomadaire)
 - [100] Bilan observatoire du 2 octobre programmé
-- [90]  Sonde de disponibilité : devenue permanente de fait (en marche sans
-        interruption depuis le 18/09, 9 jours de mesures au 27/09, zéro 5xx) ; reste
-        à la relancer automatiquement si la machine redémarre
-- [30]  Tableau de bord unique (tableau-de-bord.html à enrichir)
+- [100] Sonde de disponibilité : locale sans interruption depuis le 18/09 (zéro 5xx), et
+        depuis le 28/09 chez GitHub toutes les 30 minutes, indépendante de la machine (plus
+        rien à relancer si elle redémarre)
+- [30]  Tableau de bord unique (tableau-de-bord.html à enrichir ; ses 7 tirets longs
+        purgés le 28/09)
 - [0]   Statistiques Cloudflare sans cookie
-- [60]  Alertes : la sonde du matin contrôle désormais que la passe de nuit a tourné et
-        la relance sinon, mesure PageSpeed et tient un journal de vitesse (20/09) ;
-        reste une alerte hors session (courriel) le jour où un canal existera
+- [85]  Alertes : la sonde du matin contrôle que la passe de nuit a tourné et la relance
+        sinon, mesure PageSpeed et tient un journal de vitesse (20/09) ; alerte hors
+        session en place : issue GitHub et courriel au propriétaire, pour un site figé
+        (surveillance.yml, deux fois par jour) et pour une adresse qui ne répond plus
+        (disponibilite.yml, toutes les 30 minutes depuis le 28/09) ; reste PageSpeed
+        (quota)
 
 ### O9 · Les paliers d'audience et leur prérequis technique
 - [100] Palier 1, 100 par jour : atteint (35 à 100)
