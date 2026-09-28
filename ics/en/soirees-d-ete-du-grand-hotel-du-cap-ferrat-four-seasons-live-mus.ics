@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:soirees-d-ete-du-grand-hotel-du-cap-ferrat-four-seasons-live-mus@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260801
+DTEND;VALUE=DATE:20261116
+SUMMARY:Summer Soirées at the Grand-Hôtel du Cap-Ferrat (Four Seasons)\, 
+ live music and sunsets at the Club Dauphin
+LOCATION:Grand-Hôtel du Cap-Ferrat\, terrasses du Bar et de La Véranda \;
+  Club Dauphin (piscine à débordement face à la…
+DESCRIPTION:all of August 2026 (daily live music from 30 June to 20 August\
+ , then Friday-Monday until 21 September)\nhttps://constanceparis7.com/en/e
+ /soirees-d-ete-du-grand-hotel-du-cap-ferrat-four-seasons-live-mus.html
+URL:https://constanceparis7.com/en/e/soirees-d-ete-du-grand-hotel-du-cap-fe
+ rrat-four-seasons-live-mus.html
+END:VEVENT
+END:VCALENDAR

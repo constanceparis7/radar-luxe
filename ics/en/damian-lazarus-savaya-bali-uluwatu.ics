@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:damian-lazarus-savaya-bali-uluwatu@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:Damian Lazarus\, Savaya Bali
+LOCATION:Savaya Bali\, Jl. Belimbing Sari\, Banjar Tambiyak\, Pecatu\, Uluw
+ atu\, Kabupaten Badung\, Bali 80364
+DESCRIPTION:Saturday 21 November 2026\, doors at 3pm\nhttps://constancepari
+ s7.com/en/e/damian-lazarus-savaya-bali-uluwatu.html
+URL:https://constanceparis7.com/en/e/damian-lazarus-savaya-bali-uluwatu.htm
+ l
+END:VEVENT
+END:VCALENDAR

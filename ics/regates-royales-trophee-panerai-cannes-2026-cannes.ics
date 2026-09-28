@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:regates-royales-trophee-panerai-cannes-2026-cannes@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260922
+DTEND;VALUE=DATE:20260928
+SUMMARY:Régates Royales\, Trophée Panerai\, Cannes 2026
+LOCATION:Yacht Club de Cannes\, baie de Cannes
+DESCRIPTION:Du 22 au 27 septembre 2026 · Yacht Club de Cannes\nhttps://con
+ stanceparis7.com/e/regates-royales-trophee-panerai-cannes-2026-cannes.html
+URL:https://constanceparis7.com/e/regates-royales-trophee-panerai-cannes-20
+ 26-cannes.html
+END:VEVENT
+END:VCALENDAR

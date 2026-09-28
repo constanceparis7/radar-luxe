@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:qatar-prix-de-l-arc-de-triomphe-2026-paris@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261003
+DTEND;VALUE=DATE:20261005
+SUMMARY:Qatar Prix de l'Arc de Triomphe 2026
+LOCATION:Hippodrome ParisLongchamp\, 2 route des Tribunes\, 75016 Paris (Bo
+ is de Boulogne)
+DESCRIPTION:3 and 4 October 2026 · Hippodrome de ParisLongchamp\nhttps://c
+ onstanceparis7.com/en/e/qatar-prix-de-l-arc-de-triomphe-2026-paris.html
+URL:https://constanceparis7.com/en/e/qatar-prix-de-l-arc-de-triomphe-2026-p
+ aris.html
+END:VEVENT
+END:VCALENDAR

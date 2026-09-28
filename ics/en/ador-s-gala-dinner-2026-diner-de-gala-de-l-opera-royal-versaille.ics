@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ador-s-gala-dinner-2026-diner-de-gala-de-l-opera-royal-versaille@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261003
+DTEND;VALUE=DATE:20261004
+SUMMARY:ADOR's Gala Dinner 2026\, Opéra Royal Gala Dinner
+LOCATION:Opéra Royal\, Château de Versailles
+DESCRIPTION:Saturday 3 October 2026\, from 16:30\nhttps://constanceparis7.c
+ om/en/e/ador-s-gala-dinner-2026-diner-de-gala-de-l-opera-royal-versaille.h
+ tml
+URL:https://constanceparis7.com/en/e/ador-s-gala-dinner-2026-diner-de-gala-
+ de-l-opera-royal-versaille.html
+END:VEVENT
+END:VCALENDAR

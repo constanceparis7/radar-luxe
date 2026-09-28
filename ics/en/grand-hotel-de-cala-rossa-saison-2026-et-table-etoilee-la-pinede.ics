@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:grand-hotel-de-cala-rossa-saison-2026-et-table-etoilee-la-pinede@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20261026
+SUMMARY:Grand Hôtel de Cala Rossa\, 2026 Season and the Michelin-Starred L
+ a Pinède
+LOCATION:Grand Hôtel de Cala Rossa 5*\, Relais & Châteaux\, plage privée
+  de Cala Rossa · golfe de Porto-Vecchio
+DESCRIPTION:Season from 7 May to 25 October 2026 (verified)\; in full swing
+  in July-August\nhttps://constanceparis7.com/en/e/grand-hotel-de-cala-ross
+ a-saison-2026-et-table-etoilee-la-pinede.html
+URL:https://constanceparis7.com/en/e/grand-hotel-de-cala-rossa-saison-2026-
+ et-table-etoilee-la-pinede.html
+END:VEVENT
+END:VCALENDAR

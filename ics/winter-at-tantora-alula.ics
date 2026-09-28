@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:winter-at-tantora-alula@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261217
+DTEND;VALUE=DATE:20270110
+SUMMARY:Winter at Tantora
+LOCATION:Vieille ville d'AlUla (AlUla Old Town)\, AlManshiyah Plaza et site
+ s d'AlUla
+DESCRIPTION:Du 17 decembre 2026 au 9 janvier 2027\nhttps://constanceparis7.
+ com/e/winter-at-tantora-alula.html
+URL:https://constanceparis7.com/e/winter-at-tantora-alula.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:liv-at-fontainebleau-nightclub-iconique-soirees-d-ete-miami-beac@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20260928
+SUMMARY:LIV at Fontainebleau\, iconic nightclub (summer parties)
+LOCATION:LIV\, Fontainebleau Miami Beach\, 4441 Collins Ave
+DESCRIPTION:July-August 2026 (Thu-Sun)\; confirmed highlights: Cloonee 18 J
+ uly\, Bebeshito 23 July\, Ian Asher 25 July\, Galanti…\nhttps://constanc
+ eparis7.com/en/e/liv-at-fontainebleau-nightclub-iconique-soirees-d-ete-mia
+ mi-beac.html
+URL:https://constanceparis7.com/en/e/liv-at-fontainebleau-nightclub-iconiqu
+ e-soirees-d-ete-miami-beac.html
+END:VEVENT
+END:VCALENDAR

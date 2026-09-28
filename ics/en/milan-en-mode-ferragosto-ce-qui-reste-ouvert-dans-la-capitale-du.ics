@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:milan-en-mode-ferragosto-ce-qui-reste-ouvert-dans-la-capitale-du@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260801
+DTEND;VALUE=DATE:20270101
+SUMMARY:Milan in Ferragosto mode: what remains open in the capital of luxur
+ y
+LOCATION:Quadrilatero della Moda\, Brera\, zone Tortona
+DESCRIPTION:1-31 August 2026\, quietest during the week of 15 August (Ferra
+ gosto)\nhttps://constanceparis7.com/en/e/milan-en-mode-ferragosto-ce-qui-r
+ este-ouvert-dans-la-capitale-du.html
+URL:https://constanceparis7.com/en/e/milan-en-mode-ferragosto-ce-qui-reste-
+ ouvert-dans-la-capitale-du.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:sir-rocco-forte-captain-s-trophy-edition-inaugurale-sciacca@constancepa
+ ris7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260910
+DTEND;VALUE=DATE:20260914
+SUMMARY:Sir Rocco Forte Captain's Trophy\, édition inaugurale
+LOCATION:Verdura Resort\, a Rocco Forte Hotel : S.S. 115 km 131\, Sciacca (
+ Sicile)
+DESCRIPTION:Du 10 au 13 septembre 2026\nhttps://constanceparis7.com/e/sir-r
+ occo-forte-captain-s-trophy-edition-inaugurale-sciacca.html
+URL:https://constanceparis7.com/e/sir-rocco-forte-captain-s-trophy-edition-
+ inaugurale-sciacca.html
+END:VEVENT
+END:VCALENDAR

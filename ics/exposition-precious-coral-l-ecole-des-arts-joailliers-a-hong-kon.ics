@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:exposition-precious-coral-l-ecole-des-arts-joailliers-a-hong-kon@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260523
+DTEND;VALUE=DATE:20261012
+SUMMARY:Exposition « Precious Coral »\, L'École des Arts Joailliers à H
+ ong Kong
+LOCATION:L'École Asia Pacific\, 510A\, 5/F\, K11 Musea\, Victoria Dockside
+ \, Hong Kong
+DESCRIPTION:Jusqu'au 11 octobre 2026 à K11 Musea (ouverte depuis le 23 mai
+ ). Entrée libre sur inscription.\nhttps://constanceparis7.com/e/expositio
+ n-precious-coral-l-ecole-des-arts-joailliers-a-hong-kon.html
+URL:https://constanceparis7.com/e/exposition-precious-coral-l-ecole-des-art
+ s-joailliers-a-hong-kon.html
+END:VEVENT
+END:VCALENDAR

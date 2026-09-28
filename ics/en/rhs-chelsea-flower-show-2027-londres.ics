@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:rhs-chelsea-flower-show-2027-londres@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270518
+DTEND;VALUE=DATE:20270523
+SUMMARY:RHS Chelsea Flower Show 2027
+LOCATION:Royal Hospital Chelsea\, Royal Hospital Road\, Londres SW3 4SR
+DESCRIPTION:Tuesday 18 to Saturday 22 May 2027. RHS members' days Tuesday 1
+ 8 and Wednesday 19 (08:00-20:00)\; public days Thursday 20 to Saturday 22 
+ (08:00-20:00\, closing at 17:30 on Saturday)\; Chelsea Late evening on Fri
+ day 21 (17:30-22:00).\nhttps://constanceparis7.com/en/e/rhs-chelsea-flower
+ -show-2027-londres.html
+URL:https://constanceparis7.com/en/e/rhs-chelsea-flower-show-2027-londres.h
+ tml
+END:VEVENT
+END:VCALENDAR

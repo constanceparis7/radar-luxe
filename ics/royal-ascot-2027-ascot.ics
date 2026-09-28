@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:royal-ascot-2027-ascot@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270615
+DTEND;VALUE=DATE:20270620
+SUMMARY:Royal Ascot 2027
+LOCATION:Ascot Racecourse\, Ascot\, Berkshire\, Royaume-Uni
+DESCRIPTION:Du mardi 15 au samedi 19 juin 2027. Cinq journées ouvertes au 
+ public par trois enclosures payantes \; la Royal Enclosure reste sur adhé
+ sion\, badges réservables dès janvier.\nhttps://constanceparis7.com/e/ro
+ yal-ascot-2027-ascot.html
+URL:https://constanceparis7.com/e/royal-ascot-2027-ascot.html
+END:VEVENT
+END:VCALENDAR

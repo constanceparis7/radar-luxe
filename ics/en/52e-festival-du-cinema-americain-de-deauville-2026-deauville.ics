@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:52e-festival-du-cinema-americain-de-deauville-2026-deauville@constancep
+ aris7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260904
+DTEND;VALUE=DATE:20260914
+SUMMARY:52nd Deauville American Film Festival 2026
+LOCATION:Centre International de Deauville (CID)
+DESCRIPTION:4-13 September 2026 · Centre International de Deauville\nhttps
+ ://constanceparis7.com/en/e/52e-festival-du-cinema-americain-de-deauville-
+ 2026-deauville.html
+URL:https://constanceparis7.com/en/e/52e-festival-du-cinema-americain-de-de
+ auville-2026-deauville.html
+END:VEVENT
+END:VCALENDAR

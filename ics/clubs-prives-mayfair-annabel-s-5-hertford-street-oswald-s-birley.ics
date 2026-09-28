@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:clubs-prives-mayfair-annabel-s-5-hertford-street-oswald-s-birley@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20270216
+SUMMARY:Clubs prives Mayfair - Annabel's\, 5 Hertford Street\, Oswald's (Bi
+ rley)
+LOCATION:Annabel's (46 Berkeley Square)\, 5 Hertford Street\, Oswald's · M
+ ayfair
+DESCRIPTION:Toute la saison estivale (juillet-aout 2026)\nhttps://constance
+ paris7.com/e/clubs-prives-mayfair-annabel-s-5-hertford-street-oswald-s-bir
+ ley.html
+URL:https://constanceparis7.com/e/clubs-prives-mayfair-annabel-s-5-hertford
+ -street-oswald-s-birley.html
+END:VEVENT
+END:VCALENDAR

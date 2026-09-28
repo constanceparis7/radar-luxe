@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:tisser-broder-sublimer-les-savoir-faire-de-la-mode-palais-gallie@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20261019
+SUMMARY:Weaving\, Embroidering\, Sublimating. The Savoir-Faire of Fashion\,
+  Palais Galliera
+LOCATION:Palais Galliera\, 10 avenue Pierre-Ier-de-Serbie\, 75116 Paris
+DESCRIPTION:13 December 2025\, 18 October 2026 (all of July)\nhttps://const
+ anceparis7.com/en/e/tisser-broder-sublimer-les-savoir-faire-de-la-mode-pal
+ ais-gallie.html
+URL:https://constanceparis7.com/en/e/tisser-broder-sublimer-les-savoir-fair
+ e-de-la-mode-palais-gallie.html
+END:VEVENT
+END:VCALENDAR

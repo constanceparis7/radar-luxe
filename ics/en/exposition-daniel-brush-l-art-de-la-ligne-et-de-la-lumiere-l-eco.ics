@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:exposition-daniel-brush-l-art-de-la-ligne-et-de-la-lumiere-l-eco@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260608
+DTEND;VALUE=DATE:20261005
+SUMMARY:Exhibition 'Daniel Brush: The Art of Line and Light'\, L'École des
+  Arts Joailliers
+LOCATION:L'École des Arts Joailliers (soutenue par Van Cleef & Arpels)\, H
+ ôtel de Mercy-Argenteau\, 16 bis boulevard Mon…
+DESCRIPTION:8 June - 4 October 2026\nhttps://constanceparis7.com/en/e/expos
+ ition-daniel-brush-l-art-de-la-ligne-et-de-la-lumiere-l-eco.html
+URL:https://constanceparis7.com/en/e/exposition-daniel-brush-l-art-de-la-li
+ gne-et-de-la-lumiere-l-eco.html
+END:VEVENT
+END:VCALENDAR

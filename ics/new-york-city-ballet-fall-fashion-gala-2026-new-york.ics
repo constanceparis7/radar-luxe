@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:new-york-city-ballet-fall-fashion-gala-2026-new-york@constanceparis7.co
+ m
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261001
+DTEND;VALUE=DATE:20261002
+SUMMARY:New York City Ballet\, Fall Fashion Gala 2026
+LOCATION:David H. Koch Theater\, Lincoln Center\, New York
+DESCRIPTION:Jeudi 1er octobre 2026 · David H. Koch Theater\, Lincoln Cente
+ r\nhttps://constanceparis7.com/e/new-york-city-ballet-fall-fashion-gala-20
+ 26-new-york.html
+URL:https://constanceparis7.com/e/new-york-city-ballet-fall-fashion-gala-20
+ 26-new-york.html
+END:VEVENT
+END:VCALENDAR

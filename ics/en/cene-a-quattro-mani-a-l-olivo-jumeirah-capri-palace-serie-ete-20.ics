@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cene-a-quattro-mani-a-l-olivo-jumeirah-capri-palace-serie-ete-20@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20261001
+SUMMARY:Four-Hands Dinners at L'Olivo**\, Jumeirah Capri Palace (summer 202
+ 6 series)
+LOCATION:Il Ristorante L'Olivo (2 étoiles Michelin)\, Jumeirah Capri Palac
+ e
+DESCRIPTION:Series running through the 2026 season\, individual dates not y
+ et published (radar window: July-September)\nhttps://constanceparis7.com/e
+ n/e/cene-a-quattro-mani-a-l-olivo-jumeirah-capri-palace-serie-ete-20.html
+URL:https://constanceparis7.com/en/e/cene-a-quattro-mani-a-l-olivo-jumeirah
+ -capri-palace-serie-ete-20.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:dolce-gabbana-beach-club-a-gurney-s-montauk-montauk@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260609
+DTEND;VALUE=DATE:20260927
+SUMMARY:Dolce & Gabbana Beach Club at Gurney's Montauk
+LOCATION:Gurney's Montauk Resort & Seawater Spa\, 290 Old Montauk Highway 
+ · Hamptons NY
+DESCRIPTION:9 June - 26 September 2026 for the boutique\; beach club until 
+ Labor Day (ongoing throughout July)\nhttps://constanceparis7.com/en/e/dolc
+ e-gabbana-beach-club-a-gurney-s-montauk-montauk.html
+URL:https://constanceparis7.com/en/e/dolce-gabbana-beach-club-a-gurney-s-mo
+ ntauk-montauk.html
+END:VEVENT
+END:VCALENDAR

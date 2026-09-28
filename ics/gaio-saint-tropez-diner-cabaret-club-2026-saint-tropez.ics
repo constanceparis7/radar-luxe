@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:gaio-saint-tropez-diner-cabaret-club-2026-saint-tropez@constanceparis7.
+ com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260401
+DTEND;VALUE=DATE:20261101
+SUMMARY:Gaïo Saint-Tropez\, dîner-cabaret & club 2026
+LOCATION:Gaïo\, 4 rue du 11 Novembre 1918 (surplombant le port)
+DESCRIPTION:Saison 2026 estimée du 1er avril au 31 octobre\, tous les soir
+ s env. 20h-5h (dîner-cabaret puis club) : dates de saison à reconfirmer 
+ auprès de l'établissement\nhttps://constanceparis7.com/e/gaio-saint-trop
+ ez-diner-cabaret-club-2026-saint-tropez.html
+URL:https://constanceparis7.com/e/gaio-saint-tropez-diner-cabaret-club-2026
+ -saint-tropez.html
+END:VEVENT
+END:VCALENDAR

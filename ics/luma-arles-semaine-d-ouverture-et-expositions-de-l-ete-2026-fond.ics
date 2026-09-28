@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:luma-arles-semaine-d-ouverture-et-expositions-de-l-ete-2026-fond@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260704
+DTEND;VALUE=DATE:20261109
+SUMMARY:LUMA Arles\, Semaine d'ouverture et expositions de l'été 2026 (Fo
+ ndation Maja Hoffmann)
+LOCATION:LUMA Arles\, Parc des Ateliers (tour Frank Gehry\, Grande Halle)
+DESCRIPTION:Semaine d'ouverture 4-7 juillet 2026 \; expositions de l'été 
+ du 4 juillet au 8 novembre 2026 et au-delà\nhttps://constanceparis7.com/e
+ /luma-arles-semaine-d-ouverture-et-expositions-de-l-ete-2026-fond.html
+URL:https://constanceparis7.com/e/luma-arles-semaine-d-ouverture-et-exposit
+ ions-de-l-ete-2026-fond.html
+END:VEVENT
+END:VCALENDAR

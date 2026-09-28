@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:gemgeneve-2027-geneve@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270511
+DTEND;VALUE=DATE:20270515
+SUMMARY:GemGenève 2027
+LOCATION:Palexpo\, route François-Peyrot 30\, 1218 Le Grand-Saconnex (Gen
+ ève)
+DESCRIPTION:Du 11 au 14 mai 2027 à Palexpo\, 11e édition. Ouvert aux prof
+ essionnels comme aux amateurs \; la billetterie 2027 arrive (« Ticketing 
+ soon »).\nhttps://constanceparis7.com/e/gemgeneve-2027-geneve.html
+URL:https://constanceparis7.com/e/gemgeneve-2027-geneve.html
+END:VEVENT
+END:VCALENDAR

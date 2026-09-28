@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:nammos-mykonos-legendary-beach-party-quotidien-mykonos@constanceparis7.
+ com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20260926
+SUMMARY:Nammos Mykonos\, Legendary Beach Party (daily)
+LOCATION:Nammos\, plage de Psarou
+DESCRIPTION:Daily\, July-August 2026 (season mid-May to late September)\nht
+ tps://constanceparis7.com/en/e/nammos-mykonos-legendary-beach-party-quotid
+ ien-mykonos.html
+URL:https://constanceparis7.com/en/e/nammos-mykonos-legendary-beach-party-q
+ uotidien-mykonos.html
+END:VEVENT
+END:VCALENDAR

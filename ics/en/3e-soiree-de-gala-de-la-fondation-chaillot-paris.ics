@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3e-soiree-de-gala-de-la-fondation-chaillot-paris@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261117
+DTEND;VALUE=DATE:20261118
+SUMMARY:3rd Fondation Chaillot Gala Evening
+LOCATION:Chaillot : Théâtre national de la Danse (Foyer de la Danse)\, 1 
+ place du Trocadéro et du 11 Novembre\, 75116 Paris
+DESCRIPTION:Tuesday 17 November 2026\, from 19:30: gala dinner of the Fonda
+ tion Chaillot (3rd edition)\, at Chaillot\, Théâtre national de la Danse
+ . The 2026 artistic programme has not yet been announced\; reservations ar
+ e already open online.\nhttps://constanceparis7.com/en/e/3e-soiree-de-gala
+ -de-la-fondation-chaillot-paris.html
+URL:https://constanceparis7.com/en/e/3e-soiree-de-gala-de-la-fondation-chai
+ llot-paris.html
+END:VEVENT
+END:VCALENDAR

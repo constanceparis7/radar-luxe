@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:les-caves-du-roy-cloture-de-la-saison-2026-hotel-byblos-saint-tr@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261002
+DTEND;VALUE=DATE:20261004
+SUMMARY:Les Caves du Roy\, clôture de la saison 2026 (Hôtel Byblos)
+LOCATION:Les Caves du Roy\, Hôtel Byblos\, 27 avenue Foch
+DESCRIPTION:Vendredi 2 et samedi 3 octobre 2026 · Les Caves du Roy\nhttps:
+ //constanceparis7.com/e/les-caves-du-roy-cloture-de-la-saison-2026-hotel-b
+ yblos-saint-tr.html
+URL:https://constanceparis7.com/e/les-caves-du-roy-cloture-de-la-saison-202
+ 6-hotel-byblos-saint-tr.html
+END:VEVENT
+END:VCALENDAR

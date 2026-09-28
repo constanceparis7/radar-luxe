@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:milano-fashion-week-printemps-ete-2027-milan@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260922
+DTEND;VALUE=DATE:20260929
+SUMMARY:Milano Fashion Week\, Printemps-Été 2027
+LOCATION:Divers lieux (Camera Nazionale della Moda Italiana)
+DESCRIPTION:Du 22 au 28 septembre 2026 · Milan (divers lieux)\nhttps://con
+ stanceparis7.com/e/milano-fashion-week-printemps-ete-2027-milan.html
+URL:https://constanceparis7.com/e/milano-fashion-week-printemps-ete-2027-mi
+ lan.html
+END:VEVENT
+END:VCALENDAR

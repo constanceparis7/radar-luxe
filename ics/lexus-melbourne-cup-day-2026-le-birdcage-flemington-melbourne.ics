@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:lexus-melbourne-cup-day-2026-le-birdcage-flemington-melbourne@constance
+ paris7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Lexus Melbourne Cup Day 2026\, le Birdcage\, Flemington
+LOCATION:Flemington Racecourse\, 448 Epsom Road\, Flemington\, Melbourne
+DESCRIPTION:Mardi 3 novembre 2026 · Flemington Racecourse\nhttps://constan
+ ceparis7.com/e/lexus-melbourne-cup-day-2026-le-birdcage-flemington-melbour
+ ne.html
+URL:https://constanceparis7.com/e/lexus-melbourne-cup-day-2026-le-birdcage-
+ flemington-melbourne.html
+END:VEVENT
+END:VCALENDAR

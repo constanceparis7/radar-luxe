@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:four-seasons-maldives-surfing-champions-trophy-2026-kuda-huraa@constanc
+ eparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260904
+DTEND;VALUE=DATE:20260912
+SUMMARY:Four Seasons Maldives Surfing Champions Trophy 2026
+LOCATION:Four Seasons Resort Maldives at Kuda Huraa
+DESCRIPTION:From 4 to 11 September 2026\nhttps://constanceparis7.com/en/e/f
+ our-seasons-maldives-surfing-champions-trophy-2026-kuda-huraa.html
+URL:https://constanceparis7.com/en/e/four-seasons-maldives-surfing-champion
+ s-trophy-2026-kuda-huraa.html
+END:VEVENT
+END:VCALENDAR

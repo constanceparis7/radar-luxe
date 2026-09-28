@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:nikki-beach-ibiza-beach-club-santa-eulalia-ibiza@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20261012
+SUMMARY:Nikki Beach Ibiza\, Beach club (Santa Eulalia)
+LOCATION:Nikki Beach Ibiza (renove) · Santa Eulalia cote est
+DESCRIPTION:2026 season (reopening 23 April 2026\; July-August: champagne b
+ runches\, lifestyle programming)\nhttps://constanceparis7.com/en/e/nikki-b
+ each-ibiza-beach-club-santa-eulalia-ibiza.html
+URL:https://constanceparis7.com/en/e/nikki-beach-ibiza-beach-club-santa-eul
+ alia-ibiza.html
+END:VEVENT
+END:VCALENDAR

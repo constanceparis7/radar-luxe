@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:chef-olivier-limousin-gastronomy-month-2026-atoll-de-noonu@constancepar
+ is7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261128
+SUMMARY:Chef Olivier Limousin\, Gastronomy Month 2026
+LOCATION:Restaurant Aragu\, Velaa Private Island
+DESCRIPTION:On 25 and 27 November 2026\nhttps://constanceparis7.com/en/e/ch
+ ef-olivier-limousin-gastronomy-month-2026-atoll-de-noonu.html
+URL:https://constanceparis7.com/en/e/chef-olivier-limousin-gastronomy-month
+ -2026-atoll-de-noonu.html
+END:VEVENT
+END:VCALENDAR

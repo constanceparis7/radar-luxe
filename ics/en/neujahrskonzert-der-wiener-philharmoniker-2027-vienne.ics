@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:neujahrskonzert-der-wiener-philharmoniker-2027-vienne@constanceparis7.c
+ om
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270102
+SUMMARY:Neujahrskonzert der Wiener Philharmoniker 2027
+LOCATION:Musikverein\, Goldener Saal (Grande Salle dorée)\, Musikvereinspl
+ atz 1\, 1010 Vienne
+DESCRIPTION:Friday 1 January 2027 at 11:15\nhttps://constanceparis7.com/en/
+ e/neujahrskonzert-der-wiener-philharmoniker-2027-vienne.html
+URL:https://constanceparis7.com/en/e/neujahrskonzert-der-wiener-philharmoni
+ ker-2027-vienne.html
+END:VEVENT
+END:VCALENDAR

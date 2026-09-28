@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:monte-carlo-gala-for-planetary-health-diner-de-gala-de-la-fondat@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260918
+DTEND;VALUE=DATE:20260919
+SUMMARY:Monte-Carlo Gala for Planetary Health\, dîner de gala de la Fondat
+ ion Prince Albert II
+LOCATION:Monaco : lieu à confirmer (éditions passées au Palais Princier 
+ / Musée océanographique / cadre princier SBM)
+DESCRIPTION:Édition 2026 : vendredi 18 septembre 2026\, Salle Garnier de l
+ 'Opéra de Monte-Carlo. Date officielle vérifiée le 15/09/2026 sur fpa2.
+ org : l'édition 2026 prend la forme du gala exceptionnel des 20 ans de la
+  Fondation\, célébrant vingt ans d'action pour la planète.\nhttps://con
+ stanceparis7.com/e/monte-carlo-gala-for-planetary-health-diner-de-gala-de-
+ la-fondat.html
+URL:https://constanceparis7.com/e/monte-carlo-gala-for-planetary-health-din
+ er-de-gala-de-la-fondat.html
+END:VEVENT
+END:VCALENDAR

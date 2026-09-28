@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:l-ete-au-negresco-live-music-a-n-les-bars-et-n-la-plage-nice@constancep
+ aris7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260801
+DTEND;VALUE=DATE:20261007
+SUMMARY:L'été au Negresco\, live music à N Les Bars et N La Plage
+LOCATION:Le Negresco\, 37 Promenade des Anglais : bar Le Versailles\, Le 19
+ 13\, N Les Bars\, N La Plage (plage privée face…
+DESCRIPTION:tout août 2026 (N La Plage ouverte depuis le 24 avril\, saison
+  jusqu'en septembre)\nhttps://constanceparis7.com/e/l-ete-au-negresco-live
+ -music-a-n-les-bars-et-n-la-plage-nice.html
+URL:https://constanceparis7.com/e/l-ete-au-negresco-live-music-a-n-les-bars
+ -et-n-la-plage-nice.html
+END:VEVENT
+END:VCALENDAR

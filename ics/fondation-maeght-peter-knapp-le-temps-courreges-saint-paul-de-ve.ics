@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fondation-maeght-peter-knapp-le-temps-courreges-saint-paul-de-ve@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260514
+DTEND;VALUE=DATE:20261109
+SUMMARY:Fondation Maeght\, « Peter Knapp : Le Temps Courrèges »
+LOCATION:Fondation Maeght\, 623 chemin des Gardettes
+DESCRIPTION:14 mai - 8 novembre 2026\nhttps://constanceparis7.com/e/fondati
+ on-maeght-peter-knapp-le-temps-courreges-saint-paul-de-ve.html
+URL:https://constanceparis7.com/e/fondation-maeght-peter-knapp-le-temps-cou
+ rreges-saint-paul-de-ve.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ellsworth-kelly-aux-bords-de-l-eau-exposition-d-ete-fondation-ma@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260627
+DTEND;VALUE=DATE:20261116
+SUMMARY:Ellsworth Kelly\, Aux bords de l'eau (exposition d'été Fondation 
+ Maeght)
+LOCATION:Fondation Maeght\, 623 chemin des Gardettes
+DESCRIPTION:27 juin - 15 novembre 2026 (tout le mois d'aout)\nhttps://const
+ anceparis7.com/e/ellsworth-kelly-aux-bords-de-l-eau-exposition-d-ete-fonda
+ tion-ma.html
+URL:https://constanceparis7.com/e/ellsworth-kelly-aux-bords-de-l-eau-exposi
+ tion-d-ete-fondation-ma.html
+END:VEVENT
+END:VCALENDAR

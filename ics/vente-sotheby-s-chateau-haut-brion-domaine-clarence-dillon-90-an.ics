@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:vente-sotheby-s-chateau-haut-brion-domaine-clarence-dillon-90-an@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261001
+DTEND;VALUE=DATE:20261002
+SUMMARY:Vente Sotheby's « Château Haut-Brion\, Domaine Clarence Dillon »
+  (90 ans de la propriété)
+LOCATION:Sotheby's Paris
+DESCRIPTION:Jeudi 1er octobre 2026 à 13:00 · Sotheby's Paris\nhttps://con
+ stanceparis7.com/e/vente-sotheby-s-chateau-haut-brion-domaine-clarence-dil
+ lon-90-an.html
+URL:https://constanceparis7.com/e/vente-sotheby-s-chateau-haut-brion-domain
+ e-clarence-dillon-90-an.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:sotheby-s-hong-kong-modern-contemporary-evening-auction-hong-kon@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260928
+DTEND;VALUE=DATE:20260930
+SUMMARY:Sotheby's Hong Kong\, Modern & Contemporary Evening Auction
+LOCATION:Sotheby's Maison\, Landmark Chater\, 8 Connaught Road Central\, Ce
+ ntral
+DESCRIPTION:Evening sale on Monday 28 September 2026\, followed by the Mode
+ rn Day Auction and the Contemporary Day Auction on Tuesday 29 September 20
+ 26\nhttps://constanceparis7.com/en/e/sotheby-s-hong-kong-modern-contempora
+ ry-evening-auction-hong-kon.html
+URL:https://constanceparis7.com/en/e/sotheby-s-hong-kong-modern-contemporar
+ y-evening-auction-hong-kon.html
+END:VEVENT
+END:VCALENDAR

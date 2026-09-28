@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:exposition-d-ete-du-grimaldi-forum-monaco-l-automobile-de-1893-a@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20260907
+SUMMARY:Exposition d'été du Grimaldi Forum: Monaco & l'Automobile\, de 18
+ 93 à nos jours
+LOCATION:Grimaldi Forum\, 10 avenue Princesse Grace\, 98000 Monaco
+DESCRIPTION:1er juillet - 6 septembre 2026\nhttps://constanceparis7.com/e/e
+ xposition-d-ete-du-grimaldi-forum-monaco-l-automobile-de-1893-a.html
+URL:https://constanceparis7.com/e/exposition-d-ete-du-grimaldi-forum-monaco
+ -l-automobile-de-1893-a.html
+END:VEVENT
+END:VCALENDAR

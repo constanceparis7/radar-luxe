@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:amber-lounge-abu-dhabi-2026-after-party-vip-de-la-finale-f1-abu@constan
+ ceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261205
+DTEND;VALUE=DATE:20261207
+SUMMARY:Amber Lounge Abu Dhabi 2026\, after-party VIP de la finale F1
+LOCATION:Yas Marina (venue Amber Lounge\, face aux yachts)
+DESCRIPTION:Week-end du GP\, 3-6 décembre 2026 (soirées de clôture 5-6 d
+ éc.)\nhttps://constanceparis7.com/e/amber-lounge-abu-dhabi-2026-after-par
+ ty-vip-de-la-finale-f1-abu.html
+URL:https://constanceparis7.com/e/amber-lounge-abu-dhabi-2026-after-party-v
+ ip-de-la-finale-f1-abu.html
+END:VEVENT
+END:VCALENDAR

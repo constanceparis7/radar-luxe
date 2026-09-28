@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:new-york-fashion-week-printemps-ete-2027-new-york@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260910
+DTEND;VALUE=DATE:20260916
+SUMMARY:New York Fashion Week\, Printemps-Été 2027
+LOCATION:Divers lieux (CFDA)\, Manhattan
+DESCRIPTION:Du 10 au 15 septembre 2026 · New York (divers lieux)\nhttps://
+ constanceparis7.com/e/new-york-fashion-week-printemps-ete-2027-new-york.ht
+ ml
+URL:https://constanceparis7.com/e/new-york-fashion-week-printemps-ete-2027-
+ new-york.html
+END:VEVENT
+END:VCALENDAR

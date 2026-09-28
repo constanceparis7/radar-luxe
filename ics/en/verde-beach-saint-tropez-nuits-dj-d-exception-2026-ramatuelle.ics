@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:verde-beach-saint-tropez-nuits-dj-d-exception-2026-ramatuelle@constance
+ paris7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20261001
+SUMMARY:Verde Beach Saint-Tropez\, Exceptional DJ Nights 2026
+LOCATION:Verde Beach\, plage de Pampelonne
+DESCRIPTION:Summer season 2026 (July-August)\; recurring venue. Checked on 
+ 15/09/2026 on verde-beach.com: the official calendar shows only one dated 
+ event for 2026\, the evening of 14 July (reservations from 11:00 to 21:00)
+ \, whose visual carries the names Kapuchon and Afrojack\; no other name or
+  2026 line-up is published on the site and the former Line-Up page no long
+ er exists (404 error).\nhttps://constanceparis7.com/en/e/verde-beach-saint
+ -tropez-nuits-dj-d-exception-2026-ramatuelle.html
+URL:https://constanceparis7.com/en/e/verde-beach-saint-tropez-nuits-dj-d-ex
+ ception-2026-ramatuelle.html
+END:VEVENT
+END:VCALENDAR

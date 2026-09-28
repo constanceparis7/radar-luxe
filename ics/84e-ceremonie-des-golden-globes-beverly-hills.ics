@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:84e-ceremonie-des-golden-globes-beverly-hills@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270110
+DTEND;VALUE=DATE:20270111
+SUMMARY:84e cérémonie des Golden Globes
+LOCATION:The Beverly Hilton\, 9876 Wilshire Boulevard
+DESCRIPTION:Dimanche 10 janvier 2027\nhttps://constanceparis7.com/e/84e-cer
+ emonie-des-golden-globes-beverly-hills.html
+URL:https://constanceparis7.com/e/84e-ceremonie-des-golden-globes-beverly-h
+ ills.html
+END:VEVENT
+END:VCALENDAR

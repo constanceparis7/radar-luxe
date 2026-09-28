@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:les-journees-particulieres-lvmh-2026-71-lieux-ouverts-dans-13-pa@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261016
+DTEND;VALUE=DATE:20261019
+SUMMARY:Les Journées Particulières LVMH 2026\, 71 lieux ouverts dans 13 p
+ ays
+LOCATION:69 lieux dans 12 pays \; à Paris notamment les hôtels particulie
+ rs de la place Vendôme (Chaumet au 12\, Repossi au 6)
+DESCRIPTION:Du vendredi 16 au dimanche 18 octobre 2026\, 6e édition\, thè
+ me « Aux Racines du Rêve ». Gratuit : les réservations ouvrent courant
+  septembre 2026 sur lvmh.com.\nhttps://constanceparis7.com/e/les-journees-
+ particulieres-lvmh-2026-71-lieux-ouverts-dans-13-pa.html
+URL:https://constanceparis7.com/e/les-journees-particulieres-lvmh-2026-71-l
+ ieux-ouverts-dans-13-pa.html
+END:VEVENT
+END:VCALENDAR

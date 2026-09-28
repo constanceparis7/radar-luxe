@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:saint-ramatuelle-nouveau-beach-club-d-exception-bagatelle-group@constan
+ ceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260626
+DTEND;VALUE=DATE:20261001
+SUMMARY:SAINT Ramatuelle\, an exceptional new beach club (Bagatelle Group)
+LOCATION:SAINT\, Chemin de la Matarane\, plage de Pampelonne
+DESCRIPTION:New address open from 26 June 2026 for the summer season (inter
+ national DJ sets in the evening\; detailed artist line-up not yet released
+ )\nhttps://constanceparis7.com/en/e/saint-ramatuelle-nouveau-beach-club-d-
+ exception-bagatelle-group.html
+URL:https://constanceparis7.com/en/e/saint-ramatuelle-nouveau-beach-club-d-
+ exception-bagatelle-group.html
+END:VEVENT
+END:VCALENDAR

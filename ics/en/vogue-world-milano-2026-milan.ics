@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:vogue-world-milano-2026-milan@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260922
+DTEND;VALUE=DATE:20260923
+SUMMARY:Vogue World: Milano 2026
+LOCATION:Galleria Vittorio Emanuele II\, Milan
+DESCRIPTION:Tuesday 22 September 2026 · Galleria Vittorio Emanuele II\, Mi
+ lan\nhttps://constanceparis7.com/en/e/vogue-world-milano-2026-milan.html
+URL:https://constanceparis7.com/en/e/vogue-world-milano-2026-milan.html
+END:VEVENT
+END:VCALENDAR

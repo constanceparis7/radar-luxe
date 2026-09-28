@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:zamna-bali-uluwatu@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261017
+DTEND;VALUE=DATE:20261019
+SUMMARY:Zamna Bali
+LOCATION:Savaya Bali\, Jl. Belimbing Sari\, Banjar Tambiyak\, Pecatu\, Uluw
+ atu\, Kabupaten Badung\, Bali 80364
+DESCRIPTION:Samedi 17 et dimanche 18 octobre 2026\nhttps://constanceparis7.
+ com/e/zamna-bali-uluwatu.html
+URL:https://constanceparis7.com/e/zamna-bali-uluwatu.html
+END:VEVENT
+END:VCALENDAR

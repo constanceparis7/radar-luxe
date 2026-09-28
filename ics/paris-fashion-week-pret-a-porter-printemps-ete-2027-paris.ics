@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:paris-fashion-week-pret-a-porter-printemps-ete-2027-paris@constancepari
+ s7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260928
+DTEND;VALUE=DATE:20261007
+SUMMARY:Paris Fashion Week\, Prêt-à-porter Printemps-Été 2027
+LOCATION:Divers lieux (Fédération de la Haute Couture et de la Mode)
+DESCRIPTION:Du 28 septembre au 6 octobre 2026 · Paris (divers lieux)\nhttp
+ s://constanceparis7.com/e/paris-fashion-week-pret-a-porter-printemps-ete-2
+ 027-paris.html
+URL:https://constanceparis7.com/e/paris-fashion-week-pret-a-porter-printemp
+ s-ete-2027-paris.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:grands-magasins-concept-stores-acces-libre-pendant-la-fashion-we@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260928
+DTEND;VALUE=DATE:20261007
+SUMMARY:Department stores & concept stores\, free access during Fashion Wee
+ k
+LOCATION:Le Bon Marché\, Galeries Lafayette\, Printemps\, Leclaireur (Pari
+ s)
+DESCRIPTION:All through Fashion Week (28 Sept-6 Oct 2026)\nhttps://constanc
+ eparis7.com/en/e/grands-magasins-concept-stores-acces-libre-pendant-la-fas
+ hion-we.html
+URL:https://constanceparis7.com/en/e/grands-magasins-concept-stores-acces-l
+ ibre-pendant-la-fashion-we.html
+END:VEVENT
+END:VCALENDAR

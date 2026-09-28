@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bagni-fiore-paraggi-langosteria-paraggi-terrasse-dior-paraggi@constance
+ paris7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20261001
+SUMMARY:Bagni Fiore Paraggi & Langosteria Paraggi (terrasse Dior)
+LOCATION:Baia di Paraggi\, Bagni Fiore (Belmond/Langosteria) / Langosteria 
+ Paraggi · baie entre Portofino et Santa Margherita Ligure
+DESCRIPTION:Saison estivale 2026 (juillet-août)\nhttps://constanceparis7.c
+ om/e/bagni-fiore-paraggi-langosteria-paraggi-terrasse-dior-paraggi.html
+URL:https://constanceparis7.com/e/bagni-fiore-paraggi-langosteria-paraggi-t
+ errasse-dior-paraggi.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:dior-saint-tropez-boutique-renovee-cafe-dior-et-restaurant-monsi@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20261101
+SUMMARY:Dior Saint-Tropez : boutique rénovée\, Café Dior et restaurant M
+ onsieur Dior par Mauro Colagreco
+LOCATION:13 rue François Sibilli (place des Lices)\, Saint-Tropez
+DESCRIPTION:Été 2026 : boutique rouverte en juin\, restaurant saisonnier 
+ ouvert de juin à octobre (ouvert tout juillet)\nhttps://constanceparis7.c
+ om/e/dior-saint-tropez-boutique-renovee-cafe-dior-et-restaurant-monsi.html
+URL:https://constanceparis7.com/e/dior-saint-tropez-boutique-renovee-cafe-d
+ ior-et-restaurant-monsi.html
+END:VEVENT
+END:VCALENDAR

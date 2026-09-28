@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:grand-palais-d-ete-edition-2026-paris@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260602
+DTEND;VALUE=DATE:20260907
+SUMMARY:Grand Palais d'été\, 2026 edition
+LOCATION:Grand Palais (Nef et galeries)\, avenue Winston Churchill\, 75008 
+ Paris
+DESCRIPTION:From 2 June to 6 September 2026\, in two parts. The performance
+ s and the After Nef evenings beneath the Nef ended on 18 July\; the Nef in
+ stallations\, "Nous\, frissons d'étoiles" (We\, Shivers of Stars) by Laur
+ e Prouvost and "Drama 1882" by Wael Shawky\, on 26 July. Since then\, and 
+ until 6 September\, only the Leandro Erlich retrospective remains\, in gal
+ leries 9 and 10.\nhttps://constanceparis7.com/en/e/grand-palais-d-ete-edit
+ ion-2026-paris.html
+URL:https://constanceparis7.com/en/e/grand-palais-d-ete-edition-2026-paris.
+ html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:gala-d-ouverture-de-la-saison-de-danse-opera-national-de-paris-p@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261010
+DTEND;VALUE=DATE:20261011
+SUMMARY:Gala d'ouverture de la saison de danse\, Opéra national de Paris (
+ Palais Garnier)
+LOCATION:Palais Garnier\, Place de l'Opéra\, 75009 Paris
+DESCRIPTION:Samedi 10 octobre 2026\, 19h30\nhttps://constanceparis7.com/e/g
+ ala-d-ouverture-de-la-saison-de-danse-opera-national-de-paris-p.html
+URL:https://constanceparis7.com/e/gala-d-ouverture-de-la-saison-de-danse-op
+ era-national-de-paris-p.html
+END:VEVENT
+END:VCALENDAR

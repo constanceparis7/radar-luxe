@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:arop-gala-d-ouverture-de-la-saison-de-danse-26-27-paris@constanceparis7
+ .com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261010
+DTEND;VALUE=DATE:20261011
+SUMMARY:AROP\, Dance Season Opening Gala 26/27
+LOCATION:Palais Garnier\, Paris
+DESCRIPTION:Saturday 10 October 2026 · Palais Garnier\, Paris\nhttps://con
+ stanceparis7.com/en/e/arop-gala-d-ouverture-de-la-saison-de-danse-26-27-pa
+ ris.html
+URL:https://constanceparis7.com/en/e/arop-gala-d-ouverture-de-la-saison-de-
+ danse-26-27-paris.html
+END:VEVENT
+END:VCALENDAR

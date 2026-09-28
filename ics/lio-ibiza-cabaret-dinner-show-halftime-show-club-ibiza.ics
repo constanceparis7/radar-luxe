@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:lio-ibiza-cabaret-dinner-show-halftime-show-club-ibiza@constanceparis7.
+ com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20261005
+SUMMARY:Lio Ibiza\, Cabaret dinner-show 'Halftime Show' & club
+LOCATION:Lio (Pacha Group)\, face a Dalt Vila · Marina Botafoch
+DESCRIPTION:Saison mai-octobre 2026 (ouverture 7-8-9 mai) \; show 'Halftime
+  Show' plusieurs soirs/semaine en juillet-aout\nhttps://constanceparis7.co
+ m/e/lio-ibiza-cabaret-dinner-show-halftime-show-club-ibiza.html
+URL:https://constanceparis7.com/e/lio-ibiza-cabaret-dinner-show-halftime-sh
+ ow-club-ibiza.html
+END:VEVENT
+END:VCALENDAR

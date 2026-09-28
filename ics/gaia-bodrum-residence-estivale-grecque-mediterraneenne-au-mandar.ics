@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:gaia-bodrum-residence-estivale-grecque-mediterraneenne-au-mandar@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260716
+DTEND;VALUE=DATE:20261001
+SUMMARY:GAIA Bodrum\, résidence estivale grecque-méditerranéenne au Mand
+ arin Oriental
+LOCATION:Mandarin Oriental Bodrum : Paradise Bay\, Gölköy
+DESCRIPTION:Résidence gastronomique saisonnière de maison internationale\
+ nhttps://constanceparis7.com/e/gaia-bodrum-residence-estivale-grecque-medi
+ terraneenne-au-mandar.html
+URL:https://constanceparis7.com/e/gaia-bodrum-residence-estivale-grecque-me
+ diterraneenne-au-mandar.html
+END:VEVENT
+END:VCALENDAR

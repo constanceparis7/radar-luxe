@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ete-imperial-a-l-hotel-du-palais-gala-du-15-aout-brunchs-et-expo@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20260908
+SUMMARY:Été impérial à l'Hôtel du Palais : Gala du 15 août\, brunchs 
+ et expositions joaillerie
+LOCATION:Hôtel du Palais (Unbound Collection by Hyatt)\, 1 avenue de l'Imp
+ ératrice\, Biarritz
+DESCRIPTION:Juillet-août 2026 \; temps fort : Gala du 15 août (Soirée da
+ nsante & Feu d'artifice\, menu du chef Jean-Marie Gautier MOF…\nhttps://
+ constanceparis7.com/e/ete-imperial-a-l-hotel-du-palais-gala-du-15-aout-bru
+ nchs-et-expo.html
+URL:https://constanceparis7.com/e/ete-imperial-a-l-hotel-du-palais-gala-du-
+ 15-aout-brunchs-et-expo.html
+END:VEVENT
+END:VCALENDAR

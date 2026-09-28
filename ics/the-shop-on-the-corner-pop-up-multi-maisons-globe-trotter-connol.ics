@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:the-shop-on-the-corner-pop-up-multi-maisons-globe-trotter-connol@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260414
+DTEND;VALUE=DATE:20261006
+SUMMARY:The Shop on the Corner\, pop-up multi-maisons (Globe-Trotter\, Conn
+ olly\, Smythson\, Fornasetti\, Alessi)
+LOCATION:4 avenue du Marechal Foch\, 83990 Saint-Tropez
+DESCRIPTION:14 avril - 5 octobre 2026\, couvre tout aout 2026\nhttps://cons
+ tanceparis7.com/e/the-shop-on-the-corner-pop-up-multi-maisons-globe-trotte
+ r-connol.html
+URL:https://constanceparis7.com/e/the-shop-on-the-corner-pop-up-multi-maiso
+ ns-globe-trotter-connol.html
+END:VEVENT
+END:VCALENDAR

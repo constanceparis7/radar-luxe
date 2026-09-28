@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:surf-lodge-summer-series-2026-concerts-d-aout-montauk-montauk@constance
+ paris7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260801
+DTEND;VALUE=DATE:20260908
+SUMMARY:Surf Lodge Summer Series 2026\, concerts d'août (Montauk)
+LOCATION:The Surf Lodge\, 183 Edgemere Street\, Montauk
+DESCRIPTION:Week-ends jusqu'à Labor Day. Affiche d'août vérifiée sur le
+  line-up officiel : Nancy Atlas les 12\, 19 et 26 août \; Hayden James et
+  Mojave Grey le 14 \; OMRI. le 15.\nhttps://constanceparis7.com/e/surf-lod
+ ge-summer-series-2026-concerts-d-aout-montauk-montauk.html
+URL:https://constanceparis7.com/e/surf-lodge-summer-series-2026-concerts-d-
+ aout-montauk-montauk.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:soirees-d-ete-du-casino-barriere-le-touquet-le-touquet-paris-pla@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20261025
+SUMMARY:Soirées d'été du Casino Barrière Le Touquet
+LOCATION:Casino Barrière Le Touquet\, place de l'Hermitage
+DESCRIPTION:Juillet : août 2026 (programmation continue)\nhttps://constanc
+ eparis7.com/e/soirees-d-ete-du-casino-barriere-le-touquet-le-touquet-paris
+ -pla.html
+URL:https://constanceparis7.com/e/soirees-d-ete-du-casino-barriere-le-touqu
+ et-le-touquet-paris-pla.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:chaumet-ouvre-le-12-place-vendome-journees-particulieres-lvmh-pa@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261016
+DTEND;VALUE=DATE:20261019
+SUMMARY:Chaumet ouvre le 12 place Vendôme\, Journées Particulières LVMH
+LOCATION:L'Hôtel Particulier de Chaumet\, 12 place Vendôme\, 75001 Paris
+DESCRIPTION:Du vendredi 16 au dimanche 18 octobre 2026\, pendant les Journ
+ ées Particulières LVMH. Visite « Diadèmes de Rêve » : gratuite\, sur
+  réservation\, les inscriptions ouvrent courant septembre 2026.\nhttps://
+ constanceparis7.com/e/chaumet-ouvre-le-12-place-vendome-journees-particuli
+ eres-lvmh-pa.html
+URL:https://constanceparis7.com/e/chaumet-ouvre-le-12-place-vendome-journee
+ s-particulieres-lvmh-pa.html
+END:VEVENT
+END:VCALENDAR

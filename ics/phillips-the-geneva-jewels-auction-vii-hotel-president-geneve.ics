@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:phillips-the-geneva-jewels-auction-vii-hotel-president-geneve@constance
+ paris7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261104
+DTEND;VALUE=DATE:20261110
+SUMMARY:Phillips\, The Geneva Jewels Auction VII\, Hôtel Président
+LOCATION:Hôtel Président\, quai Wilson 47\, 1201 Genève
+DESCRIPTION:Exposition publique du 4 au 9 novembre 2026\, vente le 9 novemb
+ re\, à l'Hôtel Président.\nhttps://constanceparis7.com/e/phillips-the-g
+ eneva-jewels-auction-vii-hotel-president-geneve.html
+URL:https://constanceparis7.com/e/phillips-the-geneva-jewels-auction-vii-ho
+ tel-president-geneve.html
+END:VEVENT
+END:VCALENDAR

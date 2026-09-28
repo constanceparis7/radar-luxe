@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:la-capannina-di-franceschi-serate-con-ospiti-forte-dei-marmi@constancep
+ aris7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260601
+DTEND;VALUE=DATE:20260916
+SUMMARY:La Capannina di Franceschi\, Nights with Special Guests
+LOCATION:La Capannina di Franceschi : club historique (depuis 1929) · Vers
+ ilia
+DESCRIPTION:Summer 2026 season cancelled: La Capannina did not open this su
+ mmer\, the first summer without the club for Versilia's tourists and regul
+ ars (checked on 15/09/2026). Taken over by the Armani group in 2025\, the 
+ house is under renovation for all of 2026\; reopening announced for summer
+  2027. No themed evenings or guest concerts in 2026.\nhttps://constancepar
+ is7.com/en/e/la-capannina-di-franceschi-serate-con-ospiti-forte-dei-marmi.
+ html
+URL:https://constanceparis7.com/en/e/la-capannina-di-franceschi-serate-con-
+ ospiti-forte-dei-marmi.html
+END:VEVENT
+END:VCALENDAR

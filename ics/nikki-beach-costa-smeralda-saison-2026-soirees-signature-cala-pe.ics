@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:nikki-beach-costa-smeralda-saison-2026-soirees-signature-cala-pe@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260529
+DTEND;VALUE=DATE:20260913
+SUMMARY:Nikki Beach Costa Smeralda\, saison 2026 & soirées signature (Cala
+  Petra Ruja)
+LOCATION:Nikki Beach Costa Smeralda\, Loc. Cala Petra Ruja (+ nouveau Cockt
+ ail Club\, Waterfront Porto Cervo)
+DESCRIPTION:Saison ouverte le 29 mai 2026 \; soirées signature datées jus
+ qu'au 12 sept.\nhttps://constanceparis7.com/e/nikki-beach-costa-smeralda-s
+ aison-2026-soirees-signature-cala-pe.html
+URL:https://constanceparis7.com/e/nikki-beach-costa-smeralda-saison-2026-so
+ irees-signature-cala-pe.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cannes-yachting-festival-2026-cannes@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260908
+DTEND;VALUE=DATE:20260914
+SUMMARY:Cannes Yachting Festival 2026
+LOCATION:Vieux Port & Port Canto\, Cannes
+DESCRIPTION:8-13 September 2026 · Vieux Port and Port Canto\, Cannes\nhttp
+ s://constanceparis7.com/en/e/cannes-yachting-festival-2026-cannes.html
+URL:https://constanceparis7.com/en/e/cannes-yachting-festival-2026-cannes.h
+ tml
+END:VEVENT
+END:VCALENDAR

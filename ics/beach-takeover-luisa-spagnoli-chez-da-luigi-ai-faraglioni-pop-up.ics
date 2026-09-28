@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:beach-takeover-luisa-spagnoli-chez-da-luigi-ai-faraglioni-pop-up@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260614
+DTEND;VALUE=DATE:20260916
+SUMMARY:Beach takeover Luisa Spagnoli chez Da Luigi ai Faraglioni + pop-up 
+ à La Canzone del Mare
+LOCATION:Da Luigi ai Faraglioni (au pied des Faraglioni) et La Canzone del 
+ Mare (Marina Piccola)
+DESCRIPTION:Jusqu'au 15 septembre 2026 (depuis le 14 juin)\nhttps://constan
+ ceparis7.com/e/beach-takeover-luisa-spagnoli-chez-da-luigi-ai-faraglioni-p
+ op-up.html
+URL:https://constanceparis7.com/e/beach-takeover-luisa-spagnoli-chez-da-lui
+ gi-ai-faraglioni-pop-up.html
+END:VEVENT
+END:VCALENDAR

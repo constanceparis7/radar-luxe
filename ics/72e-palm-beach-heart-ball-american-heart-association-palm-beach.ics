@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:72e-palm-beach-heart-ball-american-heart-association-palm-beach@constan
+ ceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270218
+DTEND;VALUE=DATE:20270219
+SUMMARY:72e Palm Beach Heart Ball (American Heart Association)
+LOCATION:The Breakers\, 1 South County Rd
+DESCRIPTION:18 février 2027 (date CONFIRMÉE) : The Breakers\, Palm Beach.
+  72e édition annuelle.\nhttps://constanceparis7.com/e/72e-palm-beach-hear
+ t-ball-american-heart-association-palm-beach.html
+URL:https://constanceparis7.com/e/72e-palm-beach-heart-ball-american-heart-
+ association-palm-beach.html
+END:VEVENT
+END:VCALENDAR

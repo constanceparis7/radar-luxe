@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:art-basel-hong-kong-2027-hong-kong@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270325
+DTEND;VALUE=DATE:20270328
+SUMMARY:Art Basel Hong Kong 2027
+LOCATION:Hong Kong Convention and Exhibition Centre\, Wan Chai
+DESCRIPTION:From Thursday 25 to Saturday 27 March 2027. The preview days re
+ served for VIP cardholders are announced by the fair as the edition approa
+ ches.\nhttps://constanceparis7.com/en/e/art-basel-hong-kong-2027-hong-kong
+ .html
+URL:https://constanceparis7.com/en/e/art-basel-hong-kong-2027-hong-kong.htm
+ l
+END:VEVENT
+END:VCALENDAR

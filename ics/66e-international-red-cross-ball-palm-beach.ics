@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:66e-international-red-cross-ball-palm-beach@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270108
+DTEND;VALUE=DATE:20270109
+SUMMARY:66e International Red Cross Ball
+LOCATION:Palace de Palm Beach (édition récente : The Breakers)
+DESCRIPTION:Edition 2027 (66e) NON confirmee officiellement a ce jour. Date
+  estimee 2027-01-08 = 2e vendredi de janvier 2027\, extrapolee du motif re
+ current (64e: 10 janv 2025 \; 65e: 9 janv 2026\, tous deux 2e vendredi de 
+ janvier au Breakers). A confirmer aupres du chapitre.\nhttps://constancepa
+ ris7.com/e/66e-international-red-cross-ball-palm-beach.html
+URL:https://constanceparis7.com/e/66e-international-red-cross-ball-palm-bea
+ ch.html
+END:VEVENT
+END:VCALENDAR

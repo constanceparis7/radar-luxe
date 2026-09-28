@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:scene-yacht-superyachts-ibiza-formentera-ibiza-formentera@constancepari
+ s7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20261005
+SUMMARY:Scene yacht & superyachts Ibiza-Formentera
+LOCATION:Mouillages Cala Jondal\, Formentera (Illetes)\, Marina Ibiza / Bot
+ afoch
+DESCRIPTION:Juillet-aout 2026 (pic de saison)\nhttps://constanceparis7.com/
+ e/scene-yacht-superyachts-ibiza-formentera-ibiza-formentera.html
+URL:https://constanceparis7.com/e/scene-yacht-superyachts-ibiza-formentera-
+ ibiza-formentera.html
+END:VEVENT
+END:VCALENDAR

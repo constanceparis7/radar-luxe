@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:life-cycles-an-amanzoe-exhibition-porto-heli@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260522
+DTEND;VALUE=DATE:20261101
+SUMMARY:Life Cycles: An Amanzoe Exhibition
+LOCATION:Amanzoe\, Agios Panteleimonas\, Kranidi · Kranidi Argolide
+DESCRIPTION:From May 22 to October 31\, 2026\nhttps://constanceparis7.com/e
+ n/e/life-cycles-an-amanzoe-exhibition-porto-heli.html
+URL:https://constanceparis7.com/en/e/life-cycles-an-amanzoe-exhibition-port
+ o-heli.html
+END:VEVENT
+END:VCALENDAR

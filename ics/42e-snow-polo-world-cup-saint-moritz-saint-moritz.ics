@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:42e-snow-polo-world-cup-saint-moritz-saint-moritz@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270122
+DTEND;VALUE=DATE:20270125
+SUMMARY:42e Snow Polo World Cup Saint-Moritz
+LOCATION:Lac gelé de Saint-Moritz
+DESCRIPTION:22 au 24 janvier 2027\nhttps://constanceparis7.com/e/42e-snow-p
+ olo-world-cup-saint-moritz-saint-moritz.html
+URL:https://constanceparis7.com/e/42e-snow-polo-world-cup-saint-moritz-sain
+ t-moritz.html
+END:VEVENT
+END:VCALENDAR

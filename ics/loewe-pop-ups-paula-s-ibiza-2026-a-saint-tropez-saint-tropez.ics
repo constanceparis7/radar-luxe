@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:loewe-pop-ups-paula-s-ibiza-2026-a-saint-tropez-saint-tropez@constancep
+ aris7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260601
+DTEND;VALUE=DATE:20261016
+SUMMARY:Loewe\, pop-ups Paula's Ibiza 2026 a Saint-Tropez
+LOCATION:Pop-up femme confirme par loewe.com : place des Lices\, 4 boulevar
+ d Vasserot\, 83990 Saint-Tropez. Adresse homm…
+DESCRIPTION:saison estivale 2026 (lancement collection Paula's Ibiza 2026)\
+ , couvre aout 2026 : dates exactes non publiees\nhttps://constanceparis7.c
+ om/e/loewe-pop-ups-paula-s-ibiza-2026-a-saint-tropez-saint-tropez.html
+URL:https://constanceparis7.com/e/loewe-pop-ups-paula-s-ibiza-2026-a-saint-
+ tropez-saint-tropez.html
+END:VEVENT
+END:VCALENDAR

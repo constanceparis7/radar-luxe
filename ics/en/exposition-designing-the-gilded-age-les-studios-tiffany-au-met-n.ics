@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:exposition-designing-the-gilded-age-les-studios-tiffany-au-met-n@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261022
+DTEND;VALUE=DATE:20270208
+SUMMARY:"Designing the Gilded Age" exhibition\, the Tiffany studios at the 
+ Met
+LOCATION:The Met Fifth Avenue\, galeries 691 à 693\, New York
+DESCRIPTION:From 22 October 2026 to 7 February 2027 at the Met Fifth Avenue
+ .\nhttps://constanceparis7.com/en/e/exposition-designing-the-gilded-age-le
+ s-studios-tiffany-au-met-n.html
+URL:https://constanceparis7.com/en/e/exposition-designing-the-gilded-age-le
+ s-studios-tiffany-au-met-n.html
+END:VEVENT
+END:VCALENDAR

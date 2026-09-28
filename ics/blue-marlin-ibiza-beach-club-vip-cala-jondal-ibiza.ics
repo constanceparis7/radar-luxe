@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:blue-marlin-ibiza-beach-club-vip-cala-jondal-ibiza@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20261005
+SUMMARY:Blue Marlin Ibiza\, Beach club VIP (Cala Jondal)
+LOCATION:Blue Marlin Ibiza · Cala Jondal
+DESCRIPTION:Saison 2026 (ouverture 25-26 avril\, Pete Tong \; tous les jour
+ s en juillet-aout)\nhttps://constanceparis7.com/e/blue-marlin-ibiza-beach-
+ club-vip-cala-jondal-ibiza.html
+URL:https://constanceparis7.com/e/blue-marlin-ibiza-beach-club-vip-cala-jon
+ dal-ibiza.html
+END:VEVENT
+END:VCALENDAR

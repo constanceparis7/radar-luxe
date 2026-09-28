@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:hampton-classic-horse-show-2026-bridgehampton@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260823
+DTEND;VALUE=DATE:20260831
+SUMMARY:Hampton Classic Horse Show 2026
+LOCATION:240 Snake Hollow Road\, Bridgehampton NY
+DESCRIPTION:23-30 aout 2026\nhttps://constanceparis7.com/e/hampton-classic-
+ horse-show-2026-bridgehampton.html
+URL:https://constanceparis7.com/e/hampton-classic-horse-show-2026-bridgeham
+ pton.html
+END:VEVENT
+END:VCALENDAR

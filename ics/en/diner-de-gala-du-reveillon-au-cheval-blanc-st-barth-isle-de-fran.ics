@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:diner-de-gala-du-reveillon-au-cheval-blanc-st-barth-isle-de-fran@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270101
+SUMMARY:New Year's Eve Gala Dinner at Cheval Blanc St-Barth Isle de France
+LOCATION:Cheval Blanc St-Barth (LVMH)\, restaurant La Case\, baie des Flama
+ nds
+DESCRIPTION:31 December 2026 (the maison's annual tradition\; 2026-27 progr
+ amme not yet released)\nhttps://constanceparis7.com/en/e/diner-de-gala-du-
+ reveillon-au-cheval-blanc-st-barth-isle-de-fran.html
+URL:https://constanceparis7.com/en/e/diner-de-gala-du-reveillon-au-cheval-b
+ lanc-st-barth-isle-de-fran.html
+END:VEVENT
+END:VCALENDAR

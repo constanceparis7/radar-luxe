@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:reveillon-du-nouvel-an-atlantis-the-royal-gala-dinner-dubai@constancepa
+ ris7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270101
+SUMMARY:Réveillon du Nouvel An\, Atlantis The Royal (Gala Dinner)
+LOCATION:Atlantis The Royal\, Palm Jumeirah · Dubai
+DESCRIPTION:31 décembre 2026\nhttps://constanceparis7.com/e/reveillon-du-n
+ ouvel-an-atlantis-the-royal-gala-dinner-dubai.html
+URL:https://constanceparis7.com/e/reveillon-du-nouvel-an-atlantis-the-royal
+ -gala-dinner-dubai.html
+END:VEVENT
+END:VCALENDAR

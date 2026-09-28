@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:l-opera-saint-tropez-diner-spectacle-2026-luxury-futuristic-worl@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260430
+DTEND;VALUE=DATE:20261005
+SUMMARY:L'Opéra Saint-Tropez\, dîner-spectacle 2026 « Luxury Futuristic 
+ World »
+LOCATION:Résidence du Port\, 83990 Saint-Tropez (face au port)
+DESCRIPTION:Saison du 30 avril au 4 octobre 2026\, tous les soirs (dîner &
+  show dès 19h30\, DJ après minuit)\nhttps://constanceparis7.com/e/l-oper
+ a-saint-tropez-diner-spectacle-2026-luxury-futuristic-worl.html
+URL:https://constanceparis7.com/e/l-opera-saint-tropez-diner-spectacle-2026
+ -luxury-futuristic-worl.html
+END:VEVENT
+END:VCALENDAR

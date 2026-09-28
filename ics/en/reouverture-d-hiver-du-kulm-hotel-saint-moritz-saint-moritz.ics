@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:reouverture-d-hiver-du-kulm-hotel-saint-moritz-saint-moritz@constancepa
+ ris7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261205
+SUMMARY:Winter Reopening of the Kulm Hotel St. Moritz
+LOCATION:Kulm Hotel\, Via Veglia 18\, 7500 Saint-Moritz
+DESCRIPTION:4 December 2026 (season through 29 March 2027)\nhttps://constan
+ ceparis7.com/en/e/reouverture-d-hiver-du-kulm-hotel-saint-moritz-saint-mor
+ itz.html
+URL:https://constanceparis7.com/en/e/reouverture-d-hiver-du-kulm-hotel-sain
+ t-moritz-saint-moritz.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:portofino-saison-d-ete-des-maisons-de-luxe-et-calendrier-eveneme@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260801
+DTEND;VALUE=DATE:20260905
+SUMMARY:Portofino\, saison d'ete des maisons de luxe et calendrier evenemen
+ tiel 2026
+LOCATION:Piazzetta (Piazza Martiri dell'Olivetta) et port de Portofino
+DESCRIPTION:Tout aout 2026 (calendrier ete 2026 publie: spectacle theatral 
+ itinerant 'A spasso nel tempo' le 7 aout\, Premio Bancare…\nhttps://cons
+ tanceparis7.com/e/portofino-saison-d-ete-des-maisons-de-luxe-et-calendrier
+ -eveneme.html
+URL:https://constanceparis7.com/e/portofino-saison-d-ete-des-maisons-de-lux
+ e-et-calendrier-eveneme.html
+END:VEVENT
+END:VCALENDAR

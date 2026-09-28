@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:paris-fashion-week-pret-a-porter-printemps-ete-2027-paris@constancepari
+ s7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260928
+DTEND;VALUE=DATE:20261007
+SUMMARY:Paris Fashion Week\, Ready-to-Wear Spring/Summer 2027
+LOCATION:Various venues (Fédération de la Haute Couture et de la Mode)
+DESCRIPTION:28 September to 6 October 2026 · Paris (various venues)\nhttps
+ ://constanceparis7.com/en/e/paris-fashion-week-pret-a-porter-printemps-ete
+ -2027-paris.html
+URL:https://constanceparis7.com/en/e/paris-fashion-week-pret-a-porter-print
+ emps-ete-2027-paris.html
+END:VEVENT
+END:VCALENDAR

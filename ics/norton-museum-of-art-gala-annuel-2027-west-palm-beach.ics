@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:norton-museum-of-art-gala-annuel-2027-west-palm-beach@constanceparis7.c
+ om
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270206
+DTEND;VALUE=DATE:20270207
+SUMMARY:Norton Museum of Art - Gala annuel 2027
+LOCATION:Norton Museum of Art\, 1450 S Dixie Hwy
+DESCRIPTION:Gala annuel récurrent début février à West Palm Beach \; é
+ dition 2027 NON encore annoncée au 16/07/2026. La date 2027-02-06 est une
+  projection spéculative (samedi de début février\, par analogie)\, pas 
+ une date officielle.\nhttps://constanceparis7.com/e/norton-museum-of-art-g
+ ala-annuel-2027-west-palm-beach.html
+URL:https://constanceparis7.com/e/norton-museum-of-art-gala-annuel-2027-wes
+ t-palm-beach.html
+END:VEVENT
+END:VCALENDAR

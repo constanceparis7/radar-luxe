@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:createurs-emergents-au-calendrier-contacts-directs-voie-la-plus@constan
+ ceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260928
+DTEND;VALUE=DATE:20261007
+SUMMARY:Emerging designers on the calendar\, direct contacts (the most acce
+ ssible route)
+LOCATION:Sites officiels FHCM & studios (Paris)
+DESCRIPTION:Runway shows & presentations during Fashion Week (28 September-
+ 6 October 2026)\nhttps://constanceparis7.com/en/e/createurs-emergents-au-c
+ alendrier-contacts-directs-voie-la-plus.html
+URL:https://constanceparis7.com/en/e/createurs-emergents-au-calendrier-cont
+ acts-directs-voie-la-plus.html
+END:VEVENT
+END:VCALENDAR

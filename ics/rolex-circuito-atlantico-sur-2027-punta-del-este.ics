@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:rolex-circuito-atlantico-sur-2027-punta-del-este@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270123
+DTEND;VALUE=DATE:20270130
+SUMMARY:Rolex Circuito Atlántico Sur 2027
+LOCATION:Baie de Punta del Este : circuit de La Barra\, parcours banane et 
+ tour de l'île Gorriti\, départ donné de Buenos Aires
+DESCRIPTION:Du samedi 23 au vendredi 29 janvier 2027\nhttps://constancepari
+ s7.com/e/rolex-circuito-atlantico-sur-2027-punta-del-este.html
+URL:https://constanceparis7.com/e/rolex-circuito-atlantico-sur-2027-punta-d
+ el-este.html
+END:VEVENT
+END:VCALENDAR

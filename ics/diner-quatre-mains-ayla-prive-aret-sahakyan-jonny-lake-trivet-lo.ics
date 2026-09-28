@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:diner-quatre-mains-ayla-prive-aret-sahakyan-jonny-lake-trivet-lo@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260917
+DTEND;VALUE=DATE:20260918
+SUMMARY:Dîner quatre mains Ayla Privé\, Aret Sahakyan × Jonny Lake (Triv
+ et\, Londres **)
+LOCATION:Ayla Privé\, Maçakızı Hotel\, Göltürkbükü (Türkbükü)\, 
+ péninsule de Bodrum
+DESCRIPTION:Dîner gastronomique événementiel (quatre mains\, 35 couverts
+ )\nhttps://constanceparis7.com/e/diner-quatre-mains-ayla-prive-aret-sahaky
+ an-jonny-lake-trivet-lo.html
+URL:https://constanceparis7.com/e/diner-quatre-mains-ayla-prive-aret-sahaky
+ an-jonny-lake-trivet-lo.html
+END:VEVENT
+END:VCALENDAR

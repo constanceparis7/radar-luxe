@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:boucheron-ouvre-le-26-place-vendome-journees-du-patrimoine-2026@constan
+ ceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260919
+DTEND;VALUE=DATE:20260921
+SUMMARY:Boucheron ouvre le 26 place Vendôme\, Journées du Patrimoine 2026
+LOCATION:Hôtel de Nocé\, 26 place Vendôme\, 75001 Paris
+DESCRIPTION:Samedi 19 et dimanche 20 septembre 2026\, 11h-19h. Réservation
+  nominative obligatoire : les inscriptions ouvrent le mercredi 2 septembre
+  à 10h et les créneaux partent en quelques heures.\nhttps://constancepar
+ is7.com/e/boucheron-ouvre-le-26-place-vendome-journees-du-patrimoine-2026.
+ html
+URL:https://constanceparis7.com/e/boucheron-ouvre-le-26-place-vendome-journ
+ ees-du-patrimoine-2026.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:boutique-ephemere-chanel-a-east-hampton-east-hampton@constanceparis7.co
+ m
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260522
+DTEND;VALUE=DATE:20261001
+SUMMARY:Chanel Pop-Up Boutique in East Hampton
+LOCATION:17 Newtown Lane\, East Hampton Village (immeuble de brique blanche
+  sur deux niveaux\, ~1 995 sq ft)
+DESCRIPTION:Open since 22 May 2026\, throughout the summer season (August i
+ ncluded\; closing date not announced)\nhttps://constanceparis7.com/en/e/bo
+ utique-ephemere-chanel-a-east-hampton-east-hampton.html
+URL:https://constanceparis7.com/en/e/boutique-ephemere-chanel-a-east-hampto
+ n-east-hampton.html
+END:VEVENT
+END:VCALENDAR

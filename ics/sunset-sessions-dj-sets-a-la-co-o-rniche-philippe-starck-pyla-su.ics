@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:sunset-sessions-dj-sets-a-la-co-o-rniche-philippe-starck-pyla-su@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20261001
+SUMMARY:Sunset sessions & DJ sets à La Co(o)rniche (Philippe Starck)
+LOCATION:Hôtel 5* La Co(o)rniche\, 46 avenue Louis Gaume\, face au Banc d'
+ Arguin et à la Dune du Pilat · La Teste-de-Buch
+DESCRIPTION:Tout l'été 2026 (juillet-août)\, en continu\nhttps://constan
+ ceparis7.com/e/sunset-sessions-dj-sets-a-la-co-o-rniche-philippe-starck-py
+ la-su.html
+URL:https://constanceparis7.com/e/sunset-sessions-dj-sets-a-la-co-o-rniche-
+ philippe-starck-pyla-su.html
+END:VEVENT
+END:VCALENDAR

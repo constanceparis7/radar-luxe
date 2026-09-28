@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:pad-london-2026-collectors-preview-londres@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261013
+DTEND;VALUE=DATE:20261019
+SUMMARY:PAD London 2026\, Collectors Preview
+LOCATION:Berkeley Square\, Mayfair\, Londres
+DESCRIPTION:Du 13 au 18 octobre 2026 · Berkeley Square\, Mayfair\, Londres
+ \nhttps://constanceparis7.com/e/pad-london-2026-collectors-preview-londres
+ .html
+URL:https://constanceparis7.com/e/pad-london-2026-collectors-preview-londre
+ s.html
+END:VEVENT
+END:VCALENDAR

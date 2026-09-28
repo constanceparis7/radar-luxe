@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:velaa-s-13th-anniversary-celebration-atoll-de-noonu@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261220
+DTEND;VALUE=DATE:20261221
+SUMMARY:Velaa's 13th Anniversary Celebration
+LOCATION:Velaa Private Island\, atoll de Noonu
+DESCRIPTION:Le 20 décembre 2026\nhttps://constanceparis7.com/e/velaa-s-13t
+ h-anniversary-celebration-atoll-de-noonu.html
+URL:https://constanceparis7.com/e/velaa-s-13th-anniversary-celebration-atol
+ l-de-noonu.html
+END:VEVENT
+END:VCALENDAR

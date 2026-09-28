@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:133-campeonato-argentino-abierto-de-polo-abierto-de-palermo-buen@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261213
+SUMMARY:133° Campeonato Argentino Abierto de Polo (Abierto de Palermo)
+LOCATION:Campo Argentino de Polo\, Av. del Libertador 4096\, Palermo
+DESCRIPTION:Du mardi 10 novembre au samedi 12 décembre 2026 : phase de pou
+ les du 10 novembre au 6 décembre\, finale le 12 décembre\nhttps://consta
+ nceparis7.com/e/133-campeonato-argentino-abierto-de-polo-abierto-de-palerm
+ o-buen.html
+URL:https://constanceparis7.com/e/133-campeonato-argentino-abierto-de-polo-
+ abierto-de-palermo-buen.html
+END:VEVENT
+END:VCALENDAR

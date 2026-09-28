@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:doha-jewellery-and-watches-exhibition-2026-doha@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260928
+DTEND;VALUE=DATE:20261004
+SUMMARY:Doha Jewellery and Watches Exhibition 2026
+LOCATION:Doha Exhibition and Convention Centre (DECC)\, West Bay\, Doha
+DESCRIPTION:From 28 September to 3 October 2026 at the DECC in West Bay. On
+ line registration open to the public.\nhttps://constanceparis7.com/en/e/do
+ ha-jewellery-and-watches-exhibition-2026-doha.html
+URL:https://constanceparis7.com/en/e/doha-jewellery-and-watches-exhibition-
+ 2026-doha.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:design-parade-2026-expositions-a-la-villa-noailles-hyeres-et-a-t@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260625
+DTEND;VALUE=DATE:20260831
+SUMMARY:Design Parade 2026\, exhibitions at the villa Noailles (Hyères) an
+ d in Toulon (20+10 anniversary edition)
+LOCATION:Villa Noailles (Hyères) et Chapelle/Médiathèque Chalucet\, quar
+ tier de la créativité (Toulon)
+DESCRIPTION:Festival from 25 to 28 June 2026 (before July)\; exhibitions on
+  view throughout July: until 30 August 2026 at the villa N…\nhttps://con
+ stanceparis7.com/en/e/design-parade-2026-expositions-a-la-villa-noailles-h
+ yeres-et-a-t.html
+URL:https://constanceparis7.com/en/e/design-parade-2026-expositions-a-la-vi
+ lla-noailles-hyeres-et-a-t.html
+END:VEVENT
+END:VCALENDAR

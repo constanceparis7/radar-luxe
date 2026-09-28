@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:torneo-internacional-de-polo-de-sotogrande-2026-copa-de-oro-gold@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260817
+DTEND;VALUE=DATE:20260830
+SUMMARY:Torneo Internacional de Polo de Sotogrande 2026\, Copa de Oro (Gold
+  Cup)
+LOCATION:Santa María Polo Club (Los Pinos) & Ayala Polo Club · San Roque 
+ Cadix
+DESCRIPTION:Copa de Oro du 17 au 29 août 2026 (finale le week-end du 28-29
+  août) \; Copa de Plata 3-15 août\nhttps://constanceparis7.com/e/torneo-
+ internacional-de-polo-de-sotogrande-2026-copa-de-oro-gold.html
+URL:https://constanceparis7.com/e/torneo-internacional-de-polo-de-sotogrand
+ e-2026-copa-de-oro-gold.html
+END:VEVENT
+END:VCALENDAR

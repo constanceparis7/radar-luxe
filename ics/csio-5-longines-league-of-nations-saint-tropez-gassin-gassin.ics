@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:csio-5-longines-league-of-nations-saint-tropez-gassin-gassin@constancep
+ aris7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260916
+DTEND;VALUE=DATE:20260921
+SUMMARY:CSIO 5* Longines League of Nations\, Saint-Tropez-Gassin
+LOCATION:Haras de Gassin\, Polo Club Saint-Tropez
+DESCRIPTION:Du mercredi 16 au dimanche 20 septembre 2026 · Haras de Gassin
+ \nhttps://constanceparis7.com/e/csio-5-longines-league-of-nations-saint-tr
+ opez-gassin-gassin.html
+URL:https://constanceparis7.com/e/csio-5-longines-league-of-nations-saint-t
+ ropez-gassin-gassin.html
+END:VEVENT
+END:VCALENDAR

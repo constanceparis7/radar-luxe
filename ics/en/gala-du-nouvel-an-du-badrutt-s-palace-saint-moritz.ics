@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:gala-du-nouvel-an-du-badrutt-s-palace-saint-moritz@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270101
+SUMMARY:Badrutt's Palace New Year's Eve Gala
+LOCATION:Badrutt's Palace Hotel\, Le Grand Hall & Le Restaurant\, Saint-Mor
+ itz
+DESCRIPTION:31 December 2026\nhttps://constanceparis7.com/en/e/gala-du-nouv
+ el-an-du-badrutt-s-palace-saint-moritz.html
+URL:https://constanceparis7.com/en/e/gala-du-nouvel-an-du-badrutt-s-palace-
+ saint-moritz.html
+END:VEVENT
+END:VCALENDAR

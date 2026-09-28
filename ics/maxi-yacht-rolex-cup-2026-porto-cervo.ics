@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:maxi-yacht-rolex-cup-2026-porto-cervo@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260906
+DTEND;VALUE=DATE:20260913
+SUMMARY:Maxi Yacht Rolex Cup 2026
+LOCATION:Yacht Club Costa Smeralda\, Porto Cervo (Sardaigne)
+DESCRIPTION:Du 6 au 12 septembre 2026 · Yacht Club Costa Smeralda\, Porto 
+ Cervo\nhttps://constanceparis7.com/e/maxi-yacht-rolex-cup-2026-porto-cervo
+ .html
+URL:https://constanceparis7.com/e/maxi-yacht-rolex-cup-2026-porto-cervo.htm
+ l
+END:VEVENT
+END:VCALENDAR

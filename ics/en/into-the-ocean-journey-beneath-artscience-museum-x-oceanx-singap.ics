@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:into-the-ocean-journey-beneath-artscience-museum-x-oceanx-singap@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260606
+DTEND;VALUE=DATE:20261102
+SUMMARY:Into the Ocean: Journey Beneath (ArtScience Museum x OceanX)
+LOCATION:ArtScience Museum\, Marina Bay Sands
+DESCRIPTION:6 June - 1 November 2026 (ongoing throughout August)\nhttps://c
+ onstanceparis7.com/en/e/into-the-ocean-journey-beneath-artscience-museum-x
+ -oceanx-singap.html
+URL:https://constanceparis7.com/en/e/into-the-ocean-journey-beneath-artscie
+ nce-museum-x-oceanx-singap.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:la-jeune-fille-a-la-perle-a-osaka-sous-le-mecenat-de-mikimoto-os@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260821
+DTEND;VALUE=DATE:20260928
+SUMMARY:« La Jeune Fille à la perle » à Osaka\, sous le mécénat de Mi
+ kimoto
+LOCATION:Nakanoshima Museum of Art\, Osaka
+DESCRIPTION:Du 21 août au 27 septembre 2026 au musée d'art Nakanoshima. C
+ inq semaines seulement.\nhttps://constanceparis7.com/e/la-jeune-fille-a-la
+ -perle-a-osaka-sous-le-mecenat-de-mikimoto-os.html
+URL:https://constanceparis7.com/e/la-jeune-fille-a-la-perle-a-osaka-sous-le
+ -mecenat-de-mikimoto-os.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:reveillon-de-la-saint-sylvestre-chez-bagatelle-gustavia-gustavia@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270101
+SUMMARY:Réveillon de la Saint-Sylvestre chez Bagatelle Gustavia
+LOCATION:Bagatelle Saint-Barth\, 24 rue Samuel Fahlberg\, front de port
+DESCRIPTION:31 décembre 2026 (rendez-vous annuel\, menu 2026-27 à paraît
+ re)\nhttps://constanceparis7.com/e/reveillon-de-la-saint-sylvestre-chez-ba
+ gatelle-gustavia-gustavia.html
+URL:https://constanceparis7.com/e/reveillon-de-la-saint-sylvestre-chez-baga
+ telle-gustavia-gustavia.html
+END:VEVENT
+END:VCALENDAR

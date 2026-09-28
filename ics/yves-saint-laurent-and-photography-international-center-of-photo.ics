@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:yves-saint-laurent-and-photography-international-center-of-photo@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260611
+DTEND;VALUE=DATE:20260929
+SUMMARY:Yves Saint Laurent and Photography\, International Center of Photog
+ raphy (pendant la fermeture du musée YSL Paris)
+LOCATION:International Center of Photography (ICP)\, 84 Ludlow Street (angl
+ e Essex Street\, Lower East Side)\, New York\,…
+DESCRIPTION:11 juin - 28 septembre 2026 (tout le mois d'août)\nhttps://con
+ stanceparis7.com/e/yves-saint-laurent-and-photography-international-center
+ -of-photo.html
+URL:https://constanceparis7.com/e/yves-saint-laurent-and-photography-intern
+ ational-center-of-photo.html
+END:VEVENT
+END:VCALENDAR

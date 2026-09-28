@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:la-mode-en-majeste-haute-couture-et-tradition-a-la-cour-de-thail@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260513
+DTEND;VALUE=DATE:20261102
+SUMMARY:Fashion in Majesty. Haute Couture and Tradition at the Court of Tha
+ iland\, Musée des Arts Décoratifs
+LOCATION:Musée des Arts Décoratifs (MAD)\, 107 rue de Rivoli\, 75001 Pari
+ s
+DESCRIPTION:13 May\, 1 November 2026 (all of July)\nhttps://constanceparis7
+ .com/en/e/la-mode-en-majeste-haute-couture-et-tradition-a-la-cour-de-thail
+ .html
+URL:https://constanceparis7.com/en/e/la-mode-en-majeste-haute-couture-et-tr
+ adition-a-la-cour-de-thail.html
+END:VEVENT
+END:VCALENDAR

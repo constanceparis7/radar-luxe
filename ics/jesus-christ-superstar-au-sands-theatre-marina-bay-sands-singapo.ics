@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:jesus-christ-superstar-au-sands-theatre-marina-bay-sands-singapo@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260819
+DTEND;VALUE=DATE:20260907
+SUMMARY:Jesus Christ Superstar au Sands Theatre (Marina Bay Sands)
+LOCATION:Sands Theatre\, Marina Bay Sands
+DESCRIPTION:19 aout - 6 septembre 2026\nhttps://constanceparis7.com/e/jesus
+ -christ-superstar-au-sands-theatre-marina-bay-sands-singapo.html
+URL:https://constanceparis7.com/e/jesus-christ-superstar-au-sands-theatre-m
+ arina-bay-sands-singapo.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:hotel-spa-des-pecheurs-saison-2026-sur-l-ile-de-cavallo-l-ile-de@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20261001
+SUMMARY:Hôtel & Spa des Pêcheurs\, 2026 Season on the Île de Cavallo ('B
+ illionaires' Island')
+LOCATION:Seul hôtel de l'île de Cavallo\, entre Corse et Sardaigne · com
+ mune de Bonifacio
+DESCRIPTION:Season from 21 May to 28 September 2026 (closing date corrected
+ : 28\, not 27 September)\nhttps://constanceparis7.com/en/e/hotel-spa-des-p
+ echeurs-saison-2026-sur-l-ile-de-cavallo-l-ile-de.html
+URL:https://constanceparis7.com/en/e/hotel-spa-des-pecheurs-saison-2026-sur
+ -l-ile-de-cavallo-l-ile-de.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cayman-cookout-2027-grand-cayman@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270114
+DTEND;VALUE=DATE:20270118
+SUMMARY:Cayman Cookout 2027
+LOCATION:The Ritz-Carlton\, Grand Cayman · Seven Mile Beach Îles Caïmans
+DESCRIPTION:Du 14 au 17 janvier 2027\nhttps://constanceparis7.com/e/cayman-
+ cookout-2027-grand-cayman.html
+URL:https://constanceparis7.com/e/cayman-cookout-2027-grand-cayman.html
+END:VEVENT
+END:VCALENDAR

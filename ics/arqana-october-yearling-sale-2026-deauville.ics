@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:arqana-october-yearling-sale-2026-deauville@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261020
+DTEND;VALUE=DATE:20261024
+SUMMARY:Arqana\, October Yearling Sale 2026
+LOCATION:Arqana\, 32 avenue Hocquart de Turtot
+DESCRIPTION:Du 20 au 23 octobre 2026 · Arqana\, Deauville\nhttps://constan
+ ceparis7.com/e/arqana-october-yearling-sale-2026-deauville.html
+URL:https://constanceparis7.com/e/arqana-october-yearling-sale-2026-deauvil
+ le.html
+END:VEVENT
+END:VCALENDAR

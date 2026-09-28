@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:dioriviera-cannes-installation-saisonniere-cannes@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260801
+DTEND;VALUE=DATE:20260916
+SUMMARY:Dioriviera Cannes\, seasonal installation
+LOCATION:Boutique Dior\, Boulevard de la Croisette (installation saisonniè
+ re Dioriviera documentée en juin 2026) \; le p…
+DESCRIPTION:summer 2026 season (running in August\, exact dates unpublished
+ )\nhttps://constanceparis7.com/en/e/dioriviera-cannes-installation-saisonn
+ iere-cannes.html
+URL:https://constanceparis7.com/en/e/dioriviera-cannes-installation-saisonn
+ iere-cannes.html
+END:VEVENT
+END:VCALENDAR

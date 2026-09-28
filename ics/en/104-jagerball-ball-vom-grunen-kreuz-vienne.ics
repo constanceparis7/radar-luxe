@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:104-jagerball-ball-vom-grunen-kreuz-vienne@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270125
+DTEND;VALUE=DATE:20270126
+SUMMARY:104. Jägerball\, Ball vom Grünen Kreuz
+LOCATION:Wiener Hofburg (salles d'apparat) et Spanische Hofreitschule (Éco
+ le espagnole d'équitation)\, 1010 Vienne
+DESCRIPTION:Monday 25 January 2027: doors at 20:00\, opening at 21:00\, end
+ s at 05:00\nhttps://constanceparis7.com/en/e/104-jagerball-ball-vom-grunen
+ -kreuz-vienne.html
+URL:https://constanceparis7.com/en/e/104-jagerball-ball-vom-grunen-kreuz-vi
+ enne.html
+END:VEVENT
+END:VCALENDAR

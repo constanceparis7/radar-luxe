@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:monaco-yacht-show-2026-monaco@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260923
+DTEND;VALUE=DATE:20260927
+SUMMARY:Monaco Yacht Show 2026
+LOCATION:Port Hercule\, Monaco
+DESCRIPTION:23-26 September 2026 · Port Hercule\, Monaco\nhttps://constanc
+ eparis7.com/en/e/monaco-yacht-show-2026-monaco.html
+URL:https://constanceparis7.com/en/e/monaco-yacht-show-2026-monaco.html
+END:VEVENT
+END:VCALENDAR

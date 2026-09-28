@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:nikki-beach-miami-beach-amazing-sundays-saturdance-beach-club-ad@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20270807
+SUMMARY:Nikki Beach Miami Beach\, Amazing Sundays & Saturdance (Riviera-DNA
+  beach club)
+LOCATION:Nikki Beach\, 1 Ocean Drive\, South of Fifth\, South Beach
+DESCRIPTION:Every weekend in July-August 2026 (Saturdance on Saturdays\, Am
+ azing Sundays on Sundays)\nhttps://constanceparis7.com/en/e/nikki-beach-mi
+ ami-beach-amazing-sundays-saturdance-beach-club-ad.html
+URL:https://constanceparis7.com/en/e/nikki-beach-miami-beach-amazing-sunday
+ s-saturdance-beach-club-ad.html
+END:VEVENT
+END:VCALENDAR

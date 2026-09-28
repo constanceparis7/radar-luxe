@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:saint-barth-gourmet-festival-13e-edition-saint-barthelemy@constancepari
+ s7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261116
+SUMMARY:St Barth Gourmet Festival\, 13th edition
+LOCATION:Palaces et tables d'exception de l'île (Gustavia\, Saint-Jean\, G
+ rand Cul-de-Sac)
+DESCRIPTION:9-15 November 2026\nhttps://constanceparis7.com/en/e/saint-bart
+ h-gourmet-festival-13e-edition-saint-barthelemy.html
+URL:https://constanceparis7.com/en/e/saint-barth-gourmet-festival-13e-editi
+ on-saint-barthelemy.html
+END:VEVENT
+END:VCALENDAR

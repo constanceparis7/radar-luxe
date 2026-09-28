@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:l-ecole-des-arts-joailliers-ouvre-l-hotel-de-mercy-argenteau-jou@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260919
+DTEND;VALUE=DATE:20260921
+SUMMARY:L'École des Arts Joailliers opens the Hôtel de Mercy-Argenteau\, 
+ 2026 Heritage Days
+LOCATION:Hôtel de Mercy-Argenteau\, 16 bis boulevard Montmartre\, 75009 Pa
+ ris
+DESCRIPTION:Saturday 19 and Sunday 20 September 2026\, visits from 10:00 to
+  18:00. Free with prior registration: bookings open on 10 September 2026.\
+ nhttps://constanceparis7.com/en/e/l-ecole-des-arts-joailliers-ouvre-l-hote
+ l-de-mercy-argenteau-jou.html
+URL:https://constanceparis7.com/en/e/l-ecole-des-arts-joailliers-ouvre-l-ho
+ tel-de-mercy-argenteau-jou.html
+END:VEVENT
+END:VCALENDAR

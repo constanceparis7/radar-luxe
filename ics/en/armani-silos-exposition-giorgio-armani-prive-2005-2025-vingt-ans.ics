@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:armani-silos-exposition-giorgio-armani-prive-2005-2025-vingt-ans@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20261221
+SUMMARY:Armani/Silos\, exhibition 'Giorgio Armani Privé 2005-2025\, twenty
+  years of haute couture'
+LOCATION:Armani/Silos\, Via Bergognone 40\, Milan (quartier Tortona)
+DESCRIPTION:Throughout July 2026 (exhibition opened in May 2025\, extended 
+ several times\; tickets on sale until 9 August 2026\, da…\nhttps://const
+ anceparis7.com/en/e/armani-silos-exposition-giorgio-armani-prive-2005-2025
+ -vingt-ans.html
+URL:https://constanceparis7.com/en/e/armani-silos-exposition-giorgio-armani
+ -prive-2005-2025-vingt-ans.html
+END:VEVENT
+END:VCALENDAR

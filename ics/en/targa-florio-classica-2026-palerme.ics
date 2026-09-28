@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:targa-florio-classica-2026-palerme@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261015
+DTEND;VALUE=DATE:20261019
+SUMMARY:Targa Florio Classica 2026
+LOCATION:Palerme (quartier général) et les routes historiques des Madonie
+DESCRIPTION:From 15 to 18 October 2026\nhttps://constanceparis7.com/en/e/ta
+ rga-florio-classica-2026-palerme.html
+URL:https://constanceparis7.com/en/e/targa-florio-classica-2026-palerme.htm
+ l
+END:VEVENT
+END:VCALENDAR

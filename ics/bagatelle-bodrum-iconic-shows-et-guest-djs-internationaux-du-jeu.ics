@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bagatelle-bodrum-iconic-shows-et-guest-djs-internationaux-du-jeu@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260716
+DTEND;VALUE=DATE:20261001
+SUMMARY:Bagatelle Bodrum\, Iconic Shows et guest DJs internationaux du jeud
+ i
+LOCATION:Bagatelle Bodrum\, Yalıkavak Marina
+DESCRIPTION:Dîner-spectacle festif de maison (ADN Saint-Tropez) : saison c
+ omplète\nhttps://constanceparis7.com/e/bagatelle-bodrum-iconic-shows-et-g
+ uest-djs-internationaux-du-jeu.html
+URL:https://constanceparis7.com/e/bagatelle-bodrum-iconic-shows-et-guest-dj
+ s-internationaux-du-jeu.html
+END:VEVENT
+END:VCALENDAR

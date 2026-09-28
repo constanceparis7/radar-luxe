@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ici-travels-uruguay-jose-ignacio@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270222
+DTEND;VALUE=DATE:20270301
+SUMMARY:ICI Travels: Uruguay
+LOCATION:Bahía Vik\, José Ignacio : avec l'Hotel Costanero à Montevideo\
+ , le Museo Nacional de Artes Visuales\, la Fundación Ama Amoedo et le MAC
+ A
+DESCRIPTION:Du lundi 22 au dimanche 28 février 2027\nhttps://constancepari
+ s7.com/e/ici-travels-uruguay-jose-ignacio.html
+URL:https://constanceparis7.com/e/ici-travels-uruguay-jose-ignacio.html
+END:VEVENT
+END:VCALENDAR

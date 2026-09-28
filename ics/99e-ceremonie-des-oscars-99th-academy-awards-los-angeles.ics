@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:99e-ceremonie-des-oscars-99th-academy-awards-los-angeles@constanceparis
+ 7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270314
+DTEND;VALUE=DATE:20270315
+SUMMARY:99e cérémonie des Oscars (99th Academy Awards)
+LOCATION:Dolby Theatre\, Ovation Hollywood\, 6801 Hollywood Boulevard
+DESCRIPTION:Dimanche 14 mars 2027\nhttps://constanceparis7.com/e/99e-ceremo
+ nie-des-oscars-99th-academy-awards-los-angeles.html
+URL:https://constanceparis7.com/e/99e-ceremonie-des-oscars-99th-academy-awa
+ rds-los-angeles.html
+END:VEVENT
+END:VCALENDAR

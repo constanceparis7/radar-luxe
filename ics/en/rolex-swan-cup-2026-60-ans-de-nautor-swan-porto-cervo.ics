@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:rolex-swan-cup-2026-60-ans-de-nautor-swan-porto-cervo@constanceparis7.c
+ om
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260914
+DTEND;VALUE=DATE:20260920
+SUMMARY:Rolex Swan Cup 2026\, 60 Years of Nautor Swan
+LOCATION:Yacht Club Costa Smeralda · Sardaigne
+DESCRIPTION:From September 14 to 19\, 2026 · Yacht Club Costa Smeralda\, P
+ orto Cervo\nhttps://constanceparis7.com/en/e/rolex-swan-cup-2026-60-ans-de
+ -nautor-swan-porto-cervo.html
+URL:https://constanceparis7.com/en/e/rolex-swan-cup-2026-60-ans-de-nautor-s
+ wan-porto-cervo.html
+END:VEVENT
+END:VCALENDAR

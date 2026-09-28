@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:exposition-glanzstucke-van-cleef-arpels-au-mak-de-vienne-vienne@constan
+ ceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260610
+DTEND;VALUE=DATE:20260928
+SUMMARY:"Glanzstücke" exhibition\, Van Cleef & Arpels at the MAK in Vienna
+LOCATION:Untere Ausstellungshalle\, MAK\, Museum für angewandte Kunst\, St
+ ubenring 5\, Vienne
+DESCRIPTION:Until 27 September 2026 at the MAK (open since 10 June). Final 
+ weeks.\nhttps://constanceparis7.com/en/e/exposition-glanzstucke-van-cleef-
+ arpels-au-mak-de-vienne-vienne.html
+URL:https://constanceparis7.com/en/e/exposition-glanzstucke-van-cleef-arpel
+ s-au-mak-de-vienne-vienne.html
+END:VEVENT
+END:VCALENDAR

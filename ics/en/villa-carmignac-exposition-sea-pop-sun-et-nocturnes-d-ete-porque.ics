@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:villa-carmignac-exposition-sea-pop-sun-et-nocturnes-d-ete-porque@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260425
+DTEND;VALUE=DATE:20261102
+SUMMARY:Villa Carmignac\, 'Sea\, Pop & Sun' exhibition and summer evening o
+ penings
+LOCATION:Villa Carmignac\, île de Porquerolles · Hyères
+DESCRIPTION:25 April\, 1 November 2026\; in July: Thursday evening openings
+ \, open-air cinema\, La Nuit des violoncelles on 28 July\nhttps://constanc
+ eparis7.com/en/e/villa-carmignac-exposition-sea-pop-sun-et-nocturnes-d-ete
+ -porque.html
+URL:https://constanceparis7.com/en/e/villa-carmignac-exposition-sea-pop-sun
+ -et-nocturnes-d-ete-porque.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ravello-festival-soiree-de-cloture-avec-sir-simon-rattle-ravello@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260905
+DTEND;VALUE=DATE:20260906
+SUMMARY:Ravello Festival\, Soirée de clôture avec Sir Simon Rattle
+LOCATION:Belvedere di Villa Rufolo
+DESCRIPTION:Samedi 5 septembre 2026\nhttps://constanceparis7.com/e/ravello-
+ festival-soiree-de-cloture-avec-sir-simon-rattle-ravello.html
+URL:https://constanceparis7.com/e/ravello-festival-soiree-de-cloture-avec-s
+ ir-simon-rattle-ravello.html
+END:VEVENT
+END:VCALENDAR

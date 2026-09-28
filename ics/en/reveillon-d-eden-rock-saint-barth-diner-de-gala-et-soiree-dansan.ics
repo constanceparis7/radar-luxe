@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:reveillon-d-eden-rock-saint-barth-diner-de-gala-et-soiree-dansan@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270101
+SUMMARY:New Year's Eve at Eden Rock\, St Barths (gala dinner and dancing)
+LOCATION:Eden Rock : Saint-Barth (Oetker Collection)\, rocher de la baie de
+  Saint-Jean
+DESCRIPTION:31 December 2026 (the hotel's annual tradition\; 2026-27 progra
+ mme not yet published)\nhttps://constanceparis7.com/en/e/reveillon-d-eden-
+ rock-saint-barth-diner-de-gala-et-soiree-dansan.html
+URL:https://constanceparis7.com/en/e/reveillon-d-eden-rock-saint-barth-dine
+ r-de-gala-et-soiree-dansan.html
+END:VEVENT
+END:VCALENDAR

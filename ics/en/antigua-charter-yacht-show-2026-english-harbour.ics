@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:antigua-charter-yacht-show-2026-english-harbour@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261210
+SUMMARY:Antigua Charter Yacht Show 2026
+LOCATION:Nelson's Dockyard\, site inscrit au patrimoine mondial de l'UNESCO
+  · Antigua-et-Barbuda
+DESCRIPTION:From 4 to 9 December 2026\nhttps://constanceparis7.com/en/e/ant
+ igua-charter-yacht-show-2026-english-harbour.html
+URL:https://constanceparis7.com/en/e/antigua-charter-yacht-show-2026-englis
+ h-harbour.html
+END:VEVENT
+END:VCALENDAR

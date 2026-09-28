@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:gala-aniversario-malba-25-anos-buenos-aires@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260917
+DTEND;VALUE=DATE:20260918
+SUMMARY:Gala Aniversario Malba\, 25 años
+LOCATION:Malba\, Av. Figueroa Alcorta 3415\, Buenos Aires
+DESCRIPTION:Jeudi 17 septembre 2026 : cocktail et pré-inauguration des exp
+ ositions à 19h30\, dîner à 21h\nhttps://constanceparis7.com/e/gala-aniv
+ ersario-malba-25-anos-buenos-aires.html
+URL:https://constanceparis7.com/e/gala-aniversario-malba-25-anos-buenos-air
+ es.html
+END:VEVENT
+END:VCALENDAR

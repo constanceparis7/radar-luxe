@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:premio-faraglioni-capri-international-2026-hommage-a-toni-servil@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260830
+DTEND;VALUE=DATE:20260831
+SUMMARY:Premio Faraglioni Capri International 2026\, hommage à Toni Servil
+ lo
+LOCATION:Chiostro Grande\, Certosa di San Giacomo
+DESCRIPTION:Dimanche 30 août 2026\nhttps://constanceparis7.com/e/premio-fa
+ raglioni-capri-international-2026-hommage-a-toni-servil.html
+URL:https://constanceparis7.com/e/premio-faraglioni-capri-international-202
+ 6-hommage-a-toni-servil.html
+END:VEVENT
+END:VCALENDAR

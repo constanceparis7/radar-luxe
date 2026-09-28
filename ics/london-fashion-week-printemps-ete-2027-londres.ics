@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:london-fashion-week-printemps-ete-2027-londres@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260917
+DTEND;VALUE=DATE:20260922
+SUMMARY:London Fashion Week\, Printemps-Été 2027
+LOCATION:Divers lieux (British Fashion Council)
+DESCRIPTION:Du 17 au 21 septembre 2026 · Londres (divers lieux)\nhttps://c
+ onstanceparis7.com/e/london-fashion-week-printemps-ete-2027-londres.html
+URL:https://constanceparis7.com/e/london-fashion-week-printemps-ete-2027-lo
+ ndres.html
+END:VEVENT
+END:VCALENDAR

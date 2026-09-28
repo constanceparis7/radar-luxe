@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:metropolitan-opera-gala-d-ouverture-de-saison-macbeth-de-verdi-n@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260922
+DTEND;VALUE=DATE:20260923
+SUMMARY:Metropolitan Opera\, Gala d'ouverture de saison (Macbeth de Verdi)
+LOCATION:Metropolitan Opera\, Lincoln Center\, New York
+DESCRIPTION:Mardi 22 septembre 2026 · Metropolitan Opera\, Lincoln Center\
+ nhttps://constanceparis7.com/e/metropolitan-opera-gala-d-ouverture-de-sais
+ on-macbeth-de-verdi-n.html
+URL:https://constanceparis7.com/e/metropolitan-opera-gala-d-ouverture-de-sa
+ ison-macbeth-de-verdi-n.html
+END:VEVENT
+END:VCALENDAR

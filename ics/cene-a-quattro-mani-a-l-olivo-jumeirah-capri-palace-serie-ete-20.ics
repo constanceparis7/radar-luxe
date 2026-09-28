@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cene-a-quattro-mani-a-l-olivo-jumeirah-capri-palace-serie-ete-20@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20261001
+SUMMARY:Cene a quattro mani à L'Olivo**\, Jumeirah Capri Palace (série é
+ té 2026)
+LOCATION:Il Ristorante L'Olivo (2 étoiles Michelin)\, Jumeirah Capri Palac
+ e
+DESCRIPTION:Série sur la saison 2026 : dates individuelles non encore publ
+ iées (fenêtre radar : juillet-septembre)\nhttps://constanceparis7.com/e/
+ cene-a-quattro-mani-a-l-olivo-jumeirah-capri-palace-serie-ete-20.html
+URL:https://constanceparis7.com/e/cene-a-quattro-mani-a-l-olivo-jumeirah-ca
+ pri-palace-serie-ete-20.html
+END:VEVENT
+END:VCALENDAR

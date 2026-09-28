@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:camarote-no1-carnaval-de-rio-2027-rio-de-janeiro@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270207
+DTEND;VALUE=DATE:20270214
+SUMMARY:Camarote Nº1\, Carnaval de Rio 2027
+LOCATION:Camarote Nº1\, secteur 2 du Sambódromo da Marquês de Sapucaí\,
+  Rio de Janeiro
+DESCRIPTION:Les 7\, 8\, 9 et 13 février 2027\, de 19 heures à 7 heures du
+  matin\nhttps://constanceparis7.com/e/camarote-no1-carnaval-de-rio-2027-ri
+ o-de-janeiro.html
+URL:https://constanceparis7.com/e/camarote-no1-carnaval-de-rio-2027-rio-de-
+ janeiro.html
+END:VEVENT
+END:VCALENDAR

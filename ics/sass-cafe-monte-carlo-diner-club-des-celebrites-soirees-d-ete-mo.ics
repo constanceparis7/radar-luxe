@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:sass-cafe-monte-carlo-diner-club-des-celebrites-soirees-d-ete-mo@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260718
+DTEND;VALUE=DATE:20261001
+SUMMARY:Sass Café Monte-Carlo\, dîner-club des célébrités (soirées d'
+ été)
+LOCATION:Sass Café\, 11 avenue Princesse Grace\, Monte-Carlo
+DESCRIPTION:Rolling\, nuits d'été 2026 (ouvert toute l'année)\nhttps://c
+ onstanceparis7.com/e/sass-cafe-monte-carlo-diner-club-des-celebrites-soire
+ es-d-ete-mo.html
+URL:https://constanceparis7.com/e/sass-cafe-monte-carlo-diner-club-des-cele
+ brites-soirees-d-ete-mo.html
+END:VEVENT
+END:VCALENDAR

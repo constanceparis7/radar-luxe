@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:lacma-art-film-gala-2026-los-angeles@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261108
+SUMMARY:LACMA Art+Film Gala 2026
+LOCATION:Los Angeles County Museum of Art (LACMA)\, 5905 Wilshire Boulevard
+DESCRIPTION:Saturday 7 November 2026\nhttps://constanceparis7.com/en/e/lacm
+ a-art-film-gala-2026-los-angeles.html
+URL:https://constanceparis7.com/en/e/lacma-art-film-gala-2026-los-angeles.h
+ tml
+END:VEVENT
+END:VCALENDAR

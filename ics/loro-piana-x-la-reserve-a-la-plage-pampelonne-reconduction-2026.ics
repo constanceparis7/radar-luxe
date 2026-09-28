@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:loro-piana-x-la-reserve-a-la-plage-pampelonne-reconduction-2026@constan
+ ceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260501
+DTEND;VALUE=DATE:20261001
+SUMMARY:Loro Piana x La Reserve a la Plage (Pampelonne)\, reconduction 2026
+  non confirmee
+LOCATION:La Reserve a la Plage\, plage de Pampelonne\, 83350 Ramatuelle (gr
+ oupe Michel Reybier Hospitality\, design Phili… · Saint-Tropez
+DESCRIPTION:saison 2026 NON confirmee : partenariat documente pour 2023\, 2
+ 024 et 2025 (troisieme saison consecutive en 2025) \; le b…\nhttps://con
+ stanceparis7.com/e/loro-piana-x-la-reserve-a-la-plage-pampelonne-reconduct
+ ion-2026.html
+URL:https://constanceparis7.com/e/loro-piana-x-la-reserve-a-la-plage-pampel
+ onne-reconduction-2026.html
+END:VEVENT
+END:VCALENDAR

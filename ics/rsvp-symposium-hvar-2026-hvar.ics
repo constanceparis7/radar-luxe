@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:rsvp-symposium-hvar-2026-hvar@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261005
+DTEND;VALUE=DATE:20261009
+SUMMARY:RSVP Symposium Hvar 2026
+LOCATION:Hôtels Sunčani Hvar\, Hvar (île de Hvar)
+DESCRIPTION:Du lundi 5 au jeudi 8 octobre 2026\nhttps://constanceparis7.com
+ /e/rsvp-symposium-hvar-2026-hvar.html
+URL:https://constanceparis7.com/e/rsvp-symposium-hvar-2026-hvar.html
+END:VEVENT
+END:VCALENDAR

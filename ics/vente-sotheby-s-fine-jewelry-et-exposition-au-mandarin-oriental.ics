@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:vente-sotheby-s-fine-jewelry-et-exposition-au-mandarin-oriental@constan
+ ceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261114
+SUMMARY:Vente Sotheby's Fine Jewelry et exposition au Mandarin Oriental\, G
+ enève
+LOCATION:Mandarin Oriental\, quai Turrettini 1\, 1201 Genève (exposition) 
+ \; vente en ligne
+DESCRIPTION:Enchères en ligne du 30 octobre au 13 novembre 2026 \; exposit
+ ion publique des lots au Mandarin Oriental du 6 au 10 novembre\, 10h-18h.\
+ nhttps://constanceparis7.com/e/vente-sotheby-s-fine-jewelry-et-exposition-
+ au-mandarin-oriental.html
+URL:https://constanceparis7.com/e/vente-sotheby-s-fine-jewelry-et-expositio
+ n-au-mandarin-oriental.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:concorso-d-eleganza-villa-d-este-2027-cernobbio@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270521
+DTEND;VALUE=DATE:20270524
+SUMMARY:Concorso d'Eleganza Villa d'Este 2027
+LOCATION:Jardins de la Villa d'Este et parc de la Villa Erba\, Cernobbio (L
+ ac de Côme)
+DESCRIPTION:Du vendredi 21 au dimanche 23 mai 2027\nhttps://constanceparis7
+ .com/e/concorso-d-eleganza-villa-d-este-2027-cernobbio.html
+URL:https://constanceparis7.com/e/concorso-d-eleganza-villa-d-este-2027-cer
+ nobbio.html
+END:VEVENT
+END:VCALENDAR

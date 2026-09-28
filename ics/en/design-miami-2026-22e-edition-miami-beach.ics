@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:design-miami-2026-22e-edition-miami-beach@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261207
+SUMMARY:Design Miami 2026 (22nd edition)
+LOCATION:Pride Park / Miami Beach Convention Center
+DESCRIPTION:Week of December 1-6\, 2026 (concurrent with Art Basel)\nhttps:
+ //constanceparis7.com/en/e/design-miami-2026-22e-edition-miami-beach.html
+URL:https://constanceparis7.com/en/e/design-miami-2026-22e-edition-miami-be
+ ach.html
+END:VEVENT
+END:VCALENDAR

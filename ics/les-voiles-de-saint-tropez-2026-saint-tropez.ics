@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:les-voiles-de-saint-tropez-2026-saint-tropez@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260926
+DTEND;VALUE=DATE:20261005
+SUMMARY:Les Voiles de Saint-Tropez 2026
+LOCATION:Société Nautique de Saint-Tropez\, Nouveau Port / Village des Vo
+ iles
+DESCRIPTION:Du 26 septembre au 4 octobre 2026 · Golfe de Saint-Tropez\nhtt
+ ps://constanceparis7.com/e/les-voiles-de-saint-tropez-2026-saint-tropez.ht
+ ml
+URL:https://constanceparis7.com/e/les-voiles-de-saint-tropez-2026-saint-tro
+ pez.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:mostra-de-venise-2026-83e-festival-international-du-film-venise@constan
+ ceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260902
+DTEND;VALUE=DATE:20260913
+SUMMARY:Venice Film Festival 2026\, 83rd Venice International Film Festival
+LOCATION:Palais du Cinéma\, Lido di Venezia
+DESCRIPTION:2-12 September 2026 · Palazzo del Cinema\, Lido\, Venice\nhttp
+ s://constanceparis7.com/en/e/mostra-de-venise-2026-83e-festival-internatio
+ nal-du-film-venise.html
+URL:https://constanceparis7.com/en/e/mostra-de-venise-2026-83e-festival-int
+ ernational-du-film-venise.html
+END:VEVENT
+END:VCALENDAR

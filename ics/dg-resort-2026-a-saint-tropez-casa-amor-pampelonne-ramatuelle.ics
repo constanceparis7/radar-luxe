@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:dg-resort-2026-a-saint-tropez-casa-amor-pampelonne-ramatuelle@constance
+ paris7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20260831
+SUMMARY:DG Resort 2026 à Saint-Tropez\, Casa Amor (Pampelonne)
+LOCATION:Casa Amor\, plage de Pampelonne · Saint-Tropez
+DESCRIPTION:été 2026\, actif tout juillet\nhttps://constanceparis7.com/e/
+ dg-resort-2026-a-saint-tropez-casa-amor-pampelonne-ramatuelle.html
+URL:https://constanceparis7.com/e/dg-resort-2026-a-saint-tropez-casa-amor-p
+ ampelonne-ramatuelle.html
+END:VEVENT
+END:VCALENDAR

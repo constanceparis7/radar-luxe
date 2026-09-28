@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:la-gritta-american-bar-portofino-portofino@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20280101
+SUMMARY:La Gritta American Bar\, Portofino
+LOCATION:Ponton flottant sur le port de Portofino (Calata Marconi 20 / Molo
+  Umberto I)
+DESCRIPTION:Saison estivale 2026 (juillet-août)\nhttps://constanceparis7.c
+ om/e/la-gritta-american-bar-portofino-portofino.html
+URL:https://constanceparis7.com/e/la-gritta-american-bar-portofino-portofin
+ o.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:reouverture-d-hiver-du-gstaad-palace-et-gala-du-nouvel-an-gstaad@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261215
+DTEND;VALUE=DATE:20270101
+SUMMARY:Réouverture d'hiver du Gstaad Palace et Gala du Nouvel An
+LOCATION:Gstaad Palace\, Palacestrasse 28\, 3780 Gstaad
+DESCRIPTION:15 décembre 2026 (saison jusqu'au 7 mars 2027) \; gala du 31 d
+ écembre 2026\nhttps://constanceparis7.com/e/reouverture-d-hiver-du-gstaad
+ -palace-et-gala-du-nouvel-an-gstaad.html
+URL:https://constanceparis7.com/e/reouverture-d-hiver-du-gstaad-palace-et-g
+ ala-du-nouvel-an-gstaad.html
+END:VEVENT
+END:VCALENDAR

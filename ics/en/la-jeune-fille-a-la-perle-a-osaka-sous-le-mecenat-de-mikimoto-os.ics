@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:la-jeune-fille-a-la-perle-a-osaka-sous-le-mecenat-de-mikimoto-os@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260821
+DTEND;VALUE=DATE:20260928
+SUMMARY:"Girl with a Pearl Earring" in Osaka\, under the patronage of Mikim
+ oto
+LOCATION:Nakanoshima Museum of Art\, Osaka
+DESCRIPTION:From 21 August to 27 September 2026 at the Nakanoshima Museum o
+ f Art. Five weeks only.\nhttps://constanceparis7.com/en/e/la-jeune-fille-a
+ -la-perle-a-osaka-sous-le-mecenat-de-mikimoto-os.html
+URL:https://constanceparis7.com/en/e/la-jeune-fille-a-la-perle-a-osaka-sous
+ -le-mecenat-de-mikimoto-os.html
+END:VEVENT
+END:VCALENDAR

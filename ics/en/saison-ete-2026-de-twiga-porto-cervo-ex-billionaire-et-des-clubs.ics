@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:saison-ete-2026-de-twiga-porto-cervo-ex-billionaire-et-des-clubs@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260801
+DTEND;VALUE=DATE:20260830
+SUMMARY:Summer 2026 season at Twiga Porto Cervo (formerly Billionaire) and 
+ the Costa Smeralda clubs
+LOCATION:Twiga Porto Cervo (ex-Billionaire)\, Casa Fiori Chiari\, Vesta\, C
+ razy Pizza\, Zuma\, Langosteria\, Nammos Baja Sar… · Costa Smeralda
+DESCRIPTION:throughout August 2026 (peak from 1 to 20 August\; LMDV venues 
+ open since June 2026)\nhttps://constanceparis7.com/en/e/saison-ete-2026-de
+ -twiga-porto-cervo-ex-billionaire-et-des-clubs.html
+URL:https://constanceparis7.com/en/e/saison-ete-2026-de-twiga-porto-cervo-e
+ x-billionaire-et-des-clubs.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fine-arts-paris-2026-heritiere-de-la-biennale-des-antiquaires-pa@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260919
+DTEND;VALUE=DATE:20260924
+SUMMARY:Fine Arts Paris 2026 (heir to the Biennale des Antiquaires)
+LOCATION:Grand Palais\, Avenue Winston Churchill
+DESCRIPTION:19-23 September 2026 · Grand Palais\, Paris\nhttps://constance
+ paris7.com/en/e/fine-arts-paris-2026-heritiere-de-la-biennale-des-antiquai
+ res-pa.html
+URL:https://constanceparis7.com/en/e/fine-arts-paris-2026-heritiere-de-la-b
+ iennale-des-antiquaires-pa.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:les-jardins-de-bagatelle-garden-club-saison-estivale-2026-paris@constan
+ ceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260501
+DTEND;VALUE=DATE:20261001
+SUMMARY:Les Jardins de Bagatelle\, Garden Club (saison estivale 2026)
+LOCATION:Les Jardins de Bagatelle (Paris Society)\, lisière du Bois de Bou
+ logne\, 16e
+DESCRIPTION:Saison estivale 2026 · soirées dansantes récurrentes du jeud
+ i au samedi\, du printemps à l'automne (dates variables\, non publiées 
+ à l'avance)\nhttps://constanceparis7.com/e/les-jardins-de-bagatelle-garde
+ n-club-saison-estivale-2026-paris.html
+URL:https://constanceparis7.com/e/les-jardins-de-bagatelle-garden-club-sais
+ on-estivale-2026-paris.html
+END:VEVENT
+END:VCALENDAR

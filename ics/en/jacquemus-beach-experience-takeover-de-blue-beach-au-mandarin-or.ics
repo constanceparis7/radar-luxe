@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:jacquemus-beach-experience-takeover-de-blue-beach-au-mandarin-or@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260608
+DTEND;VALUE=DATE:20261101
+SUMMARY:Jacquemus Beach Experience\, Blue Beach takeover at Mandarin Orient
+ al\, Bodrum
+LOCATION:Mandarin Oriental Bodrum : Blue Beach\, Paradise Bay (Cennet Koyu)
+ \, Gölköy
+DESCRIPTION:Luxury house pop-up / takeover\nhttps://constanceparis7.com/en/
+ e/jacquemus-beach-experience-takeover-de-blue-beach-au-mandarin-or.html
+URL:https://constanceparis7.com/en/e/jacquemus-beach-experience-takeover-de
+ -blue-beach-au-mandarin-or.html
+END:VEVENT
+END:VCALENDAR

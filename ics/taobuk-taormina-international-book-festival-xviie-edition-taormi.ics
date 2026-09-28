@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:taobuk-taormina-international-book-festival-xviie-edition-taormi@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270617
+DTEND;VALUE=DATE:20270622
+SUMMARY:Taobuk\, Taormina International Book Festival\, XVIIe édition
+LOCATION:Teatro Antico di Taormina et palais du centre historique
+DESCRIPTION:Du 17 au 21 juin 2027\nhttps://constanceparis7.com/e/taobuk-tao
+ rmina-international-book-festival-xviie-edition-taormi.html
+URL:https://constanceparis7.com/e/taobuk-taormina-international-book-festiv
+ al-xviie-edition-taormi.html
+END:VEVENT
+END:VCALENDAR

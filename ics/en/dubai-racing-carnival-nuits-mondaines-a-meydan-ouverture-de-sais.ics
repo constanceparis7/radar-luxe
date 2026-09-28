@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:dubai-racing-carnival-nuits-mondaines-a-meydan-ouverture-de-sais@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20270328
+SUMMARY:Dubai Racing Carnival\, society nights at Meydan (season opening)
+LOCATION:Meydan Racecourse (The Meydan Grandstand\, suites VIP) · Dubai
+DESCRIPTION:Opens 6 November 2026\; season runs through March 2027\nhttps:/
+ /constanceparis7.com/en/e/dubai-racing-carnival-nuits-mondaines-a-meydan-o
+ uverture-de-sais.html
+URL:https://constanceparis7.com/en/e/dubai-racing-carnival-nuits-mondaines-
+ a-meydan-ouverture-de-sais.html
+END:VEVENT
+END:VCALENDAR

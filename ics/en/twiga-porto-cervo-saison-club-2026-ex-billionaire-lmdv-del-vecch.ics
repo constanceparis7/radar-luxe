@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:twiga-porto-cervo-saison-club-2026-ex-billionaire-lmdv-del-vecch@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20260830
+SUMMARY:Twiga Porto Cervo\, 2026 Club Season (ex-Billionaire\, LMDV / Del V
+ ecchio)
+LOCATION:Twiga Porto Cervo (ex-Billionaire de Flavio Briatore\, repris par 
+ Leonardo Maria Del Vecchio / LMDV Hospitalit… · Arzachena
+DESCRIPTION:Summer season 2026 (opening 12 June\, highlights in July-August
+ \, final calendar date 29 August)\nhttps://constanceparis7.com/en/e/twiga-
+ porto-cervo-saison-club-2026-ex-billionaire-lmdv-del-vecch.html
+URL:https://constanceparis7.com/en/e/twiga-porto-cervo-saison-club-2026-ex-
+ billionaire-lmdv-del-vecch.html
+END:VEVENT
+END:VCALENDAR

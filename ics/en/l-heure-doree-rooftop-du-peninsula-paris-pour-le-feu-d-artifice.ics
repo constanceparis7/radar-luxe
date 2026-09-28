@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:l-heure-doree-rooftop-du-peninsula-paris-pour-le-feu-d-artifice@constan
+ ceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20260916
+SUMMARY:L'Heure Dorée\, the Peninsula Paris rooftop for the fireworks
+LOCATION:Rooftop 'L'Heure Dorée' au 6e étage du Peninsula Paris\, 19 aven
+ ue Kléber\, 75116
+DESCRIPTION:open all summer 2026 (since late May)\, key evening on 13 July\
+ nhttps://constanceparis7.com/en/e/l-heure-doree-rooftop-du-peninsula-paris
+ -pour-le-feu-d-artifice.html
+URL:https://constanceparis7.com/en/e/l-heure-doree-rooftop-du-peninsula-par
+ is-pour-le-feu-d-artifice.html
+END:VEVENT
+END:VCALENDAR

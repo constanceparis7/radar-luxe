@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:dolce-gabbana-x-casa-amor-takeover-dg-resort-theme-carretto-sici@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20261101
+SUMMARY:Dolce & Gabbana x Casa Amor\, takeover 'DG Resort' (thème Carretto
+  Siciliano)
+LOCATION:Casa Amor\, plage de Pampelonne\, chemin de la Matarane\, Ramatuel
+ le
+DESCRIPTION:Été 2026\, jusqu'au 31 octobre 2026 (ouvert tout juillet)\nht
+ tps://constanceparis7.com/e/dolce-gabbana-x-casa-amor-takeover-dg-resort-t
+ heme-carretto-sici.html
+URL:https://constanceparis7.com/e/dolce-gabbana-x-casa-amor-takeover-dg-res
+ ort-theme-carretto-sici.html
+END:VEVENT
+END:VCALENDAR

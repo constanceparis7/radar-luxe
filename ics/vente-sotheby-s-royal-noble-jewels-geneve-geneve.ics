@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:vente-sotheby-s-royal-noble-jewels-geneve-geneve@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261110
+SUMMARY:Vente Sotheby's Royal & Noble Jewels\, Genève
+LOCATION:Sotheby's\, Genève \; exposition publique de la semaine au Mandar
+ in Oriental\, quai Turrettini 1
+DESCRIPTION:Le 9 novembre 2026 à Genève. L'exposition publique de la sema
+ ine Sotheby's se tient au Mandarin Oriental du 6 au 10 novembre.\nhttps://
+ constanceparis7.com/e/vente-sotheby-s-royal-noble-jewels-geneve-geneve.htm
+ l
+URL:https://constanceparis7.com/e/vente-sotheby-s-royal-noble-jewels-geneve
+ -geneve.html
+END:VEVENT
+END:VCALENDAR

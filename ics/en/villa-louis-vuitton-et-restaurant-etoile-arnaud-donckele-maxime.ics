@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:villa-louis-vuitton-et-restaurant-etoile-arnaud-donckele-maxime@constan
+ ceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20261005
+SUMMARY:Villa Louis Vuitton and the Michelin-starred restaurant by Arnaud D
+ onckele & Maxime Frédéric at White 1921
+LOCATION:Villa Louis Vuitton (résidence-boutique saisonnière) et hôtel W
+ hite 1921\, place des Lices
+DESCRIPTION:2026 season confirmed: restaurant open from 8 May to 4 October 
+ 2026\, running in July\nhttps://constanceparis7.com/en/e/villa-louis-vuitt
+ on-et-restaurant-etoile-arnaud-donckele-maxime.html
+URL:https://constanceparis7.com/en/e/villa-louis-vuitton-et-restaurant-etoi
+ le-arnaud-donckele-maxime.html
+END:VEVENT
+END:VCALENDAR

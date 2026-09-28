@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:120e-white-turf-saint-moritz-courses-sur-le-lac-gele-saint-morit@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270207
+DTEND;VALUE=DATE:20270222
+SUMMARY:120e White Turf Saint-Moritz\, courses sur le lac gelé
+LOCATION:Lac gelé de Saint-Moritz
+DESCRIPTION:Dimanches 7\, 14 et 21 février 2027 (Family Days les samedis 6
+ \, 13\, 20)\nhttps://constanceparis7.com/e/120e-white-turf-saint-moritz-co
+ urses-sur-le-lac-gele-saint-morit.html
+URL:https://constanceparis7.com/e/120e-white-turf-saint-moritz-courses-sur-
+ le-lac-gele-saint-morit.html
+END:VEVENT
+END:VCALENDAR

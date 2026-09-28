@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:sommets-musicaux-de-gstaad-2027-gstaad@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270129
+DTEND;VALUE=DATE:20270207
+SUMMARY:Sommets Musicaux de Gstaad 2027
+LOCATION:Chapelle de Gstaad\, église de Saanen\, église de Rougemont · S
+ aanen Rougemont
+DESCRIPTION:29 January to 6 February 2027\nhttps://constanceparis7.com/en/e
+ /sommets-musicaux-de-gstaad-2027-gstaad.html
+URL:https://constanceparis7.com/en/e/sommets-musicaux-de-gstaad-2027-gstaad
+ .html
+END:VEVENT
+END:VCALENDAR

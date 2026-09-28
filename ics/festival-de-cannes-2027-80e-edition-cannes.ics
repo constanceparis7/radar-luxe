@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:festival-de-cannes-2027-80e-edition-cannes@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270511
+DTEND;VALUE=DATE:20270523
+SUMMARY:Festival de Cannes 2027\, 80e édition
+LOCATION:Palais des Festivals et des Congrès\, 1 boulevard de la Croisette
+ \, 06400 Cannes
+DESCRIPTION:Du 11 au 22 mai 2027\, édition anniversaire des 80 ans. Pas de
+  billetterie publique : accréditations et invitations. Les inscriptions 2
+ 027 ouvrent vers début février.\nhttps://constanceparis7.com/e/festival-
+ de-cannes-2027-80e-edition-cannes.html
+URL:https://constanceparis7.com/e/festival-de-cannes-2027-80e-edition-canne
+ s.html
+END:VEVENT
+END:VCALENDAR

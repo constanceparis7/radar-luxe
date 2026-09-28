@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:us-open-2026-fan-week-et-premiers-jours-du-tournoi-new-york@constancepa
+ ris7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260823
+DTEND;VALUE=DATE:20260914
+SUMMARY:US Open 2026 - Fan Week and Opening Days of the Tournament
+LOCATION:USTA Billie Jean King National Tennis Center\, Flushing Meadows Co
+ rona Park\, Queens · Queens Flushing Meadows
+DESCRIPTION:23 August - 13 September 2026 (Fan Week 23-29 August\, main dra
+ w from 30 August)\nhttps://constanceparis7.com/en/e/us-open-2026-fan-week-
+ et-premiers-jours-du-tournoi-new-york.html
+URL:https://constanceparis7.com/en/e/us-open-2026-fan-week-et-premiers-jour
+ s-du-tournoi-new-york.html
+END:VEVENT
+END:VCALENDAR

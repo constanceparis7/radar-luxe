@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:69-wiener-opernball-vienne@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270204
+DTEND;VALUE=DATE:20270205
+SUMMARY:69. Wiener Opernball
+LOCATION:Wiener Staatsoper (Opéra national de Vienne)\, Opernring 2\, 1010
+  Vienne
+DESCRIPTION:Le jeudi 4 février 2027 : portes à 20h15\, ouverture à 22 he
+ ures\, fin à 5 heures du matin\nhttps://constanceparis7.com/e/69-wiener-o
+ pernball-vienne.html
+URL:https://constanceparis7.com/e/69-wiener-opernball-vienne.html
+END:VEVENT
+END:VCALENDAR

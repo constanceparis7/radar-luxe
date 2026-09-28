@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:salons-professionnels-tranoi-premiere-classe-jill-woman-paris-pa@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261001
+DTEND;VALUE=DATE:20261006
+SUMMARY:Salons professionnels\, Tranoï\, Première Classe\, JILL\, WOMAN P
+ aris
+LOCATION:Palais Brongniart & Jardin des Tuileries\, Paris
+DESCRIPTION:1er : 5 octobre 2026 (selon salon) · showrooms professionnels\
+ nhttps://constanceparis7.com/e/salons-professionnels-tranoi-premiere-class
+ e-jill-woman-paris-pa.html
+URL:https://constanceparis7.com/e/salons-professionnels-tranoi-premiere-cla
+ sse-jill-woman-paris-pa.html
+END:VEVENT
+END:VCALENDAR

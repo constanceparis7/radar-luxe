@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:art-mumbai-2026-mumbai@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261112
+DTEND;VALUE=DATE:20261116
+SUMMARY:ART MUMBAI 2026
+LOCATION:Mahalaxmi Racecourse\, Mahalaxmi\, Mumbai
+DESCRIPTION:From Thursday 12 to Sunday 15 November 2026\nhttps://constancep
+ aris7.com/en/e/art-mumbai-2026-mumbai.html
+URL:https://constanceparis7.com/en/e/art-mumbai-2026-mumbai.html
+END:VEVENT
+END:VCALENDAR

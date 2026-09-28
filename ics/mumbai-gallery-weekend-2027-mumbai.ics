@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:mumbai-gallery-weekend-2027-mumbai@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270114
+DTEND;VALUE=DATE:20270118
+SUMMARY:Mumbai Gallery Weekend 2027
+LOCATION:Galeries membres de la Mumbai Gallery Association\, dans plusieurs
+  quartiers de Mumbai
+DESCRIPTION:Du jeudi 14 au dimanche 17 janvier 2027\nhttps://constanceparis
+ 7.com/e/mumbai-gallery-weekend-2027-mumbai.html
+URL:https://constanceparis7.com/e/mumbai-gallery-weekend-2027-mumbai.html
+END:VEVENT
+END:VCALENDAR

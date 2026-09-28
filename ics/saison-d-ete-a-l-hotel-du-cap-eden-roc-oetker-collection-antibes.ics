@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:saison-d-ete-a-l-hotel-du-cap-eden-roc-oetker-collection-antibes@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260801
+DTEND;VALUE=DATE:20261019
+SUMMARY:Saison d'été à l'Hôtel du Cap-Eden-Roc (Oetker Collection)
+LOCATION:Hôtel du Cap-Eden-Roc\, Boulevard J.F. Kennedy\, Cap d'Antibes
+DESCRIPTION:tout août 2026 (restaurant Eden-Roc en service du 20 avril au 
+ 13 septembre 2026)\nhttps://constanceparis7.com/e/saison-d-ete-a-l-hotel-d
+ u-cap-eden-roc-oetker-collection-antibes.html
+URL:https://constanceparis7.com/e/saison-d-ete-a-l-hotel-du-cap-eden-roc-oe
+ tker-collection-antibes.html
+END:VEVENT
+END:VCALENDAR

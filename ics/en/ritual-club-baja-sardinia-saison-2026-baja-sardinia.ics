@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ritual-club-baja-sardinia-saison-2026-baja-sardinia@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20260914
+SUMMARY:Ritual Club Baja Sardinia\, 2026 Season
+LOCATION:Ritual Club (temple de granit dans la roche)\, Baja Sardinia\, pr
+ ès de Porto Cervo · Arzachena
+DESCRIPTION:Extended 2026 season (~29 May\, 12 September)\; in full swing J
+ uly-August\nhttps://constanceparis7.com/en/e/ritual-club-baja-sardinia-sai
+ son-2026-baja-sardinia.html
+URL:https://constanceparis7.com/en/e/ritual-club-baja-sardinia-saison-2026-
+ baja-sardinia.html
+END:VEVENT
+END:VCALENDAR

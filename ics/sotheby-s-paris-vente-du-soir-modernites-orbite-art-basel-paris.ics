@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:sotheby-s-paris-vente-du-soir-modernites-orbite-art-basel-paris@constan
+ ceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261023
+DTEND;VALUE=DATE:20261024
+SUMMARY:Sotheby's Paris\, vente du soir « Modernités » (orbite Art Basel
+  Paris)
+LOCATION:Sotheby's Paris\, 76 rue du Faubourg Saint-Honoré\, 75008 Paris
+DESCRIPTION:Vendredi 23 octobre 2026\, 17h\nhttps://constanceparis7.com/e/s
+ otheby-s-paris-vente-du-soir-modernites-orbite-art-basel-paris.html
+URL:https://constanceparis7.com/e/sotheby-s-paris-vente-du-soir-modernites-
+ orbite-art-basel-paris.html
+END:VEVENT
+END:VCALENDAR

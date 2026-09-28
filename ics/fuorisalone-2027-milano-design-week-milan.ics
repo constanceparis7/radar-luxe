@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fuorisalone-2027-milano-design-week-milan@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270412
+DTEND;VALUE=DATE:20270419
+SUMMARY:Fuorisalone 2027\, Milano Design Week
+LOCATION:Dans toute la ville de Milan : Brera\, Tortona\, 5vie et les autre
+ s design districts
+DESCRIPTION:Du 12 au 18 avril 2027 dans les quartiers de Milan\, un jour av
+ ant l'ouverture du Salone de Rho. Gratuit pour l'essentiel\, sans billette
+ rie centrale.\nhttps://constanceparis7.com/e/fuorisalone-2027-milano-desig
+ n-week-milan.html
+URL:https://constanceparis7.com/e/fuorisalone-2027-milano-design-week-milan
+ .html
+END:VEVENT
+END:VCALENDAR

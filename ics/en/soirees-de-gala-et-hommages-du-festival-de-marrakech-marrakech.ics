@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:soirees-de-gala-et-hommages-du-festival-de-marrakech-marrakech@constanc
+ eparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261129
+SUMMARY:Gala Evenings and Tributes of the Marrakech Film Festival
+LOCATION:Palais des Congrès et dîners privés dans les palaces (La Mamoun
+ ia\, Royal Mansour)
+DESCRIPTION:20-28 November 2026\, evenings throughout the festival\nhttps:/
+ /constanceparis7.com/en/e/soirees-de-gala-et-hommages-du-festival-de-marra
+ kech-marrakech.html
+URL:https://constanceparis7.com/en/e/soirees-de-gala-et-hommages-du-festiva
+ l-de-marrakech-marrakech.html
+END:VEVENT
+END:VCALENDAR

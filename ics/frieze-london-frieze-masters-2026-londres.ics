@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:frieze-london-frieze-masters-2026-londres@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261014
+DTEND;VALUE=DATE:20261019
+SUMMARY:Frieze London & Frieze Masters 2026
+LOCATION:The Regent's Park\, Londres
+DESCRIPTION:Du mercredi 14 au dimanche 18 octobre 2026 · previews VIP 14-1
+ 5\, public 16-18\nhttps://constanceparis7.com/e/frieze-london-frieze-maste
+ rs-2026-londres.html
+URL:https://constanceparis7.com/e/frieze-london-frieze-masters-2026-londres
+ .html
+END:VEVENT
+END:VCALENDAR

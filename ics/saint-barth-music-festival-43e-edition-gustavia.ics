@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:saint-barth-music-festival-43e-edition-gustavia@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270108
+DTEND;VALUE=DATE:20270119
+SUMMARY:Saint-Barth Music Festival\, 43e édition
+LOCATION:Église anglicane de Gustavia\, quai Général-de-Gaulle\, et lieu
+ x patrimoniaux de l'île (Lorient)
+DESCRIPTION:Mi-janvier 2027 : dates non publiées\, estimation d'après l'
+ édition 2026 (9-19 janvier)\nhttps://constanceparis7.com/e/saint-barth-mu
+ sic-festival-43e-edition-gustavia.html
+URL:https://constanceparis7.com/e/saint-barth-music-festival-43e-edition-gu
+ stavia.html
+END:VEVENT
+END:VCALENDAR

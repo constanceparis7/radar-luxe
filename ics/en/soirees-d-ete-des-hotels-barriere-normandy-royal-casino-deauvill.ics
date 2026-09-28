@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:soirees-d-ete-des-hotels-barriere-normandy-royal-casino-deauvill@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260801
+DTEND;VALUE=DATE:20260916
+SUMMARY:Summer Soirées of the Barrière Hotels (Normandy\, Royal\, Casino)
+LOCATION:Hotel Barrière Le Normandy\, Le Royal\, Hotel du Golf\, Casino Ba
+ rrière
+DESCRIPTION:August 2026 (all month\, highlights around 15/8 and the closing
+  weekend of 29-30/8)\nhttps://constanceparis7.com/en/e/soirees-d-ete-des-h
+ otels-barriere-normandy-royal-casino-deauvill.html
+URL:https://constanceparis7.com/en/e/soirees-d-ete-des-hotels-barriere-norm
+ andy-royal-casino-deauvill.html
+END:VEVENT
+END:VCALENDAR

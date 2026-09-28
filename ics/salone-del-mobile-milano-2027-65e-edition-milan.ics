@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:salone-del-mobile-milano-2027-65e-edition-milan@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270413
+DTEND;VALUE=DATE:20270419
+SUMMARY:Salone del Mobile Milano 2027\, 65e édition
+LOCATION:Rho Fiera Milano\, Strada Statale del Sempione 28\, 20017 Rho (Mil
+ an)
+DESCRIPTION:Du 13 au 18 avril 2027 à Rho Fiera. Grand public le week-end d
+ es 17 et 18 avril uniquement \; professionnels toute la semaine.\nhttps://
+ constanceparis7.com/e/salone-del-mobile-milano-2027-65e-edition-milan.html
+URL:https://constanceparis7.com/e/salone-del-mobile-milano-2027-65e-edition
+ -milan.html
+END:VEVENT
+END:VCALENDAR

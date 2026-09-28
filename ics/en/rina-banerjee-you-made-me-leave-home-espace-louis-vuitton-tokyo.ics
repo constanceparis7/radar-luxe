@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:rina-banerjee-you-made-me-leave-home-espace-louis-vuitton-tokyo@constan
+ ceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260319
+DTEND;VALUE=DATE:20260914
+SUMMARY:Rina Banerjee 'You made me leave home...'\, Espace Louis Vuitton To
+ kyo
+LOCATION:Espace Louis Vuitton Tokyo\, Louis Vuitton Omotesando Building 7F\
+ , 5-7-5 Jingumae\, Shibuya-ku
+DESCRIPTION:19 March - 13 September 2026\nhttps://constanceparis7.com/en/e/
+ rina-banerjee-you-made-me-leave-home-espace-louis-vuitton-tokyo.html
+URL:https://constanceparis7.com/en/e/rina-banerjee-you-made-me-leave-home-e
+ space-louis-vuitton-tokyo.html
+END:VEVENT
+END:VCALENDAR

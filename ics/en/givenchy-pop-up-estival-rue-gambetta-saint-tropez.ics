@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:givenchy-pop-up-estival-rue-gambetta-saint-tropez@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260617
+DTEND;VALUE=DATE:20261005
+SUMMARY:Givenchy\, summer pop-up on rue Gambetta
+LOCATION:35 rue Gambetta\, 83990 Saint-Tropez
+DESCRIPTION:17 June - 4 October 2026\, covers all of August 2026\nhttps://c
+ onstanceparis7.com/en/e/givenchy-pop-up-estival-rue-gambetta-saint-tropez.
+ html
+URL:https://constanceparis7.com/en/e/givenchy-pop-up-estival-rue-gambetta-s
+ aint-tropez.html
+END:VEVENT
+END:VCALENDAR

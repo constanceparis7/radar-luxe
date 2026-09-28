@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:music-on-the-rocks-nights-saison-2026-positano@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260601
+DTEND;VALUE=DATE:20261001
+SUMMARY:Music on the Rocks\, nights (saison 2026)
+LOCATION:Music on the Rocks : club troglodyte creusé dans la falaise · C
+ ôte amalfitaine
+DESCRIPTION:Saison été 2026 : club ouvert chaque nuit (env. 17h-04h) \; D
+ J sets house/dance et guests selon calendrier (programmation publiée au f
+ il de la saison\, non encore datée)\nhttps://constanceparis7.com/e/music-
+ on-the-rocks-nights-saison-2026-positano.html
+URL:https://constanceparis7.com/e/music-on-the-rocks-nights-saison-2026-pos
+ itano.html
+END:VEVENT
+END:VCALENDAR

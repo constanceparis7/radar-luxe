@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:olympic-yacht-show-2026-lavrio@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261015
+DTEND;VALUE=DATE:20261019
+SUMMARY:Olympic Yacht Show 2026
+LOCATION:Olympic Marine\, Lavrio · Attique
+DESCRIPTION:15 to 18 October 2026\nhttps://constanceparis7.com/en/e/olympic
+ -yacht-show-2026-lavrio.html
+URL:https://constanceparis7.com/en/e/olympic-yacht-show-2026-lavrio.html
+END:VEVENT
+END:VCALENDAR

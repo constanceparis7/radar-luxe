@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:exposition-de-la-caserne-au-musee-10-ans-deja-musee-de-la-gendar@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260720
+DTEND;VALUE=DATE:20270101
+SUMMARY:Exposition « De la caserne au musée... 10 ans déjà »\, Musée 
+ de la Gendarmerie et du Cinéma
+LOCATION:Musée de la Gendarmerie et du Cinéma\, place Blanqui\, Saint-Tro
+ pez
+DESCRIPTION:20 juillet - 31 décembre 2026\nhttps://constanceparis7.com/e/e
+ xposition-de-la-caserne-au-musee-10-ans-deja-musee-de-la-gendar.html
+URL:https://constanceparis7.com/e/exposition-de-la-caserne-au-musee-10-ans-
+ deja-musee-de-la-gendar.html
+END:VEVENT
+END:VCALENDAR

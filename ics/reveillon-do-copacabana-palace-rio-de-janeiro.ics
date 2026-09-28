@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:reveillon-do-copacabana-palace-rio-de-janeiro@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270102
+SUMMARY:Réveillon do Copacabana Palace
+LOCATION:Belmond Copacabana Palace\, Avenida Atlântica 1702\, Copacabana\,
+  CEP 22021-001
+DESCRIPTION:Du jeudi 31 décembre 2026 au vendredi 1er janvier 2027\nhttps:
+ //constanceparis7.com/e/reveillon-do-copacabana-palace-rio-de-janeiro.html
+URL:https://constanceparis7.com/e/reveillon-do-copacabana-palace-rio-de-jan
+ eiro.html
+END:VEVENT
+END:VCALENDAR

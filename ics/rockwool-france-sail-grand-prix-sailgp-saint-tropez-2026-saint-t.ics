@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:rockwool-france-sail-grand-prix-sailgp-saint-tropez-2026-saint-t@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260912
+DTEND;VALUE=DATE:20260914
+SUMMARY:Rockwool France Sail Grand Prix\, SailGP Saint-Tropez 2026
+LOCATION:Baie de Saint-Tropez
+DESCRIPTION:Samedi 12 et dimanche 13 septembre 2026 · baie de Saint-Tropez
+ \nhttps://constanceparis7.com/e/rockwool-france-sail-grand-prix-sailgp-sai
+ nt-tropez-2026-saint-t.html
+URL:https://constanceparis7.com/e/rockwool-france-sail-grand-prix-sailgp-sa
+ int-tropez-2026-saint-t.html
+END:VEVENT
+END:VCALENDAR

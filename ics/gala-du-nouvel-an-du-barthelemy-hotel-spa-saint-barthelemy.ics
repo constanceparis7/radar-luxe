@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:gala-du-nouvel-an-du-barthelemy-hotel-spa-saint-barthelemy@constancepar
+ is7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270101
+SUMMARY:Gala du Nouvel An du Barthélemy Hotel & Spa
+LOCATION:Le Barthélemy Hotel & Spa (5 étoiles)\, baie de Grand Cul-de-Sac
+DESCRIPTION:31 décembre 2026 (gala annuel \; édition 2025-26 : « Gala Ab
+ yss »)\nhttps://constanceparis7.com/e/gala-du-nouvel-an-du-barthelemy-hot
+ el-spa-saint-barthelemy.html
+URL:https://constanceparis7.com/e/gala-du-nouvel-an-du-barthelemy-hotel-spa
+ -saint-barthelemy.html
+END:VEVENT
+END:VCALENDAR

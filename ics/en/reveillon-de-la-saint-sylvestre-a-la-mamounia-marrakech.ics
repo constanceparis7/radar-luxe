@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:reveillon-de-la-saint-sylvestre-a-la-mamounia-marrakech@constanceparis7
+ .com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270101
+SUMMARY:New Year's Eve at La Mamounia
+LOCATION:La Mamounia : Galerie Mamounia\, Le Marocain\, L'Italien by Simone
+  Zanoni\, L'Asiatique\, L'OEnothèque\, Galerie Majorelle
+DESCRIPTION:31 December 2026 (festive season from early December)\nhttps://
+ constanceparis7.com/en/e/reveillon-de-la-saint-sylvestre-a-la-mamounia-mar
+ rakech.html
+URL:https://constanceparis7.com/en/e/reveillon-de-la-saint-sylvestre-a-la-m
+ amounia-marrakech.html
+END:VEVENT
+END:VCALENDAR

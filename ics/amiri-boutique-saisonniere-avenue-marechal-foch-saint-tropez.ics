@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:amiri-boutique-saisonniere-avenue-marechal-foch-saint-tropez@constancep
+ aris7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260501
+DTEND;VALUE=DATE:20261101
+SUMMARY:Amiri\, boutique saisonniere avenue Marechal Foch
+LOCATION:21 rue Gambetta\, 83990 Saint-Tropez
+DESCRIPTION:1er mai - fin octobre 2026\, couvre tout aout 2026\nhttps://con
+ stanceparis7.com/e/amiri-boutique-saisonniere-avenue-marechal-foch-saint-t
+ ropez.html
+URL:https://constanceparis7.com/e/amiri-boutique-saisonniere-avenue-marecha
+ l-foch-saint-tropez.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:new-year-s-eve-regatta-course-autour-de-l-ile-gustavia@constanceparis7.
+ com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270101
+SUMMARY:New Year's Eve Regatta (course autour de l'île)
+LOCATION:Départ et arrivée devant le port de Gustavia\, parcours de 24 mi
+ lles autour de l'île
+DESCRIPTION:31 décembre 2026 (briefing le 30 décembre)\nhttps://constance
+ paris7.com/e/new-year-s-eve-regatta-course-autour-de-l-ile-gustavia.html
+URL:https://constanceparis7.com/e/new-year-s-eve-regatta-course-autour-de-l
+ -ile-gustavia.html
+END:VEVENT
+END:VCALENDAR

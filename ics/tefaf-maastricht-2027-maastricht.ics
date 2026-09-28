@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:tefaf-maastricht-2027-maastricht@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270313
+DTEND;VALUE=DATE:20270319
+SUMMARY:TEFAF Maastricht 2027
+LOCATION:MECC Maastricht\, Forum 100\, 6229 GV Maastricht\, Pays-Bas
+DESCRIPTION:Du 13 au 18 mars 2027 au MECC\, previews sur invitation les 11 
+ et 12 mars. La billetterie 2027 n'est pas encore ouverte\, elle arrive hab
+ ituellement en fin d'année.\nhttps://constanceparis7.com/e/tefaf-maastric
+ ht-2027-maastricht.html
+URL:https://constanceparis7.com/e/tefaf-maastricht-2027-maastricht.html
+END:VEVENT
+END:VCALENDAR

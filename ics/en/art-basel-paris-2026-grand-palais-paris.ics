@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:art-basel-paris-2026-grand-palais-paris@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261021
+DTEND;VALUE=DATE:20261026
+SUMMARY:Art Basel Paris 2026\, Grand Palais
+LOCATION:Grand Palais
+DESCRIPTION:From October 21 to 25\, 2026 · Grand Palais (VIP preview 21-22
+ \, public 23-25)\nhttps://constanceparis7.com/en/e/art-basel-paris-2026-gr
+ and-palais-paris.html
+URL:https://constanceparis7.com/en/e/art-basel-paris-2026-grand-palais-pari
+ s.html
+END:VEVENT
+END:VCALENDAR

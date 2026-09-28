@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:dior-spa-cheval-blanc-paris-experience-bien-etre-dioriviera-pari@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260922
+DTEND;VALUE=DATE:20261123
+SUMMARY:Dior Spa Cheval Blanc Paris\, expérience bien-être Dioriviera
+LOCATION:Cheval Blanc Paris\, 8 quai du Louvre\, 75001 Paris (spa en sous-s
+ ol\, piscine de 30 m)
+DESCRIPTION:Le spa est ouvert toute l'année \; l'expérience Dioriviera\, 
+ elle\, ne se tient que sur des fenêtres précises : 22-25 et 27-29 septem
+ bre 2026\, puis 18-22 novembre 2026\, de 10h à 19h.\nhttps://constancepar
+ is7.com/e/dior-spa-cheval-blanc-paris-experience-bien-etre-dioriviera-pari
+ .html
+URL:https://constanceparis7.com/e/dior-spa-cheval-blanc-paris-experience-bi
+ en-etre-dioriviera-pari.html
+END:VEVENT
+END:VCALENDAR

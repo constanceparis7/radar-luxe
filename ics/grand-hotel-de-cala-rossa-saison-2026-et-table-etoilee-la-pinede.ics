@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:grand-hotel-de-cala-rossa-saison-2026-et-table-etoilee-la-pinede@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20261026
+SUMMARY:Grand Hôtel de Cala Rossa\, saison 2026 et table étoilée La Pin
+ ède
+LOCATION:Grand Hôtel de Cala Rossa 5*\, Relais & Châteaux\, plage privée
+  de Cala Rossa · golfe de Porto-Vecchio
+DESCRIPTION:Saison du 7 mai au 25 octobre 2026 (vérifié) \; pleine animat
+ ion en juillet-août\nhttps://constanceparis7.com/e/grand-hotel-de-cala-ro
+ ssa-saison-2026-et-table-etoilee-la-pinede.html
+URL:https://constanceparis7.com/e/grand-hotel-de-cala-rossa-saison-2026-et-
+ table-etoilee-la-pinede.html
+END:VEVENT
+END:VCALENDAR

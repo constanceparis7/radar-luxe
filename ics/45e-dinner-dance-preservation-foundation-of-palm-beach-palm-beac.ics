@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:45e-dinner-dance-preservation-foundation-of-palm-beach-palm-beac@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270226
+DTEND;VALUE=DATE:20270227
+SUMMARY:45e Dinner Dance - Preservation Foundation of Palm Beach
+LOCATION:Bradley Park\, Palm Beach
+DESCRIPTION:Vendredi 26 février 2027 à 19h00\, date annoncée sur le site
+  officiel de la Preservation Foundation of Palm Beach (palmbeachpreservati
+ on.org\, fiche événement\, entrée sur invitation uniquement). Le lieu e
+ t le numéro d'édition ne sont pas encore précisés par l'annonce offici
+ elle.\nhttps://constanceparis7.com/e/45e-dinner-dance-preservation-foundat
+ ion-of-palm-beach-palm-beac.html
+URL:https://constanceparis7.com/e/45e-dinner-dance-preservation-foundation-
+ of-palm-beach-palm-beac.html
+END:VEVENT
+END:VCALENDAR

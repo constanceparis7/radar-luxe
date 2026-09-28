@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:lilly-s-club-saint-tropez-ex-vip-room-saison-d-aout-saint-tropez@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260801
+DTEND;VALUE=DATE:20260830
+SUMMARY:Lilly's Club Saint-Tropez (ex-VIP Room)\, saison d'août
+LOCATION:Lilly's Club\, allée du Quai de l'Épi / résidence du Nouveau Po
+ rt (ancien emplacement du VIP Room)
+DESCRIPTION:tout le mois d'août 2026 (ouvert tous les soirs du 19 juin au 
+ 29 août)\nhttps://constanceparis7.com/e/lilly-s-club-saint-tropez-ex-vip-
+ room-saison-d-aout-saint-tropez.html
+URL:https://constanceparis7.com/e/lilly-s-club-saint-tropez-ex-vip-room-sai
+ son-d-aout-saint-tropez.html
+END:VEVENT
+END:VCALENDAR

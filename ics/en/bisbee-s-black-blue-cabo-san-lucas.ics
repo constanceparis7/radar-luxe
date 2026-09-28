@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bisbee-s-black-blue-cabo-san-lucas@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261019
+DTEND;VALUE=DATE:20261025
+SUMMARY:Bisbee's Black & Blue
+LOCATION:Cabo San Lucas\, Basse-Californie du Sud · Los Cabos
+DESCRIPTION:From Monday\, October 19 to Saturday\, October 24\, 2026\nhttps
+ ://constanceparis7.com/en/e/bisbee-s-black-blue-cabo-san-lucas.html
+URL:https://constanceparis7.com/en/e/bisbee-s-black-blue-cabo-san-lucas.htm
+ l
+END:VEVENT
+END:VCALENDAR

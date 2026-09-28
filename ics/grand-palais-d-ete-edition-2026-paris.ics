@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:grand-palais-d-ete-edition-2026-paris@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260602
+DTEND;VALUE=DATE:20260907
+SUMMARY:Grand Palais d'été\, édition 2026
+LOCATION:Grand Palais (Nef et galeries)\, avenue Winston Churchill\, 75008 
+ Paris
+DESCRIPTION:Du 2 juin au 6 septembre 2026\, en deux temps. Les spectacles e
+ t les soirées After Nef sous la Nef se sont achevés le 18 juillet \; les
+  installations de la Nef\, « Nous\, frissons d'étoiles » de Laure Prouv
+ ost et « Drama 1882 » de Wael Shawky\, le 26 juillet. Depuis\, et jusqu'
+ au 6 septembre\, seule demeure la rétrospective Leandro Erlich\, dans les
+  galeries 9 et 10.\nhttps://constanceparis7.com/e/grand-palais-d-ete-editi
+ on-2026-paris.html
+URL:https://constanceparis7.com/e/grand-palais-d-ete-edition-2026-paris.htm
+ l
+END:VEVENT
+END:VCALENDAR

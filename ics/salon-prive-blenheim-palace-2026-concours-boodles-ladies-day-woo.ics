@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:salon-prive-blenheim-palace-2026-concours-boodles-ladies-day-woo@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260902
+DTEND;VALUE=DATE:20260907
+SUMMARY:Salon Privé Blenheim Palace 2026\, Concours & Boodles Ladies' Day
+LOCATION:Blenheim Palace\, Woodstock\, Oxfordshire
+DESCRIPTION:Du 2 au 6 septembre 2026 · Blenheim Palace (Concours 2-3\, Boo
+ dles Ladies' Day 4)\nhttps://constanceparis7.com/e/salon-prive-blenheim-pa
+ lace-2026-concours-boodles-ladies-day-woo.html
+URL:https://constanceparis7.com/e/salon-prive-blenheim-palace-2026-concours
+ -boodles-ladies-day-woo.html
+END:VEVENT
+END:VCALENDAR

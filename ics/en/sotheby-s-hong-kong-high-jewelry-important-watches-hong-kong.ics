@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:sotheby-s-hong-kong-high-jewelry-important-watches-hong-kong@constancep
+ aris7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260917
+DTEND;VALUE=DATE:20260919
+SUMMARY:Sotheby's Hong Kong\, High Jewelry & Important Watches
+LOCATION:Sotheby's Maison\, Landmark Chater\, 8 Connaught Road Central\, Ce
+ ntral
+DESCRIPTION:High Jewelry on Thursday 17 September 2026\, Important Watches 
+ on Friday 18 September 2026\nhttps://constanceparis7.com/en/e/sotheby-s-ho
+ ng-kong-high-jewelry-important-watches-hong-kong.html
+URL:https://constanceparis7.com/en/e/sotheby-s-hong-kong-high-jewelry-impor
+ tant-watches-hong-kong.html
+END:VEVENT
+END:VCALENDAR

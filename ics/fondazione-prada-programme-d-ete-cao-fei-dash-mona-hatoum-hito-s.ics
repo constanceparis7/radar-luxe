@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fondazione-prada-programme-d-ete-cao-fei-dash-mona-hatoum-hito-s@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260409
+DTEND;VALUE=DATE:20260929
+SUMMARY:Fondazione Prada\, programme d'été (Cao Fei « DASH »\, Mona Hat
+ oum\, Hito Steyerl à l'Osservatorio)
+LOCATION:Fondazione Prada\, Largo Isarco 2 + Osservatorio\, Galleria Vittor
+ io Emanuele II
+DESCRIPTION:Tout juillet 2026 (Cao Fei : 9 avril - 28 septembre \; Mona Hat
+ oum : 29 janvier - 9 novembre \; Hito Steyerl : jusqu'au 3…\nhttps://con
+ stanceparis7.com/e/fondazione-prada-programme-d-ete-cao-fei-dash-mona-hato
+ um-hito-s.html
+URL:https://constanceparis7.com/e/fondazione-prada-programme-d-ete-cao-fei-
+ dash-mona-hatoum-hito-s.html
+END:VEVENT
+END:VCALENDAR

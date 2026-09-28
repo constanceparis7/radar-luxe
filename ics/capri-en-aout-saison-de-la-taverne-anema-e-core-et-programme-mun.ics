@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:capri-en-aout-saison-de-la-taverne-anema-e-core-et-programme-mun@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260801
+DTEND;VALUE=DATE:20261001
+SUMMARY:Capri en aout : saison de la taverne Anema e Core et programme muni
+ cipal Emozioni d'Estate
+LOCATION:Taverne Anema e Core (Via Sella Orta)\, Piazzetta\, Certosa di San
+  Giacomo\, Marina Grande
+DESCRIPTION:Tout aout 2026 (saison 2026 d'Anema e Core lancee et documentee
+ \; calendrier municipal Emozioni d'Estate juillet-aout 20…\nhttps://cons
+ tanceparis7.com/e/capri-en-aout-saison-de-la-taverne-anema-e-core-et-progr
+ amme-mun.html
+URL:https://constanceparis7.com/e/capri-en-aout-saison-de-la-taverne-anema-
+ e-core-et-programme-mun.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:coupe-d-or-de-polo-de-deauville-77e-edition-finale-et-remise-des@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260817
+DTEND;VALUE=DATE:20260831
+SUMMARY:Coupe d'Or de Polo de Deauville\, 77e édition\, finale et remise d
+ es prix
+LOCATION:Deauville International Polo Club\, hippodrome de La Touques
+DESCRIPTION:17-30 août 2026\, finale dimanche 30 août\nhttps://constancep
+ aris7.com/e/coupe-d-or-de-polo-de-deauville-77e-edition-finale-et-remise-d
+ es.html
+URL:https://constanceparis7.com/e/coupe-d-or-de-polo-de-deauville-77e-editi
+ on-finale-et-remise-des.html
+END:VEVENT
+END:VCALENDAR

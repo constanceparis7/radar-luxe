@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:133-abierto-del-hurlingham-club-hurlingham@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260922
+DTEND;VALUE=DATE:20261004
+SUMMARY:133° Abierto del Hurlingham Club
+LOCATION:The Hurlingham Club\, Hurlingham\, province de Buenos Aires · Gra
+ n Buenos Aires
+DESCRIPTION:Du mardi 22 septembre au samedi 3 octobre 2026 : quarts les 22 
+ et 23 septembre\, demi-finales les 26 et 27\, finale le 3 octobre\nhttps:/
+ /constanceparis7.com/e/133-abierto-del-hurlingham-club-hurlingham.html
+URL:https://constanceparis7.com/e/133-abierto-del-hurlingham-club-hurlingha
+ m.html
+END:VEVENT
+END:VCALENDAR

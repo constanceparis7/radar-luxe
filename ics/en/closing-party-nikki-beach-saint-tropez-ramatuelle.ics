@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:closing-party-nikki-beach-saint-tropez-ramatuelle@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260914
+DTEND;VALUE=DATE:20260915
+SUMMARY:Closing Party\, Nikki Beach Saint-Tropez
+LOCATION:Nikki Beach\, 1093 route de l'Épi\, plage de Pampelonne · Saint-
+ Tropez
+DESCRIPTION:Monday 14 September 2026 · Nikki Beach\, Pampelonne\nhttps://c
+ onstanceparis7.com/en/e/closing-party-nikki-beach-saint-tropez-ramatuelle.
+ html
+URL:https://constanceparis7.com/en/e/closing-party-nikki-beach-saint-tropez
+ -ramatuelle.html
+END:VEVENT
+END:VCALENDAR

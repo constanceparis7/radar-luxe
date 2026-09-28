@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:we-are-still-here-petit-palais-paris@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260620
+DTEND;VALUE=DATE:20260921
+SUMMARY:WE ARE [still] HERE\, Petit Palais
+LOCATION:Petit Palais\, avenue Winston Churchill\, 75008 Paris (Salle Conco
+ rde)
+DESCRIPTION:20 June - 20 September 2026 (all of August)\nhttps://constancep
+ aris7.com/en/e/we-are-still-here-petit-palais-paris.html
+URL:https://constanceparis7.com/en/e/we-are-still-here-petit-palais-paris.h
+ tml
+END:VEVENT
+END:VCALENDAR

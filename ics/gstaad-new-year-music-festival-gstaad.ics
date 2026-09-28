@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:gstaad-new-year-music-festival-gstaad@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261226
+DTEND;VALUE=DATE:20270109
+SUMMARY:Gstaad New Year Music Festival
+LOCATION:Églises et lieux patrimoniaux du Saanenland et du Pays-d'Enhaut 
+ · Rougemont Saanen Lauenen Château-d'Œx
+DESCRIPTION:26 décembre 2026 - 8 janvier 2027\nhttps://constanceparis7.com
+ /e/gstaad-new-year-music-festival-gstaad.html
+URL:https://constanceparis7.com/e/gstaad-new-year-music-festival-gstaad.htm
+ l
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:health-happiness-week-2027-mustique-mustique@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270513
+DTEND;VALUE=DATE:20270521
+SUMMARY:Health & Happiness Week 2027\, Mustique
+LOCATION:Île privée de Mustique · Saint-Vincent-et-les-Grenadines
+DESCRIPTION:Du 13 au 20 mai 2027\nhttps://constanceparis7.com/e/health-happ
+ iness-week-2027-mustique-mustique.html
+URL:https://constanceparis7.com/e/health-happiness-week-2027-mustique-musti
+ que.html
+END:VEVENT
+END:VCALENDAR

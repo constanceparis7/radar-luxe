@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:grand-prix-de-monaco-2027-formule-1-monaco@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270603
+DTEND;VALUE=DATE:20270607
+SUMMARY:Monaco Grand Prix 2027\, Formula 1
+LOCATION:Circuit urbain de Monte-Carlo\, Principauté de Monaco \; organisa
+ tion Automobile Club de Monaco\, 44 rue Grimaldi
+DESCRIPTION:From Thursday 3 to Sunday 6 June 2027\, with the race on Sunday
+ . Dates published by the Automobile Club de Monaco\, still subject to vali
+ dation by the FIA World Motor Sport Council: the 2027 F1 calendar will be 
+ approved in autumn 2026.\nhttps://constanceparis7.com/en/e/grand-prix-de-m
+ onaco-2027-formule-1-monaco.html
+URL:https://constanceparis7.com/en/e/grand-prix-de-monaco-2027-formule-1-mo
+ naco.html
+END:VEVENT
+END:VCALENDAR

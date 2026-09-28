@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:jimmy-z-monte-carlo-saison-2026-monaco@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260717
+DTEND;VALUE=DATE:20260926
+SUMMARY:Jimmy'z Monte-Carlo (2026 season)
+LOCATION:Jimmy'z Monte-Carlo\, Sporting Monte-Carlo
+DESCRIPTION:Summer 2026 season (Thu-Sat in July-August\; closing with Bob S
+ inclar X COYA Night on 25 September)\nhttps://constanceparis7.com/en/e/jim
+ my-z-monte-carlo-saison-2026-monaco.html
+URL:https://constanceparis7.com/en/e/jimmy-z-monte-carlo-saison-2026-monaco
+ .html
+END:VEVENT
+END:VCALENDAR

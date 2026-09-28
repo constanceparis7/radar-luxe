@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:22e-zurich-film-festival-2026-zurich@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260924
+DTEND;VALUE=DATE:20261005
+SUMMARY:22nd Zurich Film Festival 2026
+LOCATION:Sechseläutenplatz / Corso\, Zurich
+DESCRIPTION:24 September to 4 October 2026 · Zurich\nhttps://constancepari
+ s7.com/en/e/22e-zurich-film-festival-2026-zurich.html
+URL:https://constanceparis7.com/en/e/22e-zurich-film-festival-2026-zurich.h
+ tml
+END:VEVENT
+END:VCALENDAR

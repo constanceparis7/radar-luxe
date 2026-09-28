@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:saint-barth-cata-cup-2026-saint-barthelemy@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261124
+SUMMARY:Saint-Barth Cata Cup 2026
+LOCATION:Plage de Saint-Jean (village de course)\, parcours autour de l'îl
+ e
+DESCRIPTION:16-23 November 2026\nhttps://constanceparis7.com/en/e/saint-bar
+ th-cata-cup-2026-saint-barthelemy.html
+URL:https://constanceparis7.com/en/e/saint-barth-cata-cup-2026-saint-barthe
+ lemy.html
+END:VEVENT
+END:VCALENDAR

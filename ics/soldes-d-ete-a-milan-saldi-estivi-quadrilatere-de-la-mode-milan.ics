@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:soldes-d-ete-a-milan-saldi-estivi-quadrilatere-de-la-mode-milan@constan
+ ceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260704
+DTEND;VALUE=DATE:20260902
+SUMMARY:Soldes d'été à Milan (saldi estivi)\, Quadrilatère de la mode
+LOCATION:Via Montenapoleone\, Via della Spiga\, Corso Venezia\, Galleria Vi
+ ttorio Emanuele II et toute la Lombardie
+DESCRIPTION:4 juillet - 1er septembre 2026\nhttps://constanceparis7.com/e/s
+ oldes-d-ete-a-milan-saldi-estivi-quadrilatere-de-la-mode-milan.html
+URL:https://constanceparis7.com/e/soldes-d-ete-a-milan-saldi-estivi-quadril
+ atere-de-la-mode-milan.html
+END:VEVENT
+END:VCALENDAR

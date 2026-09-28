@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:vente-christie-s-magnificent-jewels-geneve-geneve@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+SUMMARY:Christie's Magnificent Jewels sale\, Geneva
+LOCATION:Genève (salle de vente non encore précisée par Christie's)
+DESCRIPTION:On 10 November 2026 at 16:00 (CET)\, at the Four Seasons Hotel 
+ des Bergues\, Quai des Bergues 33\, 1201 Geneva. The official sale page do
+ es not announce any public pre-sale exhibition to date.\nhttps://constance
+ paris7.com/en/e/vente-christie-s-magnificent-jewels-geneve-geneve.html
+URL:https://constanceparis7.com/en/e/vente-christie-s-magnificent-jewels-ge
+ neve-geneve.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:le-jardin-de-cheval-blanc-paris-rooftop-d-ete-7e-etage-paris@constancep
+ aris7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260522
+DTEND;VALUE=DATE:20261001
+SUMMARY:Le Jardin de Cheval Blanc Paris\, rooftop d'été (7e étage)
+LOCATION:Cheval Blanc Paris\, 8 quai du Louvre\, 75001 Paris : terrasse du 
+ 7e étage (650 m2)\, vue Seine et Pont-Neuf
+DESCRIPTION:Saison été 2026\, rouvert depuis le vendredi 22 mai 2026 \; o
+ uvert en août (fin de saison non communiquée\, généralement f…\nhttp
+ s://constanceparis7.com/e/le-jardin-de-cheval-blanc-paris-rooftop-d-ete-7e
+ -etage-paris.html
+URL:https://constanceparis7.com/e/le-jardin-de-cheval-blanc-paris-rooftop-d
+ -ete-7e-etage-paris.html
+END:VEVENT
+END:VCALENDAR

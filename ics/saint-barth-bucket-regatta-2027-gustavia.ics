@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:saint-barth-bucket-regatta-2027-gustavia@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270317
+DTEND;VALUE=DATE:20270322
+SUMMARY:Saint-Barth Bucket Regatta 2027
+LOCATION:Rade de Gustavia et plans d'eau de Saint-Barthélemy
+DESCRIPTION:Du 17 au 21 mars 2027\nhttps://constanceparis7.com/e/saint-bart
+ h-bucket-regatta-2027-gustavia.html
+URL:https://constanceparis7.com/e/saint-barth-bucket-regatta-2027-gustavia.
+ html
+END:VEVENT
+END:VCALENDAR

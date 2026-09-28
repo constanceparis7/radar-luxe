@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:acces-payant-billetterie-de-defiles-conciergerie-de-luxe-paris@constanc
+ eparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260928
+DTEND;VALUE=DATE:20261007
+SUMMARY:Paid access\, runway-show ticketing & luxury concierge
+LOCATION:Défilés indépendants & off-calendar\, Paris
+DESCRIPTION:Fashion Week (28 Sept-6 Oct 2026)\nhttps://constanceparis7.com/
+ en/e/acces-payant-billetterie-de-defiles-conciergerie-de-luxe-paris.html
+URL:https://constanceparis7.com/en/e/acces-payant-billetterie-de-defiles-co
+ nciergerie-de-luxe-paris.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:17th-governors-awards-los-angeles@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261115
+DTEND;VALUE=DATE:20261116
+SUMMARY:17th Governors Awards
+LOCATION:Ray Dolby Ballroom\, Ovation Hollywood\, 6801 Hollywood Boulevard
+DESCRIPTION:Sunday 15 November 2026\nhttps://constanceparis7.com/en/e/17th-
+ governors-awards-los-angeles.html
+URL:https://constanceparis7.com/en/e/17th-governors-awards-los-angeles.html
+END:VEVENT
+END:VCALENDAR

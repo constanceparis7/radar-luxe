@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:kering-foundation-diner-caring-for-women-5e-edition-new-york@constancep
+ aris7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260910
+DTEND;VALUE=DATE:20260911
+SUMMARY:Kering Foundation\, Dîner Caring for Women (5e édition)
+LOCATION:The Pool\, New York
+DESCRIPTION:Jeudi 10 septembre 2026 · The Pool\, New York\nhttps://constan
+ ceparis7.com/e/kering-foundation-diner-caring-for-women-5e-edition-new-yor
+ k.html
+URL:https://constanceparis7.com/e/kering-foundation-diner-caring-for-women-
+ 5e-edition-new-york.html
+END:VEVENT
+END:VCALENDAR

@@ -155,6 +155,7 @@ UI = {
  "verified_desc": {"fr":"Dates, lieux et accès vérifiés à la source. Mis à jour dès qu'un programme change.","en":"Dates, venues and access, verified at the source. Updated as programmes change.","es":"Fechas, lugares y accesos verificados en la fuente. Actualizado cuando cambian los programas.","it":"Date, luoghi e accessi verificati alla fonte. Aggiornato quando i programmi cambiano.","pt":"Datas, locais e acessos verificados na fonte. Atualizado quando os programas mudam.","de":"Termine, Orte und Zugänge, an der Quelle geprüft. Aktualisiert, sobald sich Programme ändern.","ru":"Даты, места и условия доступа проверены по источникам. Обновляется при изменении программ.","ar":"التواريخ والأماكن وسبل الدخول موثقة من المصدر. يتم التحديث عند تغير البرامج.","zh":"日期、场地与入场方式均经源头核实。节目变动时即时更新。","ja":"日程・会場・入場方法は公式情報で確認済み。変更があれば更新します。","ko":"날짜, 장소, 입장 방법을 공식 출처로 확인했습니다. 프로그램 변경 시 업데이트됩니다.","hi":"तिथियाँ, स्थल और प्रवेश स्रोत से सत्यापित। कार्यक्रम बदलने पर अपडेट किया जाता है।","tr":"Tarihler, mekanlar ve girişler kaynağından doğrulandı. Programlar değiştikçe güncellenir."},
  "method":  {"fr":"La méthode","en":"Our method","es":"El método","it":"Il metodo","pt":"O método","de":"Die Methode","ru":"Метод","ar":"المنهجية","zh":"方法","ja":"メソッド","ko":"방법론","hi":"पद्धति","tr":"Yöntem"},
  "favs":    {"fr":"Favoris","en":"Favorites","es":"Favoritos","it":"Preferiti","pt":"Favoritos","de":"Favoriten","ru":"Избранное","ar":"المفضلة","zh":"收藏","ja":"お気に入り","ko":"즐겨찾기","hi":"पसंदीदा","tr":"Favoriler"},
+ "ics": {"fr":"Ajouter à mon agenda","en":"Add to my calendar","es":"Añadir a mi agenda","it":"Aggiungi alla mia agenda","pt":"Adicionar à minha agenda","de":"In meinen Kalender","ru":"Добавить в календарь","ar":"أضف إلى تقويمي","zh":"加入我的日历","ja":"カレンダーに追加","ko":"내 캘린더에 추가","hi":"मेरे कैलेंडर में जोड़ें","tr":"Takvimime ekle"},
  "fav_add": {"fr":"Ajouter aux favoris","en":"Add to favorites","es":"Añadir a favoritos","it":"Aggiungi ai preferiti","pt":"Adicionar aos favoritos","de":"Zu Favoriten hinzufügen","ru":"Добавить в избранное","ar":"أضف إلى المفضلة","zh":"加入收藏","ja":"お気に入りに追加","ko":"즐겨찾기에 추가","hi":"पसंदीदा में जोड़ें","tr":"Favorilere ekle"},
  "fav_on":  {"fr":"Dans mes favoris","en":"In my favorites","es":"En mis favoritos","it":"Nei miei preferiti","pt":"Nos meus favoritos","de":"In meinen Favoriten","ru":"В моём избранном","ar":"في المفضلة","zh":"已收藏","ja":"お気に入り済み","ko":"즐겨찾기에 저장됨","hi":"पसंदीदा में शामिल","tr":"Favorilerimde"},
  "radar":   {"fr":"Radar","en":"Radar","es":"Radar","it":"Radar","pt":"Radar","de":"Radar","ru":"Радар","ar":"الرادار","zh":"雷达","ja":"レーダー","ko":"레이더","hi":"रडार","tr":"Radar"},
@@ -738,6 +739,54 @@ def main():
             write(f"/details/{e['_slug']}.json",
                   json.dumps({k: e[k] for k in ("iv", "sej") if e.get(k)},
                              ensure_ascii=False, separators=(",", ":")))
+
+    # /ics/<slug>.ics (28/09/2026, « Ajouter à mon agenda ») : un fichier calendrier par
+    # fiche en français, et un en anglais (/ics/en/) servi aux douze autres langues.
+    # Événement sur la journée entière (dates du radar), l'heure écrite reste dans la
+    # description : un rappel juste partout dans le monde, sans supposer de fuseau.
+    # Jamais dans le sitemap ; le dossier est recréé à chaque génération.
+    import datetime as _dt
+    shutil.rmtree(os.path.join(REPO, "ics"), ignore_errors=True)
+    _stamp = _dt.date.today().strftime("%Y%m%d") + "T000000Z"
+
+    def ics_txt(s):
+        return (str(s or "").replace("\\", "\\\\").replace(";", "\\;").replace(",", "\\,")
+                .replace("\r", "").replace("\n", "\\n"))
+
+    def ics_fold(line):
+        b = line.encode("utf-8")
+        out = []
+        while len(b) > 75:
+            cut = 75
+            while cut > 0 and (b[cut] & 0xC0) == 0x80:  # ne jamais couper un caractère
+                cut -= 1
+            out.append(b[:cut])
+            b = b" " + b[cut:]
+        out.append(b)
+        return b"\r\n".join(out).decode("utf-8")
+
+    def ics_file(e, lang):
+        try:
+            a = _dt.date.fromisoformat(e["d1"])
+            b = _dt.date.fromisoformat(e.get("d2") or e["d1"]) + _dt.timedelta(days=1)
+        except Exception:
+            return None
+        url = f"{BASE}{u_event(e, lang)}"
+        lines = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//ConstanceParis7//Radar//" + lang.upper(),
+                 "CALSCALE:GREGORIAN", "METHOD:PUBLISH", "BEGIN:VEVENT",
+                 f"UID:{e['_slug']}@constanceparis7.com", f"DTSTAMP:{_stamp}",
+                 f"DTSTART;VALUE=DATE:{a.strftime('%Y%m%d')}", f"DTEND;VALUE=DATE:{b.strftime('%Y%m%d')}",
+                 "SUMMARY:" + ics_txt(T(e, lang, "n") or e.get("n")),
+                 "LOCATION:" + ics_txt(lieu_affiche(e, lang)),
+                 "DESCRIPTION:" + ics_txt((T(e, lang, "dt") or "") + "\n" + url),
+                 "URL:" + url, "END:VEVENT", "END:VCALENDAR"]
+        return "\r\n".join(ics_fold(l) for l in lines) + "\r\n"
+
+    for e in pages:
+        for lang, sous in (("fr", ""), ("en", "en/")):
+            txt = ics_file(e, lang)
+            if txt:
+                write(f"/ics/{sous}{e['_slug']}.ics", txt)
     # Normalisation des lieux du 17/09/2026 : les anciens libellés fusionnés
     # gardent une page de renvoi vers la destination canonique (jamais dans le
     # sitemap, noindex). Écrites AVANT les vraies pages : une vraie page au
@@ -996,10 +1045,11 @@ def main():
                     f"<button class=\"fav-btn\" data-slug=\"{e['_slug']}\" "
                     f"data-add=\"\u2661 {esc(UI['fav_add'][lang])}\" data-on=\"\u2665 {esc(UI['fav_on'][lang])}\" "
                     f"aria-label=\"{esc(UI['fav_add'][lang])}\">\u2661 {esc(UI['fav_add'][lang])}</button>",
-                    """<style>.fav-btn{display:inline-flex;align-items:center;gap:7px;background:none;cursor:pointer;
+                    """<style>.ics-btn{text-decoration:none;margin-left:6px}.ics-btn:hover{text-decoration:none}
+                    .fav-btn,.ics-btn{display:inline-flex;align-items:center;gap:7px;background:none;cursor:pointer;
                     font-size:13px;letter-spacing:.04em;color:#d3b06a;border:1px solid rgba(211,176,106,.5);
                     border-radius:999px;padding:8px 18px;margin:10px 0 4px;font-family:inherit}
-                    .fav-btn:hover{background:rgba(211,176,106,.12)}
+                    .fav-btn:hover,.ics-btn:hover{background:rgba(211,176,106,.12)}
                     .fav-btn.on{color:#b48a3c;border-color:#d3b06a;background:rgba(211,176,106,.16)}</style>
                     <script>(function(){var CLE='cp7favs';
                     function lire(){try{return JSON.parse(localStorage.getItem(CLE))||[]}catch(e){return[]}}
@@ -1012,6 +1062,11 @@ def main():
                      document.querySelectorAll('.fav-btn').forEach(function(b){
                       if(f.indexOf(b.getAttribute('data-slug'))>-1){b.textContent=b.getAttribute('data-on');b.classList.add('on');}});});
                     })();</script>"""]
+            # « Ajouter à mon agenda » (28/09/2026) : fichier calendrier français ou anglais
+            if os.path.exists(os.path.join(REPO, "ics", e["_slug"] + ".ics")):
+                _ics = f"/ics/{e['_slug']}.ics" if lang == "fr" else f"/ics/en/{e['_slug']}.ics"
+                body.append(f"<a class=\"fav-btn ics-btn\" href=\"{_ics}\" download type=\"text/calendar\">"
+                            f"\U0001F5D3 {esc(UI['ics'][lang])}</a>")
             meta = []
             if T(e, lang, "dt"):
                 meta.append(f"<b>{esc(T(e,lang,'dt'))}</b>")

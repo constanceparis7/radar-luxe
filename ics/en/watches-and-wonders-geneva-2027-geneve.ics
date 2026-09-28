@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:watches-and-wonders-geneva-2027-geneve@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270405
+DTEND;VALUE=DATE:20270412
+SUMMARY:Watches and Wonders Geneva 2027
+LOCATION:Palexpo\, route François-Peyrot 30\, 1218 Le Grand-Saconnex (Gen
+ ève)
+DESCRIPTION:From Monday 5 to Sunday 11 April 2027 at Palexpo. New this edit
+ ion: the public weekend extends to three days\, from Friday 9 to Sunday 11
+  April.\nhttps://constanceparis7.com/en/e/watches-and-wonders-geneva-2027-
+ geneve.html
+URL:https://constanceparis7.com/en/e/watches-and-wonders-geneva-2027-geneve
+ .html
+END:VEVENT
+END:VCALENDAR

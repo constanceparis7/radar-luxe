@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:84-ball-der-wiener-philharmoniker-vienne@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270121
+DTEND;VALUE=DATE:20270122
+SUMMARY:84. Ball der Wiener Philharmoniker
+LOCATION:Musikverein (salles du Musikvereinsgebäude)\, Musikvereinsplatz 1
+ \, 1010 Vienne
+DESCRIPTION:Thursday 21 January 2027: doors at 9 pm\, start at 10 pm\, clos
+ e at 5 am\nhttps://constanceparis7.com/en/e/84-ball-der-wiener-philharmoni
+ ker-vienne.html
+URL:https://constanceparis7.com/en/e/84-ball-der-wiener-philharmoniker-vien
+ ne.html
+END:VEVENT
+END:VCALENDAR

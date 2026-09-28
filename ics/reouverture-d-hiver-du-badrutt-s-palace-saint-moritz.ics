@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:reouverture-d-hiver-du-badrutt-s-palace-saint-moritz@constanceparis7.co
+ m
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261203
+DTEND;VALUE=DATE:20261204
+SUMMARY:Réouverture d'hiver du Badrutt's Palace
+LOCATION:Badrutt's Palace Hotel\, Via Serlas 27\, 7500 Saint-Moritz
+DESCRIPTION:3 décembre 2026 (saison jusqu'au 30 mars 2027)\nhttps://consta
+ nceparis7.com/e/reouverture-d-hiver-du-badrutt-s-palace-saint-moritz.html
+URL:https://constanceparis7.com/e/reouverture-d-hiver-du-badrutt-s-palace-s
+ aint-moritz.html
+END:VEVENT
+END:VCALENDAR

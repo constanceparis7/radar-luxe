@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:my-yacht-monaco-soiree-privee-a-bord-pendant-le-monaco-yacht-sho@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260923
+DTEND;VALUE=DATE:20260927
+SUMMARY:MY Yacht Monaco\, private party on board during the Monaco Yacht Sh
+ ow
+LOCATION:Superyacht privé amarré à Port Hercule
+DESCRIPTION:23 to 26 September 2026 · Port Hercule\, Monaco\nhttps://const
+ anceparis7.com/en/e/my-yacht-monaco-soiree-privee-a-bord-pendant-le-monaco
+ -yacht-sho.html
+URL:https://constanceparis7.com/en/e/my-yacht-monaco-soiree-privee-a-bord-p
+ endant-le-monaco-yacht-sho.html
+END:VEVENT
+END:VCALENDAR

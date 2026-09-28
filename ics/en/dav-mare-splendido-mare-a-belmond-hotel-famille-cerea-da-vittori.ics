@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:dav-mare-splendido-mare-a-belmond-hotel-famille-cerea-da-vittori@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20270106
+SUMMARY:DaV Mare\, Splendido Mare\, A Belmond Hotel (Cerea Family / Da Vitt
+ orio)
+LOCATION:Splendido Mare\, A Belmond Hotel\, Via Roma 2\, sur la Piazzetta e
+ t le port de Portofino
+DESCRIPTION:Open for the summer 2026 season (July-August)\nhttps://constanc
+ eparis7.com/en/e/dav-mare-splendido-mare-a-belmond-hotel-famille-cerea-da-
+ vittori.html
+URL:https://constanceparis7.com/en/e/dav-mare-splendido-mare-a-belmond-hote
+ l-famille-cerea-da-vittori.html
+END:VEVENT
+END:VCALENDAR

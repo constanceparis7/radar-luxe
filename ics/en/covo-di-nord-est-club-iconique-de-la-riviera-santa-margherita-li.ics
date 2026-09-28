@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:covo-di-nord-est-club-iconique-de-la-riviera-santa-margherita-li@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20261001
+SUMMARY:Covo di Nord-Est\, Iconic Club of the Riviera
+LOCATION:Grotte au-dessus de la mer (Lungomare Rossetti 1)\, route Santa Ma
+ rgherita Ligure - Portofino · route de Portofino
+DESCRIPTION:Summer season 2026 (opened 25 April 2026\, open daily in summer
+ )\nhttps://constanceparis7.com/en/e/covo-di-nord-est-club-iconique-de-la-r
+ iviera-santa-margherita-li.html
+URL:https://constanceparis7.com/en/e/covo-di-nord-est-club-iconique-de-la-r
+ iviera-santa-margherita-li.html
+END:VEVENT
+END:VCALENDAR

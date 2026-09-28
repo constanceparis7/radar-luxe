@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:exposition-on-aura-tout-vu-icones-au-sofitel-paris-le-faubourg-r@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20261007
+SUMMARY:'On aura tout vu: Icons' exhibition at the Sofitel Paris Le Faubour
+ g (Lady Gaga's gown)
+LOCATION:Sofitel Paris Le Faubourg\, 15 rue Boissy d'Anglas\, Paris 8e
+DESCRIPTION:July - 6 October 2026\nhttps://constanceparis7.com/en/e/exposit
+ ion-on-aura-tout-vu-icones-au-sofitel-paris-le-faubourg-r.html
+URL:https://constanceparis7.com/en/e/exposition-on-aura-tout-vu-icones-au-s
+ ofitel-paris-le-faubourg-r.html
+END:VEVENT
+END:VCALENDAR

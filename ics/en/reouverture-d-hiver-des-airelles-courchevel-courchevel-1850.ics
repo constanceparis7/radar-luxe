@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:reouverture-d-hiver-des-airelles-courchevel-courchevel-1850@constancepa
+ ris7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261205
+SUMMARY:Winter reopening of Airelles Courchevel
+LOCATION:Les Airelles\, Le Jardin Alpin\, 73120 Courchevel 1850
+DESCRIPTION:4 December 2026 (season through 4 April 2027)\nhttps://constanc
+ eparis7.com/en/e/reouverture-d-hiver-des-airelles-courchevel-courchevel-18
+ 50.html
+URL:https://constanceparis7.com/en/e/reouverture-d-hiver-des-airelles-courc
+ hevel-courchevel-1850.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:la-guerite-diners-au-coucher-du-soleil-ile-sainte-marguerite-can@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260717
+DTEND;VALUE=DATE:20261101
+SUMMARY:La Guérite\, dîners au coucher du soleil\, Île Sainte-Marguerite
+LOCATION:La Guérite\, Île Sainte-Marguerite (accès par bateau)
+DESCRIPTION:Dîners jeudi\, vendredi & samedi\, du 25 juin à octobre 2026 
+ (dès 19h) : service récurrent saisonnier\, accès uniquement par bateau\
+ nhttps://constanceparis7.com/e/la-guerite-diners-au-coucher-du-soleil-ile-
+ sainte-marguerite-can.html
+URL:https://constanceparis7.com/e/la-guerite-diners-au-coucher-du-soleil-il
+ e-sainte-marguerite-can.html
+END:VEVENT
+END:VCALENDAR

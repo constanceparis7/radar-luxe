@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:kitz-race-club-87es-hahnenkamm-rennen-kitzbuhel@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270122
+DTEND;VALUE=DATE:20270125
+SUMMARY:KITZ-RACE-Club\, 87th Hahnenkamm-Rennen
+LOCATION:KITZ-RACE-Club\, aire d'arrivée de la Streif\, Kitzbühel (Tyrol)
+DESCRIPTION:From Friday 22 to Sunday 24 January 2027 (official race week fr
+ om 18 to 24 January 2027)\nhttps://constanceparis7.com/en/e/kitz-race-club
+ -87es-hahnenkamm-rennen-kitzbuhel.html
+URL:https://constanceparis7.com/en/e/kitz-race-club-87es-hahnenkamm-rennen-
+ kitzbuhel.html
+END:VEVENT
+END:VCALENDAR

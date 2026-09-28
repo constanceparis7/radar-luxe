@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:sottovento-club-porto-cervo-saison-2026-porto-cervo@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20260914
+SUMMARY:Sottovento Club Porto Cervo\, 2026 Season
+LOCATION:Sottovento Club\, Porto Cervo (fondé 1979 par Antonello Verona) 
+ · Arzachena
+DESCRIPTION:Summer season 2026\nhttps://constanceparis7.com/en/e/sottovento
+ -club-porto-cervo-saison-2026-porto-cervo.html
+URL:https://constanceparis7.com/en/e/sottovento-club-porto-cervo-saison-202
+ 6-porto-cervo.html
+END:VEVENT
+END:VCALENDAR

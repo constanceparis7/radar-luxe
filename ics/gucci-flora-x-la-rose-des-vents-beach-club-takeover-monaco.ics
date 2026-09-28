@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:gucci-flora-x-la-rose-des-vents-beach-club-takeover-monaco@constancepar
+ is7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260801
+DTEND;VALUE=DATE:20261001
+SUMMARY:Gucci Flora x La Rose des Vents\, beach club takeover
+LOCATION:La Rose des Vents\, plage du Larvotto\, Monaco
+DESCRIPTION:saison été 2026 (actif tout le mois d'août)\nhttps://constan
+ ceparis7.com/e/gucci-flora-x-la-rose-des-vents-beach-club-takeover-monaco.
+ html
+URL:https://constanceparis7.com/e/gucci-flora-x-la-rose-des-vents-beach-clu
+ b-takeover-monaco.html
+END:VEVENT
+END:VCALENDAR

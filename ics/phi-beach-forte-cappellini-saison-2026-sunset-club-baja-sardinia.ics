@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:phi-beach-forte-cappellini-saison-2026-sunset-club-baja-sardinia@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20260913
+SUMMARY:Phi Beach (Forte Cappellini)\, Saison 2026 sunset & club
+LOCATION:Phi Beach\, Forte Cappellini\, Baja Sardinia (vue coucher de solei
+ l sur la baie) · Arzachena
+DESCRIPTION:saison estivale juillet-août 2026\nhttps://constanceparis7.com
+ /e/phi-beach-forte-cappellini-saison-2026-sunset-club-baja-sardinia.html
+URL:https://constanceparis7.com/e/phi-beach-forte-cappellini-saison-2026-su
+ nset-club-baja-sardinia.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:exposition-le-diamant-rose-chateau-de-chantilly-et-l-ecole-des-a@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261017
+DTEND;VALUE=DATE:20270104
+SUMMARY:"Le Diamant rose" exhibition\, château de Chantilly and L'École d
+ es Arts Joailliers
+LOCATION:Galerie de Psyché et Cabinet des gemmes\, Musée Condé\, châtea
+ u de Chantilly
+DESCRIPTION:From 17 October 2026 to 3 January 2027 at the Musée Condé. No
+ te: some listings announce February 2027\; the château's official website
+  gives 3 January.\nhttps://constanceparis7.com/en/e/exposition-le-diamant-
+ rose-chateau-de-chantilly-et-l-ecole-des-a.html
+URL:https://constanceparis7.com/en/e/exposition-le-diamant-rose-chateau-de-
+ chantilly-et-l-ecole-des-a.html
+END:VEVENT
+END:VCALENDAR

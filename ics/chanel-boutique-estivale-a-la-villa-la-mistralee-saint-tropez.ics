@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:chanel-boutique-estivale-a-la-villa-la-mistralee-saint-tropez@constance
+ paris7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20261016
+SUMMARY:Chanel\, boutique estivale à la villa La Mistralée
+LOCATION:Villa La Mistralée\, 1 avenue du Général Leclerc\, Saint-Tropez
+DESCRIPTION:Saison estivale 2026 (traditionnellement mai-octobre) : ouvert 
+ en juillet\, dates exactes 2026 non publiées\nhttps://constanceparis7.com
+ /e/chanel-boutique-estivale-a-la-villa-la-mistralee-saint-tropez.html
+URL:https://constanceparis7.com/e/chanel-boutique-estivale-a-la-villa-la-mi
+ stralee-saint-tropez.html
+END:VEVENT
+END:VCALENDAR

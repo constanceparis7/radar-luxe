@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ondasana-x-careyes-careyes@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261119
+SUMMARY:Ondasana x Careyes
+LOCATION:Costa Careyes\, Jalisco : Playa Rosa\, Casa Corazón et la lagune
+DESCRIPTION:From Monday 16 to Wednesday 18 November 2026\nhttps://constance
+ paris7.com/en/e/ondasana-x-careyes-careyes.html
+URL:https://constanceparis7.com/en/e/ondasana-x-careyes-careyes.html
+END:VEVENT
+END:VCALENDAR

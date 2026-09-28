@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:art-basel-miami-beach-2026-miami-beach@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261202
+DTEND;VALUE=DATE:20261207
+SUMMARY:Art Basel Miami Beach 2026
+LOCATION:Miami Beach Convention Center\, 1901 Convention Center Dr
+DESCRIPTION:Vernissage VIP (First Choice) mer. 2 - jeu. 3 déc.\, ouverture
+  publique ven. 4 - dim. 6 déc. 2026\nhttps://constanceparis7.com/e/art-ba
+ sel-miami-beach-2026-miami-beach.html
+URL:https://constanceparis7.com/e/art-basel-miami-beach-2026-miami-beach.ht
+ ml
+END:VEVENT
+END:VCALENDAR

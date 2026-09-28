@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:amfar-gala-venezia-2026-6e-edition-venise@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260906
+DTEND;VALUE=DATE:20260907
+SUMMARY:amfAR Gala Venezia 2026\, 6e édition
+LOCATION:Molino Stucky\, île de la Giudecca
+DESCRIPTION:Dimanche 6 septembre 2026 · Molino Stucky\, Venise\nhttps://co
+ nstanceparis7.com/e/amfar-gala-venezia-2026-6e-edition-venise.html
+URL:https://constanceparis7.com/e/amfar-gala-venezia-2026-6e-edition-venise
+ .html
+END:VEVENT
+END:VCALENDAR

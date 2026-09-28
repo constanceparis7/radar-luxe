@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:l-ete-au-westminster-palace-barriere-du-touquet-table-etoilee-le@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20280101
+SUMMARY:Summer at the Westminster\, Barrière palace hotel in Le Touquet (M
+ ichelin-starred Le Pavillon)
+LOCATION:Hôtel Barrière Le Westminster (5*)\, avenue du Verger\, Le Touqu
+ et-Paris-Plage
+DESCRIPTION:July\, August 2026 (summer season)\nhttps://constanceparis7.com
+ /en/e/l-ete-au-westminster-palace-barriere-du-touquet-table-etoilee-le.htm
+ l
+URL:https://constanceparis7.com/en/e/l-ete-au-westminster-palace-barriere-d
+ u-touquet-table-etoilee-le.html
+END:VEVENT
+END:VCALENDAR

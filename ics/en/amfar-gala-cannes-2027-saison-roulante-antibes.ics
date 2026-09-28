@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:amfar-gala-cannes-2027-saison-roulante-antibes@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270520
+DTEND;VALUE=DATE:20270521
+SUMMARY:amfAR Gala Cannes 2027 (rolling season)
+LOCATION:Hôtel du Cap-Eden-Roc\, Cap d'Antibes
+DESCRIPTION:May 2027 during the Cannes Film Festival\, the 2026 edition (21
+  May) has already taken place\; 2027 date estimated\, to be confirmed by a
+ mfAR\nhttps://constanceparis7.com/en/e/amfar-gala-cannes-2027-saison-roula
+ nte-antibes.html
+URL:https://constanceparis7.com/en/e/amfar-gala-cannes-2027-saison-roulante
+ -antibes.html
+END:VEVENT
+END:VCALENDAR

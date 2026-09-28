@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:chantilly-arts-elegance-richard-mille-2026-chantilly@constanceparis7.co
+ m
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260913
+DTEND;VALUE=DATE:20260914
+SUMMARY:Chantilly Arts & Élégance Richard Mille 2026
+LOCATION:Domaine du Château de Chantilly (jardins de Le Nôtre)
+DESCRIPTION:Dimanche 13 septembre 2026 · Château de Chantilly\nhttps://co
+ nstanceparis7.com/e/chantilly-arts-elegance-richard-mille-2026-chantilly.h
+ tml
+URL:https://constanceparis7.com/e/chantilly-arts-elegance-richard-mille-202
+ 6-chantilly.html
+END:VEVENT
+END:VCALENDAR

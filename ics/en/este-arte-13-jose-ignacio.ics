@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:este-arte-13-jose-ignacio@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270105
+DTEND;VALUE=DATE:20270109
+SUMMARY:ESTE ARTE #13
+LOCATION:Pavilion Vik\, Ruta 10 Km 182\,5\, José Ignacio
+DESCRIPTION:From Tuesday 5 to Friday 8 January 2027\nhttps://constanceparis
+ 7.com/en/e/este-arte-13-jose-ignacio.html
+URL:https://constanceparis7.com/en/e/este-arte-13-jose-ignacio.html
+END:VEVENT
+END:VCALENDAR

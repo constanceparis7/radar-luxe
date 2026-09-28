@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:saison-2026-de-la-taverna-anema-e-core-de-gianluigi-lembo-capri@constan
+ ceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20261001
+SUMMARY:Saison 2026 de la Taverna Anema e Core de Gianluigi Lembo
+LOCATION:Taverna Anema e Core\, via Sella Orta : à deux pas de la Piazzett
+ a
+DESCRIPTION:Saison estivale 2026 en cours (fenêtre radar : juillet à fin 
+ septembre)\nhttps://constanceparis7.com/e/saison-2026-de-la-taverna-anema-
+ e-core-de-gianluigi-lembo-capri.html
+URL:https://constanceparis7.com/e/saison-2026-de-la-taverna-anema-e-core-de
+ -gianluigi-lembo-capri.html
+END:VEVENT
+END:VCALENDAR

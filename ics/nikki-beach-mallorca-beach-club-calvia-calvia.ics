@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:nikki-beach-mallorca-beach-club-calvia-calvia@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20261012
+SUMMARY:Nikki Beach Mallorca\, Beach club (Calvia)
+LOCATION:Nikki Beach Mallorca
+DESCRIPTION:Saison 2026 (ouvert\, clot le 11 octobre) \; ouvert juillet-aou
+ t\nhttps://constanceparis7.com/e/nikki-beach-mallorca-beach-club-calvia-ca
+ lvia.html
+URL:https://constanceparis7.com/e/nikki-beach-mallorca-beach-club-calvia-ca
+ lvia.html
+END:VEVENT
+END:VCALENDAR

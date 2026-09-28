@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:boutique-ephemere-chanel-a-east-hampton-east-hampton@constanceparis7.co
+ m
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260522
+DTEND;VALUE=DATE:20261001
+SUMMARY:Boutique ephemere Chanel a East Hampton
+LOCATION:17 Newtown Lane\, East Hampton Village (immeuble de brique blanche
+  sur deux niveaux\, ~1 995 sq ft)
+DESCRIPTION:Ouverte depuis le 22 mai 2026\, toute la saison estivale (aout 
+ inclus\; date de fermeture non annoncee)\nhttps://constanceparis7.com/e/bo
+ utique-ephemere-chanel-a-east-hampton-east-hampton.html
+URL:https://constanceparis7.com/e/boutique-ephemere-chanel-a-east-hampton-e
+ ast-hampton.html
+END:VEVENT
+END:VCALENDAR

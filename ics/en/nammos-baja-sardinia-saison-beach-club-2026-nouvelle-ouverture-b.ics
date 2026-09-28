@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:nammos-baja-sardinia-saison-beach-club-2026-nouvelle-ouverture-b@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260529
+DTEND;VALUE=DATE:20261001
+SUMMARY:Nammos Baja Sardinia\, 2026 beach club season (new opening)
+LOCATION:Nammos Baja Sardinia\, Phi Beach : Via Forte Cappelini\, 07021 Arz
+ achena (Baja Sardinia\, Costa Smeralda)\, front de mer sous les rochers de
+  granit
+DESCRIPTION:2026 season open since 29 May\; beach 11:00-18:00\, restaurant 
+ 12:30-01:00\; recurring DJ nights July-September (note: headliner dates an
+ nounced as the season unfolds)\nhttps://constanceparis7.com/en/e/nammos-ba
+ ja-sardinia-saison-beach-club-2026-nouvelle-ouverture-b.html
+URL:https://constanceparis7.com/en/e/nammos-baja-sardinia-saison-beach-club
+ -2026-nouvelle-ouverture-b.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:reveillon-aux-mille-bougies-d-amanjena-marrakech@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270101
+SUMMARY:Réveillon aux mille bougies d'Amanjena
+LOCATION:Amanjena (Aman Resorts)\, route de Ouarzazate : jardins\, tente ca
+ ïdale et restaurant Arva
+DESCRIPTION:31 décembre 2026 (festivités de Noël au Nouvel An)\nhttps://
+ constanceparis7.com/e/reveillon-aux-mille-bougies-d-amanjena-marrakech.htm
+ l
+URL:https://constanceparis7.com/e/reveillon-aux-mille-bougies-d-amanjena-ma
+ rrakech.html
+END:VEVENT
+END:VCALENDAR

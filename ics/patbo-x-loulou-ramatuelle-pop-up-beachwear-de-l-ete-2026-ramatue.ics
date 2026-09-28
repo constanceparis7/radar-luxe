@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:patbo-x-loulou-ramatuelle-pop-up-beachwear-de-l-ete-2026-ramatue@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260423
+DTEND;VALUE=DATE:20261004
+SUMMARY:PatBO x Loulou Ramatuelle\, pop-up beachwear de l'été 2026
+LOCATION:Loulou Ramatuelle\, boulevard Patch\, plage de Pampelonne\, Ramatu
+ elle
+DESCRIPTION:Saison 2026 de Loulou : 23 avril - 3 octobre 2026 (pop-up actif
+  en juillet)\nhttps://constanceparis7.com/e/patbo-x-loulou-ramatuelle-pop-
+ up-beachwear-de-l-ete-2026-ramatue.html
+URL:https://constanceparis7.com/e/patbo-x-loulou-ramatuelle-pop-up-beachwea
+ r-de-l-ete-2026-ramatue.html
+END:VEVENT
+END:VCALENDAR

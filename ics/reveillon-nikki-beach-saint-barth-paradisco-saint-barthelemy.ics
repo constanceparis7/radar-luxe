@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:reveillon-nikki-beach-saint-barth-paradisco-saint-barthelemy@constancep
+ aris7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270101
+SUMMARY:Réveillon Nikki Beach Saint-Barth\, « Paradisco »
+LOCATION:Nikki Beach Saint-Barth\, baie de Saint-Jean
+DESCRIPTION:31 décembre 2026 (édition 2026-2027 à confirmer\, rendez-vou
+ s annuel)\nhttps://constanceparis7.com/e/reveillon-nikki-beach-saint-barth
+ -paradisco-saint-barthelemy.html
+URL:https://constanceparis7.com/e/reveillon-nikki-beach-saint-barth-paradis
+ co-saint-barthelemy.html
+END:VEVENT
+END:VCALENDAR

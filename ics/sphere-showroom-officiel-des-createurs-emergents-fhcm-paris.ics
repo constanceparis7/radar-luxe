@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:sphere-showroom-officiel-des-createurs-emergents-fhcm-paris@constancepa
+ ris7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260930
+DTEND;VALUE=DATE:20261007
+SUMMARY:Sphère\, showroom officiel des créateurs émergents (FHCM)
+LOCATION:Palais de Tokyo\, 13 av. du Président Wilson\, 75116 Paris
+DESCRIPTION:Pendant la Fashion Week (30 sept.\, 6 oct. 2026) · showroom pr
+ ofessionnel\nhttps://constanceparis7.com/e/sphere-showroom-officiel-des-cr
+ eateurs-emergents-fhcm-paris.html
+URL:https://constanceparis7.com/e/sphere-showroom-officiel-des-createurs-em
+ ergents-fhcm-paris.html
+END:VEVENT
+END:VCALENDAR

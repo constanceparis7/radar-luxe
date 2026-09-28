@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ete-a-l-hotel-du-palais-biarritz-palace-imperial-biarritz@constancepari
+ s7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20260908
+SUMMARY:Summer at the Hôtel du Palais Biarritz (imperial palace hotel)
+LOCATION:Hotel du Palais\, 1 avenue de l'Imperatrice
+DESCRIPTION:July-September 2026 (2026 events programme not published in det
+ ail)\nhttps://constanceparis7.com/en/e/ete-a-l-hotel-du-palais-biarritz-pa
+ lace-imperial-biarritz.html
+URL:https://constanceparis7.com/en/e/ete-a-l-hotel-du-palais-biarritz-palac
+ e-imperial-biarritz.html
+END:VEVENT
+END:VCALENDAR

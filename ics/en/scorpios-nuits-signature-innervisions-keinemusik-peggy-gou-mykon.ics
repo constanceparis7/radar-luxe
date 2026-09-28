@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:scorpios-nuits-signature-innervisions-keinemusik-peggy-gou-mykon@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260721
+DTEND;VALUE=DATE:20261005
+SUMMARY:Scorpios\, Signature Nights (Innervisions\, Keinemusik\, Peggy Gou)
+LOCATION:Scorpios\, plage de Paraga
+DESCRIPTION:July-August 2026: Innervisions 30 July (Âme\, Dixon\, Jimi Jul
+ es\, Julya Karma\, Trikk)\; Peggy Gou 21 July\; Keinemusik in r…\nhttps:
+ //constanceparis7.com/en/e/scorpios-nuits-signature-innervisions-keinemusi
+ k-peggy-gou-mykon.html
+URL:https://constanceparis7.com/en/e/scorpios-nuits-signature-innervisions-
+ keinemusik-peggy-gou-mykon.html
+END:VEVENT
+END:VCALENDAR

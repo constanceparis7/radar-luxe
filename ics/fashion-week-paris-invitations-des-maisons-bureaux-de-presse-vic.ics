@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fashion-week-paris-invitations-des-maisons-bureaux-de-presse-vic@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260928
+DTEND;VALUE=DATE:20261007
+SUMMARY:Fashion Week Paris\, invitations des maisons : bureaux de presse & 
+ VIC
+LOCATION:Sièges & boutiques des maisons (Paris)
+DESCRIPTION:Semaine du 28 septembre au 6 octobre 2026 · défilés sur invi
+ tation\nhttps://constanceparis7.com/e/fashion-week-paris-invitations-des-m
+ aisons-bureaux-de-presse-vic.html
+URL:https://constanceparis7.com/e/fashion-week-paris-invitations-des-maison
+ s-bureaux-de-presse-vic.html
+END:VEVENT
+END:VCALENDAR

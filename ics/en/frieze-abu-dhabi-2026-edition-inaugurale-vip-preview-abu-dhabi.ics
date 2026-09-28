@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:frieze-abu-dhabi-2026-edition-inaugurale-vip-preview-abu-dhabi@constanc
+ eparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261119
+DTEND;VALUE=DATE:20261123
+SUMMARY:Frieze Abu Dhabi 2026\, Inaugural Edition (VIP Preview)
+LOCATION:Manarat Al Saadiyat\, Saadiyat Cultural District
+DESCRIPTION:19-22 November 2026 (fair dates confirmed\; the exact schedule 
+ of the VIP preview / private view has not yet been officially published\, 
+ the mention "VIP preview on opening" should be treated as indicative)\nhtt
+ ps://constanceparis7.com/en/e/frieze-abu-dhabi-2026-edition-inaugurale-vip
+ -preview-abu-dhabi.html
+URL:https://constanceparis7.com/en/e/frieze-abu-dhabi-2026-edition-inaugura
+ le-vip-preview-abu-dhabi.html
+END:VEVENT
+END:VCALENDAR

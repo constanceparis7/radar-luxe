@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:venice-hospitality-challenge-2026-13e-edition-venise@constanceparis7.co
+ m
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261017
+DTEND;VALUE=DATE:20261018
+SUMMARY:Venice Hospitality Challenge 2026 (13e édition)
+LOCATION:Bassin de Saint-Marc et Grand Canal\, Venise
+DESCRIPTION:Samedi 17 octobre 2026 · bassin de Saint-Marc\nhttps://constan
+ ceparis7.com/e/venice-hospitality-challenge-2026-13e-edition-venise.html
+URL:https://constanceparis7.com/e/venice-hospitality-challenge-2026-13e-edi
+ tion-venise.html
+END:VEVENT
+END:VCALENDAR

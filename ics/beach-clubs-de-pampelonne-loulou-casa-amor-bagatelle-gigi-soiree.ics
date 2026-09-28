@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:beach-clubs-de-pampelonne-loulou-casa-amor-bagatelle-gigi-soiree@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260801
+DTEND;VALUE=DATE:20261004
+SUMMARY:Beach clubs de Pampelonne\, Loulou\, Casa Amor\, Bagatelle\, Gigi :
+  soirées d'août
+LOCATION:Plage de Pampelonne (boulevard Patch\, chemin de Matarane\, route 
+ de Bonne Terrasse)
+DESCRIPTION:tout le mois d'août 2026\nhttps://constanceparis7.com/e/beach-
+ clubs-de-pampelonne-loulou-casa-amor-bagatelle-gigi-soiree.html
+URL:https://constanceparis7.com/e/beach-clubs-de-pampelonne-loulou-casa-amo
+ r-bagatelle-gigi-soiree.html
+END:VEVENT
+END:VCALENDAR

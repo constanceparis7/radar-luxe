@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:circuit-vacances-des-mannequins-mediterranee-saint-tropez-ibiza@constan
+ ceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260801
+DTEND;VALUE=DATE:20261005
+SUMMARY:Circuit vacances des mannequins - Mediterranee (Saint-Tropez\, Ibiz
+ a\, Mykonos\, Sardaigne)
+LOCATION:Saint-Tropez / Ibiza / Mykonos / Porto Cervo
+DESCRIPTION:juillet-aout 2026\nhttps://constanceparis7.com/e/circuit-vacanc
+ es-des-mannequins-mediterranee-saint-tropez-ibiza.html
+URL:https://constanceparis7.com/e/circuit-vacances-des-mannequins-mediterra
+ nee-saint-tropez-ibiza.html
+END:VEVENT
+END:VCALENDAR

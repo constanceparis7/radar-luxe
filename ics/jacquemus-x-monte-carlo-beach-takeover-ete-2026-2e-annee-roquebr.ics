@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:jacquemus-x-monte-carlo-beach-takeover-ete-2026-2e-annee-roquebr@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20260928
+SUMMARY:Jacquemus x Monte-Carlo Beach\, takeover été 2026 (2e année)
+LOCATION:Monte-Carlo Beach (Société des Bains de Mer) : ponton\, transats
+ \, parasols et Pool Bar
+DESCRIPTION:été 2026\, actif tout juillet : jusqu'au 27 septembre 2026\nh
+ ttps://constanceparis7.com/e/jacquemus-x-monte-carlo-beach-takeover-ete-20
+ 26-2e-annee-roquebr.html
+URL:https://constanceparis7.com/e/jacquemus-x-monte-carlo-beach-takeover-et
+ e-2026-2e-annee-roquebr.html
+END:VEVENT
+END:VCALENDAR

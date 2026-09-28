@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:exposition-cartier-national-gallery-of-victoria-melbourne-winter@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260612
+DTEND;VALUE=DATE:20261005
+SUMMARY:"Cartier" exhibition\, National Gallery of Victoria\, Melbourne Win
+ ter Masterpieces
+LOCATION:NGV International\, Ground Level\, 180 St Kilda Road\, Melbourne
+DESCRIPTION:Until 4 October 2026 at NGV International (open since 12 June).
+  Some listings wrongly announce a closing date of 23 August: the NGV's off
+ icial page confirms 4 October.\nhttps://constanceparis7.com/en/e/expositio
+ n-cartier-national-gallery-of-victoria-melbourne-winter.html
+URL:https://constanceparis7.com/en/e/exposition-cartier-national-gallery-of
+ -victoria-melbourne-winter.html
+END:VEVENT
+END:VCALENDAR

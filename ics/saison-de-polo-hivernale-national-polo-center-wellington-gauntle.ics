@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:saison-de-polo-hivernale-national-polo-center-wellington-gauntle@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261227
+DTEND;VALUE=DATE:20270301
+SUMMARY:Saison de polo hivernale - National Polo Center Wellington (Gauntle
+ t of Polo / US Open)
+LOCATION:National Polo Center - Wellington\, 3667 120th Ave S
+DESCRIPTION:Ouverture de saison fin décembre 2026 \; matches mondains tous
+  les dimanches\, Gauntlet of Polo à partir de février 2027\nhttps://cons
+ tanceparis7.com/e/saison-de-polo-hivernale-national-polo-center-wellington
+ -gauntle.html
+URL:https://constanceparis7.com/e/saison-de-polo-hivernale-national-polo-ce
+ nter-wellington-gauntle.html
+END:VEVENT
+END:VCALENDAR

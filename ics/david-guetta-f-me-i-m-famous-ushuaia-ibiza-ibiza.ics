@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:david-guetta-f-me-i-m-famous-ushuaia-ibiza-ibiza@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20261006
+SUMMARY:David Guetta F*** Me I'm Famous!\, Ushuaia Ibiza
+LOCATION:Ushuaia Ibiza (scene open-air) · Playa d'en Bossa
+DESCRIPTION:Tous les lundis\, 1er juin - 5 octobre 2026\nhttps://constancep
+ aris7.com/e/david-guetta-f-me-i-m-famous-ushuaia-ibiza-ibiza.html
+URL:https://constanceparis7.com/e/david-guetta-f-me-i-m-famous-ushuaia-ibiz
+ a-ibiza.html
+END:VEVENT
+END:VCALENDAR

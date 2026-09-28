@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ron-mueck-mori-art-museum-x-fondation-cartier-pour-l-art-contemp@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260429
+DTEND;VALUE=DATE:20260924
+SUMMARY:Ron Mueck\, Mori Art Museum x Fondation Cartier pour l'art contempo
+ rain
+LOCATION:Mori Art Museum\, Roppongi Hills Mori Tower 53F\, 6-10-1 Roppongi\
+ , Minato-ku
+DESCRIPTION:29 April\, 23 September 2026\nhttps://constanceparis7.com/en/e/
+ ron-mueck-mori-art-museum-x-fondation-cartier-pour-l-art-contemp.html
+URL:https://constanceparis7.com/en/e/ron-mueck-mori-art-museum-x-fondation-
+ cartier-pour-l-art-contemp.html
+END:VEVENT
+END:VCALENDAR

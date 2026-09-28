@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:helter-skelter-arthur-jafa-and-richard-prince-fondazione-prada-v@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260509
+DTEND;VALUE=DATE:20261124
+SUMMARY:Helter Skelter: Arthur Jafa and Richard Prince (Fondazione Prada Ve
+ nise)
+LOCATION:Ca' Corner della Regina\, Grand Canal
+DESCRIPTION:9 mai - 23 novembre 2026 (ouvert en aout)\nhttps://constancepar
+ is7.com/e/helter-skelter-arthur-jafa-and-richard-prince-fondazione-prada-v
+ .html
+URL:https://constanceparis7.com/e/helter-skelter-arthur-jafa-and-richard-pr
+ ince-fondazione-prada-v.html
+END:VEVENT
+END:VCALENDAR

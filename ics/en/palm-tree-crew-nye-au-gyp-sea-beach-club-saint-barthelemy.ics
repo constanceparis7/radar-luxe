@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:palm-tree-crew-nye-au-gyp-sea-beach-club-saint-barthelemy@constancepari
+ s7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270101
+SUMMARY:Palm Tree Crew NYE at Gyp Sea Beach Club
+LOCATION:Gyp Sea Beach Club\, plage de Pélican\, baie de Saint-Jean
+DESCRIPTION:31 December 2026 (the 2027 edition of the New Year's Eve party 
+ is announced as in preparation by Gyp Sea Beach\, with the programme to be
+  released\; reservations: nye@palmtreecrew.com)\nhttps://constanceparis7.c
+ om/en/e/palm-tree-crew-nye-au-gyp-sea-beach-club-saint-barthelemy.html
+URL:https://constanceparis7.com/en/e/palm-tree-crew-nye-au-gyp-sea-beach-cl
+ ub-saint-barthelemy.html
+END:VEVENT
+END:VCALENDAR

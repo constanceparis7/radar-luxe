@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:il-ballo-del-doge-2027-bal-masque-de-gala-du-carnaval-de-venise@constan
+ ceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270206
+DTEND;VALUE=DATE:20270207
+SUMMARY:Il Ballo del Doge 2027\, masked gala ball of the Venice Carnival
+LOCATION:Scuola Grande della Misericordia (Cannaregio 3599)\, Venise : lieu
+  indiqué par la billetterie autorisée\, non encore nommé sur le site of
+ ficiel
+DESCRIPTION:Saturday 6 February 2027 (official date announced on ilballodel
+ doge.com). The theme of the 2027 edition has not yet been revealed\; the v
+ enue is announced by the authorised ticket office (Scuola Grande della Mis
+ ericordia)\, the official website does not yet name it.\nhttps://constance
+ paris7.com/en/e/il-ballo-del-doge-2027-bal-masque-de-gala-du-carnaval-de-v
+ enise.html
+URL:https://constanceparis7.com/en/e/il-ballo-del-doge-2027-bal-masque-de-g
+ ala-du-carnaval-de-venise.html
+END:VEVENT
+END:VCALENDAR

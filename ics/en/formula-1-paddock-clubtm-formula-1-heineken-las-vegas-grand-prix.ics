@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:formula-1-paddock-clubtm-formula-1-heineken-las-vegas-grand-prix@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261119
+DTEND;VALUE=DATE:20261122
+SUMMARY:Formula 1 Paddock Club™\, Formula 1 Heineken Las Vegas Grand Prix
+  2026
+LOCATION:Las Vegas Strip Circuit : Paddock Club\, le long du Koval Straight
+ \, Las Vegas Strip\, Nevada
+DESCRIPTION:Thursday 19 to Saturday 21 November 2026\nhttps://constancepari
+ s7.com/en/e/formula-1-paddock-clubtm-formula-1-heineken-las-vegas-grand-pr
+ ix.html
+URL:https://constanceparis7.com/en/e/formula-1-paddock-clubtm-formula-1-hei
+ neken-las-vegas-grand-prix.html
+END:VEVENT
+END:VCALENDAR

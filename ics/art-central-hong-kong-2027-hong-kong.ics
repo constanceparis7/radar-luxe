@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:art-central-hong-kong-2027-hong-kong@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270323
+DTEND;VALUE=DATE:20270329
+SUMMARY:Art Central Hong Kong 2027
+LOCATION:Structure éphémère conçue par un architecte\, front de mer de 
+ Hong Kong\, face à Victoria Harbour
+DESCRIPTION:Preview le mardi 23 mars 2027\, puis du mercredi 24 au dimanche
+  28 mars 2027\nhttps://constanceparis7.com/e/art-central-hong-kong-2027-ho
+ ng-kong.html
+URL:https://constanceparis7.com/e/art-central-hong-kong-2027-hong-kong.html
+END:VEVENT
+END:VCALENDAR

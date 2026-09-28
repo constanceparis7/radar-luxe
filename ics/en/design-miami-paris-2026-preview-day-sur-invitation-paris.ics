@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:design-miami-paris-2026-preview-day-sur-invitation-paris@constanceparis
+ 7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261020
+DTEND;VALUE=DATE:20261021
+SUMMARY:Design Miami / Paris 2026\, Preview Day by invitation
+LOCATION:Hôtel de Maisons\, 51 rue de l'Université (Paris 7e)
+DESCRIPTION:Tuesday 20 October 2026 · Hôtel de Maisons\nhttps://constance
+ paris7.com/en/e/design-miami-paris-2026-preview-day-sur-invitation-paris.h
+ tml
+URL:https://constanceparis7.com/en/e/design-miami-paris-2026-preview-day-su
+ r-invitation-paris.html
+END:VEVENT
+END:VCALENDAR

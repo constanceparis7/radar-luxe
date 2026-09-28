@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:biennale-arte-2026-in-minor-keys-61e-exposition-internationale-d@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260509
+DTEND;VALUE=DATE:20261123
+SUMMARY:Biennale Arte 2026\, In Minor Keys (61e Exposition internationale d
+ 'art)
+LOCATION:Giardini\, Arsenale et lieux dans toute Venise
+DESCRIPTION:9 mai - 22 novembre 2026 (ouvert tout le mois d'aout)\nhttps://
+ constanceparis7.com/e/biennale-arte-2026-in-minor-keys-61e-exposition-inte
+ rnationale-d.html
+URL:https://constanceparis7.com/e/biennale-arte-2026-in-minor-keys-61e-expo
+ sition-internationale-d.html
+END:VEVENT
+END:VCALENDAR

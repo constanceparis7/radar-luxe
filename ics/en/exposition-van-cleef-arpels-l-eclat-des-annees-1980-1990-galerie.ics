@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:exposition-van-cleef-arpels-l-eclat-des-annees-1980-1990-galerie@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260604
+DTEND;VALUE=DATE:20261129
+SUMMARY:Exhibition 'Van Cleef & Arpels: The Brilliance of the 1980s-1990s'\
+ , Galerie du Patrimoine
+LOCATION:Galerie du Patrimoine\, boutique Van Cleef & Arpels\, 20 place Ven
+ dôme\, 75001 Paris
+DESCRIPTION:4 June - 28 November 2026\nhttps://constanceparis7.com/en/e/exp
+ osition-van-cleef-arpels-l-eclat-des-annees-1980-1990-galerie.html
+URL:https://constanceparis7.com/en/e/exposition-van-cleef-arpels-l-eclat-de
+ s-annees-1980-1990-galerie.html
+END:VEVENT
+END:VCALENDAR

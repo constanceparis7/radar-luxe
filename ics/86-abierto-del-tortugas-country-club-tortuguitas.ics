@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:86-abierto-del-tortugas-country-club-tortuguitas@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261006
+DTEND;VALUE=DATE:20261108
+SUMMARY:86° Abierto del Tortugas Country Club
+LOCATION:Tortugas Country Club\, Panamericana Ramal Pilar km 38.5\, Tortugu
+ itas · Gran Buenos Aires
+DESCRIPTION:Du mardi 6 octobre au samedi 7 novembre 2026 : poules jusqu'au 
+ 1er novembre\, finale le 7 novembre\nhttps://constanceparis7.com/e/86-abie
+ rto-del-tortugas-country-club-tortuguitas.html
+URL:https://constanceparis7.com/e/86-abierto-del-tortugas-country-club-tort
+ uguitas.html
+END:VEVENT
+END:VCALENDAR

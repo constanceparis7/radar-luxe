@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:meeting-de-deauville-barriere-2026-deauville@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260802
+DTEND;VALUE=DATE:20260831
+SUMMARY:Meeting de Deauville Barrière 2026
+LOCATION:Hippodrome de Deauville-La Touques\, 45 avenue Hocquart de Turtot
+DESCRIPTION:2-30 aout 2026\nhttps://constanceparis7.com/e/meeting-de-deauvi
+ lle-barriere-2026-deauville.html
+URL:https://constanceparis7.com/e/meeting-de-deauville-barriere-2026-deauvi
+ lle.html
+END:VEVENT
+END:VCALENDAR

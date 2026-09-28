@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:twiga-beach-club-forte-dei-marmi-cena-spettacolo-forte-dei-marmi@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260613
+DTEND;VALUE=DATE:20260914
+SUMMARY:Twiga Beach Club Forte dei Marmi\, cena spettacolo
+LOCATION:Twiga Beach Club / Vesta Versilia : front de mer
+DESCRIPTION:Saison été 2026 (cènes-spectacles Vesta et soirées dansante
+ s Twiga) : saison en réalité ouverte dès le 3 avril\, coeur d'été jui
+ n à septembre\nhttps://constanceparis7.com/e/twiga-beach-club-forte-dei-m
+ armi-cena-spettacolo-forte-dei-marmi.html
+URL:https://constanceparis7.com/e/twiga-beach-club-forte-dei-marmi-cena-spe
+ ttacolo-forte-dei-marmi.html
+END:VEVENT
+END:VCALENDAR

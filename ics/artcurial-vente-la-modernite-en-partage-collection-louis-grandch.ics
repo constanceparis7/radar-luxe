@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:artcurial-vente-la-modernite-en-partage-collection-louis-grandch@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261024
+DTEND;VALUE=DATE:20261025
+SUMMARY:Artcurial\, vente « La Modernité en partage » (Collection Louis 
+ Grandchamp des Raux\, orbite Art Basel Paris)
+LOCATION:Artcurial\, Hôtel Marcel Dassault\, 7 Rond-Point des Champs-Élys
+ ées\, 75008 Paris
+DESCRIPTION:Samedi 24 octobre 2026\, pendant la semaine Art Basel Paris\nht
+ tps://constanceparis7.com/e/artcurial-vente-la-modernite-en-partage-collec
+ tion-louis-grandch.html
+URL:https://constanceparis7.com/e/artcurial-vente-la-modernite-en-partage-c
+ ollection-louis-grandch.html
+END:VEVENT
+END:VCALENDAR

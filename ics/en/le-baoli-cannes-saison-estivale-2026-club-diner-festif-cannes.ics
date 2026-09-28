@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:le-baoli-cannes-saison-estivale-2026-club-diner-festif-cannes@constance
+ paris7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260718
+DTEND;VALUE=DATE:20261001
+SUMMARY:Le Bâoli Cannes\, Summer Season 2026 (club & festive dinner)
+LOCATION:Le Bâoli\, Port Pierre Canto\, boulevard de la Croisette\, 06400 
+ Cannes
+DESCRIPTION:Summer season 2026\, open in the evenings throughout the summer
+  (indicative dates\, recurring\, undated)\nhttps://constanceparis7.com/en/
+ e/le-baoli-cannes-saison-estivale-2026-club-diner-festif-cannes.html
+URL:https://constanceparis7.com/en/e/le-baoli-cannes-saison-estivale-2026-c
+ lub-diner-festif-cannes.html
+END:VEVENT
+END:VCALENDAR

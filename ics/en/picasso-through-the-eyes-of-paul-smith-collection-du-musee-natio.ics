@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:picasso-through-the-eyes-of-paul-smith-collection-du-musee-natio@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260610
+DTEND;VALUE=DATE:20260922
+SUMMARY:Picasso\, through the Eyes of Paul Smith (collection of the Musée 
+ national Picasso-Paris)
+LOCATION:The National Art Center Tokyo (NACT)\, salle 2E\, Roppongi
+DESCRIPTION:10 June - 21 September 2026 (ongoing throughout August)\nhttps:
+ //constanceparis7.com/en/e/picasso-through-the-eyes-of-paul-smith-collecti
+ on-du-musee-natio.html
+URL:https://constanceparis7.com/en/e/picasso-through-the-eyes-of-paul-smith
+ -collection-du-musee-natio.html
+END:VEVENT
+END:VCALENDAR

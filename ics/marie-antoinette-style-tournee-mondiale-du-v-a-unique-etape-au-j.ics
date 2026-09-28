@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:marie-antoinette-style-tournee-mondiale-du-v-a-unique-etape-au-j@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260801
+DTEND;VALUE=DATE:20261124
+SUMMARY:Marie Antoinette Style (tournee mondiale du V&A - unique etape au J
+ apon)
+LOCATION:Yokohama Museum of Art\, Minato Mirai (30 min de Tokyo)
+DESCRIPTION:1er aout - 23 novembre 2026 (ouverture le 1er aout)\nhttps://co
+ nstanceparis7.com/e/marie-antoinette-style-tournee-mondiale-du-v-a-unique-
+ etape-au-j.html
+URL:https://constanceparis7.com/e/marie-antoinette-style-tournee-mondiale-d
+ u-v-a-unique-etape-au-j.html
+END:VEVENT
+END:VCALENDAR

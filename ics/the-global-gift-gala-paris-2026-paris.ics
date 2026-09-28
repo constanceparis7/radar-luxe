@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:the-global-gift-gala-paris-2026-paris@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261105
+DTEND;VALUE=DATE:20261106
+SUMMARY:The Global Gift Gala Paris 2026
+LOCATION:Four Seasons Hôtel George V\, 31 avenue George V\, Paris 8e
+DESCRIPTION:Jeudi 5 novembre 2026\, cocktail et tapis rouge à 19h30\, dîn
+ er\, performances et vente aux enchères à 20h30 · Four Seasons Hôtel G
+ eorge V\, Paris · tenue black tie\nhttps://constanceparis7.com/e/the-glob
+ al-gift-gala-paris-2026-paris.html
+URL:https://constanceparis7.com/e/the-global-gift-gala-paris-2026-paris.htm
+ l
+END:VEVENT
+END:VCALENDAR

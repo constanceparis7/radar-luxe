@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:principote-beach-club-chic-de-panormos-mykonos@constanceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20261001
+SUMMARY:Principote\, Panormos's chic beach club
+LOCATION:Principote\, plage de Panormos (côte nord)
+DESCRIPTION:July-August 2026 (recurring parties\, DJ dates unpublished)\nht
+ tps://constanceparis7.com/en/e/principote-beach-club-chic-de-panormos-myko
+ nos.html
+URL:https://constanceparis7.com/en/e/principote-beach-club-chic-de-panormos
+ -mykonos.html
+END:VEVENT
+END:VCALENDAR

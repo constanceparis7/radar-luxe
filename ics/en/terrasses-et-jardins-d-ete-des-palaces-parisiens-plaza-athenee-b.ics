@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:terrasses-et-jardins-d-ete-des-palaces-parisiens-plaza-athenee-b@consta
+ nceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20261005
+SUMMARY:Summer Terraces and Gardens of Parisian Palace Hotels (Plaza Athén
+ ée\, Bristol\, Peninsula\, Mandarin Oriental\, Crillon)
+LOCATION:Cour Jardin (Plaza Athénée\, av. Montaigne)\, Jardin Français (
+ Le Bristol\, fbg Saint-Honoré)\, L'Heure Dorée (Pe…
+DESCRIPTION:summer 2026 season\, all through July\nhttps://constanceparis7.
+ com/en/e/terrasses-et-jardins-d-ete-des-palaces-parisiens-plaza-athenee-b.
+ html
+URL:https://constanceparis7.com/en/e/terrasses-et-jardins-d-ete-des-palaces
+ -parisiens-plaza-athenee-b.html
+END:VEVENT
+END:VCALENDAR

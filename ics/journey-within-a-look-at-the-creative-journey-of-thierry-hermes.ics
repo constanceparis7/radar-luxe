@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:journey-within-a-look-at-the-creative-journey-of-thierry-hermes@constan
+ ceparis7.com
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20260604
+DTEND;VALUE=DATE:20260909
+SUMMARY:Journey within: A look at the creative journey of Thierry Hermès\,
+  Le Forum
+LOCATION:Ginza Maison Hermès Le Forum\, 5-4-1 Ginza 8F (immeuble en brique
+ s de verre de Renzo Piano)
+DESCRIPTION:4 juin - 8 septembre 2026\nhttps://constanceparis7.com/e/journe
+ y-within-a-look-at-the-creative-journey-of-thierry-hermes.html
+URL:https://constanceparis7.com/e/journey-within-a-look-at-the-creative-jou
+ rney-of-thierry-hermes.html
+END:VEVENT
+END:VCALENDAR
