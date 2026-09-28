@@ -121,7 +121,7 @@
   .navchip-star{background:var(--or);border-color:var(--or);color:#1a1206;font-weight:700}
   .navchip-star:hover{background:var(--or);filter:brightness(1.08)}
   .fillabel{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink2);min-width:64px}
-  section[id]{scroll-margin-top:200px}
+  section[id],#portes,#moment-sec,#maison-sec,#countdown-sec,#explorer-sec{scroll-margin-top:200px}
   .chip{border:1px solid var(--line);background:var(--bg2);color:var(--ink);border-radius:99px;padding:4px 13px;font-size:12.5px;cursor:pointer;font-family:var(--sans);transition:border-color .15s}
   .chip:hover{border-color:var(--or)}
   .chip.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
@@ -506,15 +506,15 @@ header.mast{display:none}
     <div class="stats" id="stats"></div>
   </div>
   
-</header><section class="portes" id="portes"><div class="wrap"><span class="pt">🔑 <span data-i18n="portes_t">Ouvertures &amp; délais</span></span><span class="pe" data-exp="2026-09-30"><a href="/e/les-journees-particulieres-lvmh-2026-71-lieux-ouverts-dans-13-pa.html">Journées Particulières LVMH</a> : réservations <b>courant sept.</b></span><span class="pe" data-exp="2026-10-15"><a href="/e/grand-prix-de-monaco-2027-formule-1-monaco.html">Grand Prix de Monaco 2027</a> : billetterie <b>imminente</b></span><span class="pe" data-exp="2027-01-31"><a href="/e/royal-ascot-2027-ascot.html">Royal Ascot 2027</a> : Royal Enclosure <b>dès janvier</b></span></div></section>
-<section id="moment-sec"><div class="wrap">
+</header><div class="portes" id="portes"><div class="wrap"><span class="pt">🔑 <span data-i18n="portes_t">Ouvertures &amp; délais</span></span><span class="pe" data-exp="2026-09-30"><a href="/e/les-journees-particulieres-lvmh-2026-71-lieux-ouverts-dans-13-pa.html">Journées Particulières LVMH</a> : réservations <b>courant sept.</b></span><span class="pe" data-exp="2026-10-15"><a href="/e/grand-prix-de-monaco-2027-formule-1-monaco.html">Grand Prix de Monaco 2027</a> : billetterie <b>imminente</b></span><span class="pe" data-exp="2027-01-31"><a href="/e/royal-ascot-2027-ascot.html">Royal Ascot 2027</a> : Royal Enclosure <b>dès janvier</b></span></div></div>
+<div id="moment-sec"><div class="wrap">
  <div class="hm-moment" id="hm-moment" hidden>
   <div class="hm-mt"><span data-i18n="moment_t">L'événement du moment</span> · <span class="hm-mj"></span></div>
   <div class="hm-mn"></div>
   <div class="hm-mp"></div>
   <a class="hm-ma" href="#" data-i18n="hero_q">Où voulez-vous entrer ?</a>
  </div>
-</div></section>
+</div></div>
 
 <nav id="explorer-haut" aria-label="Explorer">
   <style>
@@ -584,7 +584,7 @@ header.mast{display:none}
     <button type="button" class="pmore" id="prestige-more">Voir la suite du classement</button>
   </div>
 </section>
-<section id="maison-sec"><div class="wrap">
+<div id="maison-sec"><div class="wrap">
  <div class="eyebrow" data-i18n="maison_t">La Maison</div>
  <div class="hm-tuiles">
   <a class="hm-tuile" href="/questions.html"><b data-i18n="exp_questions">Les questions</b><span data-i18n="t_q_d">88 réponses vérifiées : entrer, s'habiller, réserver.</span></a>
@@ -595,7 +595,7 @@ header.mast{display:none}
   <a class="hm-tuile" href="/adresses.html"><b data-i18n="exp_adresses">Les Adresses</b><span data-i18n="t_a_d">Clubs et tables : comment on y entre.</span></a>
  </div>
  <a class="hm-voir" href="/evenements.html" data-i18n="exp_tous">Tous les événements</a>
-</div></section>
+</div></div>
 
 
 <section id="archives" class="sec-collapse collapsed">
@@ -617,11 +617,11 @@ header.mast{display:none}
   </div>
 </section>
 
-<section id="countdown-sec">
+<div id="countdown-sec">
   <div class="wrap">
     <div class="cd-band" id="cd-band"></div>
   </div>
-</section>
+</div>
 
 <section id="now" class="sec-collapse collapsed">
   <div class="wrap">
@@ -678,7 +678,7 @@ header.mast{display:none}
 </section>
 
 
-<section id="explorer-sec">
+<div id="explorer-sec">
   <style>
     #explorer-sec .wrap{padding-top:26px;padding-bottom:8px}
     #explorer-sec .exp-chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
@@ -700,7 +700,7 @@ header.mast{display:none}
       <a href="/evenements.html" data-i18n="exp_tous">Tous les événements</a>
     </div>
   </div>
-</section>
+</div>
 
 </main>
 <footer>
@@ -1528,7 +1528,7 @@ header.mast{display:none}
   setInterval(tick, 1000);
 })();
 </script>
-<script data-goatcounter="https://constanceparis7.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<script data-goatcounter="https://constanceparis7.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 
 <script id="hm-js">
 (function(){

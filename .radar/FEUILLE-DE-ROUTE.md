@@ -77,7 +77,12 @@ moyenne de ses micro-objectifs.
         injection HTML/script bloquée, script CJK/arabe/cyrillique/emoji/entrées très
         longues sans casse ; défaut trouvé et corrigé (recherche insensible aux accents
         depuis le 25/09, « Cote » trouve « Côte »)
-- [30]  Cannibalisation entre langues (hreflang sitemap posé, matrice à faire)
+- [60]  Cannibalisation entre langues : hreflang dans le sitemap posé ; matrice intention
+        vers adresse unique posée le 28/09 (.radar/MATRICE-INTENTIONS.md : fiche d'édition,
+        guide permanent français, page lieu, rôles et titres distincts, liens réciproques
+        vérifiés, x-default vers le français) ; reste la mesure par requête au bilan du
+        2/10 et, si Google sert encore une mauvaise langue, la différenciation des
+        descriptions par langue
 - [100] États vides : aucun favori (page), aucun résultat (recherche, 13 langues), carte
         du moment cachée si indisponible ; mode hors connexion posé le 28/09 (service
         worker, page « Hors connexion », pages visitées consultables sans réseau, testé
@@ -237,7 +242,9 @@ les textes de séjour (1 088 Ko) et les journaux d'enquête (619 Ko). Une fiche
         « 400 İsviçre frangı ») non reconnue par le détecteur, vérifiée à la main,
         aucune perte réelle. Zéro tiret long. Les 12 langues + le français sont
         désormais complètes sur les 44 questions.
-- [0]   Matrice intention vers URL unique (Milan, PFW, Vogue World)
+- [70]  Matrice intention vers adresse unique (Milan, Paris Fashion Week, Vogue World)
+        posée le 28/09 : trois familles de pages par sujet, chacune avec son intention,
+        son titre et ses liens vers les deux autres (vérifiés) ; reste la mesure au 2/10
 - [0]   Liens entrants (en pause volontaire ; liste de 20 relais prête)
 
 ### O6 · Produit et rétention · 59 %
@@ -246,7 +253,11 @@ les textes de séjour (1 088 Ko) et les journaux d'enquête (619 Ko). Une fiche
 - [75]  Partage : aperçus og par page, dimensions et texte alternatif de l'image depuis le
         28/09 (à contrôler messagerie par messagerie)
 - [0]   Newsletter hebdomadaire (dimanche 21/09)
-- [0]   Alertes liées aux favoris
+- [40]  Alertes liées aux favoris : premier pas le 28/09, « Ajouter à mon agenda » sur
+        chaque fiche (fichier calendrier .ics, journée entière avec l'heure écrite en
+        description, français ou anglais selon la langue, servi en text/calendar, vérifié
+        en ligne) ; reste l'alerte automatique, qui exige un canal (courriel ou
+        notification)
 - [0]   Le Cercle (on ne peut pas acheter, on est choisi)
 - [100] Site installable et consultable hors connexion (28/09) : manifeste, icônes (onglet,
         écran d'accueil iOS et Android, monogramme C7 en Didot), service worker réseau

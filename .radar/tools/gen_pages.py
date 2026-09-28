@@ -690,7 +690,7 @@ def main():
             f"<style>{CSS}</style>{ldblock}"
             # Même mesure d'audience que la page d'accueil : sans elle, les
             # arrivées Google directes sur une fiche étaient invisibles.
-            "<script data-goatcounter=\"https://constanceparis7.goatcounter.com/count\" async src=\"//gc.zgo.at/count.js\"></script>"
+            "<script data-goatcounter=\"https://constanceparis7.goatcounter.com/count\" async src=\"https://gc.zgo.at/count.js\"></script>"
             "<style>a:focus-visible,button:focus-visible,select:focus-visible,input:focus-visible{outline:2px solid #d3b06a;outline-offset:2px}.skip{position:absolute;top:-999px;left:12px;background:#d3b06a;color:#101722;padding:8px 14px;border-radius:4px;z-index:9}.skip:focus{top:8px}.trust{display:flex;flex-wrap:wrap;align-items:center;gap:10px;border:1px solid rgba(211,176,106,.4);border-left:3px solid #d3b06a;border-radius:6px;padding:9px 14px;margin:12px 0;font-size:13px}.trust b{color:#d3b06a;font-weight:600}.trust a{color:#d3b06a;text-decoration:none}.trust a:hover{text-decoration:underline}.trust .tm{margin-left:auto;font-size:12px;opacity:.85}.fav-mini{background:none;border:none;cursor:pointer;color:#d3b06a;font-size:15px;padding:0 3px;vertical-align:baseline;line-height:1}.fav-mini.on{color:#b48a3c}</style>"
             "<script>(function(){var C='cp7favs';function L(){try{return JSON.parse(localStorage.getItem(C))||[]}catch(e){return[]}}"
             "function S(){var f=L();document.querySelectorAll('.fav-nb').forEach(function(n){n.textContent=f.length?' · '+f.length:'';});document.querySelectorAll('.fav-mini[data-slug]').forEach(function(b){var on=f.indexOf(b.getAttribute('data-slug'))>-1;"
@@ -1045,13 +1045,7 @@ def main():
                     f"<button class=\"fav-btn\" data-slug=\"{e['_slug']}\" "
                     f"data-add=\"\u2661 {esc(UI['fav_add'][lang])}\" data-on=\"\u2665 {esc(UI['fav_on'][lang])}\" "
                     f"aria-label=\"{esc(UI['fav_add'][lang])}\">\u2661 {esc(UI['fav_add'][lang])}</button>",
-                    """<style>.ics-btn{text-decoration:none;margin-left:6px}.ics-btn:hover{text-decoration:none}
-                    .fav-btn,.ics-btn{display:inline-flex;align-items:center;gap:7px;background:none;cursor:pointer;
-                    font-size:13px;letter-spacing:.04em;color:#d3b06a;border:1px solid rgba(211,176,106,.5);
-                    border-radius:999px;padding:8px 18px;margin:10px 0 4px;font-family:inherit}
-                    .fav-btn:hover,.ics-btn:hover{background:rgba(211,176,106,.12)}
-                    .fav-btn.on{color:#b48a3c;border-color:#d3b06a;background:rgba(211,176,106,.16)}</style>
-                    <script>(function(){var CLE='cp7favs';
+                    """<script>(function(){var CLE='cp7favs';
                     function lire(){try{return JSON.parse(localStorage.getItem(CLE))||[]}catch(e){return[]}}
                     document.addEventListener('click',function(ev){var b=ev.target.closest('.fav-btn');if(!b)return;
                      var s=b.getAttribute('data-slug');var f=lire();var i=f.indexOf(s);
@@ -2340,6 +2334,12 @@ CSS = (
     ".bc,.meta,.edition{color:#333}"
     "}"
 )
+# Boutons favori et agenda des fiches (28/09/2026) : déplacés ici depuis le corps de page,
+# où un <style> après le h1 était une erreur de structure HTML (validateur W3C).
+# Liens dans un bloc de texte (fil d'Ariane, ligne de métadonnées) soulignés d'un trait fin :
+# la couleur seule ne suffit pas à les distinguer (axe-core, WCAG 1.4.1, audit du 28/09/2026).
+CSS += ".meta a,.bc a{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px;text-decoration-color:rgba(211,176,106,.55)}.meta a:hover,.bc a:hover{text-decoration-color:#e9c46a}"
+CSS += ".ics-btn{text-decoration:none;margin-left:6px}.ics-btn:hover{text-decoration:none} .fav-btn,.ics-btn{display:inline-flex;align-items:center;gap:7px;background:none;cursor:pointer; font-size:13px;letter-spacing:.04em;color:#d3b06a;border:1px solid rgba(211,176,106,.5); border-radius:999px;padding:8px 18px;margin:10px 0 4px;font-family:inherit} .fav-btn:hover,.ics-btn:hover{background:rgba(211,176,106,.12)} .fav-btn.on{color:#b48a3c;border-color:#d3b06a;background:rgba(211,176,106,.16)}"
 
 if __name__ == "__main__":
     main()

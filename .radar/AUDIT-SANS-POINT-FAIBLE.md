@@ -124,7 +124,12 @@ de chaque correction, et le verrou final est un validateur de build BLOQUANT.
     une autre canonique » = Google sert parfois une autre langue (la fiche arabe de
     Vogue World en tête des clics). Grappes hreflang vérifiées correctes ; remède
     posé : alternates hreflang émis dans le sitemap (5 447 URL). À mesurer au bilan
-    du 2/10. [Reste : matrice intention vers URL unique pour Milan/PFW/Vogue World.]
+    du 2/10. [Matrice intention vers adresse unique POSÉE le 28/09
+    (.radar/MATRICE-INTENTIONS.md) : par sujet, la fiche d'édition (13 langues, x-default
+    vers le français), le guide permanent français et la page lieu, chacun avec son
+    intention et son titre, liens réciproques guide ↔ fiche vérifiés. Reste : la mesure par
+    requête au 2/10 ; si une mauvaise langue est encore servie, différencier les
+    descriptions par langue plutôt que retirer des langues.]
 16. [FAIT 18/09] 404 maison élégante (marque, liens radar/événements/entrer/favoris,
     bilingue) servie avec le vrai statut 404 ; les 61 redirections sont des sauts
     uniques, hors sitemap, et V6 interdit tout lien interne vers une ancienne adresse.
