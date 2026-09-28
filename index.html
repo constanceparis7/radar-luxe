@@ -24,6 +24,8 @@
   <link rel="alternate" hreflang="x-default" href="https://constanceparis7.com/">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#0f151f">
+<link rel="icon" href="/favicon.ico" sizes="32x32"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="manifest" href="/manifest.webmanifest">
+<script>if('serviceWorker' in navigator){addEventListener('load',function(){navigator.serviceWorker.register('/sw.js').catch(function(){})})}</script>
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="ConstanceParis7">
 <meta property="og:title" content="ConstanceParis7 · International Luxury Events · Autumn 2026">
@@ -226,7 +228,7 @@
   .cal-note{font-size:12px;color:var(--ink2);margin-top:12px}
 
   /* Agenda */
-  .daygroup{margin:26px 0 0}
+  .daygroup{margin:26px 0 0;content-visibility:auto;contain-intrinsic-size:auto 700px}
   .dg-head{display:flex;align-items:baseline;gap:12px;border-bottom:1px solid var(--line);padding-bottom:7px;margin-bottom:2px}
   .dg-head h3{font-family:var(--serif);font-weight:400;font-size:21px;margin:0}
   .dg-head .today-tag{font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--or);font-weight:700}
@@ -1378,9 +1380,13 @@ header.mast{display:none}
     chipRow('f-acces', ACCES, 'a');
     chipRow('f-statut', STATUTS, 's');
   }
+  // La frappe ne relance le rendu qu'une fois la main levée un instant (120 ms) :
+  // chaque touche reste instantanée, même sur un téléphone lent (INP, O3).
+  let qTimer = null;
   document.getElementById('q').addEventListener('input', ev => {
     state.q = sansAccents(ev.target.value.trim().toLowerCase());
-    renderAgenda(); renderContinu(); renderNow(); renderCal(); renderPrestige(); renderCountdown(); renderToday();
+    clearTimeout(qTimer);
+    qTimer = setTimeout(() => { renderAgenda(); renderContinu(); renderNow(); renderCal(); renderPrestige(); renderCountdown(); renderToday(); }, 120);
   });
 
   /* ── horloge ── */

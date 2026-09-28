@@ -1,0 +1,124 @@
+name: Disponibilité du site
+
+# SONDE DE DISPONIBILITÉ, indépendante de toute machine et de tout compte.
+#
+# Toutes les trente minutes, GitHub interroge cinq adresses du site (accueil,
+# accueil arabe, une page lieu, une page de droit, le plan du site). Une adresse
+# qui ne répond pas 200 est retentée trois fois, à vingt secondes d'écart, avant
+# d'être comptée en panne : un accroc réseau d'une seconde ne fait pas d'alerte.
+#
+# Si une adresse reste en panne, une issue « disponibilite » est ouverte (une
+# seule à la fois : les contrôles suivants la commentent), et GitHub envoie le
+# courriel au propriétaire du dépôt. Quand tout répond de nouveau, l'issue est
+# refermée avec un mot. Rien n'est publié sur le site, rien n'est commité.
+#
+# Complète surveillance.yml (qui contrôle la fraîcheur de la date affichée, deux
+# fois par jour) et la sonde locale (qui mesure les temps de réponse, mais dort
+# quand la machine dort).
+
+on:
+  schedule:
+    - cron: "7,37 * * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: disponibilite-radar
+  cancel-in-progress: false
+
+jobs:
+  sonder:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Interroger cinq adresses
+        id: sonde
+        run: |
+          set -uo pipefail
+          URLS="https://constanceparis7.com/ https://constanceparis7.com/ar/ https://constanceparis7.com/en/lieu/milan.html https://constanceparis7.com/mentions-legales.html https://constanceparis7.com/sitemap.xml"
+          PANNES=""
+          RAPPORT=""
+          for u in $URLS; do
+            code=000; t=0; essai=0
+            for essai in 1 2 3; do
+              r=$(curl -s -o /dev/null -w "%{http_code} %{time_total}" --max-time 25 -A "disponibilite-radar" "$u" || echo "000 25")
+              code=${r%% *}; t=${r##* }
+              if [ "$code" = "200" ]; then break; fi
+              sleep 20
+            done
+            RAPPORT="$RAPPORT- $u : code $code, ${t} s (essai $essai)"$'\n'
+            if [ "$code" != "200" ]; then PANNES="$PANNES $u ($code)"; fi
+          done
+          printf '%s\n' "$RAPPORT"
+          {
+            echo "rapport<<FIN"
+            printf '%s\n' "$RAPPORT"
+            echo "FIN"
+          } >> "$GITHUB_OUTPUT"
+          if [ -n "$PANNES" ]; then
+            echo "resultat=panne" >> "$GITHUB_OUTPUT"
+            echo "pannes=$PANNES" >> "$GITHUB_OUTPUT"
+          else
+            echo "resultat=ok" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Alerter si une adresse ne répond plus
+        if: steps.sonde.outputs.resultat != 'ok'
+        uses: actions/github-script@v7
+        env:
+          PANNES: ${{ steps.sonde.outputs.pannes }}
+          RAPPORT: ${{ steps.sonde.outputs.rapport }}
+        with:
+          script: |
+            const titre = "🛑 Le site ne répond plus sur au moins une adresse";
+            const ouvertes = await github.rest.issues.listForRepo({
+              owner: context.repo.owner, repo: context.repo.repo,
+              state: "open", labels: "disponibilite",
+            });
+            const corps = [
+              "Après trois essais à vingt secondes d'écart, au moins une adresse ne répond pas 200 :",
+              "",
+              process.env.PANNES.trim(),
+              "",
+              "Détail du contrôle :",
+              "",
+              process.env.RAPPORT.trim(),
+              "",
+              "À regarder : https://www.githubstatus.com/ (GitHub Pages), puis le dernier déploiement dans l'onglet Actions.",
+              "",
+              `Contrôle du ${new Date().toISOString()}.`,
+            ].join("\n");
+            if (ouvertes.data.length) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner, repo: context.repo.repo,
+                issue_number: ouvertes.data[0].number, body: corps,
+              });
+            } else {
+              await github.rest.issues.create({
+                owner: context.repo.owner, repo: context.repo.repo,
+                title: titre, body: corps, labels: ["disponibilite"],
+              });
+            }
+
+      - name: Refermer l'alerte quand tout répond
+        if: steps.sonde.outputs.resultat == 'ok'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const ouvertes = await github.rest.issues.listForRepo({
+              owner: context.repo.owner, repo: context.repo.repo,
+              state: "open", labels: "disponibilite",
+            });
+            for (const issue of ouvertes.data) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner, repo: context.repo.repo,
+                issue_number: issue.number,
+                body: "Les cinq adresses répondent de nouveau 200. Alerte refermée.",
+              });
+              await github.rest.issues.update({
+                owner: context.repo.owner, repo: context.repo.repo,
+                issue_number: issue.number, state: "closed",
+              });
+            }

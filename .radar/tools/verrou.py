@@ -18,6 +18,10 @@ Bloqueurs :
   V7  URL du sitemap sans fichier correspondant.
   V8  JSON-LD illisible (parse impossible).
   V9  hreflang d'une fiche vers un fichier absent.
+  V12 Tiret long (— ou –) dans le texte visible d'une page publiée : règle éditoriale
+      absolue de Constance. Posé le 28/09/2026, le jour où l'on a découvert que deux
+      lignes du générateur en republiaient près de 22 000 chaque nuit sans que rien
+      ne le voie (les purges ne regardaient que les données, pas les pages générées).
 Avertissements (candidats à promotion une fois le corpus propre) :
   W1  Date écrite dans dt hors de la fenêtre machine [d1-2j, d2+2j].
   W2  Page sans h1.
@@ -73,6 +77,9 @@ RX_SAISON = re.compile(r"été 2026|summer 2026|cet été|this summer", re.I)
 RX_HREF = re.compile(r'href="(/[^"#?]*)"')
 RX_LD = re.compile(r'<script type="application/ld\+json">(.*?)</script>', re.S)
 RX_ALT = re.compile(r'rel="alternate"[^>]*href="https://constanceparis7\.com(/[^"]*)"')
+RX_SCRIPT_STYLE = re.compile(r"<(script|style)[^>]*>.*?</\1>", re.S | re.I)
+RX_TAG = re.compile(r"<[^>]+>")
+RX_TIRET = re.compile(r".{0,40}[—–].{0,40}")
 
 def est_fiche(rel):
     return "/e/" in ("/" + rel.replace(os.sep, "/"))
@@ -139,6 +146,13 @@ def controle_pages():
             for u in set(RX_ALT.findall(h)):
                 if not cible_existe(u):
                     bloq.append(f"V9 {rel} : hreflang vers fichier absent {u}")
+        # V12 : texte visible seulement (scripts, styles et balises retirés) ;
+        # index-full.html est la source de travail, jamais publiée.
+        if rel != "index-full.html":
+            vis = RX_TAG.sub(" ", RX_SCRIPT_STYLE.sub("", h))
+            m = RX_TIRET.search(vis)
+            if m:
+                bloq.append(f"V12 {rel} : tiret long dans le texte visible ({' '.join(m.group(0).split())!r})")
     return n
 
 MOIS = {"janvier":1,"février":2,"mars":3,"avril":4,"mai":5,"juin":6,"juillet":7,

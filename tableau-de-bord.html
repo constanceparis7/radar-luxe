@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>Tableau de bord des visites — Constance Paris 7</title>
+<title>Tableau de bord des visites · Constance Paris 7</title>
 <style>
   :root{
     --bg:#0f151f; --ink:#eceadf; --line:#273143;
@@ -71,7 +71,7 @@
 <div class="page">
   <div class="eyebrow">Constance Paris 7</div>
   <h1>Tableau de bord des visites</h1>
-  <p class="sous">Statistiques publiques et anonymes du site — aucun nom, aucune
+  <p class="sous">Statistiques publiques et anonymes du site : aucun nom, aucune
   adresse IP, aucun cookie. Mises à jour en continu.</p>
 
   <div class="tuiles">
@@ -86,13 +86,13 @@
 
   <div class="bloc">
     <h2>Jour après jour</h2>
-    <p class="note">Nouveaux visiteurs entre deux relevés du matin — l'historique
+    <p class="note">Nouveaux visiteurs entre deux relevés du matin. L'historique
     s'allonge d'une barre par jour.</p>
     <div id="historique"></div>
   </div>
 
   <div class="bloc">
-    <h2>Le détail — pays, langues, sources, pages</h2>
+    <h2>Le détail : pays, langues, sources, pages</h2>
     <p class="note">Le tableau complet, en direct : d'où viennent les visiteurs
     (pays et régions), dans quelle langue ils naviguent, par où ils arrivent
     (Instagram, Google…) et quelles fiches ils regardent.</p>
@@ -105,7 +105,7 @@
   </div>
 
   <div class="pied">
-    Mesure d'audience par GoatCounter — respectueuse de la vie privée,
+    Mesure d'audience par GoatCounter, respectueuse de la vie privée,
     sans cookies ni données personnelles.<br>
     <a class="retour" href="/">← Retour au site</a>
   </div>
@@ -142,21 +142,21 @@
           delta.textContent = (diff >= 0 ? "+" : "") + fr(diff);
           libelle.textContent = "Depuis le relevé du " + dateFr(ref.date);
         } else {
-          delta.textContent = "—";
+          delta.textContent = "…";
           libelle.textContent = "Premier relevé en cours";
         }
       })
       .catch(function(){
         document.getElementById("maj").textContent =
-          "Compteur momentanément illisible — nouvel essai dans une minute.";
+          "Compteur momentanément illisible. Nouvel essai dans une minute.";
       });
   }
 
   function dessinerHistorique(){
     var zone = document.getElementById("historique");
     if (releves.length < 2) {
-      zone.innerHTML = '<div class="vide">L’historique se dessine jour après jour — ' +
-        "première barre demain matin, après le deuxième relevé.</div>";
+      zone.innerHTML = '<div class="vide">L’historique se dessine jour après jour. ' +
+        "Première barre demain matin, après le deuxième relevé.</div>";
       return;
     }
     var jours = [];

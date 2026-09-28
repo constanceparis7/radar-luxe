@@ -170,7 +170,7 @@ UI = {
  "events":  {"fr":"événements","en":"events","es":"eventos","it":"eventi","pt":"eventos","de":"Veranstaltungen","ru":"событий","ar":"فعاليات","zh":"项活动","ja":"件のイベント","ko":"개 이벤트","hi":"कार्यक्रम","tr":"etkinlik"},
  "tagline": {"fr":"Sélection au niveau Riviera : dates, lieux et modes d'accès.","en":"A Riviera-level selection: dates, venues and how to get in.","es":"Una selección de nivel Riviera: fechas, lugares y cómo acceder.","it":"Una selezione di livello Riviera: date, luoghi e come accedere.","pt":"Uma seleção ao nível da Riviera: datas, locais e como aceder.","de":"Eine Auswahl auf Riviera-Niveau: Termine, Orte und Zugang.","ru":"Подборка уровня Ривьеры: даты, места и как попасть.","ar":"اختيار بمستوى الريفييرا: التواريخ والأماكن وكيفية الدخول.","zh":"蔚蓝海岸级别的精选：日期、地点与入场方式。","ja":"リヴィエラ級のセレクション：日程、会場、入場方法。","ko":"리비에라급 셀렉션: 날짜, 장소, 입장 방법.","hi":"रिवेरा स्तर का चयन : तिथियाँ, स्थान और प्रवेश के तरीके।","tr":"Riviera düzeyinde bir seçki: tarihler, mekânlar ve giriş yolları."},
  "hub_h1":  {"fr":"Tous les événements du luxe","en":"All luxury events","es":"Todos los eventos de lujo","it":"Tutti gli eventi del lusso","pt":"Todos os eventos de luxo","de":"Alle Luxus-Veranstaltungen","ru":"Все события мира роскоши","ar":"جميع فعاليات الفخامة","zh":"全部奢华活动","ja":"すべてのラグジュアリー・イベント","ko":"모든 럭셔리 이벤트","hi":"विलासिता के सभी कार्यक्रम","tr":"Tüm lüks etkinlikler"},
- "hub_intro":{"fr":"Parcourez par lieu ou par catégorie. Le radar complet, en direct et en 13 langues, est sur ConstanceParis7.","en":"Browse by place or by category. The full radar, live and in 13 languages, is on ConstanceParis7.","es":"Explore por lugar o por categoría. El radar completo, en directo y en 13 idiomas, está en ConstanceParis7.","it":"Sfoglia per luogo o per categoria. Il radar completo, in diretta e in 13 lingue, è su ConstanceParis7.","pt":"Navegue por local ou por categoria. O radar completo, em direto e em 13 línguas, está no ConstanceParis7.","de":"Stöbern Sie nach Ort oder Kategorie. Das vollständige Radar, live und in 13 Sprachen, finden Sie auf ConstanceParis7.","ru":"Ищите по месту или категории. Полный радар, в реальном времени и на 13 языках, на ConstanceParis7.","ar":"تصفّح حسب المكان أو الفئة. الرادار الكامل، مباشرةً وبثلاث عشرة لغة، على ConstanceParis7.","zh":"按地点或类别浏览。完整雷达，实时更新、13 种语言，尽在 ConstanceParis7。","ja":"場所またはカテゴリーで探せます。完全版レーダー（ライブ・13言語）は ConstanceParis7 にて。","ko":"장소 또는 카테고리로 탐색하세요. 실시간 13개 언어의 전체 레이더는 ConstanceParis7에서.","hi":"स्थान या श्रेणी के अनुसार देखें। पूरा रडार — सीधा प्रसारण, 13 भाषाओं में — ConstanceParis7 पर उपलब्ध है।","tr":"Mekâna veya kategoriye göre göz atın. Canlı ve 13 dildeki tam radar ConstanceParis7'de."},
+ "hub_intro":{"fr":"Parcourez par lieu ou par catégorie. Le radar complet, en direct et en 13 langues, est sur ConstanceParis7.","en":"Browse by place or by category. The full radar, live and in 13 languages, is on ConstanceParis7.","es":"Explore por lugar o por categoría. El radar completo, en directo y en 13 idiomas, está en ConstanceParis7.","it":"Sfoglia per luogo o per categoria. Il radar completo, in diretta e in 13 lingue, è su ConstanceParis7.","pt":"Navegue por local ou por categoria. O radar completo, em direto e em 13 línguas, está no ConstanceParis7.","de":"Stöbern Sie nach Ort oder Kategorie. Das vollständige Radar, live und in 13 Sprachen, finden Sie auf ConstanceParis7.","ru":"Ищите по месту или категории. Полный радар, в реальном времени и на 13 языках, на ConstanceParis7.","ar":"تصفّح حسب المكان أو الفئة. الرادار الكامل، مباشرةً وبثلاث عشرة لغة، على ConstanceParis7.","zh":"按地点或类别浏览。完整雷达，实时更新、13 种语言，尽在 ConstanceParis7。","ja":"場所またはカテゴリーで探せます。完全版レーダー（ライブ・13言語）は ConstanceParis7 にて。","ko":"장소 또는 카테고리로 탐색하세요. 실시간 13개 언어의 전체 레이더는 ConstanceParis7에서.","hi":"स्थान या श्रेणी के अनुसार देखें। पूरा रडार, सीधा प्रसारण, 13 भाषाओं में, ConstanceParis7 पर उपलब्ध है।","tr":"Mekâna veya kategoriye göre göz atın. Canlı ve 13 dildeki tam radar ConstanceParis7'de."},
  "by_cat":  {"fr":"Par catégorie","en":"By category","es":"Por categoría","it":"Per categoria","pt":"Por categoria","de":"Nach Kategorie","ru":"По категориям","ar":"حسب الفئة","zh":"按类别","ja":"カテゴリー別","ko":"카테고리별","hi":"श्रेणी के अनुसार","tr":"Kategoriye göre"},
  "by_place":{"fr":"Par lieu","en":"By place","es":"Por lugar","it":"Per luogo","pt":"Por local","de":"Nach Ort","ru":"По местам","ar":"حسب المكان","zh":"按地点","ja":"場所別","ko":"장소별","hi":"स्थान के अनुसार","tr":"Mekâna göre"},
  "footer":  {"fr":"ConstanceParis7 · le radar des événements du luxe, mis à jour chaque jour.","en":"ConstanceParis7 · the radar of luxury events, updated every day.","es":"ConstanceParis7 · el radar de los eventos de lujo, actualizado cada día.","it":"ConstanceParis7 · il radar degli eventi del lusso, aggiornato ogni giorno.","pt":"ConstanceParis7 · o radar dos eventos de luxo, atualizado todos os dias.","de":"ConstanceParis7 · das Radar der Luxus-Veranstaltungen, täglich aktualisiert.","ru":"ConstanceParis7 · радар событий мира роскоши, обновляется каждый день.","ar":"ConstanceParis7 · رادار فعاليات الفخامة، يُحدَّث كل يوم.","zh":"ConstanceParis7 · 奢华活动雷达，每日更新。","ja":"ConstanceParis7 · ラグジュアリー・イベントのレーダー。毎日更新。","ko":"ConstanceParis7 · 매일 업데이트되는 럭셔리 이벤트 레이더.","hi":"ConstanceParis7 · विलासिता के कार्यक्रमों का रडार, प्रतिदिन अद्यतन।","tr":"ConstanceParis7 · her gün güncellenen lüks etkinlik radarı."},
@@ -672,11 +672,18 @@ def main():
             "<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">"
             f"<meta http-equiv=\"Content-Security-Policy\" content=\"{CSP}\">"
             "<meta name=\"referrer\" content=\"strict-origin-when-cross-origin\">"
+            # Icônes, manifeste et service worker (28/09/2026) : même jeu que l'accueil,
+            # pour l'onglet, l'écran d'accueil du téléphone et le mode hors connexion.
+            "<meta name=\"theme-color\" content=\"#0e1317\">"
+            "<link rel=\"icon\" href=\"/favicon.ico\" sizes=\"32x32\"><link rel=\"icon\" href=\"/favicon.svg\" type=\"image/svg+xml\">"
+            "<link rel=\"apple-touch-icon\" href=\"/apple-touch-icon.png\"><link rel=\"manifest\" href=\"/manifest.webmanifest\">"
             f"<title>{esc(title)}</title><meta name=\"description\" content=\"{esc(desc)}\">"
             f"<link rel=\"canonical\" href=\"{canonical}\">{hreflang}"
             "<meta property=\"og:type\" content=\"website\">"
             f"<meta property=\"og:title\" content=\"{esc(title)}\"><meta property=\"og:description\" content=\"{esc(desc)}\">"
             f"<meta property=\"og:url\" content=\"{canonical}\"><meta property=\"og:image\" content=\"{OG}\">"
+            "<meta property=\"og:image:width\" content=\"1200\"><meta property=\"og:image:height\" content=\"630\">"
+            "<meta property=\"og:image:alt\" content=\"ConstanceParis7 · International Luxury Events\">"
             f"<meta name=\"twitter:card\" content=\"summary_large_image\"><meta name=\"twitter:title\" content=\"{esc(title)}\">"
             f"<meta name=\"twitter:description\" content=\"{esc(desc)}\"><meta name=\"twitter:image\" content=\"{OG}\">"
             f"<style>{CSS}</style>{ldblock}"
@@ -691,6 +698,7 @@ def main():
             "var s=b.getAttribute('data-slug'),f=L(),i=f.indexOf(s);if(i>-1)f.splice(i,1);else f.push(s);"
             "try{localStorage.setItem(C,JSON.stringify(f))}catch(e){}S();});"
             "window.addEventListener('DOMContentLoaded',S);})();</script>"
+            "<script>if('serviceWorker' in navigator){addEventListener('load',function(){navigator.serviceWorker.register('/sw.js').catch(function(){})})}</script>"
             "</head><body><a class=\"skip\" href=\"#contenu\">Aller au contenu</a><div class=\"wrap\">"
             f"<header class=\"site\"><a href=\"{prefix(lang)}/\" class=\"brand\">ConstanceParis<span class=\"s\">7</span></a>"
             f"<a class=\"fav-head\" href=\"/favoris.html\">\u2665 {esc(UI['favs'][lang])}<span class=\"fav-nb\"></span></a>"
@@ -698,7 +706,7 @@ def main():
             f"{body}"
             "</main>"
             f"<footer class=\"site\">{esc(UI['footer'][lang])} "
-            f"<a href=\"/\">{esc(UI['see_live'][lang])} <span class='arw'>→</span></a>"
+            f"<a href=\"/\">{esc(UI['see_live'][lang])} <span class='arw' aria-hidden='true'>→</span></a>"
             # Obligation légale (LCEN art. 6) : la page doit être atteignable
             # depuis n'importe quelle page du site. Libellé bilingue : la page
             # elle-même est en français, c'est un texte de droit français.
@@ -1070,12 +1078,12 @@ def main():
                         d = sT(f"sej_{grp}{i}", x.get("d") or "")
                         nom = esc(x["n"])
                         lien = f"<a href=\"{esc(x['u'])}\" target=\"_blank\" rel=\"noopener nofollow\">{nom}</a>" if x.get("u") else nom
-                        bloc.append(f"<li><b>{lien}</b>" + (f" — {esc(d)}" if d else "") + "</li>")
+                        bloc.append(f"<li><b>{lien}</b>" + (f" : {esc(d)}" if d else "") + "</li>")
                     bloc.append("</ul>")
                 bloc.append("</div>")
                 body.append("".join(bloc))
             if e.get("u"):
-                body.append(f"<p><a class=\"cta\" href=\"{esc(e['u'])}\" target=\"_blank\" rel=\"noopener nofollow\">{esc(UI['official'][lang])} <span class='arw'>→</span></a></p>")
+                body.append(f"<p><a class=\"cta\" href=\"{esc(e['u'])}\" target=\"_blank\" rel=\"noopener nofollow\">{esc(UI['official'][lang])} <span class='arw' aria-hidden='true'>→</span></a></p>")
             nav = []
             if lieu:
                 nav.append(f"<a href=\"{u_place(lieu, lang)}\">{esc(UI['all_in'][lang])} · {esc(place_label(pk, lang))}</a>")
@@ -1133,7 +1141,7 @@ def main():
             body = [f"<div class=\"bc\"><a href=\"{prefix(lang)}/\">{esc(UI['radar'][lang])}</a> › "
                     f"<a href=\"{u_hub(lang)}\">{esc(UI['all'][lang])}</a></div>",
                     f"<h1>{esc(label)}</h1>",
-                    f"<p class=\"meta\">{len(events)} {esc(UI['events'][lang])} — {esc(UI['tagline'][lang])}</p>",
+                    f"<p class=\"meta\">{len(events)} {esc(UI['events'][lang])} · {esc(UI['tagline'][lang])}</p>",
                     "<ul class=\"cards\">"]
             for e in events:
                 body.append(f"<li><div class=\"d\">{esc(T(e,lang,'dt') or e.get('d1',''))}</div>"
@@ -1193,7 +1201,7 @@ def main():
 
             home = [f"<h1>ConstanceParis7 · {esc(UI['luxury_events'][lang])}</h1>",
                     f"<p class=\"meta\">{esc(tk('brandsub', UI['tagline'][lang]))}</p>",
-                    f"<p><a class=\"cta\" href=\"/\">{esc(UI['see_live'][lang])} <span class='arw'>→</span></a></p>"]
+                    f"<p><a class=\"cta\" href=\"/\">{esc(UI['see_live'][lang])} <span class='arw' aria-hidden='true'>→</span></a></p>"]
 
             rubriques = [tk(k) for k in ("nav_today", "nav_prestige", "nav_calendar",
                                          "nav_agenda", "nav_continu", "nav_intl",
@@ -1219,7 +1227,7 @@ def main():
             home.append(f"</div><h2 class=\"sub\">{esc(UI['by_place'][lang])}</h2><div class=\"chips\">")
             for k, v in sorted(places.items(), key=lambda kv: -len(kv[1]["events"]))[:40]:
                 home.append(f"<a href=\"{u_place(v, lang)}\">{esc(place_label(k, lang))} ({len(v['events'])})</a>")
-            home.append(f"</div><p><a href=\"{u_hub(lang)}\">{esc(UI['places_cats'][lang])} <span class='arw'>→</span></a></p>")
+            home.append(f"</div><p><a href=\"{u_hub(lang)}\">{esc(UI['places_cats'][lang])} <span class='arw' aria-hidden='true'>→</span></a></p>")
 
             # Le radar ne lit sa langue que dans localStorage — il n'existe
             # aucun paramètre d'URL. Sans cette ligne, un lecteur arrivé sur
@@ -2077,17 +2085,17 @@ document.querySelectorAll('.ex').forEach(function(a){a.addEventListener('click',
             qa = qs[0]
             corps.append(f"<div class=\"box\"><h2>Comment y assister</h2><p><b>{esc(qa['reponse_courte'])}</b></p>"
                          + "".join(f"<p>{esc(par)}</p>" for par in qa["details"].split("\n") if par.strip())
-                         + f"<p><a href=\"/q/{qa['slug']}.html\">La réponse complète <span class='arw'>→</span></a></p></div>")
+                         + f"<p><a href=\"/q/{qa['slug']}.html\">La réponse complète <span class='arw' aria-hidden='true'>→</span></a></p></div>")
             for qi in qs[1:2]:
                 corps.append(f"<h2 class=\"sub\">{esc(qi['question'])}</h2><p>{esc(qi['reponse_courte'])} "
-                             f"<a href=\"/q/{qi['slug']}.html\">Le détail <span class='arw'>→</span></a></p>")
+                             f"<a href=\"/q/{qi['slug']}.html\">Le détail <span class='arw' aria-hidden='true'>→</span></a></p>")
         else:
             ivo, ivw = T(e, "fr", "iv_o"), T(e, "fr", "iv_w")
             acc = ivo or T(e, "fr", "p") or ""
             if acc:
                 corps.append(f"<div class=\"box\"><h2>Comment y assister</h2><p>{esc(acc[:600])}</p>"
                              + (f"<p>{esc(ivw[:400])}</p>" if ivw else "")
-                             + f"<p><a href=\"{u_event(e,'fr')}\">La voie d'entrée détaillée <span class='arw'>→</span></a></p></div>")
+                             + f"<p><a href=\"{u_event(e,'fr')}\">La voie d'entrée détaillée <span class='arw' aria-hidden='true'>→</span></a></p></div>")
         prep = ["<a href=\"/protocole.html\">Le Protocole</a>", "<a href=\"/vestiaire.html\">Le Vestiaire</a>"]
         if im.get("moment"):
             prep.append(f"<a href=\"{im['moment']}\">{esc(im.get('moment_titre') or 'Le moment de la saison')}</a>")
