@@ -63,7 +63,7 @@ reste dérisoire pour un million de visiteurs par jour.
 Légende : [100] fait · [50] à moitié · [0] à faire. Le taux d'un objectif est la
 moyenne de ses micro-objectifs.
 
-### O1 · Fondations sans point faible (registre de l'audit croisé) · 86 %
+### O1 · Fondations sans point faible (registre de l'audit croisé) · 81 %
 - [100] Verrou de build bloquant sur les 7 876 pages, 13 langues
 - [100] Compteurs réconciliés et expliqués
 - [100] Redirections des anciennes adresses (lieux et fiches)
@@ -129,7 +129,7 @@ moyenne de ses micro-objectifs.
 - [0]   En-têtes de sécurité (dépend de Cloudflare devant)
 - [0]   Newsletter : double opt-in, anti-spam, désinscription (samedi 20/09)
 
-### O2 · Infrastructure (périmètre GitHub Pages) · 90 %
+### O2 · Infrastructure (périmètre GitHub Pages) · 100 %
 - [100] HTTPS forcé, http et www redirigés
 - [100] Réseau de diffusion mondial (Fastly via GitHub Pages, cache 10 minutes)
 - [100] Redirections des anciennes adresses (178 pages de renvoi, le maximum possible ici)
@@ -153,7 +153,7 @@ moyenne de ses micro-objectifs.
         si Cloudflare passe devant le site
 - [hors périmètre] Cloudflare devant, en-têtes HTTP, vrais 301, HTTP/3, Cloudflare Pages, R2, Workers, D1
 
-### O3 · Vitesse mobile, Android et iOS (PRIORITÉ ABSOLUE) · 83 %
+### O3 · Vitesse mobile, Android et iOS (PRIORITÉ ABSOLUE) · 98 %
 Mesure de référence du 18/09/2026 : un téléphone reçoit 820 Ko pour l'accueil
 (2 547 Ko bruts), plus 294 Ko de photo et 43 Ko d'index de recherche, soit environ
 1,15 Mo. Le poids vient de deux champs embarqués inutiles au premier affichage :
@@ -191,7 +191,7 @@ les textes de séjour (1 088 Ko) et les journaux d'enquête (619 Ko). Une fiche
 - [100] Sitemap scindé par langue avec index (20/09) : 13 fichiers de 850 Ko au lieu d'un
         seul de 11 Mo ; le verrou lit l'index
 
-### O4 · Données et contenu à l'échelle · 35 %
+### O4 · Données et contenu à l'échelle · 54 %
 - [100] Passes de nuit (purge, liens, condensation)
 - [100] Résorption hebdomadaire de tous les doutes, aux sources
 - [100] Sentinelle des imminents (lundi)
@@ -221,7 +221,7 @@ les textes de séjour (1 088 Ko) et les journaux d'enquête (619 Ko). Une fiche
 - [0]   Matrice intention vers URL unique (Milan, PFW, Vogue World)
 - [0]   Liens entrants (en pause volontaire ; liste de 20 relais prête)
 
-### O6 · Produit et rétention · 42 %
+### O6 · Produit et rétention · 59 %
 - [100] Favoris partout, page Mes favoris, compteur
 - [100] Moteur Comment entrer, Note du radar, Protocole, Questions
 - [75]  Partage : aperçus og par page, dimensions et texte alternatif de l'image depuis le
@@ -240,7 +240,7 @@ les textes de séjour (1 088 Ko) et les journaux d'enquête (619 Ko). Une fiche
         les pages générées, navigation et favoris masqués, adresses des liens utiles
         affichées en clair, fond blanc ; n'affecte jamais l'écran, vérifié en ligne
 
-### O7 · Confiance, sécurité, conformité · 60 %
+### O7 · Confiance, sécurité, conformité · 71 %
 - [100] HTTPS, zéro cookie, zéro donnée collectée
 - [100] Aucun fichier de travail en ligne, aucun secret dans le code
 - [100] Sonde quotidienne du site en ligne
@@ -258,7 +258,7 @@ les textes de séjour (1 088 Ko) et les journaux d'enquête (619 Ko). Une fiche
 - [0]   Double opt-in, SPF, DKIM, DMARC pour la newsletter
 - [0]   En-têtes de sécurité (Cloudflare)
 
-### O8 · Observabilité et pilotage · 62 %
+### O8 · Observabilité et pilotage · 77 %
 - [100] Compteur public GoatCounter
 - [100] Search Console vérifiée, exports lus
 - [100] Sonde du matin (quotidienne) et contrôle Google contre site (hebdomadaire)
