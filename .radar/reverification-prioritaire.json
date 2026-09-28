@@ -2,7 +2,7 @@
  "genere_le": "2026-09-28",
  "regle": "fiche non terminée, commençant dans 21 jours ou déjà en cours, dont la dernière vérification écrite est absente ou date de plus de 30 jours ; triée par imminence puis par ancienneté",
  "total_vivantes": 214,
- "avec_date_verif": 69,
+ "avec_date_verif": 71,
  "prioritaires": [
   {
    "n": "Gaïo Saint-Tropez, dîner-cabaret & club 2026",
@@ -642,24 +642,6 @@
    "verifie_le": null,
    "age_jours": null,
    "cf": "averifier"
-  },
-  {
-   "n": "Sotheby's Hong Kong, Modern & Contemporary Evening Auction",
-   "d1": "2026-09-29",
-   "d2": "2026-09-30",
-   "dans_jours": 1,
-   "verifie_le": null,
-   "age_jours": null,
-   "cf": "confirme"
-  },
-  {
-   "n": "The Global Gift Gala Paris 2026",
-   "d1": "2026-10-01",
-   "d2": "2026-10-01",
-   "dans_jours": 3,
-   "verifie_le": null,
-   "age_jours": null,
-   "cf": "probable"
   },
   {
    "n": "Venice Hospitality Challenge 2026 (13e édition)",
