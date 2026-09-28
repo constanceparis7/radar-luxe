@@ -117,7 +117,13 @@ def saison_de(jour):
 def appliquer(jour=None, ecrire=True):
     jour = jour or dt.date.today()
     saison, annee = saison_de(jour)
+    # index-full.html est la source de travail locale, absente du dépôt (gitignore) :
+    # sur le plancher GitHub, on agit sur index.html, le fichier publié (28/09/2026 ;
+    # jusque-là la bascule échouait silencieusement sur le plancher et le bandeau a dit
+    # « Summer 2026 » six jours après l'équinoxe).
     F = os.path.join(REPO, "index-full.html")
+    if not os.path.exists(F):
+        F = os.path.join(REPO, "index.html")
     s = open(F, encoding="utf-8").read()
 
     attendu = f"{ANGLAIS[saison]} {annee}"

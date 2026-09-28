@@ -28,6 +28,13 @@ de chaque correction, et le verrou final est un validateur de build BLOQUANT.
    factuel légitime (nom ou sujet réel d'un événement/d'une programmation datée), aucune
    méta périmée trouvée dans les title/description des 14 pages qui en portaient — leur
    sujet même EST l'été 2026, pas une saison "courante" oubliée.
+   [TROUVÉ ET CORRIGÉ 28/09] Un vrai résidu, hors de portée de V2 : la ligne de marque du
+   bloc d'accueil (« International Luxury Events · Summer 2026 ») venait du JSON
+   d'interface des 13 langues, que saison.py n'avait plus mis à jour (son motif de titre
+   cherchait encore un tiret long disparu le 24/09) et qu'aucun contrôle ne lisait. Six
+   jours après l'équinoxe, tout visiteur voyait « Summer 2026 » dans le bloc d'accueil.
+   saison.py relancé et réparé ; verrou V13 : la saison du bandeau est contrôlée dans les
+   13 langues à chaque publication.
 4. [FAIT 17-18/09] Titres « None » corrigés ; garde bloquante V1 au verrou (title,
    description, og, h1). Search Console du 18/09 : les pages catégories étrangères
    avaient des centaines d'affichages et zéro clic, preuve de l'impact ; recrawl
@@ -70,8 +77,18 @@ de chaque correction, et le verrou final est un validateur de build BLOQUANT.
    les imminentes ou en cours, 109 sont à revérifier. Nouvel outil persisté
    `.radar/tools/reverification.py` → `.radar/reverification-prioritaire.json`, et
    étape 5bis de la doctrine : chaque passe de nuit en revérifie 3 à 5 à la source et
-   écrit la date. Reste : faire descendre les 109, au rythme des passes (suivi au
-   compte rendu quotidien).
+   écrit la date. Le 28/09, coup d'accélérateur : 40 fiches imminentes ou en cours
+   confrontées à leur source officielle par 10 lots parallèles (règles : citation
+   verbatim de la page officielle, site tiers refusé, « introuvable » au moindre doute).
+   Résultat : 28 confirmées à l'identique et datées « vérifié le 28/09/2026 » ; 5 vrais
+   écarts corrigés dans les 13 langues (Sphère 30 septembre au lieu du 28 ; Arqana 20-23
+   octobre au lieu de 19-24 ; Sotheby's Hong Kong vente du soir le 28 et ventes de jour
+   le 29 ; Global Gift Gala Paris le 5 novembre au Four Seasons George V, jusque-là
+   « octobre, date non publiée » ; Journées Particulières LVMH 71 lieux dans 13 pays,
+   45 Maisons, fiche renommée avec redirection et journal des renommages) ; 6
+   introuvables laissées sans date (Bon Marché en 403, agrégateurs, saisons sans date de
+   fin publiée). Mesure après : 214 vivantes, 71 datées, file de 106 à 72.
+   Reste : faire descendre les 72, au rythme des passes (suivi au compte rendu quotidien).
 10. [FAIT 27/09] Statuts : le JSON-LD de l'accueil déclarait « programmé » pour tous
     les événements, date estimée comprise. Désormais recalculé à chaque build comme
     sur les fiches : annulé → EventCancelled, reporté → EventPostponed, programmé
@@ -152,8 +169,14 @@ de chaque correction, et le verrou final est un validateur de build BLOQUANT.
     l'accueil (réactivité aux interactions) atteignait 264 ms sur le bouton thème, et
     jusqu'à 3 s quand le clic tombait pendant le rendu des lots de cartes. Corrigé le
     même jour : jours hors écran rendus à la demande (content-visibility), frappe de
-    recherche regroupée à 120 ms ; INP 88 à 120 ms mesuré en ligne, aucune erreur. [Reste :
-    la mesure PageSpeed officielle (quota) ; CLS 0,08 sous le seuil mais à ramener vers 0.]
+    recherche regroupée à 120 ms ; INP 88 à 120 ms mesuré en ligne, aucune erreur. CLS
+    ramené de 0,08 à 0 le même jour : la cause (observée élément par élément) était le
+    remplacement des libellés du bloc d'accueil par le script principal après le premier
+    affichage (la barre de catégories gagnait une ligne et le bloc remontait de 51 px) ;
+    libellés statiques alignés sur le français, bloc de langue généré par split_i18n à
+    chaque build et placé juste après le bloc d'accueil, langue et sens de lecture posés
+    dès l'en-tête ; mesuré en ligne à 0 en français, anglais, arabe et chinois. [Reste :
+    la mesure PageSpeed officielle (quota) ; mesure hebdomadaire inscrite en doctrine.]
 22. [FAIT 28/09 : zoom 200 % et 400 % vérifiés avec de vraies largeurs de 640 et 320 px
     sur cinq pages, aucun débordement ; le reste ci-dessous était déjà fait le 25/09]
     Petits écrans : 320/360/390 px, paysage (812×375) et clavier ouvert (hauteur réduite)
@@ -206,7 +229,14 @@ de chaque correction, et le verrou final est un validateur de build BLOQUANT.
     de gauche à droite sur les pages arabes et sur l'accueil basculé en arabe, malgré
     la lecture de droite à gauche ; retournée en CSS (toutes les pages générées et
     l'accueil), testée avant et après publication dans les deux sens de bascule.
-    Reste : la ponctuation mixte (chiffres latins dans une phrase arabe).
+    Ponctuation mixte contrôlée à l'écran le 28/09 sur une fiche arabe (heures
+    « 20:00، 21:00 », note « 86/100 », noms de lieux latins dans la phrase) : tout se lit
+    dans l'ordre. Un vrai défaut trouvé au passage et corrigé le 28/09 : le titre latin
+    « 104. Jägerball, Ball vom Grünen Kreuz » se lisait « Jägerball، Ball vom Grünen .104
+    Kreuz » (le nombre en tête d'un titre latin dans un paragraphe arabe) ; titres des
+    fiches et des listes en dir="auto" sur toutes les pages générées, vérifié à l'écran
+    après publication. Reste : rien d'identifié ; à réobserver quand de nouvelles fiches
+    arabes arrivent.
 25. [FAIT 25/09, dans la limite du possible sans Cloudflare] En-têtes de sécurité :
     Content-Security-Policy et Referrer-Policy posées en balise <meta> sur toutes les
     pages (le site n'a aucun en-tête HTTP configurable sur GitHub Pages). La CSP
@@ -268,9 +298,10 @@ Object]) dans title/description/og/h1, V2 saison périmée dans les métadonnée
 structure, V3 page sans title/description/canonical, V4 d2 < d1, V5 compteurs
 divergents, V6 lien interne cassé, V7 URL de sitemap sans fichier, V8 JSON-LD
 illisible, V9 hreflang vers fichier absent, V10 grappes hreflang réciproques, V11 budget
-de poids, V12 tiret long dans le texte visible d'une page publiée (28/09). En
-avertissement (promotion à venir) : W1 date écrite hors fenêtre machine, W2 page sans
-h1. 8 166 pages contrôlées au 28/09.
+de poids, V12 tiret long dans le texte visible d'une page publiée (28/09), V13 saison
+du bandeau dans le JSON d'interface des 13 langues (28/09). En avertissement (promotion
+à venir) : W1 date écrite hors fenêtre machine, W2 page sans h1. 8 179 pages contrôlées
+au 28/09.
 Dès sa première exécution, le verrou a attrapé : le lien du bandeau vers Royal Ascot
 cassé par la normalisation des lieux, les liens mémoire brisés des pages Note en
 12 langues, et la fiche D&G Casa Amor finissant en machine le 30/08 alors que son

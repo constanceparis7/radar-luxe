@@ -22,6 +22,10 @@ Bloqueurs :
       absolue de Constance. Posé le 28/09/2026, le jour où l'on a découvert que deux
       lignes du générateur en republiaient près de 22 000 chaque nuit sans que rien
       ne le voie (les purges ne regardaient que les données, pas les pages générées).
+  V13 Saison du bandeau (clé brandline_season du JSON d'interface de l'accueil, 13
+      langues) différente de la saison attendue pour la date du jour (saison.py).
+      Posé le 28/09/2026 : l'accueil affichait « Summer 2026 » six jours après
+      l'équinoxe, parce que V2 ne lit que les métadonnées, jamais ce JSON.
 Avertissements (candidats à promotion une fois le corpus propre) :
   W1  Date écrite dans dt hors de la fenêtre machine [d1-2j, d2+2j].
   W2  Page sans h1.
@@ -162,6 +166,21 @@ RX_DATE_FR = re.compile(r"\b(\d{1,2})(?:er)?\s+(" + "|".join(MOIS) + r")\s+(\d{4
 def controle_donnees():
     h = open(os.path.join(REPO, "index.html"), encoding="utf-8").read()
     evts = json.loads(re.search(r'<script[^>]*id="data"[^>]*>(.*?)</script>', h, re.S).group(1))
+    # V13 : la saison du bandeau, dans le JSON d'interface (13 langues)
+    try:
+        sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+        import saison as _saison
+        _s, _an = _saison.saison_de(date.today())
+        attendu = f"{_saison.ANGLAIS[_s]} {_an}"
+        mi = re.search(r'<script type="application/json" id="i18n">(.*?)</script>', h, re.S)
+        if mi:
+            ui = json.loads(mi.group(1))
+            faux = sorted(lg for lg, d in ui.items() if isinstance(d, dict) and d.get("brandline_season") not in (None, attendu))
+            if faux:
+                bloq.append(f"V13 bandeau : brandline_season ≠ « {attendu} » dans {len(faux)} langue(s) "
+                            f"({', '.join(faux[:5])}{'…' if len(faux) > 5 else ''}) ; lancer .radar/tools/saison.py")
+    except Exception as ex:  # saison.py absent ou illisible : on le dit, sans bloquer
+        warn.append(f"V13 non évalué ({ex})")
     for e in evts:
         n = (e.get("n") or "")[:55]
         d1, d2 = e.get("d1"), e.get("d2")

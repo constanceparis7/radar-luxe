@@ -63,12 +63,16 @@ reste dérisoire pour un million de visiteurs par jour.
 Légende : [100] fait · [50] à moitié · [0] à faire. Le taux d'un objectif est la
 moyenne de ses micro-objectifs.
 
-### O1 · Fondations sans point faible (registre de l'audit croisé) · 81 %
+### O1 · Fondations sans point faible (registre de l'audit croisé) · 82 %
 - [100] Verrou de build bloquant sur les 7 876 pages, 13 langues
 - [100] Compteurs réconciliés et expliqués
 - [100] Redirections des anciennes adresses (lieux et fiches)
 - [100] Français résiduel traduit dans les 12 langues
-- [100] Métadonnées saisonnières purgées, titres « None » réparés
+- [100] Métadonnées saisonnières purgées, titres « None » réparés ; défaut trouvé le 28/09 :
+        la ligne de marque du bloc d'accueil affichait encore « Summer 2026 » dans les 13
+        langues (JSON d'interface, jamais lu par le contrôle V2) ; corrigé (saison.py
+        relancé, motif du titre réparé) et verrou V13 posé (saison du bandeau contrôlée
+        à chaque publication)
 - [95]  Échappement et injection (recherche, favoris, JS) : testé en direct le 25/09,
         injection HTML/script bloquée, script CJK/arabe/cyrillique/emoji/entrées très
         longues sans casse ; défaut trouvé et corrigé (recherche insensible aux accents
@@ -84,15 +88,20 @@ moyenne de ses micro-objectifs.
 - [100] JSON-LD Event recalibré le 20/09 : offre seulement si l'accès s'achète ou se
         réserve (237 fiches sur 320 au lieu de toutes), jamais d'InStock sur invitation,
         gratuité seulement si écrite, statut annulé ou reporté lu dans les textes
-- [60]  Fraîcheur : trois dates distinctes et honnêtes (passe, fiche, file de
-        revérification) ; mesure du 28/09 (après purge de 3 zombies) : 58 fiches
-        vivantes sur 214 portent une date de vérification écrite, 106 imminentes ou
-        en cours à revérifier ; outil reverification.py et étape 5bis de la doctrine
-        posés le 27/09 ; 2 fiches revérifiées à la source le 28/09 (Fondazione Prada
-        programme d'été, Villa Carmignac « Sea, Pop & Sun » — dates officielles
-        confirmées à l'identique), 1 doute maintenu avec preuve de recherche (Gaïo
-        Saint-Tropez : aucune date de fin de saison publiée sur le site officiel) ;
-        reste à faire descendre la file
+- [80]  Fraîcheur : trois dates distinctes et honnêtes (passe, fiche, file de
+        revérification) ; outil reverification.py et étape 5bis de la doctrine posés le
+        27/09. Le 28/09, la passe de nuit a revérifié 2 fiches (Fondazione Prada, Villa
+        Carmignac) et maintenu 1 doute avec preuve (Gaïo Saint-Tropez, aucune date de fin
+        publiée) ; puis 40 fiches imminentes ou en cours ont été confrontées à leur source
+        officielle par 10 lots parallèles (citation verbatim exigée, site tiers refusé) :
+        28 confirmées à l'identique et datées, 5 corrigées (Sphère ouvre le 30 septembre
+        et non le 28 ; Arqana du 20 au 23 octobre ; Sotheby's Hong Kong vente du soir le
+        28 et ventes de jour le 29 ; Global Gift Gala Paris le 5 novembre au Four Seasons
+        George V et non « octobre, date inconnue » ; Journées Particulières LVMH 71 lieux
+        dans 13 pays, fiche renommée avec redirection), 6 introuvables laissées sans date
+        (sites en 403 ou sans date publiée) ; toutes les corrections traduites dans les
+        13 langues. Mesure après : 71 fiches vivantes sur 214 datées, file de
+        revérification de 106 à 72. Reste à faire descendre la file (passes de nuit).
 - [100] Statuts des récurrents et saisons : JSON-LD de l'accueil recalculé à chaque
         build depuis le 27/09 (annulé, reporté, programmé seulement si confirmé, sinon
         aucun statut affirmé) ; champ de confirmation ramené à trois valeurs, 35 fiches
@@ -121,11 +130,17 @@ moyenne de ses micro-objectifs.
         visuel, style porté par la classe CSS, pas la balise) ; flèches décoratives des
         liens masquées aux lecteurs d'écran le 28/09 (aria-hidden, toutes les pages) ; reste
         un vrai passage au lecteur d'écran
-- [88]  Arabe de droite à gauche et langues CJK contrôlés à l'écran le 20/09 : rendu
+- [95]  Arabe de droite à gauche et langues CJK contrôlés à l'écran le 20/09 : rendu
         correct, et un vrai bogue attrapé (le lien d'évitement décalait toute la page
         arabe hors de l'écran) ; flèches directionnelles retournées le 25/09 (page
-        arabe et accueil basculé en arabe, testé dans les deux sens) ; reste la
-        ponctuation mixte (chiffres latins dans une phrase arabe)
+        arabe et accueil basculé en arabe, testé dans les deux sens) ; ponctuation mixte
+        contrôlée à l'écran le 28/09 sur une fiche arabe (heures, note 86/100, noms de
+        lieux latins dans une phrase arabe : tout se lit dans l'ordre) ; un vrai défaut
+        trouvé et corrigé le 28/09 : un titre latin commençant par un nombre
+        (« 104. Jägerball… ») se lisait « Jägerball… .104 » sur la page arabe ; titres
+        des fiches et des listes en dir=auto sur toutes les pages, vérifié à l'écran ;
+        langue et sens de lecture mémorisés appliqués dès l'en-tête de l'accueil (plus
+        de bascule après le premier affichage)
 - [0]   En-têtes de sécurité (dépend de Cloudflare devant)
 - [0]   Newsletter : double opt-in, anti-spam, désinscription (samedi 20/09)
 
@@ -153,7 +168,7 @@ moyenne de ses micro-objectifs.
         si Cloudflare passe devant le site
 - [hors périmètre] Cloudflare devant, en-têtes HTTP, vrais 301, HTTP/3, Cloudflare Pages, R2, Workers, D1
 
-### O3 · Vitesse mobile, Android et iOS (PRIORITÉ ABSOLUE) · 98 %
+### O3 · Vitesse mobile, Android et iOS (PRIORITÉ ABSOLUE) · 99 %
 Mesure de référence du 18/09/2026 : un téléphone reçoit 820 Ko pour l'accueil
 (2 547 Ko bruts), plus 294 Ko de photo et 43 Ko d'index de recherche, soit environ
 1,15 Mo. Le poids vient de deux champs embarqués inutiles au premier affichage :
@@ -169,15 +184,19 @@ les textes de séjour (1 088 Ko) et les journaux d'enquête (619 Ko). Une fiche
 - [écarté 20/09] JSON-LD de l'accueil en liste : gain mesuré de 8 Ko compressés seulement,
         contre la règle « gen_pages ne modifie jamais index.html » ; pas rentable
 - [100] Budget de poids au verrou (V11 : accueil sous 1 000 Ko bruts, fiche sous 60 Ko)
-- [85]  LCP < 2,5 s, INP < 200 ms, CLS < 0,1 : mesurés le 28/09 par le protocole DevTools
+- [92]  LCP < 2,5 s, INP < 200 ms, CLS < 0,1 : mesurés le 28/09 par le protocole DevTools
         de Chrome dans les conditions de Lighthouse mobile (écran 412 px, 4G lent 1,6 Mbit/s
         et 150 ms, CPU ralenti 4 fois), outil persisté. Accueil : LCP 0,43 à 1,07 s, CLS
         0,08, INP 264 ms (et jusqu'à 3 s quand le clic tombait pendant le rendu des cartes)
         AVANT correction ; corrigé le même jour (rendu différé des jours hors écran par
         content-visibility, frappe de recherche regroupée à 120 ms) : INP 88 à 120 ms en
-        ligne, aucune erreur. Fiches : LCP 0,34 à 0,67 s, CLS 0, 4 à 6 Ko transférés. Reste
-        la mesure PageSpeed officielle (quota toujours épuisé) et une mesure hebdomadaire ;
-        le CLS de 0,08 de l'accueil reste sous le seuil mais mérite d'être ramené vers 0.
+        ligne, aucune erreur. Fiches : LCP 0,34 à 0,67 s, CLS 0, 4 à 6 Ko transférés. CLS
+        de l'accueil ramené de 0,08 à 0 le même jour : le décalage venait des libellés du
+        bloc d'accueil remplacés après le premier affichage (barre de catégories sur une
+        ligne de plus) ; libellés statiques alignés, bloc de langue généré à chaque build et
+        placé avant le reste de la page ; mesuré en ligne à 0 en français, anglais, arabe et
+        chinois (LCP 0,43 à 0,90 s). Reste la mesure PageSpeed officielle (quota toujours
+        épuisé) ; la mesure hebdomadaire du lundi est inscrite à la doctrine (5ter).
 - [100] Rendu progressif des cartes (25/09) : les deux premiers jours s'affichent aussitôt,
         le reste par lots hors du fil principal (requestIdleCallback, repli iOS/Safari),
         recherche toujours instantanée, vérifié sans doublon ni erreur
