@@ -897,7 +897,13 @@ une issue GitHub.
    journalisés dans `.radar/tools/vitals-log.ndjson`. Seuils : LCP 2 500 ms,
    INP 200 ms, CLS 0,1 ; au-dessus, c'est un défaut à corriger avant toute
    autre tâche (priorité absolue de Constance). Le quota PageSpeed étant
-   épuisé en permanence, c'est la mesure de référence du radar.
+   épuisé en permanence, c'est la mesure de référence du radar. Le même
+   lundi : validité HTML de trois pages (accueil, une fiche, une page de
+   liste) au validateur W3C (`curl --data-binary @page.html
+   "https://validator.w3.org/nu/?out=json"`, 0 erreur attendue hors les deux
+   faux positifs image-set de l'accueil) et audit axe-core des mêmes pages
+   (`python3 audit_axe.py URL...`, outil du scratchpad à persister si utile),
+   0 violation attendue.
 6. Mettre à jour la date de l'eyebrow (« données collectées et vérifiées le
    JJ mois 2026 »).
 7. Ré-injecter le JSON data (« </ » → « <\/ »), réécrire index.html.

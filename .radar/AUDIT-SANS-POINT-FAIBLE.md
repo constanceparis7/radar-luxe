@@ -226,7 +226,14 @@ de chaque correction, et le verrou final est un validateur de build BLOQUANT.
     2 lignes dans index.html, validate.py et perfcheck.py relancés, 0 régression. Symboles :
     le bouton thème porte un aria-label qui couvre ◐ ; les flèches → décoratives des liens
     sont masquées aux lecteurs d'écran depuis le 28/09 (aria-hidden, toutes les pages
-    générées). Reste : un vrai passage au lecteur d'écran.
+    générées). Audit automatisé axe-core le 28/09 (WCAG 2.1 A/AA et bonnes pratiques,
+    injecté par DevTools sur le site en ligne, rien de modifié) : accueil 0 violation ;
+    fiches et page favoris : 1 violation sérieuse, réelle (liens du fil d'Ariane et de la
+    ligne de métadonnées distingués par la couleur seule) ; corrigée par un soulignement
+    fin sur toutes les pages générées, 0 violation après. Validité HTML (W3C Nu) le même
+    jour : toutes les fiches portaient une erreur de structure (un <style> dans le corps de
+    page, après le titre), corrigée ; pages générées à 0 erreur et 0 avertissement ;
+    verrou V14 posé. Reste : un vrai passage au lecteur d'écran.
 24. [EN COURS 25/09, flèches directionnelles corrigées] RTL arabe (nombres/dates
     isolés, fil d'Ariane) et CJK (polices, coupures, pas de troncature au compte de
     caractères latins) : rendu vérifié à 375 et 320 px le 20/09, bogue du lien

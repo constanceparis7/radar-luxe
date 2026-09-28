@@ -63,7 +63,7 @@ reste dérisoire pour un million de visiteurs par jour.
 Légende : [100] fait · [50] à moitié · [0] à faire. Le taux d'un objectif est la
 moyenne de ses micro-objectifs.
 
-### O1 · Fondations sans point faible (registre de l'audit croisé) · 82 %
+### O1 · Fondations sans point faible (registre de l'audit croisé) · 84 %
 - [100] Verrou de build bloquant sur les 7 876 pages, 13 langues
 - [100] Compteurs réconciliés et expliqués
 - [100] Redirections des anciennes adresses (lieux et fiches)
@@ -133,8 +133,18 @@ moyenne de ses micro-objectifs.
         15,96, tout au-dessus du seuil de 4,5 pour 1 ; saut de niveau de titre h2→h4
         corrigé le 26/09 (Classement Prestige et Archives, passés en h3, aucun changement
         visuel, style porté par la classe CSS, pas la balise) ; flèches décoratives des
-        liens masquées aux lecteurs d'écran le 28/09 (aria-hidden, toutes les pages) ; reste
-        un vrai passage au lecteur d'écran
+        liens masquées aux lecteurs d'écran le 28/09 (aria-hidden, toutes les pages) ; audit
+        automatisé axe-core (WCAG 2.1 AA et bonnes pratiques) le 28/09 sur accueil, fiche,
+        fiche arabe, hub et favoris : un vrai défaut trouvé et corrigé (liens des fils
+        d'Ariane et des lignes de métadonnées distingués par la couleur seule ; soulignés
+        d'un trait fin sur toutes les pages), 0 violation après correction ; reste un vrai
+        passage au lecteur d'écran
+- [95]  Validité HTML (validateur W3C, 28/09) : une erreur de structure sur toutes les
+        fiches corrigée (bloc de style dans le corps de page, déplacé dans l'en-tête),
+        adresse du script de mesure explicitée, cinq blocs de l'accueil sans titre passés
+        en div ; pages générées à 0 erreur et 0 avertissement ; l'accueil ne garde que
+        deux faux positifs (syntaxe image-set avec type(), que le validateur ne connaît
+        pas encore) ; verrou V14 : plus jamais de style dans le corps d'une page
 - [95]  Arabe de droite à gauche et langues CJK contrôlés à l'écran le 20/09 : rendu
         correct, et un vrai bogue attrapé (le lien d'évitement décalait toute la page
         arabe hors de l'écran) ; flèches directionnelles retournées le 25/09 (page
@@ -225,7 +235,7 @@ les textes de séjour (1 088 Ko) et les journaux d'enquête (619 Ko). Une fiche
 - [0]   Rendu à la volée au-delà de 850 événements (limite des 20 000 fichiers)
 - [0]   API publique JSON (partenaires, assistants d'IA, applications)
 
-### O5 · Visibilité organique mondiale · 68 %
+### O5 · Visibilité organique mondiale · 75 %
 - [100] Titres en forme de requêtes, 13 langues, mois courant automatique
 - [100] hreflang sur les pages et dans le sitemap
 - [100] 88 pages Questions FR et EN, balisage FAQ
@@ -247,7 +257,7 @@ les textes de séjour (1 088 Ko) et les journaux d'enquête (619 Ko). Une fiche
         son titre et ses liens vers les deux autres (vérifiés) ; reste la mesure au 2/10
 - [0]   Liens entrants (en pause volontaire ; liste de 20 relais prête)
 
-### O6 · Produit et rétention · 59 %
+### O6 · Produit et rétention · 64 %
 - [100] Favoris partout, page Mes favoris, compteur
 - [100] Moteur Comment entrer, Note du radar, Protocole, Questions
 - [75]  Partage : aperçus og par page, dimensions et texte alternatif de l'image depuis le

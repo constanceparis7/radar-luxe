@@ -26,6 +26,9 @@ Bloqueurs :
       langues) différente de la saison attendue pour la date du jour (saison.py).
       Posé le 28/09/2026 : l'accueil affichait « Summer 2026 » six jours après
       l'équinoxe, parce que V2 ne lit que les métadonnées, jamais ce JSON.
+  V14 Balise <style> dans le <body> d'une page publiée (erreur de structure HTML signalée
+      par le validateur W3C le 28/09/2026 sur toutes les fiches ; les styles vont dans
+      l'en-tête).
 Avertissements (candidats à promotion une fois le corpus propre) :
   W1  Date écrite dans dt hors de la fenêtre machine [d1-2j, d2+2j].
   W2  Page sans h1.
@@ -150,6 +153,20 @@ def controle_pages():
             for u in set(RX_ALT.findall(h)):
                 if not cible_existe(u):
                     bloq.append(f"V9 {rel} : hreflang vers fichier absent {u}")
+        # V14 : un <style> dans le corps de page n'est toléré par la grammaire HTML que
+        # comme PREMIER enfant de son parent (l'accueil en a, en tête de ses blocs) ;
+        # ailleurs (après un titre, un bouton…), c'est une erreur de structure.
+        if rel != "index-full.html":
+            ib = h.find("<body")
+            pos = h.find("<style", ib) if ib >= 0 else -1
+            while pos >= 0:
+                avant = h[ib:pos].rstrip()
+                dernier = re.search(r"<(/?)([a-zA-Z][^\s>/]*)[^>]*>$", avant)
+                premier_enfant = bool(dernier) and dernier.group(1) == "" and not avant.endswith("/>")
+                if not premier_enfant:
+                    bloq.append(f"V14 {rel} : balise <style> dans le corps de page, hors première position")
+                    break
+                pos = h.find("<style", pos + 6)
         # V12 : texte visible seulement (scripts, styles et balises retirés) ;
         # index-full.html est la source de travail, jamais publiée.
         if rel != "index-full.html":
