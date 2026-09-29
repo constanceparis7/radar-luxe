@@ -63,7 +63,7 @@ reste dérisoire pour un million de visiteurs par jour.
 Légende : [100] fait · [50] à moitié · [0] à faire. Le taux d'un objectif est la
 moyenne de ses micro-objectifs.
 
-### O1 · Fondations sans point faible (registre de l'audit croisé) · 84 %
+### O1 · Fondations sans point faible (registre de l'audit croisé) · 85 %
 - [100] Verrou de build bloquant sur les 7 876 pages, 13 langues
 - [100] Compteurs réconciliés et expliqués
 - [100] Redirections des anciennes adresses (lieux et fiches)
@@ -73,10 +73,12 @@ moyenne de ses micro-objectifs.
         langues (JSON d'interface, jamais lu par le contrôle V2) ; corrigé (saison.py
         relancé, motif du titre réparé) et verrou V13 posé (saison du bandeau contrôlée
         à chaque publication)
-- [95]  Échappement et injection (recherche, favoris, JS) : testé en direct le 25/09,
+- [100] Échappement et injection (recherche, favoris, JS) : testé en direct le 25/09,
         injection HTML/script bloquée, script CJK/arabe/cyrillique/emoji/entrées très
         longues sans casse ; défaut trouvé et corrigé (recherche insensible aux accents
-        depuis le 25/09, « Cote » trouve « Côte »)
+        depuis le 25/09, « Cote » trouve « Côte ») ; apostrophes typographiques ramenées à
+        l'apostrophe droite le 28/09 (« l’opéra » et « l'opera » donnent les mêmes 4
+        cartes, testé avant publication)
 - [60]  Cannibalisation entre langues : hreflang dans le sitemap posé ; matrice intention
         vers adresse unique posée le 28/09 (.radar/MATRICE-INTENTIONS.md : fiche d'édition,
         guide permanent français, page lieu, rôles et titres distincts, liens réciproques
@@ -298,7 +300,7 @@ les textes de séjour (1 088 Ko) et les journaux d'enquête (619 Ko). Une fiche
 - [0]   Double opt-in, SPF, DKIM, DMARC pour la newsletter
 - [0]   En-têtes de sécurité (Cloudflare)
 
-### O8 · Observabilité et pilotage · 77 %
+### O8 · Observabilité et pilotage · 82 %
 - [100] Compteur public GoatCounter
 - [100] Search Console vérifiée, exports lus
 - [100] Sonde du matin (quotidienne) et contrôle Google contre site (hebdomadaire)
@@ -306,8 +308,12 @@ les textes de séjour (1 088 Ko) et les journaux d'enquête (619 Ko). Une fiche
 - [100] Sonde de disponibilité : locale sans interruption depuis le 18/09 (zéro 5xx), et
         depuis le 28/09 chez GitHub toutes les 30 minutes, indépendante de la machine (plus
         rien à relancer si elle redémarre)
-- [30]  Tableau de bord unique (tableau-de-bord.html à enrichir ; ses 7 tirets longs
-        purgés le 28/09)
+- [75]  Tableau de bord unique : générateur .radar/tools/tableau_de_bord.py posé le 28/09,
+        qui lit les journaux existants (visiteurs par jour, vitesse mobile LCP/INP/CLS,
+        fraîcheur et file de revérification, taux de la feuille de route, dernières
+        publications et passes) et produit une page privée, publiée à Constance en artefact
+        « Pilotage ConstanceParis7 » ; le tableau public des visites reste tel quel (ses 7
+        tirets purgés le 28/09) ; reste à le régénérer chaque matin par la sonde
 - [0]   Statistiques Cloudflare sans cookie
 - [85]  Alertes : la sonde du matin contrôle que la passe de nuit a tourné et la relance
         sinon, mesure PageSpeed et tient un journal de vitesse (20/09) ; alerte hors

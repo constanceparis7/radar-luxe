@@ -2,3 +2,5 @@ index-full.html
 .radar/tools/.lock
 linkchecktmp/
 __pycache__/
+
+.radar/tools/axe.min.js

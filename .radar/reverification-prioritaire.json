@@ -1,8 +1,8 @@
 {
  "genere_le": "2026-09-29",
  "regle": "fiche non terminée, commençant dans 21 jours ou déjà en cours, dont la dernière vérification écrite est absente ou date de plus de 30 jours ; triée par imminence puis par ancienneté",
- "total_vivantes": 211,
- "avec_date_verif": 69,
+ "total_vivantes": 207,
+ "avec_date_verif": 72,
  "prioritaires": [
   {
    "n": "Gaïo Saint-Tropez, dîner-cabaret & club 2026",
@@ -96,15 +96,6 @@
   },
   {
    "n": "Boutique ephemere Chanel a East Hampton",
-   "d1": "2026-05-22",
-   "d2": "2026-09-30",
-   "dans_jours": -130,
-   "verifie_le": null,
-   "age_jours": null,
-   "cf": "confirme"
-  },
-  {
-   "n": "Le Jardin de Cheval Blanc Paris, rooftop d'été (7e étage)",
    "d1": "2026-05-22",
    "d2": "2026-09-30",
    "dans_jours": -130,
@@ -293,15 +284,6 @@
    "cf": "confirme"
   },
   {
-   "n": "Hôtel & Spa des Pêcheurs, saison 2026 sur l'île de Cavallo (« l'île des milliardaires »)",
-   "d1": "2026-07-01",
-   "d2": "2026-09-30",
-   "dans_jours": -90,
-   "verifie_le": null,
-   "age_jours": null,
-   "cf": "confirme"
-  },
-  {
    "n": "Sunset sessions & DJ sets à La Co(o)rniche (Philippe Starck)",
    "d1": "2026-07-01",
    "d2": "2026-09-30",
@@ -338,15 +320,6 @@
    "cf": "confirme"
   },
   {
-   "n": "DaV Mare, Splendido Mare, A Belmond Hotel (famille Cerea / Da Vittorio)",
-   "d1": "2026-07-01",
-   "d2": "2027-01-05",
-   "dans_jours": -90,
-   "verifie_le": null,
-   "age_jours": null,
-   "cf": "confirme"
-  },
-  {
    "n": "Covo di Nord-Est, club iconique de la Riviera",
    "d1": "2026-07-01",
    "d2": "2026-09-30",
@@ -365,25 +338,7 @@
    "cf": "confirme"
   },
   {
-   "n": "David Guetta F*** Me I'm Famous!, Ushuaia Ibiza",
-   "d1": "2026-07-01",
-   "d2": "2026-10-05",
-   "dans_jours": -90,
-   "verifie_le": null,
-   "age_jours": null,
-   "cf": "confirme"
-  },
-  {
    "n": "Lio Ibiza, Cabaret dinner-show 'Halftime Show' & club",
-   "d1": "2026-07-01",
-   "d2": "2026-10-04",
-   "dans_jours": -90,
-   "verifie_le": null,
-   "age_jours": null,
-   "cf": "confirme"
-  },
-  {
-   "n": "Blue Marlin Ibiza, Beach club VIP (Cala Jondal)",
    "d1": "2026-07-01",
    "d2": "2026-10-04",
    "dans_jours": -90,
@@ -437,15 +392,6 @@
    "cf": "probable"
   },
   {
-   "n": "Verde Beach Saint-Tropez, nuits DJ d'exception 2026",
-   "d1": "2026-07-01",
-   "d2": "2026-09-30",
-   "dans_jours": -90,
-   "verifie_le": null,
-   "age_jours": null,
-   "cf": "probable"
-  },
-  {
    "n": "Soirées d'été du Casino Barrière Le Touquet",
    "d1": "2026-07-01",
    "d2": "2026-10-24",
@@ -482,15 +428,6 @@
    "cf": "confirme"
   },
   {
-   "n": "GAIA Bodrum, résidence estivale grecque-méditerranéenne au Mandarin Oriental",
-   "d1": "2026-07-16",
-   "d2": "2026-09-30",
-   "dans_jours": -75,
-   "verifie_le": null,
-   "age_jours": null,
-   "cf": "confirme"
-  },
-  {
    "n": "La Guérite, dîners au coucher du soleil, Île Sainte-Marguerite",
    "d1": "2026-07-17",
    "d2": "2026-10-31",
@@ -502,7 +439,7 @@
   {
    "n": "Le Bâoli Cannes, saison estivale 2026 (club & dîner festif)",
    "d1": "2026-07-18",
-   "d2": "2026-09-30",
+   "d2": "2026-10-31",
    "dans_jours": -73,
    "verifie_le": null,
    "age_jours": null,

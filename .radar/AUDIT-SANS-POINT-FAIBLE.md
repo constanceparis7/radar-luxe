@@ -150,8 +150,10 @@ de chaque correction, et le verrou final est un validateur de build BLOQUANT.
     25/09 : la recherche était sensible aux accents (« Cote » ne trouvait pas « Côte »,
     15 résultats contre 0) ; normalisation Unicode NFD posée sur la requête et le texte
     cherché, vérifiée avant et après publication (Cote/COTE/Côte/cÔtE donnent maintenant
-    tous 15). Reste : apostrophes typographiques (moins prioritaire, la recherche ne
-    porte déjà pas sur les libellés de zone où elles apparaissent).
+    tous 15). Apostrophes typographiques (’ ‘ ʼ) ramenées à l'apostrophe droite dans la
+    requête et le texte cherché le 28/09 : « l’opéra », « l'opera » et « l’Opéra » donnent
+    les mêmes 4 cartes, « d’hiver » et « d'hiver » les mêmes 8 (testé avant publication).
+    Rien ne reste sur ce point.
 20. [FAIT 27/09] Dates et fuseaux. Fuseau de référence : Paris, via Intl (Europe/Paris)
     pour « aujourd'hui », « en cours » et les horloges, donc juste été comme hiver et
     pour un lecteur à New York ou Tokyo ; documenté sur la page La méthode depuis le
