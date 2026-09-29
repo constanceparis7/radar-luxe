@@ -6,7 +6,7 @@ METHOD:PUBLISH
 BEGIN:VEVENT
 UID:acces-payant-billetterie-de-defiles-conciergerie-de-luxe-paris@constanc
  eparis7.com
-DTSTAMP:20260928T000000Z
+DTSTAMP:20260929T000000Z
 DTSTART;VALUE=DATE:20260928
 DTEND;VALUE=DATE:20261007
 SUMMARY:Paid access\, runway-show ticketing & luxury concierge

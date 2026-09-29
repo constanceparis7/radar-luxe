@@ -6,7 +6,7 @@ METHOD:PUBLISH
 BEGIN:VEVENT
 UID:ravello-festival-soiree-de-cloture-avec-sir-simon-rattle-ravello@consta
  nceparis7.com
-DTSTAMP:20260928T000000Z
+DTSTAMP:20260929T000000Z
 DTSTART;VALUE=DATE:20260905
 DTEND;VALUE=DATE:20260906
 SUMMARY:Ravello Festival\, Closing Night with Sir Simon Rattle

@@ -6,7 +6,7 @@ METHOD:PUBLISH
 BEGIN:VEVENT
 UID:paris-fashion-week-pret-a-porter-printemps-ete-2027-paris@constancepari
  s7.com
-DTSTAMP:20260928T000000Z
+DTSTAMP:20260929T000000Z
 DTSTART;VALUE=DATE:20260928
 DTEND;VALUE=DATE:20261007
 SUMMARY:Paris Fashion Week\, Ready-to-Wear Spring/Summer 2027
