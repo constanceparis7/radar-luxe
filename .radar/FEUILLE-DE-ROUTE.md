@@ -95,7 +95,7 @@ moyenne de ses micro-objectifs.
 - [100] JSON-LD Event recalibré le 20/09 : offre seulement si l'accès s'achète ou se
         réserve (237 fiches sur 320 au lieu de toutes), jamais d'InStock sur invitation,
         gratuité seulement si écrite, statut annulé ou reporté lu dans les textes
-- [80]  Fraîcheur : trois dates distinctes et honnêtes (passe, fiche, file de
+- [85]  Fraîcheur : trois dates distinctes et honnêtes (passe, fiche, file de
         revérification) ; outil reverification.py et étape 5bis de la doctrine posés le
         27/09. Le 28/09, la passe de nuit a revérifié 2 fiches (Fondazione Prada, Villa
         Carmignac) et maintenu 1 doute avec preuve (Gaïo Saint-Tropez, aucune date de fin
@@ -107,8 +107,12 @@ moyenne de ses micro-objectifs.
         George V et non « octobre, date inconnue » ; Journées Particulières LVMH 71 lieux
         dans 13 pays, fiche renommée avec redirection), 6 introuvables laissées sans date
         (sites en 403 ou sans date publiée) ; toutes les corrections traduites dans les
-        13 langues. Mesure après : 71 fiches vivantes sur 214 datées, file de
-        revérification de 106 à 72. Reste à faire descendre la file (passes de nuit).
+        13 langues. Second lot dans la nuit du 28 au 29/09 (62 fiches, coupé par la limite
+        de session, relancé) : Ushuaïa et Blue Marlin confirmés (fins de saison), Splendido
+        Mare corrigé (ouvert jusqu'au 6 janvier 2027, source Belmond), 7 saisons sans date
+        de fin publiée laissées sans date ; la passe de nuit du 29/09 a corrigé 5 dates de
+        fin sur source et purgé 7 fiches terminées. Mesure au 29/09 : 207 fiches vivantes,
+        72 datées, file de revérification de 106 à 65. Reste à faire descendre la file.
 - [100] Statuts des récurrents et saisons : JSON-LD de l'accueil recalculé à chaque
         build depuis le 27/09 (annulé, reporté, programmé seulement si confirmé, sinon
         aucun statut affirmé) ; champ de confirmation ramené à trois valeurs, 35 fiches

@@ -5,3 +5,6 @@
 {"date": "2026-09-28", "url": "https://constanceparis7.com/en/lieu/milan.html", "lcp_ms": 380, "cls": 0, "inp_ms": null, "fcp_ms": 380, "ttfb_ms": 239, "load_ms": 445, "transfert_ko": 4}
 {"date": "2026-09-28", "url": "https://constanceparis7.com/", "lcp_ms": 900, "cls": 0.081, "inp_ms": 120, "fcp_ms": 900, "ttfb_ms": 494, "load_ms": 2661, "transfert_ko": 315, "note": "après correction INP, en ligne"}
 {"date": "2026-09-28", "url": "https://constanceparis7.com/", "lcp_ms": 432, "cls": 0.081, "inp_ms": 88, "fcp_ms": 296, "ttfb_ms": 162, "load_ms": 1758, "transfert_ko": 831, "note": "après correction INP, en ligne, 2e passe"}
+{"date": "2026-09-29", "url": "https://constanceparis7.com/", "lcp_ms": 864, "cls": 0, "inp_ms": 120, "fcp_ms": 864, "ttfb_ms": 584, "load_ms": 2762, "transfert_ko": 314}
+{"date": "2026-09-29", "url": "https://constanceparis7.com/e/paris-fashion-week-pret-a-porter-printemps-ete-2027-paris.html", "lcp_ms": 520, "cls": 0, "inp_ms": null, "fcp_ms": 520, "ttfb_ms": 289, "load_ms": 528, "transfert_ko": 18}
+{"date": "2026-09-29", "url": "https://constanceparis7.com/ar/", "lcp_ms": 364, "cls": 0, "inp_ms": null, "fcp_ms": 364, "ttfb_ms": 184, "load_ms": 383, "transfert_ko": 19}

@@ -88,7 +88,13 @@ de chaque correction, et le verrou final est un validateur de build BLOQUANT.
    45 Maisons, fiche renommée avec redirection et journal des renommages) ; 6
    introuvables laissées sans date (Bon Marché en 403, agrégateurs, saisons sans date de
    fin publiée). Mesure après : 214 vivantes, 71 datées, file de 106 à 72.
-   Reste : faire descendre les 72, au rythme des passes (suivi au compte rendu quotidien).
+   Nuit du 28 au 29/09 : second lot de 62 fiches lancé (coupé par la limite de session,
+   relancé) ; acquis : Ushuaïa et Blue Marlin confirmés, Splendido Mare corrigé (jusqu'au
+   6 janvier 2027), 7 saisons sans date de fin publiée (Co(o)rniche, Westminster, Annabel's,
+   Langosteria Paraggi, Covo di Nord-Est, La Gritta, Lío) laissées sans date, honnêtement.
+   La passe de nuit du 29/09 a corrigé 5 dates de fin sur source et purgé 7 fiches
+   terminées. Au 29/09 : 207 vivantes, 72 datées, 65 à revérifier.
+   Reste : faire descendre les 65, au rythme des passes (suivi au compte rendu quotidien).
 10. [FAIT 27/09] Statuts : le JSON-LD de l'accueil déclarait « programmé » pour tous
     les événements, date estimée comprise. Désormais recalculé à chaque build comme
     sur les fiches : annulé → EventCancelled, reporté → EventPostponed, programmé
