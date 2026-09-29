@@ -787,6 +787,71 @@ def main():
             txt = ics_file(e, lang)
             if txt:
                 write(f"/ics/{sous}{e['_slug']}.ics", txt)
+
+    # /api/evenements.json (29/09/2026, feuille de route O4) : le radar en un fichier JSON
+    # public, pour les partenaires, les assistants d'intelligence artificielle et les
+    # applications. Mêmes données que les pages, régénéré à chaque publication ; la page
+    # /api/ documente les champs et les conditions de réutilisation. Rien de plus que ce qui
+    # est déjà visible sur le site : pas de journal d'enquête, pas de séjour.
+    shutil.rmtree(os.path.join(REPO, "api"), ignore_errors=True)
+    _api = []
+    for e in pages:
+        if not e.get("d1"):
+            continue
+        _dv = date_verif(e)
+        _api.append({
+            "slug": e["_slug"],
+            "nom": e.get("n"),
+            "nom_en": T(e, "en", "n") or e.get("n"),
+            "debut": e.get("d1"), "fin": e.get("d2") or e.get("d1"),
+            "date_ecrite": e.get("dt"), "heure": e.get("h"),
+            "ville": e.get("v"), "lieu": e.get("l"), "categorie": e.get("c"),
+            "acces": e.get("a"), "confirmation": e.get("cf"),
+            "source_officielle": e.get("u"),
+            "verifie_le": (_dv if isinstance(_dv, str) else (_dv.strftime("%d/%m/%Y") if _dv else None)),
+            "note_radar": note_radar(e),
+            "url": {L: f"{BASE}{u_event(e, L)}" for L in ["fr"] + list(LANGS)},
+            "ics": f"{BASE}/ics/{e['_slug']}.ics",
+        })
+    _feed = {
+        "radar": "ConstanceParis7 · International Luxury Events",
+        "genere_le": _dt.date.today().isoformat(),
+        "nombre": len(_api),
+        "documentation": f"{BASE}/api/",
+        "conditions": "Réutilisation libre avec attribution « ConstanceParis7 » et lien vers la fiche ; usage commercial sur accord écrit (voir /api/).",
+        "evenements": _api,
+    }
+    write("/api/evenements.json", json.dumps(_feed, ensure_ascii=False, separators=(",", ":")))
+    _doc = (
+        "<div class=\"bc\"><a href=\"/\">Radar</a> · API</div>"
+        "<h1>Les données du radar, en JSON</h1>"
+        f"<p class=\"meta\">Un fichier public, régénéré à chaque publication : <b>{len(_api)} événements</b> au {_dt.date.today().strftime('%d/%m/%Y')}.</p>"
+        "<div class=\"box\"><h2>L'adresse</h2><p><a href=\"/api/evenements.json\">https://constanceparis7.com/api/evenements.json</a></p>"
+        "<p>Encodage UTF-8, accessible depuis n'importe quel site (CORS ouvert), sans clé ni compte. "
+        "Un fichier calendrier par événement existe aussi : <code>/ics/&lt;slug&gt;.ics</code> (français) et <code>/ics/en/&lt;slug&gt;.ics</code> (anglais).</p></div>"
+        "<h2 class=\"sub\">Les champs</h2>"
+        "<ul class=\"cards\">"
+        "<li><span class=\"t\">slug</span> · <span class=\"d\">identifiant stable de la fiche, entre dans son adresse</span></li>"
+        "<li><span class=\"t\">nom, nom_en</span> · <span class=\"d\">titre en français et en anglais ; les onze autres langues sont dans <b>url</b></span></li>"
+        "<li><span class=\"t\">debut, fin</span> · <span class=\"d\">dates machine AAAA-MM-JJ ; <b>date_ecrite</b> est la formulation exacte affichée, <b>heure</b> l'heure locale de début quand elle est publiée</span></li>"
+        "<li><span class=\"t\">ville, lieu, categorie, acces</span> · <span class=\"d\">catégorie parmi joaillerie, mode, art, festival, sport, artdevivre ; accès parmi public, vip, mixte</span></li>"
+        "<li><span class=\"t\">confirmation</span> · <span class=\"d\">confirme, probable ou averifier : le degré de certitude que le radar affirme, jamais plus</span></li>"
+        "<li><span class=\"t\">source_officielle, verifie_le</span> · <span class=\"d\">la page de l'organisateur, et la date de la dernière vérification écrite à la source (absente si la fiche n'a pas encore été revérifiée)</span></li>"
+        "<li><span class=\"t\">note_radar</span> · <span class=\"d\">la note sur 100, dont la méthode est publiée sur <a href=\"/note.html\">la page Note</a></span></li>"
+        "<li><span class=\"t\">url, ics</span> · <span class=\"d\">la fiche dans les treize langues, et le fichier calendrier</span></li>"
+        "</ul>"
+        "<h2 class=\"sub\">Les conditions</h2>"
+        "<p>Les données sont réutilisables librement avec la mention « ConstanceParis7 » et un lien vers la fiche concernée. "
+        "Tout usage commercial (application payante, revente, intégration dans un service facturé) se fait sur accord écrit préalable : "
+        "<a href=\"mailto:constanceparis75007@gmail.com\">constanceparis75007@gmail.com</a>. "
+        "Les dates et conditions d'accès peuvent changer sans préavis : le fichier reflète le site au jour de sa génération, confirmez toujours auprès de l'organisateur.</p>"
+        "<p lang=\"en\"><b>In English.</b> One public JSON file, regenerated at every publication, with every event of the radar: dates, venue, category, access, level of confirmation, official source, date of last verification, radar score, and the page in thirteen languages. Free to reuse with the credit “ConstanceParis7” and a link to the event page; commercial use by written agreement.</p>"
+        "<div class=\"chips\"><a href=\"/\">← Retour au radar</a><a href=\"/methode.html\">La méthode</a><a href=\"/mentions-legales.html\">Mentions légales</a></div>"
+    )
+    write("/api/index.html", page("fr", "Les données du radar en JSON · ConstanceParis7",
+                                  "Le radar ConstanceParis7 en un fichier JSON public : dates, lieux, accès, sources officielles et fiches en treize langues, régénéré à chaque publication.",
+                                  "/api/", _doc, f'<link rel="alternate" hreflang="fr" href="{BASE}/api/">'))
+    sitemap_urls.append(f"{BASE}/api/")
     # Normalisation des lieux du 17/09/2026 : les anciens libellés fusionnés
     # gardent une page de renvoi vers la destination canonique (jamais dans le
     # sitemap, noindex). Écrites AVANT les vraies pages : une vraie page au

@@ -21,3 +21,8 @@ When citing an event, please use the event page URL and mention constanceparis7.
 
 ## Contact
 constanceparis75007@gmail.com
+
+## Data
+
+- Public JSON feed of every event (dates, venue, access, official source, verification date, pages in 13 languages): https://constanceparis7.com/api/evenements.json (documentation: https://constanceparis7.com/api/)
+- One calendar file per event: https://constanceparis7.com/ics/<slug>.ics
