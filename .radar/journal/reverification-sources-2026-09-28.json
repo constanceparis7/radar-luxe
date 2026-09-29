@@ -1,0 +1,1014 @@
+{
+ "quand": "28 et 29/09/2026",
+ "methode": "102 fiches imminentes ou en cours confrontées à leur source officielle par lots parallèles ; citation verbatim de la page officielle exigée, site tiers refusé, « introuvable » au moindre doute ; seules les fiches confirmées ou corrigées portent la date « vérifié le 28/09/2026 » dans leurs sources",
+ "resultats": [
+  {
+   "fiche": "2026-10-13|PAD London 2026, Collectors Preview",
+   "verdict": "confirme",
+   "source": "https://www.padesignart.com/en/london/",
+   "citation": "13-18 October 2026",
+   "debut_source": "2026-10-13",
+   "fin_source": "2026-10-18",
+   "commentaire": "La page officielle PAD London affiche « 13-18 October 2026 » et le lieu « Berkeley Square, in the heart of London's affluent Mayfair district » ; aucune date distincte de Collectors Preview ni horaires ne figurent sur la page, mais les dates de la foire correspondent à d1..d2."
+  },
+  {
+   "fiche": "2026-10-14|Frieze London & Frieze Masters 2026",
+   "verdict": "confirme",
+   "source": "https://www.frieze.com/fairs/frieze-london-frieze-masters/visitor-information",
+   "citation": "Frieze London and Frieze Masters takes place from 14 – 18 October 2026, at The Regent’s Park.",
+   "debut_source": "2026-10-14",
+   "fin_source": "2026-10-18",
+   "commentaire": "L'URL de la fiche (frieze.com/fairs/frieze-london) renvoie HTTP 403 à WebFetch et curl (protection anti-bot) ; la page officielle Visitor Information lue via le navigateur intégré confirme 14–18 octobre 2026 à The Regent's Park, avec mercredi 14 sur invitation, jeudi 15 preview membres 11h–13h puis billets grand public dès 13h (nuance par rapport à « public 16-18 » dans dt), vendredi 16 à dimanche 18 public."
+  },
+  {
+   "fiche": "2026-10-15|Olympic Yacht Show 2026",
+   "verdict": "confirme",
+   "source": "https://olympicyachtshow.gr/en/",
+   "citation": "15-18 OCTOBER 2026",
+   "debut_source": "2026-10-15",
+   "fin_source": "2026-10-18",
+   "commentaire": "La page d'accueil officielle affiche « 15-18 OCTOBER 2026 » avec le lieu Olympic Marine, Lavrion ; dates identiques à d1..d2."
+  },
+  {
+   "fiche": "2026-10-15|Targa Florio Classica 2026",
+   "verdict": "confirme",
+   "source": "https://targa-florio.it/targaflorioclassica/?lang=en",
+   "citation": "THE RACE WILL TAKE PLACE IN PALERMO FROM THE 15TH TO THE 18TH OF OCTOBER | Sabato 17 ottobre, la seconda tappa della Targa Florio Classica 2026 sarà dedicata al \"Circuito delle Madonie\".",
+   "debut_source": "2026-10-15",
+   "fin_source": "2026-10-18",
+   "commentaire": "Deux lignes verbatim distinctes de la page officielle Targa Florio Classica (séparées par « | ») : la première donne Palerme du 15 au 18 octobre, la seconde rattache le samedi 17 octobre à l'édition 2026 (le 17 octobre 2026 est bien un samedi) ; dates identiques à d1..d2."
+  },
+  {
+   "fiche": "2026-09-30|New York Philharmonic, Gala inaugural de Gustavo Dudamel",
+   "verdict": "confirme",
+   "source": "https://www.nyphil.org/support-us/galas/",
+   "citation": "Wednesday, September 30, 2026 Gustavo Dudamel's Inaugural Gala Welcome a new era when Gustavo Dudamel takes the podium to celebrate the New York Philharmonic's storied legacy and bold vision for the future.",
+   "debut_source": "2026-09-30",
+   "fin_source": "",
+   "commentaire": "La page officielle Galas & Special Events du New York Philharmonic affiche le Gustavo Dudamel's Inaugural Gala le mercredi 30 septembre 2026, ce qui correspond exactement à la fiche (les autres galas listés : 10 sept. 2026, 2 déc. 2026, 9 fév. 2027, 3 avr. 2027, 26 mai 2027)."
+  },
+  {
+   "fiche": "2026-10-01|Salons professionnels, Tranoï, Première Classe, JILL, WOMAN Paris",
+   "verdict": "confirme",
+   "source": "https://www.tranoi.com/e/paris/en",
+   "citation": "1 - 4 OCTOBER 2026 Palais Brongniart, PARIS",
+   "debut_source": "2026-10-01",
+   "fin_source": "2026-10-05",
+   "commentaire": "Fiche composite « selon salon » : la page officielle Tranoï Paris donne « 1 - 4 OCTOBER 2026 » au Palais Brongniart, et la page officielle Première Classe de l'organisateur WSN (https://wsn-events.com/events/premiere-classe, atteinte par redirection depuis premiere-classe.com) donne « 02-05 octobre 2026 » au Jardin des Tuileries ; la fenêtre 1er-5 octobre 2026 de la fiche est donc couverte par ces deux sources officielles (JILL et WOMAN Paris non vérifiés)."
+  },
+  {
+   "fiche": "2026-10-01|The Global Gift Gala Paris 2026",
+   "verdict": "different",
+   "source": "https://www.globalgiftgala.com/ticket/the-global-gift-gala-paris-2026/",
+   "citation": "The Global Gift Gala Paris – 5 November 7:30 PM COCKTAIL & RED CARPET 8:30 PM DINNER, PERFORMANCES & LIVE AUCTION FOUR SEASONS GEORGE V 31 AVENUE GEORGE V 75008 PARIS – FRANCE BLACK TIE",
+   "debut_source": "2026-11-05",
+   "fin_source": "",
+   "commentaire": "La page billetterie officielle de l'édition Paris 2026 (URL …/the-global-gift-gala-paris-2026/) annonce désormais le gala le 5 novembre au Four Seasons George V (cocktail 19h30, dîner 20h30, black tie, catégories Gold et Presidential), et l'agenda officiel globalgiftgala.com/events/ liste « The Global Gift Gala Paris – 5 November » (1.000€ – 5.000€) ; l'année 2026 figure dans l'URL de la page mais pas dans le texte visible ; la date-repère du 1er octobre de la fiche est donc à remplacer par le 5 novembre 2026."
+  },
+  {
+   "fiche": "2026-10-01|New York City Ballet, Fall Fashion Gala 2026",
+   "verdict": "confirme",
+   "source": "https://www.nycballet.com/support/special-events/fall-gala",
+   "citation": "Fall Fashion Gala October 1, 2026 The evening will begin with a cocktail reception at 5:30 with champagne courtesy of Maison Ruinart, followed by the performance at 7 PM",
+   "debut_source": "2026-10-01",
+   "fin_source": "",
+   "commentaire": "La page officielle Fall Gala du New York City Ballet affiche « Fall Fashion Gala October 1, 2026 » au David H. Koch Theater (cocktail 17h30, spectacle 19h, puis dîner et danse sur la Promenade), ce qui correspond exactement à la fiche."
+  },
+  {
+   "fiche": "2026-10-01|Vente Sotheby's « Château Haut-Brion, Domaine Clarence Dillon » (90 ans de la propriété)",
+   "verdict": "confirme",
+   "source": "https://www.sothebys.com/en/about/locations/paris",
+   "citation": "Château Haut-Brion, Domaine Clarence Dillon: Celebrating Our 10th Decade of Family Stewardship\n\n1 October 2026 | 1:00 PM CEST | Paris",
+   "debut_source": "2026-10-01",
+   "fin_source": "",
+   "commentaire": "La page officielle Sotheby's Paris liste la vente au 1 October 2026, 1:00 PM CEST, Paris, ce qui correspond à d1 et à l'heure affichée (13:00)."
+  },
+  {
+   "fiche": "2026-10-02|Les Caves du Roy, clôture de la saison 2026 (Hôtel Byblos)",
+   "verdict": "confirme",
+   "source": "https://www.lescavesduroy.com/en/",
+   "citation": "April 2026: Friday 24th, Saturday 25th + Thursday 30th\nMay: Every Friday & Saturday + Thursday 14th + Sunday 24th\nJune: Every Friday & Saturday\nFrom Friday June 26th to Saturday August 29th: Open every evening\nSeptember: Every Friday & Saturday\nOctober: Friday 2nd & Saturday 3rd",
+   "debut_source": "2026-10-02",
+   "fin_source": "2026-10-03",
+   "commentaire": "Le calendrier d'ouverture officiel (saison ouverte en April 2026) se termine par « October: Friday 2nd & Saturday 3rd », dernières dates publiées, ce qui correspond à d1..d2 ; le millésime n'est pas répété sur la ligne d'octobre mais découle du bloc saisonnier 2026 et du calendrier (2 et 3 octobre 2026 sont bien vendredi et samedi)."
+  },
+  {
+   "fiche": "2026-10-03|ADOR's Gala Dinner 2026, Dîner de gala de l'Opéra Royal",
+   "verdict": "confirme",
+   "source": "https://www.operaroyal-versailles.fr/en/evenement-p/ador-gala-dinner-2026/",
+   "citation": "Saturday October 3rd 2026\n4:30pm",
+   "debut_source": "2026-10-03",
+   "fin_source": "",
+   "commentaire": "La page officielle de l'Opéra Royal indique dans son résumé « Saturday October 3rd 2026 » et l'heure « 4:30pm », ce qui correspond à d1 et à dt (16h30)."
+  },
+  {
+   "fiche": "2026-10-03|Qatar Prix de l'Arc de Triomphe 2026",
+   "verdict": "confirme",
+   "source": "https://billetterie.france-galop.com/evenement/qatar-prix-de-larc-de-triomphe/",
+   "citation": "Les 3 et 4 octobre 2026, ParisLongchamp devient la capitale mondiale du galop.",
+   "debut_source": "2026-10-03",
+   "fin_source": "2026-10-04",
+   "commentaire": "La billetterie officielle France Galop répète « Samedi 3 et dimanche 4 octobre 2026 » et « Hippodrome PARISLONGCHAMP », ce qui correspond à d1..d2."
+  },
+  {
+   "fiche": "2026-09-28|Créateurs émergents au calendrier, contacts directs (voie la plus accessible)",
+   "verdict": "confirme",
+   "source": "https://www.fhcm.paris/en/paris-fashion-week",
+   "citation": "SEPTEMBER 28TH TO OCTOBER 6TH, 2026",
+   "debut_source": "2026-09-28",
+   "fin_source": "2026-10-06",
+   "commentaire": "Page officielle FHCM lue : elle affiche « SEPTEMBER 28TH TO OCTOBER 6TH, 2026 », renvoie au « Womenswear Spring/Summer 2027 Final Calendar » et précise que le showroom Sphère se tient au Palais de Tokyo du mercredi 30 septembre au mardi 6 octobre 2026."
+  },
+  {
+   "fiche": "2026-09-28|Paris Fashion Week, Prêt-à-porter Printemps-Été 2027",
+   "verdict": "confirme",
+   "source": "https://www.fhcm.paris/en/paris-fashion-week",
+   "citation": "SEPTEMBER 28TH TO OCTOBER 6TH, 2026",
+   "debut_source": "2026-09-28",
+   "fin_source": "2026-10-06",
+   "commentaire": "Le calendrier officiel (u de la fiche, fhcm.paris/en/paris-fashion-week/calendar) affiche « Womenswear Spring/Summer 2027 Final Calendar is on! » avec des jours du « 28 September » au « 6 October » sans année écrite ; l'année 2026 est donnée en clair par la page mère du même site officiel, citée ici."
+  },
+  {
+   "fiche": "2026-09-28|Doha Jewellery and Watches Exhibition 2026",
+   "verdict": "confirme",
+   "source": "https://www.qatartourism.com/en/news-and-media/press-releases/doha-jewellery-and-watches-exhibition-2026-vq",
+   "citation": "The Doha Jewellery and Watches Exhibition (DJWE) 2026, organised by Qatar Tourism, and brought by Visit Qatar, will take place from September 28 to October 3 at the Doha Exhibition and Convention Centre (DECC)",
+   "debut_source": "2026-09-28",
+   "fin_source": "2026-10-03",
+   "commentaire": "Premier essai refusé (ECONNREFUSED), second essai réussi : le communiqué officiel de Qatar Tourism donne 28 septembre au 3 octobre au DECC ; la page organisateur visitqatar.com/intl-en/events-calendar/doha-jewellery-and-watches-exhibition existe aussi sur le site officiel."
+  },
+  {
+   "fiche": "2026-09-29|Sotheby's Hong Kong, Modern & Contemporary Evening Auction",
+   "verdict": "different",
+   "source": "https://www.sothebys.com/en/buy/auction/2026/modern-contemporary-evening-auction-2",
+   "citation": "21 September - 28 September 2026 • Hong Kong",
+   "debut_source": "2026-09-28",
+   "fin_source": "2026-09-29",
+   "commentaire": "La page officielle de la vente « Modern & Contemporary Evening Auction » se clôt le 28 septembre 2026 (et non le 29) ; la page Sotheby's Hong Kong (u de la fiche) ne contient plus le mot « Evening » et liste « Modern Day Auction 29 September 2026 | 12:00 PM HKT » et « Contemporary Day Auction 29 September 2026 | 3:00 PM HKT » (et non le 30), le 30 septembre n'y portant qu'une vente Concierge Auctions : l'ensemble est décalé d'un jour plus tôt, à corriger en 28-29 septembre 2026."
+  },
+  {
+   "fiche": "2026-09-28|Fashion Week Paris, invitations des maisons : bureaux de presse & VIC",
+   "verdict": "confirme",
+   "source": "https://www.fhcm.paris/en/paris-fashion-week",
+   "citation": "WOMENSWEAR READY-TO-WEAR SPRING/SUMMER 2027 SEPTEMBER 28TH TO OCTOBER 6TH, 2026",
+   "debut_source": "2026-09-28",
+   "fin_source": "2026-10-06",
+   "commentaire": "Page officielle FHCM lue : la semaine Prêt-à-porter féminin Printemps-Été 2027 est annoncée du 28 septembre au 6 octobre 2026, identique à d1..d2 (calendrier final en ligne sur /en/paris-fashion-week/calendar)."
+  },
+  {
+   "fiche": "2026-09-28|Sphère, showroom officiel des créateurs émergents (FHCM)",
+   "verdict": "different",
+   "source": "https://www.fhcm.paris/pfw/fr/sphere/",
+   "citation": "La session Mode Feminine pour la saison Printemps/Été 2027 aura lieu au Palais de Tokyo du mercredi 30 septembre au mardi 6 octobre 2026.",
+   "debut_source": "2026-09-30",
+   "fin_source": "2026-10-06",
+   "commentaire": "La page officielle Sphère (FHCM) fait débuter le showroom le mercredi 30 septembre 2026 et non le 28 ; fin le mardi 6 octobre 2026 au Palais de Tokyo, version digitale à partir du 30 septembre."
+  },
+  {
+   "fiche": "2026-09-28|Grands magasins & concept stores, accès libre pendant la Fashion Week",
+   "verdict": "introuvable",
+   "source": "",
+   "citation": "",
+   "debut_source": "",
+   "fin_source": "",
+   "commentaire": "HTTP 403 Forbidden sur lebonmarche.com à chaque essai (accueil, /en, page Événements /en/la_programmation_des_on_et_des_off) ; l'index du site ne référence par ailleurs aucune page consacrée à la Fashion Week du 28 septembre au 6 octobre 2026."
+  },
+  {
+   "fiche": "2026-09-28|Accès payant, billetterie de défilés & conciergerie de luxe",
+   "verdict": "introuvable",
+   "source": "",
+   "citation": "",
+   "debut_source": "",
+   "fin_source": "",
+   "commentaire": "fashionweekonline.com/paris/tickets est un site tiers qui se déclare lui-même non affilié à la FHCM ; la page ne publie pas la plage 28 septembre-6 octobre 2026 (seulement des événements off isolés les 2 et 3 octobre), aucune source officielle ne couvre cette fiche générique."
+  },
+  {
+   "fiche": "2026-10-17|Exposition « Le Diamant rose », château de Chantilly et L'École des Arts Joailliers",
+   "verdict": "confirme",
+   "source": "https://chateaudechantilly.fr/en/evenement/exhibition-pink-diamond-chantilly/",
+   "citation": "Dates : From October 17, 2026 to January 3, 2027 Location: Gallery of Psyché and Gem Room",
+   "debut_source": "2026-10-17",
+   "fin_source": "2027-01-03",
+   "commentaire": "Page officielle du château lue le 28/09/2026 (WebFetch a échoué deux fois sur une erreur de certificat, la page a été récupérée en HTTP 200 par curl) : l'en-tête donne « From 17 october 2026 to 3 january 2027 » et le bloc Useful information « From October 17, 2026 to January 3, 2027 », ce qui correspond exactement à d1..d2."
+  },
+  {
+   "fiche": "2026-10-19|Bisbee's Black & Blue",
+   "verdict": "confirme",
+   "source": "https://www.bisbees.com/tournaments",
+   "citation": "October 19 – 24, 2026",
+   "debut_source": "2026-10-19",
+   "fin_source": "2026-10-24",
+   "commentaire": "Page Tournaments du site officiel Bisbee's lue le 28/09/2026 : Black & Blue « October 19 – 24, 2026 » (et « Oct 19 – Oct 24, 2026 »), Los Cabos Offshore « October 12 – 17, 2026 » ; correspond à d1..d2."
+  },
+  {
+   "fiche": "2026-10-19|Arqana, October Yearling Sale 2026",
+   "verdict": "different",
+   "source": "https://www.arqana.com/catalogues_results.html",
+   "citation": "October Yearling Sale From 20 to 23 October 2026 Deauville Programm : Part 1 Tuesday 20 October - 11am Lots 1 to 197 Part 2 Wednesday 21 October - 1pm Lots 198 to 348 Part 2 Thursday 22 October - 1pm Lots 349 to 499",
+   "debut_source": "2026-10-20",
+   "fin_source": "2026-10-23",
+   "commentaire": "Page Catalogues & résultats du site officiel Arqana lue le 28/09/2026 : l'October Yearling Sale est annoncée « From 20 to 23 October 2026 » à Deauville (programme du mardi 20 au vendredi 23), alors que la fiche indique du 19 au 24 octobre ; le site Arqana affiche également un Arc Sale le 3 octobre et un Purebred Arabian Sale le 1er octobre 2026 à Saint-Cloud."
+  },
+  {
+   "fiche": "2026-09-26|Les Voiles de Saint-Tropez 2026",
+   "verdict": "confirme",
+   "source": "https://www.lesvoilesdesaint-tropez.fr/fr",
+   "citation": "Les Voiles de Saint-Tropez – Du 26 septembre au 4 octobre 2026",
+   "debut_source": "2026-09-26",
+   "fin_source": "2026-10-04",
+   "commentaire": "Page d'accueil du site officiel des Voiles de Saint-Tropez lue le 28/09/2026 : « Du 26 septembre au 4 octobre 2026 » répété trois fois ; correspond à d1..d2, événement en cours avec date de fin publiée."
+  },
+  {
+   "fiche": "2026-09-24|22e Zurich Film Festival 2026",
+   "verdict": "confirme",
+   "source": "https://zff.com/en/overview-the-22nd-zff",
+   "citation": "The 22nd Zurich Film Festival will take place from September 24 to October 4, 2026.",
+   "debut_source": "2026-09-24",
+   "fin_source": "2026-10-04",
+   "commentaire": "La page d'accueil zff.com/en/ n'affiche que le programme du jour (28 et 30 septembre) ; la page officielle « Overview: The 22nd ZFF » du même site donne explicitement les dates 24 septembre – 4 octobre 2026, identiques à d1..d2 (vérifié dans le HTML brut)."
+  },
+  {
+   "fiche": "2026-09-22|Milano Fashion Week, Printemps-Été 2027",
+   "verdict": "confirme",
+   "source": "https://milanofashionweek.cameramoda.it/en/calendar",
+   "citation": "Calendar SS 2027 - from 22 to 28 september 2026",
+   "debut_source": "2026-09-22",
+   "fin_source": "2026-09-28",
+   "commentaire": "Le calendrier officiel Camera Nazionale della Moda Italiana (désormais publié) titre « Calendar SS 2027 - from 22 to 28 september 2026 » et liste les journées Tue 22 Sep à Mon 28 Sep ; cameramoda.it/en/ indique aussi « 22nd - 28th September 2026 » ; conforme à d1..d2, la fiche peut passer de « probable » à « confirmé »."
+  },
+  {
+   "fiche": "2026-09-22|133° Abierto del Hurlingham Club",
+   "verdict": "confirme",
+   "source": "https://www.aapolo.com/noticias/detalle/9112",
+   "citation": "FECHAS CONFIRMADAS 133° Abierto del Hurlingham Club – The Ayrshire Cup (22/9 al 3/10) Cuartos de Final: Martes 22 y miércoles 23 de septiembre. Semifinales: Sábado 26 y domingo 27 de septiembre. Final Subsidiaria Drysdale: Jueves 1 de octubre. Final Abierto: Sábado 3 de octubre.",
+   "debut_source": "2026-09-22",
+   "fin_source": "2026-10-03",
+   "commentaire": "Article officiel AAP « TRIPLE CORONA 2026 » (21/04/2026) lu dans le HTML brut : 22/9 au 3/10, quarts 22-23/9, demi-finales 26-27/9, finale samedi 3 octobre ; la page d'accueil aapolo.com publie les demi-finales jouées (25 et 26/09/2026) sans aucune mention de report de la finale."
+  },
+  {
+   "fiche": "2026-08-01|Beach clubs de Pampelonne, Loulou, Casa Amor, Bagatelle, Gigi : soirées d'août",
+   "verdict": "introuvable",
+   "source": "https://en.plageprivee.com/agenda-soiree/st-tropez-ramatuelle-pampelonne",
+   "citation": "",
+   "debut_source": "",
+   "fin_source": "",
+   "commentaire": "Aucune date de fin publiée : la page plageprivee.com (agrégateur, pas un organisateur) ne liste aucun événement daté ; sur les sites officiels des clubs, loulou-ramatuelle.com n'indique que « Avril / Octobre » sans jour, casaamor.com annonce une « CASA AMOR CLOSING SEASON PARTY » le 26 septembre 2026, gigi-restaurant.com affiche « closing for the season » et bagatelle.com « 0 posts found » ; aucune source officielle ne confirme la fin au 3 octobre 2026."
+  },
+  {
+   "fiche": "2026-10-16|Repossi ouvre le 6 place Vendôme, Journées Particulières LVMH",
+   "verdict": "confirme",
+   "source": "https://www.lvmh.com/fr/les-journees-particulieres-2026/les-experiences-emblematiques",
+   "citation": "CARNET D'EXPÉRIENCES 16, 17 et 18 octobre 2026",
+   "debut_source": "2026-10-16",
+   "fin_source": "2026-10-18",
+   "commentaire": "Le carnet d'expériences officiel lvmh.com affiche les dates 16, 17 et 18 octobre 2026 ; la fiche Repossi du même site (lvmh.com/fr/les-journees-particulieres-2026/les-experiences-emblematiques/repossi-boutique-repossi-un-dialogue-entre-joaillerie-architecture) confirme l'adresse « 6, Place Vendôme 75001 Paris » et précise « Les réservations ouvriront le 30 septembre à 14h (heure de Paris) », sans répéter les dates elle-même."
+  },
+  {
+   "fiche": "2026-10-16|Les Journées Particulières LVMH 2026, 69 lieux ouverts dans 12 pays",
+   "verdict": "confirme",
+   "source": "https://www.lvmh.com/fr/les-journees-particulieres-2026",
+   "citation": "Les 16, 17 et 18 octobre 2026, Les Journées Particulières vous emmènent aux Racines du Rêve !",
+   "debut_source": "2026-10-16",
+   "fin_source": "2026-10-18",
+   "commentaire": "Dates confirmées sur la page officielle lvmh.com (u de la fiche est un site tiers, luxury-place.fr, qui donne aussi « Du 16 au 18 octobre 2026 ») ; attention, le site officiel annonce désormais « 71 lieux ouverts dans 13 pays » et 45 Maisons (la fiche dit 69 lieux / 12 pays) et « Les réservations ouvriront en trois vagues, les 24, 28 et 30 septembre, à partir de 14h (heure de Paris) »."
+  },
+  {
+   "fiche": "2026-10-17|Zamna Bali",
+   "verdict": "confirme",
+   "source": "https://www.savaya.com/event-calendar/october-17-2026",
+   "citation": "October 17, 2026 | Doors Open at 3:00 pm ZAMNA … 2 Day Ticket (Sat, Oct 17 & Sun, Oct 18) | GA (STRICTLY 21+) Rp1,600,000",
+   "debut_source": "2026-10-17",
+   "fin_source": "2026-10-18",
+   "commentaire": "La page officielle Savaya affiche l'événement ZAMNA le 17 octobre 2026 (portes 15h) et un billet 2 jours « Sat, Oct 17 & Sun, Oct 18 » ; tous les tarifs affichés sont marqués SOLD OUT."
+  },
+  {
+   "fiche": "2026-10-17|Venice Hospitality Challenge 2026 (13e édition)",
+   "verdict": "introuvable",
+   "source": "",
+   "citation": "",
+   "debut_source": "",
+   "fin_source": "",
+   "commentaire": "Page u inaccessible : events.veneziaunica.it redirige (302) vers l'accueil, et www.veneziaunica.it renvoie une page Imperva/Incapsula « Additional security check is required » (contrôle anti-robot, HTML vide) en WebFetch, curl et navigateur, à deux reprises ; le site de l'organisateur venicehospitalitychallenge.it affiche une page Aruba « Sito in costruzione » (certificat expiré). Seul l'extrait indexé par le moteur de recherche pour cette page dit « reaches its 13th edition and returns with its spectacular sails on Saturday, 17 October 2026 », non vérifiable directement sur le site."
+  },
+  {
+   "fiche": "2026-08-01|Palaces de la presqu'île, expériences d'août (Byblos, Cheval Blanc, Airelles Château de la Messardière, La Réserve Ramatuelle)",
+   "verdict": "confirme",
+   "source": "https://www.byblos.com/en/day-pass-spa-pass/",
+   "citation": "Offer valid from April 22nd to June 22nd, 2026 & from September 1st to October 11th, 2026, on request and subject to availability.",
+   "debut_source": "2026-04-22",
+   "fin_source": "2026-10-11",
+   "commentaire": "La page d'accueil u ne mentionne aucune date de saison, mais le site officiel byblos.com (page Day Pass / Spa Pass, et page Gourmet Stay : « Valid from April 22 to May 31, 2026, and from September 13 to October 11, 2026 ») publie le 11 octobre 2026 comme dernière date de la saison 2026, identique à d2 ; seul le Byblos a été vérifié (pas Cheval Blanc, Messardière ni La Réserve)."
+  },
+  {
+   "fiche": "2026-08-01|Saison d'été à l'Hôtel du Cap-Eden-Roc (Oetker Collection)",
+   "verdict": "confirme",
+   "source": "https://www.oetkerhotels.com/hotels/hotel-du-cap-eden-roc/restaurants-bars/eden-roc-restaurant/",
+   "citation": "Lunch from 12.30pm to 3.30pm (from April 20 to September 13, 2026). Lunch from 12.30pm to 3.00pm (from September 14 to October 18, 2026).",
+   "debut_source": "2026-04-20",
+   "fin_source": "2026-10-18",
+   "commentaire": "La page u (oetkercollection.com) renvoie HTTP 429 (Vercel Security Checkpoint) via WebFetch et curl à chaque essai ; lue via le navigateur sur le domaine officiel oetkerhotels.com (redirection depuis oetkercollection.com) : le restaurant Eden-Roc sert jusqu'au 18 octobre 2026, identique à d2 (la page précise aussi « CLOSED ON SUNDAY, OCTOBER 18 » et des brunchs les 13 & 20 septembre et 4 octobre 2026)."
+  },
+  {
+   "fiche": "2026-08-01|Capri en aout : saison de la taverne Anema e Core et programme municipal Emozioni d'Estate",
+   "verdict": "introuvable",
+   "source": "",
+   "citation": "",
+   "debut_source": "",
+   "fin_source": "",
+   "commentaire": "aucune date de fin publiée : la page officielle https://anemaecore.com/ (versions IT et EN, lues avec WebFetch et curl) n'indique que des horaires d'ouverture (« Dall'8 al 13 Settembre: Apertura ore 23:00 », « Dal 14 Settembre: Apertura ore 22:30 ») sans date de clôture de la saison 2026 ni mention du programme municipal Emozioni d'Estate ; d2 = 2026-09-30 non vérifiable sur le site officiel."
+  },
+  {
+   "fiche": "2026-08-01|Circuit vacances des mannequins - Mediterranee (Saint-Tropez, Ibiza, Mykonos, Sardaigne)",
+   "verdict": "introuvable",
+   "source": "",
+   "citation": "",
+   "debut_source": "",
+   "fin_source": "",
+   "commentaire": "La page u (blog.sttropezhouse.com, article d'un blog immobilier tiers sur les beach clubs) n'est pas une source officielle et ne mentionne que « Summer 2026 » sans aucune date précise ; ce « circuit » composite n'a ni organisateur ni site officiel, donc aucune date (d1 2026-08-01, d2 2026-10-04) n'est vérifiable."
+  },
+  {
+   "fiche": "2026-10-05|RSVP Symposium Hvar 2026",
+   "verdict": "confirme",
+   "source": "https://www.rsvpsymposium.com/",
+   "citation": "5 - 8 OCTOBER 2026 SUNČANI HVAR HOTELS",
+   "debut_source": "2026-10-05",
+   "fin_source": "2026-10-08",
+   "commentaire": "La page d'accueil officielle rsvpsymposium.com affiche l'étape Hvar « 5 - 8 OCTOBER 2026 SUNČANI HVAR HOTELS », suivie des étapes Los Angeles (9-11 nov. 2026) et Tolède (1-3 déc. 2026) ; dates identiques à la fiche."
+  },
+  {
+   "fiche": "2026-10-06|86° Abierto del Tortugas Country Club",
+   "verdict": "confirme",
+   "source": "https://www.aapolo.com/noticias/detalle/9112",
+   "citation": "86° Abierto del Tortugas Country Club – Copa Emilio de Anchorena (6/10 al 7/11)",
+   "debut_source": "2026-10-06",
+   "fin_source": "2026-11-07",
+   "commentaire": "Le site du club (tortugascc.com : accueil, /fixture « Fixture 2025 », /entradas, /polo, /novedades) n'affiche encore que l'édition 2025 et aucune date 2026 ; le calendrier officiel « TRIPLE CORONA 2026 » de l'Asociación Argentina de Polo (fédération organisatrice de la Triple Corona, publié le 21/04/2026) indique « (6/10 al 7/11) », « Novena y Décima Fecha: Sábado 31 de octubre y domingo 1 de noviembre » et « Final: Sábado 7 de noviembre », conforme à la fiche ; Ticketek (billetterie liée depuis /entradas) a répondu 403."
+  },
+  {
+   "fiche": "2026-10-10|Gala d'ouverture de la saison de danse, Opéra national de Paris (Palais Garnier)",
+   "verdict": "confirme",
+   "source": "https://www.operadeparis.fr/en/season-26-27/ballet/gala",
+   "citation": "Palais Garnier on 10 October 2026 at 7:30 pm 2h25 with 2 intervals",
+   "debut_source": "2026-10-10",
+   "fin_source": "",
+   "commentaire": "La page officielle du gala (saison 26/27, « Opening of the Dance Season ») indique « on 10 October 2026 at 7:30 pm » au Palais Garnier, Place de l'Opéra, 75009 Paris ; date et heure identiques à la fiche (le jour de la semaine n'est pas écrit sur la page)."
+  },
+  {
+   "fiche": "2026-10-10|AROP, Gala d'ouverture de la saison de danse 26/27",
+   "verdict": "confirme",
+   "source": "https://arop.operadeparis.fr/programmation/galas",
+   "citation": "2026 / Soirée d'exception 10 Oct. Gala d'ouverture de la saison de danse 26/27 Palais Garnier 19h30",
+   "debut_source": "2026-10-10",
+   "fin_source": "",
+   "commentaire": "La page Galas de l'AROP liste « 2026 / Soirée d'exception », « 10 Oct. », « Gala d'ouverture de la saison de danse 26/27 », « Palais Garnier », « 19h30 » ; date, lieu et heure identiques à la fiche (les autres galas listés : 05 Déc. Matinée « Rêves d'enfants », 23 Fév. Gala Régine Crespin)."
+  },
+  {
+   "fiche": "2026-07-01|Covo di Nord-Est, club iconique de la Riviera",
+   "verdict": "introuvable",
+   "source": "https://covodinordest.it/",
+   "citation": "",
+   "debut_source": "2026-04-25",
+   "fin_source": "",
+   "commentaire": "aucune date de fin publiée : la page d'accueil indique seulement « A partire da Sabato 25 Aprile 2026 per tutta la stagione 2026 » ; les pages covo-eventi, contatti, covo-beach, covo-di-nord-est et negozio ne mentionnent aucune date de fin de saison."
+  },
+  {
+   "fiche": "2026-07-01|La Gritta American Bar, Portofino",
+   "verdict": "introuvable",
+   "source": "https://www.lagrittaportofino.com/en/index.html",
+   "citation": "",
+   "debut_source": "",
+   "fin_source": "",
+   "commentaire": "aucune date de fin publiée : le site officiel (index, profilo, contatti, version italienne) n'indique que « 7 days a week, from 9am to 2am », sans aucune date de saison, d'ouverture ni de fermeture pour 2026."
+  },
+  {
+   "fiche": "2026-07-01|David Guetta F*** Me I'm Famous!, Ushuaia Ibiza",
+   "verdict": "confirme",
+   "source": "https://www.theushuaiaexperience.com/en/club/events/fmif-david-guetta",
+   "citation": "every Monday from 1 June - 5 October 2026",
+   "debut_source": "2026-06-01",
+   "fin_source": "2026-10-05",
+   "commentaire": "ushuaiaibiza.com redirige (301) vers theushuaiaexperience.com/club/ ; la page officielle de l'événement indique tous les lundis du 1er juin au 5 octobre 2026, avec « MondayOctober 5 » en Closing Party, ce qui correspond à d2 = 2026-10-05 et à dt."
+  },
+  {
+   "fiche": "2026-07-01|Lio Ibiza, Cabaret dinner-show 'Halftime Show' & club",
+   "verdict": "introuvable",
+   "source": "https://www.liogroup.com/ibiza/ibiza-whats-on",
+   "citation": "",
+   "debut_source": "2026-05-07",
+   "fin_source": "",
+   "commentaire": "aucune date de fin publiée : lioibiza.com redirige (308) vers liogroup.com/ibiza ; les pages ibiza, ibiza-whats-on, reservations, faq, what-to-expect et lio-club ne donnent que « Opening Days on May 7th, 8th and 9th » et « Reservations for the 2026 season are now open », sans date de clôture."
+  },
+  {
+   "fiche": "2026-07-01|Blue Marlin Ibiza, Beach club VIP (Cala Jondal)",
+   "verdict": "confirme",
+   "source": "https://www.bluemarlinibiza.com/events/showtime-sunday-118/",
+   "citation": "The season reaches its final beat as Blue Marlin Ibiza prepares to close another unforgettable summer on Sunday, 4th October.",
+   "debut_source": "",
+   "fin_source": "2026-10-04",
+   "commentaire": "La page officielle du Closing Party (datée 04/10/2026) et la page bluemarlinibiza.com/ibiza/ (« CLOSING PARTY | 4.10.26 », « Reservations for our final week of the season now open ») fixent la fin de saison au dimanche 4 octobre 2026, ce qui correspond à d2 = 2026-10-04 ; aucune date de début n'est lisible sur ces pages."
+  },
+  {
+   "fiche": "2026-07-01|Sunset sessions & DJ sets à La Co(o)rniche (Philippe Starck)",
+   "verdict": "introuvable",
+   "source": "https://lacoorniche.com/",
+   "citation": "",
+   "debut_source": "",
+   "fin_source": "",
+   "commentaire": "Aucune date de fin publiée : la page d'accueil décrit seulement un rythme récurrent sans année ni date précise (DJ « tous les jours en juillet et août », « week-ends et fériés en avril, mai, juin, septembre et octobre ») et la page Actualités annonce des DJ « every Friday and Saturday evening in September » sans année ; aucune date exacte de début ni de fin n'est lisible."
+  },
+  {
+   "fiche": "2026-07-01|L'été au Westminster, palace Barrière du Touquet (table étoilée Le Pavillon)",
+   "verdict": "introuvable",
+   "source": "https://www.hotelsbarriere.com/en/le-touquet-paris-plage/le-westminster/restaurants-and-bars/le-pavillon",
+   "citation": "",
+   "debut_source": "",
+   "fin_source": "",
+   "commentaire": "Aucune date de fin publiée : la page de l'hôtel, la page des restaurants et la page du Pavillon n'indiquent que les jours d'ouverture du restaurant (« Open from Thursdays to Sundays evening from 7.30 pm to 8.30 pm »), sans aucune date de saison, de fermeture ni mention de l'été 2026."
+  },
+  {
+   "fiche": "2026-07-01|Clubs prives Mayfair - Annabel's, 5 Hertford Street, Oswald's (Birley)",
+   "verdict": "introuvable",
+   "source": "https://annabels.co.uk/",
+   "citation": "",
+   "debut_source": "",
+   "fin_source": "",
+   "commentaire": "La page ne mentionne aucune date : la page d'accueil, la page « highlights » et la page « useful information » d'annabels.co.uk ne contiennent ni agenda, ni événement daté, ni période d'ouverture (club privé sans calendrier public)."
+  },
+  {
+   "fiche": "2026-07-01|Bagni Fiore Paraggi & Langosteria Paraggi (terrasse Dior)",
+   "verdict": "introuvable",
+   "source": "https://www.langosteria.com/en/langosteria-paraggi",
+   "citation": "",
+   "debut_source": "",
+   "fin_source": "",
+   "commentaire": "Aucune date de fin publiée : la page officielle (EN et IT) indique seulement « From the first breath of spring to the long sunsets of the end of summer » sans mois, jour ni année ; la page Bagni Fiore de langosteria.com et bagnifiore.com ne donnent aucune date non plus, et la page « terrazza-sul-mare-2026 » renvoie une erreur 404."
+  },
+  {
+   "fiche": "2026-07-01|DaV Mare, Splendido Mare, A Belmond Hotel (famille Cerea / Da Vittorio)",
+   "verdict": "different",
+   "source": "https://www.belmond.com/hotels/europe/italy/portofino/belmond-splendido-mare/",
+   "citation": "Splendido Mare is currently open for the season until 6 January.",
+   "debut_source": "",
+   "fin_source": "2027-01-06",
+   "commentaire": "La page officielle de l'hôtel indique une fin de saison au 6 janvier (année non imprimée mais nécessairement 2027 puisque l'hôtel est « currently open » au 28/09/2026), soit un jour après le d2 de la fiche (2027-01-05) ; aucune date de début n'est publiée et la page « dining » DaV Mare ne mentionne aucune date."
+  },
+  {
+   "fiche": "2026-07-01|Covo di Nord-Est, club iconique de la Riviera",
+   "verdict": "introuvable",
+   "source": "https://covodinordest.it/",
+   "citation": "",
+   "debut_source": "2026-04-25",
+   "fin_source": "",
+   "commentaire": "aucune date de fin publiée : la page d'accueil officielle indique seulement « A partire da Sabato 25 Aprile 2026 per tutta la stagione 2026 » et des soirées hebdomadaires (mercredi/jeudi/vendredi/samedi) ; les pages covo-eventi, covo-di-nord-est, contatti et negozio ne donnent aucune date de clôture."
+  },
+  {
+   "fiche": "2026-07-01|La Gritta American Bar, Portofino",
+   "verdict": "introuvable",
+   "source": "https://www.lagrittaportofino.com/en/index.html",
+   "citation": "",
+   "debut_source": "",
+   "fin_source": "",
+   "commentaire": "aucune date de fin publiée : le site officiel (accueil EN/IT et page contatti) indique uniquement « 7 days a week, from 9am to 2am » (« 7 giorni su 7, Orario continuato dalle 9 alle 2 »), sans aucune date de saison ni de fermeture 2026/2027."
+  },
+  {
+   "fiche": "2026-07-01|David Guetta F*** Me I'm Famous!, Ushuaia Ibiza",
+   "verdict": "confirme",
+   "source": "https://www.theushuaiaexperience.com/en/club/events/fmif-david-guetta",
+   "citation": "David Guetta returns to the place where music meets magic to present his acclaimed F*** ME I’M FAMOUS! every Monday from 1 June - 5 October 2026.",
+   "debut_source": "2026-06-01",
+   "fin_source": "2026-10-05",
+   "commentaire": "Page officielle Ushuaïa (ushuaiaibiza.com redirige vers theushuaiaexperience.com) : résidence tous les lundis du 1er juin au 5 octobre 2026, dernière date affichée « Monday October 5 Closing Party From 17:00 » ; fin conforme à d2 et à dt."
+  },
+  {
+   "fiche": "2026-07-01|Lio Ibiza, Cabaret dinner-show 'Halftime Show' & club",
+   "verdict": "introuvable",
+   "source": "https://www.liogroup.com/ibiza/ibiza-whats-on",
+   "citation": "",
+   "debut_source": "2026-05-07",
+   "fin_source": "",
+   "commentaire": "aucune date de fin publiée : lioibiza.com redirige vers liogroup.com/ibiza ; les pages ibiza, what-to-expect, reservations, faq et ibiza-whats-on mentionnent seulement « Opening Days on May 7th, 8th and 9th » et « Reservations for the 2026 season are now open », sans date de clôture 2026 (la seule closing party listée sur le site est celle du 5 octobre 2025)."
+  },
+  {
+   "fiche": "2026-07-01|Blue Marlin Ibiza, Beach club VIP (Cala Jondal)",
+   "verdict": "confirme",
+   "source": "https://www.bluemarlinibiza.com/events/",
+   "citation": "Sunday 04.10.26 CLOSING PARTY",
+   "debut_source": "2026-04-25",
+   "fin_source": "2026-10-04",
+   "commentaire": "L'agenda officiel liste les dernières dates 29.09.26, 30.09.26, 02.10.26, 03.10.26 puis « Sunday 04.10.26 CLOSING PARTY », conforme à d2 ; la date de début 25 avril 2026 est lue sur la page officielle opening-weekend-part-i (« Saturday 25 April and Sunday 26 April 2026 »)."
+  },
+  {
+   "fiche": "2026-07-18|Le Bâoli Cannes, saison estivale 2026 (club & dîner festif)",
+   "verdict": "introuvable",
+   "source": "https://baolicannes.com/club/",
+   "citation": "",
+   "debut_source": "",
+   "fin_source": "",
+   "commentaire": "Site officiel lu (accueil, /club/, /restaurant) : seuls des événements datés du 09/05/2026 au 29/08/2026 sont listés (dernier : BARUCK 29/08/2026), aucune mention de saison, de fermeture ni de date de fin : aucune date de fin publiée."
+  },
+  {
+   "fiche": "2026-07-18|Sass Café Monte-Carlo, dîner-club des célébrités (soirées d'été)",
+   "verdict": "introuvable",
+   "source": "https://www.sasscafe.com/monaco/",
+   "citation": "",
+   "debut_source": "",
+   "fin_source": "",
+   "commentaire": "Page officielle lue : elle n'indique que « OPERATING DAYS AND TIMES Daily from 8:30pm » et « The Night club takes place every evening around 1am » (établissement ouvert toute l'année), sans aucune date de saison ni de fermeture : aucune date de fin publiée."
+  },
+  {
+   "fiche": "2026-07-17|La Guérite, dîners au coucher du soleil, Île Sainte-Marguerite",
+   "verdict": "introuvable",
+   "source": "https://www.restaurantlaguerite.com/en/cannes-en/",
+   "citation": "",
+   "debut_source": "",
+   "fin_source": "",
+   "commentaire": "Pages officielles EN et FR lues : seule mention temporelle « Opening hours From May to September: Monday 12:00 – 18:00 … Sunday 12:00 – 18:00 » (sans année ni jour précis), aucune mention des dîners du jeudi-samedi, du 25 juin ni d'octobre : aucune date de fin publiée."
+  },
+  {
+   "fiche": "2026-07-16|Bagatelle Bodrum, Iconic Shows et guest DJs internationaux du jeudi",
+   "verdict": "introuvable",
+   "source": "https://bagatelle.com/venues/bodrum/",
+   "citation": "",
+   "debut_source": "",
+   "fin_source": "",
+   "commentaire": "Page officielle lue (plus /booking et bagatelle.com/events/) : elle indique seulement « Now open! » et les horaires « Monday 7PM - 1AM » à « Sunday 7PM - 1AM », aucun événement Bodrum daté ni date de saison ou de fermeture : aucune date de fin publiée."
+  },
+  {
+   "fiche": "2026-07-16|GAIA Bodrum, résidence estivale grecque-méditerranéenne au Mandarin Oriental",
+   "verdict": "different",
+   "source": "https://www.mandarinoriental.com/en/bodrum/paradise-bay/dine/gaia",
+   "citation": "Last Orders : Please note, last orders are taken at 11:30pm. Dinner 6pm - 12:30am Seasonal Closure 20 September",
+   "debut_source": "",
+   "fin_source": "2026-09-20",
+   "commentaire": "La page officielle (HTML brut, © 2026, « This summer, GAIA arrives at Mandarin Oriental, Bodrum ») publie « Seasonal Closure 20 September » (année non imprimée à côté du jour) : fermeture le 20 septembre et non le 30 septembre de la fiche ; aucune date de début précise n'est publiée."
+  },
+  {
+   "fiche": "2026-07-01|Sunset sessions & DJ sets à La Co(o)rniche (Philippe Starck)",
+   "verdict": "confirme",
+   "source": "https://lacoorniche.com/",
+   "citation": "les chambres s'avèrent très bruyantes lorsque celui-ci est ouvert (week-ends et fériés en avril, mai , juin, septembre et octobre, tous les jours en juillet et août, jusqu'à 2h30).",
+   "debut_source": "2026-07-01",
+   "fin_source": "2026-09-30",
+   "commentaire": "Page d'accueil lue : « la musique du DJ enchante les plus festifs jusqu'à 2h » avec bar extérieur « tous les jours en juillet et août », week-ends en septembre/octobre ; page News (https://lacoorniche.com/en/news-hotel-spa-aquitaine/) : « September : DJ nights at La Co(o)rniche » / « DJs every Friday and Saturday evening in September ! » ; aucune année imprimée à côté de ces mois (site daté © 2026, cartes datées mai 2026), la période juillet-août « en continu » et la fin septembre correspondent à d1..d2."
+  },
+  {
+   "fiche": "2026-07-01|L'été au Westminster, palace Barrière du Touquet (table étoilée Le Pavillon)",
+   "verdict": "introuvable",
+   "source": "https://www.hotelsbarriere.com/en/le-touquet-paris-plage/le-westminster/restaurants-and-bars/le-pavillon",
+   "citation": "",
+   "debut_source": "",
+   "fin_source": "",
+   "commentaire": "Page hôtel, page Le Pavillon (EN et FR) et page Restaurants lues : seulement « Ouvert du jeudi au dimanche soir de 19h30 à 20h30 », aucune date de saison ni de fin ; aucune date de fin publiée."
+  },
+  {
+   "fiche": "2026-07-01|Clubs prives Mayfair - Annabel's, 5 Hertford Street, Oswald's (Birley)",
+   "verdict": "introuvable",
+   "source": "https://annabels.co.uk/",
+   "citation": "",
+   "debut_source": "",
+   "fin_source": "",
+   "commentaire": "annabels.co.uk (accueil, /club, /useful-information) ne mentionne aucune date ni programme ; /events et /events/video renvoient HTTP 404 ; aucune date de fin publiée."
+  },
+  {
+   "fiche": "2026-07-01|Bagni Fiore Paraggi & Langosteria Paraggi (terrasse Dior)",
+   "verdict": "introuvable",
+   "source": "https://www.langosteria.com/en/langosteria-paraggi",
+   "citation": "",
+   "debut_source": "",
+   "fin_source": "",
+   "commentaire": "La page officielle dit seulement « From the first breath of spring to the long sunsets of the end of summer » sans aucune date ; page /en/terrazza-sul-mare-2026 en HTTP 404 (EN et IT, deux essais) ; bagnifiore.com reprend la même formule sans date ; aucune date de fin publiée."
+  },
+  {
+   "fiche": "2026-07-01|DaV Mare, Splendido Mare, A Belmond Hotel (famille Cerea / Da Vittorio)",
+   "verdict": "different",
+   "source": "https://www.belmond.com/hotels/europe/italy/portofino/belmond-splendido-mare/",
+   "citation": "Splendido Mare is currently open for the season until 6 January.",
+   "debut_source": "",
+   "fin_source": "2027-01-06",
+   "commentaire": "La page dining (u) ne donne aucune date ; la page hôtel Belmond indique une fermeture de saison « until 6 January » (année non imprimée, page courante © 2026 donc janvier 2027), soit un jour après d2 = 2027-01-05 ; davmare.com ne publie que des horaires quotidiens, la carte DaV Mare est libellée « Autunno 2026 »."
+  },
+  {
+   "fiche": "2026-07-01|Nikki Beach Mallorca, Beach club (Calvia)",
+   "verdict": "confirme",
+   "source": "https://nikkibeach.com/mallorca/happenings/",
+   "citation": "October 11th\n12PM - 6PM\nRecuerdos del Verano – Season Closing\nOne last summer dance",
+   "debut_source": "",
+   "fin_source": "2026-10-11",
+   "commentaire": "La page Happenings officielle (qui indique « As our 2026 season continues to fill with happenings ») liste l'événement « Recuerdos del Verano – Season Closing » le 11 octobre, et la page d'accueil dit « We're now open » avec des horaires « From October: Daily 12PM - 6PM » ; aucune date d'ouverture précise n'est publiée, la date de fin 11/10/2026 correspond à d2."
+  },
+  {
+   "fiche": "2026-07-01|Principote, Beach club chic de Panormos",
+   "verdict": "introuvable",
+   "source": "https://principote.com/wedding-events/parties/",
+   "citation": "",
+   "debut_source": "",
+   "fin_source": "",
+   "commentaire": "La page Parties ainsi que les pages accueil, Contact, Beach, The experience, Restaurant et Agora de principote.com ne mentionnent aucune date (seul « COPYRIGHT 2026 ») ni saison ni agenda : aucune date de fin publiée."
+  },
+  {
+   "fiche": "2026-07-01|Saison 2026 de la Taverna Anema e Core de Gianluigi Lembo",
+   "verdict": "introuvable",
+   "source": "https://anemaecore.com/",
+   "citation": "",
+   "debut_source": "",
+   "fin_source": "",
+   "commentaire": "L'URL notée (isoladicapriportal.com, article du 29/09/2026) est un site tiers qui dit seulement que la saison « è cominciata » sans date ; le site officiel anemaecore.com (accueil IT/EN, The Taverna, Contatti, Reservations) ne publie que des horaires d'ouverture (« Dal 14 Settembre: Apertura ore 22:30 ») et aucune date de fin de saison : aucune date de fin publiée."
+  },
+  {
+   "fiche": "2026-07-01|Cene a quattro mani à L'Olivo**, Jumeirah Capri Palace (série été 2026)",
+   "verdict": "introuvable",
+   "source": "https://mediahub.jumeirah.com/jumeirah-capri-palace-reopens-on-16-april-2026-with-a-season-worth-travelling-for/?lang=eng",
+   "citation": "",
+   "debut_source": "",
+   "fin_source": "",
+   "commentaire": "L'URL notée (capripress.com) est un site tiers ; le communiqué officiel Jumeirah Media Hub annonce la réouverture de l'hôtel le 16 avril 2026 et « a new season of exclusive gastronomic events » sans aucune date de dîner, et les pages jumeirah.com (L'Olivo, Events, Events/Olivo, Exclusive Offers, Experiences) ne publient ni dates individuelles ni date de fin : aucune date de fin publiée."
+  },
+  {
+   "fiche": "2026-07-01|Verde Beach Saint-Tropez, nuits DJ d'exception 2026",
+   "verdict": "introuvable",
+   "source": "https://verde-beach.com/",
+   "citation": "",
+   "debut_source": "",
+   "fin_source": "",
+   "commentaire": "Le site officiel verde-beach.com (accueil, /fr_fr/, /en_en/line-up, /en_en/events-gallery, /experiences/, /contact-us/) n'affiche plus qu'un contenu de gabarit WordPress (cabinet d'architecture fictif « Études ») sans aucun événement, DJ ni date, et www.verde-beach.com ne résout pas (ENOTFOUND) : la page ne mentionne aucune date."
+  },
+  {
+   "fiche": "2026-07-01|Soirées d'été du Casino Barrière Le Touquet",
+   "verdict": "introuvable",
+   "source": "https://www.casinosbarriere.com/en/le-touquet/spectacles",
+   "citation": "",
+   "debut_source": "",
+   "fin_source": "",
+   "commentaire": "Pages officielles spectacles (EN et FR) et agenda (EN et FR) lues : aucune mention de soirées d'été ni de programmation juillet-août 2026 ni de date de fin de saison estivale ; seuls figurent des spectacles ponctuels datés 4, 10 et 24 octobre 2026, un concours « Du 1er octobre au 13 novembre » et la mention « Saison artistique 2026-2027 » sans dates — la page ne mentionne aucune date pour cet événement."
+  },
+  {
+   "fiche": "2026-07-01|Nikki Beach Miami Beach, Amazing Sundays & Saturdance (beach club ADN Riviera)",
+   "verdict": "introuvable",
+   "source": "https://nikkibeach.com/miami-beach/happenings/",
+   "citation": "",
+   "debut_source": "",
+   "fin_source": "",
+   "commentaire": "Aucune date de fin publiée : la page officielle happenings n'indique que des récurrences (« Saturdance – Every Saturday 12PM - 7PM », « Amazing Sundays Brunch – Every Sunday 11AM - 4PM ») et la page principale nikkibeach.com/miami-beach/ ne donne que des horaires quotidiens, sans date de fin de saison ni mention du 6 août 2027 (qui provient uniquement de sources presse tierces)."
+  },
+  {
+   "fiche": "2026-06-27|Ellsworth Kelly, Aux bords de l'eau (exposition d'été Fondation Maeght)",
+   "verdict": "confirme",
+   "source": "https://www.fondation-maeght.com/ellsworth-kelly-aux-bords-de-leau/?lang=fr",
+   "citation": "ELLSWORTH KELLY - AUX BORDS DE L'EAU 27 juin – 15 novembre 2026 Commissaire invité : Éric de Chassey",
+   "debut_source": "2026-06-27",
+   "fin_source": "2026-11-15",
+   "commentaire": "La page officielle de la Fondation Maeght affiche explicitement « 27 juin – 15 novembre 2026 » sous le titre de l'exposition, ce qui correspond exactement à d1..d2."
+  },
+  {
+   "fiche": "2026-06-26|SAINT Ramatuelle, nouveau beach club d'exception (Bagatelle Group)",
+   "verdict": "introuvable",
+   "source": "https://www.saintramatuelle.com",
+   "citation": "",
+   "debut_source": "",
+   "fin_source": "",
+   "commentaire": "La page officielle saintramatuelle.com ne mentionne aucune date (ni date d'ouverture du 26 juin, ni date de fermeture de saison, ni événement daté) et ne propose aucune page agenda/programme ; la recherche restreinte à saintramatuelle.com et bagatelle.com ne renvoie aucune page datée pour SAINT — aucune date de fin publiée."
+  },
+  {
+   "fiche": "2026-06-17|Givenchy, pop-up estival rue Gambetta",
+   "verdict": "confirme",
+   "source": "https://www.givenchy.com/int/en/store?StoreID=F06",
+   "citation": "Givenchy Pop-Up: June 17th – October 4th, 2026",
+   "debut_source": "2026-06-17",
+   "fin_source": "2026-10-04",
+   "commentaire": "L'URL de la fiche (carnetsduluxe.com) est un site tiers qui ne donne que « jusqu'au 4 octobre » ; la page officielle du magasin sur givenchy.com (WebFetch en 403, récupérée via curl, HTTP 200) indique explicitement « Givenchy Pop-Up: June 17th – October 4th, 2026 », conforme à d1..d2."
+  },
+  {
+   "fiche": "2026-07-04|LUMA Arles, Semaine d'ouverture et expositions de l'été 2026 (Fondation Maja Hoffmann)",
+   "verdict": "confirme",
+   "source": "https://luma.org/en/arles/calendar/opening-week-highlights",
+   "citation": "From July 4, 2026 to November 8, 2026 CORRESPONDENCES Soundwalk Collective, Patti Smith",
+   "debut_source": "2026-07-04",
+   "fin_source": "2026-11-08",
+   "commentaire": "La page officielle luma.org indique aussi « Opening Week Highlights → July 4–7, 2026 » ; l'exposition CORRESPONDENCES court du 4 juillet au 8 novembre 2026 (d'autres expositions vont jusqu'au 10 janvier 2027) ; la billetterie tickets.luma.org (u) ne donne aucune date."
+  },
+  {
+   "fiche": "2026-07-01|Terrasses et jardins d'été des palaces parisiens (Plaza Athénée, Bristol, Peninsula, Mandarin Oriental, Crillon)",
+   "verdict": "introuvable",
+   "source": "",
+   "citation": "",
+   "debut_source": "",
+   "fin_source": "",
+   "commentaire": "La source u (freshmagparis.com) est un site tiers et ne mentionne aucune date de fin ; les pages officielles La Cour Jardin (dorchestercollection.com) répondent 403 et Le Jardin Français (oetkercollection.com) 429 après deux essais chacune ; aucune date de fin publiée."
+  },
+  {
+   "fiche": "2026-07-01|La Lanterne d'Hermes a Ginza - programme d'ete 2026 (theme \"L'appel du large\", Flaneur Tour, vitrines)",
+   "verdict": "introuvable",
+   "source": "",
+   "citation": "",
+   "debut_source": "",
+   "fin_source": "",
+   "commentaire": "Le site officiel lanterne.hermes.com (accueil, concept26, theme26, window-display-26summer, news, event) ne publie aucune date de fin pour le programme d'été de Ginza ; la seule mention datée, sur la page local-window-26summer, concerne les vitrines d'Osaka et Nagoya (« On display until mid of September 2026 »), sans date précise ni lien avec Ginza : aucune date de fin publiée."
+  },
+  {
+   "fiche": "2026-07-01|Villa Louis Vuitton et restaurant étoilé Arnaud Donckele & Maxime Frédéric au White 1921",
+   "verdict": "different",
+   "source": "https://www.white1921.com/st-tropez/fr",
+   "citation": "White 1921 Saint-Tropez est ouvert du 30 avril 2026 au 3 octobre 2026",
+   "debut_source": "2026-04-30",
+   "fin_source": "2026-10-03",
+   "commentaire": "Le site officiel de l'hôtel White 1921 (LVMH Hotel Management), qui abrite le restaurant, publie une fermeture au 3 octobre 2026 et non au 4 octobre ; les pages louisvuitton.com de la Villa et du restaurant (u et point-of-sale restaurant) n'affichent que des horaires quotidiens sans dates de saison, et l'article magazine LV répond 403."
+  },
+  {
+   "fiche": "2026-07-01|Exposition 'On aura tout vu : Icônes' au Sofitel Paris Le Faubourg (robe de Lady Gaga)",
+   "verdict": "introuvable",
+   "source": "",
+   "citation": "",
+   "debut_source": "",
+   "fin_source": "",
+   "commentaire": "La source u (parisjetaime.com, site tiers) répond 403 après deux essais ; la page officielle de l'hôtel (sofitel-paris-lefaubourg.com/actualites-evenements/on-aura-tout-vu/) redirige en 301 vers l'accueil sofitel.accor.com/fr/hotels/1295.html, qui ne mentionne ni l'exposition ni aucune date (idem page offres « Fashion exhibitions and events ») ; aucune archive disponible."
+  },
+  {
+   "fiche": "2026-09-22|Dior Spa Cheval Blanc Paris, expérience bien-être Dioriviera",
+   "verdict": "confirme",
+   "source": "https://www.chevalblanc.com/fr/maison/paris/bien-etre/spa-dior/",
+   "citation": "À découvrir du 22 au 24 septembre puis du 28 au 29 septembre, ainsi que du 18 au 22 novembre 2026, de 10h00 à 19h00.",
+   "debut_source": "2026-09-22",
+   "fin_source": "2026-11-22",
+   "commentaire": "Page officielle lue via navigateur (WebFetch et curl renvoient 403 ou un HTML sans le bloc) : début 22/09 et fin 22/11/2026 confirmés, mais les fenêtres intermédiaires sont 22-24 et 28-29 septembre (et non 22-25 / 27-29 comme dans dt), et la phrase figure sous la section « Le Massage Holistique » sans que le mot « Dioriviera » apparaisse sur la page."
+  },
+  {
+   "fiche": "2026-08-01|Soirées d'été du Grand-Hôtel du Cap-Ferrat (Four Seasons), live music et sunsets au Club Dauphin",
+   "verdict": "confirme",
+   "source": "https://www.fourseasons.com/capferrat/services-and-amenities/the-club-dauphin-pool/",
+   "citation": "HOURS POOL MARCH 6 – NOVEMBER 15 10:00 AM – 7:00 PM",
+   "debut_source": "2026-03-06",
+   "fin_source": "2026-11-15",
+   "commentaire": "Site lu via navigateur (WebFetch/curl : 403) : la page officielle du Club Dauphin publie la saison piscine du 6 mars au 15 novembre, ce qui correspond à la fin d2 ; en revanche, au 28/09/2026 la page « events-and-promotions » ne liste plus aucune soirée live music (elle affiche « Sunny Break at Club Dauphin September 28 – October 25, 2026 » et « Full Moon Yoga at Club Dauphin Monday, September 28, 2026 »), la programmation live music décrite dans dt (jusqu'au 21 septembre) n'étant plus publiée."
+  },
+  {
+   "fiche": "2026-08-01|Marie Antoinette Style (tournee mondiale du V&A - unique etape au Japon)",
+   "verdict": "confirme",
+   "source": "https://www.marie2026.jp/outline/",
+   "citation": "会　期 2026年8月1日(土)～11月23日(月・祝)",
+   "debut_source": "2026-08-01",
+   "fin_source": "2026-11-23",
+   "commentaire": "La page d'accueil marie2026.jp ne rend que le titre, mais la page officielle « 開催概要 » (outline) donne le 1er août - 23 novembre 2026, également confirmé par le site du Yokohama Museum of Art (co-organisateur) : « August 1 (Sat.) – November 23 (Mon.), 2026 »."
+  },
+  {
+   "fiche": "2026-07-21|Scorpios, Nuits signature (Innervisions, Keinemusik, Peggy Gou)",
+   "verdict": "confirme",
+   "source": "https://scorpios.com/program/myk-october-4-closing-whomadewho",
+   "citation": "4 OCT 2026 SUNDAY 5:00 pm - 00:00 am mykonos Terrace",
+   "debut_source": "",
+   "fin_source": "2026-10-04",
+   "commentaire": "L'URL u (musicofourdesire.com) est un site tiers et renvoie 403 ; le site officiel scorpios.com (scorpiosmykonos.com y redirige) publie comme dernier événement de la saison Mykonos le 4 octobre 2026, décrit comme « a final celebration as the season draws to a close », ce qui confirme la date de fin d2 ; les soirées passées de juillet (Peggy Gou, Innervisions) ne sont plus listées, d'où l'absence de date de début lue."
+  },
+  {
+   "fiche": "2026-07-20|Exposition « De la caserne au musée... 10 ans déjà », Musée de la Gendarmerie et du Cinéma",
+   "verdict": "confirme",
+   "source": "https://www.saint-tropez.fr/fr/fiche/exposition-de-la-caserne-au-musee-10-ans-deja-7883369/",
+   "citation": "Du 20/07 au 31/12/2026 tous les jours. Juillet / Aout 10h – 19h. A partir de septembre 10h – 18h. Tarif unique : 5 €. Musée de la Gendarmerie et du Cinéma 83990 Saint-Tropez",
+   "debut_source": "2026-07-20",
+   "fin_source": "2026-12-31",
+   "commentaire": "La page u (saint-tropez.fr/culture/mgc/) ne mentionne que l'exposition « Et Dieu… créa la femme » (16/04/2026-07/03/2027), mais l'agenda officiel de la ville et la fiche dédiée de l'exposition sur saint-tropez.fr donnent bien du 20/07 au 31/12/2026."
+  },
+  {
+   "fiche": "2026-05-22|Le Jardin de Cheval Blanc Paris, rooftop d'été (7e étage)",
+   "verdict": "introuvable",
+   "source": "https://www.chevalblanc.com/en/maison/paris/restaurants-and-bars/le-jardin-de-cheval-blanc-paris/",
+   "citation": "",
+   "debut_source": "",
+   "fin_source": "",
+   "commentaire": "WebFetch renvoie HTTP 403 (deux essais sur l'URL officielle, plus la version FR, les pages actualités et événements de chevalblanc.com) ; une lecture directe par curl (HTTP 200) montre que la page ne publie aucune date de fin de saison (seulement « Le Jardin is open from Wednesday to Sunday, weather permitting » et la mention « Le Jardin is definitely closed. ») : aucune date de fin publiée."
+  },
+  {
+   "fiche": "2026-05-22|Life Cycles: An Amanzoe Exhibition",
+   "verdict": "different",
+   "source": "https://www.aman.com/resorts/amanzoe",
+   "citation": "22 May to 30 September 2026",
+   "debut_source": "2026-05-22",
+   "fin_source": "2026-09-30",
+   "commentaire": "La page officielle Amanzoe indique pour « Life Cycles: An Amanzoe Exhibition » les dates 22 mai – 30 septembre 2026, soit une fin au 30 septembre et non au 31 octobre comme dans la fiche."
+  },
+  {
+   "fiche": "2026-05-14|Fondation Maeght, « Peter Knapp : Le Temps Courrèges »",
+   "verdict": "confirme",
+   "source": "https://www.fondation-maeght.com/peter-knapp-the-era-of-courreges/",
+   "citation": "May 14th – November 8th, 2026",
+   "debut_source": "2026-05-14",
+   "fin_source": "2026-11-08",
+   "commentaire": "La page officielle de la Fondation Maeght indique du 14 mai au 8 novembre 2026, conforme à la fiche."
+  },
+  {
+   "fiche": "2026-05-13|La Mode en majesté. Haute couture et tradition à la cour de Thaïlande, Musée des Arts Décoratifs",
+   "verdict": "confirme",
+   "source": "https://madparis.fr/La-Mode-en-majeste-Haute-couture-et-tradition-a-la-cour-de-Thailande",
+   "citation": "du 13 mai au 1er novembre 2026",
+   "debut_source": "2026-05-13",
+   "fin_source": "2026-11-01",
+   "commentaire": "La page officielle du MAD indique du 13 mai au 1er novembre 2026, conforme à la fiche."
+  },
+  {
+   "fiche": "2026-05-09|Biennale Arte 2026, In Minor Keys (61e Exposition internationale d'art)",
+   "verdict": "confirme",
+   "source": "https://www.labiennale.org/en/art/2026",
+   "citation": "runs from Saturday 9 May to Sunday 22 November 2026",
+   "debut_source": "2026-05-09",
+   "fin_source": "2026-11-22",
+   "commentaire": "La page officielle de la Biennale indique du samedi 9 mai au dimanche 22 novembre 2026 (« Venice, 9.05 - 22.11 2026 »), conforme à la fiche."
+  },
+  {
+   "fiche": "2026-07-01|Chanel, boutique estivale à la villa La Mistralée",
+   "verdict": "introuvable",
+   "source": "https://www.chanel.com/us/fashion/services/boutique-saint-tropez/",
+   "citation": "",
+   "debut_source": "",
+   "fin_source": "",
+   "commentaire": "Page officielle lue (WebFetch 403 à deux reprises, puis récupérée par curl et rendue dans le navigateur) : elle n'affiche que l'adresse (1 Av. Général Leclerc), les horaires hebdomadaires et le téléphone, sans aucune date d'ouverture ni de fermeture de saison ; aucune date de fin publiée."
+  },
+  {
+   "fiche": "2026-07-01|Dolce & Gabbana x Casa Amor, takeover 'DG Resort' (thème Carretto Siciliano)",
+   "verdict": "introuvable",
+   "source": "https://world.dolcegabbana.com/news/dolce-gabbana-casa-resort-beach-club",
+   "citation": "",
+   "debut_source": "",
+   "fin_source": "",
+   "commentaire": "La page officielle (datée « June 2026 », titrée « DG Resort 2026 ») décrit le takeover de Casa Amor sans aucune date ni durée ; le store-locator boutique.dolcegabbana.com ne liste aucune page pop-up Casa Amor/Ramatuelle et la page DG Resort redirige vers l'accueil ; aucune date de fin publiée (le 31 octobre ne figure que dans la source presse tierce)."
+  },
+  {
+   "fiche": "2026-07-01|Armani/Silos, exposition « Giorgio Armani Privé 2005-2025, vingt ans de haute couture »",
+   "verdict": "introuvable",
+   "source": "https://www.armanisilos.com/exhibition/armani-prive-2005-2025/",
+   "citation": "",
+   "debut_source": "",
+   "fin_source": "",
+   "commentaire": "Aucune date de fin publiée : la page exposition n'affiche aucune date (la ligne « On view from May 21 through December 28, 2025 » y est masquée dans un commentaire HTML) ; la page horaires/billets dit seulement « Reservations and tickets can currently be purchased until October 31, 2026. Subsequent dates will be made available in October. » — rien ne confirme le 20 décembre 2026."
+  },
+  {
+   "fiche": "2026-07-01|Grand Hôtel de Cala Rossa, saison 2026 et table étoilée La Pinède",
+   "verdict": "introuvable",
+   "source": "https://www.hotel-calarossa.com/en",
+   "citation": "",
+   "debut_source": "",
+   "fin_source": "",
+   "commentaire": "Aucune date de fin publiée : accueil EN/FR, agenda, présentation, offres et accès lus sans aucune date d'ouverture ni de fermeture de saison 2026 (seule offre datée : vacances du 18 au 26 octobre 2025) ; le moteur de réservation Synxis de l'hôtel signale seulement une indisponibilité au 25 octobre 2026 sans message de fermeture ; le « 7 mai–25 octobre » provient de l'office de tourisme (tiers)."
+  },
+  {
+   "fiche": "2026-07-01|Hôtel & Spa des Pêcheurs, saison 2026 sur l'île de Cavallo (« l'île des milliardaires »)",
+   "verdict": "different",
+   "source": "https://www.hoteldespecheurs.com/en/",
+   "citation": "2026 SEASON OPENING: FROM MAY 28 TO SEPTEMBER 27",
+   "debut_source": "2026-05-28",
+   "fin_source": "2026-09-27",
+   "commentaire": "La page officielle EN publie la saison 2026 du 28 mai au 27 septembre (page FR : « OUVERTURE DE SAISON: DU 28 MAI AU 27 SEPTEMBRE »), alors que la fiche indique 21 mai–28 septembre et d2 = 30 septembre : la fermeture au 27 septembre 2026 est déjà passée au 28 septembre."
+  },
+  {
+   "fiche": "2026-04-14|The Shop on the Corner, pop-up multi-maisons (Globe-Trotter, Connolly, Smythson, Fornasetti, Alessi)",
+   "verdict": "confirme",
+   "source": "https://www.smythson.com/int/saint-tropez-pop-up.html",
+   "citation": "The Shop on the Corner will be open until Monday 5th October: 4 Avenue du Maréchal Foch, 83990, Saint-Tropez, France Monday - Saturday 10:00-19:00",
+   "debut_source": "",
+   "fin_source": "2026-10-05",
+   "commentaire": "L'URL u de la fiche (theindustry.fashion, presse : « running from now until 5 October 2026 ») est un site tiers ; la confirmation officielle vient de la page Smythson (maison participante) qui publie la date de fin « Monday 5th October » (le 5 octobre 2026 est bien un lundi) sans indiquer de date de début."
+  },
+  {
+   "fiche": "2026-04-01|Gaïo Saint-Tropez, dîner-cabaret & club 2026",
+   "verdict": "introuvable",
+   "source": "https://www.gaio.club/",
+   "citation": "",
+   "debut_source": "",
+   "fin_source": "",
+   "commentaire": "aucune date de fin publiée : le site officiel gaio.club (page unique, aucune sous-page agenda/billetterie) n'affiche que « Monday - Sunday 9pm to 5am », « Line Up 2025 » et « © GAÏO 2026 » ; les dates 1er avril - 31 octobre 2026 ne figurent que sur les sites d'offices de tourisme (tiers)."
+  },
+  {
+   "fiche": "2026-05-09|Helter Skelter: Arthur Jafa and Richard Prince (Fondazione Prada Venise)",
+   "verdict": "confirme",
+   "source": "https://www.fondazioneprada.org/wp-content/uploads/Fondazione-Prada_Helter-Skelter_PR.pdf",
+   "citation": "Fondazione Prada will present “Helter Skelter: Arthur Jafa and Richard Prince,” an exhibition curated by Nancy Spector, in its Venetian venue, Ca’ Corner della Regina, from 9 May to 23 November 2026, during the Art Biennale",
+   "debut_source": "2026-05-09",
+   "fin_source": "2026-11-23",
+   "commentaire": "La page projet fondazioneprada.org renvoie HTTP 403 (deux essais, EN et IT), mais le communiqué officiel PDF hébergé sur fondazioneprada.org (daté Venise, 10 mars 2026) donne explicitement du 9 mai au 23 novembre 2026 à Ca' Corner della Regina."
+  },
+  {
+   "fiche": "2026-05-01|Loro Piana x La Reserve a la Plage (Pampelonne), reconduction 2026 non confirmee",
+   "verdict": "introuvable",
+   "source": "",
+   "citation": "",
+   "debut_source": "",
+   "fin_source": "",
+   "commentaire": "aucune date de fin publiée : lareserve-plage.com (EN et FR) n'affiche que les horaires quotidiens (« Open daily 10:30am – 6:30pm ») sans dates de saison ni mention de Loro Piana ; les pages plage et actualités de lareserve-ramatuelle.com ne publient pas non plus de dates d'ouverture/fermeture 2026."
+  },
+  {
+   "fiche": "2026-05-01|Les Jardins de Bagatelle, Garden Club (saison estivale 2026)",
+   "verdict": "introuvable",
+   "source": "",
+   "citation": "",
+   "debut_source": "",
+   "fin_source": "",
+   "commentaire": "aucune date de fin publiée : la page officielle paris-society.com/fr/clubs/les-jardins-de-bagatelle/ redirige (301) vers Instagram @bagatelleparisofficial, illisible ; la page access.sb (tiers) n'indique que « Ouvert du Jeudi au Samedi: 23h30 à 6h00 » et « À la belle saison », sans dates de saison 2026."
+  },
+  {
+   "fiche": "2026-04-30|L'Opéra Saint-Tropez, dîner-spectacle 2026 « Luxury Futuristic World »",
+   "verdict": "introuvable",
+   "source": "",
+   "citation": "",
+   "debut_source": "",
+   "fin_source": "",
+   "commentaire": "aucune date de fin publiée : opera-saint-tropez.com (accueil FR et EN, pages réservation FR et EN, seules pages du sitemap) ne mentionne ni saison, ni dates, ni « Luxury Futuristic World » ; seul un fichier menu-opera-2026-09-2.pdf apparaît dans les liens."
+  },
+  {
+   "fiche": "2026-04-23|PatBO x Loulou Ramatuelle, pop-up beachwear de l'été 2026",
+   "verdict": "introuvable",
+   "source": "",
+   "citation": "",
+   "debut_source": "",
+   "fin_source": "",
+   "commentaire": "aucune date de fin publiée : loulou-ramatuelle.com (FR et EN) n'indique sous « Horaires » que « Avril / Octobre » sans jour précis, ne mentionne pas le 23 avril ni le 3 octobre, ni PatBO ; la page événements de patbo.com ne cite ni Loulou ni Ramatuelle."
+  },
+  {
+   "fiche": "2026-06-12|Exposition « Cartier », National Gallery of Victoria, Melbourne Winter Masterpieces",
+   "verdict": "confirme",
+   "source": "https://www.ngv.vic.gov.au/exhibition/cartier/",
+   "citation": "12 Jun – 4 Oct 26, ticketed",
+   "debut_source": "2026-06-12",
+   "fin_source": "2026-10-04",
+   "commentaire": "La page officielle du NGV (« CARTIER: Melbourne Winter Masterpieces 2026 | NGV ») affiche « 12 Jun – 4 Oct 26, ticketed », des horaires prolongés jusqu'au 4 octobre et la mention « Valid until 4 October 2026 », ce qui correspond exactement à d1..d2."
+  },
+  {
+   "fiche": "2026-06-11|Yves Saint Laurent and Photography, International Center of Photography (pendant la fermeture du musée YSL Paris)",
+   "verdict": "confirme",
+   "source": "https://www.icp.org/exhibitions/yves-saint-laurent-and-photography",
+   "citation": "Jun 11, 2026 - Sep 28, 2026",
+   "debut_source": "2026-06-11",
+   "fin_source": "2026-09-28",
+   "commentaire": "La page officielle de l'ICP (84 Ludlow Street, New York) indique « Jun 11, 2026 - Sep 28, 2026 », identique à d1..d2 ; l'exposition se termine donc le jour même de la vérification (28 septembre 2026)."
+  },
+  {
+   "fiche": "2026-06-08|Exposition « Daniel Brush, l'art de la ligne et de la lumière », L'École des Arts Joailliers",
+   "verdict": "confirme",
+   "source": "https://www.lecolevancleefarpels.com/fr/en/exhibition/exhibition-daniel-brush-art-line-and-light",
+   "citation": "From June 8th to October 4th, 2026",
+   "debut_source": "2026-06-08",
+   "fin_source": "2026-10-04",
+   "commentaire": "La page officielle de L'ÉCOLE (Hôtel de Mercy-Argenteau, 16 bis boulevard Montmartre) affiche « Paris, France 08.06.2026 — 04.10.2026 » et « From June 8th to October 4th, 2026 », ce qui correspond exactement à d1..d2."
+  },
+  {
+   "fiche": "2026-06-08|Jacquemus Beach Experience, takeover de Blue Beach au Mandarin Oriental, Bodrum",
+   "verdict": "confirme",
+   "source": "https://press.mandarinoriental.com/bodrum-jacquemus-boutique/?lang=eng",
+   "citation": "The 98-square-metre Jacquemus boutique and its relaxing terrace at Mandarin Oriental, Bodrum is open now throughout the summer season until October 2026.",
+   "debut_source": "2026-06-08",
+   "fin_source": "2026-10-31",
+   "commentaire": "La page u (lue intégralement via navigateur) ne donne que « This season » / « Throughout the season » sans date ; le communiqué officiel Mandarin Oriental daté « Hong Kong, 8 June 2026 » annonce l'ouverture (« is open now ») et « until October 2026 » sans jour précis, et la page officielle du lieu même du takeover (mandarinoriental.com/en/bodrum/paradise-bay/dine/blue-beach-club-and-bar) affiche « Seasonal Closure 31 October » — le jour 31/10 provient donc de la fermeture saisonnière de Blue Beach, pas du communiqué Jacquemus."
+  },
+  {
+   "fiche": "2026-06-06|Into the Ocean: Journey Beneath (ArtScience Museum x OceanX)",
+   "verdict": "confirme",
+   "source": "https://www.marinabaysands.com/museum/exhibitions/into-the-ocean.html",
+   "citation": "6 Jun – 1 Nov 2026",
+   "debut_source": "2026-06-06",
+   "fin_source": "2026-11-01",
+   "commentaire": "WebFetch a expiré (60 s) à cinq reprises sur marinabaysands.com, mais la page officielle lue via le navigateur affiche dans « Exhibition Details » « 6 Jun – 1 Nov 2026 », Basement 2 Galleries, identique à d1..d2 (à noter : le programme annonce aussi un colloque « From the Deep » le 1 Oct 2026 « Marking the closing » de l'exposition, alors que la date de fin affichée reste le 1er novembre)."
+  },
+  {
+   "fiche": "2026-06-04|Exposition « Van Cleef & Arpels : l'éclat des années 1980-1990 », Galerie du Patrimoine",
+   "verdict": "confirme",
+   "source": "https://www.vancleefarpels.com/fr/fr/the-maison/newsroom/van-cleef-arpels-vibrant-1980s-1990s-exhibition-at-20-place-vendome-in-paris.html",
+   "citation": "Du 4 juin au 28 novembre 2026, la Galerie du Patrimoine, située au sein de la boutique du 20, place Vendôme, à Paris, accueille l’exposition « Van Cleef & Arpels : l’éclat des années 1980-1990 ».",
+   "debut_source": "2026-06-04",
+   "fin_source": "2026-11-28",
+   "commentaire": "Page officielle vancleefarpels.com lue via le navigateur (WebFetch et curl expiraient) : dates 4 juin - 28 novembre 2026 et lieu (Galerie du Patrimoine, boutique du 20 place Vendôme) explicitement indiqués, identiques à la fiche."
+  },
+  {
+   "fiche": "2026-06-01|Music on the Rocks, nights (saison 2026)",
+   "verdict": "introuvable",
+   "source": "https://musicontherocks.it/",
+   "citation": "",
+   "debut_source": "",
+   "fin_source": "",
+   "commentaire": "Site officiel lu (musicontherocks.it, book-now.html et registration.musicontherocks.com) : seulement « Every day 17:00 — 04:00 », « Tutti i giorni », un programme APRIL/MAY puis « COMING SOON... » et « 2026 Music on the Rocks » ; aucune date de fin publiée."
+  },
+  {
+   "fiche": "2026-05-29|Nammos Baja Sardinia, saison beach club 2026 (nouvelle ouverture)",
+   "verdict": "introuvable",
+   "source": "https://www.nammos.com/sardinia",
+   "citation": "",
+   "debut_source": "",
+   "fin_source": "",
+   "commentaire": "Pages officielles nammos.com/sardinia, /news?location=SARDINIA et /events?location=SARDINIA lues (WebFetch et curl) : aucune date d'ouverture ni de fermeture de la saison 2026, seule mention datée « 13.06.2025 » sur la page news ; aucune date de fin publiée."
+  },
+  {
+   "fiche": "2026-05-23|Exposition « Precious Coral », L'École des Arts Joailliers à Hong Kong",
+   "verdict": "confirme",
+   "source": "https://www.lecolevancleefarpels.com/hk/en/exhibition/exhibition-precious-coral-curiosity-treasures",
+   "citation": "From May 23rd to October 11th, 2026",
+   "debut_source": "2026-05-23",
+   "fin_source": "2026-10-11",
+   "commentaire": "Page officielle L'École lue : dates « 23.05.2026 — 11.10.2026 » et « From May 23rd to October 11th, 2026 », lieu « 510A, 5/F, K11 MUSEA Tsim Sha Tsui », identiques à la fiche."
+  },
+  {
+   "fiche": "2026-05-22|Boutique ephemere Chanel a East Hampton",
+   "verdict": "introuvable",
+   "source": "",
+   "citation": "",
+   "debut_source": "",
+   "fin_source": "",
+   "commentaire": "La source u (hauteliving.com) est un site de presse tiers et renvoie HTTP 403 ; la page officielle chanel.com du store locator « CHANEL Hamptons Ephemeral Boutique » (id 113158, variantes /us/, /in/, /ca-en/) renvoie HTTP 403 en WebFetch, un squelette générique en curl et se redirige vers le localisateur générique « Find a Boutique » dans le navigateur : aucune date lisible, aucune date de fin publiée."
+  }
+ ]
+}

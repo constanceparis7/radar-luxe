@@ -239,7 +239,12 @@ les textes de séjour (1 088 Ko) et les journaux d'enquête (619 Ko). Une fiche
 - [34]  335 événements sur un palier de 1 000
 - [0]   Photos par événement (R2)
 - [0]   Rendu à la volée au-delà de 850 événements (limite des 20 000 fichiers)
-- [0]   API publique JSON (partenaires, assistants d'IA, applications)
+- [70]  API publique JSON (partenaires, assistants d'IA, applications) : /api/evenements.json
+        publié le 29/09 (tous les événements : dates, lieu, catégorie, accès, degré de
+        confirmation, source officielle, date de vérification, note, fiche en 13 langues,
+        fichier calendrier), régénéré à chaque publication, CORS ouvert, page /api/ avec les
+        champs et les conditions (attribution libre, usage commercial sur accord), llms.txt
+        complété ; reste un premier partenaire ou assistant qui le consomme
 
 ### O5 · Visibilité organique mondiale · 75 %
 - [100] Titres en forme de requêtes, 13 langues, mois courant automatique
