@@ -1339,3 +1339,14 @@ publiés (scripts, styles et balises retirés), jamais seulement des données ; 
 porte désormais V12 (tiret long visible = publication refusée) ; (3) quand on cherche un
 motif interdit, chercher aussi dans les gabarits du générateur (`grep` sur gen_pages.py),
 pas seulement dans les données.
+
+## 29/09/2026 : les fiches à fin de mois (30/09) sont des bouchons, comme le 31/08
+Contrôle de 20 fiches non datées dont d2 = 30/09 (agents adverses, un par lot de 4). Résultat : 5 d2 fausses corrigées
+avec source (Cheval Blanc rooftop 13/09, Hôtel des Pêcheurs 27/09 : le site officiel contredisait la « correction »
+28/09 du dt, Verde Beach 26/09, GAIA Bodrum 20/09, Bâoli Cannes 31/10), 15 non vérifiables (aucune date de
+fermeture 2026 publiée) laissées en l'état avec `cf` inchangé. RÈGLE : une d2 au 30 du mois sans source publiée est
+un bouchon au même titre que le 31/08 ; ne corriger que sur preuve chargée, ne jamais poser une date par défaut.
+Écarts de texte relevés sans preuve suffisante, à traiter à une prochaine passe : Nammos Baja (fin probablement
+avant le 30/09), Anema e Core / La Co(o)rniche / Bagni Fiore / Principote (dt « août » ou « juillet-août » incohérent
+avec d2), Gucci Flora x La Rose des Vents (fin annoncée « through October », d1 réel mai), Chanel East Hampton (fin non
+annoncée). Corriger dt ou d2 d'une fiche : retirer la clé correspondante des 12 traductions (fait par script).
