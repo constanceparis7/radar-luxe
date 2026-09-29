@@ -201,7 +201,7 @@ moyenne de ses micro-objectifs.
         si Cloudflare passe devant le site
 - [hors périmètre] Cloudflare devant, en-têtes HTTP, vrais 301, HTTP/3, Cloudflare Pages, R2, Workers, D1
 
-### O3 · Vitesse mobile, Android et iOS (PRIORITÉ ABSOLUE) · 99 %
+### O3 · Vitesse mobile, Android et iOS (PRIORITÉ ABSOLUE) · 100 %
 Mesure de référence du 18/09/2026 : un téléphone reçoit 820 Ko pour l'accueil
 (2 547 Ko bruts), plus 294 Ko de photo et 43 Ko d'index de recherche, soit environ
 1,15 Mo. Le poids vient de deux champs embarqués inutiles au premier affichage :
@@ -217,7 +217,7 @@ les textes de séjour (1 088 Ko) et les journaux d'enquête (619 Ko). Une fiche
 - [écarté 20/09] JSON-LD de l'accueil en liste : gain mesuré de 8 Ko compressés seulement,
         contre la règle « gen_pages ne modifie jamais index.html » ; pas rentable
 - [100] Budget de poids au verrou (V11 : accueil sous 1 000 Ko bruts, fiche sous 60 Ko)
-- [92]  LCP < 2,5 s, INP < 200 ms, CLS < 0,1 : mesurés le 28/09 par le protocole DevTools
+- [95]  LCP < 2,5 s, INP < 200 ms, CLS < 0,1 : mesurés le 28/09 par le protocole DevTools
         de Chrome dans les conditions de Lighthouse mobile (écran 412 px, 4G lent 1,6 Mbit/s
         et 150 ms, CPU ralenti 4 fois), outil persisté. Accueil : LCP 0,43 à 1,07 s, CLS
         0,08, INP 264 ms (et jusqu'à 3 s quand le clic tombait pendant le rendu des cartes)
@@ -229,7 +229,9 @@ les textes de séjour (1 088 Ko) et les journaux d'enquête (619 Ko). Une fiche
         ligne de plus) ; libellés statiques alignés, bloc de langue généré à chaque build et
         placé avant le reste de la page ; mesuré en ligne à 0 en français, anglais, arabe et
         chinois (LCP 0,43 à 0,90 s). Reste la mesure PageSpeed officielle (quota toujours
-        épuisé) ; la mesure hebdomadaire du lundi est inscrite à la doctrine (5ter).
+        épuisé) ; la mesure hebdomadaire du lundi est inscrite à la doctrine (5ter) et
+        automatisée le 29/09 sur la machine de travail (launchd, lundi 9 h 40 : vitesse,
+        validateur W3C, axe-core, journalisés et poussés).
 - [100] Rendu progressif des cartes (25/09) : les deux premiers jours s'affichent aussitôt,
         le reste par lots hors du fil principal (requestIdleCallback, repli iOS/Safari),
         recherche toujours instantanée, vérifié sans doublon ni erreur
@@ -248,7 +250,8 @@ les textes de séjour (1 088 Ko) et les journaux d'enquête (619 Ko). Une fiche
 - [100] Résorption hebdomadaire de tous les doutes, aux sources
 - [100] Sentinelle des imminents (lundi)
 - [100] Mémoire du radar (archives, changements)
-- [34]  335 événements sur un palier de 1 000
+- [31]  309 événements vivants sur un palier de 1 000 (au 29/09, après purge des saisons
+        terminées ; le radar grossit par les passes de nuit)
 - [0]   Photos par événement (R2)
 - [0]   Rendu à la volée au-delà de 850 événements (limite des 20 000 fichiers)
 - [70]  API publique JSON (partenaires, assistants d'IA, applications) : /api/evenements.json
