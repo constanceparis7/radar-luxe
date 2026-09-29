@@ -2,311 +2,16 @@
  "genere_le": "2026-09-29",
  "regle": "fiche non terminée, commençant dans 21 jours ou déjà en cours, dont la dernière vérification écrite est absente ou date de plus de 30 jours ; triée par imminence puis par ancienneté",
  "total_vivantes": 207,
- "avec_date_verif": 90,
+ "avec_date_verif": 125,
+ "avec_badge": 90,
  "prioritaires": [
-  {
-   "n": "Gaïo Saint-Tropez, dîner-cabaret & club 2026",
-   "d1": "2026-04-01",
-   "d2": "2026-10-31",
-   "dans_jours": -181,
-   "verifie_le": null,
-   "age_jours": null,
-   "cf": "probable"
-  },
-  {
-   "n": "PatBO x Loulou Ramatuelle, pop-up beachwear de l'été 2026",
-   "d1": "2026-04-23",
-   "d2": "2026-10-03",
-   "dans_jours": -159,
-   "verifie_le": null,
-   "age_jours": null,
-   "cf": "confirme"
-  },
-  {
-   "n": "L'Opéra Saint-Tropez, dîner-spectacle 2026 « Luxury Futuristic World »",
-   "d1": "2026-04-30",
-   "d2": "2026-10-04",
-   "dans_jours": -152,
-   "verifie_le": null,
-   "age_jours": null,
-   "cf": "confirme"
-  },
-  {
-   "n": "Loro Piana x La Reserve a la Plage (Pampelonne), reconduction 2026 non confirmee",
-   "d1": "2026-05-01",
-   "d2": "2026-09-30",
-   "dans_jours": -151,
-   "verifie_le": null,
-   "age_jours": null,
-   "cf": "averifier"
-  },
-  {
-   "n": "Les Jardins de Bagatelle, Garden Club (saison estivale 2026)",
-   "d1": "2026-05-01",
-   "d2": "2026-09-30",
-   "dans_jours": -151,
-   "verifie_le": null,
-   "age_jours": null,
-   "cf": "probable"
-  },
-  {
-   "n": "Boutique ephemere Chanel a East Hampton",
-   "d1": "2026-05-22",
-   "d2": "2026-09-30",
-   "dans_jours": -130,
-   "verifie_le": null,
-   "age_jours": null,
-   "cf": "confirme"
-  },
-  {
-   "n": "Nammos Baja Sardinia, saison beach club 2026 (nouvelle ouverture)",
-   "d1": "2026-05-29",
-   "d2": "2026-09-30",
-   "dans_jours": -123,
-   "verifie_le": null,
-   "age_jours": null,
-   "cf": "probable"
-  },
-  {
-   "n": "Music on the Rocks, nights (saison 2026)",
-   "d1": "2026-06-01",
-   "d2": "2026-09-30",
-   "dans_jours": -120,
-   "verifie_le": null,
-   "age_jours": null,
-   "cf": "probable"
-  },
-  {
-   "n": "SAINT Ramatuelle, nouveau beach club d'exception (Bagatelle Group)",
-   "d1": "2026-06-26",
-   "d2": "2026-09-30",
-   "dans_jours": -95,
-   "verifie_le": null,
-   "age_jours": null,
-   "cf": "confirme"
-  },
-  {
-   "n": "Terrasses et jardins d'été des palaces parisiens (Plaza Athénée, Bristol, Peninsula, Mandarin Oriental, Crillon)",
-   "d1": "2026-07-01",
-   "d2": "2026-10-04",
-   "dans_jours": -90,
-   "verifie_le": null,
-   "age_jours": null,
-   "cf": "probable"
-  },
-  {
-   "n": "La Lanterne d'Hermes a Ginza - programme d'ete 2026 (theme \"L'appel du large\", Flaneur Tour, vitrines)",
-   "d1": "2026-07-01",
-   "d2": "2026-09-30",
-   "dans_jours": -90,
-   "verifie_le": null,
-   "age_jours": null,
-   "cf": "probable"
-  },
-  {
-   "n": "Villa Louis Vuitton et restaurant étoilé Arnaud Donckele & Maxime Frédéric au White 1921",
-   "d1": "2026-07-01",
-   "d2": "2026-10-04",
-   "dans_jours": -90,
-   "verifie_le": null,
-   "age_jours": null,
-   "cf": "confirme"
-  },
-  {
-   "n": "Exposition 'On aura tout vu : Icônes' au Sofitel Paris Le Faubourg (robe de Lady Gaga)",
-   "d1": "2026-07-01",
-   "d2": "2026-10-06",
-   "dans_jours": -90,
-   "verifie_le": null,
-   "age_jours": null,
-   "cf": "confirme"
-  },
-  {
-   "n": "Chanel, boutique estivale à la villa La Mistralée",
-   "d1": "2026-07-01",
-   "d2": "2026-10-15",
-   "dans_jours": -90,
-   "verifie_le": null,
-   "age_jours": null,
-   "cf": "probable"
-  },
-  {
-   "n": "Dolce & Gabbana x Casa Amor, takeover 'DG Resort' (thème Carretto Siciliano)",
-   "d1": "2026-07-01",
-   "d2": "2026-10-31",
-   "dans_jours": -90,
-   "verifie_le": null,
-   "age_jours": null,
-   "cf": "confirme"
-  },
-  {
-   "n": "Armani/Silos, exposition « Giorgio Armani Privé 2005-2025, vingt ans de haute couture »",
-   "d1": "2026-07-01",
-   "d2": "2026-12-20",
-   "dans_jours": -90,
-   "verifie_le": null,
-   "age_jours": null,
-   "cf": "confirme"
-  },
-  {
-   "n": "Grand Hôtel de Cala Rossa, saison 2026 et table étoilée La Pinède",
-   "d1": "2026-07-01",
-   "d2": "2026-10-25",
-   "dans_jours": -90,
-   "verifie_le": null,
-   "age_jours": null,
-   "cf": "confirme"
-  },
-  {
-   "n": "L'été au Westminster, palace Barrière du Touquet (table étoilée Le Pavillon)",
-   "d1": "2026-07-01",
-   "d2": "2027-12-31",
-   "dans_jours": -90,
-   "verifie_le": null,
-   "age_jours": null,
-   "cf": "confirme"
-  },
-  {
-   "n": "Clubs prives Mayfair - Annabel's, 5 Hertford Street, Oswald's (Birley)",
-   "d1": "2026-07-01",
-   "d2": "2027-02-15",
-   "dans_jours": -90,
-   "verifie_le": null,
-   "age_jours": null,
-   "cf": "confirme"
-  },
-  {
-   "n": "Bagni Fiore Paraggi & Langosteria Paraggi (terrasse Dior)",
-   "d1": "2026-07-01",
-   "d2": "2026-09-30",
-   "dans_jours": -90,
-   "verifie_le": null,
-   "age_jours": null,
-   "cf": "confirme"
-  },
-  {
-   "n": "Covo di Nord-Est, club iconique de la Riviera",
-   "d1": "2026-07-01",
-   "d2": "2026-09-30",
-   "dans_jours": -90,
-   "verifie_le": null,
-   "age_jours": null,
-   "cf": "confirme"
-  },
-  {
-   "n": "La Gritta American Bar, Portofino",
-   "d1": "2026-07-01",
-   "d2": "2027-12-31",
-   "dans_jours": -90,
-   "verifie_le": null,
-   "age_jours": null,
-   "cf": "confirme"
-  },
-  {
-   "n": "Lio Ibiza, Cabaret dinner-show 'Halftime Show' & club",
-   "d1": "2026-07-01",
-   "d2": "2026-10-04",
-   "dans_jours": -90,
-   "verifie_le": null,
-   "age_jours": null,
-   "cf": "confirme"
-  },
   {
    "n": "Scene yacht & superyachts Ibiza-Formentera",
    "d1": "2026-07-01",
    "d2": "2026-10-04",
    "dans_jours": -90,
    "verifie_le": null,
-   "age_jours": null,
-   "cf": "probable"
-  },
-  {
-   "n": "Principote, Beach club chic de Panormos",
-   "d1": "2026-07-01",
-   "d2": "2026-09-30",
-   "dans_jours": -90,
-   "verifie_le": null,
-   "age_jours": null,
-   "cf": "confirme"
-  },
-  {
-   "n": "Saison 2026 de la Taverna Anema e Core de Gianluigi Lembo",
-   "d1": "2026-07-01",
-   "d2": "2026-09-30",
-   "dans_jours": -90,
-   "verifie_le": null,
-   "age_jours": null,
-   "cf": "confirme"
-  },
-  {
-   "n": "Cene a quattro mani à L'Olivo**, Jumeirah Capri Palace (série été 2026)",
-   "d1": "2026-07-01",
-   "d2": "2026-09-30",
-   "dans_jours": -90,
-   "verifie_le": null,
-   "age_jours": null,
-   "cf": "probable"
-  },
-  {
-   "n": "Soirées d'été du Casino Barrière Le Touquet",
-   "d1": "2026-07-01",
-   "d2": "2026-10-24",
-   "dans_jours": -90,
-   "verifie_le": "2026-07-11",
-   "age_jours": 80,
-   "cf": "averifier"
-  },
-  {
-   "n": "Nikki Beach Miami Beach, Amazing Sundays & Saturdance (beach club ADN Riviera)",
-   "d1": "2026-07-01",
-   "d2": "2027-08-06",
-   "dans_jours": -90,
-   "verifie_le": "2026-08-11",
-   "age_jours": 49,
-   "cf": "confirme"
-  },
-  {
-   "n": "Bagatelle Bodrum, Iconic Shows et guest DJs internationaux du jeudi",
-   "d1": "2026-07-16",
-   "d2": "2026-09-30",
-   "dans_jours": -75,
-   "verifie_le": null,
-   "age_jours": null,
-   "cf": "confirme"
-  },
-  {
-   "n": "La Guérite, dîners au coucher du soleil, Île Sainte-Marguerite",
-   "d1": "2026-07-17",
-   "d2": "2026-10-31",
-   "dans_jours": -74,
-   "verifie_le": null,
-   "age_jours": null,
-   "cf": "confirme"
-  },
-  {
-   "n": "Le Bâoli Cannes, saison estivale 2026 (club & dîner festif)",
-   "d1": "2026-07-18",
-   "d2": "2026-10-31",
-   "dans_jours": -73,
-   "verifie_le": null,
-   "age_jours": null,
-   "cf": "probable"
-  },
-  {
-   "n": "Sass Café Monte-Carlo, dîner-club des célébrités (soirées d'été)",
-   "d1": "2026-07-18",
-   "d2": "2026-09-30",
-   "dans_jours": -73,
-   "verifie_le": null,
-   "age_jours": null,
-   "cf": "probable"
-  },
-  {
-   "n": "Beach clubs de Pampelonne, Loulou, Casa Amor, Bagatelle, Gigi : soirées d'août",
-   "d1": "2026-08-01",
-   "d2": "2026-10-03",
-   "dans_jours": -59,
-   "verifie_le": null,
+   "badge_le": null,
    "age_jours": null,
    "cf": "probable"
   },
@@ -316,6 +21,7 @@
    "d2": "2026-10-11",
    "dans_jours": -59,
    "verifie_le": null,
+   "badge_le": null,
    "age_jours": null,
    "cf": "probable"
   },
@@ -325,6 +31,7 @@
    "d2": "2026-09-30",
    "dans_jours": -59,
    "verifie_le": null,
+   "badge_le": null,
    "age_jours": null,
    "cf": "confirme"
   },
@@ -334,52 +41,8 @@
    "d2": "2026-10-18",
    "dans_jours": -59,
    "verifie_le": null,
+   "badge_le": null,
    "age_jours": null,
-   "cf": "confirme"
-  },
-  {
-   "n": "Capri en aout : saison de la taverne Anema e Core et programme municipal Emozioni d'Estate",
-   "d1": "2026-08-01",
-   "d2": "2026-09-30",
-   "dans_jours": -59,
-   "verifie_le": null,
-   "age_jours": null,
-   "cf": "confirme"
-  },
-  {
-   "n": "Circuit vacances des mannequins - Mediterranee (Saint-Tropez, Ibiza, Mykonos, Sardaigne)",
-   "d1": "2026-08-01",
-   "d2": "2026-10-04",
-   "dans_jours": -59,
-   "verifie_le": null,
-   "age_jours": null,
-   "cf": "probable"
-  },
-  {
-   "n": "Grands magasins & concept stores, accès libre pendant la Fashion Week",
-   "d1": "2026-09-28",
-   "d2": "2026-10-06",
-   "dans_jours": -1,
-   "verifie_le": null,
-   "age_jours": null,
-   "cf": "averifier"
-  },
-  {
-   "n": "Accès payant, billetterie de défilés & conciergerie de luxe",
-   "d1": "2026-09-28",
-   "d2": "2026-10-06",
-   "dans_jours": -1,
-   "verifie_le": null,
-   "age_jours": null,
-   "cf": "averifier"
-  },
-  {
-   "n": "Venice Hospitality Challenge 2026 (13e édition)",
-   "d1": "2026-10-17",
-   "d2": "2026-10-17",
-   "dans_jours": 18,
-   "verifie_le": "2026-07-21",
-   "age_jours": 70,
    "cf": "confirme"
   },
   {
@@ -388,6 +51,7 @@
    "d2": "2026-10-20",
    "dans_jours": 21,
    "verifie_le": "2026-07-22",
+   "badge_le": "2026-07-22",
    "age_jours": 69,
    "cf": "confirme"
   }

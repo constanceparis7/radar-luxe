@@ -165,7 +165,7 @@ ul{{list-style:none;margin:0;padding:0}}li{{padding:5px 0;border-bottom:1px soli
 <div class="grid">
  <div class="card"><h2>Visiteurs</h2><div class="big">{fr(cumul)}</div><div class="k">cumul depuis l'ouverture du compteur · {("+" + str(jours[-1][1]) + " au relevé du " + jours[-1][0][8:] + "/" + jours[-1][0][5:7]) if jours else ""}</div></div>
  <div class="card"><h2>Le site</h2><div class="big">{n_fiches}</div><div class="k">fiches vivantes · {fr(n_pages)} pages publiées · date affichée : {esc(date_site)}</div></div>
- <div class="card"><h2>Fraîcheur des fiches</h2><div class="big">{frq.get("avec_date_verif", "?")}<span style="font-size:1rem;color:var(--muted)"> / {frq.get("total_vivantes", "?")}</span></div><div class="k">datées « vérifié à la source » · {len(frq.get("prioritaires", []))} à revérifier en priorité</div></div>
+ <div class="card"><h2>Fraîcheur des fiches</h2><div class="big">{frq.get("avec_badge", frq.get("avec_date_verif", "?"))}<span style="font-size:1rem;color:var(--muted)"> / {frq.get("total_vivantes", "?")}</span></div><div class="k">portent le badge « vérifié à la source » · {frq.get("avec_date_verif", "?")} contrôlées (badge ou source relue sans date publiée) · {len(frq.get("prioritaires", []))} à revérifier</div></div>
 </div>
 <div class="grid" style="grid-template-columns:2fr 1fr">
  <div class="card"><h2>Nouveaux visiteurs par jour (21 derniers relevés)</h2><div class="histo">{barres()}</div><div class="et">{etiquettes()}</div></div>

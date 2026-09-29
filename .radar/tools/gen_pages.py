@@ -661,6 +661,9 @@ def main():
         out.append(f'<link rel="alternate" hreflang="x-default" href="{BASE}{path_fn(obj, "fr") if obj is not None else u_hub("fr")}">')
         return "".join(out)
 
+    OG_LOCALE = {"fr": "fr_FR", "en": "en_GB", "es": "es_ES", "it": "it_IT", "pt": "pt_PT", "de": "de_DE", "ru": "ru_RU",
+                 "ar": "ar_AR", "zh": "zh_CN", "ja": "ja_JP", "ko": "ko_KR", "hi": "hi_IN", "tr": "tr_TR"}
+
     def page(lang, title, desc, path, body, hreflang, ld=None):
         ldblock = ""
         if ld is not None:
@@ -680,7 +683,8 @@ def main():
             "<link rel=\"apple-touch-icon\" href=\"/apple-touch-icon.png\"><link rel=\"manifest\" href=\"/manifest.webmanifest\">"
             f"<title>{esc(title)}</title><meta name=\"description\" content=\"{esc(desc)}\">"
             f"<link rel=\"canonical\" href=\"{canonical}\">{hreflang}"
-            "<meta property=\"og:type\" content=\"website\">"
+            "<meta property=\"og:type\" content=\"website\"><meta property=\"og:site_name\" content=\"ConstanceParis7\">"
+            f"<meta property=\"og:locale\" content=\"{OG_LOCALE.get(lang, 'fr_FR')}\">"
             f"<meta property=\"og:title\" content=\"{esc(title)}\"><meta property=\"og:description\" content=\"{esc(desc)}\">"
             f"<meta property=\"og:url\" content=\"{canonical}\"><meta property=\"og:image\" content=\"{OG}\">"
             "<meta property=\"og:image:width\" content=\"1200\"><meta property=\"og:image:height\" content=\"630\">"

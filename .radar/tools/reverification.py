@@ -32,19 +32,24 @@ if not os.path.exists(SRC):
 OUT = os.path.join(REPO, ".radar", "reverification-prioritaire.json")
 
 # Même motif que gen_pages.date_verif : on ne lit que ce qui est ÉCRIT.
-RX_VERIF = re.compile(r"(?:v[ée]rifi\w*|contr[oô]l[ée]\w*|checked)[^0-9]{0,30}?(\d{1,2}/\d{1,2}/\d{4})", re.I)
+# « relue le » et « inaccessible le » (29/09/2026) : la source a été regardée, la fiche
+# sort de la file pour 30 jours ; le badge « Vérifié à la source » de gen_pages, lui,
+# garde son propre motif et n'apparaît que sur « vérifié le ».
+RX_BADGE = re.compile(r"(?:v[ée]rifi\w*|contr[oô]l[ée]\w*|checked)[^0-9]{0,30}?(\d{1,2}/\d{1,2}/\d{4})", re.I)
+RX_VERIF = re.compile(r"(?:v[ée]rifi\w*|contr[oô]l[ée]\w*|checked|relue?|inaccessible)[^0-9]{0,40}?(\d{1,2}/\d{1,2}/\d{4})", re.I)
 IMMINENCE_JOURS = 21
 FRAICHEUR_JOURS = 30
 
 
-def date_verif(e):
+def date_verif(e, rx=None):
+    rx = rx or RX_VERIF
     textes = [str(e.get("so") or "")]
     iv = e.get("iv")
     if isinstance(iv, dict):
         textes += [str(v) for v in iv.values() if isinstance(v, str)]
     best = None
     for tx in textes:
-        for m in RX_VERIF.finditer(tx):
+        for m in rx.finditer(tx):
             j, mo, a = m.group(1).split("/")
             try:
                 d = dt.date(int(a), int(mo), int(j))
@@ -83,14 +88,17 @@ def main():
         if d2 < today:
             continue
         v = date_verif(e)
+        vb = date_verif(e, RX_BADGE)
         rows.append({
             "n": e["n"], "d1": e["d1"], "d2": e["d2"],
             "dans_jours": (d1 - today).days,
             "verifie_le": v.isoformat() if v else None,
+            "badge_le": vb.isoformat() if vb else None,
             "age_jours": (today - v).days if v else None,
             "cf": e.get("cf"),
         })
     avec = [r for r in rows if r["verifie_le"]]
+    avec_badge = [r for r in rows if r["badge_le"]]
     prio = [r for r in rows if r["dans_jours"] <= IMMINENCE_JOURS
             and (r["age_jours"] is None or r["age_jours"] > FRAICHEUR_JOURS)]
     prio.sort(key=lambda r: (r["dans_jours"], -(r["age_jours"] or 9999)))
@@ -101,10 +109,11 @@ def main():
                   f"{FRAICHEUR_JOURS} jours ; triée par imminence puis par ancienneté"),
         "total_vivantes": len(rows),
         "avec_date_verif": len(avec),
+        "avec_badge": len(avec_badge),
         "prioritaires": prio,
     }
     json.dump(out, open(OUT, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
-    print(f"reverification: {len(rows)} fiches vivantes, {len(avec)} avec date écrite, "
+    print(f"reverification: {len(rows)} fiches vivantes, {len(avec_badge)} avec badge vérifié, {len(avec)} contrôlées (badge ou source relue), "
           f"{len(prio)} à revérifier en priorité -> {os.path.relpath(OUT, REPO)}")
     for r in prio[:5]:
         print(f"  J{r['dans_jours']:+d}  {r['verifie_le'] or 'jamais écrite'}  {r['n'][:60]}")

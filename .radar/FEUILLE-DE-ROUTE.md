@@ -63,7 +63,7 @@ reste dérisoire pour un million de visiteurs par jour.
 Légende : [100] fait · [50] à moitié · [0] à faire. Le taux d'un objectif est la
 moyenne de ses micro-objectifs.
 
-### O1 · Fondations sans point faible (registre de l'audit croisé) · 85 %
+### O1 · Fondations sans point faible (registre de l'audit croisé) · 86 %
 - [100] Verrou de build bloquant sur les 7 876 pages, 13 langues
 - [100] Compteurs réconciliés et expliqués
 - [100] Redirections des anciennes adresses (lieux et fiches)
@@ -89,13 +89,15 @@ moyenne de ses micro-objectifs.
         du moment cachée si indisponible ; mode hors connexion posé le 28/09 (service
         worker, page « Hors connexion », pages visitées consultables sans réseau, testé
         serveur coupé puis vérifié en ligne)
-- [80]  Aperçus sociaux : og et cartes Twitter/X sur toutes les pages ; dimensions et
-        texte alternatif de l'image ajoutés sur toutes les pages le 28/09 ; reste le
-        contrôle du rendu WhatsApp, iMessage, LinkedIn et une image par événement
+- [88]  Aperçus sociaux : og et cartes Twitter/X sur toutes les pages ; dimensions et
+        texte alternatif de l'image ajoutés le 28/09 ; nom du site et langue de la page
+        (og:site_name, og:locale par langue) ajoutés le 29/09 ; image d'aperçu de 37 Ko,
+        sous les limites des messageries ; reste le contrôle visuel WhatsApp, iMessage,
+        LinkedIn et une image par événement
 - [100] JSON-LD Event recalibré le 20/09 : offre seulement si l'accès s'achète ou se
         réserve (237 fiches sur 320 au lieu de toutes), jamais d'InStock sur invitation,
         gratuité seulement si écrite, statut annulé ou reporté lu dans les textes
-- [90]  Fraîcheur : trois dates distinctes et honnêtes (passe, fiche, file de
+- [95]  Fraîcheur : trois dates distinctes et honnêtes (passe, fiche, file de
         revérification) ; outil reverification.py et étape 5bis de la doctrine posés le
         27/09. Le 28/09, la passe de nuit a revérifié 2 fiches (Fondazione Prada, Villa
         Carmignac) et maintenu 1 doute avec preuve (Gaïo Saint-Tropez, aucune date de fin
@@ -117,8 +119,12 @@ moyenne de ses micro-objectifs.
         sans date de fin publiée laissées sans date. Journal des preuves (citation, source,
         verdict de chaque vérification) dans .radar/journal. Mesure au 29/09 après ces
         trois lots : 207 fiches vivantes, 90 datées « vérifié à la source », file de
-        revérification de 106 à 43 (les 43 restantes sont pour l'essentiel des saisons dont
-        l'organisateur ne publie pas de date de fin). Reste : les passes de nuit.
+        revérification de 106 à 43. Le 29/09, honnêteté sur ces 43 : les 36 saisons dont
+        l'organisateur ne publie aucune date de fin portent désormais la mention « source
+        relue le 28/09/2026, fin estimée par le radar » (sans badge), et 21 d'entre elles
+        passent de « confirmé » à « probable » ; 4 sources inaccessibles notées à retenter ;
+        file ramenée à 5. Reste : les passes de nuit, et un badge qui ne s'affiche que sur
+        une date réellement confirmée.
 - [100] Statuts des récurrents et saisons : JSON-LD de l'accueil recalculé à chaque
         build depuis le 27/09 (annulé, reporté, programmé seulement si confirmé, sinon
         aucun statut affirmé) ; champ de confirmation ramené à trois valeurs, 35 fiches
@@ -341,10 +347,13 @@ les textes de séjour (1 088 Ko) et les journaux d'enquête (619 Ko). Une fiche
 
 ### O9 · Les paliers d'audience et leur prérequis technique
 - [100] Palier 1, 100 par jour : atteint (35 à 100)
-- [40]  Palier 2, 1 000 par jour : accueil allégé, Cloudflare devant, taux de clic
-        corrigé, newsletter lancée
-- [10]  Palier 3, 10 000 par jour : Cloudflare Pages, sitemaps scindés, budget de
-        performance, alertes automatiques
+- [55]  Palier 2, 1 000 par jour : accueil allégé (fait), vitesse mobile mesurée dans le
+        vert (fait), surveillance et alertes indépendantes (fait), site installable et hors
+        connexion (fait) ; reste Cloudflare devant, le taux de clic (bilan du 2/10) et la
+        newsletter
+- [45]  Palier 3, 10 000 par jour : sitemaps scindés (fait), budget de performance au
+        verrou (fait), alertes automatiques (fait), API publique (fait) ; reste Cloudflare
+        Pages pour la bande passante, décision à rouvrir le moment venu
 - [0]   Palier 4, 100 000 par jour : rendu à la volée (Workers, KV), R2, API,
         cache agressif, contenu à 1 000 événements et plus
 - [0]   Palier 5, 1 000 000 par jour : architecture edge complète, D1, tests de
