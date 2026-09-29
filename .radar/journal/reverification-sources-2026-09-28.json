@@ -1,6 +1,6 @@
 {
  "quand": "28 et 29/09/2026",
- "methode": "102 fiches imminentes ou en cours confrontées à leur source officielle par lots parallèles ; citation verbatim de la page officielle exigée, site tiers refusé, « introuvable » au moindre doute ; seules les fiches confirmées ou corrigées portent la date « vérifié le 28/09/2026 » dans leurs sources",
+ "methode": "104 fiches imminentes ou en cours confrontées à leur source officielle par lots parallèles ; citation verbatim de la page officielle exigée, site tiers refusé, « introuvable » au moindre doute ; seules les fiches confirmées ou corrigées portent la date « vérifié le 28/09/2026 » dans leurs sources",
  "resultats": [
   {
    "fiche": "2026-10-13|PAD London 2026, Collectors Preview",
@@ -453,42 +453,6 @@
    "commentaire": "La page officielle de l'hôtel indique une fin de saison au 6 janvier (année non imprimée mais nécessairement 2027 puisque l'hôtel est « currently open » au 28/09/2026), soit un jour après le d2 de la fiche (2027-01-05) ; aucune date de début n'est publiée et la page « dining » DaV Mare ne mentionne aucune date."
   },
   {
-   "fiche": "2026-07-01|Covo di Nord-Est, club iconique de la Riviera",
-   "verdict": "introuvable",
-   "source": "https://covodinordest.it/",
-   "citation": "",
-   "debut_source": "2026-04-25",
-   "fin_source": "",
-   "commentaire": "aucune date de fin publiée : la page d'accueil officielle indique seulement « A partire da Sabato 25 Aprile 2026 per tutta la stagione 2026 » et des soirées hebdomadaires (mercredi/jeudi/vendredi/samedi) ; les pages covo-eventi, covo-di-nord-est, contatti et negozio ne donnent aucune date de clôture."
-  },
-  {
-   "fiche": "2026-07-01|La Gritta American Bar, Portofino",
-   "verdict": "introuvable",
-   "source": "https://www.lagrittaportofino.com/en/index.html",
-   "citation": "",
-   "debut_source": "",
-   "fin_source": "",
-   "commentaire": "aucune date de fin publiée : le site officiel (accueil EN/IT et page contatti) indique uniquement « 7 days a week, from 9am to 2am » (« 7 giorni su 7, Orario continuato dalle 9 alle 2 »), sans aucune date de saison ni de fermeture 2026/2027."
-  },
-  {
-   "fiche": "2026-07-01|David Guetta F*** Me I'm Famous!, Ushuaia Ibiza",
-   "verdict": "confirme",
-   "source": "https://www.theushuaiaexperience.com/en/club/events/fmif-david-guetta",
-   "citation": "David Guetta returns to the place where music meets magic to present his acclaimed F*** ME I’M FAMOUS! every Monday from 1 June - 5 October 2026.",
-   "debut_source": "2026-06-01",
-   "fin_source": "2026-10-05",
-   "commentaire": "Page officielle Ushuaïa (ushuaiaibiza.com redirige vers theushuaiaexperience.com) : résidence tous les lundis du 1er juin au 5 octobre 2026, dernière date affichée « Monday October 5 Closing Party From 17:00 » ; fin conforme à d2 et à dt."
-  },
-  {
-   "fiche": "2026-07-01|Lio Ibiza, Cabaret dinner-show 'Halftime Show' & club",
-   "verdict": "introuvable",
-   "source": "https://www.liogroup.com/ibiza/ibiza-whats-on",
-   "citation": "",
-   "debut_source": "2026-05-07",
-   "fin_source": "",
-   "commentaire": "aucune date de fin publiée : lioibiza.com redirige vers liogroup.com/ibiza ; les pages ibiza, what-to-expect, reservations, faq et ibiza-whats-on mentionnent seulement « Opening Days on May 7th, 8th and 9th » et « Reservations for the 2026 season are now open », sans date de clôture 2026 (la seule closing party listée sur le site est celle du 5 octobre 2025)."
-  },
-  {
    "fiche": "2026-07-01|Blue Marlin Ibiza, Beach club VIP (Cala Jondal)",
    "verdict": "confirme",
    "source": "https://www.bluemarlinibiza.com/events/",
@@ -550,42 +514,6 @@
    "debut_source": "2026-07-01",
    "fin_source": "2026-09-30",
    "commentaire": "Page d'accueil lue : « la musique du DJ enchante les plus festifs jusqu'à 2h » avec bar extérieur « tous les jours en juillet et août », week-ends en septembre/octobre ; page News (https://lacoorniche.com/en/news-hotel-spa-aquitaine/) : « September : DJ nights at La Co(o)rniche » / « DJs every Friday and Saturday evening in September ! » ; aucune année imprimée à côté de ces mois (site daté © 2026, cartes datées mai 2026), la période juillet-août « en continu » et la fin septembre correspondent à d1..d2."
-  },
-  {
-   "fiche": "2026-07-01|L'été au Westminster, palace Barrière du Touquet (table étoilée Le Pavillon)",
-   "verdict": "introuvable",
-   "source": "https://www.hotelsbarriere.com/en/le-touquet-paris-plage/le-westminster/restaurants-and-bars/le-pavillon",
-   "citation": "",
-   "debut_source": "",
-   "fin_source": "",
-   "commentaire": "Page hôtel, page Le Pavillon (EN et FR) et page Restaurants lues : seulement « Ouvert du jeudi au dimanche soir de 19h30 à 20h30 », aucune date de saison ni de fin ; aucune date de fin publiée."
-  },
-  {
-   "fiche": "2026-07-01|Clubs prives Mayfair - Annabel's, 5 Hertford Street, Oswald's (Birley)",
-   "verdict": "introuvable",
-   "source": "https://annabels.co.uk/",
-   "citation": "",
-   "debut_source": "",
-   "fin_source": "",
-   "commentaire": "annabels.co.uk (accueil, /club, /useful-information) ne mentionne aucune date ni programme ; /events et /events/video renvoient HTTP 404 ; aucune date de fin publiée."
-  },
-  {
-   "fiche": "2026-07-01|Bagni Fiore Paraggi & Langosteria Paraggi (terrasse Dior)",
-   "verdict": "introuvable",
-   "source": "https://www.langosteria.com/en/langosteria-paraggi",
-   "citation": "",
-   "debut_source": "",
-   "fin_source": "",
-   "commentaire": "La page officielle dit seulement « From the first breath of spring to the long sunsets of the end of summer » sans aucune date ; page /en/terrazza-sul-mare-2026 en HTTP 404 (EN et IT, deux essais) ; bagnifiore.com reprend la même formule sans date ; aucune date de fin publiée."
-  },
-  {
-   "fiche": "2026-07-01|DaV Mare, Splendido Mare, A Belmond Hotel (famille Cerea / Da Vittorio)",
-   "verdict": "different",
-   "source": "https://www.belmond.com/hotels/europe/italy/portofino/belmond-splendido-mare/",
-   "citation": "Splendido Mare is currently open for the season until 6 January.",
-   "debut_source": "",
-   "fin_source": "2027-01-06",
-   "commentaire": "La page dining (u) ne donne aucune date ; la page hôtel Belmond indique une fermeture de saison « until 6 January » (année non imprimée, page courante © 2026 donc janvier 2027), soit un jour après d2 = 2027-01-05 ; davmare.com ne publie que des horaires quotidiens, la carte DaV Mare est libellée « Autunno 2026 »."
   },
   {
    "fiche": "2026-07-01|Nikki Beach Mallorca, Beach club (Calvia)",

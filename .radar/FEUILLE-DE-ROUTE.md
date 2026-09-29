@@ -95,7 +95,7 @@ moyenne de ses micro-objectifs.
 - [100] JSON-LD Event recalibré le 20/09 : offre seulement si l'accès s'achète ou se
         réserve (237 fiches sur 320 au lieu de toutes), jamais d'InStock sur invitation,
         gratuité seulement si écrite, statut annulé ou reporté lu dans les textes
-- [85]  Fraîcheur : trois dates distinctes et honnêtes (passe, fiche, file de
+- [90]  Fraîcheur : trois dates distinctes et honnêtes (passe, fiche, file de
         revérification) ; outil reverification.py et étape 5bis de la doctrine posés le
         27/09. Le 28/09, la passe de nuit a revérifié 2 fiches (Fondazione Prada, Villa
         Carmignac) et maintenu 1 doute avec preuve (Gaïo Saint-Tropez, aucune date de fin
@@ -111,8 +111,14 @@ moyenne de ses micro-objectifs.
         de session, relancé) : Ushuaïa et Blue Marlin confirmés (fins de saison), Splendido
         Mare corrigé (ouvert jusqu'au 6 janvier 2027, source Belmond), 7 saisons sans date
         de fin publiée laissées sans date ; la passe de nuit du 29/09 a corrigé 5 dates de
-        fin sur source et purgé 7 fiches terminées. Mesure au 29/09 : 207 fiches vivantes,
-        72 datées, file de revérification de 106 à 65. Reste à faire descendre la file.
+        fin sur source et purgé 7 fiches terminées. Troisième lot le 29/09 au matin (62
+        fiches, 13 lots) : 24 fins de saison ou dates confirmées à la source et datées,
+        Amanzoe corrigé (jusqu'au 30 septembre et non 31 octobre, 13 langues), 33 saisons
+        sans date de fin publiée laissées sans date. Journal des preuves (citation, source,
+        verdict de chaque vérification) dans .radar/journal. Mesure au 29/09 après ces
+        trois lots : 207 fiches vivantes, 90 datées « vérifié à la source », file de
+        revérification de 106 à 43 (les 43 restantes sont pour l'essentiel des saisons dont
+        l'organisateur ne publie pas de date de fin). Reste : les passes de nuit.
 - [100] Statuts des récurrents et saisons : JSON-LD de l'accueil recalculé à chaque
         build depuis le 27/09 (annulé, reporté, programmé seulement si confirmé, sinon
         aucun statut affirmé) ; champ de confirmation ramené à trois valeurs, 35 fiches
@@ -231,7 +237,7 @@ les textes de séjour (1 088 Ko) et les journaux d'enquête (619 Ko). Une fiche
 - [100] Sitemap scindé par langue avec index (20/09) : 13 fichiers de 850 Ko au lieu d'un
         seul de 11 Mo ; le verrou lit l'index
 
-### O4 · Données et contenu à l'échelle · 54 %
+### O4 · Données et contenu à l'échelle · 63 %
 - [100] Passes de nuit (purge, liens, condensation)
 - [100] Résorption hebdomadaire de tous les doutes, aux sources
 - [100] Sentinelle des imminents (lundi)

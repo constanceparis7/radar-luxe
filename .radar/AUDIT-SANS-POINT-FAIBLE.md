@@ -94,7 +94,15 @@ de chaque correction, et le verrou final est un validateur de build BLOQUANT.
    Langosteria Paraggi, Covo di Nord-Est, La Gritta, Lío) laissées sans date, honnêtement.
    La passe de nuit du 29/09 a corrigé 5 dates de fin sur source et purgé 7 fiches
    terminées. Au 29/09 : 207 vivantes, 72 datées, 65 à revérifier.
-   Reste : faire descendre les 65, au rythme des passes (suivi au compte rendu quotidien).
+   Troisième lot le 29/09 au matin (62 fiches, 13 lots parallèles) : 24 confirmées à la
+   source et datées (Cheval Blanc, Marie Antoinette Style Yokohama, Scorpios, LUMA Arles,
+   Cap-Ferrat, Pêcheurs, GAIA Bodrum…), Amanzoe corrigé (30 septembre et non 31 octobre),
+   33 saisons sans date de fin publiée laissées sans date (Bâoli, Sass Café, La Guérite,
+   Bagatelle Bodrum, terrasses des palaces parisiens, Lanterne Hermès…). Journal des
+   preuves de l'ensemble (citation verbatim, source, verdict) :
+   .radar/journal/reverification-sources-2026-09-28.json. Bilan des trois lots : 207
+   vivantes, 90 datées, 43 à revérifier, presque toutes des saisons sans date de fin
+   publiée par l'organisateur. Reste : les passes de nuit, 3 à 5 par nuit.
 10. [FAIT 27/09] Statuts : le JSON-LD de l'accueil déclarait « programmé » pour tous
     les événements, date estimée comprise. Désormais recalculé à chaque build comme
     sur les fiches : annulé → EventCancelled, reporté → EventPostponed, programmé
