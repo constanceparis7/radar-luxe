@@ -315,7 +315,7 @@ les textes de séjour (1 088 Ko) et les journaux d'enquête (619 Ko). Une fiche
 - [0]   Double opt-in, SPF, DKIM, DMARC pour la newsletter
 - [0]   En-têtes de sécurité (Cloudflare)
 
-### O8 · Observabilité et pilotage · 82 %
+### O8 · Observabilité et pilotage · 84 %
 - [100] Compteur public GoatCounter
 - [100] Search Console vérifiée, exports lus
 - [100] Sonde du matin (quotidienne) et contrôle Google contre site (hebdomadaire)
@@ -323,12 +323,14 @@ les textes de séjour (1 088 Ko) et les journaux d'enquête (619 Ko). Une fiche
 - [100] Sonde de disponibilité : locale sans interruption depuis le 18/09 (zéro 5xx), et
         depuis le 28/09 chez GitHub toutes les 30 minutes, indépendante de la machine (plus
         rien à relancer si elle redémarre)
-- [75]  Tableau de bord unique : générateur .radar/tools/tableau_de_bord.py posé le 28/09,
+- [85]  Tableau de bord unique : générateur .radar/tools/tableau_de_bord.py posé le 28/09,
         qui lit les journaux existants (visiteurs par jour, vitesse mobile LCP/INP/CLS,
         fraîcheur et file de revérification, taux de la feuille de route, dernières
         publications et passes) et produit une page privée, publiée à Constance en artefact
-        « Pilotage ConstanceParis7 » ; le tableau public des visites reste tel quel (ses 7
-        tirets purgés le 28/09) ; reste à le régénérer chaque matin par la sonde
+        « Pilotage ConstanceParis7 » ; régénéré chaque matin par le plancher GitHub depuis
+        le 29/09 (étape de passe-quotidienne.yml, jamais bloquante) ; le tableau public des
+        visites reste tel quel (ses 7 tirets purgés le 28/09) ; reste à republier
+        l'artefact à chaque session de travail
 - [0]   Statistiques Cloudflare sans cookie
 - [85]  Alertes : la sonde du matin contrôle que la passe de nuit a tourné et la relance
         sinon, mesure PageSpeed et tient un journal de vitesse (20/09) ; alerte hors

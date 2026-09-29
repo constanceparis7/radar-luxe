@@ -59,6 +59,13 @@ jobs:
           export RADAR_REPO="$GITHUB_WORKSPACE"
           python3 .radar/tools/relever_visites.py
 
+      - name: Régénérer le tableau de bord de pilotage
+        run: |
+          # Page privée (.radar n'est pas servi par le site) : visiteurs, vitesse,
+          # fraîcheur, feuille de route, dernières passes. Jamais bloquant.
+          export RADAR_REPO="$GITHUB_WORKSPACE"
+          python3 .radar/tools/tableau_de_bord.py || echo "tableau de bord : échec non bloquant"
+
       - name: Publier si quelque chose a changé
         id: publication
         run: |
