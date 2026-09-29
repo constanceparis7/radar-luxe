@@ -1972,6 +1972,7 @@ signalés sur la page d'accueil.</p>
             "c": cat_label(e.get("c", "autre"), "fr"),
             "a": e.get("a") or "",
             "d": T(e, "fr", "dt") or "",
+            "d1": e.get("d1") or "", "d2": e.get("d2") or e.get("d1") or "",
             "p": (T(e, "fr", "p") or "")[:220],
             "dc": (e.get("dc") or "").strip(),
             "no": nr if nr is not None else 0,
@@ -2033,28 +2034,52 @@ document.querySelectorAll('.ex').forEach(function(a){a.addEventListener('click',
     corps = ["<div class=\"bc\"><a href=\"/\">Radar</a> · Favoris</div>",
              "<h1>Mes favoris</h1>",
              "<p class=\"meta\">Les événements que vous avez marqués d'un cœur. Ils ne quittent jamais votre appareil : aucun compte, aucune donnée transmise.</p>",
+             "<p class=\"meta\" id=\"fav-prochain\" hidden></p>",
+             "<p id=\"fav-outils\" hidden><a class=\"fav-btn ics-btn\" id=\"fav-ics-tous\" href=\"#\" download=\"mes-favoris-constanceparis7.ics\">\U0001F5D3 Tout ajouter à mon agenda</a></p>",
              "<div id=\"fav-liste\"></div>",
              "<p class=\"meta\" id=\"fav-vide\" hidden>Aucun favori pour l'instant. Sur chaque fiche d'événement, touchez le cœur à côté du titre.</p>",
              "<div class=\"chips\"><a href=\"/\">← Retour au radar</a><a href=\"/entrer.html\">Où voulez-vous entrer ?</a></div>",
+             # 29/09/2026 : favoris triés par date, « dans N jours » / « en cours » / « terminé »,
+             # ajout au calendrier par événement et pour tous les favoris en un seul fichier
+             # (construit dans le navigateur à partir des fichiers .ics publics ; rien ne sort
+             # de l'appareil). Les alertes automatiques exigeraient un canal : pas ici.
              """<script>(function(){var CLE='cp7favs';var favs=[];
              try{favs=JSON.parse(localStorage.getItem(CLE))||[]}catch(e){}
-             var liste=document.getElementById('fav-liste'),vide=document.getElementById('fav-vide');
+             var liste=document.getElementById('fav-liste'),vide=document.getElementById('fav-vide'),proch=document.getElementById('fav-prochain'),outils=document.getElementById('fav-outils'),tous=document.getElementById('fav-ics-tous');
              function esc(s){var d=document.createElement('i');d.textContent=s||'';return d.innerHTML;}
+             function jourParis(){try{return new Intl.DateTimeFormat('en-CA',{timeZone:'Europe/Paris',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());}catch(e){return new Date().toISOString().slice(0,10);}}
+             function jours(a,b){return Math.round((Date.UTC(+b.slice(0,4),+b.slice(5,7)-1,+b.slice(8,10))-Date.UTC(+a.slice(0,4),+a.slice(5,7)-1,+a.slice(8,10)))/86400000);}
+             function etat(e,auj){if(!e.d1)return['','x'];if(e.d2&&e.d2<auj)return['Terminé','t'];if(e.d1<=auj)return['En cours','c'];var n=jours(auj,e.d1);return[n===0?'Aujourd’hui':(n===1?'Demain':'Dans '+n+' jours'),'a'];}
              if(!favs.length){vide.hidden=false;return;}
              fetch('/acces-index.json').then(function(r){return r.json()}).then(function(idx){
               var par={};idx.forEach(function(e){par[e.u.replace('/e/','').replace('.html','')]=e;});
-              var html='';var restants=[];
-              favs.forEach(function(s){var e=par[s];if(!e)return;restants.push(s);
-               html+='<div class=\"box\" style=\"margin-top:12px\"><div class=\"d\" style=\"font-size:.78rem;color:#9FB0BD\">'+esc(e.v||'')+(e.no?' \u00b7 \u2726 '+e.no+'/100':'')+'</div>'
-                +'<h2 style=\"margin:.3em 0\"><a href=\"'+e.u+'\">'+esc(e.n)+'</a></h2>'
+              var auj=jourParis();var items=[];
+              favs.forEach(function(s){var e=par[s];if(e)items.push({s:s,e:e});});
+              items.sort(function(x,y){return (x.e.d1||'9999')<(y.e.d1||'9999')?-1:1;});
+              var html='';var prochain=null;
+              items.forEach(function(it){var e=it.e,s=it.s,et=etat(e,auj);
+               if(!prochain&&et[1]==='a')prochain={e:e,l:et[0]};
+               html+='<div class=\"box\" style=\"margin-top:12px'+(et[1]==='t'?';opacity:.6':'')+'\"><div class=\"d\" style=\"font-size:.78rem;color:#9FB0BD\">'+(et[0]?'<b style=\"color:#d3b06a\">'+esc(et[0])+'</b> · ':'')+esc(e.v||'')+(e.no?' · ✦ '+e.no+'/100':'')+'</div>'
+                +'<h2 style=\"margin:.3em 0\" dir=\"auto\"><a href=\"'+e.u+'\">'+esc(e.n)+'</a></h2>'
                 +(e.d?'<div style=\"color:#9FB0BD\">'+esc(e.d)+'</div>':'')
-                +'<p style=\"margin:.4em 0 0\"><button class=\"fav-retirer\" data-slug=\"'+s+'\" style=\"background:none;border:1px solid #26313A;border-radius:99px;color:#9FB0BD;cursor:pointer;padding:3px 10px;font-size:.8rem\">Retirer</button></p></div>';});
+                +'<p style=\"margin:.5em 0 0;display:flex;gap:8px;flex-wrap:wrap;align-items:center\"><a class=\"fav-btn ics-btn\" style=\"margin:0\" download type=\"text/calendar\" href=\"'+'/ics/'+s+'.ics\">🗓 Ajouter à mon agenda</a>'
+                +'<button class=\"fav-retirer\" data-slug=\"'+s+'\" style=\"background:none;border:1px solid #26313A;border-radius:99px;color:#9FB0BD;cursor:pointer;padding:6px 12px;font-size:.8rem;min-height:36px\">Retirer</button></p></div>';});
               liste.innerHTML=html||'';vide.hidden=!!html;
+              if(prochain){proch.textContent='Prochain favori : '+prochain.e.n+' · '+prochain.l.toLowerCase()+'.';proch.hidden=false;}
+              if(items.length>1){outils.hidden=false;}
+              tous.addEventListener('click',function(ev){ev.preventDefault();
+               Promise.all(items.map(function(it){return fetch('/ics/'+it.s+'.ics').then(function(r){return r.ok?r.text():''}).catch(function(){return ''});})).then(function(txts){
+                var ev=[];txts.forEach(function(t){var m=t.match(/BEGIN:VEVENT[\\s\\S]*?END:VEVENT/);if(m)ev.push(m[0]);});
+                if(!ev.length)return;
+                var cal='BEGIN:VCALENDAR\\r\\nVERSION:2.0\\r\\nPRODID:-//ConstanceParis7//Favoris//FR\\r\\nCALSCALE:GREGORIAN\\r\\nMETHOD:PUBLISH\\r\\n'+ev.join('\\r\\n')+'\\r\\nEND:VCALENDAR\\r\\n';
+                var url=URL.createObjectURL(new Blob([cal],{type:'text/calendar;charset=utf-8'}));
+                var a=document.createElement('a');a.href=url;a.download='mes-favoris-constanceparis7.ics';document.body.appendChild(a);a.click();a.remove();
+                setTimeout(function(){URL.revokeObjectURL(url)},4000);});});
               liste.addEventListener('click',function(ev){var b=ev.target.closest('.fav-retirer');if(!b)return;
                var s=b.getAttribute('data-slug');favs=favs.filter(function(x){return x!==s});
                try{localStorage.setItem(CLE,JSON.stringify(favs))}catch(e){}
-               b.closest('.box').remove();if(!favs.length)vide.hidden=false;});
-             });})();</script>"""]
+               b.closest('.box').remove();if(!favs.length){vide.hidden=false;outils.hidden=true;proch.hidden=true;}});
+             }).catch(function(){liste.innerHTML='<p class=\"meta\">Liste momentanément indisponible. Rechargez la page dans un instant.</p>';});})();</script>"""]
     write("/favoris.html", page("fr", "Mes favoris · ConstanceParis7",
           "Vos événements marqués d'un cœur, gardés sur votre appareil.",
           "/favoris.html", "".join(corps),

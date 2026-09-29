@@ -280,17 +280,20 @@ les textes de séjour (1 088 Ko) et les journaux d'enquête (619 Ko). Une fiche
         son titre et ses liens vers les deux autres (vérifiés) ; reste la mesure au 2/10
 - [0]   Liens entrants (en pause volontaire ; liste de 20 relais prête)
 
-### O6 · Produit et rétention · 64 %
+### O6 · Produit et rétention · 68 %
 - [100] Favoris partout, page Mes favoris, compteur
 - [100] Moteur Comment entrer, Note du radar, Protocole, Questions
 - [75]  Partage : aperçus og par page, dimensions et texte alternatif de l'image depuis le
         28/09 (à contrôler messagerie par messagerie)
 - [0]   Newsletter hebdomadaire (dimanche 21/09)
-- [40]  Alertes liées aux favoris : premier pas le 28/09, « Ajouter à mon agenda » sur
-        chaque fiche (fichier calendrier .ics, journée entière avec l'heure écrite en
-        description, français ou anglais selon la langue, servi en text/calendar, vérifié
-        en ligne) ; reste l'alerte automatique, qui exige un canal (courriel ou
-        notification)
+- [65]  Alertes liées aux favoris : « Ajouter à mon agenda » sur chaque fiche le 28/09
+        (fichier calendrier .ics, journée entière, français ou anglais selon la langue) ;
+        page Mes favoris refaite le 29/09 : favoris triés par date, mention « dans N jours »,
+        « en cours » ou « terminé », ligne « Prochain favori », ajout au calendrier par
+        événement et « Tout ajouter à mon agenda » en un seul fichier construit dans le
+        navigateur (rien ne quitte l'appareil), testé avant publication (tri, états, fichier
+        de 3 événements, retrait) ; reste l'alerte automatique, qui exige un canal (courriel
+        ou notification)
 - [0]   Le Cercle (on ne peut pas acheter, on est choisi)
 - [100] Site installable et consultable hors connexion (28/09) : manifeste, icônes (onglet,
         écran d'accueil iOS et Android, monogramme C7 en Didot), service worker réseau
