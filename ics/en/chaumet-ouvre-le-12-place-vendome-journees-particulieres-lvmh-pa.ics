@@ -6,7 +6,7 @@ METHOD:PUBLISH
 BEGIN:VEVENT
 UID:chaumet-ouvre-le-12-place-vendome-journees-particulieres-lvmh-pa@consta
  nceparis7.com
-DTSTAMP:20260930T000000Z
+DTSTAMP:20261001T000000Z
 DTSTART;VALUE=DATE:20261016
 DTEND;VALUE=DATE:20261019
 SUMMARY:Chaumet opens 12 place Vendôme\, LVMH Journées Particulières

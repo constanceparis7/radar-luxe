@@ -1,15 +1,15 @@
 {
- "genere_le": "2026-09-30",
+ "genere_le": "2026-10-01",
  "regle": "fiche non terminée, commençant dans 21 jours ou déjà en cours, dont la dernière vérification écrite est absente ou date de plus de 30 jours ; triée par imminence puis par ancienneté",
- "total_vivantes": 206,
- "avec_date_verif": 124,
- "avec_badge": 89,
+ "total_vivantes": 187,
+ "avec_date_verif": 106,
+ "avec_badge": 86,
  "prioritaires": [
   {
    "n": "Scene yacht & superyachts Ibiza-Formentera",
    "d1": "2026-07-01",
    "d2": "2026-10-04",
-   "dans_jours": -91,
+   "dans_jours": -92,
    "verifie_le": null,
    "badge_le": null,
    "age_jours": null,
@@ -19,50 +19,40 @@
    "n": "Palaces de la presqu'île, expériences d'août (Byblos, Cheval Blanc, Airelles Château de la Messardière, La Réserve Ramatuelle)",
    "d1": "2026-08-01",
    "d2": "2026-10-11",
-   "dans_jours": -60,
+   "dans_jours": -61,
    "verifie_le": null,
    "badge_le": null,
    "age_jours": null,
    "cf": "probable"
   },
   {
-   "n": "Gucci Flora x La Rose des Vents, beach club takeover",
-   "d1": "2026-08-01",
-   "d2": "2026-09-30",
-   "dans_jours": -60,
-   "verifie_le": null,
-   "badge_le": null,
-   "age_jours": null,
-   "cf": "confirme"
-  },
-  {
    "n": "Saison d'été à l'Hôtel du Cap-Eden-Roc (Oetker Collection)",
    "d1": "2026-08-01",
    "d2": "2026-10-18",
-   "dans_jours": -60,
+   "dans_jours": -61,
    "verifie_le": null,
    "badge_le": null,
    "age_jours": null,
-   "cf": "confirme"
-  },
-  {
-   "n": "Design Miami / Paris 2026, Preview Day sur invitation",
-   "d1": "2026-10-20",
-   "d2": "2026-10-20",
-   "dans_jours": 20,
-   "verifie_le": "2026-07-22",
-   "badge_le": "2026-07-22",
-   "age_jours": 70,
    "cf": "confirme"
   },
   {
    "n": "Art Basel Paris 2026, Grand Palais",
    "d1": "2026-10-21",
    "d2": "2026-10-25",
-   "dans_jours": 21,
+   "dans_jours": 20,
    "verifie_le": "2026-07-16",
    "badge_le": "2026-07-16",
-   "age_jours": 76,
+   "age_jours": 77,
+   "cf": "confirme"
+  },
+  {
+   "n": "Exposition « Designing the Gilded Age », les studios Tiffany au Met",
+   "d1": "2026-10-22",
+   "d2": "2027-02-07",
+   "dans_jours": 21,
+   "verifie_le": "2026-08-23",
+   "badge_le": "2026-08-23",
+   "age_jours": 39,
    "cf": "confirme"
   }
  ]

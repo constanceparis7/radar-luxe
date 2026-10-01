@@ -1350,3 +1350,6 @@ un bouchon au même titre que le 31/08 ; ne corriger que sur preuve chargée, ne
 avant le 30/09), Anema e Core / La Co(o)rniche / Bagni Fiore / Principote (dt « août » ou « juillet-août » incohérent
 avec d2), Gucci Flora x La Rose des Vents (fin annoncée « through October », d1 réel mai), Chanel East Hampton (fin non
 annoncée). Corriger dt ou d2 d'une fiche : retirer la clé correspondante des 12 traductions (fait par script).
+
+## 01/10/2026 : des mobiles de personnes et des e-mails `initiale+nom@` avaient été republiés après le 20/08
+Un scan par expression régulière des numéros mobiles (+33 6/7, +41 7x, +44 7, +39 3xx) sur iv.o/g/w/c a trouvé des dizaines de numéros dont plusieurs rattachés à une personne nommée (attachées de presse, responsables RP) et des e-mails `boulet@`, `szmorin@`, `l.serino@`, `sylvie@`. Corrigé sur 9 fiches. Les lignes de réservation de clubs et de presse institutionnelle restent à trancher à la main. Dans `iv.c`, une entrée est `{t: libellé, v: valeur}` : filtrer sur `v`, pas sur `t`. Les traductions `iv_*` vivent peu dans `tr` ; corriger le français suffit à retirer celles qui existent.

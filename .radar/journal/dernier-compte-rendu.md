@@ -1,13 +1,15 @@
-# Compte rendu : passe du 30/09/2026
+# Compte rendu : passe du 01/10/2026
 
-**Purge.** 11 zombies (fin 30/08/2026) purgés : 309 → 298 événements. Le verrou les bloquait, la purge (`passe_automatique.py --apply`) les a évacués.
+**Purge.** 2 zombies (fiches-conseil, fin 31/08) purgés : 298 → 296 événements.
 
-**Condensation `iv`.** 0 dérive « journal d'enquête » sur la fenêtre live (8e jour consécutif, contrôle par motifs d'enquêteur). Rien à condenser. Restent 138 champs de plus de 600 caractères, mais ce sont des listes de tarifs et d'horaires publiés (Villa Carmignac, Biennale…) : les couper supprimerait des faits, donc laissés.
+**Condensation `iv`.** Détecteur de motifs d'enquêteur sur la fenêtre live : 31 champs signalés, relus sur les 3 plus longs (Gstaad New Year, Negresco, Milan Ferragosto) : densité factuelle légitime (tarifs, horaires, contacts de service), aucune dérive « journal d'enquête ». 0 fiche condensée, rien forcé (leçon du 21/09). Le reste est du fait publié.
 
-**Fraîcheur (5bis).** 1 fiche revérifiée : Design Miami / Paris 2026 (site officiel : 20-25 octobre 2026, Hôtel de Maisons, confirmés). Source et mention « vérifié le 30/09/2026 » écrites dans `so`. Le détail « Preview Day du 20 et public du 21 au 25 » n'est pas écrit sur la page officielle, il reste tel quel. Les autres fiches de la file (Cap-Eden-Roc, Gucci Flora, scène yacht Ibiza, palaces de la presqu'île) non revérifiées.
+**Protection des personnes (directive du 20/08).** Contrôle des mobiles et e-mails nominatifs republiés : 9 fiches corrigées (Hermès Ginza, Westminster Le Touquet, Splendido Mare/DaV Mare, Covo di Nord-Est, Zurich Film Festival, Fine Arts Paris, Ravello Festival, Alpina Gstaad, Gstaad New Year, Cheval Blanc Paris). Retirés : 14 mobiles de personnes ou de dossiers de presse, 6 e-mails `prenom@`/`initiale+nom@`. Noms et fonctions conservés ; aucune fiche n'a perdu sa dernière porte d'entrée. 12 champs de traduction `iv` retirés (repli français).
+**Non traité, à relire :** d'autres mobiles restent, présentés comme lignes de service (Cannes Yachting Festival x4, Airelles/presse@courchevel x2, Peninsula, Cap-Eden-Roc, Casino Barrière Le Touquet, WhatsApp de clubs italiens). Je n'ai pas pu établir seul s'il s'agit de lignes de service ou de personnes. `contacts_nettoyer.py --blanc` annonce encore 82 retraits sur 23 fiches, mais l'outil est connu pour ses faux positifs (leçon du 02/09) : pas appliqué.
 
-**Nouveaux événements.** Aucune recherche de nouveautés ce jour.
-**LOI DU SITE.** 298 fiches : traductions 100 %, invitations 100 %, séjours 303/309 avant purge (reste 6, dont fiches-conseil c=acces).
-**validate.py :** OK, 0 bloqueur, 2 avertissements (iv.g/iv.w longs ; Nikki Beach Ibiza dates écrites hors fenêtre).
-**Non fait / non vérifié :** liens hebdo (jour non lundi), visites, dt incohérents signalés le 29/09.
-**Publication :** le push direct de la trace de démarrage sur `main` a été refusé par le classifieur de la session ; publication par branche `claude/passe-2026-09-30` (workflow de fusion).
+**Fraîcheur (5bis).** Art Basel Paris 2026 : public 23-25 octobre confirmé sur artbasel.com, date écrite dans `so`. Les préviews VIP 21-22 ne figurent pas sur cette page : non reconfirmées. Met/Tiffany : page en 429, non vérifiée, non datée. Ibiza yacht, palaces presqu'île, Cap-Eden-Roc : non revérifiés.
+
+**Nouveaux événements.** Aucune recherche de nouveautés ce jour (rien de digne ajouté, rien inventé).
+**LOI DU SITE.** 296 fiches : traductions 100 %, invitations 100 %.
+**validate.py :** OK, 0 bloqueur, 2 avertissements (iv.g/iv.w longs, dates écrites de Covo et Nikki Beach Ibiza hors fenêtre).
+**Non fait :** liens hebdo (jeudi), visites, retraduction des champs `iv` retirés.
