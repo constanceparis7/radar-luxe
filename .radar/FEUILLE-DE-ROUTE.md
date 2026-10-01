@@ -259,8 +259,12 @@ les textes de séjour (1 088 Ko) et les journaux d'enquête (619 Ko). Une fiche
 - [100] Résorption hebdomadaire de tous les doutes, aux sources
 - [100] Sentinelle des imminents (lundi)
 - [100] Mémoire du radar (archives, changements)
-- [31]  309 événements vivants sur un palier de 1 000 (au 29/09, après purge des saisons
-        terminées ; le radar grossit par les passes de nuit)
+- [35]  296 événements vivants sur un palier de 1 000 (au 01/10, après purge des saisons
+        terminées) ; vivier déposé le 01/10 : 49 candidats du 15 octobre 2026 au 31 mars
+        2027, chacun avec la page officielle de l'organisateur et la citation verbatim des
+        dates (8 univers, 117 pistes écartées par les agents faute de source officielle ou
+        parce que déjà sur le site, 14 doublons retirés) ; les passes de nuit en intègrent
+        3 à 5 par nuit après contre-vérification (doctrine 4ter)
 - [hors périmètre] Photos par événement : exige le stockage R2 de Cloudflare
 - [hors périmètre] Rendu à la volée au-delà de 850 événements (limite des 20 000 fichiers) :
         exige Cloudflare Workers, sans objet avant 850
