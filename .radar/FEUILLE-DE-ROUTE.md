@@ -309,9 +309,16 @@ les textes de séjour (1 088 Ko) et les journaux d'enquête (619 Ko). Une fiche
         les pages générées, navigation et favoris masqués, adresses des liens utiles
         affichées en clair, fond blanc ; n'affecte jamais l'écran, vérifié en ligne
 
-### O7 · Confiance, sécurité, conformité · 71 %
+### O7 · Confiance, sécurité, conformité · 74 %
 - [100] HTTPS, zéro cookie, zéro donnée collectée
 - [100] Aucun fichier de travail en ligne, aucun secret dans le code
+- [95]  Protection des personnes (directive du 20/08) : aucune coordonnée nominative en
+        public ; balayage du 01/10 sur les 296 fiches et leurs traductions (mobiles,
+        courriels prénom.nom) : la routine de nuit avait retiré 9 fiches, les 2 derniers
+        cas retirés ce jour (courriel nominatif d'un service presse, personne nommée avec
+        son mobile), 0 courriel nominatif restant, les lignes restantes sont des lignes de
+        service ou d'entreprise (boutiques, clubs, bureaux de presse) ; reste à relire les
+        mobiles rattachés à un bureau de presse si Constance veut durcir la règle
 - [100] Sonde quotidienne du site en ligne
 - [100] Échappement et protection des liens externes : contrôle du 28/09 sur les 3 904
         pages qui portent un lien externe, zéro lien ouvert dans un nouvel onglet sans
