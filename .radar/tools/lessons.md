@@ -1353,3 +1353,14 @@ annoncée). Corriger dt ou d2 d'une fiche : retirer la clé correspondante des 1
 
 ## 01/10/2026 : des mobiles de personnes et des e-mails `initiale+nom@` avaient été republiés après le 20/08
 Un scan par expression régulière des numéros mobiles (+33 6/7, +41 7x, +44 7, +39 3xx) sur iv.o/g/w/c a trouvé des dizaines de numéros dont plusieurs rattachés à une personne nommée (attachées de presse, responsables RP) et des e-mails `boulet@`, `szmorin@`, `l.serino@`, `sylvie@`. Corrigé sur 9 fiches. Les lignes de réservation de clubs et de presse institutionnelle restent à trancher à la main. Dans `iv.c`, une entrée est `{t: libellé, v: valeur}` : filtrer sur `v`, pas sur `t`. Les traductions `iv_*` vivent peu dans `tr` ; corriger le français suffit à retirer celles qui existent.
+
+
+## 01/10/2026 : ne publier que sur verrou VERT, et le vérifier par le code de retour
+
+Une chaîne `validate.py | grep -E 'OK|FAIL' && git push` publie même quand le verrou est
+rouge, parce que grep réussit dès qu'il affiche la ligne FAIL. C'est arrivé le 01/10 : un
+courriel nominatif est resté en ligne une dizaine de minutes de plus, et surtout le verrou
+du dépôt (V15) aurait bloqué le plancher du lendemain. Réflexe gravé : `validate.py > v.log ;
+grep -q '^OK' v.log && publier || s'arrêter`. Autre leçon du même jour : un balayage des
+données qui ne lit que les champs texte rate les listes structurées (`iv.c`) ; le verrou,
+lui, lit les pages publiées, donc tout.

@@ -249,7 +249,10 @@ de chaque correction, et le verrou final est un validateur de build BLOQUANT.
     fin sur toutes les pages générées, 0 violation après. Validité HTML (W3C Nu) le même
     jour : toutes les fiches portaient une erreur de structure (un <style> dans le corps de
     page, après le titre), corrigée ; pages générées à 0 erreur et 0 avertissement ;
-    verrou V14 posé. Reste : un vrai passage au lecteur d'écran.
+    verrou V14 posé. Navigation au clavier testée le 01/10 (accueil et fiche, 40 tabulations
+    par le protocole DevTools) : lien d'évitement atteint en premier et visible, chaque
+    élément atteint visible et nommé, contour de focus présent. Reste : un vrai passage au
+    lecteur d'écran.
 24. [EN COURS 25/09, flèches directionnelles corrigées] RTL arabe (nombres/dates
     isolés, fil d'Ariane) et CJK (polices, coupures, pas de troncature au compte de
     caractères latins) : rendu vérifié à 375 et 320 px le 20/09, bogue du lien
@@ -315,8 +318,11 @@ de chaque correction, et le verrou final est un validateur de build BLOQUANT.
     fiche, page inconnue), vérifié en ligne (worker actif, 6 entrées en cache).
 30. [EN COURS 28/09 : og + cartes Twitter partout, dimensions et alt de l'image] Aperçus
     sociaux : og/twitter par page ; og:image:width, height et alt sur toutes les pages
-    depuis le 28/09 ; impression propre des fiches faite le 25/09. Reste : le rendu
-    WhatsApp/iMessage/LinkedIn à contrôler, et une image par événement.
+    depuis le 28/09, og:site_name et og:locale par langue depuis le 29/09 ; impression propre
+    des fiches faite le 25/09 ; aperçu contrôlé le 01/10 par un service de prévisualisation
+    de liens indépendant (accueil, fiche française, fiche japonaise : titre, description,
+    image 1200 × 630, éditeur et langue lus correctement). Reste : le contrôle sur téléphone
+    (WhatsApp, iMessage) et une image par événement.
 
 ## LE VERROU : le validateur de build bloquant
 
@@ -327,9 +333,11 @@ structure, V3 page sans title/description/canonical, V4 d2 < d1, V5 compteurs
 divergents, V6 lien interne cassé, V7 URL de sitemap sans fichier, V8 JSON-LD
 illisible, V9 hreflang vers fichier absent, V10 grappes hreflang réciproques, V11 budget
 de poids, V12 tiret long dans le texte visible d'une page publiée (28/09), V13 saison
-du bandeau dans le JSON d'interface des 13 langues (28/09). En avertissement (promotion
-à venir) : W1 date écrite hors fenêtre machine, W2 page sans h1. 8 179 pages contrôlées
-au 28/09.
+du bandeau dans le JSON d'interface des 13 langues (28/09), V14 style dans le corps de page
+hors première position (28/09), V15 courriel nominatif visible (01/10 : a trouvé aussitôt
+quatre adresses dans des listes de contacts structurées que les balayages précédents ne
+lisaient pas). En avertissement (promotion à venir) : W1 date écrite hors fenêtre machine,
+W2 page sans h1. 7 946 pages contrôlées au 01/10.
 Dès sa première exécution, le verrou a attrapé : le lien du bandeau vers Royal Ascot
 cassé par la normalisation des lieux, les liens mémoire brisés des pages Note en
 12 langues, et la fiche D&G Casa Amor finissant en machine le 30/08 alors que son
