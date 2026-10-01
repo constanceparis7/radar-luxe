@@ -89,11 +89,13 @@ moyenne de ses micro-objectifs.
         du moment cachée si indisponible ; mode hors connexion posé le 28/09 (service
         worker, page « Hors connexion », pages visitées consultables sans réseau, testé
         serveur coupé puis vérifié en ligne)
-- [88]  Aperçus sociaux : og et cartes Twitter/X sur toutes les pages ; dimensions et
+- [92]  Aperçus sociaux : og et cartes Twitter/X sur toutes les pages ; dimensions et
         texte alternatif de l'image ajoutés le 28/09 ; nom du site et langue de la page
         (og:site_name, og:locale par langue) ajoutés le 29/09 ; image d'aperçu de 37 Ko,
-        sous les limites des messageries ; reste le contrôle visuel WhatsApp, iMessage,
-        LinkedIn et une image par événement
+        sous les limites des messageries ; aperçu contrôlé le 01/10 par un service de
+        prévisualisation de liens indépendant (accueil, fiche française, fiche japonaise :
+        titre, description, image 1200 × 630, éditeur et langue lus correctement) ; reste
+        le contrôle sur téléphone (WhatsApp, iMessage) et une image par événement
 - [100] JSON-LD Event recalibré le 20/09 : offre seulement si l'accès s'achète ou se
         réserve (237 fiches sur 320 au lieu de toutes), jamais d'InStock sur invitation,
         gratuité seulement si écrite, statut annulé ou reporté lu dans les textes
@@ -141,7 +143,7 @@ moyenne de ses micro-objectifs.
         la main dans la page Note traduite, 1 dans la mémoire du radar, 7 dans le tableau de
         bord public ; contrôle bloquant V12 au verrou sur le texte visible de toute page
         publiée (8 166 pages, 0 restant, vérifié en ligne)
-- [97]  Accessibilité : lien d'évitement, <main>, focus visible, coeurs nommés, contrastes
+- [98]  Accessibilité : lien d'évitement, <main>, focus visible, coeurs nommés, contrastes
         vérifiés, commandes symboliques (thème, langue, flèche) nommées en 13 langues
         (20/09) ; audit structurel par arbre d'accessibilité le 25/09 (1 seul h1, 0 image
         sans alt, landmarks propres) : un vrai défaut trouvé, corrigé le 25/09 (bouton
@@ -155,8 +157,10 @@ moyenne de ses micro-objectifs.
         automatisé axe-core (WCAG 2.1 AA et bonnes pratiques) le 28/09 sur accueil, fiche,
         fiche arabe, hub et favoris : un vrai défaut trouvé et corrigé (liens des fils
         d'Ariane et des lignes de métadonnées distingués par la couleur seule ; soulignés
-        d'un trait fin sur toutes les pages), 0 violation après correction ; reste un vrai
-        passage au lecteur d'écran
+        d'un trait fin sur toutes les pages), 0 violation après correction ; navigation au
+        clavier testée le 01/10 (accueil et fiche, 40 tabulations : lien d'évitement en
+        premier, chaque élément atteint visible et nommé, contour de focus visible) ; reste
+        un vrai passage au lecteur d'écran
 - [95]  Validité HTML (validateur W3C, 28/09) : une erreur de structure sur toutes les
         fiches corrigée (bloc de style dans le corps de page, déplacé dans l'en-tête),
         adresse du script de mesure explicitée, cinq blocs de l'accueil sans titre passés
@@ -283,11 +287,13 @@ les textes de séjour (1 088 Ko) et les journaux d'enquête (619 Ko). Une fiche
         son titre et ses liens vers les deux autres (vérifiés) ; reste la mesure au 2/10
 - [0]   Liens entrants (en pause volontaire ; liste de 20 relais prête)
 
-### O6 · Produit et rétention · 68 %
+### O6 · Produit et rétention · 69 %
 - [100] Favoris partout, page Mes favoris, compteur
 - [100] Moteur Comment entrer, Note du radar, Protocole, Questions
-- [75]  Partage : aperçus og par page, dimensions et texte alternatif de l'image depuis le
-        28/09 (à contrôler messagerie par messagerie)
+- [85]  Partage : aperçus og par page, dimensions et texte alternatif de l'image depuis le
+        28/09, nom du site et langue depuis le 29/09 ; aperçu contrôlé le 01/10 par un
+        service de prévisualisation indépendant sur trois pages ; reste le contrôle sur
+        téléphone
 - [0]   Newsletter hebdomadaire (dimanche 21/09)
 - [65]  Alertes liées aux favoris : « Ajouter à mon agenda » sur chaque fiche le 28/09
         (fichier calendrier .ics, journée entière, français ou anglais selon la langue) ;
@@ -312,13 +318,14 @@ les textes de séjour (1 088 Ko) et les journaux d'enquête (619 Ko). Une fiche
 ### O7 · Confiance, sécurité, conformité · 74 %
 - [100] HTTPS, zéro cookie, zéro donnée collectée
 - [100] Aucun fichier de travail en ligne, aucun secret dans le code
-- [95]  Protection des personnes (directive du 20/08) : aucune coordonnée nominative en
+- [100] Protection des personnes (directive du 20/08) : aucune coordonnée nominative en
         public ; balayage du 01/10 sur les 296 fiches et leurs traductions (mobiles,
         courriels prénom.nom) : la routine de nuit avait retiré 9 fiches, les 2 derniers
         cas retirés ce jour (courriel nominatif d'un service presse, personne nommée avec
         son mobile), 0 courriel nominatif restant, les lignes restantes sont des lignes de
-        service ou d'entreprise (boutiques, clubs, bureaux de presse) ; reste à relire les
-        mobiles rattachés à un bureau de presse si Constance veut durcir la règle
+        service ou d'entreprise (boutiques, clubs, bureaux de presse) ; verrou V15 posé le
+        01/10 : un courriel nominatif visible bloque la publication ; les mobiles rattachés
+        à un bureau de presse restent, à durcir seulement si Constance le demande
 - [100] Sonde quotidienne du site en ligne
 - [100] Échappement et protection des liens externes : contrôle du 28/09 sur les 3 904
         pages qui portent un lien externe, zéro lien ouvert dans un nouvel onglet sans
@@ -334,7 +341,7 @@ les textes de séjour (1 088 Ko) et les journaux d'enquête (619 Ko). Une fiche
 - [0]   Double opt-in, SPF, DKIM, DMARC pour la newsletter
 - [0]   En-têtes de sécurité (Cloudflare)
 
-### O8 · Observabilité et pilotage · 84 %
+### O8 · Observabilité et pilotage · 86 %
 - [100] Compteur public GoatCounter
 - [100] Search Console vérifiée, exports lus
 - [100] Sonde du matin (quotidienne) et contrôle Google contre site (hebdomadaire)
@@ -342,21 +349,24 @@ les textes de séjour (1 088 Ko) et les journaux d'enquête (619 Ko). Une fiche
 - [100] Sonde de disponibilité : locale sans interruption depuis le 18/09 (zéro 5xx), et
         depuis le 28/09 chez GitHub toutes les 30 minutes, indépendante de la machine (plus
         rien à relancer si elle redémarre)
-- [85]  Tableau de bord unique : générateur .radar/tools/tableau_de_bord.py posé le 28/09,
+- [95]  Tableau de bord unique : générateur .radar/tools/tableau_de_bord.py posé le 28/09,
         qui lit les journaux existants (visiteurs par jour, vitesse mobile LCP/INP/CLS,
         fraîcheur et file de revérification, taux de la feuille de route, dernières
         publications et passes) et produit une page privée, publiée à Constance en artefact
         « Pilotage ConstanceParis7 » ; régénéré chaque matin par le plancher GitHub depuis
         le 29/09 (étape de passe-quotidienne.yml, jamais bloquante) ; le tableau public des
-        visites reste tel quel (ses 7 tirets purgés le 28/09) ; reste à republier
-        l'artefact à chaque session de travail
+        visites reste tel quel (ses 7 tirets purgés le 28/09) ; depuis le 01/10, le
+        bulletin quotidien reçu par courriel porte aussi les trois lignes de pilotage
+        (fraîcheur, vitesse mobile, taux de la feuille de route) ; l'artefact est
+        republié à chaque session de travail
 - [0]   Statistiques Cloudflare sans cookie
-- [85]  Alertes : la sonde du matin contrôle que la passe de nuit a tourné et la relance
+- [95]  Alertes : la sonde du matin contrôle que la passe de nuit a tourné et la relance
         sinon, mesure PageSpeed et tient un journal de vitesse (20/09) ; alerte hors
         session en place : issue GitHub et courriel au propriétaire, pour un site figé
         (surveillance.yml, deux fois par jour) et pour une adresse qui ne répond plus
-        (disponibilite.yml, toutes les 30 minutes depuis le 28/09) ; reste PageSpeed
-        (quota)
+        (disponibilite.yml, toutes les 30 minutes depuis le 28/09) ; depuis le 01/10, le
+        contrôle du lundi ouvre une issue « vitesse » si l'accueil dépasse un seuil Google ;
+        reste PageSpeed (quota)
 
 ### O9 · Les paliers d'audience et leur prérequis technique
 - [100] Palier 1, 100 par jour : atteint (35 à 100)

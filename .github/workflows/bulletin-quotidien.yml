@@ -80,6 +80,42 @@ jobs:
           echo "visites=$V_TOTAL"      >> "$GITHUB_OUTPUT"
           echo "visites_delta=$V_DELTA" >> "$GITHUB_OUTPUT"
 
+          # Le radar en trois lignes (01/10/2026) : fraîcheur des fiches, vitesse mobile
+          # mesurée, taux de la feuille de route. Lus dans les journaux ; rien ne bloque.
+          EXTRA=""
+          if [ -f .radar/reverification-prioritaire.json ]; then
+            EXTRA="$EXTRA$(python3 - <<'PY'
+          import json
+          q=json.load(open('.radar/reverification-prioritaire.json',encoding='utf-8'))
+          print(f"| Fiches avec badge « vérifié à la source » | {q.get('avec_badge','?')} sur {q.get('total_vivantes','?')} vivantes, {len(q.get('prioritaires',[]))} à revérifier |")
+          PY
+          )"$'\n'
+          fi
+          if [ -f .radar/tools/vitals-log.ndjson ]; then
+            EXTRA="$EXTRA$(python3 - <<'PY'
+          import json
+          rows=[json.loads(l) for l in open('.radar/tools/vitals-log.ndjson',encoding='utf-8') if l.strip()]
+          acc=[r for r in rows if r.get('url','').rstrip('/')=='https://constanceparis7.com' and r.get('lcp_ms')]
+          if acc:
+              r=acc[-1]; print(f"| Vitesse mobile de l'accueil ({r['date']}) | LCP {r['lcp_ms']/1000:.2f} s, INP {r.get('inp_ms') or '?'} ms, CLS {r.get('cls')} (seuils 2,5 s, 200 ms, 0,1) |")
+          PY
+          )"$'\n'
+          fi
+          if [ -f .radar/FEUILLE-DE-ROUTE.md ]; then
+            EXTRA="$EXTRA$(python3 - <<'PY'
+          import re
+          s=open('.radar/FEUILLE-DE-ROUTE.md',encoding='utf-8').read()
+          t=re.findall(r'^### (O\d) · [^\n]*?· (\d+) %',s,re.M)
+          if t: print("| Feuille de route | "+", ".join(f"{o} {p} %" for o,p in t)+" |")
+          PY
+          )"$'\n'
+          fi
+          {
+            echo "extra<<FIN"
+            printf '%s' "$EXTRA"
+            echo "FIN"
+          } >> "$GITHUB_OUTPUT"
+
           if [ "$AUTRES" -gt 0 ]; then
             echo "etat=ok" >> "$GITHUB_OUTPUT"
           elif [ "$PLANCHER" -gt 0 ]; then
@@ -101,9 +137,10 @@ jobs:
           HUMAINS: ${{ steps.verdict.outputs.humains }}
           VISITES: ${{ steps.verdict.outputs.visites }}
           VISITES_DELTA: ${{ steps.verdict.outputs.visites_delta }}
+          EXTRA: ${{ steps.verdict.outputs.extra }}
         with:
           script: |
-            const { ETAT, TOTAL, PLANCHER, AUTRES, DATE_SITE, HUMAINS, VISITES, VISITES_DELTA } = process.env;
+            const { ETAT, TOTAL, PLANCHER, AUTRES, DATE_SITE, HUMAINS, VISITES, VISITES_DELTA, EXTRA } = process.env;
             const jour = new Date().toLocaleDateString('fr-FR',
               { weekday: 'long', day: 'numeric', month: 'long', timeZone: 'Europe/Paris' });
 
@@ -146,6 +183,12 @@ jobs:
               `| Depuis le relevé d'hier | ${VISITES_DELTA === '' ? '(premier relevé — la progression apparaîtra demain)' : (Number(VISITES_DELTA) >= 0 ? '+' : '') + VISITES_DELTA} |`,
               '',
               '[Tableau de bord des visites](https://constanceparis7.com/tableau-de-bord.html) · [Statistiques complètes](https://constanceparis7.goatcounter.com/)',
+              '',
+              '### Le radar en trois lignes',
+              '',
+              '| | |',
+              '|---|---|',
+              ...String(EXTRA || '').split('\n').filter(Boolean),
               '',
               `[Voir le détail](${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId})`
             ].join('\n');

@@ -29,6 +29,10 @@ Bloqueurs :
   V14 Balise <style> dans le <body> d'une page publiée (erreur de structure HTML signalée
       par le validateur W3C le 28/09/2026 sur toutes les fiches ; les styles vont dans
       l'en-tête).
+  V15 Courriel nominatif (prénom.nom@, p.nom@) dans le texte visible d'une page publiée :
+      directive de protection des personnes du 20/08/2026 (les adresses de service
+      presse@, info@, reservations@… restent). Posé le 01/10/2026 après le balayage
+      complet ; une liste d'exceptions couvre les adresses de service écrites avec un point.
 Avertissements (candidats à promotion une fois le corpus propre) :
   W1  Date écrite dans dt hors de la fenêtre machine [d1-2j, d2+2j].
   W2  Page sans h1.
@@ -87,6 +91,17 @@ RX_ALT = re.compile(r'rel="alternate"[^>]*href="https://constanceparis7\.com(/[^
 RX_SCRIPT_STYLE = re.compile(r"<(script|style)[^>]*>.*?</\1>", re.S | re.I)
 RX_TAG = re.compile(r"<[^>]+>")
 RX_TIRET = re.compile(r".{0,40}[—–].{0,40}")
+RX_MAIL_NOM = re.compile(r"\b([a-zA-Zéèàïôü]+)\.([a-zA-Zéèàïôü-]+)@[a-z0-9.-]+\.[a-z]{2,}\b")
+# Préfixes d'adresses de SERVICE écrites avec un point (jamais une personne).
+MAIL_SERVICE = {"presse", "press", "info", "contact", "reservation", "reservations", "booking", "bookings",
+                "rsvp", "events", "event", "concierge", "pr", "media", "communication", "hello", "bonjour",
+                "accueil", "billetterie", "tickets", "guestlist", "vip", "hospitality", "sales", "office",
+                "secretariat", "club", "reception", "welcome", "res", "spa", "bids", "hk", "lejardin",
+                "lerestaurant", "locations", "attractions", "beachclub", "givenchy", "mecenat", "executive",
+                "journeesdupatrimoine", "c", "didattica", "errani", "diva", "service", "support", "team",
+                "shop", "boutique", "store", "ventes", "membership", "groups", "groupes", "privatisation",
+                "privatisations", "restaurant", "bar", "hotel", "resa", "resas", "newsletter", "partenariats",
+                "partnerships", "marketing", "comms", "pressoffice", "ufficiostampa", "prensa", "presse-fr"}
 
 def est_fiche(rel):
     return "/e/" in ("/" + rel.replace(os.sep, "/"))
@@ -174,6 +189,13 @@ def controle_pages():
             m = RX_TIRET.search(vis)
             if m:
                 bloq.append(f"V12 {rel} : tiret long dans le texte visible ({' '.join(m.group(0).split())!r})")
+            # V15 : courriel nominatif
+            for mm in RX_MAIL_NOM.finditer(vis):
+                # service si l'un des deux segments est un mot de service (ycc.restaurant@,
+                # presse.paris@) ; nominatif sinon (g.benussi@, x.bourgeat@, prenom.nom@)
+                if mm.group(1).lower() not in MAIL_SERVICE and mm.group(2).lower() not in MAIL_SERVICE:
+                    bloq.append(f"V15 {rel} : courriel nominatif visible ({mm.group(0)})")
+                    break
     return n
 
 MOIS = {"janvier":1,"février":2,"mars":3,"avril":4,"mai":5,"juin":6,"juillet":7,
