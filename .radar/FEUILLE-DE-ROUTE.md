@@ -99,7 +99,7 @@ moyenne de ses micro-objectifs.
 - [100] JSON-LD Event recalibré le 20/09 : offre seulement si l'accès s'achète ou se
         réserve (237 fiches sur 320 au lieu de toutes), jamais d'InStock sur invitation,
         gratuité seulement si écrite, statut annulé ou reporté lu dans les textes
-- [95]  Fraîcheur : trois dates distinctes et honnêtes (passe, fiche, file de
+- [100] Fraîcheur : trois dates distinctes et honnêtes (passe, fiche, file de
         revérification) ; outil reverification.py et étape 5bis de la doctrine posés le
         27/09. Le 28/09, la passe de nuit a revérifié 2 fiches (Fondazione Prada, Villa
         Carmignac) et maintenu 1 doute avec preuve (Gaïo Saint-Tropez, aucune date de fin
@@ -125,8 +125,11 @@ moyenne de ses micro-objectifs.
         l'organisateur ne publie aucune date de fin portent désormais la mention « source
         relue le 28/09/2026, fin estimée par le radar » (sans badge), et 21 d'entre elles
         passent de « confirmé » à « probable » ; 4 sources inaccessibles notées à retenter ;
-        file ramenée à 5. Reste : les passes de nuit, et un badge qui ne s'affiche que sur
-        une date réellement confirmée.
+        file ramenée à 5, puis à 0 le 01/10 (Designing the Gilded Age vérifié sur
+        metmuseum.org, Byblos et Eden-Roc datés, Scene yacht marqué fiche de contexte sans
+        source officielle possible). Au 01/10 : 187 fiches vivantes, 88 avec badge, 109
+        contrôlées, 0 à revérifier. La file se remplit et se vide au fil des passes (étape
+        5bis de la doctrine) ; le badge ne s'affiche que sur une date réellement confirmée.
 - [100] Statuts des récurrents et saisons : JSON-LD de l'accueil recalculé à chaque
         build depuis le 27/09 (annulé, reporté, programmé seulement si confirmé, sinon
         aucun statut affirmé) ; champ de confirmation ramené à trois valeurs, 35 fiches
