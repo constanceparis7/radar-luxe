@@ -50,8 +50,11 @@ jobs:
             echo "$d ${MOIS[$m]} $y"
           }
 
-          PAGE=$(curl -s --max-time 30 -A "surveillance-radar" https://constanceparis7.com/ || true)
-          if [ -z "$PAGE" ]; then
+          # La page est lue dans un fichier : un tuyau printf | grep -q se cassait dès que
+          # la page dépassait le tampon (1er octobre 2026, trois contrôles en échec).
+          PAGE_FILE=$(mktemp)
+          curl -s --max-time 30 -A "surveillance-radar" -o "$PAGE_FILE" https://constanceparis7.com/ || true
+          if [ ! -s "$PAGE_FILE" ]; then
             echo "resultat=injoignable" >> "$GITHUB_OUTPUT"
             echo "detail=Le site n'a pas répondu." >> "$GITHUB_OUTPUT"
             exit 0
@@ -59,14 +62,14 @@ jobs:
 
           # Tolérance : aujourd'hui, hier ou avant-hier.
           for J in 0 1 2; do
-            if printf '%s' "$PAGE" | grep -qF "$(fr_date $J)"; then
+            if grep -qF "$(fr_date $J)" "$PAGE_FILE"; then
               echo "Date trouvée : $(fr_date $J) (il y a $J jour(s)) — le radar tourne."
               echo "resultat=ok" >> "$GITHUB_OUTPUT"
               exit 0
             fi
           done
 
-          VUE=$(printf '%s' "$PAGE" | grep -o "vérifiées le [^<]*" | head -1)
+          VUE=$(grep -o "vérifiées le [^<]*" "$PAGE_FILE" | head -1 || true)
           echo "resultat=fige" >> "$GITHUB_OUTPUT"
           echo "detail=Date affichée : ${VUE:-introuvable}. Attendu : $(fr_date 0), $(fr_date 1) ou $(fr_date 2)." >> "$GITHUB_OUTPUT"
 
