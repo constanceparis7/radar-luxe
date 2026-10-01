@@ -877,6 +877,14 @@ une issue GitHub.
 4bis. BACKFILL `iv` : fiches avec `iv` mais sans `iv_o` dans certaines langues
    de `tr` → traduire `iv_o/iv_g/iv_w` par lots de 10-15/passe, priorité fenêtre
    live la mieux notée. (`iv.c` jamais traduit.)
+4ter. VIVIER DE NOUVEAUX ÉVÉNEMENTS (01/10/2026) : `.radar/candidats-evenements.json`
+   contient des candidats repérés par lots d'agents avec, pour chacun, la page
+   officielle de l'organisateur et la citation verbatim des dates. Chaque passe
+   en prend 3 à 5 (les plus imminents d'abord), CONTRE-VÉRIFIE la page officielle
+   elle-même (jamais sur la seule citation), écrit la fiche dans la voix du site
+   (n, dt, ds, p/pe, iv, u, so avec « vérifié le JJ/MM/AAAA », cf), la traduit, et
+   retire du fichier ce qui est intégré ou rejeté (en notant la raison dans
+   `rejets`). Un candidat sans page officielle lisible est rejeté. Rien d'inventé.
 5. Chaque LUNDI : retester TOUS les liens (décompte au compte rendu) et
    régénérer le ld+json (60 meilleurs à venir).
 5bis. CHAQUE PASSE, fraîcheur des fiches (point 9 du registre, 27/09/2026) :

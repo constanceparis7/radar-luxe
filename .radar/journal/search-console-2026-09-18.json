@@ -1,0 +1,596 @@
+{
+ "date": "2026-09-18",
+ "source": "https___constanceparis7.com_-Performance-on-Search-2026-09-18",
+ "totaux": {
+  "clics": 239,
+  "impressions": 13442,
+  "ctr": 1.78,
+  "pages": 390,
+  "requetes": 1000
+ },
+ "par_famille": {
+  "fiche": {
+   "clics": 205,
+   "imp": 9462,
+   "pages": 304,
+   "ctr": 2.17
+  },
+  "accueil": {
+   "clics": 32,
+   "imp": 3317,
+   "pages": 4,
+   "ctr": 0.96
+  },
+  "categorie": {
+   "clics": 0,
+   "imp": 565,
+   "pages": 27,
+   "ctr": 0.0
+  },
+  "lieu": {
+   "clics": 2,
+   "imp": 98,
+   "pages": 55,
+   "ctr": 2.04
+  }
+ },
+ "par_langue": {
+  "fr": {
+   "clics": 83,
+   "imp": 5435,
+   "pages": 96,
+   "ctr": 1.53
+  },
+  "ar": {
+   "clics": 81,
+   "imp": 3216,
+   "pages": 28,
+   "ctr": 2.52
+  },
+  "en": {
+   "clics": 42,
+   "imp": 3057,
+   "pages": 99,
+   "ctr": 1.37
+  },
+  "de": {
+   "clics": 11,
+   "imp": 683,
+   "pages": 27,
+   "ctr": 1.61
+  },
+  "ru": {
+   "clics": 13,
+   "imp": 403,
+   "pages": 26,
+   "ctr": 3.23
+  },
+  "it": {
+   "clics": 1,
+   "imp": 186,
+   "pages": 20,
+   "ctr": 0.54
+  },
+  "ko": {
+   "clics": 4,
+   "imp": 163,
+   "pages": 19,
+   "ctr": 2.45
+  },
+  "ja": {
+   "clics": 2,
+   "imp": 86,
+   "pages": 12,
+   "ctr": 2.33
+  },
+  "pt": {
+   "clics": 0,
+   "imp": 59,
+   "pages": 7,
+   "ctr": 0.0
+  },
+  "zh": {
+   "clics": 1,
+   "imp": 45,
+   "pages": 8,
+   "ctr": 2.22
+  },
+  "es": {
+   "clics": 0,
+   "imp": 45,
+   "pages": 13,
+   "ctr": 0.0
+  },
+  "tr": {
+   "clics": 0,
+   "imp": 45,
+   "pages": 30,
+   "ctr": 0.0
+  },
+  "hi": {
+   "clics": 1,
+   "imp": 19,
+   "pages": 5,
+   "ctr": 5.26
+  }
+ },
+ "appareils": {
+  "Mobile": {
+   "clics": 169,
+   "imp": 6028,
+   "ctr": 2.8
+  },
+  "Ordinateur": {
+   "clics": 67,
+   "imp": 6996,
+   "ctr": 0.96
+  },
+  "Tablette": {
+   "clics": 2,
+   "imp": 134,
+   "ctr": 1.49
+  }
+ },
+ "pays_top": [
+  {
+   "pays": "France",
+   "clics": 60,
+   "imp": 2198,
+   "ctr": 2.73
+  },
+  {
+   "pays": "Italie",
+   "clics": 24,
+   "imp": 1348,
+   "ctr": 1.78
+  },
+  {
+   "pays": "États-Unis",
+   "clics": 23,
+   "imp": 2744,
+   "ctr": 0.84
+  },
+  {
+   "pays": "Royaume-Uni",
+   "clics": 17,
+   "imp": 1508,
+   "ctr": 1.13
+  },
+  {
+   "pays": "Pays-Bas",
+   "clics": 11,
+   "imp": 435,
+   "ctr": 2.53
+  },
+  {
+   "pays": "Allemagne",
+   "clics": 11,
+   "imp": 411,
+   "ctr": 2.68
+  },
+  {
+   "pays": "Canada",
+   "clics": 5,
+   "imp": 232,
+   "ctr": 2.16
+  },
+  {
+   "pays": "Espagne",
+   "clics": 4,
+   "imp": 275,
+   "ctr": 1.45
+  }
+ ],
+ "part_impressions_hors_fr": 59.6,
+ "demande_estimee": {
+  "francais_pct": 5.1,
+  "anglais_pct": 46.0,
+  "autre_pct": 48.9
+ },
+ "matrice": {
+  "paris fashion week": [
+   {
+    "page": "/e/paris-fashion-week-pret-a-porter-printemps-ete-2027-paris.html",
+    "langue": "fr",
+    "famille": "fiche",
+    "clics": 24,
+    "imp": 985,
+    "ctr": 2.44,
+    "pos": 2.61
+   },
+   {
+    "page": "/e/paris-fashion-week-pret-a-porter-pret-a-porter-printemps-ete-2027-paris.html",
+    "langue": "fr",
+    "famille": "fiche",
+    "clics": 0,
+    "imp": 4,
+    "ctr": 0.0,
+    "pos": 1.0
+   },
+   {
+    "page": "/lieu/paris-fashion-week-ss27.html",
+    "langue": "fr",
+    "famille": "lieu",
+    "clics": 0,
+    "imp": 3,
+    "ctr": 0.0,
+    "pos": 87.33
+   },
+   {
+    "page": "/e/paris-fashion-week-pret-a-porter-printemps-ete-2027-paris",
+    "langue": "fr",
+    "famille": "fiche",
+    "clics": 0,
+    "imp": 1,
+    "ctr": 0.0,
+    "pos": 1.0
+   },
+   {
+    "page": "/e/paris-fashion-week-pret-a-porter-printemps-ete-2027-paris-paris",
+    "langue": "fr",
+    "famille": "fiche",
+    "clics": 0,
+    "imp": 1,
+    "ctr": 0.0,
+    "pos": 1.0
+   },
+   {
+    "page": "/en/e/paris-fashion-week-pret-a-porter-printemps-ete-2027-paris.html",
+    "langue": "en",
+    "famille": "fiche",
+    "clics": 0,
+    "imp": 1,
+    "ctr": 0.0,
+    "pos": 3.0
+   }
+  ],
+  "paris fashion week · requetes": [
+   {
+    "q": "paris fashion week 2026",
+    "clics": 1,
+    "imp": 64,
+    "ctr": 1.56,
+    "pos": 1.03
+   },
+   {
+    "q": "fashion week paris 2026",
+    "clics": 1,
+    "imp": 31,
+    "ctr": 3.23,
+    "pos": 1.0
+   },
+   {
+    "q": "fashion week de paris 2026",
+    "clics": 1,
+    "imp": 3,
+    "ctr": 33.33,
+    "pos": 1.0
+   },
+   {
+    "q": "paris fashion events",
+    "clics": 0,
+    "imp": 11,
+    "ctr": 0.0,
+    "pos": 1.36
+   },
+   {
+    "q": "fashion events in paris",
+    "clics": 0,
+    "imp": 8,
+    "ctr": 0.0,
+    "pos": 1.25
+   },
+   {
+    "q": "paris fashion week september 2026",
+    "clics": 0,
+    "imp": 6,
+    "ctr": 0.0,
+    "pos": 1.0
+   }
+  ],
+  "milan fashion week": [
+   {
+    "page": "/ko/e/milano-fashion-week-printemps-ete-2027-milan.html",
+    "langue": "ko",
+    "famille": "fiche",
+    "clics": 0,
+    "imp": 2,
+    "ctr": 0.0,
+    "pos": 10.0
+   },
+   {
+    "page": "/en/e/milano-fashion-week-printemps-ete-2027-milan.html",
+    "langue": "en",
+    "famille": "fiche",
+    "clics": 0,
+    "imp": 2,
+    "ctr": 0.0,
+    "pos": 50.0
+   }
+  ],
+  "milan fashion week · requetes": [
+   {
+    "q": "milan fashion week september 2026",
+    "clics": 3,
+    "imp": 12,
+    "ctr": 25.0,
+    "pos": 1.5
+   },
+   {
+    "q": "vogue world milan tickets",
+    "clics": 1,
+    "imp": 4,
+    "ctr": 25.0,
+    "pos": 1.0
+   },
+   {
+    "q": "milan fashion events",
+    "clics": 1,
+    "imp": 4,
+    "ctr": 25.0,
+    "pos": 1.25
+   },
+   {
+    "q": "exclusive fashion events milan",
+    "clics": 0,
+    "imp": 9,
+    "ctr": 0.0,
+    "pos": 1.0
+   },
+   {
+    "q": "vogue world milano 2026 tickets",
+    "clics": 0,
+    "imp": 3,
+    "ctr": 0.0,
+    "pos": 1.0
+   },
+   {
+    "q": "vogue world milan 2026",
+    "clics": 0,
+    "imp": 3,
+    "ctr": 0.0,
+    "pos": 23.67
+   }
+  ],
+  "vogue world": [
+   {
+    "page": "/ar/e/vogue-world-milano-2026-milan.html",
+    "langue": "ar",
+    "famille": "fiche",
+    "clics": 48,
+    "imp": 2105,
+    "ctr": 2.28,
+    "pos": 2.36
+   },
+   {
+    "page": "/ru/e/vogue-world-milano-2026-milan.html",
+    "langue": "ru",
+    "famille": "fiche",
+    "clics": 0,
+    "imp": 32,
+    "ctr": 0.0,
+    "pos": 6.22
+   },
+   {
+    "page": "/e/vogue-world-milano-2026-milan.html",
+    "langue": "fr",
+    "famille": "fiche",
+    "clics": 0,
+    "imp": 17,
+    "ctr": 0.0,
+    "pos": 1.82
+   },
+   {
+    "page": "/en/e/vogue-world-milano-2026-milan.html",
+    "langue": "en",
+    "famille": "fiche",
+    "clics": 0,
+    "imp": 3,
+    "ctr": 0.0,
+    "pos": 3.33
+   }
+  ],
+  "vogue world · requetes": [
+   {
+    "q": "vogue world milan tickets",
+    "clics": 1,
+    "imp": 4,
+    "ctr": 25.0,
+    "pos": 1.0
+   },
+   {
+    "q": "vogue world milano 2026 tickets",
+    "clics": 0,
+    "imp": 3,
+    "ctr": 0.0,
+    "pos": 1.0
+   },
+   {
+    "q": "vogue world milan 2026",
+    "clics": 0,
+    "imp": 3,
+    "ctr": 0.0,
+    "pos": 23.67
+   },
+   {
+    "q": "vogue world milan 2026 tickets",
+    "clics": 0,
+    "imp": 2,
+    "ctr": 0.0,
+    "pos": 1.0
+   },
+   {
+    "q": "vogue world milano tickets",
+    "clics": 0,
+    "imp": 2,
+    "ctr": 0.0,
+    "pos": 1.0
+   },
+   {
+    "q": "vogue world 2026",
+    "clics": 0,
+    "imp": 2,
+    "ctr": 0.0,
+    "pos": 39.5
+   }
+  ]
+ },
+ "top_pages": [
+  {
+   "page": "/ar/e/vogue-world-milano-2026-milan.html",
+   "clics": 48,
+   "imp": 2105,
+   "ctr": 2.28,
+   "pos": 2.36
+  },
+  {
+   "page": "/en/e/regates-royales-trophee-panerai-cannes-2026-cannes.html",
+   "clics": 41,
+   "imp": 2348,
+   "ctr": 1.75,
+   "pos": 2.23
+  },
+  {
+   "page": "/",
+   "clics": 32,
+   "imp": 3313,
+   "ctr": 0.97,
+   "pos": 7.76
+  },
+  {
+   "page": "/e/paris-fashion-week-pret-a-porter-printemps-ete-2027-paris.html",
+   "clics": 24,
+   "imp": 985,
+   "ctr": 2.44,
+   "pos": 2.61
+  },
+  {
+   "page": "/ar/e/rockwool-france-sail-grand-prix-sailgp-saint-tropez-2026-saint-t.html",
+   "clics": 16,
+   "imp": 263,
+   "ctr": 6.08,
+   "pos": 2.25
+  },
+  {
+   "page": "/ar/e/arop-gala-d-ouverture-de-la-saison-de-danse-26-27-paris.html",
+   "clics": 10,
+   "imp": 310,
+   "ctr": 3.23,
+   "pos": 3.02
+  },
+  {
+   "page": "/ru/e/sphere-showroom-officiel-des-createurs-emergents-fhcm-paris.html",
+   "clics": 9,
+   "imp": 188,
+   "ctr": 4.79,
+   "pos": 3.53
+  },
+  {
+   "page": "/de/e/premio-internazionale-fondazione-taormina-arte-sicilia-per-il-te.html",
+   "clics": 6,
+   "imp": 165,
+   "ctr": 3.64,
+   "pos": 2.05
+  },
+  {
+   "page": "/e/gala-du-nouvel-an-du-badrutt-s-palace-saint-moritz.html",
+   "clics": 6,
+   "imp": 90,
+   "ctr": 6.67,
+   "pos": 3.71
+  },
+  {
+   "page": "/ko/e/rolex-swan-cup-2026-60-ans-de-nautor-swan-porto-cervo-sardaigne.html",
+   "clics": 4,
+   "imp": 132,
+   "ctr": 3.03,
+   "pos": 2.54
+  }
+ ],
+ "top_requetes": [
+  {
+   "q": "cannes events september 2026",
+   "clics": 5,
+   "imp": 56,
+   "ctr": 8.93,
+   "pos": 1.09
+  },
+  {
+   "q": "milan events september 2026",
+   "clics": 4,
+   "imp": 109,
+   "ctr": 3.67,
+   "pos": 1.01
+  },
+  {
+   "q": "milan fashion week september 2026",
+   "clics": 3,
+   "imp": 12,
+   "ctr": 25.0,
+   "pos": 1.5
+  },
+  {
+   "q": "taormina arte 2026",
+   "clics": 2,
+   "imp": 4,
+   "ctr": 50.0,
+   "pos": 2.0
+  },
+  {
+   "q": "cannes events",
+   "clics": 1,
+   "imp": 102,
+   "ctr": 0.98,
+   "pos": 1.03
+  },
+  {
+   "q": "paris fashion week 2026",
+   "clics": 1,
+   "imp": 64,
+   "ctr": 1.56,
+   "pos": 1.03
+  },
+  {
+   "q": "events in milan september 2026",
+   "clics": 1,
+   "imp": 48,
+   "ctr": 2.08,
+   "pos": 1.0
+  },
+  {
+   "q": "fashion week paris 2026",
+   "clics": 1,
+   "imp": 31,
+   "ctr": 3.23,
+   "pos": 1.0
+  },
+  {
+   "q": "semana de la moda en paris 2026",
+   "clics": 1,
+   "imp": 26,
+   "ctr": 3.85,
+   "pos": 1.0
+  },
+  {
+   "q": "events in milan in september 2026",
+   "clics": 1,
+   "imp": 23,
+   "ctr": 4.35,
+   "pos": 1.0
+  },
+  {
+   "q": "events milan september 2026",
+   "clics": 1,
+   "imp": 21,
+   "ctr": 4.76,
+   "pos": 1.05
+  },
+  {
+   "q": "milan events",
+   "clics": 1,
+   "imp": 21,
+   "ctr": 4.76,
+   "pos": 3.14
+  }
+ ]
+}

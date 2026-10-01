@@ -84,7 +84,8 @@ moyenne de ses micro-objectifs.
         guide permanent français, page lieu, rôles et titres distincts, liens réciproques
         vérifiés, x-default vers le français) ; reste la mesure par requête au bilan du
         2/10 et, si Google sert encore une mauvaise langue, la différenciation des
-        descriptions par langue
+        descriptions par langue ; référence du 18/09 posée par l'outil de bilan (Vogue World :
+        2 105 impressions sur la fiche arabe contre 17 sur la française), à comparer au 2/10
 - [100] États vides : aucun favori (page), aucun résultat (recherche, 13 langues), carte
         du moment cachée si indisponible ; mode hors connexion posé le 28/09 (service
         worker, page « Hors connexion », pages visitées consultables sans réseau, testé
@@ -270,14 +271,19 @@ les textes de séjour (1 088 Ko) et les journaux d'enquête (619 Ko). Une fiche
         champs et les conditions (attribution libre, usage commercial sur accord), llms.txt
         complété ; reste un premier partenaire ou assistant qui le consomme
 
-### O5 · Visibilité organique mondiale · 75 %
+### O5 · Visibilité organique mondiale · 76 %
 - [100] Titres en forme de requêtes, 13 langues, mois courant automatique
 - [100] hreflang sur les pages et dans le sitemap
 - [100] 88 pages Questions FR et EN, balisage FAQ
 - [100] Search Console lue en entier et exploitée
 - [50]  Résorption du cache Google (titres None, saison) : en cours
 - [100] JSON-LD Event propre (recalibré le 20/09)
-- [30]  Taux de clic des pages villes (mesure au bilan du 2/10)
+- [40]  Taux de clic des pages villes et catégories : outil de bilan posé le 01/10
+        (.radar/tools/bilan_search_console.py, lit l'export Performances de Search Console
+        et compare au bilan précédent) ; référence du 18/09 posée : taux de clic global
+        1,78 %, fiches 2,17 %, catégories 0 % sur 565 impressions (titres « None » de
+        l'époque), lieux 2,04 % sur 98 impressions, 59,6 % des impressions servies hors
+        français ; mesure au bilan du 2/10 dès que Constance exporte Performances
 - [100] Pages Questions dans les 12 langues : les 11 publiées le 26/09 (allemand,
         espagnol, italien, portugais, russe, arabe, chinois, japonais, coréen, hindi)
         et le TURC le 27/09 (44 questions, 4 lots parallèles), qui avait échoué
