@@ -2,28 +2,7 @@
  "genere_le": "2026-10-01",
  "regle": "fiche non terminée, commençant dans 21 jours ou déjà en cours, dont la dernière vérification écrite est absente ou date de plus de 30 jours ; triée par imminence puis par ancienneté",
  "total_vivantes": 187,
- "avec_date_verif": 108,
+ "avec_date_verif": 109,
  "avec_badge": 88,
- "prioritaires": [
-  {
-   "n": "Scene yacht & superyachts Ibiza-Formentera",
-   "d1": "2026-07-01",
-   "d2": "2026-10-04",
-   "dans_jours": -92,
-   "verifie_le": null,
-   "badge_le": null,
-   "age_jours": null,
-   "cf": "probable"
-  },
-  {
-   "n": "Exposition « Designing the Gilded Age », les studios Tiffany au Met",
-   "d1": "2026-10-22",
-   "d2": "2027-02-07",
-   "dans_jours": 21,
-   "verifie_le": "2026-08-23",
-   "badge_le": "2026-08-23",
-   "age_jours": 39,
-   "cf": "confirme"
-  }
- ]
+ "prioritaires": []
 }

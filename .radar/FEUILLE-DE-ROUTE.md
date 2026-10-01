@@ -63,7 +63,7 @@ reste dérisoire pour un million de visiteurs par jour.
 Légende : [100] fait · [50] à moitié · [0] à faire. Le taux d'un objectif est la
 moyenne de ses micro-objectifs.
 
-### O1 · Fondations sans point faible (registre de l'audit croisé) · 86 %
+### O1 · Fondations sans point faible (registre de l'audit croisé) · 91 %
 - [100] Verrou de build bloquant sur les 7 876 pages, 13 langues
 - [100] Compteurs réconciliés et expliqués
 - [100] Redirections des anciennes adresses (lieux et fiches)
@@ -178,7 +178,8 @@ moyenne de ses micro-objectifs.
         des fiches et des listes en dir=auto sur toutes les pages, vérifié à l'écran ;
         langue et sens de lecture mémorisés appliqués dès l'en-tête de l'accueil (plus
         de bascule après le premier affichage)
-- [0]   En-têtes de sécurité (dépend de Cloudflare devant)
+- [hors périmètre] En-têtes de sécurité HSTS, nosniff, frame-ancestors : exigent Cloudflare
+        devant le site (décision du 18/09), ne comptent pas dans le taux
 - [0]   Newsletter : double opt-in, anti-spam, désinscription (samedi 20/09)
 
 ### O2 · Infrastructure (périmètre GitHub Pages) · 100 %
@@ -249,15 +250,16 @@ les textes de séjour (1 088 Ko) et les journaux d'enquête (619 Ko). Une fiche
 - [100] Sitemap scindé par langue avec index (20/09) : 13 fichiers de 850 Ko au lieu d'un
         seul de 11 Mo ; le verrou lit l'index
 
-### O4 · Données et contenu à l'échelle · 63 %
+### O4 · Données et contenu à l'échelle · 84 %
 - [100] Passes de nuit (purge, liens, condensation)
 - [100] Résorption hebdomadaire de tous les doutes, aux sources
 - [100] Sentinelle des imminents (lundi)
 - [100] Mémoire du radar (archives, changements)
 - [31]  309 événements vivants sur un palier de 1 000 (au 29/09, après purge des saisons
         terminées ; le radar grossit par les passes de nuit)
-- [0]   Photos par événement (R2)
-- [0]   Rendu à la volée au-delà de 850 événements (limite des 20 000 fichiers)
+- [hors périmètre] Photos par événement : exige le stockage R2 de Cloudflare
+- [hors périmètre] Rendu à la volée au-delà de 850 événements (limite des 20 000 fichiers) :
+        exige Cloudflare Workers, sans objet avant 850
 - [70]  API publique JSON (partenaires, assistants d'IA, applications) : /api/evenements.json
         publié le 29/09 (tous les événements : dates, lieu, catégorie, accès, degré de
         confirmation, source officielle, date de vérification, note, fiche en 13 langues,
@@ -315,7 +317,7 @@ les textes de séjour (1 088 Ko) et les journaux d'enquête (619 Ko). Une fiche
         les pages générées, navigation et favoris masqués, adresses des liens utiles
         affichées en clair, fond blanc ; n'affecte jamais l'écran, vérifié en ligne
 
-### O7 · Confiance, sécurité, conformité · 74 %
+### O7 · Confiance, sécurité, conformité · 87 %
 - [100] HTTPS, zéro cookie, zéro donnée collectée
 - [100] Aucun fichier de travail en ligne, aucun secret dans le code
 - [100] Protection des personnes (directive du 20/08) : aucune coordonnée nominative en
@@ -330,18 +332,18 @@ les textes de séjour (1 088 Ko) et les journaux d'enquête (619 Ko). Une fiche
 - [100] Échappement et protection des liens externes : contrôle du 28/09 sur les 3 904
         pages qui portent un lien externe, zéro lien ouvert dans un nouvel onglet sans
         rel=noopener, zéro lien externe sans attribut rel
-- [70]  Mentions légales : page complète pour le site tel qu'il est (éditrice non
+- [95]  Mentions légales : page complète pour le site tel qu'il est (éditrice non
         professionnelle et anonymat LCEN, hébergeur, domaine, propriété intellectuelle,
         données personnelles, GoatCounter, mémoire des favoris, droits RGPD, liens
-        sortants, droit applicable) ; reste la mention du prestataire de newsletter le
-        jour où elle existe
+        sortants, droit applicable) ; seule la mention d'un prestataire de newsletter
+        manquera le jour où elle existera
 - [100] Politique de confidentialité : page dédiée publiée le 25/09, reprend et complète
         la section déjà écrite des mentions légales (la mention des favoris manquait),
         liée depuis le pied de page de tout le site ; vérifiée en ligne
 - [0]   Double opt-in, SPF, DKIM, DMARC pour la newsletter
-- [0]   En-têtes de sécurité (Cloudflare)
+- [hors périmètre] En-têtes de sécurité HTTP : exigent Cloudflare devant le site
 
-### O8 · Observabilité et pilotage · 86 %
+### O8 · Observabilité et pilotage · 99 %
 - [100] Compteur public GoatCounter
 - [100] Search Console vérifiée, exports lus
 - [100] Sonde du matin (quotidienne) et contrôle Google contre site (hebdomadaire)
@@ -359,7 +361,7 @@ les textes de séjour (1 088 Ko) et les journaux d'enquête (619 Ko). Une fiche
         bulletin quotidien reçu par courriel porte aussi les trois lignes de pilotage
         (fraîcheur, vitesse mobile, taux de la feuille de route) ; l'artefact est
         republié à chaque session de travail
-- [0]   Statistiques Cloudflare sans cookie
+- [hors périmètre] Statistiques Cloudflare sans cookie : exigent Cloudflare devant le site
 - [95]  Alertes : la sonde du matin contrôle que la passe de nuit a tourné et la relance
         sinon, mesure PageSpeed et tient un journal de vitesse (20/09) ; alerte hors
         session en place : issue GitHub et courriel au propriétaire, pour un site figé
