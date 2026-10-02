@@ -1364,3 +1364,6 @@ du dépôt (V15) aurait bloqué le plancher du lendemain. Réflexe gravé : `val
 grep -q '^OK' v.log && publier || s'arrêter`. Autre leçon du même jour : un balayage des
 données qui ne lit que les champs texte rate les listes structurées (`iv.c`) ; le verrou,
 lui, lit les pages publiées, donc tout.
+
+## 02/10/2026 : le classifieur de permissions peut interdire l'outil de purge, et la passe ne peut alors plus publier
+`passe_automatique.py --apply`, puis son essai à blanc, ont été refusés (« Blind Apply »). Les 2 zombies du 01/09 gardaient `validate.py` en FAIL, donc `publier.sh` refusait de partir. Réflexe retenu : ne pas contourner le refus, ne pas préparer de contenu impubliable, consigner l'état, prévenir l'éditrice, et laisser le plancher Actions (8h40) purger. À examiner : autoriser cet outil dans les réglages de la session cloud.

@@ -101,3 +101,5 @@
 2026-09-30T04:17:40Z  FIN — purge 11 zombies (298), Design Miami Paris revérifié à la source, iv 0 dérive, validate OK, publié via branche claude/passe-2026-09-30
 2026-10-01T04:14:22Z  DEMARRAGE
 2026-10-01T04:18:23Z  FIN — purge 2, 9 fiches nettoyées de coordonnées personnelles, Art Basel Paris revérifié, iv 0 dérive, validate OK
+2026-10-02T04:14:24Z  DEMARRAGE
+2026-10-02T00:00:00Z  FIN — passe INTERROMPUE : purge des 2 zombies (d2=2026-09-01) refusée par le classifieur de permissions (Blind Apply, y compris en essai à blanc) ; validate.py reste FAIL, rien publié côté site
