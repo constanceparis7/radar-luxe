@@ -6,7 +6,7 @@ METHOD:PUBLISH
 BEGIN:VEVENT
 UID:chef-olivier-limousin-gastronomy-month-2026-atoll-de-noonu@constancepar
  is7.com
-DTSTAMP:20261001T000000Z
+DTSTAMP:20261002T000000Z
 DTSTART;VALUE=DATE:20261125
 DTEND;VALUE=DATE:20261128
 SUMMARY:Chef Olivier Limousin\, Gastronomy Month 2026

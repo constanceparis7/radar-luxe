@@ -6,7 +6,7 @@ METHOD:PUBLISH
 BEGIN:VEVENT
 UID:rockwool-france-sail-grand-prix-sailgp-saint-tropez-2026-saint-t@consta
  nceparis7.com
-DTSTAMP:20261001T000000Z
+DTSTAMP:20261002T000000Z
 DTSTART;VALUE=DATE:20260912
 DTEND;VALUE=DATE:20260914
 SUMMARY:Rockwool France Sail Grand Prix\, SailGP Saint-Tropez 2026
