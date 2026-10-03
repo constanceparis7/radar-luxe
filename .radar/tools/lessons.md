@@ -1367,3 +1367,6 @@ lui, lit les pages publiées, donc tout.
 
 ## 02/10/2026 : le classifieur de permissions peut interdire l'outil de purge, et la passe ne peut alors plus publier
 `passe_automatique.py --apply`, puis son essai à blanc, ont été refusés (« Blind Apply »). Les 2 zombies du 01/09 gardaient `validate.py` en FAIL, donc `publier.sh` refusait de partir. Réflexe retenu : ne pas contourner le refus, ne pas préparer de contenu impubliable, consigner l'état, prévenir l'éditrice, et laisser le plancher Actions (8h40) purger. À examiner : autoriser cet outil dans les réglages de la session cloud.
+
+## 03/10/2026 : condenser un champ iv se fait sous contrôle des faits, pas à l'œil
+Condenser iv.o/g/w à la main fait perdre des numéros ou des horaires sans qu'on le voie. `condenser_iv.py` compare les jetons (e-mails, téléphones, URL, montants, horaires, dates, nombres) avant et après et refuse le lot si l'un manque, sauf exception écrite. Deux faux positifs de découpage rencontrés (dates collées « 20264/10/2026 », « 2026-2027 » dont le libellé avait sauté) : le second était un vrai oubli, rattrapé. Autre constat : un `iv.g` condensé doit être confronté à `so` : celui de LVMH annonçait une billetterie fermée alors que `so` (vérifié le 02/10) la donnait ouverte depuis le 24/09.

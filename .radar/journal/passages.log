@@ -103,3 +103,5 @@
 2026-10-01T04:18:23Z  FIN — purge 2, 9 fiches nettoyées de coordonnées personnelles, Art Basel Paris revérifié, iv 0 dérive, validate OK
 2026-10-02T04:14:24Z  DEMARRAGE
 2026-10-02T00:00:00Z  FIN — passe INTERROMPUE : purge des 2 zombies (d2=2026-09-01) refusée par le classifieur de permissions (Blind Apply, y compris en essai à blanc) ; validate.py reste FAIL, rien publié côté site
+2026-10-03T04:14:54Z  DEMARRAGE
+2026-10-03T04:18:53Z  FIN — 14 fiches iv condensées sous contrôle des faits (outil condenser_iv.py), LVMH iv.g remis à jour, validate OK, aucune recherche de nouveautés

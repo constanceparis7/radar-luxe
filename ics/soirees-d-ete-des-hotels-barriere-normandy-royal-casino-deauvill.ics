@@ -6,7 +6,7 @@ METHOD:PUBLISH
 BEGIN:VEVENT
 UID:soirees-d-ete-des-hotels-barriere-normandy-royal-casino-deauvill@consta
  nceparis7.com
-DTSTAMP:20261002T000000Z
+DTSTAMP:20261003T000000Z
 DTSTART;VALUE=DATE:20260801
 DTEND;VALUE=DATE:20260916
 SUMMARY:Soirees d'ete des Hotels Barrière (Normandy\, Royal\, Casino)

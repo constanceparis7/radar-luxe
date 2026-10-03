@@ -6,7 +6,7 @@ METHOD:PUBLISH
 BEGIN:VEVENT
 UID:gala-du-nouvel-an-du-barthelemy-hotel-spa-saint-barthelemy@constancepar
  is7.com
-DTSTAMP:20261002T000000Z
+DTSTAMP:20261003T000000Z
 DTSTART;VALUE=DATE:20261231
 DTEND;VALUE=DATE:20270101
 SUMMARY:Gala du Nouvel An du Barthélemy Hotel & Spa
