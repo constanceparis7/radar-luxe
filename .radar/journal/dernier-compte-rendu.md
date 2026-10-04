@@ -12,4 +12,4 @@
 - Aucune recherche de nouveautés, aucun candidat du vivier traité, aucune revérification (`reverification-prioritaire.json`), séjours restants non faits, pas de mesure mobile (pas un lundi).
 - Aucun contenu externe consulté : les faits condensés viennent des champs existants, non revérifiés à la source.
 - Fiches périmées dans le texte, à revérifier : Sofitel « Icônes » (exposition dite finie le 20/09 mais d2 au 06/10), Terrasses des palaces parisiens (La Cour Jardin « jusqu'au 13/09 »), Blue Marlin/Ushuaïa (saison finissant 4-5/10).
-- Restent des champs iv de plus de 400 caractères sur la fenêtre live (matière factuelle dense surtout).
+- Restent 97 fiches de la fenêtre live avec un champ iv de plus de 400 caractères (matière factuelle dense surtout).
