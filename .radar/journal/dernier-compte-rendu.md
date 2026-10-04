@@ -1,18 +1,15 @@
-# Compte rendu de la passe du 03/10/2026
+# Compte rendu de la passe du 04/10/2026
 
-**Résultat : passe partielle, verrou vert, 14 fiches condensées. Aucune fiche ajoutée.**
+**Résultat : passe partielle. 15 fiches condensées, 1 zombie purgé, aucune fiche ajoutée.**
 
 ## Fait
-- Doctrine, passation et début des leçons lus ; identité git radar-routine-claude posée ; clone déshallowé. `validate.py` au démarrage : OK (0 blocage, 2 avertissements). La purge des 2 zombies du 02/10 avait déjà été faite par le plancher Actions.
-- Compteurs `reste.py` : traductions 294/294, invitations 294/294, séjours 288/294 (reste 6).
-- **Condensation des voies d'invitation** : 14 fiches de la fenêtre live, 19 champs `iv.o/g/w` réécrits à l'adresse du visiteur : Negresco, Nikki Beach Ibiza, Cap-Eden-Roc, Journées Particulières LVMH, Casino Barrière Le Touquet, Sofitel Le Faubourg (Icônes), Paris Fashion Week PE 2027, Kulm Saint-Moritz, Sommets Musicaux de Gstaad, TEFAF Maastricht 2027, Alpina Gstaad, New Year's Eve Regatta (Saint-Barth). Aucun fait supprimé : nouvel outil `.radar/tools/condenser_iv.py` qui REFUSE tout lot où un e-mail, téléphone, URL, montant, horaire ou date disparaît (exceptions listées et justifiées : doublons, mention périmée, fausse alerte de découpage).
-- LVMH : `iv.g` disait encore « billetterie PAS encore ouverte au 29/08 » ; réécrit d'après le fait déjà vérifié dans `so` (réservations en trois vagues les 24, 28 et 30 septembre à 14h). `iv.o` : 45 Maisons (valeur corrigée le 28/09 dans `so`) au lieu de 46.
-- Les traductions `iv_*` des champs modifiés ont été retirées (repli français exact) : aucune n'existait pour ces fiches.
-- Restant en fenêtre live : 102 fiches ont encore un champ iv de plus de 400 caractères (29 au-delà de 900), presque toutes de la matière factuelle ; mesure faite après le lot.
-
-## Constat sur la « dérive journal d'enquête »
-Sur la fenêtre live, les phrases d'enquêteur sont devenues rares (9 occurrences repérées par motifs, dont 4 traitées). Ce qui dépasse 400 caractères est surtout de la matière factuelle dense (cartes, tarifs, horaires, paliers de mécénat) qu'on ne peut pas couper sans perdre un fait : Cala Rossa, Gstaad New Year (2 262 car.), Abu Dhabi, Dior Spa… laissés en l'état volontairement.
+- Doctrine, passation et leçons lus ; identité git radar-routine-claude posée ; clone déshallowé ; `index-full.html` reconstruit.
+- Au démarrage `validate.py` : FAIL (1 blocage : zombie Premio Internazionale Fondazione Taormina Art, d2 du 03/09). `passe_automatique.py --apply --max-liens 0` (purge seule) a fonctionné cette fois : fiche retirée (294 -> 293).
+- Compteurs `reste.py` : traductions 294/294, invitations 294/294, séjours 288/294 (6 restants), avant purge.
+- **Condensation iv** : 20 champs `iv.o/g/w` réécrits sur 15 fiches de la fenêtre live (celles qui finissent le plus tôt) : Cartier NGV, Circuit mannequins, The Shop on the Corner, David Guetta Ushuaïa, Sofitel Icônes, Paris Fashion Week PE 2027 et ses 4 dossiers d'accès, Negresco, Nikki Beach Ibiza et Mallorca, Palaces de la presqu'île, Loewe Saint-Tropez. Outil `condenser_iv.py` : aucun e-mail, téléphone, URL, montant, horaire ou date perdu (0 exception). Traductions `iv_*` des champs modifiés retirées (repli français exact).
 
 ## Non fait / non vérifié
-- Aucune recherche de nouveaux événements, aucun candidat du vivier traité (49 intacts), aucune revérification de la file `reverification-prioritaire.json`, pas de séjours (6 restants), pas de mesure mobile (pas un lundi).
-- Aucun contenu externe consulté cette passe : pas de vérification web des faits condensés (ils proviennent des champs existants).
+- Aucune recherche de nouveautés, aucun candidat du vivier traité, aucune revérification (`reverification-prioritaire.json`), séjours restants non faits, pas de mesure mobile (pas un lundi).
+- Aucun contenu externe consulté : les faits condensés viennent des champs existants, non revérifiés à la source.
+- Fiches périmées dans le texte, à revérifier : Sofitel « Icônes » (exposition dite finie le 20/09 mais d2 au 06/10), Terrasses des palaces parisiens (La Cour Jardin « jusqu'au 13/09 »), Blue Marlin/Ushuaïa (saison finissant 4-5/10).
+- Restent des champs iv de plus de 400 caractères sur la fenêtre live (matière factuelle dense surtout).

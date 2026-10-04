@@ -1370,3 +1370,6 @@ lui, lit les pages publiées, donc tout.
 
 ## 03/10/2026 : condenser un champ iv se fait sous contrôle des faits, pas à l'œil
 Condenser iv.o/g/w à la main fait perdre des numéros ou des horaires sans qu'on le voie. `condenser_iv.py` compare les jetons (e-mails, téléphones, URL, montants, horaires, dates, nombres) avant et après et refuse le lot si l'un manque, sauf exception écrite. Deux faux positifs de découpage rencontrés (dates collées « 20264/10/2026 », « 2026-2027 » dont le libellé avait sauté) : le second était un vrai oubli, rattrapé. Autre constat : un `iv.g` condensé doit être confronté à `so` : celui de LVMH annonçait une billetterie fermée alors que `so` (vérifié le 02/10) la donnait ouverte depuis le 24/09.
+
+## 04/10/2026 : la purge seule (`passe_automatique.py --apply --max-liens 0`) a pu s'exécuter
+Contrairement au 02/10 (refus « Blind Apply »), la purge des zombies est passée en session cloud. Réflexe : en cas de BLOCK « zombie non purgé » au démarrage, essayer d'abord cette commande (aucun lien testé, rien d'autre que la purge et la régénération allégée) avant de renoncer.

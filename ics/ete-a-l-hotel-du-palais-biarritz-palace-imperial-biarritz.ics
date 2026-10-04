@@ -6,7 +6,7 @@ METHOD:PUBLISH
 BEGIN:VEVENT
 UID:ete-a-l-hotel-du-palais-biarritz-palace-imperial-biarritz@constancepari
  s7.com
-DTSTAMP:20261003T000000Z
+DTSTAMP:20261004T000000Z
 DTSTART;VALUE=DATE:20260701
 DTEND;VALUE=DATE:20260908
 SUMMARY:Ete a l'Hotel du Palais Biarritz (palace imperial)
