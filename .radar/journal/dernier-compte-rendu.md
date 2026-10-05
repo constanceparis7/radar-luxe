@@ -1,15 +1,14 @@
-# Compte rendu de la passe du 04/10/2026
+# Compte rendu de la passe du 05/10/2026
 
-**Résultat : passe partielle. 15 fiches condensées, 1 zombie purgé, aucune fiche ajoutée.**
+**Résultat : passe partielle. 14 fiches condensées (30 champs), 1 zombie purgé, aucune fiche ajoutée. Publié sur main, validate OK (0 blocage, 2 avertissements de longueur).**
 
 ## Fait
-- Doctrine, passation et leçons lus ; identité git radar-routine-claude posée ; clone déshallowé ; `index-full.html` reconstruit.
-- Au démarrage `validate.py` : FAIL (1 blocage : zombie Premio Internazionale Fondazione Taormina Art, d2 du 03/09). `passe_automatique.py --apply --max-liens 0` (purge seule) a fonctionné cette fois : fiche retirée (294 -> 293).
-- Compteurs `reste.py` : traductions 294/294, invitations 294/294, séjours 288/294 (6 restants), avant purge.
-- **Condensation iv** : 20 champs `iv.o/g/w` réécrits sur 15 fiches de la fenêtre live (celles qui finissent le plus tôt) : Cartier NGV, Circuit mannequins, The Shop on the Corner, David Guetta Ushuaïa, Sofitel Icônes, Paris Fashion Week PE 2027 et ses 4 dossiers d'accès, Negresco, Nikki Beach Ibiza et Mallorca, Palaces de la presqu'île, Loewe Saint-Tropez. Outil `condenser_iv.py` : aucun e-mail, téléphone, URL, montant, horaire ou date perdu (0 exception). Traductions `iv_*` des champs modifiés retirées (repli français exact).
+- Doctrine, passation et leçons lus ; identité radar-routine-claude posée ; clone déshallowé ; `index-full.html` reconstruit.
+- Au démarrage `validate.py` : FAIL (zombie Portofino, d2 du 04/09). `passe_automatique.py --apply --max-liens 0` a fonctionné (293 -> 292). Le verrou V5 (note.html) s'est résorbé à la régénération de `publier.sh`.
+- **Condensation iv** sous contrôle des faits (`condenser_iv.py`) : Amiri, La Mode en majesté, Chanel La Mistralée, Palais Galliera, Dior Saint-Tropez, Dolce & Gabbana x Casa Amor, Cap-Eden-Roc, PAD London, Bisbee's, Chaumet, Journées Particulières LVMH, Villa Carmignac, LUMA Arles, Sotheby's Royal & Noble Jewels. Aucun e-mail de service, téléphone, URL, tarif, horaire ou date perdu. Exceptions volontaires (règle « aucune coordonnée nominative en public ») : e-mails nominatifs de presse Dior (4) et hdebutler@butler-collection.fr retirés ; noms et fonctions conservés. Traductions `iv_*` des champs modifiés retirées (repli français exact).
+- Compteurs `reste.py` : traductions 292/292, invitations 292/292, séjours 286/292 (6 restants).
 
 ## Non fait / non vérifié
-- Aucune recherche de nouveautés, aucun candidat du vivier traité, aucune revérification (`reverification-prioritaire.json`), séjours restants non faits, pas de mesure mobile (pas un lundi).
-- Aucun contenu externe consulté : les faits condensés viennent des champs existants, non revérifiés à la source.
-- Fiches périmées dans le texte, à revérifier : Sofitel « Icônes » (exposition dite finie le 20/09 mais d2 au 06/10), Terrasses des palaces parisiens (La Cour Jardin « jusqu'au 13/09 »), Blue Marlin/Ushuaïa (saison finissant 4-5/10).
-- Restent 97 fiches de la fenêtre live avec un champ iv de plus de 400 caractères (matière factuelle dense surtout).
+- Aucune recherche de nouveautés, aucun candidat du vivier, aucune revérification à la source, aucun séjour restant, pas de mesure mobile (pas un lundi). Faits condensés repris des champs existants, non revérifiés dehors.
+- Fiches au texte périmé à revérifier : Chanel La Mistralée (iv.o parle d'une fermeture le 15/08 alors que d2 = 15/10, fin estimée) ; Casa Amor (calendrier du 27/07 au 30/08, d2 au 31/10) ; Villa Carmignac et Cap-Eden-Roc (textes de saison d'été) ; Sofitel Icônes et terrasses des palaces (déjà signalés).
+- Restent environ 80 fiches de la fenêtre live avec un champ iv au-dessus de 400 caractères, surtout du contenu dense (tarifs, cartes, listes de contacts) : Cala Rossa iv.w (1344), Casino Le Touquet iv.w, Fondation Maeght iv.w, Melbourne Cup, Phillips, etc.
