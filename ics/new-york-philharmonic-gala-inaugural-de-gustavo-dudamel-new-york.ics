@@ -6,7 +6,7 @@ METHOD:PUBLISH
 BEGIN:VEVENT
 UID:new-york-philharmonic-gala-inaugural-de-gustavo-dudamel-new-york@consta
  nceparis7.com
-DTSTAMP:20261004T000000Z
+DTSTAMP:20261005T000000Z
 DTSTART;VALUE=DATE:20260930
 DTEND;VALUE=DATE:20261001
 SUMMARY:New York Philharmonic\, Gala inaugural de Gustavo Dudamel
