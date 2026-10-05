@@ -8,3 +8,6 @@
 {"date": "2026-09-29", "url": "https://constanceparis7.com/", "lcp_ms": 864, "cls": 0, "inp_ms": 120, "fcp_ms": 864, "ttfb_ms": 584, "load_ms": 2762, "transfert_ko": 314}
 {"date": "2026-09-29", "url": "https://constanceparis7.com/e/paris-fashion-week-pret-a-porter-printemps-ete-2027-paris.html", "lcp_ms": 520, "cls": 0, "inp_ms": null, "fcp_ms": 520, "ttfb_ms": 289, "load_ms": 528, "transfert_ko": 18}
 {"date": "2026-09-29", "url": "https://constanceparis7.com/ar/", "lcp_ms": 364, "cls": 0, "inp_ms": null, "fcp_ms": 364, "ttfb_ms": 184, "load_ms": 383, "transfert_ko": 19}
+{"date": "2026-10-05", "url": "https://constanceparis7.com/", "lcp_ms": 6496, "cls": 0, "inp_ms": 712, "fcp_ms": 5868, "ttfb_ms": 5576, "load_ms": 12029, "transfert_ko": 306}
+{"date": "2026-10-05", "url": "https://constanceparis7.com/e/paris-fashion-week-pret-a-porter-printemps-ete-2027-paris.html", "lcp_ms": 3336, "cls": 0, "inp_ms": null, "fcp_ms": 3336, "ttfb_ms": 1838, "load_ms": 3519, "transfert_ko": 18}
+{"date": "2026-10-05", "url": "https://constanceparis7.com/ar/", "lcp_ms": 2504, "cls": 0, "inp_ms": null, "fcp_ms": 2504, "ttfb_ms": 1197, "load_ms": 2517, "transfert_ko": 19}
