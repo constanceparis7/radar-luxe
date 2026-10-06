@@ -1373,3 +1373,6 @@ Condenser iv.o/g/w à la main fait perdre des numéros ou des horaires sans qu'o
 
 ## 04/10/2026 : la purge seule (`passe_automatique.py --apply --max-liens 0`) a pu s'exécuter
 Contrairement au 02/10 (refus « Blind Apply »), la purge des zombies est passée en session cloud. Réflexe : en cas de BLOCK « zombie non purgé » au démarrage, essayer d'abord cette commande (aucun lien testé, rien d'autre que la purge et la régénération allégée) avant de renoncer.
+
+## 06/10/2026 : le garde-fou de `condenser_iv.py` compare champ par champ ; un fait qui migre d'un champ à l'autre se déclare en `ok_perdus`
+Le standard du Negresco, déplacé de iv.w vers iv.o, et l'adresse de Christie's (1201 Genève), remontée dans iv.o, ont été signalés comme perdus. Faux positifs de migration : les déclarer dans `ok_perdus` avec la forme exacte du jeton (« +33 (0)4 93 16 64 00 », pas la version espacée sans le (0)). Le seuil de 400 caractères ne désigne toujours pas de dérive : sur 59 fiches live, 6 seulement avaient de la matière à couper.
