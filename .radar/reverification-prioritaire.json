@@ -1,8 +1,29 @@
 {
- "genere_le": "2026-10-01",
+ "genere_le": "2026-10-07",
  "regle": "fiche non terminée, commençant dans 21 jours ou déjà en cours, dont la dernière vérification écrite est absente ou date de plus de 30 jours ; triée par imminence puis par ancienneté",
- "total_vivantes": 187,
- "avec_date_verif": 109,
- "avec_badge": 88,
- "prioritaires": []
+ "total_vivantes": 154,
+ "avec_date_verif": 76,
+ "avec_badge": 66,
+ "prioritaires": [
+  {
+   "n": "Sotheby's Paris, vente du soir « Modernités » (orbite Art Basel Paris)",
+   "d1": "2026-10-23",
+   "d2": "2026-10-23",
+   "dans_jours": 16,
+   "verifie_le": null,
+   "badge_le": null,
+   "age_jours": null,
+   "cf": "confirme"
+  },
+  {
+   "n": "Artcurial, vente « La Modernité en partage » (Collection Louis Grandchamp des Raux, orbite Art Basel Paris)",
+   "d1": "2026-10-24",
+   "d2": "2026-10-24",
+   "dans_jours": 17,
+   "verifie_le": null,
+   "badge_le": null,
+   "age_jours": null,
+   "cf": "probable"
+  }
+ ]
 }

@@ -1,15 +1,22 @@
-# Compte rendu de la passe du 06/10/2026
+# Compte rendu de la passe du 07/10/2026
 
-**Résultat : passe partielle. 2 zombies purgés, 6 fiches condensées (16 champs), aucune fiche ajoutée. Publié directement sur main (le push sur main a été accepté, pas de repli claude/*). validate OK : 0 blocage, 2 avertissements de longueur.**
+**Fiches ajoutées : 0.** Aucune recherche de nouveautés ce jour : la priorité du moment (condensation des voies d'invitation) a été traitée en premier et aucun candidat digne du site n'a été examiné. Résultat honnête, rien de grand public déguisé.
 
-## Fait
-- Doctrine, passation et leçons lus ; identité radar-routine-claude posée ; clone déshallowé ; `index-full.html` reconstruit.
-- Au démarrage `validate.py` : FAIL (2 zombies d2 du 05/09 : Singapore Night Festival, Ravello Festival). `passe_automatique.py --apply --max-liens 0` a fonctionné (292 -> 290).
-- **Condensation iv** sous contrôle des faits (`condenser_iv.py`) : Negresco, Fondazione Prada Venise (Helter Skelter), Cheval Blanc St-Barth (Réveillon), Melbourne Cup Birdcage, Christie's Magnificent Jewels, Clubs privés Mayfair. Aucun e-mail, téléphone, URL, tarif, horaire ou date perdu (le standard du Negresco a migré de iv.w vers iv.o). Christie's : l'incohérence entre iv.o (« salle non communiquée ») et iv.g (Four Seasons Hôtel des Bergues, confirmé) est résolue en faveur du lieu confirmé. Traductions `iv_*` des champs modifiés retirées (repli français exact).
-- Compteurs `reste.py` : traductions 290/290, invitations 290/290, séjours 284/290 (6 restants).
+**Purge** : 6 zombies (d2 = 06/09/2026) retirés via `passe_automatique.py --apply --max-liens 0` (le site passe de 290 à 284 fiches). Verrou OK.
 
-## Non fait / non vérifié
-- Seulement 6 fiches condensées sur les 15-20 demandées : sur 59 fiches de la fenêtre live au-dessus de 400 caractères, les autres lues (Maeght, Loewe, Nikki Beach, Dior Spa, etc.) sont des modes d'emploi propres, denses de faits réels ; les réécrire n'aurait gagné que quelques dizaines de caractères au prix d'un risque de perte de fait (leçons du 21/08, 25/08, 21/09). Il reste donc environ 53 fiches au-dessus de 400 car., en majorité de la densité factuelle légitime.
-- Aucune recherche de nouveautés, aucun candidat du vivier, aucune revérification à la source, aucun séjour restant, pas de mesure mobile (pas un lundi). Faits condensés repris des champs existants, non revérifiés dehors.
-- Textes périmés à revérifier : plusieurs fiches de saison d'été encore en cours (Milan Ferragosto, Villa Carmignac, Cap-Eden-Roc, Casa Amor, Chanel La Mistralée) ; Negresco (dernières dates de concerts publiées 30/09).
-- Alerte cadence de `precheck.sh` (106 h) : à lire comme faux positif, `run-log.ndjson` n'est plus alimenté (passages.log montre une passe quotidienne).
+**Condensation iv (lot de 3 champs sur 3 fiches, lecture intégrale, 0 fait perdu)** :
+- Gstaad New Year Music Festival `iv.w` : 2262 -> environ 1300 caractères (coordonnées bancaires IBAN/BIC et rappel de dates retirés, paliers de mécénat, billetterie, contact d'Illyria Pfyffer et programme des têtes d'affiche conservés).
+- Airelles Courchevel `iv.g` : 803 -> environ 640 caractères (tournure d'enquêteur retirée).
+- Cheval Blanc Courchevel `iv.g` : numéro mobile d'agence retiré.
+Reste en fenêtre live : 18 fiches portent encore un motif de dérive ; lecture faite de 7, les autres sont des modes d'emploi denses et légitimes (voir la leçon du 20/09). Pas de quota forcé.
+
+**Protection des personnes (mobiles nominatifs retirés, tous publiés à tort après le 20/08)** : Laëtitia Guy-Debout (Hôtel du Cap-Eden-Roc), Sarah Bendaoud (Casino Barrière Le Touquet), Corinne Hennequin (Saint-Barth Music Festival), Morgana Camnasio (Targa Florio), Marion Guillemot et Florent Hazucka (Airelles/Courchevel Tourisme). Chaque fiche garde au moins une voie de service.
+À trancher à la main : lignes mobiles NON nominatives conservées (Amiri Saint-Tropez, Fondation Maeght/Dezarts, Targa Florio 339, Taobuk 338, Snow Polo St-Moritz +41 79) ; ce sont des lignes d'organisation, pas de personnes.
+
+**Séjours / invitations / traductions** : compteurs `reste.py` : traductions 284/284, invitations 284/284, séjours 278/284 (6 manquent, à vérifier si en fenêtre live). Les traductions `iv_g`/`iv_w` des champs modifiés ont été retirées (repli français exact).
+
+**Non vérifié** :
+- Réseau non testé ; aucune revérification à la source (2 fiches en file : vente Sotheby's « Modernités », vente Artcurial « La Modernité en partage ») ni test de liens.
+- Gstaad New Year : `d2` du site = 08/01/2027, mais l'ancien texte `iv.w` annonçait une 21e édition jusqu'au 10/01/2027 (avant-programme). Divergence non tranchée, date de fin à revérifier à la source.
+- Milan « Ferragosto » : d2 = 31/12/2026 pour un sujet de mi-août, à reprendre.
+- Visites : relevé non effectué.

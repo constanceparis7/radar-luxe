@@ -6,7 +6,7 @@ METHOD:PUBLISH
 BEGIN:VEVENT
 UID:soirees-de-gala-et-hommages-du-festival-de-marrakech-marrakech@constanc
  eparis7.com
-DTSTAMP:20261006T000000Z
+DTSTAMP:20261007T000000Z
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261129
 SUMMARY:Soirées de gala et hommages du Festival de Marrakech
