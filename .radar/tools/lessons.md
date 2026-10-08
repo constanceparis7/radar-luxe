@@ -1379,3 +1379,6 @@ Le standard du Negresco, déplacé de iv.w vers iv.o, et l'adresse de Christie's
 
 ## 07/10/2026 : des mobiles de personnes nommées avaient encore été republiés, et un seuil 400 car. redésigne surtout du contenu sain
 Scan par expression régulière des mobiles dans iv.o/g/w/c des fiches vivantes : 6 numéros rattachés à une personne nommée (attachées de presse, présidente de festival) ont été retirés. Dans `iv.c`, le numéro est l'entrée qui SUIT l'entrée `nom` : lire `c[i-1]` pour décider. Sur 18 fiches live à motif de dérive, 3 seulement avaient une vraie dérive (IBAN et programme répétés dans iv.w, méta-commentaire dans iv.g). Un fait qu'on retire d'un champ doit être vérifié dans les autres champs (`p`, `so`) avant de conclure qu'il est en doublon : le programme de Gstaad n'y était pas et a été réintégré.
+
+## 08/10/2026 : après une purge, `gen_pages` doit repasser avant `validate`
+La purge de 5 zombies a laissé V5 (note.html annonçait 271 événements, base à 266) jusqu'à `split_i18n`, `gen_seo`, `gen_pages`. Réflexe : purge, rebuild_full, pipeline complet, puis validate. Les 9 champs iv > 1200 car. étaient encore de la densité légitime : chantier condensation à zéro, ne pas forcer de quota.

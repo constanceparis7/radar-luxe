@@ -6,7 +6,7 @@ METHOD:PUBLISH
 BEGIN:VEVENT
 UID:reveillon-de-la-saint-sylvestre-a-la-mamounia-marrakech@constanceparis7
  .com
-DTSTAMP:20261007T000000Z
+DTSTAMP:20261008T000000Z
 DTSTART;VALUE=DATE:20261231
 DTEND;VALUE=DATE:20270101
 SUMMARY:Réveillon de la Saint-Sylvestre à La Mamounia

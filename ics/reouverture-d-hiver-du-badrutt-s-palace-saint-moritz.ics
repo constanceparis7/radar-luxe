@@ -6,7 +6,7 @@ METHOD:PUBLISH
 BEGIN:VEVENT
 UID:reouverture-d-hiver-du-badrutt-s-palace-saint-moritz@constanceparis7.co
  m
-DTSTAMP:20261007T000000Z
+DTSTAMP:20261008T000000Z
 DTSTART;VALUE=DATE:20261203
 DTEND;VALUE=DATE:20261204
 SUMMARY:Réouverture d'hiver du Badrutt's Palace
