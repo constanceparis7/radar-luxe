@@ -5,7 +5,7 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:dioriviera-cannes-installation-saisonniere-cannes@constanceparis7.com
-DTSTAMP:20261008T000000Z
+DTSTAMP:20261009T000000Z
 DTSTART;VALUE=DATE:20260801
 DTEND;VALUE=DATE:20260916
 SUMMARY:Dioriviera Cannes\, installation saisonnière

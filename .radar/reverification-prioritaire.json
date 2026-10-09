@@ -1,29 +1,19 @@
 {
- "genere_le": "2026-10-08",
+ "genere_le": "2026-10-09",
  "regle": "fiche non terminée, commençant dans 21 jours ou déjà en cours, dont la dernière vérification écrite est absente ou date de plus de 30 jours ; triée par imminence puis par ancienneté",
- "total_vivantes": 154,
- "avec_date_verif": 75,
- "avec_badge": 65,
+ "total_vivantes": 153,
+ "avec_date_verif": 77,
+ "avec_badge": 67,
  "prioritaires": [
   {
-   "n": "Sotheby's Paris, vente du soir « Modernités » (orbite Art Basel Paris)",
-   "d1": "2026-10-23",
-   "d2": "2026-10-23",
-   "dans_jours": 15,
-   "verifie_le": null,
-   "badge_le": null,
-   "age_jours": null,
+   "n": "Vente Sotheby's Fine Jewelry et exposition au Mandarin Oriental, Genève",
+   "d1": "2026-10-30",
+   "d2": "2026-11-13",
+   "dans_jours": 21,
+   "verifie_le": "2026-08-23",
+   "badge_le": "2026-08-23",
+   "age_jours": 47,
    "cf": "confirme"
-  },
-  {
-   "n": "Artcurial, vente « La Modernité en partage » (Collection Louis Grandchamp des Raux, orbite Art Basel Paris)",
-   "d1": "2026-10-24",
-   "d2": "2026-10-24",
-   "dans_jours": 16,
-   "verifie_le": null,
-   "badge_le": null,
-   "age_jours": null,
-   "cf": "probable"
   }
  ]
 }

@@ -1382,3 +1382,6 @@ Scan par expression régulière des mobiles dans iv.o/g/w/c des fiches vivantes 
 
 ## 08/10/2026 : après une purge, `gen_pages` doit repasser avant `validate`
 La purge de 5 zombies a laissé V5 (note.html annonçait 271 événements, base à 266) jusqu'à `split_i18n`, `gen_seo`, `gen_pages`. Réflexe : purge, rebuild_full, pipeline complet, puis validate. Les 9 champs iv > 1200 car. étaient encore de la densité légitime : chantier condensation à zéro, ne pas forcer de quota.
+
+## 09/10/2026 : un candidat du vivier dont la page officielle ne donne ni lieu ni procédure se rejette
+Le Bal des Débutantes (lebal.paris) n'affiche que la date et un lien Contact : ni lieu, ni voie d'invitation, ni coordonnée. Sans ces faits, pas de fiche complète possible (loi du site). Un séjour déjà vérifié d'une autre fiche du même lieu (Monaco) se réutilise en retirant les traductions de `sej_pitch` lorsqu'on réécrit le pitch.

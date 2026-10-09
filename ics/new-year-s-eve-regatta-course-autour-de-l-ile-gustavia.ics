@@ -6,7 +6,7 @@ METHOD:PUBLISH
 BEGIN:VEVENT
 UID:new-year-s-eve-regatta-course-autour-de-l-ile-gustavia@constanceparis7.
  com
-DTSTAMP:20261008T000000Z
+DTSTAMP:20261009T000000Z
 DTSTART;VALUE=DATE:20261231
 DTEND;VALUE=DATE:20270101
 SUMMARY:New Year's Eve Regatta (course autour de l'île)

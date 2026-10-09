@@ -6,7 +6,7 @@ METHOD:PUBLISH
 BEGIN:VEVENT
 UID:reouverture-d-hiver-des-airelles-courchevel-courchevel-1850@constancepa
  ris7.com
-DTSTAMP:20261008T000000Z
+DTSTAMP:20261009T000000Z
 DTSTART;VALUE=DATE:20261204
 DTEND;VALUE=DATE:20261205
 SUMMARY:Réouverture d'hiver des Airelles Courchevel

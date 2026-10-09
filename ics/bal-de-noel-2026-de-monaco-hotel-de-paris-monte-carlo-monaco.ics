@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bal-de-noel-2026-de-monaco-hotel-de-paris-monte-carlo-monaco@constancep
+ aris7.com
+DTSTAMP:20261009T000000Z
+DTSTART;VALUE=DATE:20261211
+DTEND;VALUE=DATE:20261212
+SUMMARY:Bal de Noël 2026 de Monaco\, Hôtel de Paris Monte-Carlo
+LOCATION:Salle Empire\, Hôtel de Paris Monte-Carlo\, place du Casino\, Mon
+ aco
+DESCRIPTION:Vendredi 11 décembre 2026 · Salle Empire\, Hôtel de Paris\, 
+ Monte-Carlo\nhttps://constanceparis7.com/e/bal-de-noel-2026-de-monaco-hote
+ l-de-paris-monte-carlo-monaco.html
+URL:https://constanceparis7.com/e/bal-de-noel-2026-de-monaco-hotel-de-paris
+ -monte-carlo-monaco.html
+END:VEVENT
+END:VCALENDAR
