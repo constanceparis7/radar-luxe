@@ -847,7 +847,7 @@ def main():
         "<h2 class=\"sub\">Les conditions</h2>"
         "<p>Les données sont réutilisables librement avec la mention « ConstanceParis7 » et un lien vers la fiche concernée. "
         "Tout usage commercial (application payante, revente, intégration dans un service facturé) se fait sur accord écrit préalable : "
-        "<a href=\"mailto:constanceparis75007@gmail.com\">constanceparis75007@gmail.com</a>. "
+        "<a href=\"mailto:constanceparis7e@gmail.com\">constanceparis7e@gmail.com</a>. "
         "Les dates et conditions d'accès peuvent changer sans préavis : le fichier reflète le site au jour de sa génération, confirmez toujours auprès de l'organisateur.</p>"
         "<p lang=\"en\"><b>In English.</b> One public JSON file, regenerated at every publication, with every event of the radar: dates, venue, category, access, level of confirmation, official source, date of last verification, radar score, and the page in thirteen languages. Free to reuse with the credit “ConstanceParis7” and a link to the event page; commercial use by written agreement.</p>"
         "<div class=\"chips\"><a href=\"/\">← Retour au radar</a><a href=\"/methode.html\">La méthode</a><a href=\"/mentions-legales.html\">Mentions légales</a></div>"
@@ -1408,7 +1408,7 @@ jour, il sera signalé comme tel, sur la fiche concernée.</p>
 </div>
 
 <h2 class="sub">Contact</h2>
-<p><a class="cta" href="mailto:constanceparis75007@gmail.com">constanceparis75007@gmail.com</a></p>
+<p><a class="cta" href="mailto:constanceparis7e@gmail.com">constanceparis7e@gmail.com</a></p>
 
 <div class="chips"><a href="/">← Retour au radar</a><a href="/mentions-legales.html">Mentions légales</a></div>"""
     write("/a-propos.html",
@@ -1442,7 +1442,7 @@ jour, il sera signalé comme tel, sur la fiche concernée.</p>
 
 <h2 class="sub">Éditrice du site</h2>
 <p>Ce site est édité par une personne physique, <b>à titre non professionnel</b>.<br>
-Contact : <a href="mailto:constanceparis75007@gmail.com">constanceparis75007@gmail.com</a></p>
+Contact : <a href="mailto:constanceparis7e@gmail.com">constanceparis7e@gmail.com</a></p>
 <p>Conformément à l'article 6, III, 2° de la loi n° 2004-575 du 21 juin 2004 pour la
 confiance dans l'économie numérique, l'éditrice, qui publie à titre non professionnel,
 préserve son anonymat : son identité et son adresse ne sont pas rendues publiques. Les
@@ -1471,7 +1471,7 @@ organisateurs cités.</p>
 tarifs et les conditions d'accès peuvent changer sans préavis :
 <b>confirmez toujours auprès de l'organisateur avant de vous déplacer ou de réserver.</b></p>
 <p>Une erreur vous a échappé ? Écrivez à
-<a href="mailto:constanceparis75007@gmail.com">constanceparis75007@gmail.com</a> :
+<a href="mailto:constanceparis7e@gmail.com">constanceparis7e@gmail.com</a> :
 correction ou retrait sous 48 heures, et la correction est mentionnée.</p>
 </div>
 
@@ -1508,7 +1508,7 @@ supprimés.</p>
 <p><b>Vos droits.</b> Conformément au Règlement général sur la protection des données
 et à la loi Informatique et Libertés, vous disposez d'un droit d'accès, de
 rectification, d'effacement et d'opposition. Pour l'exercer, écrivez à
-<a href="mailto:constanceparis75007@gmail.com">constanceparis75007@gmail.com</a>. Vous pouvez
+<a href="mailto:constanceparis7e@gmail.com">constanceparis7e@gmail.com</a>. Vous pouvez
 également introduire une réclamation auprès de la CNIL
 (<a href="https://www.cnil.fr" target="_blank" rel="noopener nofollow">cnil.fr</a>).</p>
 
@@ -1552,7 +1552,7 @@ L'éditrice n'exerce aucun contrôle sur ces sites et décline toute responsabil
 détail (éditrice, directrice de la publication, hébergeur) est dans les
 <a href="/mentions-legales.html">mentions légales</a>. Pour toute question sur vos
 données, la même adresse fait foi :
-<a href="mailto:constanceparis75007@gmail.com">constanceparis75007@gmail.com</a>.</p>
+<a href="mailto:constanceparis7e@gmail.com">constanceparis7e@gmail.com</a>.</p>
 
 <h2 class="sub">Mesure d'audience</h2>
 <p>Le site utilise <a href="https://www.goatcounter.com" target="_blank" rel="noopener nofollow">GoatCounter</a>
@@ -1587,7 +1587,7 @@ quant à leurs propres pratiques de confidentialité.</p>
 <p>Conformément au Règlement général sur la protection des données et à la loi
 Informatique et Libertés, vous disposez d'un droit d'accès, de rectification,
 d'effacement et d'opposition sur toute donnée vous concernant. Pour l'exercer, écrivez à
-<a href="mailto:constanceparis75007@gmail.com">constanceparis75007@gmail.com</a>. Vous pouvez
+<a href="mailto:constanceparis7e@gmail.com">constanceparis7e@gmail.com</a>. Vous pouvez
 également introduire une réclamation auprès de la CNIL
 (<a href="https://www.cnil.fr" target="_blank" rel="noopener nofollow">cnil.fr</a>).</p>
 
@@ -1688,7 +1688,7 @@ signalés sur la page d'accueil.</p>
                  f"<div class=\"box\"><h2>{esc(X(lang,'m_rules_t'))}</h2><ul>"]
         for k in ("m_r1", "m_r2", "m_r3", "m_r4", "m_r5"):
             corps.append(f"<li>{X(lang,k)}</li>")
-        corps.append(f"<li>{X(lang,'m_r6')} <a href=\"mailto:constanceparis75007@gmail.com\">{esc(X(lang,'m_signaler'))}</a>.</li></ul></div>")
+        corps.append(f"<li>{X(lang,'m_r6')} <a href=\"mailto:constanceparis7e@gmail.com\">{esc(X(lang,'m_signaler'))}</a>.</li></ul></div>")
         corps.append(f"<h2 class=\"sub\">{esc(X(lang,'m_badge_t'))}</h2><p>{X(lang,'m_badge_p')}</p>")
         corps.append(f"<h2 class=\"sub\">{esc(X(lang,'m_langs_t'))}</h2><p>{esc(X(lang,'m_langs_p'))}</p>")
         corps.append(f"<h2 class=\"sub\">{esc(X(lang,'m_fuseau_t'))}</h2><p>{esc(X(lang,'m_fuseau_p'))}</p>")

@@ -1,4 +1,4 @@
-Contact: mailto:constanceparis75007@gmail.com
+Contact: mailto:constanceparis7e@gmail.com
 Expires: 2027-09-28T00:00:00.000Z
 Preferred-Languages: fr, en
 Canonical: https://constanceparis7.com/.well-known/security.txt

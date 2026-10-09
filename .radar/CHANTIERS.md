@@ -60,7 +60,7 @@ premier rendez-vous de mesure : l'épuisement Boucheron du 02/09 à 10 h).
 L'à-propos a été réécrit (professionnel, anonyme : le nom de famille a
 disparu de tout le site public, régime LCEN 6-III-2), l'offre de
 partenariat validée et remise en PDF, le contact bascule sur
-constanceparis75007@gmail.com tant que l'ancienne boîte est suspendue.
+constanceparis7e@gmail.com (adresse d'origine rétablie le 09/10/2026, à la demande de Constance).
 
 ## 🎯 LA CAMPAGNE PRESSE FASHION WEEK (préparée le 27/08/2026)
 
