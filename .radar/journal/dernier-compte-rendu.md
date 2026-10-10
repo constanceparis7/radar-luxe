@@ -1,15 +1,8 @@
-# Compte rendu de la passe du 09/10/2026
+# Compte rendu de la passe du 10/10/2026
 
-**Anomalie de déclenchement** : précheck « cadence rompue », dernier run journalisé il y a 178 h. Passe de rattrapage faite ; clone cloud superficiel, `git fetch --unshallow` exécuté.
-
-**Fiche ajoutée : 1.** « Bal de Noël 2026 de Monaco, Hôtel de Paris Monte-Carlo » (vendredi 11/12/2026, Salle Empire). Source officielle 5starsevents.com/bal-de-noel relue le 09/10 : date, lieu, « Attendance is by invitation », contacts de service (events@5starsevents.com, +377 97 70 78 75, formulaire). Aucun tarif publié, dit tel quel. Numéro WhatsApp à indicatif français non repris. Séjour : celui, déjà vérifié, de Monaco Yacht Show (Hôtel de Paris, Métropole, Louis XV, Pavyllon, Monacair, Thermes Marins), pitch réécrit pour le gala. Traductions des 12 langues écrites, séjours repris des traductions existantes.
-
-**Candidats écartés ce jour** : Le Bal des Débutantes (page officielle sans lieu ni procédure d'invitation ni contact : rien de vérifiable, à retenter) ; Paris Photo et Prima della Scala (billetterie publique, hors ADN Riviera). Les autres candidats du vivier non traités (GPHG, invitation de la Fondation, à contre-vérifier).
-
-**Purge** : 1 zombie (d2 = 08/09/2026) retiré, verrou OK.
-
-**Condensation iv** : 0 fiche. Les 2 champs iv.g et 7 iv.w au-delà de 1200 car. relevés par le verrou sont de la densité factuelle (constat des 07 et 08/10), rien coupé.
-
-**Revérification** : 1 fiche prioritaire (Sotheby's Fine Jewelry, Mandarin Oriental Genève, 30/10) non revérifiée ce jour.
-
-**Non vérifié** : liens non testés ; séjours 6 manquants hors fenêtre ; visites non relevées ; adresse Sotheby's Paris, fin de Gstaad, d2 Milan Ferragosto (déjà signalés).
+- Fiches ajoutées : 0. Séjours/invitations complétés : 0. Traductions : 0. Purge : aucune (verrou vert au départ : 279 fiches, 0 blocage).
+- Condensation des voies d'invitation : scan des 130 fiches de la fenêtre live ; aucune vraie dérive « journal d'enquête » (les mentions « vérifié le JJ/MM » sont des preuves à garder). Rien à condenser, chantier à zéro, comme constaté le 08/10.
+- Vivier : GPHG 2026 contre-vérifié et REJETÉ (date et lieu confirmés par le communiqué officiel du 11/05, mais aucune voie d'entrée ni fonction du contact presse publiée). CFDA Fashion Awards : cfda.com en 503, non vérifié, laissé au vivier. ABT Fall Gala, Dubai Fashion Week : non traités.
+- Revérification : 1 fiche prioritaire signalée (Sotheby's Fine Jewelry, août, déjà passée), non traitée.
+- Séjours restants : 6/279. Non vérifié : tout le reste du vivier (47 candidats).
+- Rien de digne d'être publié n'a été ajouté : résultat honnête.

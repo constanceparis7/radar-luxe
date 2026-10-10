@@ -1385,3 +1385,6 @@ La purge de 5 zombies a laissé V5 (note.html annonçait 271 événements, base 
 
 ## 09/10/2026 : un candidat du vivier dont la page officielle ne donne ni lieu ni procédure se rejette
 Le Bal des Débutantes (lebal.paris) n'affiche que la date et un lien Contact : ni lieu, ni voie d'invitation, ni coordonnée. Sans ces faits, pas de fiche complète possible (loi du site). Un séjour déjà vérifié d'une autre fiche du même lieu (Monaco) se réutilise en retirant les traductions de `sej_pitch` lorsqu'on réécrit le pitch.
+
+## 10/10/2026 : un communiqué PDF se lit avec pdftotext, et il peut donner la date sans donner la porte
+WebFetch ne lit pas les PDF compressés ; `pdftotext` sur le fichier enregistré par l'outil les rend lisibles. Le communiqué GPHG confirme date et lieu mais la page officielle ne publie ni accréditation, ni billetterie, ni fonction du contact presse : candidat rejeté, comme le Bal des Débutantes. cfda.com a répondu 503 (non une preuve d'absence), à retenter.

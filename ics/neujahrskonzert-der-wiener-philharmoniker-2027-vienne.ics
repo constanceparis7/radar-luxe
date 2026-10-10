@@ -6,7 +6,7 @@ METHOD:PUBLISH
 BEGIN:VEVENT
 UID:neujahrskonzert-der-wiener-philharmoniker-2027-vienne@constanceparis7.c
  om
-DTSTAMP:20261009T000000Z
+DTSTAMP:20261010T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:Neujahrskonzert der Wiener Philharmoniker 2027

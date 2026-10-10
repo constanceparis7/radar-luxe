@@ -175,20 +175,6 @@
    "repere_le": "2026-10-01"
   },
   {
-   "nom": "GPHG 2026, 26e cérémonie de remise des prix",
-   "ville": "Genève",
-   "lieu": "Bâtiment des Forces Motrices",
-   "debut": "2026-11-07",
-   "fin": "2026-11-07",
-   "source_officielle": "https://www.gphg.org/uploads/2026_CP_Inscriptions_ENG_6cb1815437.pdf",
-   "citation": "The 26th awards ceremony will take place on Saturday 7 November 2026 at the Bâtiment des Forces Motrices in Geneva",
-   "acces": "vip",
-   "comment_entrer": "Cérémonie sur invitation de la Fondation du GPHG (maisons, Académie, partenaires) ; aucune billetterie n'est annoncée dans les communiqués officiels.",
-   "pourquoi": "La remise des prix de référence de la haute horlogerie, Aiguille d'Or en tête, qui réunit chaque automne à Genève les maisons, les jurés et les collectionneurs.",
-   "categorie": "joaillerie",
-   "repere_le": "2026-10-01"
-  },
-  {
    "nom": "Phillips, The Geneva Watch Auction: XXIV",
    "ville": "Genève",
    "lieu": "Hotel President Wilson, Quai Wilson 47",
@@ -749,6 +735,10 @@
   {
    "nom": "Exposition « Le diamant rose »",
    "raison": "déjà sur le site : Exposition « Le Diamant rose », château de Chantilly et L'Éc"
+  },
+  {
+   "nom": "GPHG 2026, 26e cérémonie de remise des prix",
+   "raison": "10/10/2026 : date et lieu confirmés (communiqué officiel du 11/05/2026, Bâtiment des Forces Motrices, 7 novembre), mais gphg.org ne publie ni accréditation, ni billetterie, ni fonction du contact presse ; sans voie d'entrée réelle, fiche complète impossible (loi du site)."
   }
  ],
  "ecartes_par_les_agents": [
