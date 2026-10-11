@@ -1,8 +1,8 @@
-# Compte rendu de la passe du 10/10/2026
+# Compte rendu de la passe du 11/10/2026
 
-- Fiches ajoutées : 0. Séjours/invitations complétés : 0. Traductions : 0. Purge : aucune (verrou vert au départ : 279 fiches, 0 blocage).
-- Condensation des voies d'invitation : scan des 130 fiches de la fenêtre live ; aucune vraie dérive « journal d'enquête » (les mentions « vérifié le JJ/MM » sont des preuves à garder). Rien à condenser, chantier à zéro, comme constaté le 08/10.
-- Vivier : GPHG 2026 contre-vérifié et REJETÉ (date et lieu confirmés par le communiqué officiel du 11/05, mais aucune voie d'entrée ni fonction du contact presse publiée). CFDA Fashion Awards : cfda.com en 503, non vérifié, laissé au vivier. ABT Fall Gala, Dubai Fashion Week : non traités.
-- Revérification : 1 fiche prioritaire signalée (Sotheby's Fine Jewelry, août, déjà passée), non traitée.
-- Séjours restants : 6/279. Non vérifié : tout le reste du vivier (47 candidats).
-- Rien de digne d'être publié n'a été ajouté : résultat honnête.
+- Fiches ajoutées : 0. Séjours/invitations complétés : 0. Traductions : 0.
+- Purge : 1 zombie (Kering Foundation, Dîner Caring for Women, d2 10/09) évacué par `passe_automatique.py --apply --max-liens 0` (la purge a fonctionné en session cloud, comme le 04/10). Le verrou était rouge au départ pour ce seul motif ; il est vert après pipeline (0 blocage, 2 avertissements). 278 fiches.
+- Condensation des voies d'invitation : fenêtre live relue ; les seuls champs au-dessus de 1200 caractères sont des inventaires de faits (Abu Dhabi GP : critères FIA, adresses FOM, tarifs ; Dior Spa : grille tarifaire et horaires). Rien n'a été condensé : chaque ligne porte un contact, un tarif ou un horaire à garder. 0 fiche condensée, chantier toujours à zéro.
+- Séjours restants : 6/278. Traductions 0 manquante. Invitations 0 manquante.
+- Recherche de nouveautés, vivier, revérification : non traitées cette passe (passe courte, centrée sur la remise au vert du verrou). Rien n'a été vérifié sur le web.
+- Rien de digne d'être publié n'a été ajouté.
