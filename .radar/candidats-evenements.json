@@ -203,20 +203,6 @@
    "repere_le": "2026-10-01"
   },
   {
-   "nom": "Paris Photo 2026",
-   "ville": "Paris",
-   "lieu": "Grand Palais, avenue Winston-Churchill, 75008",
-   "debut": "2026-11-12",
-   "fin": "2026-11-15",
-   "source_officielle": "https://www.parisphoto.com/en-gb.html",
-   "citation": "Nov. 12-15, 2026 Grand Palais - Paris 1pm - 8 pm (Sunday 7 p.m.) Avenue Winston-Churchill, 75008, Paris, France",
-   "acces": "public",
-   "comment_entrer": "Billets à réserver sur parisphoto.com via le lien « Book your ticket » de la page d'accueil.",
-   "pourquoi": "Première foire internationale consacrée à la photographie, installée au Grand Palais, dans l'année du bicentenaire de la photographie.",
-   "categorie": "art",
-   "repere_le": "2026-10-01"
-  },
-  {
    "nom": "Nitto ATP Finals 2026",
    "ville": "Turin",
    "lieu": "Inalpi Arena",
@@ -739,6 +725,10 @@
   {
    "nom": "GPHG 2026, 26e cérémonie de remise des prix",
    "raison": "10/10/2026 : date et lieu confirmés (communiqué officiel du 11/05/2026, Bâtiment des Forces Motrices, 7 novembre), mais gphg.org ne publie ni accréditation, ni billetterie, ni fonction du contact presse ; sans voie d'entrée réelle, fiche complète impossible (loi du site)."
+  },
+  {
+   "nom": "Paris Photo 2026",
+   "motif": "12/10/2026 : la page officielle donne dates et lieu et renvoie à un formulaire d'accréditation (press.parisphoto.com/en/accreditation), mais /contacts ne publie ni agence ni nom ni coordonnée, et aucune information VIP. Voie d'entrée trop mince pour une fiche complète ; à retenter si la page presse se remplit."
   }
  ],
  "ecartes_par_les_agents": [

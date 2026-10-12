@@ -1388,3 +1388,6 @@ Le Bal des Débutantes (lebal.paris) n'affiche que la date et un lien Contact : 
 
 ## 10/10/2026 : un communiqué PDF se lit avec pdftotext, et il peut donner la date sans donner la porte
 WebFetch ne lit pas les PDF compressés ; `pdftotext` sur le fichier enregistré par l'outil les rend lisibles. Le communiqué GPHG confirme date et lieu mais la page officielle ne publie ni accréditation, ni billetterie, ni fonction du contact presse : candidat rejeté, comme le Bal des Débutantes. cfda.com a répondu 503 (non une preuve d'absence), à retenter.
+
+## 12/10/2026 : le détecteur de dérive iv ne trouve que des faits ; Paris Photo rejeté faute de contact publié
+Le motif « vérifié / 1) 2) 3) » remonte 27 fiches live, relues pour trois d'entre elles (Milan Ferragosto, Saint-Barth Gourmet, Melbourne Cup) : tout est densité factuelle (tarifs, contacts, horaires, date de vérification). Aucun quota forcé, chantier condensation à zéro. Paris Photo : press.parisphoto.com/en/contacts ne publie ni agence ni nom, rien sur le VIP ; rejeté, à retenter plus tard. Cadence rompue de 250 h constatée au precheck (le journal ne montre qu'un seul trou, 09/10 à 11/10).

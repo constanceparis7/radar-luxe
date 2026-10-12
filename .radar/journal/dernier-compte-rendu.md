@@ -1,8 +1,8 @@
-# Compte rendu de la passe du 11/10/2026
+# Compte rendu de la passe du 12/10/2026
 
-- Fiches ajoutées : 0. Séjours/invitations complétés : 0. Traductions : 0.
-- Purge : 1 zombie (Kering Foundation, Dîner Caring for Women, d2 10/09) évacué par `passe_automatique.py --apply --max-liens 0` (la purge a fonctionné en session cloud, comme le 04/10). Le verrou était rouge au départ pour ce seul motif ; il est vert après pipeline (0 blocage, 2 avertissements). 278 fiches.
-- Condensation des voies d'invitation : fenêtre live relue ; les seuls champs au-dessus de 1200 caractères sont des inventaires de faits (Abu Dhabi GP : critères FIA, adresses FOM, tarifs ; Dior Spa : grille tarifaire et horaires). Rien n'a été condensé : chaque ligne porte un contact, un tarif ou un horaire à garder. 0 fiche condensée, chantier toujours à zéro.
-- Séjours restants : 6/278. Traductions 0 manquante. Invitations 0 manquante.
-- Recherche de nouveautés, vivier, revérification : non traitées cette passe (passe courte, centrée sur la remise au vert du verrou). Rien n'a été vérifié sur le web.
-- Rien de digne d'être publié n'a été ajouté.
+- Anomalie : precheck signale une cadence rompue (dernier run journalisé il y a 250 h dans run-log, alors que passages.log montre des passes jusqu'au 11/10). Clone cloud superficiel, `git fetch --unshallow` fait.
+- Purge : 1 zombie (Four Seasons Maldives Surfing Champions Trophy, d2 11/09) évacué par `passe_automatique.py --apply --max-liens 0`. Pipeline complet, verrou vert (0 blocage, 2 avertissements de longueur iv). 277 fiches.
+- Condensation des voies d'invitation : détecteur de dérive passé sur la fenêtre live, 27 correspondances, trois relues en entier (Milan Ferragosto, Saint-Barth Gourmet Festival, Lexus Melbourne Cup) : densité factuelle légitime, rien condensé. 0 condensée, chantier à zéro.
+- Vivier : Paris Photo 2026 (12-15/11, Grand Palais) examiné sur la page officielle et la page presse. Dates et lieu confirmés, formulaire d'accréditation existant, mais aucun contact presse, aucune info VIP publiée. Rejeté (noté dans `rejets`). Aucune fiche ajoutée.
+- Compteurs : traductions 0 manquante, invitations 0 manquante, séjours 6/277 manquants.
+- Non traité : recherche de nouveautés au-delà du vivier, revérification de la fiche prioritaire (Sotheby's Fine Jewelry Mandarin Oriental, J+18), test des liens. Rien n'a été vérifié ailleurs sur le web.
