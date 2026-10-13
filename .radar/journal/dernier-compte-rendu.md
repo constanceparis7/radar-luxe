@@ -1,8 +1,9 @@
-# Compte rendu de la passe du 12/10/2026
+# Compte rendu — passe du 13/10/2026
 
-- Anomalie : precheck signale une cadence rompue (dernier run journalisé il y a 250 h dans run-log, alors que passages.log montre des passes jusqu'au 11/10). Clone cloud superficiel, `git fetch --unshallow` fait.
-- Purge : 1 zombie (Four Seasons Maldives Surfing Champions Trophy, d2 11/09) évacué par `passe_automatique.py --apply --max-liens 0`. Pipeline complet, verrou vert (0 blocage, 2 avertissements de longueur iv). 277 fiches.
-- Condensation des voies d'invitation : détecteur de dérive passé sur la fenêtre live, 27 correspondances, trois relues en entier (Milan Ferragosto, Saint-Barth Gourmet Festival, Lexus Melbourne Cup) : densité factuelle légitime, rien condensé. 0 condensée, chantier à zéro.
-- Vivier : Paris Photo 2026 (12-15/11, Grand Palais) examiné sur la page officielle et la page presse. Dates et lieu confirmés, formulaire d'accréditation existant, mais aucun contact presse, aucune info VIP publiée. Rejeté (noté dans `rejets`). Aucune fiche ajoutée.
-- Compteurs : traductions 0 manquante, invitations 0 manquante, séjours 6/277 manquants.
-- Non traité : recherche de nouveautés au-delà du vivier, revérification de la fiche prioritaire (Sotheby's Fine Jewelry Mandarin Oriental, J+18), test des liens. Rien n'a été vérifié ailleurs sur le web.
+- Cadence rompue constatée au precheck (274 h depuis le dernier run journalisé avant le démarrage du jour).
+- Purge de 4 zombies (d2=12/09 : Phi Beach, Maxi Yacht Rolex Cup, Mostra de Venise 2026, Nikki Beach Costa Smeralda) via `passe_automatique.py --apply --max-liens 0` (passée en session cloud). 277 -> 273 fiches. Verrou vert (0 bloqueur, 2 avertissements habituels).
+- Compteurs : traductions 273/273, invitations 273/273, séjours 267/273 (reste 6, hors fenêtre live).
+- Condensation iv : détecteur relu, 9 champs > 1200 car. déjà jugés densité factuelle légitime (leçons 08/10 et 12/10) ; 0 fiche condensée, 0 restant à traiter dans la fenêtre live.
+- Nouveautés : aucune fiche ajoutée. Candidat ABT Fall Gala (29/10/2026) re-vérifié à la source (date, lieu, portail billets/tables, Special Events Department) mais non intégré : séjour réel et 12 traductions non composés, loi du site non tenable dans cette passe. Note de vérification consignée dans `candidats-evenements.json`, à intégrer en priorité à la prochaine passe.
+- Non vérifié : CFDA Fashion Awards (503 le 10/10), autres candidats du vivier.
+- Push : voir passages.log.

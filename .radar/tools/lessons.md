@@ -1391,3 +1391,6 @@ WebFetch ne lit pas les PDF compressés ; `pdftotext` sur le fichier enregistré
 
 ## 12/10/2026 : le détecteur de dérive iv ne trouve que des faits ; Paris Photo rejeté faute de contact publié
 Le motif « vérifié / 1) 2) 3) » remonte 27 fiches live, relues pour trois d'entre elles (Milan Ferragosto, Saint-Barth Gourmet, Melbourne Cup) : tout est densité factuelle (tarifs, contacts, horaires, date de vérification). Aucun quota forcé, chantier condensation à zéro. Paris Photo : press.parisphoto.com/en/contacts ne publie ni agence ni nom, rien sur le VIP ; rejeté, à retenter plus tard. Cadence rompue de 250 h constatée au precheck (le journal ne montre qu'un seul trou, 09/10 à 11/10).
+
+## 13/10/2026 : cadence rompue de 274 h, purge passée en cloud
+`passe_automatique.py --apply --max-liens 0` a de nouveau fonctionné (4 zombies). Pour un candidat du vivier, la page abt.org/fall-gala donne date, lieu et portail de tables sans nom de contact : porte réelle (Special Events Department) mais fiche complète exige séjour et 12 traductions, à prévoir comme tâche dédiée.
