@@ -1394,3 +1394,6 @@ Le motif « vérifié / 1) 2) 3) » remonte 27 fiches live, relues pour trois d'
 
 ## 13/10/2026 : cadence rompue de 274 h, purge passée en cloud
 `passe_automatique.py --apply --max-liens 0` a de nouveau fonctionné (4 zombies). Pour un candidat du vivier, la page abt.org/fall-gala donne date, lieu et portail de tables sans nom de contact : porte réelle (Special Events Department) mais fiche complète exige séjour et 12 traductions, à prévoir comme tâche dédiée.
+
+## 14/10/2026 : cadence rompue, purge de 12 zombies (d2=13/09) passée en cloud
+`passe_automatique.py --apply --max-liens 0` a fonctionné (273 -> 261 fiches). V5 (note.html 260 contre 248) a demandé rebuild_full, split_i18n, gen_seo, gen_pages avant validate : même réflexe que le 08/10. Condensation iv : 0 fiche live à traiter (9 champs > 1200 car. déjà jugés denses).
