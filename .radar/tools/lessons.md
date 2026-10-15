@@ -1397,3 +1397,6 @@ Le motif « vérifié / 1) 2) 3) » remonte 27 fiches live, relues pour trois d'
 
 ## 14/10/2026 : cadence rompue, purge de 12 zombies (d2=13/09) passée en cloud
 `passe_automatique.py --apply --max-liens 0` a fonctionné (273 -> 261 fiches). V5 (note.html 260 contre 248) a demandé rebuild_full, split_i18n, gen_seo, gen_pages avant validate : même réflexe que le 08/10. Condensation iv : 0 fiche live à traiter (9 champs > 1200 car. déjà jugés denses).
+
+## 15/10/2026 : cadence rompue de 322 h, purge d'1 zombie (d2=14/09) passée en cloud
+Même séquence que le 14/10 : purge, rebuild_full, split_i18n, gen_seo, gen_pages, puis validate (vert). Aucune fiche du vivier intégrée faute de temps pour séjour et 12 traductions.
