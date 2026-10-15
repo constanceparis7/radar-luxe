@@ -885,6 +885,20 @@ une issue GitHub.
    (n, dt, ds, p/pe, iv, u, so avec « vérifié le JJ/MM/AAAA », cf), la traduit, et
    retire du fichier ce qui est intégré ou rejeté (en notant la raison dans
    `rejets`). Un candidat sans page officielle lisible est rejeté. Rien d'inventé.
+4quater. REGISTRE DES FENÊTRES D'ACTION (08/10/2026, décision produit) :
+   `.radar/fenetres.json` tient, par événement, les fenêtres lues sur les pages
+   officielles (type : billetterie, reservation, accreditation, rsvp, tirage,
+   candidature, adhesion ; statut : pas_ouvert, ouvert, ferme, complet, non_publie,
+   inconnu ; ouverture, cloture, heure, url, eligibilite, citation, verifie_le).
+   « non_publie » est une valeur : la page a été lue et ne publie pas de date. Rien
+   n'est déduit d'une édition précédente. Chaque passe : pour les fenêtres dont
+   l'ouverture ou la clôture tombe dans les 7 jours, relire la page (url) et mettre
+   le statut à jour (ouvert, ferme, complet) avec la date dans verifie_le ; une
+   fenêtre devenue « complet » est aussi consignée dans la Mémoire du radar
+   (type complet, preuve = url). Toute fiche parisienne nouvelle reçoit ses fenêtres
+   à la naissance quand la page officielle en publie. Ce registre nourrit le
+   Contrôle de collision (`.radar/tools/controle_collision.py`, page /pro.html et
+   rapport d'exemple dans /pro/) et la lettre hebdomadaire (`lettre_hebdo.py`).
 5. Chaque LUNDI : retester TOUS les liens (décompte au compte rendu) et
    régénérer le ld+json (60 meilleurs à venir).
 5bis. CHAQUE PASSE, fraîcheur des fiches (point 9 du registre, 27/09/2026) :

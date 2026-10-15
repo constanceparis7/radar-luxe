@@ -1400,3 +1400,22 @@ Le motif « vérifié / 1) 2) 3) » remonte 27 fiches live, relues pour trois d'
 
 ## 15/10/2026 : cadence rompue de 322 h, purge d'1 zombie (d2=14/09) passée en cloud
 Même séquence que le 14/10 : purge, rebuild_full, split_i18n, gen_seo, gen_pages, puis validate (vert). Aucune fiche du vivier intégrée faute de temps pour séjour et 12 traductions.
+
+
+## 15/10/2026 — le dossier de travail temporaire disparaît entre deux sessions
+
+Le scratchpad (`/private/tmp/claude-501/...`) avait été vidé entre le 9 et le 15 octobre :
+les fichiers de travail du produit (liste des cibles, règles de rédaction, fiches
+modèles, script d'intégration, brouillons de pages) étaient perdus. Les journaux des
+lots d'agents (`~/.claude/projects/.../subagents/workflows/<run>/journal.jsonl`), eux,
+survivent : tout a été reconstitué depuis ces journaux. Règle : ce qui doit survivre à la
+session va dans le dépôt (outils, registres) ou dans le dossier iCloud
+`ConstanceParis7-produit` (livrables pour Constance), jamais seulement dans le scratchpad.
+
+Même jour, deux pièges du verrou sur une page écrite à la main : V3 cherche
+`rel="canonical"` et `name="description"` avec des guillemets doubles (une page aux
+attributs entre apostrophes passe pour sans description) ; V15 lit toutes les pages
+publiées, donc un rapport qui cite « premium.paris@artbasel.com » (ligne de service
+d'Art Basel) déclenche le filet nominatif tant que « premium » n'est pas dans
+MAIL_SERVICE. Et la mesure du lundi : le service worker servait sa copie (TTFB 1 ms,
+0 Ko) ; `mesure_cdp.py` contourne désormais le service worker, comme Lighthouse.
