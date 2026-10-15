@@ -7,20 +7,6 @@
  "methode": "8 lots d'agents (un par univers), page officielle de l'organisateur exigée avec citation verbatim des dates, API du site lue pour écarter l'existant ; dédoublonnage mécanique contre les 296 fiches ; chaque candidat doit être CONTRE-VÉRIFIÉ sur sa page officielle avant d'entrer sur le site (doctrine 4ter)",
  "candidats": [
   {
-   "nom": "Look ! 40 ans de mode au musée, Musée des Arts décoratifs",
-   "ville": "Paris",
-   "lieu": "Musée des Arts décoratifs, 107 rue de Rivoli",
-   "debut": "2026-09-30",
-   "fin": "2027-04-04",
-   "source_officielle": "https://madparis.fr/Look-40-ans-de-mode-au-musee",
-   "citation": "du 30 septembre 2026 au 4 avril 2027",
-   "acces": "public",
-   "comment_entrer": "Billet d'entrée au musée via la billetterie en ligne de madparis.fr.",
-   "pourquoi": "Le Musée des Arts décoratifs célèbre les quarante ans de son département mode à travers quarante silhouettes emblématiques et les coulisses de leur conservation.",
-   "categorie": "mode",
-   "repere_le": "2026-10-01"
-  },
-  {
    "nom": "WatchTime New York 2026",
    "ville": "New York",
    "lieu": "Gotham Hall, 1356 Broadway",
@@ -274,20 +260,6 @@
    "repere_le": "2026-10-01"
   },
   {
-   "nom": "Le Grand Tasting Paris 2026, Bettane+Desseauve",
-   "ville": "Paris",
-   "lieu": "Carrousel du Louvre, 99 rue de Rivoli, 75001 Paris",
-   "debut": "2026-11-27",
-   "fin": "2026-11-28",
-   "source_officielle": "https://www.grandtasting.com/visiteurs/",
-   "citation": "Le vendredi 27 et samedi 28 novembre Carrousel du Louvre 99 rue de Rivoli, 75001 Paris",
-   "acces": "public",
-   "comment_entrer": "Billets en vente en ligne depuis grandtasting.com (bouton Achetez votre billet, billetterie Eventmaker) ; entrées closes à 19h le vendredi et 17h le samedi.",
-   "pourquoi": "Le salon des grands vins organisé par Bettane+Desseauve sous le Louvre, où les domaines sélectionnés par leurs experts font déguster leurs cuvées pendant deux jours.",
-   "categorie": "artdevivre",
-   "repere_le": "2026-10-01"
-  },
-  {
    "nom": "Formula 1 Qatar Airways Qatar Grand Prix 2026",
    "ville": "Doha",
    "lieu": "Lusail International Circuit",
@@ -299,20 +271,6 @@
    "comment_entrer": "Billets (admission générale Lusail Hill, tribunes) et hospitalités (Lusail Hill Lounge, F1 Experiences Champions Club, suites privées) sur la billetterie officielle tickets.lcsc.qa.",
    "pourquoi": "Avant-dernière manche du championnat du monde de Formule 1 2026, disputée de nuit sous les projecteurs de Lusail, avec suites privées et Champions Club.",
    "categorie": "sport",
-   "repere_le": "2026-10-01"
-  },
-  {
-   "nom": "Le Bal des Débutantes 2026",
-   "ville": "Paris",
-   "lieu": "Paris (lieu non indiqué sur la page officielle ; le Shangri-La Paris figure parmi les partenaires du Bal)",
-   "debut": "2026-11-28",
-   "fin": "2026-11-28",
-   "source_officielle": "https://www.lebal.paris/",
-   "citation": "Next edition November 28, 2026",
-   "acces": "vip",
-   "comment_entrer": "Sur invitation uniquement : la page officielle précise qu'on ne peut ni acheter de billet ni payer pour y participer ; une vingtaine de débutantes et leurs cavaliers sont réunis chaque année par l'organisatrice.",
-   "pourquoi": "Seul bal des débutantes au monde uniquement sur invitation, où une vingtaine de jeunes femmes paraissent en haute couture devant la société internationale.",
-   "categorie": "artdevivre",
    "repere_le": "2026-10-01"
   },
   {
@@ -383,20 +341,6 @@
    "comment_entrer": "Réservation en ligne sur tschuggencollection.ch (page Carlton Hotel, bouton Book) ; saison ouverte jusqu'au 21 mars 2027.",
    "pourquoi": "Le palace de la Tschuggen Collection rouvre au-dessus du lac de Saint-Moritz avec sa table deux étoiles Da Vittorio et son spa sur trois niveaux, à quelques jours du Badrutt's et du Kulm déjà répertoriés.",
    "categorie": "artdevivre",
-   "repere_le": "2026-10-01"
-  },
-  {
-   "nom": "En volume !, Palais Galliera",
-   "ville": "Paris",
-   "lieu": "Palais Galliera, musée de la Mode de la Ville de Paris, 10 avenue Pierre Ier de Serbie",
-   "debut": "2026-12-12",
-   "fin": "2027-10-17",
-   "source_officielle": "https://www.parismusees.paris.fr/fr/exposition/en-volume",
-   "citation": "du 12 décembre 2026 au 17 octobre 2027",
-   "acces": "public",
-   "comment_entrer": "Billet d'entrée via la billetterie en ligne de Paris Musées.",
-   "pourquoi": "Le musée de la Mode de la Ville de Paris consacre une exposition aux techniques de coupe, de drapé et de maille qui donnent forme au vêtement, dans la continuité de son cycle sur les savoir-faire.",
-   "categorie": "mode",
    "repere_le": "2026-10-01"
   },
   {
@@ -850,5 +794,27 @@
   "Lakmé Fashion Week x FDCI : site officiel non actualisé (dernière édition affichée 2022).",
   "Fashion Trust Arabia 2026 (Doha) : aucune date publiée sur fashiontrustarabia.com.",
   "Diriyah Biennale, Noor Riyadh et Abu Dhabi Festival 2027 : sites inaccessibles ou sans dates 2027 publiées."
+ ],
+ "integres": [
+  {
+   "nom": "Look ! 40 ans de mode au musée, Musée des Arts décoratifs",
+   "fiche": "Look ! 40 ans de mode au musée, Musée des Arts décoratifs",
+   "le": "2026-10-15"
+  },
+  {
+   "nom": "Le Grand Tasting Paris 2026, Bettane+Desseauve",
+   "fiche": "Le Grand Tasting Paris 2026, le salon des grands vins de Bettane+Desseauve",
+   "le": "2026-10-15"
+  },
+  {
+   "nom": "Le Bal des Débutantes 2026",
+   "fiche": "Le Bal des Débutantes 2026, sur invitation seule, Paris",
+   "le": "2026-10-15"
+  },
+  {
+   "nom": "En volume !, Palais Galliera",
+   "fiche": "En volume !, le Palais Galliera expose les techniques qui donnent corps au vêtement",
+   "le": "2026-10-15"
+  }
  ]
 }

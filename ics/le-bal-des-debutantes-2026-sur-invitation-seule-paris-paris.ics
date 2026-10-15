@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:le-bal-des-debutantes-2026-sur-invitation-seule-paris-paris@constancepa
+ ris7.com
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261129
+SUMMARY:Le Bal des Débutantes 2026\, sur invitation seule\, Paris
+LOCATION:Paris\, lieu non indiqué sur la page officielle \; le Shangri-La 
+ Paris\, 10 avenue d'Iéna\, 75116 Paris\, figure parmi les partenaires du 
+ Bal
+DESCRIPTION:Samedi 28 novembre 2026 · Paris\, lieu non publié (Shangri-La
+  Paris partenaire)\nhttps://constanceparis7.com/e/le-bal-des-debutantes-20
+ 26-sur-invitation-seule-paris-paris.html
+URL:https://constanceparis7.com/e/le-bal-des-debutantes-2026-sur-invitation
+ -seule-paris-paris.html
+END:VEVENT
+END:VCALENDAR

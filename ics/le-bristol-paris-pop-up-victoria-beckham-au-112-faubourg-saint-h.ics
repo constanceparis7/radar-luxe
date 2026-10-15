@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:le-bristol-paris-pop-up-victoria-beckham-au-112-faubourg-saint-h@consta
+ nceparis7.com
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260903
+DTEND;VALUE=DATE:20270103
+SUMMARY:Le Bristol Paris\, pop-up Victoria Beckham au 112 Faubourg Saint-Ho
+ noré
+LOCATION:Le Bristol Paris (Oetker Collection)\, rez-de-chaussée\, 112 rue 
+ du Faubourg Saint-Honoré\, 75008 Paris
+DESCRIPTION:Du 3 septembre 2026 au 2 janvier 2027 · Le Bristol Paris\nhttp
+ s://constanceparis7.com/e/le-bristol-paris-pop-up-victoria-beckham-au-112-
+ faubourg-saint-h.html
+URL:https://constanceparis7.com/e/le-bristol-paris-pop-up-victoria-beckham-
+ au-112-faubourg-saint-h.html
+END:VEVENT
+END:VCALENDAR

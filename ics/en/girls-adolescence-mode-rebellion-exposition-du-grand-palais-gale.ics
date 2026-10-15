@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:girls-adolescence-mode-rebellion-exposition-du-grand-palais-gale@consta
+ nceparis7.com
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261209
+DTEND;VALUE=DATE:20270322
+SUMMARY:Girls. Adolescence\, Mode\, Rébellion\, exposition du Grand Palais
+  (Galeries 8)
+LOCATION:Grand Palais\, Galeries 8\, 17 avenue du Général Eisenhower (Par
+ is 8e)\, entrée square Jean Perrin
+DESCRIPTION:Du 9 décembre 2026 au 21 mars 2027 · Grand Palais\, Galeries 
+ 8\nhttps://constanceparis7.com/en/e/girls-adolescence-mode-rebellion-expos
+ ition-du-grand-palais-gale.html
+URL:https://constanceparis7.com/en/e/girls-adolescence-mode-rebellion-expos
+ ition-du-grand-palais-gale.html
+END:VEVENT
+END:VCALENDAR

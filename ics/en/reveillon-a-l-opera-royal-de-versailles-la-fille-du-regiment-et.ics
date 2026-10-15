@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:reveillon-a-l-opera-royal-de-versailles-la-fille-du-regiment-et@constan
+ ceparis7.com
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270101
+SUMMARY:Réveillon à l'Opéra Royal de Versailles\, La Fille du Régiment 
+ et feu d'artifice
+LOCATION:Opéra Royal\, château de Versailles\, cour d'Honneur\, 78000 Ver
+ sailles
+DESCRIPTION:Jeudi 31 décembre 2026 à 20 h 30 · Opéra Royal\, château d
+ e Versailles\nhttps://constanceparis7.com/en/e/reveillon-a-l-opera-royal-d
+ e-versailles-la-fille-du-regiment-et.html
+URL:https://constanceparis7.com/en/e/reveillon-a-l-opera-royal-de-versaille
+ s-la-fille-du-regiment-et.html
+END:VEVENT
+END:VCALENDAR

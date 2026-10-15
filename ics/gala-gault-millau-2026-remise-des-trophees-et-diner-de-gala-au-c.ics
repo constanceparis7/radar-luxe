@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:gala-gault-millau-2026-remise-des-trophees-et-diner-de-gala-au-c@consta
+ nceparis7.com
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261110
+SUMMARY:Gala Gault&Millau 2026\, remise des trophées et dîner de gala au 
+ Carrousel du Louvre
+LOCATION:Carrousel du Louvre\, 99 rue de Rivoli (Paris 1er)
+DESCRIPTION:Lundi 9 novembre 2026 · Carrousel du Louvre\nhttps://constance
+ paris7.com/e/gala-gault-millau-2026-remise-des-trophees-et-diner-de-gala-a
+ u-c.html
+URL:https://constanceparis7.com/e/gala-gault-millau-2026-remise-des-trophee
+ s-et-diner-de-gala-au-c.html
+END:VEVENT
+END:VCALENDAR

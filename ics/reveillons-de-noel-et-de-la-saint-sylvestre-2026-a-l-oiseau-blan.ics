@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:reveillons-de-noel-et-de-la-saint-sylvestre-2026-a-l-oiseau-blan@consta
+ nceparis7.com
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261224
+DTEND;VALUE=DATE:20270101
+SUMMARY:Réveillons de Noël et de la Saint-Sylvestre 2026 à L'Oiseau Blan
+ c\, The Peninsula Paris
+LOCATION:L'Oiseau Blanc\, The Peninsula Paris\, 19 avenue Kléber (Paris 16
+ e)
+DESCRIPTION:Jeudi 24 et jeudi 31 décembre 2026 · L'Oiseau Blanc\, The Pen
+ insula Paris\nhttps://constanceparis7.com/e/reveillons-de-noel-et-de-la-sa
+ int-sylvestre-2026-a-l-oiseau-blan.html
+URL:https://constanceparis7.com/e/reveillons-de-noel-et-de-la-saint-sylvest
+ re-2026-a-l-oiseau-blan.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:rituels-a-l-opera-bastille-soiree-du-31-decembre-du-ballet-de-l@constan
+ ceparis7.com
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270101
+SUMMARY:Rituels à l'Opéra Bastille\, soirée du 31 décembre du Ballet de
+  l'Opéra de Paris
+LOCATION:Opéra Bastille\, place de la Bastille\, 75012 Paris
+DESCRIPTION:Jeudi 31 décembre 2026 · Opéra Bastille\nhttps://constancepa
+ ris7.com/e/rituels-a-l-opera-bastille-soiree-du-31-decembre-du-ballet-de-l
+ .html
+URL:https://constanceparis7.com/e/rituels-a-l-opera-bastille-soiree-du-31-d
+ ecembre-du-ballet-de-l.html
+END:VEVENT
+END:VCALENDAR

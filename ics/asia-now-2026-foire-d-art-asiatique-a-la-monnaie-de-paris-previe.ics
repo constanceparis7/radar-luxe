@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:asia-now-2026-foire-d-art-asiatique-a-la-monnaie-de-paris-previe@consta
+ nceparis7.com
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261020
+DTEND;VALUE=DATE:20261025
+SUMMARY:Asia NOW 2026\, foire d'art asiatique à la Monnaie de Paris\, prev
+ iew VIP le 19 octobre
+LOCATION:Monnaie de Paris\, 11 quai de Conti\, 75006 Paris
+DESCRIPTION:Du 20 au 24 octobre 2026\, preview VIP le lundi 19 octobre · M
+ onnaie de Paris\nhttps://constanceparis7.com/e/asia-now-2026-foire-d-art-a
+ siatique-a-la-monnaie-de-paris-previe.html
+URL:https://constanceparis7.com/e/asia-now-2026-foire-d-art-asiatique-a-la-
+ monnaie-de-paris-previe.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:gustave-fayet-collectionneur-createur-icones-de-l-art-moderne-fo@consta
+ nceparis7.com
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261009
+DTEND;VALUE=DATE:20270309
+SUMMARY:Gustave Fayet\, Collectionneur - Créateur. Icônes de l'art modern
+ e\, Fondation Louis Vuitton
+LOCATION:Fondation Louis Vuitton\, 8 avenue du Mahatma Gandhi\, Bois de Bou
+ logne\, 75116 Paris
+DESCRIPTION:Du 9 octobre 2026 au 8 mars 2027 · Fondation Louis Vuitton\nht
+ tps://constanceparis7.com/e/gustave-fayet-collectionneur-createur-icones-d
+ e-l-art-moderne-fo.html
+URL:https://constanceparis7.com/e/gustave-fayet-collectionneur-createur-ico
+ nes-de-l-art-moderne-fo.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:hotel-plaza-athenee-fetes-2026-chalet-patinoire-reveillons-de-no@consta
+ nceparis7.com
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261126
+DTEND;VALUE=DATE:20270201
+SUMMARY:Hôtel Plaza Athénée\, fêtes 2026 : chalet-patinoire\, réveillo
+ ns de Noël et du Nouvel An
+LOCATION:Hôtel Plaza Athénée\, 25 avenue Montaigne (Paris 8e)
+DESCRIPTION:Du 26 novembre 2026 au 31 janvier 2027 · Hôtel Plaza Athéné
+ e\nhttps://constanceparis7.com/e/hotel-plaza-athenee-fetes-2026-chalet-pat
+ inoire-reveillons-de-no.html
+URL:https://constanceparis7.com/e/hotel-plaza-athenee-fetes-2026-chalet-pat
+ inoire-reveillons-de-no.html
+END:VEVENT
+END:VCALENDAR

@@ -592,7 +592,7 @@
   },
   {
    "evenement": "Look ! 40 ans de mode au musée, Musée des Arts décoratifs",
-   "dans_le_radar": false,
+   "dans_le_radar": true,
    "type": "billetterie",
    "statut": "ouvert",
    "ouverture": "",
@@ -606,7 +606,7 @@
   },
   {
    "evenement": "Look ! 40 ans de mode au musée, Musée des Arts décoratifs",
-   "dans_le_radar": false,
+   "dans_le_radar": true,
    "type": "reservation",
    "statut": "ouvert",
    "ouverture": "",
@@ -620,7 +620,7 @@
   },
   {
    "evenement": "Look ! 40 ans de mode au musée, Musée des Arts décoratifs",
-   "dans_le_radar": false,
+   "dans_le_radar": true,
    "type": "accreditation",
    "statut": "non_publie",
    "ouverture": "",
@@ -633,8 +633,8 @@
    "verifie_le": "08/10/2026"
   },
   {
-   "evenement": "Paris Photo 2026",
-   "dans_le_radar": false,
+   "evenement": "Paris Photo 2026, foire internationale de photographie au Grand Palais",
+   "dans_le_radar": true,
    "type": "billetterie",
    "statut": "ouvert",
    "ouverture": "",
@@ -647,8 +647,8 @@
    "verifie_le": "08/10/2026"
   },
   {
-   "evenement": "Paris Photo 2026",
-   "dans_le_radar": false,
+   "evenement": "Paris Photo 2026, foire internationale de photographie au Grand Palais",
+   "dans_le_radar": true,
    "type": "accreditation",
    "statut": "ouvert",
    "ouverture": "",
@@ -661,8 +661,8 @@
    "verifie_le": "08/10/2026"
   },
   {
-   "evenement": "Paris Photo 2026",
-   "dans_le_radar": false,
+   "evenement": "Paris Photo 2026, foire internationale de photographie au Grand Palais",
+   "dans_le_radar": true,
    "type": "invitation",
    "statut": "non_publie",
    "ouverture": "",
@@ -675,8 +675,8 @@
    "verifie_le": "08/10/2026"
   },
   {
-   "evenement": "Le Grand Tasting Paris 2026, Bettane+Desseauve",
-   "dans_le_radar": false,
+   "evenement": "Le Grand Tasting Paris 2026, le salon des grands vins de Bettane+Desseauve",
+   "dans_le_radar": true,
    "type": "billetterie",
    "statut": "ouvert",
    "ouverture": "",
@@ -689,8 +689,8 @@
    "verifie_le": "08/10/2026"
   },
   {
-   "evenement": "Le Grand Tasting Paris 2026, Bettane+Desseauve",
-   "dans_le_radar": false,
+   "evenement": "Le Grand Tasting Paris 2026, le salon des grands vins de Bettane+Desseauve",
+   "dans_le_radar": true,
    "type": "billetterie",
    "statut": "ouvert",
    "ouverture": "",
@@ -703,8 +703,8 @@
    "verifie_le": "08/10/2026"
   },
   {
-   "evenement": "Le Grand Tasting Paris 2026, Bettane+Desseauve",
-   "dans_le_radar": false,
+   "evenement": "Le Grand Tasting Paris 2026, le salon des grands vins de Bettane+Desseauve",
+   "dans_le_radar": true,
    "type": "billetterie",
    "statut": "ouvert",
    "ouverture": "",
@@ -717,8 +717,8 @@
    "verifie_le": "08/10/2026"
   },
   {
-   "evenement": "Le Bal des Débutantes 2026",
-   "dans_le_radar": false,
+   "evenement": "Le Bal des Débutantes 2026, sur invitation seule, Paris",
+   "dans_le_radar": true,
    "type": "invitation",
    "statut": "non_publie",
    "ouverture": "",
@@ -731,8 +731,8 @@
    "verifie_le": "08/10/2026"
   },
   {
-   "evenement": "En volume !, Palais Galliera",
-   "dans_le_radar": false,
+   "evenement": "En volume !, le Palais Galliera expose les techniques qui donnent corps au vêtement",
+   "dans_le_radar": true,
    "type": "billetterie",
    "statut": "non_publie",
    "ouverture": "",
@@ -745,8 +745,8 @@
    "verifie_le": "08/10/2026"
   },
   {
-   "evenement": "En volume !, Palais Galliera",
-   "dans_le_radar": false,
+   "evenement": "En volume !, le Palais Galliera expose les techniques qui donnent corps au vêtement",
+   "dans_le_radar": true,
    "type": "accreditation",
    "statut": "non_publie",
    "ouverture": "",

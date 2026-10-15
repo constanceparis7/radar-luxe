@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:gala-de-l-institut-du-cerveau-en-hommage-a-jean-charles-crucis-a@consta
+ nceparis7.com
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261126
+DTEND;VALUE=DATE:20261127
+SUMMARY:Gala de l'Institut du Cerveau en hommage à Jean-Charles Crucis\, 
+ à l'Union Interalliée
+LOCATION:Cercle de l'Union Interalliée\, 33 rue du Faubourg Saint-Honoré 
+ (Paris 8e)
+DESCRIPTION:Jeudi 26 novembre 2026 · Cercle de l'Union Interalliée\nhttps
+ ://constanceparis7.com/e/gala-de-l-institut-du-cerveau-en-hommage-a-jean-c
+ harles-crucis-a.html
+URL:https://constanceparis7.com/e/gala-de-l-institut-du-cerveau-en-hommage-
+ a-jean-charles-crucis-a.html
+END:VEVENT
+END:VCALENDAR

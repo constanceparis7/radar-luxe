@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:metamorphoses-les-chapeaux-de-maison-michel-la-galerie-du-19m-ch@consta
+ nceparis7.com
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260923
+DTEND;VALUE=DATE:20261214
+SUMMARY:Métamorphoses\, les chapeaux de Maison Michel\, la Galerie du 19M 
+ (Chanel)
+LOCATION:la Galerie du 19M\, le19M\, 2 place Skanderbeg\, 75019 Paris
+DESCRIPTION:Du 23 septembre au 13 décembre 2026 · la Galerie du 19M\nhttp
+ s://constanceparis7.com/e/metamorphoses-les-chapeaux-de-maison-michel-la-g
+ alerie-du-19m-ch.html
+URL:https://constanceparis7.com/e/metamorphoses-les-chapeaux-de-maison-mich
+ el-la-galerie-du-19m-ch.html
+END:VEVENT
+END:VCALENDAR

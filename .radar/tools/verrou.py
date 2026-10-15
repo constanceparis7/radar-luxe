@@ -102,7 +102,8 @@ MAIL_SERVICE = {"presse", "press", "info", "contact", "reservation", "reservatio
                 "shop", "boutique", "store", "ventes", "membership", "groups", "groupes", "privatisation",
                 "privatisations", "restaurant", "bar", "hotel", "resa", "resas", "newsletter", "partenariats",
                 "partnerships", "marketing", "comms", "pressoffice", "ufficiostampa", "prensa", "presse-fr",
-                "premium", "accreditation", "accreditations", "studio", "galas", "gala", "adhesion", "parfums", "merci", "newproject", "clientsrequest"}
+                "premium", "accreditation", "accreditations", "studio", "galas", "gala", "adhesion", "parfums", "merci", "newproject", "clientsrequest",
+                "hpa", "lerelaisplaza", "lagrandetable"}
 
 def est_fiche(rel):
     return "/e/" in ("/" + rel.replace(os.sep, "/"))

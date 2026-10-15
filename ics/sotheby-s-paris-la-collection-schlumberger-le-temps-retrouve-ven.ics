@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:sotheby-s-paris-la-collection-schlumberger-le-temps-retrouve-ven@consta
+ nceparis7.com
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261022
+DTEND;VALUE=DATE:20261023
+SUMMARY:Sotheby's Paris\, La Collection Schlumberger\, Le Temps retrouvé\,
+  vente du soir du 22
+LOCATION:Sotheby's Paris\, 83 rue du Faubourg Saint-Honoré\, 75008 Paris
+DESCRIPTION:Jeudi 22 octobre 2026 à 18 h\, exposition du 16 au 22 octobre 
+ · Sotheby's Paris\, faubourg Saint-Honoré\nhttps://constanceparis7.com/e
+ /sotheby-s-paris-la-collection-schlumberger-le-temps-retrouve-ven.html
+URL:https://constanceparis7.com/e/sotheby-s-paris-la-collection-schlumberge
+ r-le-temps-retrouve-ven.html
+END:VEVENT
+END:VCALENDAR

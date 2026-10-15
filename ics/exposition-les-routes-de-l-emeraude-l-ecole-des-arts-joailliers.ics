@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:exposition-les-routes-de-l-emeraude-l-ecole-des-arts-joailliers@constan
+ ceparis7.com
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20270614
+SUMMARY:Exposition « Les Routes de l'émeraude »\, L'École des Arts Joai
+ lliers\, Van Cleef & Arpels
+LOCATION:L'École des Arts Joailliers\, Hôtel de Mercy-Argenteau\, 16 bis 
+ boulevard Montmartre\, 75009 Paris
+DESCRIPTION:Du vendredi 4 décembre 2026 au dimanche 13 juin 2027 · Hôtel
+  de Mercy-Argenteau\, L'École des Arts Joailliers\nhttps://constanceparis
+ 7.com/e/exposition-les-routes-de-l-emeraude-l-ecole-des-arts-joailliers.ht
+ ml
+URL:https://constanceparis7.com/e/exposition-les-routes-de-l-emeraude-l-eco
+ le-des-arts-joailliers.html
+END:VEVENT
+END:VCALENDAR

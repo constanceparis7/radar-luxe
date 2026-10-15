@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:christie-s-paris-collection-durand-ruel-et-vente-du-soir-20e-21e@consta
+ nceparis7.com
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261022
+DTEND;VALUE=DATE:20261024
+SUMMARY:Christie's Paris\, Collection Durand-Ruel et vente du soir 20e/21e 
+ siècle\, avenue Matignon
+LOCATION:Christie's Paris\, 9 avenue Matignon\, 75008 Paris
+DESCRIPTION:Jeudi 22 et vendredi 23 octobre 2026\, exposition des lots du 1
+ 6 au 23 octobre · Christie's Paris\, avenue Matignon\nhttps://constancepa
+ ris7.com/e/christie-s-paris-collection-durand-ruel-et-vente-du-soir-20e-21
+ e.html
+URL:https://constanceparis7.com/e/christie-s-paris-collection-durand-ruel-e
+ t-vente-du-soir-20e-21e.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:akaa-2026-also-known-as-africa-au-carreau-du-temple-vernissage-s@consta
+ nceparis7.com
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261022
+DTEND;VALUE=DATE:20261026
+SUMMARY:AKAA 2026\, Also Known As Africa au Carreau du Temple\, vernissage 
+ sur invitation
+LOCATION:Carreau du Temple\, 4 rue Eugène Spuller\, 75003 Paris
+DESCRIPTION:Du 22 au 25 octobre 2026\, vernissage sur invitation le jeudi 2
+ 2 · Carreau du Temple\nhttps://constanceparis7.com/e/akaa-2026-also-known
+ -as-africa-au-carreau-du-temple-vernissage-s.html
+URL:https://constanceparis7.com/e/akaa-2026-also-known-as-africa-au-carreau
+ -du-temple-vernissage-s.html
+END:VEVENT
+END:VCALENDAR

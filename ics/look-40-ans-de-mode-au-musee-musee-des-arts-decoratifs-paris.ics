@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:look-40-ans-de-mode-au-musee-musee-des-arts-decoratifs-paris@constancep
+ aris7.com
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260930
+DTEND;VALUE=DATE:20270405
+SUMMARY:Look ! 40 ans de mode au musée\, Musée des Arts décoratifs
+LOCATION:Musée des Arts décoratifs\, 107 rue de Rivoli\, 75001 Paris
+DESCRIPTION:Du 30 septembre 2026 au 4 avril 2027 · Musée des Arts décora
+ tifs\nhttps://constanceparis7.com/e/look-40-ans-de-mode-au-musee-musee-des
+ -arts-decoratifs-paris.html
+URL:https://constanceparis7.com/e/look-40-ans-de-mode-au-musee-musee-des-ar
+ ts-decoratifs-paris.html
+END:VEVENT
+END:VCALENDAR

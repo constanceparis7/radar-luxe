@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:sotheby-s-paris-une-demeure-princiere-la-residence-du-cheikh-al@constan
+ ceparis7.com
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261031
+DTEND;VALUE=DATE:20261107
+SUMMARY:Sotheby's Paris\, « Une demeure princière »\, la résidence du c
+ heikh Al Thani dispersée
+LOCATION:Sotheby's Paris\, 83 et 76 rue du Faubourg Saint-Honoré\, 75008 P
+ aris
+DESCRIPTION:Exposition publique du samedi 31 octobre au mercredi 4 novembre
+  2026\, vente du soir le 4 novembre à 18 h\, vacations les 5 et 6 novembr
+ e · Sotheby's\, Faubourg Saint-Honoré\nhttps://constanceparis7.com/en/e/
+ sotheby-s-paris-une-demeure-princiere-la-residence-du-cheikh-al.html
+URL:https://constanceparis7.com/en/e/sotheby-s-paris-une-demeure-princiere-
+ la-residence-du-cheikh-al.html
+END:VEVENT
+END:VCALENDAR

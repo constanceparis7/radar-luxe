@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:paris-deco-off-2027-la-semaine-des-editeurs-de-tissus-et-de-deco@consta
+ nceparis7.com
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270113
+DTEND;VALUE=DATE:20270117
+SUMMARY:Paris Déco Off 2027\, la semaine des éditeurs de tissus et de dé
+ coration
+LOCATION:Showrooms des maisons participantes\, Rive Gauche (6e : place Sain
+ t-Germain-des-Prés\, place Furstemberg\, rue de Seine\, rue Bonaparte \; 
+ 7e : rue de l'Université\, rue du Bac) et Rive Droite (2e : place des Vic
+ toires\, rue du Mail\, place des Petits-Pères)\, Paris \; Paris Déco Hom
+ e à l'hôtel Bel Ami\, 7/11 rue Saint-Benoît\, 75006 Paris
+DESCRIPTION:Du 13 au 16 janvier 2027 · showrooms des éditeurs\, Rive Gauc
+ he et Rive Droite\nhttps://constanceparis7.com/en/e/paris-deco-off-2027-la
+ -semaine-des-editeurs-de-tissus-et-de-deco.html
+URL:https://constanceparis7.com/en/e/paris-deco-off-2027-la-semaine-des-edi
+ teurs-de-tissus-et-de-deco.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:le-grand-tasting-paris-2026-le-salon-des-grands-vins-de-bettane@constan
+ ceparis7.com
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261129
+SUMMARY:Le Grand Tasting Paris 2026\, le salon des grands vins de Bettane+D
+ esseauve
+LOCATION:Carrousel du Louvre\, 99 rue de Rivoli\, 75001 Paris
+DESCRIPTION:Vendredi 27 et samedi 28 novembre 2026 · Carrousel du Louvre\n
+ https://constanceparis7.com/e/le-grand-tasting-paris-2026-le-salon-des-gra
+ nds-vins-de-bettane.html
+URL:https://constanceparis7.com/e/le-grand-tasting-paris-2026-le-salon-des-
+ grands-vins-de-bettane.html
+END:VEVENT
+END:VCALENDAR
