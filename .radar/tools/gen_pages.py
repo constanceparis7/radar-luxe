@@ -718,6 +718,7 @@ def main():
             f" · <a href=\"/a-propos.html\">{esc(LIEUX_I18N.get(lang, {}).get('À propos', 'À propos'))} · {esc(LIEUX_I18N.get(lang, {}).get('Contact', 'Contact'))}</a>"
             f" · <a href=\"/mentions-legales.html\">{esc(LIEUX_I18N.get(lang, {}).get('Mentions légales', 'Mentions légales'))}</a>"
             f" · <a href=\"/politique-de-confidentialite.html\">{esc(LIEUX_I18N.get(lang, {}).get('Politique de confidentialité', 'Politique de confidentialité'))}</a>"
+            f"{' · <a href=' + chr(34) + '/pro.html' + chr(34) + '>Pour les professionnels</a>' if lang == 'fr' else ''}"
             "</footer></div></body></html>"
         )
 
@@ -1375,7 +1376,7 @@ qui a donné son nom à ce site. Je tiens ce radar seule.</p>
 
 <h2 class="sub">Ce qu'est ConstanceParis7</h2>
 <p>Un radar des événements du luxe : galas, festivals, semaines de la mode,
-haute joaillerie, grandes ventes aux enchères. <b>Plus de 400 événements</b>, publiés en
+haute joaillerie, grandes ventes aux enchères. <b>{{NB_EV}} événements</b>, publiés en
 <b>13 langues</b> et remis à jour <b>chaque jour</b>.</p>
 <p>La règle ne change pas : un événement n'entre dans le radar qu'accompagné de
 <b>sa voie d'entrée</b>. Une date sans mode d'accès n'a pas d'utilité.</p>
@@ -1400,6 +1401,7 @@ août 2026</b> : la ligne éditoriale, les vérifications, les publications.</p>
 <h2 class="sub">Travailler ensemble</h2>
 <p>Maisons, palaces, hôtels, clubs, restaurants, joailliers, organisateurs :
 <b>écrivez-moi</b>. J'étudie toute proposition sérieuse.</p>
+<p>Agences et maisons qui doivent arrêter une date : <a href="/pro.html">le Contrôle de collision</a>.</p>
 <div class="box">
 <h2>Une chose ne se négocie pas</h2>
 <p><b>Une place dans le radar ne s'achète pas.</b> Un événement y figure parce
@@ -1416,9 +1418,67 @@ jour, il sera signalé comme tel, sur la fiche concernée.</p>
                "Le radar des événements du luxe, tenu depuis le 7e arrondissement de "
                "Paris : la méthode de vérification, la règle éditoriale, et comment "
                "proposer une collaboration.",
-               "/a-propos.html", AP,
+               "/a-propos.html", AP.replace("{{NB_EV}}", str(len(pages))),
                '<link rel="alternate" hreflang="fr" href="%s/a-propos.html">' % BASE))
     sitemap_urls.append(f"{BASE}/a-propos.html")
+
+    # --- pour les professionnels (décision produit du 02/10/2026) ------------
+    # La page qui vend le Contrôle de collision : une seule offre, un exemple
+    # public, la limite de couverture écrite noir sur blanc. Le rapport
+    # d'exemple est produit par .radar/tools/controle_collision.py dans /pro/.
+    PRO = """<div class="bc"><a href="/">Radar</a> · Pour les professionnels</div>
+<h1>Pour les professionnels</h1>
+<p class="meta">Agences de relations presse, agences d'événementiel, maisons : le radar au service de vos dates.</p>
+
+<h2 class="sub">Le Contrôle de collision</h2>
+<p>Vous devez arrêter la date d'un lancement, d'un dîner, d'une présentation ou d'une
+journée presse à Paris. Le risque n'est pas la Fashion Week, que tout le monde connaît :
+ce sont la vente du soir, le vernissage, le gala, la saison d'un palace qui, ce soir-là,
+mobilisent la presse et les clients que vous visez. Et les dates qui glissent.</p>
+<p>Pour une fenêtre de dates et une ou plusieurs villes, vous recevez sous 48 heures,
+par courriel, un rapport de 3 à 5 pages :</p>
+<ul>
+<li>les événements du radar qui se chevauchent avec votre fenêtre, chacun avec son
+statut (confirmé, probable, à vérifier), sa <b>source officielle</b> et la date à laquelle
+elle a été relue ;</li>
+<li>ce qui tourne autour, dix jours avant et après ;</li>
+<li>les fenêtres d'action publiées : ouvertures de billetterie, d'accréditation, dates limites ;</li>
+<li>les dates qui ont bougé, d'après la Mémoire du radar ;</li>
+<li>deux ou trois créneaux moins encombrés, et un fichier calendrier des conflits.</li>
+</ul>
+<div class="box">
+<h2>Ce que le rapport ne voit pas</h2>
+<p>Le radar ne recense que le calendrier public : les présentations et les dîners privés
+des maisons n'y figurent jamais. Sa couverture est le luxe et la culture de prestige, pas
+tout ce qui se passe dans une ville. Un événement absent du rapport n'est pas un événement
+qui n'existe pas. C'est écrit en première page de chaque rapport.</p>
+</div>
+<p><a class="cta" href="/pro/exemple-paris-novembre-2026.html">Voir un exemple : Paris, novembre 2026</a></p>
+<p>Pour demander un contrôle sur votre prochaine date :
+<a class="cta" href="mailto:constanceparis7e@gmail.com?subject=Contr%C3%B4le%20de%20collision&amp;body=Ville%20%3A%20%0AFen%C3%AAtre%20de%20dates%20%3A%20%0AType%20d%27%C3%A9v%C3%A9nement%20%3A%20%0A">Demander un contrôle</a>.
+Le premier contrôle sur une date que vous avez déjà annoncée est offert ; les suivants, sur devis.</p>
+
+<h2 class="sub">Déclarez votre date</h2>
+<p>Vous organisez un événement du luxe ? Déclarez sa date au radar : elle est relue sur
+votre page officielle, puis publiée selon les critères du radar, qui ne changent pas.
+<b>Une place dans le radar ne s'achète pas</b> : déclarer une date est gratuit, et ne
+garantit pas sa publication.</p>
+<p><a class="cta" href="mailto:constanceparis7e@gmail.com?subject=D%C3%A9claration%20de%20date&amp;body=%C3%89v%C3%A9nement%20%3A%20%0ADates%20%3A%20%0ALieu%20%3A%20%0APage%20officielle%20%3A%20%0AMode%20d%27acc%C3%A8s%20%3A%20%0A">Déclarer une date</a></p>
+
+<h2 class="sub">La règle</h2>
+<p>Le radar analyse le calendrier, il ne le modifie pas. Aucun rapport ne contient de
+coordonnée nominative : des lignes de service, jamais une personne. Aucun rapport ne
+promet un accès ni une invitation.</p>
+
+<div class="chips"><a href="/">← Retour au radar</a><a href="/a-propos.html">À propos</a><a href="/mentions-legales.html">Mentions légales</a></div>"""
+    write("/pro.html",
+          page("fr", "Pour les professionnels · ConstanceParis7",
+               "Contrôle de collision de dates pour les agences et les maisons : les "
+               "événements du luxe vérifiés qui se chevauchent sur une fenêtre, leurs "
+               "sources, les créneaux plus calmes.",
+               "/pro.html", PRO,
+               '<link rel="alternate" hreflang="fr" href="%s/pro.html">' % BASE))
+    sitemap_urls.append(f"{BASE}/pro.html")
 
     # --- direction de la publication : bascule datée, automatique ----------
     # Constance est née le 21/09/2008. Tant qu'elle est mineure, la loi du

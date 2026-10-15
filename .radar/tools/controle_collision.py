@@ -106,7 +106,7 @@ def poids(e, note):
     return (note or 50) / 100.0 * k
 
 
-def rapport(villes, debut, fin, autour=10, titre=None, client=None):
+def rapport(villes, debut, fin, autour=10, titre=None, client=None, url=None):
     ev, api, mem, fen = charger()
     aujourd = dt.date.today()
     D0, D1 = d(debut), d(fin)
@@ -173,7 +173,9 @@ def rapport(villes, debut, fin, autour=10, titre=None, client=None):
     @media print{.page{padding:0}h2{page-break-after:avoid}table{page-break-inside:auto}tr{page-break-inside:avoid}}
     """
     o = []
-    o.append(f"<!doctype html><html lang='fr'><head><meta charset='utf-8'><meta name='robots' content='noindex'><meta name='viewport' content='width=device-width,initial-scale=1'><title>{esc(T)}</title><style>{css}</style></head><body><div class='page'>")
+    desc = f"Contrôle de collision ConstanceParis7 : les événements du luxe vérifiés à la source qui se chevauchent à {', '.join(villes)} du {fr(D0)} au {fr(D1)}, les fenêtres d'action publiées, les dates qui ont bougé, les créneaux moins encombrés."
+    canon = f'<link rel="canonical" href="{esc(url)}">' if url else ""
+    o.append(f'<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="robots" content="noindex"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{esc(T)}</title><meta name="description" content="{esc(desc[:300])}">{canon}<style>{css}</style></head><body><div class="page">')
     o.append(f"<p class='eyebrow'>ConstanceParis7 · rapport établi le {fr(aujourd)}" + (f" · pour {esc(client)}" if client else "") + "</p>")
     o.append(f"<h1>{esc(T)}</h1>")
     o.append("<p>Les événements du luxe vérifiés à leur source officielle qui se chevauchent sur cette fenêtre, ce qui tourne autour, les fenêtres d'action publiées, les dates qui ont bougé, et les créneaux moins encombrés.</p>")
@@ -264,7 +266,13 @@ if __name__ == "__main__":
     ap.add_argument("--debut", required=True); ap.add_argument("--fin", required=True)
     ap.add_argument("--autour", type=int, default=10); ap.add_argument("--titre"); ap.add_argument("--client")
     ap.add_argument("--sortie", required=True)
+    ap.add_argument("--url", help="adresse canonique de la page publiée ; déduite du chemin si le fichier est dans le dépôt")
     a = ap.parse_args()
-    h, stats = rapport([v.strip() for v in a.villes.split(",")], a.debut, a.fin, a.autour, a.titre, a.client)
+    url = a.url
+    if not url:
+        rel = os.path.relpath(os.path.abspath(a.sortie), REPO)
+        if not rel.startswith(".."):
+            url = "https://constanceparis7.com/" + rel.replace(os.sep, "/")
+    h, stats = rapport([v.strip() for v in a.villes.split(",")], a.debut, a.fin, a.autour, a.titre, a.client, url)
     open(a.sortie, "w", encoding="utf-8").write(h)
     print(json.dumps(stats, ensure_ascii=False))

@@ -42,4 +42,9 @@ if acc:
     if pb: print(f"Mesure du {r['date']} (conditions Lighthouse mobile) : "+" ; ".join(pb)+". Journal : .radar/tools/vitals-log.ndjson. À corriger avant toute autre tâche (priorité absolue de la feuille de route).")
 PY
 git add .radar/tools/vitals-log.ndjson .radar/tools/qualite-log.ndjson 2>/dev/null
-git commit -qm "Contrôle du lundi (automatique) : vitesse mobile, validité HTML, accessibilité" 2>/dev/null && git push -q origin main 2>/dev/null || true
+if git commit -qm "Contrôle du lundi (automatique) : vitesse mobile, validité HTML, accessibilité"; then
+  # 15/10/2026 : le commit du 12/10 était resté local (poussée silencieuse en échec) ; on
+  # rebase sur l'origine et on journalise l'échec au lieu de le taire.
+  git pull -q --rebase origin main || echo "$(date +%FT%T) rebase impossible" >> /tmp/cp7-controle-lundi.log
+  git push origin main >> /tmp/cp7-controle-lundi.log 2>&1 || echo "$(date +%FT%T) push en échec" >> /tmp/cp7-controle-lundi.log
+fi

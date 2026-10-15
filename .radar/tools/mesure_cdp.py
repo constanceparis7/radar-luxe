@@ -148,6 +148,12 @@ def mesure(url, offline=False, interactions=True):
     c.send("Emulation.setUserAgentOverride", userAgent=UA)
     c.send("Emulation.setTouchEmulationEnabled", enabled=True, maxTouchPoints=5)
     c.send("Network.setCacheDisabled", cacheDisabled=True)
+    # 15/10/2026 : le service worker du site servait sa copie (TTFB 1 ms, 0 Ko transféré le
+    # 12/10) ; on le contourne pour mesurer le réseau réel, comme Lighthouse.
+    try:
+        c.send("Network.setBypassServiceWorker", bypass=True)
+    except Exception:
+        pass
     c.send("Network.emulateNetworkConditions", offline=offline, latency=150,
            downloadThroughput=1.6 * 1024 * 1024 / 8, uploadThroughput=750 * 1024 / 8)
     c.send("Emulation.setCPUThrottlingRate", rate=4)
