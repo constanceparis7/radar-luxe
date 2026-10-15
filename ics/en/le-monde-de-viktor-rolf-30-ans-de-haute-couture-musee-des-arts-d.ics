@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:le-monde-de-viktor-rolf-30-ans-de-haute-couture-musee-des-arts-d@consta
+ nceparis7.com
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270128
+DTEND;VALUE=DATE:20270705
+SUMMARY:Le monde de Viktor&Rolf\, 30 ans de haute couture\, Musée des Arts
+  décoratifs
+LOCATION:Musée des Arts décoratifs\, 107 rue de Rivoli\, 75001 Paris
+DESCRIPTION:Du jeudi 28 janvier au dimanche 4 juillet 2027 · Musée des Ar
+ ts décoratifs\nhttps://constanceparis7.com/en/e/le-monde-de-viktor-rolf-3
+ 0-ans-de-haute-couture-musee-des-arts-d.html
+URL:https://constanceparis7.com/en/e/le-monde-de-viktor-rolf-30-ans-de-haut
+ e-couture-musee-des-arts-d.html
+END:VEVENT
+END:VCALENDAR

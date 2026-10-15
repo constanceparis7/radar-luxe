@@ -759,8 +759,8 @@
    "verifie_le": "08/10/2026"
   },
   {
-   "evenement": "Le monde de Viktor&Rolf. 30 ans de haute couture, Musée des Arts décoratifs",
-   "dans_le_radar": false,
+   "evenement": "Le monde de Viktor&Rolf, 30 ans de haute couture, Musée des Arts décoratifs",
+   "dans_le_radar": true,
    "type": "billetterie",
    "statut": "ouvert",
    "ouverture": "",
@@ -773,8 +773,8 @@
    "verifie_le": "08/10/2026"
   },
   {
-   "evenement": "Le monde de Viktor&Rolf. 30 ans de haute couture, Musée des Arts décoratifs",
-   "dans_le_radar": false,
+   "evenement": "Le monde de Viktor&Rolf, 30 ans de haute couture, Musée des Arts décoratifs",
+   "dans_le_radar": true,
    "type": "accreditation",
    "statut": "non_publie",
    "ouverture": "",

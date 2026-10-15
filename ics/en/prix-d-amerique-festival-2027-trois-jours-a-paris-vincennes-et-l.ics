@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ConstanceParis7//Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:prix-d-amerique-festival-2027-trois-jours-a-paris-vincennes-et-l@consta
+ nceparis7.com
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270129
+DTEND;VALUE=DATE:20270201
+SUMMARY:Prix d'Amérique Festival 2027\, trois jours à Paris-Vincennes et 
+ Legend Race
+LOCATION:Hippodrome Paris-Vincennes\, bois de Vincennes\, Paris
+DESCRIPTION:Du vendredi 29 au dimanche 31 janvier 2027 · Hippodrome Paris-
+ Vincennes\nhttps://constanceparis7.com/en/e/prix-d-amerique-festival-2027-
+ trois-jours-a-paris-vincennes-et-l.html
+URL:https://constanceparis7.com/en/e/prix-d-amerique-festival-2027-trois-jo
+ urs-a-paris-vincennes-et-l.html
+END:VEVENT
+END:VCALENDAR

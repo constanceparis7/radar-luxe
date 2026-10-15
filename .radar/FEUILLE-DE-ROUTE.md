@@ -1,7 +1,7 @@
 # Feuille de route · un site de niveau mondial, prêt pour un million de visiteurs par jour
 
 Commande de Constance du 18/09/2026. Document vivant : les taux d'avancement sont
-tenus à jour à chaque publication. Source de vérité : ce fichier.
+tenus à jour à chaque publication (dernière révision le 15/10/2026). Source de vérité : ce fichier.
 
 ## L'ambition, dite honnêtement
 
@@ -63,7 +63,7 @@ reste dérisoire pour un million de visiteurs par jour.
 Légende : [100] fait · [50] à moitié · [0] à faire. Le taux d'un objectif est la
 moyenne de ses micro-objectifs.
 
-### O1 · Fondations sans point faible (registre de l'audit croisé) · 91 %
+### O1 · Fondations sans point faible (registre de l'audit croisé) · 94 %
 - [100] Verrou de build bloquant sur les 7 876 pages, 13 langues
 - [100] Compteurs réconciliés et expliqués
 - [100] Redirections des anciennes adresses (lieux et fiches)
@@ -184,7 +184,10 @@ moyenne de ses micro-objectifs.
         de bascule après le premier affichage)
 - [hors périmètre] En-têtes de sécurité HSTS, nosniff, frame-ancestors : exigent Cloudflare
         devant le site (décision du 18/09), ne comptent pas dans le taux
-- [0]   Newsletter : double opt-in, anti-spam, désinscription (samedi 20/09)
+- [45]  Lettre hebdomadaire : double opt-in, anti-spam, désinscription ; formulaire
+        Brevo créé le 09/10 (adresse seule, consentement, captcha, messages en
+        anglais) ; la double confirmation est bloquée tant que Brevo n'a pas activé le
+        compte d'envoi (demande déposée le 09/10)
 
 ### O2 · Infrastructure (périmètre GitHub Pages) · 100 %
 - [100] HTTPS forcé, http et www redirigés
@@ -254,17 +257,21 @@ les textes de séjour (1 088 Ko) et les journaux d'enquête (619 Ko). Une fiche
 - [100] Sitemap scindé par langue avec index (20/09) : 13 fichiers de 850 Ko au lieu d'un
         seul de 11 Mo ; le verrou lit l'index
 
-### O4 · Données et contenu à l'échelle · 84 %
+### O4 · Données et contenu à l'échelle · 79 %
 - [100] Passes de nuit (purge, liens, condensation)
 - [100] Résorption hebdomadaire de tous les doutes, aux sources
 - [100] Sentinelle des imminents (lundi)
 - [100] Mémoire du radar (archives, changements)
-- [35]  296 événements vivants sur un palier de 1 000 (au 01/10, après purge des saisons
-        terminées) ; vivier déposé le 01/10 : 49 candidats du 15 octobre 2026 au 31 mars
-        2027, chacun avec la page officielle de l'organisateur et la citation verbatim des
-        dates (8 univers, 117 pistes écartées par les agents faute de source officielle ou
-        parce que déjà sur le site, 14 doublons retirés) ; les passes de nuit en intègrent
-        3 à 5 par nuit après contre-vérification (doctrine 4ter)
+- [42]  288 événements vivants sur un palier de 1 000 (au 15/10, après la purge
+        normale des saisons d'été) ; vivier déposé le 01/10 (49 candidats avec page
+        officielle et citation des dates) ; 15/10 : 28 fiches parisiennes d'octobre
+        2026 à janvier 2027 nées en une fois, chacune écrite depuis la page officielle
+        de l'organisateur avec sa voie d'entrée, son séjour et ses fenêtres d'action
+        (foires et ventes du soir de la semaine Art Basel, galas, réveillons des
+        palaces et de Versailles, Paris Photo, Rolex Paris Masters, Bal des
+        Débutantes, expositions de maisons), traductions en cours de livraison ; 4
+        dernières fiches (Fashion Week Homme, Haute Couture, Viktor&Rolf, Prix
+        d'Amérique) en rédaction
 - [hors périmètre] Photos par événement : exige le stockage R2 de Cloudflare
 - [hors périmètre] Rendu à la volée au-delà de 850 événements (limite des 20 000 fichiers) :
         exige Cloudflare Workers, sans objet avant 850
@@ -274,6 +281,12 @@ les textes de séjour (1 088 Ko) et les journaux d'enquête (619 Ko). Une fiche
         fichier calendrier), régénéré à chaque publication, CORS ouvert, page /api/ avec les
         champs et les conditions (attribution libre, usage commercial sur accord), llms.txt
         complété ; reste un premier partenaire ou assistant qui le consomme
+- [40]  Registre des fenêtres d'action (.radar/fenetres.json, 08/10) : 56 fenêtres
+        lues sur les pages officielles des 21 événements parisiens à venir
+        (billetteries ouvertes, réservations complètes, accréditations non publiées,
+        dates limites), avec citation et date de lecture ; « non publié » est une
+        valeur ; les passes de nuit relisent les fenêtres qui tombent dans les 7 jours
+        (doctrine 4quater) ; reste à l'étendre aux autres villes
 
 ### O5 · Visibilité organique mondiale · 76 %
 - [100] Titres en forme de requêtes, 13 langues, mois courant automatique
@@ -302,14 +315,20 @@ les textes de séjour (1 088 Ko) et les journaux d'enquête (619 Ko). Une fiche
         son titre et ses liens vers les deux autres (vérifiés) ; reste la mesure au 2/10
 - [0]   Liens entrants (en pause volontaire ; liste de 20 relais prête)
 
-### O6 · Produit et rétention · 69 %
+### O6 · Produit et rétention · 72 %
 - [100] Favoris partout, page Mes favoris, compteur
 - [100] Moteur Comment entrer, Note du radar, Protocole, Questions
 - [85]  Partage : aperçus og par page, dimensions et texte alternatif de l'image depuis le
         28/09, nom du site et langue depuis le 29/09 ; aperçu contrôlé le 01/10 par un
         service de prévisualisation indépendant sur trois pages ; reste le contrôle sur
         téléphone
-- [0]   Newsletter hebdomadaire (dimanche 21/09)
+- [45]  Lettre hebdomadaire en anglais (décision du 02/10) : compte Brevo ouvert par
+        Constance le 08/10, liste et formulaire « Get the weekly luxury radar » créés
+        le 09/10 ; brouillon hebdomadaire généré depuis le radar par
+        .radar/tools/lettre_hebdo.py (cinq événements à connaître, deux fenêtres, un
+        changement, l'édito restant à dicter) ; reste l'activation du compte d'envoi
+        par Brevo pour la double confirmation, puis le bouton sur les pages anglaises
+        et arabes les plus vues
 - [65]  Alertes liées aux favoris : « Ajouter à mon agenda » sur chaque fiche le 28/09
         (fichier calendrier .ics, journée entière, français ou anglais selon la langue) ;
         page Mes favoris refaite le 29/09 : favoris triés par date, mention « dans N jours »,
@@ -318,7 +337,17 @@ les textes de séjour (1 088 Ko) et les journaux d'enquête (619 Ko). Une fiche
         navigateur (rien ne quitte l'appareil), testé avant publication (tri, états, fichier
         de 3 événements, retrait) ; reste l'alerte automatique, qui exige un canal (courriel
         ou notification)
-- [0]   Le Cercle (on ne peut pas acheter, on est choisi)
+- [55]  Le Contrôle de collision (premier produit, décision du 02/10) : outil
+        .radar/tools/controle_collision.py posé le 08/10 (événements vérifiés qui
+        chevauchent une fenêtre, orbite à dix jours, fenêtres d'action, dates qui ont
+        bougé, créneaux moins encombrés, limite de couverture écrite en première page)
+        ; page « Pour les professionnels » (/pro.html) et rapport d'exemple « Paris,
+        novembre 2026 » (/pro/) publiés le 15/10, liés depuis l'à-propos et le pied de
+        page français ; 47 cibles contre-vérifiées (adresses de service seulement) et
+        courriel type remis à Constance (dossier iCloud ConstanceParis7-produit) ;
+        reste l'envoi des 30 premiers courriels par Constance et le premier client
+- [0]   Le Cercle (on ne peut pas acheter, on est choisi) : reporté le 02/10, à
+        rouvrir après dix clients récurrents
 - [100] Site installable et consultable hors connexion (28/09) : manifeste, icônes (onglet,
         écran d'accueil iOS et Android, monogramme C7 en Didot), service worker réseau
         d'abord avec copie de secours des pages visitées (90 entrées au plus, jamais de
@@ -330,7 +359,7 @@ les textes de séjour (1 088 Ko) et les journaux d'enquête (619 Ko). Une fiche
         les pages générées, navigation et favoris masqués, adresses des liens utiles
         affichées en clair, fond blanc ; n'affecte jamais l'écran, vérifié en ligne
 
-### O7 · Confiance, sécurité, conformité · 87 %
+### O7 · Confiance, sécurité, conformité · 89 %
 - [100] HTTPS, zéro cookie, zéro donnée collectée
 - [100] Aucun fichier de travail en ligne, aucun secret dans le code
 - [100] Protection des personnes (directive du 20/08) : aucune coordonnée nominative en
@@ -353,7 +382,9 @@ les textes de séjour (1 088 Ko) et les journaux d'enquête (619 Ko). Une fiche
 - [100] Politique de confidentialité : page dédiée publiée le 25/09, reprend et complète
         la section déjà écrite des mentions légales (la mention des favoris manquait),
         liée depuis le pied de page de tout le site ; vérifiée en ligne
-- [0]   Double opt-in, SPF, DKIM, DMARC pour la newsletter
+- [20]  Double opt-in, SPF, DKIM, DMARC pour la lettre : formulaire prêt à passer en
+        double confirmation dès l'activation du compte d'envoi Brevo (demande du
+        09/10) ; SPF, DKIM et DMARC viendront avec une adresse d'envoi sur le domaine
 - [hors périmètre] En-têtes de sécurité HTTP : exigent Cloudflare devant le site
 
 ### O8 · Observabilité et pilotage · 99 %
@@ -383,7 +414,7 @@ les textes de séjour (1 088 Ko) et les journaux d'enquête (619 Ko). Une fiche
         contrôle du lundi ouvre une issue « vitesse » si l'accueil dépasse un seuil Google ;
         reste PageSpeed (quota)
 
-### O9 · Les paliers d'audience et leur prérequis technique
+### O9 · Les paliers d'audience et leur prérequis technique · 40 %
 - [100] Palier 1, 100 par jour : atteint (35 à 100)
 - [55]  Palier 2, 1 000 par jour : accueil allégé (fait), vitesse mobile mesurée dans le
         vert (fait), surveillance et alertes indépendantes (fait), site installable et hors

@@ -184,5 +184,6 @@ ul{{list-style:none;margin:0;padding:0}}li{{padding:5px 0;border-bottom:1px soli
 </div>
 """
 os.makedirs(os.path.dirname(OUT), exist_ok=True)
-open(OUT, "w", encoding="utf-8").write(page)
+import sys as _s; _s.path.insert(0, __import__("os").path.dirname(__file__)); import detirets as _d
+open(OUT, "w", encoding="utf-8").write(_d.texte(page))
 print(f"tableau de bord : {os.path.relpath(OUT, REPO)} ({len(page)//1024} Ko) · visiteurs {cumul} · fiches {n_fiches} · fraîcheur {frq.get('avec_date_verif')}/{frq.get('total_vivantes')} · objectifs {len(objectifs)}")

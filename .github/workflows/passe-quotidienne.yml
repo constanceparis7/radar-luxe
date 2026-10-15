@@ -78,7 +78,7 @@ jobs:
             exit 0
           fi
           git add -A
-          git commit -m "Passe quotidienne automatique — entretien et vérification des liens"
+          git commit -m "Passe quotidienne automatique : entretien et vérification des liens"
           git push origin HEAD:main
           echo "publie=oui" >> "$GITHUB_OUTPUT"
 

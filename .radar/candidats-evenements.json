@@ -456,20 +456,6 @@
    "repere_le": "2026-10-01"
   },
   {
-   "nom": "Le monde de Viktor&Rolf. 30 ans de haute couture, Musée des Arts décoratifs",
-   "ville": "Paris",
-   "lieu": "Musée des Arts décoratifs, 107 rue de Rivoli",
-   "debut": "2027-01-28",
-   "fin": "2027-07-04",
-   "source_officielle": "https://madparis.fr/Le-monde-de-Viktor-Rolf-30-ans-de-haute-couture",
-   "citation": "du 28 janvier au 4 juillet 2027",
-   "acces": "public",
-   "comment_entrer": "Billet d'entrée au musée via la billetterie en ligne de madparis.fr.",
-   "pourquoi": "Rétrospective de trente ans de haute couture du duo néerlandais, avec plus de cent créations, au Musée des Arts décoratifs.",
-   "categorie": "mode",
-   "repere_le": "2026-10-01"
-  },
-  {
    "nom": "X Games Aspen 2027",
    "ville": "Aspen",
    "lieu": "Buttermilk Mountain, Aspen Snowmass",
@@ -814,6 +800,11 @@
   {
    "nom": "En volume !, Palais Galliera",
    "fiche": "En volume !, le Palais Galliera expose les techniques qui donnent corps au vêtement",
+   "le": "2026-10-15"
+  },
+  {
+   "nom": "Le monde de Viktor&Rolf. 30 ans de haute couture, Musée des Arts décoratifs",
+   "fiche": "Le monde de Viktor&Rolf, 30 ans de haute couture, Musée des Arts décoratifs",
    "le": "2026-10-15"
   }
  ]
