@@ -1088,6 +1088,11 @@ def main():
             IMM_FICHE = {im.get("evenement", ""): im for im in json.load(_f)}
     except Exception:
         IMM_FICHE = {}
+    try:
+        with open(os.path.join(_RAD, "lettre.json"), encoding="utf-8") as _f:
+            _LETTRE = json.load(_f).get("lettre", {})
+    except Exception:
+        _LETTRE = {}
     imminents = set()  # URLs à <=21 jours : priorité haute, fraîcheur quotidienne
     for lang in LANGS:
         # --- pages événement ---
@@ -1355,6 +1360,13 @@ def main():
             # Le radar ne lit sa langue que dans localStorage — il n'existe
             # aucun paramètre d'URL. Sans cette ligne, un lecteur arrivé sur
             # /ja/ repartait en français dès qu'il cliquait vers le radar.
+            # Lettre hebdomadaire (décision du 02/10/2026) : l'encart n'apparaît que
+            # lorsque .radar/lettre.json dit double_confirmation=true (activation du
+            # compte d'envoi Brevo) ; d'ici là, rien ne change sur les pages.
+            if _LETTRE.get("double_confirmation") and _LETTRE.get("formulaire_url") and lang in ("en", "ar"):
+                _txt = {"en": ("Get the weekly luxury radar", "Five events worth knowing, two openings or deadlines, one change. Every week, in English."),
+                        "ar": ("Get the weekly luxury radar", "خمسة مواعيد تستحق المعرفة، نافذتان تفتحان أو تغلقان، وتغيير واحد. كل أسبوع، بالإنجليزية.")}[lang]
+                home.append(f"<div class=\"box\"><h2>{esc(_txt[0])}</h2><p>{esc(_txt[1])}</p><p><a class=\"cta\" href=\"{esc(_LETTRE['formulaire_url'])}\" rel=\"noopener\">{esc(_txt[0])}</a></p></div>")
             home.append(f"<script>try{{localStorage.setItem('luxe_lang','{lang}')}}catch(e){{}}</script>")
 
             hl_home = "".join(f'<link rel="alternate" hreflang="{L}" href="{BASE}{u_home(L)}">'
@@ -2269,16 +2281,29 @@ document.querySelectorAll('.ex').forEach(function(a){a.addEventListener('click',
     q_par_slug = {q["slug"]: q for q in QST}
     for im in IMM:
         e = par_nom.get(im.get("evenement", ""))
+        chemin = im.get("page")
         if not e:
-            print(f"gen_pages: AVERTISSEMENT page imminente sans fiche : {im.get('evenement')}")
+            # 16/10/2026 : la fiche a été purgée (édition terminée depuis plus de 30 jours).
+            # Laisser l'ancien fichier en place laissait des liens cassés vers des fiches
+            # disparues (verrou V6). On réécrit une page courte, honnête, hors sitemap.
+            print(f"gen_pages: page de destination sans fiche, édition terminée : {im.get('evenement')}")
+            if chemin:
+                h1 = im.get("h1") or im.get("evenement", "")
+                corps_p = [f"<div class=\"bc\"><a href=\"/\">Radar</a> · {esc(h1)}</div>", f"<h1>{esc(h1)}</h1>",
+                           "<p class=\"meta\">L'édition annoncée sur cette page est terminée. La prochaine édition apparaîtra ici dès que l'organisateur l'aura publiée et que le radar l'aura vérifiée à la source.</p>"]
+                qs = [q_par_slug[x] for x in im.get("questions", []) if x in q_par_slug]
+                if qs:
+                    corps_p.append("<h2 class=\"sub\">Les questions</h2><div class=\"chips\">" + "".join(f"<a href=\"/q/{esc(q['slug'])}.html\">{esc(q.get('question') or q['slug'])}</a>" for q in qs) + "</div>")
+                corps_p.append("<div class=\"chips\"><a href=\"/\">← Retour au radar</a><a href=\"/entrer.html\">Où voulez-vous entrer ?</a><a href=\"/changements.html\">La Mémoire du radar</a></div>")
+                write(chemin, page("fr", f"{im.get('titre') or h1} · ConstanceParis7", (im.get("desc") or h1)[:155], chemin, "".join(corps_p),
+                                   '<link rel="alternate" hreflang="fr" href="%s%s">' % (BASE, chemin)))
             continue
         try:
             _j = (date.fromisoformat(str(e.get("d1"))) - date.fromisoformat(TODAY)).days
         except (TypeError, ValueError):
             continue
-        if str(e.get("d2", "")) < TODAY:
-            continue  # édition passée : la page sort du sitemap d'elle-même
-        compte = f"J-{_j}" if _j > 0 else "En ce moment"
+        passee = str(e.get("d2", "")) < TODAY  # édition passée : page régénérée (liens à jour), hors sitemap
+        compte = "Édition terminée" if passee else (f"J-{_j}" if _j > 0 else "En ce moment")
         nr = note_radar(e)
         h1 = im.get("h1") or e.get("n", "")
         corps = [f"<div class=\"bc\"><a href=\"/\">Radar</a> · {esc(h1)}</div>",
@@ -2332,8 +2357,9 @@ document.querySelectorAll('.ex').forEach(function(a){a.addEventListener('click',
         write(chemin, page("fr", f"{im.get('titre') or h1} · ConstanceParis7",
               im.get("desc") or (e.get("dt") or ""), chemin, "".join(corps),
               '<link rel="alternate" hreflang="fr" href="%s%s">' % (BASE, chemin), ld=ld))
-        sitemap_urls.append(f"{BASE}{chemin}")
-        imminents.add(f"{BASE}{chemin}")
+        if not passee:
+            sitemap_urls.append(f"{BASE}{chemin}")
+            imminents.add(f"{BASE}{chemin}")
 
     # --- moment.json : l'événement du moment pour la carte de l'accueil.
     # Choisi chaque jour à la génération : le mieux noté des 21 prochains

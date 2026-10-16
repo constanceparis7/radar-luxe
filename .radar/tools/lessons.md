@@ -1419,6 +1419,3 @@ publiées, donc un rapport qui cite « premium.paris@artbasel.com » (ligne de s
 d'Art Basel) déclenche le filet nominatif tant que « premium » n'est pas dans
 MAIL_SERVICE. Et la mesure du lundi : le service worker servait sa copie (TTFB 1 ms,
 0 Ko) ; `mesure_cdp.py` contourne désormais le service worker, comme Lighthouse.
-
-## 16/10/2026 : une page imminente d'édition passée n'est plus régénérée, mais elle garde ses liens
-Purge de 6 zombies (d2=15/09) passée en cloud (`passe_automatique.py --apply --max-liens 0`), puis pipeline complet. Le verrou a bloqué sur V6 : `paris-fashion-week.html` (édition finie le 06/10, donc sautée par `gen_pages` qui n'écrit que les éditions non passées) pointait encore vers la fiche New York Fashion Week purgée. Corrigé en retirant la puce du registre `pages-imminentes.json` ET du fichier statique. Réflexe : quand une fiche citée dans `autres` est purgée, vérifier aussi les pages imminentes d'édition passée, que le générateur ne réécrit plus.
