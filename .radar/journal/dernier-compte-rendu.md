@@ -1,8 +1,9 @@
-# Compte rendu : passe du 15/10/2026
+# Compte rendu : passe du 16/10/2026
 
-- Cadence rompue constatée au precheck (322 h depuis le dernier run journalisé) : à signaler, rattrapage effectué.
-- Purge d'1 zombie (Closing Party, Nikki Beach Saint-Tropez, d2=14/09) via `passe_automatique.py --apply --max-liens 0` (passée en cloud). 261 -> 260 fiches. Pipeline complet rejoué, verrou vert (0 bloqueur, 2 avertissements W1 habituels).
-- Compteurs : traductions 260/260, invitations 260/260, séjours 254/260 (reste 6, hors fenêtre live).
-- Condensation iv : 0 fiche à condenser (2 iv.g et 7 iv.w > 1200 car. : densité factuelle jugée légitime, voir leçons 08/10 et 12/10).
-- Nouveautés : aucune fiche ajoutée. Le vivier (47 candidats) n'a pas été exploité : une fiche née complète exige séjour réel vérifié et 12 traductions, non composés dans cette passe. Candidat prioritaire toujours en attente : ABT Fall Gala (29/10/2026).
-- Non vérifié : revérification prioritaire, liens, visites, autres candidats du vivier.
+- Clone superficiel détecté, `git fetch --unshallow` fait. Cadence : une ligne DEMARRAGE du 16/10 04:14 UTC figurait déjà dans passages.log.
+- Purge de 6 zombies (d2=15/09 : L'Heure Dorée, Dioriviera Cannes, Soirées d'été Hôtels Barrière, New York Fashion Week SS27, Luisa Spagnoli chez Da Luigi, La Capannina di Franceschi) via `passe_automatique.py --apply --max-liens 0` (passée en cloud). 292 -> 286 fiches.
+- Lien interne cassé V6 corrigé (paris-fashion-week.html vers la fiche NYFW purgée) ; voir lessons.md. Verrou vert : 0 bloqueur, 2 avertissements W1 habituels.
+- Compteurs avant purge : traductions 292/292, invitations 292/292, séjours 283/292 (reste 9, dont probablement hors fenêtre live).
+- Condensation iv : 0 fiche à condenser. Restent 2 iv.g et 7 iv.w > 1200 car., densité factuelle déjà jugée légitime (leçons 08/10 et 12/10).
+- Nouveautés : aucune fiche ajoutée. Le vivier (candidats, ABT Fall Gala 29/10/2026 en tête) n'a pas été exploité : une fiche née complète exige séjour réel vérifié et 12 traductions, non composés dans cette passe.
+- Non vérifié : revérification prioritaire, fenêtres d'action, liens (pas lundi), visites, candidats du vivier, 24 fiches live sans `tr` (backlog signalé par le verrou).
