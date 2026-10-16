@@ -345,6 +345,15 @@ les textes de séjour (1 088 Ko) et les journaux d'enquête (619 Ko). Une fiche
         page français ; 47 cibles contre-vérifiées (adresses de service seulement) et
         courriel type remis à Constance (dossier iCloud ConstanceParis7-produit) ;
         reste l'envoi des 30 premiers courriels par Constance et le premier client
+- [60]  La page Presse (cap du 16/10 : entrer par les accréditations) : /presse.html et
+        /en/press.html générées par gen_pages (qui tient le radar, audience vérifiable sur
+        le compteur public, ce que l'organisateur obtient et n'obtient pas, contact),
+        compteurs calculés à la génération (273 événements, 42 fiches parisiennes à venir,
+        64 villes) ; liens dans les pieds de page fr et en, depuis l'à-propos et /pro.html ;
+        demandes d'accréditation rédigées (Paris Photo, Galliera, Arts Décoratifs, Global
+        Gift Gala ; Design Miami et Art Basel visés pour 2027) dans le dossier iCloud
+        ConstanceParis7-produit ; reste : les envois sous le nom de Constance, la première
+        couverture « vue de l'intérieur », le suivi des réponses, le dossier FHCM 2027
 - [0]   Le Cercle (on ne peut pas acheter, on est choisi) : reporté le 02/10, à
         rouvrir après dix clients récurrents
 - [100] Site installable et consultable hors connexion (28/09) : manifeste, icônes (onglet,
