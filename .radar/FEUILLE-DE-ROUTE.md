@@ -1,7 +1,7 @@
 # Feuille de route · un site de niveau mondial, prêt pour un million de visiteurs par jour
 
 Commande de Constance du 18/09/2026. Document vivant : les taux d'avancement sont
-tenus à jour à chaque publication (dernière révision le 15/10/2026). Source de vérité : ce fichier.
+tenus à jour à chaque publication (dernière révision le 16/10/2026). Source de vérité : ce fichier.
 
 ## L'ambition, dite honnêtement
 
@@ -262,16 +262,15 @@ les textes de séjour (1 088 Ko) et les journaux d'enquête (619 Ko). Une fiche
 - [100] Résorption hebdomadaire de tous les doutes, aux sources
 - [100] Sentinelle des imminents (lundi)
 - [100] Mémoire du radar (archives, changements)
-- [42]  288 événements vivants sur un palier de 1 000 (au 15/10, après la purge
-        normale des saisons d'été) ; vivier déposé le 01/10 (49 candidats avec page
-        officielle et citation des dates) ; 15/10 : 28 fiches parisiennes d'octobre
-        2026 à janvier 2027 nées en une fois, chacune écrite depuis la page officielle
-        de l'organisateur avec sa voie d'entrée, son séjour et ses fenêtres d'action
-        (foires et ventes du soir de la semaine Art Basel, galas, réveillons des
-        palaces et de Versailles, Paris Photo, Rolex Paris Masters, Bal des
-        Débutantes, expositions de maisons), traductions en cours de livraison ; 4
-        dernières fiches (Fashion Week Homme, Haute Couture, Viktor&Rolf, Prix
-        d'Amérique) en rédaction
+- [42]  286 événements vivants sur un palier de 1 000 (au 16/10) ; vivier déposé le
+        01/10 (49 candidats avec page officielle et citation des dates) ; 15/10 : 32
+        fiches parisiennes d'octobre 2026 à janvier 2027 nées en une fois, chacune
+        écrite depuis la page officielle de l'organisateur avec sa voie d'entrée, son
+        séjour et ses fenêtres d'action (foires et ventes du soir de la semaine Art
+        Basel, galas, réveillons des palaces et de Versailles, Paris Photo, Rolex
+        Paris Masters, Bal des Débutantes, Fashion Week Homme et Haute Couture de
+        janvier, expositions de maisons) ; traduites dans les 12 langues le 16/10, 286
+        fiches sur 286 traduites
 - [hors périmètre] Photos par événement : exige le stockage R2 de Cloudflare
 - [hors périmètre] Rendu à la volée au-delà de 850 événements (limite des 20 000 fichiers) :
         exige Cloudflare Workers, sans objet avant 850
