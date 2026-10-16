@@ -718,7 +718,7 @@ def main():
             f" · <a href=\"/a-propos.html\">{esc(LIEUX_I18N.get(lang, {}).get('À propos', 'À propos'))} · {esc(LIEUX_I18N.get(lang, {}).get('Contact', 'Contact'))}</a>"
             f" · <a href=\"/mentions-legales.html\">{esc(LIEUX_I18N.get(lang, {}).get('Mentions légales', 'Mentions légales'))}</a>"
             f" · <a href=\"/politique-de-confidentialite.html\">{esc(LIEUX_I18N.get(lang, {}).get('Politique de confidentialité', 'Politique de confidentialité'))}</a>"
-            f"{' · <a href=' + chr(34) + '/pro.html' + chr(34) + '>Pour les professionnels</a>' if lang == 'fr' else ''}"
+            f"{' · <a href=' + chr(34) + '/pro.html' + chr(34) + '>Pour les professionnels</a> · <a href=' + chr(34) + '/presse.html' + chr(34) + '>Presse</a>' if lang == 'fr' else (' · <a href=' + chr(34) + '/en/press.html' + chr(34) + '>Press</a>' if lang == 'en' else '')}"
             "</footer></div></body></html>"
         )
 
@@ -1414,6 +1414,7 @@ août 2026</b> : la ligne éditoriale, les vérifications, les publications.</p>
 <p>Maisons, palaces, hôtels, clubs, restaurants, joailliers, organisateurs :
 <b>écrivez-moi</b>. J'étudie toute proposition sérieuse.</p>
 <p>Agences et maisons qui doivent arrêter une date : <a href="/pro.html">le Contrôle de collision</a>.</p>
+<p>Journalistes, bureaux de presse, organisateurs qui accréditent : <a href="/presse.html">la page Presse</a>.</p>
 <div class="box">
 <h2>Une chose ne se négocie pas</h2>
 <p><b>Une place dans le radar ne s'achète pas.</b> Un événement y figure parce
@@ -1482,7 +1483,7 @@ garantit pas sa publication.</p>
 coordonnée nominative : des lignes de service, jamais une personne. Aucun rapport ne
 promet un accès ni une invitation.</p>
 
-<div class="chips"><a href="/">← Retour au radar</a><a href="/a-propos.html">À propos</a><a href="/mentions-legales.html">Mentions légales</a></div>"""
+<div class="chips"><a href="/">← Retour au radar</a><a href="/a-propos.html">À propos</a><a href="/presse.html">Presse</a><a href="/mentions-legales.html">Mentions légales</a></div>"""
     write("/pro.html",
           page("fr", "Pour les professionnels · ConstanceParis7",
                "Contrôle de collision de dates pour les agences et les maisons : les "
@@ -1491,6 +1492,180 @@ promet un accès ni une invitation.</p>
                "/pro.html", PRO,
                '<link rel="alternate" hreflang="fr" href="%s/pro.html">' % BASE))
     sitemap_urls.append(f"{BASE}/pro.html")
+
+    # --- presse (cap du 16/10/2026 : entrer par les accréditations) ----------
+    # La page que lit un bureau de presse avant de répondre : qui tient le
+    # radar, ce qu'il couvre, une audience vérifiable en direct (compteur
+    # public), ce que l'organisateur obtient et n'obtient pas. Chiffres
+    # honnêtes, datés ; entre deux bilans, le compteur public fait foi.
+    # Le nombre d'événements, de fiches parisiennes et de villes est calculé
+    # à la génération : la page ne peut pas gonfler.
+    _viv = [e for e in pages if str(e.get("d2", "")) >= TODAY]
+    _nb_paris = sum(1 for e in _viv if e.get("v") == "Paris")
+    _nb_villes = len({e["v"] for e in _viv if e.get("v") and not str(e["v"]).startswith("Partout")})
+    _presse_alt = ('<link rel="alternate" hreflang="fr" href="%s/presse.html">'
+                   '<link rel="alternate" hreflang="en" href="%s/en/press.html">' % (BASE, BASE))
+    PRESSE = """<div class="bc"><a href="/">Radar</a> · Presse</div>
+<h1>Presse</h1>
+<p class="meta">Qui tient le radar, ce qu'il couvre, ce que vaut son audience, et comment l'accréditer.</p>
+
+<h2 class="sub">ConstanceParis7 en bref</h2>
+<p>ConstanceParis7 est un média en ligne indépendant, fondé à Paris en 2026, consacré aux
+événements du luxe : galas, semaines de la mode, haute joaillerie, foires d'art, grandes
+ventes aux enchères, expositions de mode et de design. <b>{{NB_EV}} événements</b> vérifiés à
+leur source officielle, publiés en <b>13 langues</b>, relus chaque jour.</p>
+<p>Son angle ne change pas : chaque fiche dit <b>comment on entre</b>. Billetterie,
+accréditation, liste d'invités, tirage au sort : la voie d'entrée est l'information, la date
+n'est que son cadre.</p>
+
+<div class="box">
+<h2>Audience, vérifiable en direct</h2>
+<ul>
+<li>La mesure d'audience est <b>publique</b> :
+<a href="https://constanceparis7.goatcounter.com" target="_blank" rel="noopener">constanceparis7.goatcounter.com</a>,
+compteur indépendant, sans cookie, consultable par quiconque.</li>
+<li>Environ <b>3 600 visites</b> depuis l'ouverture de la mesure, fin juillet 2026 ; entre
+<b>110 et 160 visites par semaine</b> au cours des trois dernières semaines (relevé du
+15 octobre 2026).</li>
+<li>Six affichages Google sur dix servis <b>hors du français</b> (Search Console, trois mois
+au 18 septembre 2026) : le lectorat est international.</li>
+</ul>
+<p>Ces chiffres sont petits et vrais. Ils sont mis à jour ici à chaque bilan ; entre deux
+bilans, le compteur public fait foi.</p>
+</div>
+
+<h2 class="sub">Ce que le radar couvre</h2>
+<p><b>Paris d'abord.</b> {{NB_PARIS}} événements parisiens à venir sont suivis fiche par fiche,
+d'octobre 2026 à janvier 2027 : foires d'art, expositions de mode, galas, ventes du soir,
+semaines de la mode. Le reste du radar suit {{NB_VILLES}} villes, de Saint-Moritz à
+Marrakech, de Milan à Saint-Barthélemy.</p>
+<p>Chaque fiche porte la date de sa dernière vérification et le lien vers la source officielle.
+Les dates qui bougent sont consignées dans <a href="/changements.html">les changements du
+radar</a>. La méthode est publiée : <a href="/methode.html">constanceparis7.com/methode.html</a>.</p>
+
+<h2 class="sub">Accréditer ConstanceParis7</h2>
+<p>Le radar demande des accréditations presse pour couvrir des événements sur place. La demande
+est faite par l'éditrice, sous son identité complète, auprès de votre bureau de presse ; en
+public, elle signe « Constance ».</p>
+<div class="box">
+<h2>Ce que vous obtenez</h2>
+<ul>
+<li>Une fiche vérifiée et tenue à jour jusqu'à l'événement, en 13 langues, reliée aux pages de
+saison et au calendrier du radar.</li>
+<li>Une couverture <b>vue de l'intérieur</b>, publiée le soir même : l'entrée, le déroulé, ce
+qu'il fallait savoir pour y être ; reliée à la fiche et aux pages de saison.</li>
+<li>Des lecteurs qui cherchent précisément cela : comment entrer.</li>
+</ul>
+<h2>Ce que vous n'obtenez pas</h2>
+<ul>
+<li>Un texte relu par vous avant publication, ni une place dans le radar contre paiement :
+<b>une place dans le radar ne s'achète pas</b>.</li>
+<li>Une couverture complaisante : une invitation est signalée sur la fiche concernée, et ne
+change ni la vérification ni le jugement.</li>
+</ul>
+</div>
+
+<h2 class="sub">Contact presse</h2>
+<p>Communiqués, dossiers de presse, invitations, réponses aux demandes d'accréditation :
+<a class="cta" href="mailto:constanceparis7e@gmail.com?subject=Presse">constanceparis7e@gmail.com</a></p>
+<p>Le courrier est lu chaque jour, en français ou en anglais.</p>
+
+<h2 class="sub">Éléments</h2>
+<p>Nom : ConstanceParis7, en un mot. Signature : « L'élégance du choix réfléchi ».
+Visuel de partage : <a href="/og-image.png">og-image.png</a> (1200 × 630) ;
+icône : <a href="/icone-512.png">icone-512.png</a>.
+Éditrice : Constance, fondatrice, Paris 7e ; elle conçoit la ligne éditoriale, conduit les
+vérifications et signe les publications.</p>
+
+<div class="chips"><a href="/">← Retour au radar</a><a href="/a-propos.html">À propos</a><a href="/pro.html">Pour les professionnels</a><a href="/mentions-legales.html">Mentions légales</a></div>"""
+    PRESS_EN = """<div class="bc"><a href="/en/">Radar</a> · Press</div>
+<h1>Press</h1>
+<p class="meta">Who runs the radar, what it covers, what its audience is worth, and how to accredit it.</p>
+
+<h2 class="sub">ConstanceParis7 in brief</h2>
+<p>ConstanceParis7 is an independent online media founded in Paris in 2026, devoted to luxury
+events: galas, fashion weeks, high jewellery, art fairs, major auctions, fashion and design
+exhibitions. <b>{{NB_EV}} events</b> checked against their official source, published in
+<b>13 languages</b>, reviewed every day.</p>
+<p>Its angle never changes: every page says <b>how to get in</b>. Ticketing, accreditation,
+guest list, ballot: the way in is the information; the date is only its frame.</p>
+
+<div class="box">
+<h2>Audience, verifiable live</h2>
+<ul>
+<li>Audience measurement is <b>public</b>:
+<a href="https://constanceparis7.goatcounter.com" target="_blank" rel="noopener">constanceparis7.goatcounter.com</a>,
+an independent, cookie-free counter anyone can read.</li>
+<li>About <b>3,600 visits</b> since measurement began in late July 2026; between
+<b>110 and 160 visits a week</b> over the last three weeks (reading of 15 October 2026).</li>
+<li>Six Google impressions out of ten served <b>outside French</b> (Search Console, three
+months to 18 September 2026): the readership is international.</li>
+</ul>
+<p>These figures are small and true. They are updated here at each review; between reviews,
+the public counter is the reference.</p>
+</div>
+
+<h2 class="sub">What the radar covers</h2>
+<p><b>Paris first.</b> {{NB_PARIS}} upcoming Paris events are followed page by page, from
+October 2026 to January 2027: art fairs, fashion exhibitions, galas, evening sales, fashion
+weeks. The rest of the radar follows {{NB_VILLES}} cities, from Saint-Moritz to Marrakech,
+from Milan to Saint Barthélemy.</p>
+<p>Every page carries the date of its last check and the link to the official source. Dates
+that move are recorded in <a href="/changements.html">the radar's changes</a> (in French).
+The method is published: <a href="/en/methode.html">constanceparis7.com/en/methode.html</a>.</p>
+
+<h2 class="sub">Accrediting ConstanceParis7</h2>
+<p>The radar requests press accreditation to cover events on site. The request is made by the
+editor, under her full identity, to your press office; in public, she signs "Constance".</p>
+<div class="box">
+<h2>What you get</h2>
+<ul>
+<li>A verified page kept up to date until the event, in 13 languages, linked to the season
+pages and to the radar's calendar.</li>
+<li>A report <b>from the inside</b>, published the same evening: the entrance, the flow, what
+one needed to know to be there; linked to the page and to the season pages.</li>
+<li>Readers who are looking for exactly that: how to get in.</li>
+</ul>
+<h2>What you do not get</h2>
+<ul>
+<li>Copy approval, or a place in the radar in exchange for payment:
+<b>a place in the radar cannot be bought</b>.</li>
+<li>Flattering coverage: an invitation is disclosed on the page concerned, and changes neither
+the checking nor the judgement.</li>
+</ul>
+</div>
+
+<h2 class="sub">Press contact</h2>
+<p>Releases, press kits, invitations, replies to accreditation requests:
+<a class="cta" href="mailto:constanceparis7e@gmail.com?subject=Press">constanceparis7e@gmail.com</a></p>
+<p>Mail is read every day, in French or English.</p>
+
+<h2 class="sub">Assets</h2>
+<p>Name: ConstanceParis7, one word. Signature: "L'élégance du choix réfléchi".
+Share image: <a href="/og-image.png">og-image.png</a> (1200 × 630);
+icon: <a href="/icone-512.png">icone-512.png</a>.
+Editor: Constance, founder, Paris 7e; she sets the editorial line, conducts the checks and
+signs the publications.</p>
+
+<div class="chips"><a href="/en/">← Back to the radar</a><a href="/a-propos.html">À propos</a><a href="/mentions-legales.html">Mentions légales</a></div>"""
+    def _presse_fill(t):
+        return (t.replace("{{NB_EV}}", str(len(pages)))
+                 .replace("{{NB_PARIS}}", str(_nb_paris))
+                 .replace("{{NB_VILLES}}", str(_nb_villes)))
+    write("/presse.html",
+          page("fr", "Presse · ConstanceParis7",
+               "Le média qui couvre les événements du luxe en 13 langues : qui le tient, "
+               "ce qu'il couvre, son audience vérifiable en direct, et comment accréditer "
+               "ConstanceParis7.",
+               "/presse.html", _presse_fill(PRESSE), _presse_alt))
+    sitemap_urls.append(f"{BASE}/presse.html")
+    write("/en/press.html",
+          page("en", "Press · ConstanceParis7",
+               "The media covering luxury events in 13 languages: who runs it, what it "
+               "covers, its publicly verifiable audience, and how to accredit "
+               "ConstanceParis7.",
+               "/en/press.html", _presse_fill(PRESS_EN), _presse_alt))
+    sitemap_urls.append(f"{BASE}/en/press.html")
 
     # --- direction de la publication : bascule datée, automatique ----------
     # Constance est née le 21/09/2008. Tant qu'elle est mineure, la loi du
