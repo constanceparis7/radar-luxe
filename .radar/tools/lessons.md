@@ -1419,3 +1419,6 @@ publiées, donc un rapport qui cite « premium.paris@artbasel.com » (ligne de s
 d'Art Basel) déclenche le filet nominatif tant que « premium » n'est pas dans
 MAIL_SERVICE. Et la mesure du lundi : le service worker servait sa copie (TTFB 1 ms,
 0 Ko) ; `mesure_cdp.py` contourne désormais le service worker, comme Lighthouse.
+
+## 17/10/2026 : le push direct de la trace de démarrage sur main est refusé en cloud
+Le classifieur a refusé `git push origin HEAD:main`. Repli doctrinal : branche claude/*, reversée dans main par le workflow. Rien d'autre à purger ce jour, verrou déjà vert au démarrage.
