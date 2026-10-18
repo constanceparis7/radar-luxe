@@ -1422,3 +1422,6 @@ MAIL_SERVICE. Et la mesure du lundi : le service worker servait sa copie (TTFB 1
 
 ## 17/10/2026 : le push direct de la trace de démarrage sur main est refusé en cloud
 Le classifieur a refusé `git push origin HEAD:main`. Repli doctrinal : branche claude/*, reversée dans main par le workflow. Rien d'autre à purger ce jour, verrou déjà vert au démarrage.
+
+## 18/10/2026 : cadence rompue de 394 h, purge de 2 zombies (d2=17/09) passée en cloud
+Même séquence que les 14 et 15/10 : `passe_automatique.py --apply --max-liens 0`, rebuild_full, split_i18n, gen_seo, gen_pages, validate (vert). Aucune fiche du vivier intégrée.
