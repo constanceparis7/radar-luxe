@@ -16,3 +16,9 @@
 {"date": "2026-10-15", "controle": "axe", "url": "https://constanceparis7.com/", "violations": 0}
 {"date": "2026-10-15", "controle": "axe", "url": "https://constanceparis7.com/e/paris-fashion-week-pret-a-porter-printemps-ete-2027-paris.html", "violations": 0}
 {"date": "2026-10-15", "controle": "axe", "url": "https://constanceparis7.com/ar/", "violations": 0}
+{"date": "2026-10-19", "controle": "w3c", "url": "https://constanceparis7.com/", "erreurs": "?"}
+{"date": "2026-10-19", "controle": "w3c", "url": "https://constanceparis7.com/e/paris-fashion-week-pret-a-porter-printemps-ete-2027-paris.html", "erreurs": "?"}
+{"date": "2026-10-19", "controle": "w3c", "url": "https://constanceparis7.com/ar/", "erreurs": "?"}
+{"date": "2026-10-19", "controle": "axe", "url": "https://constanceparis7.com/", "violations": 3}
+{"date": "2026-10-19", "controle": "axe", "url": "https://constanceparis7.com/e/paris-fashion-week-pret-a-porter-printemps-ete-2027-paris.html", "violations": 3}
+{"date": "2026-10-19", "controle": "axe", "url": "https://constanceparis7.com/ar/", "violations": 3}
