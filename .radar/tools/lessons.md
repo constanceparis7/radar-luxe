@@ -1425,3 +1425,6 @@ Le classifieur a refusé `git push origin HEAD:main`. Repli doctrinal : branche 
 
 ## 18/10/2026 : cadence rompue de 394 h, purge de 2 zombies (d2=17/09) passée en cloud
 Même séquence que les 14 et 15/10 : `passe_automatique.py --apply --max-liens 0`, rebuild_full, split_i18n, gen_seo, gen_pages, validate (vert). Aucune fiche du vivier intégrée.
+
+## 19/10/2026 : cadence rompue de 418 h, purge de 2 zombies (d2=18/09) passée en cloud
+Même séquence que les 14, 15 et 18/10 : `passe_automatique.py --apply --max-liens 0`, rebuild_full, split_i18n, gen_seo, gen_pages, validate (vert). Aucune fiche du vivier intégrée. Les déclenchements quotidiens manquent de façon récurrente : à signaler.
