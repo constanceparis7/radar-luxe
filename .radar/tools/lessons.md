@@ -1428,3 +1428,6 @@ Même séquence que les 14 et 15/10 : `passe_automatique.py --apply --max-liens 
 
 ## 19/10/2026 : cadence rompue de 418 h, purge de 2 zombies (d2=18/09) passée en cloud
 Même séquence que les 14, 15 et 18/10 : `passe_automatique.py --apply --max-liens 0`, rebuild_full, split_i18n, gen_seo, gen_pages, validate (vert). Aucune fiche du vivier intégrée. Les déclenchements quotidiens manquent de façon récurrente : à signaler.
+
+## 20/10/2026 : les alias de lieux orphelins cassaient le verrou après une purge ; trois séjours composés par agents rejetés
+Purger la Swan Cup a supprimé la page `lieu/porto-cervo`, mais trois alias (arzachena, costa-smeralda, sardaigne) la visaient encore : 39 bloqueurs V6. `gen_pages.py` renvoie maintenant l'alias vers le hub si le lieu canonique est vide (même parade que FICHE_REDIRECTS). Séjours composés par agents : les sites de palaces répondent souvent 403/429, d'où des palaces sans mention Palace vérifiée et des expériences grand public (Louvre) ; rejet de l'ensemble plutôt que publication d'un séjour sous le calibre. La page du Prix d'Amérique affiche deux dates contradictoires dans la même page. Cadence rompue de 442 h.
