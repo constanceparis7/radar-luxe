@@ -1072,9 +1072,13 @@ def main():
                   f"<meta http-equiv=\"refresh\" content=\"0; url={_cible}\">"
                   f"<title>ConstanceParis7</title></head><body>"
                   f"<p><a href=\"{_cible}\">ConstanceParis7</a></p></body></html>")
+    # Même leçon pour les lieux (20/10/2026) : si le lieu canonique n'a plus aucune
+    # fiche (Porto Cervo après la purge de la Swan Cup), sa page n'existe plus ;
+    # l'alias renvoie alors vers le hub plutôt que vers un lien mort.
+    _lieux_vivants = {v["slug"] for v in places.values()}
     for _old, _new in LIEU_REDIRECTS.items():
         for _lg in LANGS:
-            _cible = f"{prefix(_lg)}/lieu/{_new}.html"
+            _cible = f"{prefix(_lg)}/lieu/{_new}.html" if _new in _lieux_vivants else f"{prefix(_lg)}/evenements.html"
             write(f"{prefix(_lg)}/lieu/{_old}.html",
                   f"<!doctype html><html lang=\"{_lg}\"><head><meta charset=\"utf-8\">"
                   f"<meta name=\"robots\" content=\"noindex\"><link rel=\"canonical\" href=\"{BASE}{_cible}\">"
