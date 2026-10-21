@@ -1,18 +1,128 @@
 {
- "genere_le": "2026-10-12",
+ "genere_le": "2026-10-21",
  "regle": "fiche non terminée, commençant dans 21 jours ou déjà en cours, dont la dernière vérification écrite est absente ou date de plus de 30 jours ; triée par imminence puis par ancienneté",
- "total_vivantes": 148,
- "avec_date_verif": 72,
- "avec_badge": 62,
+ "total_vivantes": 166,
+ "avec_date_verif": 90,
+ "avec_badge": 81,
  "prioritaires": [
+  {
+   "n": "Amiri, boutique saisonniere avenue Marechal Foch",
+   "d1": "2026-05-01",
+   "d2": "2026-10-31",
+   "dans_jours": -173,
+   "verifie_le": "2026-09-20",
+   "badge_le": "2026-09-20",
+   "age_jours": 31,
+   "cf": "confirme"
+  },
+  {
+   "n": "Dior Saint-Tropez : boutique rénovée, Café Dior et restaurant Monsieur Dior par Mauro Colagreco",
+   "d1": "2026-07-01",
+   "d2": "2026-10-31",
+   "dans_jours": -112,
+   "verifie_le": "2026-09-15",
+   "badge_le": "2026-09-15",
+   "age_jours": 36,
+   "cf": "confirme"
+  },
+  {
+   "n": "Milan en mode Ferragosto : ce qui reste ouvert dans la capitale du luxe",
+   "d1": "2026-08-01",
+   "d2": "2026-12-31",
+   "dans_jours": -81,
+   "verifie_le": "2026-09-16",
+   "badge_le": "2026-09-16",
+   "age_jours": 35,
+   "cf": "probable"
+  },
   {
    "n": "Vente Sotheby's Fine Jewelry et exposition au Mandarin Oriental, Genève",
    "d1": "2026-10-30",
    "d2": "2026-11-13",
-   "dans_jours": 18,
+   "dans_jours": 9,
    "verifie_le": "2026-08-23",
    "badge_le": "2026-08-23",
-   "age_jours": 50,
+   "age_jours": 59,
+   "cf": "confirme"
+  },
+  {
+   "n": "Lexus Melbourne Cup Day 2026, le Birdcage, Flemington",
+   "d1": "2026-11-03",
+   "d2": "2026-11-03",
+   "dans_jours": 13,
+   "verifie_le": "2026-09-16",
+   "badge_le": "2026-09-16",
+   "age_jours": 35,
+   "cf": "confirme"
+  },
+  {
+   "n": "Phillips, The Geneva Jewels Auction VII, Hôtel Président",
+   "d1": "2026-11-04",
+   "d2": "2026-11-09",
+   "dans_jours": 14,
+   "verifie_le": "2026-08-23",
+   "badge_le": "2026-08-23",
+   "age_jours": 59,
+   "cf": "confirme"
+  },
+  {
+   "n": "Dubai Racing Carnival, nuits mondaines à Meydan (ouverture de saison)",
+   "d1": "2026-11-06",
+   "d2": "2027-03-27",
+   "dans_jours": 16,
+   "verifie_le": null,
+   "badge_le": null,
+   "age_jours": null,
+   "cf": "confirme"
+  },
+  {
+   "n": "LACMA Art+Film Gala 2026",
+   "d1": "2026-11-07",
+   "d2": "2026-11-07",
+   "dans_jours": 17,
+   "verifie_le": null,
+   "badge_le": null,
+   "age_jours": null,
+   "cf": "confirme"
+  },
+  {
+   "n": "Saint-Barth Gourmet Festival, 13e édition",
+   "d1": "2026-11-09",
+   "d2": "2026-11-15",
+   "dans_jours": 19,
+   "verifie_le": null,
+   "badge_le": null,
+   "age_jours": null,
+   "cf": "confirme"
+  },
+  {
+   "n": "Vente Sotheby's Royal & Noble Jewels, Genève",
+   "d1": "2026-11-09",
+   "d2": "2026-11-09",
+   "dans_jours": 19,
+   "verifie_le": "2026-08-23",
+   "badge_le": "2026-08-23",
+   "age_jours": 59,
+   "cf": "confirme"
+  },
+  {
+   "n": "133° Campeonato Argentino Abierto de Polo (Abierto de Palermo)",
+   "d1": "2026-11-10",
+   "d2": "2026-12-12",
+   "dans_jours": 20,
+   "verifie_le": "2026-07-29",
+   "badge_le": "2026-07-29",
+   "age_jours": 84,
+   "cf": "confirme"
+  },
+  {
+   "n": "Vente Christie's Magnificent Jewels, Genève",
+   "d1": "2026-11-10",
+   "d2": "2026-11-10",
+   "dans_jours": 20,
+   "verifie_le": "2026-09-16",
+   "badge_le": "2026-09-16",
+   "age_jours": 35,
    "cf": "confirme"
   }
  ]

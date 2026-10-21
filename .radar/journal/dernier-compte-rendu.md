@@ -1,23 +1,16 @@
-# Compte rendu de la passe du 20/10/2026
+# Compte rendu de la passe du 21/10/2026
 
-**Signalement de déclenchement** : cadence rompue de 442 h au precheck (les déclenchements quotidiens manquent de façon récurrente).
+Cadence rompue de 466 h au precheck (déclenchements quotidiens manquants, à signaler).
 
-## Fait
-- Purge : 1 zombie (Rolex Swan Cup, d2=19/09). Fiches 282 -> 281.
-- Correctif `gen_pages.py` : les alias de lieux (LIEU_REDIRECTS) dont le lieu canonique n'a plus de fiche (Porto Cervo) renvoient désormais vers le hub événements au lieu d'un lien mort. 39 bloqueurs V6 levés. Même leçon que celle du 23/09 pour les fiches.
-- Pipeline complet, validate vert (0 bloqueur, 2 avertissements W1 anciens). Publié sur main (push direct accepté, pas de repli de branche nécessaire).
-
-## Condensation des voies d'invitation
-0 fiche condensée. Dans la fenêtre live (143 fiches avec iv), aucune tournure d'enquêteur détectée : les motifs « vérifié » trouvés sont des dates de vérification légitimes. Les champs > 1200 car. (Abu Dhabi F1, Dior Spa, Ferragosto Milan, etc.) sont de la densité factuelle (tarifs, contacts, horaires). Les condenser retirerait aussi leurs traductions dans 12 langues, pour un gain nul en vérité. Reste à traiter : aucun en dérive avérée.
-
-## Nouveautés : aucune
-Trois séjours manquants (Métamorphoses 19M, Rolex Paris Masters, Prix d'Amérique) ont été composés par agents puis REJETÉS par moi, aucun injecté :
-- 19M : page officielle en 403 (non chargée), tables sans étoile publiée, horaires absents.
-- Rolex Paris Masters : Louvre et Sainte-Chapelle = grand public, étoile d'Il Carpaccio non précisée, Crillon sans mention Palace.
-- Prix d'Amérique : l'en-tête de la page officielle donne « 23 au 25 janvier » contre 29-31 dans le texte (à clarifier avant tout), une seule expérience chargée.
-Compteurs : traductions 0 reste, séjours 9 -> 9 restants (3 en fenêtre live, voir ci-dessus), invitations 0 reste.
-
-## Non vérifié / à faire
-- Date réelle du Prix d'Amérique Festival 2027 (contradiction sur la page officielle).
-- Vivier : 42 candidats, aucun intégré faute de séjour + 12 traductions de calibre.
-- Pas de revérification de fenêtres, pas de recherche d'événements neufs ce jour.
+- Purge : 6 zombies (d2=20/09) purgés par `passe_automatique.py --apply --max-liens 0`
+  (281 -> 275 fiches). Pipeline complet puis validate : 0 blocage, 2 avertissements (dates W1 de Covo di Nord-Est et Nikki Beach Ibiza).
+- Fiches ajoutées : 0. Aucun candidat du vivier n'a pu être intégré : une fiche complète exige un séjour
+  réel vérifié (les sites de palaces répondent 403/429) et 12 traductions. Rien de grand public déguisé ajouté.
+- Compteurs : traductions 275/275, invitations 275/275, séjours 266/275 (9 manquants, à vérifier s'ils sont hors fenêtre live).
+- Condensation iv : 9 champs live au-dessus de 1200 car. relus (F1 Abu Dhabi g/w, Dior Spa w, etc.) : densité factuelle
+  (contacts, tarifs, critères FIA), pas de dérive « journal d'enquête ». 0 condensée, 0 restante à traiter sur ce critère.
+  Le « 400 car. » ne désigne pas de dérive (voir lessons.md 06/10 et 12/10).
+- Non vérifié : revérification Sotheby's Fine Jewelry Genève (J+9, dernière vérif 23/08) : une seule tentative de fetch
+  sur une URL non officielle devinée (404, non probant). À refaire en priorité demain. Candidat suivant du vivier :
+  ABT Fall Gala (29/10, J+8) puis Phillips Geneva Watch Auction (7-8/11).
+- Fenêtres d'action, Mémoire, analyse des visites, artifact (étape 10, injoignable selon lessons) : non traités.
