@@ -1434,3 +1434,6 @@ Purger la Swan Cup a supprimé la page `lieu/porto-cervo`, mais trois alias (arz
 
 ## 21/10/2026 : cadence rompue de 466 h, purge de 6 zombies (d2=20/09) passée en cloud
 Même séquence que les 14 au 19/10 ; push direct de la trace de démarrage sur main accepté cette fois. Aucune fiche intégrée (séjour vérifié + 12 traductions non réunis). Ne jamais tester une URL devinée comme preuve : le 404 de sothebys.com n était pas probant.
+
+## 23/10/2026 : cadence rompue de 514 h, purge de 2 zombies (d2=22/09) passée en cloud
+Même séquence que les 14 au 21/10 : `passe_automatique.py --apply --max-liens 0`, rebuild_full, split_i18n, gen_seo, gen_pages, validate (vert). Aucune fiche intégrée ; passe limitée à la purge et au compte rendu.

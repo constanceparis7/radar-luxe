@@ -1,10 +1,9 @@
-# Compte rendu de la passe du 22/10/2026
+# Compte rendu de passe, 23/10/2026
 
-Cadence rompue de 490 h au precheck (déclenchements quotidiens manquants, à signaler).
-
-- Purge : 2 zombies (d2=21/09 : Picasso/Paul Smith, London Fashion Week PE 2027) par `passe_automatique.py --apply --max-liens 0` (275 -> 273 fiches). Pipeline complet, validate : 0 blocage, 2 avertissements (W1 Covo di Nord-Est, Nikki Beach Ibiza).
-- Fiches ajoutées : 0 (séjour vérifié + 12 traductions non réunis ; rien de grand public déguisé ajouté).
-- Compteurs : traductions 273/273, invitations 273/273, séjours 264/273 environ (reste.py à relancer).
-- Condensation iv : 9 champs > 1200 car. déjà jugés denses (faits, contacts, tarifs) aux passes précédentes ; 0 dérive, 0 condensée.
-- Revérifié : Sotheby's Fine Jewelry Genève, page officielle (ge2615) chargée : 30/10 au 13/11/2026 confirmé. Page sans contact ni inscription publiés ; fiche inchangée.
-- Non vérifié : ABT Fall Gala (29/10, J+8), Phillips Geneva Watch Auction (7-8/11), fenêtres d'action, Mémoire, analyse des visites, artifact.
+- Cadence rompue de 514 h au precheck (déclenchements quotidiens manquants, à signaler).
+- Purge : 2 zombies (d2=22/09 : Vogue World Milano, Met Opera gala d'ouverture), 273 -> 271 fiches. Pipeline complet puis validate : OK, 0 bloqueur, 2 avertissements W1 (dates écrites hors fenêtre : Covo di Nord-Est, Nikki Beach Ibiza), non traités.
+- Fiches ajoutées : 0. Séjours complétés : 0. Invitations complétées : 0. Traductions : 271/271.
+- Compteurs : traductions reste 0, séjours reste 9, invitations reste 0.
+- Condensation iv : 0 fiche condensée. 9 champs live > 1200 car. (Villa Carmignac, Biennale Arte, Dior Spa Cheval Blanc, Milan Ferragosto, Cala Rossa, Gstaad NY Music Festival, F1 Abu Dhabi g et w, Point d'entrée ventes aux enchères) jugés denses aux passes précédentes ; non relus ce jour.
+- Vivier : 42 candidats, aucun intégré faute de temps pour séjour vérifié + 12 traductions. Rien d'inventé.
+- Non vérifié ce jour : liens, fenêtres d'action, reverification.py, statistiques de visites, healthcheck après publication.
