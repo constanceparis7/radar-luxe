@@ -27,3 +27,5 @@
 {"date": "2026-11-02", "url": "https://constanceparis7.com/", "lcp_ms": 912, "cls": 0, "inp_ms": 208, "fcp_ms": 912, "ttfb_ms": 258, "load_ms": 2372, "transfert_ko": 302}
 {"date": "2026-11-02", "url": "https://constanceparis7.com/e/paris-fashion-week-pret-a-porter-printemps-ete-2027-paris.html", "lcp_ms": 548, "cls": 0, "inp_ms": null, "fcp_ms": 548, "ttfb_ms": 228, "load_ms": 545, "transfert_ko": 10}
 {"date": "2026-11-02", "erreur": "mesure_cdp"}
+{"date": "2026-11-09", "url": "https://constanceparis7.com/", "lcp_ms": 744, "cls": 0, "inp_ms": 256, "fcp_ms": 744, "ttfb_ms": 203, "load_ms": 2298, "transfert_ko": 302}
+{"date": "2026-11-09", "erreur": "mesure_cdp"}
